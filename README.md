@@ -1,4 +1,4 @@
-# AddOnExamples
+# ZEISS INSPECT App Examples
 
 This repository contains various [ZEISS INSPECT](https://www.zeiss.com/metrology/products/software.html#inspectionsolutions) App examples for educational and inspirational purposes.
 
