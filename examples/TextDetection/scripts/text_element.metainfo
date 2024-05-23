@@ -1,0 +1,27 @@
+{
+    "display_name": "Part ID detection",
+    "folded_blocks": [
+    ],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": true,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+                "construct",
+                "value_elements"
+            ],
+            "type": "command"
+        },
+        "script": "ude.text_element",
+        "submenu": [
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "value",
+    "show_in_iinspect": false,
+    "show_in_menu": true,
+    "uuid": "d1f5e5ed-c05d-4a7d-bde2-e0e88fa6ee13"
+}

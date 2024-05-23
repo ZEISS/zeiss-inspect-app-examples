@@ -1,0 +1,14 @@
+{
+  "author": "Carl Zeiss GOM Metrology GmbH",
+  "description": "MSA conform measurement system analysis (ANOVA, ARM)",
+  "domain": "Metrology",
+  "labels": [],
+  "licensing": {},
+  "software-revision": "200823",
+  "software-version": "2023-Beta2",
+  "sort_index": -1,
+  "tags": [],
+  "title": "Measurement System Analysis",
+  "uuid": "14560e9c-4113-4f95-a23c-fd19397e3b40",
+  "version": "1.0.5"
+}

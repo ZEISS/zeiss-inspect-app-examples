@@ -1,0 +1,1 @@
+Placeholder folder because git cannot handle empty directories
