@@ -1,0 +1,15 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "description": "Examples for accessing add-on based resources",
+    "licensing": {
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
+    },
+    "software-revision": "157350",
+    "software-version": "GOM Software 2022 Service Pack 2",
+    "title": "Resource access example",
+    "uuid": "040e602d-40d6-47a1-9fb4-e558b231ada9",
+    "version": "1.0.0"
+}

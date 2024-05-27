@@ -1,0 +1,45 @@
+{
+    "content": [
+        [
+            {
+                "columns": 3,
+                "data": "AAAAAA==",
+                "file_name": "",
+                "height": 0,
+                "keep_aspect": true,
+                "keep_original_size": true,
+                "name": "image",
+                "rows": 1,
+                "system_image": "system_message_warning",
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "image",
+                "use_system_image": false,
+                "width": 0
+            },
+            {
+            },
+            {
+            }
+        ]
+    ],
+    "control": {
+        "id": "Close"
+    },
+    "embedding": "always_toplevel",
+    "position": "automatic",
+    "size": {
+        "height": 88,
+        "width": 134
+    },
+    "sizemode": "automatic",
+    "style": "",
+    "title": {
+        "id": "",
+        "text": "Text detection",
+        "translatable": true
+    }
+}

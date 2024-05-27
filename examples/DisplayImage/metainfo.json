@@ -1,0 +1,19 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "description": "Display single image",
+    "labels": [
+    ],
+    "licensing": {
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
+    },
+    "software-revision": "55",
+    "software-version": "ZEISS INSPECT 2024 Alpha1",
+    "tags": [
+    ],
+    "title": "Display Image",
+    "uuid": "74edeeeb-126b-4033-814f-66272bc7ba1f",
+    "version": "1.0.0"
+}
