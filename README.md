@@ -9,7 +9,7 @@ In principle, a ZEISS INSPECT App is just a zip'ped directory with a special str
 
 ## Complete App examples
 
-* Measurement System Analysis App: [MSA](examples/MeasurementSystemAnalysis)
+* Measurement System Analysis App: [MSA](examples/MeasurementSystemAnalysis) ([Download](https://software-store.zeiss.com/products/apps/measurement-system-analysis))
 
 ## App programming examples
 
