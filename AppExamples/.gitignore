@@ -1,0 +1,6 @@
+.history
+.vs
+.vscode
+*.whl
+*.zip
+*.addon
