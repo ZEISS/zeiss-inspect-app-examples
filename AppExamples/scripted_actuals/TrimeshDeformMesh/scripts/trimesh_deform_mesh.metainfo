@@ -1,0 +1,24 @@
+{
+    "display_name": "Trimesh Deform Mesh",
+    "folded_blocks": [
+        22
+    ],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": true,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [],
+            "type": "command"
+        },
+        "script": "ude.PythonApiExamples__PythonApiExamples__examples__scripted_actuals__trimesh_deform_mesh",
+        "submenu": []
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "surface",
+    "show_in_iinspect": false,
+    "show_in_menu": true,
+    "uuid": "08e4331c-4ccb-47f5-9df1-9db0e3b1124a"
+}

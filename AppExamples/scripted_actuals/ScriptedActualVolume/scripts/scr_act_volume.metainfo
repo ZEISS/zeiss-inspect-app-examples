@@ -1,0 +1,25 @@
+{
+    "display_name": "Scripted Actual Volume",
+    "folded_blocks": [
+    ],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": true,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+            ],
+            "type": "command"
+        },
+        "script": "ude.scr_act_volume",
+        "submenu": [
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "volume",
+    "show_in_iinspect": false,
+    "show_in_menu": true,
+    "uuid": "5c0e7e3f-cf8c-4acd-8526-85b895b3f902"
+}

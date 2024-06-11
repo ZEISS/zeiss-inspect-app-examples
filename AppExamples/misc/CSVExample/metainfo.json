@@ -1,0 +1,15 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "description": "This example demonstrates how to read and write CSV files (comma separated values) from an App.",
+    "labels": [],
+    "licensing": {
+        "licenses": [],
+        "product-codes": []
+    },
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2025",
+    "tags": [],
+    "title": "CSVExample",
+    "uuid": "c680fdb2-7802-4387-ac9c-ef2ae66c5526",
+    "version": "1.0.0"
+}

@@ -1,0 +1,46 @@
+{
+    "content": [
+        [
+            {
+                "columns": 1,
+                "default": "test",
+                "items": [
+                    {
+                        "id": "",
+                        "text": "test",
+                        "translatable": true
+                    },
+                    {
+                        "id": "",
+                        "text": "test2",
+                        "translatable": true
+                    }
+                ],
+                "name": "list",
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::list"
+            }
+        ]
+    ],
+    "control": {
+        "id": "OkCancel"
+    },
+    "embedding": "",
+    "position": "",
+    "size": {
+        "height": 112,
+        "width": 198
+    },
+    "sizemode": "",
+    "style": "",
+    "title": {
+        "id": "",
+        "text": "Can we fill this list from script?",
+        "translatable": true
+    }
+}

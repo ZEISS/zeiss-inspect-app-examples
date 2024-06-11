@@ -1,0 +1,15 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "description": "This examples demonstrates, how a dialog can be closed from its own handler, just to be opened again.",
+    "labels": [],
+    "licensing": {
+        "licenses": [],
+        "product-codes": []
+    },
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2025",
+    "tags": [],
+    "title": "DialogReopenExample",
+    "uuid": "7ae503b5-2988-4eff-9b46-f1c9d9c01f63",
+    "version": "1.0.0"
+}

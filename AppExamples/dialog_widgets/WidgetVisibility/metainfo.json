@@ -1,0 +1,15 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "description": "This example shows how to use a dialog event handler to turn on/off widget visibilities.",
+    "labels": [],
+    "licensing": {
+        "licenses": [],
+        "product-codes": []
+    },
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2025",
+    "tags": [],
+    "title": "WidgetVisibility",
+    "uuid": "ca7d5655-6eec-4e8f-8f70-4cf35fee4833",
+    "version": "1.0.0"
+}

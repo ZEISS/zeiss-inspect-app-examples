@@ -1,0 +1,406 @@
+{
+  "content": [
+    [
+      {
+        "columns": 1,
+        "name": "label",
+        "rows": 1,
+        "text": {
+          "id": "msg307",
+          "text": "Element Name",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "label",
+        "word_wrap": false
+      },
+      {
+        "basename": {
+          "id": "msg308",
+          "text": "Volume Defect",
+          "translatable": true
+        },
+        "columns": 3,
+        "mode": "manually",
+        "name": "name",
+        "numbering": true,
+        "read_only": false,
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::elementname"
+      },
+      {},
+      {}
+    ],
+    [
+      {
+        "columns": 1,
+        "maximum_size": -1,
+        "minimum_size": 0,
+        "name": "spacer",
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "spacer::vertical"
+      },
+      {
+        "columns": 1,
+        "name": "label_1",
+        "rows": 1,
+        "text": {
+          "id": "msg309",
+          "text": "X",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "label",
+        "word_wrap": false
+      },
+      {
+        "columns": 1,
+        "name": "label_2",
+        "rows": 1,
+        "text": {
+          "id": "msg310",
+          "text": "Y",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "label",
+        "word_wrap": false
+      },
+      {
+        "columns": 1,
+        "name": "label_3",
+        "rows": 1,
+        "text": {
+          "id": "msg311",
+          "text": "Z",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "label",
+        "word_wrap": false
+      }
+    ],
+    [
+      {
+        "columns": 1,
+        "name": "label_4",
+        "rows": 1,
+        "text": {
+          "id": "msg312",
+          "text": "Vertex 0",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "label",
+        "word_wrap": false
+      },
+      {
+        "background_style": "",
+        "columns": 1,
+        "maximum": 1000,
+        "minimum": -1000,
+        "name": "v0_x",
+        "precision": 2,
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::number",
+        "unit": "LENGTH",
+        "value": 0
+      },
+      {
+        "background_style": "",
+        "columns": 1,
+        "maximum": 1000,
+        "minimum": -1000,
+        "name": "v0_y",
+        "precision": 2,
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::number",
+        "unit": "LENGTH",
+        "value": 0
+      },
+      {
+        "background_style": "",
+        "columns": 1,
+        "maximum": 1000,
+        "minimum": -1000,
+        "name": "v0_z",
+        "precision": 2,
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::number",
+        "unit": "LENGTH",
+        "value": 10
+      }
+    ],
+    [
+      {
+        "columns": 1,
+        "name": "label_6",
+        "rows": 1,
+        "text": {
+          "id": "msg313",
+          "text": "Vertex 1",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "label",
+        "word_wrap": false
+      },
+      {
+        "background_style": "",
+        "columns": 1,
+        "maximum": 1000,
+        "minimum": -1000,
+        "name": "v1_x",
+        "precision": 2,
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::number",
+        "unit": "LENGTH",
+        "value": 5
+      },
+      {
+        "background_style": "",
+        "columns": 1,
+        "maximum": 1000,
+        "minimum": -1000,
+        "name": "v1_y",
+        "precision": 2,
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::number",
+        "unit": "LENGTH",
+        "value": 0
+      },
+      {
+        "background_style": "",
+        "columns": 1,
+        "maximum": 1000,
+        "minimum": -1000,
+        "name": "v1_z",
+        "precision": 2,
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::number",
+        "unit": "LENGTH",
+        "value": 0
+      }
+    ],
+    [
+      {
+        "columns": 1,
+        "name": "label_5",
+        "rows": 1,
+        "text": {
+          "id": "msg314",
+          "text": "Vertex 2",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "label",
+        "word_wrap": false
+      },
+      {
+        "background_style": "",
+        "columns": 1,
+        "maximum": 1000,
+        "minimum": -1000,
+        "name": "v2_x",
+        "precision": 2,
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::number",
+        "unit": "LENGTH",
+        "value": -5
+      },
+      {
+        "background_style": "",
+        "columns": 1,
+        "maximum": 1000,
+        "minimum": -1000,
+        "name": "v2_y",
+        "precision": 2,
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::number",
+        "unit": "LENGTH",
+        "value": -5
+      },
+      {
+        "background_style": "",
+        "columns": 1,
+        "maximum": 1000,
+        "minimum": -1000,
+        "name": "v2_z",
+        "precision": 2,
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::number",
+        "unit": "LENGTH",
+        "value": 0
+      }
+    ],
+    [
+      {
+        "columns": 1,
+        "name": "label_7",
+        "rows": 1,
+        "text": {
+          "id": "msg315",
+          "text": "Vertex 3",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "label",
+        "word_wrap": false
+      },
+      {
+        "background_style": "",
+        "columns": 1,
+        "maximum": 1000,
+        "minimum": -1000,
+        "name": "v3_x",
+        "precision": 2,
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::number",
+        "unit": "LENGTH",
+        "value": -5
+      },
+      {
+        "background_style": "",
+        "columns": 1,
+        "maximum": 1000,
+        "minimum": -1000,
+        "name": "v3_y",
+        "precision": 2,
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::number",
+        "unit": "LENGTH",
+        "value": 5
+      },
+      {
+        "background_style": "",
+        "columns": 1,
+        "maximum": 1000,
+        "minimum": -1000,
+        "name": "v3_z",
+        "precision": 2,
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::number",
+        "unit": "LENGTH",
+        "value": 0
+      }
+    ]
+  ],
+  "control": {
+    "id": "OkCancel"
+  },
+  "embedding": "always_toplevel",
+  "position": "center",
+  "size": {
+    "height": 254,
+    "width": 395
+  },
+  "sizemode": "automatic",
+  "style": "",
+  "title": {
+    "id": "msg316",
+    "text": "Scripted Actual Volume Defects",
+    "translatable": true
+  }
+}

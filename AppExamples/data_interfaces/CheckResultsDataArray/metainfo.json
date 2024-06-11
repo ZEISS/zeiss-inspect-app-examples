@@ -1,0 +1,16 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "description": "This example demonstrates two ways of accessing result data from checks using the element properties and data interfaces.",
+    "environment": "ZeissInspectExampleProjects",
+    "labels": [],
+    "licensing": {
+        "licenses": [],
+        "product-codes": []
+    },
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2025",
+    "tags": [],
+    "title": "CheckResultsDataArray",
+    "uuid": "cc4de73f-a8b9-4c01-8f45-141a74f29333",
+    "version": "1.0.0"
+}

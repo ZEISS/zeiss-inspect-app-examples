@@ -1,0 +1,25 @@
+{
+    "display_name": "My Curve Check",
+    "folded_blocks": [
+    ],
+    "icon": "",
+    "iinspect_condition": "type == 'section'",
+    "interactive": true,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+            ],
+            "type": "command"
+        },
+        "script": "ude.PythonApiExamples__PythonApiExamples__examples__scripted_checks__scripted_curve_check",
+        "submenu": [
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "scalar_curve",
+    "script_element_type": "none",
+    "show_in_iinspect": true,
+    "show_in_menu": true,
+    "uuid": "fe923c4f-9184-4e09-b5fb-1be04900ff61"
+}

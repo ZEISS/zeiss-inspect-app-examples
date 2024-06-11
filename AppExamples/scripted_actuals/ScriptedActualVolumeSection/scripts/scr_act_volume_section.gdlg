@@ -1,0 +1,411 @@
+{
+  "content": [
+    [
+      {
+        "columns": 1,
+        "maximum_size": -1,
+        "minimum_size": 0,
+        "name": "spacer_1",
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "spacer::horizontal"
+      },
+      {
+        "columns": 1,
+        "data": "AAAAAA==",
+        "file_name": "",
+        "height": 0,
+        "keep_aspect": true,
+        "keep_original_size": true,
+        "name": "image",
+        "rows": 1,
+        "system_image": "system_message_information",
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "image",
+        "use_system_image": true,
+        "width": 0
+      },
+      {
+        "columns": 3,
+        "default_font_family": "",
+        "default_font_size": 0,
+        "name": "text",
+        "rows": 1,
+        "text": {
+          "id": "msg325",
+          "text": "<html><ol><li>Select a grayscale image which serves as a volume section example</li><li>Edit the transformation parameters as desired</li></ol></html>",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "display::text",
+        "wordwrap": false
+      },
+      {},
+      {}
+    ],
+    [
+      {
+        "columns": 2,
+        "name": "label_7",
+        "rows": 1,
+        "text": {
+          "id": "msg326",
+          "text": "Element Name",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "label",
+        "word_wrap": false
+      },
+      {},
+      {
+        "basename": {
+          "id": "msg327",
+          "text": "Volume section",
+          "translatable": true
+        },
+        "columns": 3,
+        "mode": "manually",
+        "name": "name",
+        "numbering": true,
+        "read_only": false,
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::elementname"
+      },
+      {},
+      {}
+    ],
+    [
+      {
+        "columns": 2,
+        "name": "label",
+        "rows": 1,
+        "text": {
+          "id": "msg328",
+          "text": "Grayscale Image",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "label",
+        "word_wrap": false
+      },
+      {},
+      {
+        "columns": 3,
+        "default": "",
+        "file_types": [
+          {
+            "description": "All files",
+            "name": "*.*"
+          },
+          {
+            "description": "All files",
+            "name": "*.png"
+          },
+          {
+            "description": "All files",
+            "name": "*.jpeg"
+          },
+          {
+            "description": "All files",
+            "name": "*.webp"
+          },
+          {
+            "description": "All files",
+            "name": "*.jpg"
+          }
+        ],
+        "file_types_default": "*.*",
+        "limited": true,
+        "name": "file",
+        "rows": 1,
+        "selection_type": "file",
+        "title": {
+          "id": "msg329",
+          "text": "Choose File",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "msg330",
+          "text": "Select image file",
+          "translatable": true
+        },
+        "type": "input::file"
+      },
+      {},
+      {}
+    ],
+    [
+      {
+        "columns": 5,
+        "name": "separator",
+        "rows": 1,
+        "title": {
+          "id": "msg331",
+          "text": "Transformation",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "separator"
+      },
+      {},
+      {},
+      {},
+      {}
+    ],
+    [
+      {
+        "columns": 2,
+        "maximum_size": -1,
+        "minimum_size": 0,
+        "name": "spacer",
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "spacer::vertical"
+      },
+      {},
+      {
+        "columns": 1,
+        "name": "label_1",
+        "rows": 1,
+        "text": {
+          "id": "msg332",
+          "text": "X",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "label",
+        "word_wrap": false
+      },
+      {
+        "columns": 1,
+        "name": "label_2",
+        "rows": 1,
+        "text": {
+          "id": "msg333",
+          "text": "Y",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "label",
+        "word_wrap": false
+      },
+      {
+        "columns": 1,
+        "name": "label_3",
+        "rows": 1,
+        "text": {
+          "id": "msg334",
+          "text": "Z",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "label",
+        "word_wrap": false
+      }
+    ],
+    [
+      {
+        "columns": 2,
+        "name": "label_4",
+        "rows": 1,
+        "text": {
+          "id": "msg335",
+          "text": "Transformation",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "label",
+        "word_wrap": false
+      },
+      {},
+      {
+        "background_style": "",
+        "columns": 1,
+        "maximum": 1000,
+        "minimum": -1000,
+        "name": "dx",
+        "precision": 2,
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::number",
+        "unit": "LENGTH",
+        "value": 0
+      },
+      {
+        "background_style": "",
+        "columns": 1,
+        "maximum": 1000,
+        "minimum": -1000,
+        "name": "dy",
+        "precision": 2,
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::number",
+        "unit": "LENGTH",
+        "value": 0
+      },
+      {
+        "background_style": "",
+        "columns": 1,
+        "maximum": 1000,
+        "minimum": -1000,
+        "name": "dz",
+        "precision": 2,
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::number",
+        "unit": "LENGTH",
+        "value": 0
+      }
+    ],
+    [
+      {
+        "columns": 2,
+        "name": "label_6",
+        "rows": 1,
+        "text": {
+          "id": "msg336",
+          "text": "Rotation",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "label",
+        "word_wrap": false
+      },
+      {},
+      {
+        "background_style": "",
+        "columns": 1,
+        "maximum": 6.283185307179586,
+        "minimum": 0,
+        "name": "rx",
+        "precision": 2,
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::number",
+        "unit": "ANGLE",
+        "value": 0
+      },
+      {
+        "background_style": "",
+        "columns": 1,
+        "maximum": 6.283185307179586,
+        "minimum": 0,
+        "name": "ry",
+        "precision": 2,
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::number",
+        "unit": "ANGLE",
+        "value": 0
+      },
+      {
+        "background_style": "",
+        "columns": 1,
+        "maximum": 6.283185307179586,
+        "minimum": 0,
+        "name": "rz",
+        "precision": 2,
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::number",
+        "unit": "ANGLE",
+        "value": 0
+      }
+    ]
+  ],
+  "control": {
+    "id": "OkCancel"
+  },
+  "embedding": "always_toplevel",
+  "position": "center",
+  "size": {
+    "height": 322,
+    "width": 525
+  },
+  "sizemode": "automatic",
+  "style": "",
+  "title": {
+    "id": "msg337",
+    "text": "Scripted Actual Volume Section",
+    "translatable": true
+  }
+}

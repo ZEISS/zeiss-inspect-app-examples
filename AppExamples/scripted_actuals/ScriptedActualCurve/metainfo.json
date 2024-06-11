@@ -1,0 +1,15 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "description": "This is an example for a scripted actual \u00e2\u20ac\u02dccurve\u00e2\u20ac\u2122 element.",
+    "labels": [],
+    "licensing": {
+        "licenses": [],
+        "product-codes": []
+    },
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2025",
+    "tags": [],
+    "title": "ScriptedActualCurve",
+    "uuid": "c1c0e973-0ca3-4aec-9909-0bef808b2dbc",
+    "version": "1.0.0"
+}

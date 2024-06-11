@@ -1,0 +1,16 @@
+Testdata Version: 2
+Testdata from ZEISS INSPECT 2024-Alpha1 Language: en Created: 2023-12-01 14:53:46.986392
+0
+1
+TestValues Version: 1
+1
+Datatype: 0
+Offset point 1
+point
+3
+center_coordinate
+0 gom.Vec3d (4.997742628353061, 17.622153615417403, -20.326957402038758)
+computation_status
+0 gom.ComputationStatus ('computed')
+ude_mykey
+0 123456

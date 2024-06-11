@@ -1,0 +1,25 @@
+{
+    "display_name": "Scripted Actual Volume Region",
+    "folded_blocks": [
+    ],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": true,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+            ],
+            "type": "command"
+        },
+        "script": "ude.scr_act_volume_region",
+        "submenu": [
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "volume_region",
+    "show_in_iinspect": false,
+    "show_in_menu": true,
+    "uuid": "de9e475c-6502-4fde-9a1a-b133507dfbac"
+}

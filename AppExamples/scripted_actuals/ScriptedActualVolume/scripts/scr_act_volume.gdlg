@@ -1,0 +1,475 @@
+{
+  "content": [
+    [
+      {
+        "columns": 1,
+        "name": "label",
+        "rows": 1,
+        "text": {
+          "id": "msg293",
+          "text": "Element Name",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "label",
+        "word_wrap": false
+      },
+      {
+        "basename": {
+          "id": "msg294",
+          "text": "Volume",
+          "translatable": true
+        },
+        "columns": 3,
+        "mode": "manually",
+        "name": "name",
+        "numbering": true,
+        "read_only": false,
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::elementname"
+      },
+      {},
+      {}
+    ],
+    [
+      {
+        "columns": 4,
+        "name": "separator_1",
+        "rows": 1,
+        "title": {
+          "id": "msg295",
+          "text": "Voxel gray values",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "separator"
+      },
+      {},
+      {},
+      {}
+    ],
+    [
+      {
+        "columns": 1,
+        "name": "label_9",
+        "rows": 1,
+        "text": {
+          "id": "msg296",
+          "text": "Background",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "label",
+        "word_wrap": false
+      },
+      {
+        "columns": 3,
+        "maximum": 65535,
+        "minimum": 0,
+        "name": "gv_background",
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::integer",
+        "value": 4096
+      },
+      {},
+      {}
+    ],
+    [
+      {
+        "columns": 1,
+        "name": "label_10",
+        "rows": 1,
+        "text": {
+          "id": "msg297",
+          "text": "Material 1",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "label",
+        "word_wrap": false
+      },
+      {
+        "columns": 3,
+        "maximum": 65535,
+        "minimum": 0,
+        "name": "gv_mat1",
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::integer",
+        "value": 50000
+      },
+      {},
+      {}
+    ],
+    [
+      {
+        "columns": 1,
+        "name": "label_11",
+        "rows": 1,
+        "text": {
+          "id": "msg298",
+          "text": "Material 2",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "label",
+        "word_wrap": false
+      },
+      {
+        "columns": 3,
+        "maximum": 65535,
+        "minimum": 0,
+        "name": "gv_mat2",
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::integer",
+        "value": 32000
+      },
+      {},
+      {}
+    ],
+    [
+      {
+        "columns": 4,
+        "name": "separator",
+        "rows": 1,
+        "title": {
+          "id": "msg299",
+          "text": "Transformation",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "separator"
+      },
+      {},
+      {},
+      {}
+    ],
+    [
+      {
+        "columns": 1,
+        "maximum_size": -1,
+        "minimum_size": 0,
+        "name": "spacer",
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "spacer::horizontal"
+      },
+      {
+        "columns": 1,
+        "name": "label_1",
+        "rows": 1,
+        "text": {
+          "id": "msg300",
+          "text": "x",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "label",
+        "word_wrap": false
+      },
+      {
+        "columns": 1,
+        "name": "label_2",
+        "rows": 1,
+        "text": {
+          "id": "msg301",
+          "text": "y",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "label",
+        "word_wrap": false
+      },
+      {
+        "columns": 1,
+        "name": "label_3",
+        "rows": 1,
+        "text": {
+          "id": "msg302",
+          "text": "z",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "label",
+        "word_wrap": false
+      }
+    ],
+    [
+      {
+        "columns": 1,
+        "name": "label_4",
+        "rows": 1,
+        "text": {
+          "id": "msg303",
+          "text": "Translation",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "label",
+        "word_wrap": false
+      },
+      {
+        "background_style": "",
+        "columns": 1,
+        "maximum": 1000,
+        "minimum": -1000,
+        "name": "dx",
+        "precision": 2,
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::number",
+        "unit": "LENGTH",
+        "value": 0
+      },
+      {
+        "background_style": "",
+        "columns": 1,
+        "maximum": 1000,
+        "minimum": -1000,
+        "name": "dy",
+        "precision": 2,
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::number",
+        "unit": "LENGTH",
+        "value": 0
+      },
+      {
+        "background_style": "",
+        "columns": 1,
+        "maximum": 1000,
+        "minimum": -1000,
+        "name": "dz",
+        "precision": 2,
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::number",
+        "unit": "LENGTH",
+        "value": 0
+      }
+    ],
+    [
+      {
+        "columns": 1,
+        "name": "label_6",
+        "rows": 1,
+        "text": {
+          "id": "msg304",
+          "text": "Rotation",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "label",
+        "word_wrap": false
+      },
+      {
+        "background_style": "",
+        "columns": 1,
+        "maximum": 6.283185307179586,
+        "minimum": -6.283185307179586,
+        "name": "rx",
+        "precision": 3,
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::number",
+        "unit": "ANGLE",
+        "value": 0
+      },
+      {
+        "background_style": "",
+        "columns": 1,
+        "maximum": 6.283185307179586,
+        "minimum": -6.283185307179586,
+        "name": "ry",
+        "precision": 3,
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::number",
+        "unit": "ANGLE",
+        "value": 0
+      },
+      {
+        "background_style": "",
+        "columns": 1,
+        "maximum": 6.283185307179586,
+        "minimum": -6.283185307179586,
+        "name": "rz",
+        "precision": 3,
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::number",
+        "unit": "ANGLE",
+        "value": 0
+      }
+    ],
+    [
+      {
+        "columns": 1,
+        "name": "label_7",
+        "rows": 1,
+        "text": {
+          "id": "msg305",
+          "text": "Random rotation",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "label",
+        "word_wrap": false
+      },
+      {
+        "columns": 1,
+        "name": "random",
+        "rows": 1,
+        "title": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::checkbox",
+        "value": false
+      },
+      {
+        "columns": 1,
+        "maximum_size": -1,
+        "minimum_size": 0,
+        "name": "spacer_1",
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "spacer::horizontal"
+      },
+      {
+        "columns": 1,
+        "maximum_size": -1,
+        "minimum_size": 0,
+        "name": "spacer_2",
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "spacer::horizontal"
+      }
+    ]
+  ],
+  "control": {
+    "id": "OkCancel"
+  },
+  "embedding": "always_toplevel",
+  "position": "center",
+  "size": {
+    "height": 365,
+    "width": 407
+  },
+  "sizemode": "automatic",
+  "style": "",
+  "title": {
+    "id": "msg306",
+    "text": "Scripted Actual Volume ",
+    "translatable": true
+  }
+}

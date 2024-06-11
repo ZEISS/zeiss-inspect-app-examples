@@ -1,0 +1,16 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "description": "These are two examples for scripted actual points, which serve as an introduction to the concept of scripted actual elements.",
+    "environment": "ZeissInspectExampleProjects",
+    "labels": [],
+    "licensing": {
+        "licenses": [],
+        "product-codes": []
+    },
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2025",
+    "tags": [],
+    "title": "ScriptedActualPoint",
+    "uuid": "3222ba70-7a03-494d-b013-6310fde2f882",
+    "version": "1.0.0"
+}

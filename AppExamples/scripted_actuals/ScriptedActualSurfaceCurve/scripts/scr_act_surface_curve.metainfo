@@ -1,0 +1,25 @@
+{
+    "display_name": "Scripted Actual Surface Curve",
+    "folded_blocks": [
+    ],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": true,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+            ],
+            "type": "command"
+        },
+        "script": "ude.scr_act_surface_curve",
+        "submenu": [
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "surface_curve",
+    "show_in_iinspect": false,
+    "show_in_menu": true,
+    "uuid": "2404f3c0-bbcc-47f8-9508-9b5021514c33"
+}

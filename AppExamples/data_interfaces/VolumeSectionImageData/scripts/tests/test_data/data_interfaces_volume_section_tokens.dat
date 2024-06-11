@@ -1,0 +1,16 @@
+Testdata Version: 2
+Testdata from ZEISS INSPECT 2023-Beta2 Language: en Created: 2023-03-16 11:24:07.574033
+0
+1
+TestValues Version: 1
+1
+Datatype: 0
+Plane X +40.00 mm
+volume_section
+3
+image_height
+0 305
+image_type
+0 '32bit_float'
+image_width
+0 295

@@ -1,0 +1,25 @@
+{
+    "display_name": "script_icon_from_file",
+    "folded_blocks": [
+    ],
+    "icon": "testicon_blackonly.svg",
+    "iinspect_condition": "",
+    "interactive": true,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+            ],
+            "type": "command"
+        },
+        "script": "",
+        "submenu": [
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "none",
+    "show_in_iinspect": false,
+    "show_in_menu": true,
+    "uuid": "7584f8c7-4615-4605-99bf-9562e99530e1"
+}

@@ -1,0 +1,15 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "description": "This examples demonstrates how to show progress information to the user while calcualting a scripted element.",
+    "labels": [],
+    "licensing": {
+        "licenses": [],
+        "product-codes": []
+    },
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2025",
+    "tags": [],
+    "title": "ScriptedElementProgress",
+    "uuid": "253feb60-8cb0-4992-a09d-7766db64e1df",
+    "version": "1.0.0"
+}
