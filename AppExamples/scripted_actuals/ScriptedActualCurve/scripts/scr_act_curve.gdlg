@@ -1,0 +1,432 @@
+{
+    "content": [
+        [
+            {
+                "columns": 1,
+                "name": "label",
+                "rows": 1,
+                "text": {
+                    "id": "msg211",
+                    "text": "Element Name",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "basename": {
+                    "id": "msg212",
+                    "text": "Curve",
+                    "translatable": true
+                },
+                "columns": 3,
+                "mode": "manually",
+                "name": "name",
+                "numbering": true,
+                "read_only": false,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::elementname"
+            },
+            {
+            },
+            {
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "maximum_size": -1,
+                "minimum_size": 0,
+                "name": "spacer_1",
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "spacer::horizontal"
+            },
+            {
+                "columns": 3,
+                "name": "label_9",
+                "rows": 1,
+                "text": {
+                    "id": "msg213",
+                    "text": "P(t) =  ( x0 + (j * t + r) * cos(t), y0 + (j * t + r) * sin(t), z0 + k * t)",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+            },
+            {
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "maximum_size": -1,
+                "minimum_size": 0,
+                "name": "spacer",
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "spacer::vertical"
+            },
+            {
+                "columns": 1,
+                "name": "label_1",
+                "rows": 1,
+                "text": {
+                    "id": "msg214",
+                    "text": "X",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "columns": 1,
+                "name": "label_2",
+                "rows": 1,
+                "text": {
+                    "id": "msg215",
+                    "text": "Y",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "columns": 1,
+                "name": "label_3",
+                "rows": 1,
+                "text": {
+                    "id": "msg216",
+                    "text": "Z",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "label_4",
+                "rows": 1,
+                "text": {
+                    "id": "msg217",
+                    "text": "Center",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 1000,
+                "minimum": -1000,
+                "name": "x0",
+                "precision": 2,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": 0
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 1000,
+                "minimum": -1000,
+                "name": "y0",
+                "precision": 2,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": 0
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 1000,
+                "minimum": -1000,
+                "name": "z0",
+                "precision": 2,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": 0
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "label_6",
+                "rows": 1,
+                "text": {
+                    "id": "msg218",
+                    "text": "Radius",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "background_style": "",
+                "columns": 3,
+                "default_precision": false,
+                "maximum": 1000,
+                "minimum": 0,
+                "name": "radius",
+                "precision": 2,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": 1
+            },
+            {
+            },
+            {
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "label_11",
+                "rows": 1,
+                "text": {
+                    "id": "msg219",
+                    "text": "j",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "background_style": "",
+                "columns": 3,
+                "default_precision": false,
+                "maximum": 10,
+                "minimum": -10,
+                "name": "j",
+                "precision": 3,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "",
+                "value": 0.05
+            },
+            {
+            },
+            {
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "label_10",
+                "rows": 1,
+                "text": {
+                    "id": "msg220",
+                    "text": "k",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "background_style": "",
+                "columns": 3,
+                "default_precision": false,
+                "maximum": 1000,
+                "minimum": 0,
+                "name": "k",
+                "precision": 2,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "",
+                "value": 0.1
+            },
+            {
+            },
+            {
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "label_7",
+                "rows": 1,
+                "text": {
+                    "id": "msg221",
+                    "text": "t_min",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 1000,
+                "minimum": 0,
+                "name": "t_min",
+                "precision": 2,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "",
+                "value": 0
+            },
+            {
+                "columns": 1,
+                "name": "label_8",
+                "rows": 1,
+                "text": {
+                    "id": "msg222",
+                    "text": "t_max",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 1000,
+                "minimum": 0,
+                "name": "t_max",
+                "precision": 3,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "",
+                "value": 62.84
+            }
+        ]
+    ],
+    "control": {
+        "id": "OkCancel"
+    },
+    "embedding": "always_toplevel",
+    "position": "center",
+    "size": {
+        "height": 320,
+        "width": 432
+    },
+    "sizemode": "automatic",
+    "style": "",
+    "title": {
+        "id": "msg223",
+        "text": "Scripted Actual Curve ",
+        "translatable": true
+    }
+}

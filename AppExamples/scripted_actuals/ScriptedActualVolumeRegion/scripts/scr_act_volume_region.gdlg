@@ -1,0 +1,319 @@
+{
+  "content": [
+    [
+      {
+        "columns": 1,
+        "maximum_size": -1,
+        "minimum_size": 0,
+        "name": "spacer_1",
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "spacer::horizontal"
+      },
+      {
+        "columns": 1,
+        "data": "AAAAAA==",
+        "file_name": "",
+        "height": 0,
+        "keep_aspect": true,
+        "keep_original_size": true,
+        "name": "image",
+        "rows": 1,
+        "system_image": "system_message_information",
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "image",
+        "use_system_image": true,
+        "width": 0
+      },
+      {
+        "columns": 3,
+        "default_font_family": "",
+        "default_font_size": 0,
+        "name": "text",
+        "rows": 1,
+        "text": {
+          "id": "msg317",
+          "text": "<html><ol><li>Open a project with volume data</li><li>Create a linked volume</li><li>Select the linked volume below</li><li>Adjust the position and dimensions<br/>of the region of interest</li></ol></html>",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "display::text",
+        "wordwrap": false
+      },
+      {},
+      {}
+    ],
+    [
+      {
+        "columns": 2,
+        "name": "label",
+        "rows": 1,
+        "text": {
+          "id": "msg318",
+          "text": "Linked Volume",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "label",
+        "word_wrap": false
+      },
+      {},
+      {
+        "columns": 3,
+        "fast_filter": false,
+        "name": "volume_ele",
+        "rows": 1,
+        "supplier": "custom",
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::point3d"
+      },
+      {},
+      {}
+    ],
+    [
+      {
+        "columns": 2,
+        "maximum_size": -1,
+        "minimum_size": 0,
+        "name": "spacer",
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "spacer::vertical"
+      },
+      {},
+      {
+        "columns": 1,
+        "name": "label_1",
+        "rows": 1,
+        "text": {
+          "id": "msg319",
+          "text": "X",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "label",
+        "word_wrap": false
+      },
+      {
+        "columns": 1,
+        "name": "label_2",
+        "rows": 1,
+        "text": {
+          "id": "msg320",
+          "text": "Y",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "label",
+        "word_wrap": false
+      },
+      {
+        "columns": 1,
+        "name": "label_3",
+        "rows": 1,
+        "text": {
+          "id": "msg321",
+          "text": "Z",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "label",
+        "word_wrap": false
+      }
+    ],
+    [
+      {
+        "columns": 2,
+        "name": "label_4",
+        "rows": 1,
+        "text": {
+          "id": "msg322",
+          "text": "Offset (Voxel CS)",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "label",
+        "word_wrap": false
+      },
+      {},
+      {
+        "background_style": "",
+        "columns": 1,
+        "maximum": 1000,
+        "minimum": -1000,
+        "name": "x0",
+        "precision": 2,
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::number",
+        "unit": "LENGTH",
+        "value": 29
+      },
+      {
+        "background_style": "",
+        "columns": 1,
+        "maximum": 1000,
+        "minimum": -1000,
+        "name": "y0",
+        "precision": 2,
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::number",
+        "unit": "LENGTH",
+        "value": 85
+      },
+      {
+        "background_style": "",
+        "columns": 1,
+        "maximum": 1000,
+        "minimum": -1000,
+        "name": "z0",
+        "precision": 2,
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::number",
+        "unit": "LENGTH",
+        "value": 106
+      }
+    ],
+    [
+      {
+        "columns": 2,
+        "name": "label_6",
+        "rows": 1,
+        "text": {
+          "id": "msg323",
+          "text": "Dimensions (Voxel CS)",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "label",
+        "word_wrap": false
+      },
+      {},
+      {
+        "background_style": "",
+        "columns": 1,
+        "maximum": 1000,
+        "minimum": 0,
+        "name": "dx",
+        "precision": 2,
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::number",
+        "unit": "LENGTH",
+        "value": 24
+      },
+      {
+        "background_style": "",
+        "columns": 1,
+        "maximum": 1000,
+        "minimum": 0,
+        "name": "dy",
+        "precision": 2,
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::number",
+        "unit": "LENGTH",
+        "value": 5
+      },
+      {
+        "background_style": "",
+        "columns": 1,
+        "maximum": 1000,
+        "minimum": 0,
+        "name": "dz",
+        "precision": 2,
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::number",
+        "unit": "LENGTH",
+        "value": 8
+      }
+    ]
+  ],
+  "control": {
+    "id": "OkCancel"
+  },
+  "embedding": "always_toplevel",
+  "position": "center",
+  "size": {
+    "height": 288,
+    "width": 435
+  },
+  "sizemode": "automatic",
+  "style": "",
+  "title": {
+    "id": "msg324",
+    "text": "Scripted Actual Volume Region",
+    "translatable": true
+  }
+}

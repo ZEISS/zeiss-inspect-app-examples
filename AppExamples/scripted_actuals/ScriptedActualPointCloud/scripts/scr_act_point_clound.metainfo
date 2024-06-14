@@ -1,0 +1,25 @@
+{
+    "display_name": "Scripted Actual Point Cloud",
+    "folded_blocks": [
+    ],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": true,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+            ],
+            "type": "command"
+        },
+        "script": "ude.scr_act_point_clound",
+        "submenu": [
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "point_cloud",
+    "show_in_iinspect": false,
+    "show_in_menu": true,
+    "uuid": "3457e91a-4a17-47a9-9f5b-045ba2423c70"
+}

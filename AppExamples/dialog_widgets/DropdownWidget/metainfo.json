@@ -1,0 +1,15 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "description": "This basic example shows how to use the dropdown widget and how to define items at script runtime.",
+    "labels": [],
+    "licensing": {
+        "licenses": [],
+        "product-codes": []
+    },
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2025",
+    "tags": [],
+    "title": "DropdownWidget",
+    "uuid": "7fbc06f5-86af-4b38-8161-965de5956f5f",
+    "version": "1.0.0"
+}

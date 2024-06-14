@@ -1,0 +1,25 @@
+{
+    "display_name": "test_scripted_actuals_offset_point",
+    "folded_blocks": [
+    ],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": false,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+            ],
+            "type": "command"
+        },
+        "script": "userscript.tests__test_scripted_actuals_offset_point",
+        "submenu": [
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "none",
+    "show_in_iinspect": false,
+    "show_in_menu": true,
+    "uuid": "2e2474e6-4f33-44ae-bae4-f28f2976e1c2"
+}

@@ -1,0 +1,425 @@
+{
+    "content": [
+        [
+            {
+                "columns": 2,
+                "name": "label",
+                "rows": 1,
+                "text": {
+                    "id": "msg242",
+                    "text": "Element Name",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+            },
+            {
+                "basename": {
+                    "id": "msg243",
+                    "text": "Cone",
+                    "translatable": true
+                },
+                "columns": 3,
+                "mode": "manually",
+                "name": "name",
+                "numbering": true,
+                "read_only": false,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::elementname"
+            },
+            {
+            },
+            {
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "maximum_size": -1,
+                "minimum_size": 0,
+                "name": "spacer_1",
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "spacer::horizontal"
+            },
+            {
+                "columns": 1,
+                "data": "AAAAAA==",
+                "file_name": "",
+                "height": 0,
+                "keep_aspect": true,
+                "keep_original_size": true,
+                "name": "image",
+                "rows": 1,
+                "system_image": "system_message_warning",
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "image",
+                "use_system_image": true,
+                "width": 0
+            },
+            {
+                "columns": 3,
+                "default_font_family": "",
+                "default_font_size": 0,
+                "name": "text",
+                "rows": 1,
+                "text": {
+                    "id": "msg244",
+                    "text": "<html><p>Due to the internal represenstation of a Cone Element, <br/>the direction of the vector P1 <span style=\"font-size:9pt; font-style:normal;\">$__TOM_SYMBOL_OTHER_ARROW_RIGHT__$</span> P2 is always from <br/>the smaller to the larger circle (Radius 1 &lt; Radius 2).</p><p><span style=\"font-weight:600;\">If you specify Radius 1 > Radius 2 in the creation parameters,<br/>[Point 1; Radius 1] and [Point 2; Radius 2] are swapped <br/>automatically.</span></p></html>",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "display::text",
+                "wordwrap": false
+            },
+            {
+            },
+            {
+            }
+        ],
+        [
+            {
+                "columns": 2,
+                "maximum_size": -1,
+                "minimum_size": 0,
+                "name": "spacer",
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "spacer::vertical"
+            },
+            {
+            },
+            {
+                "columns": 1,
+                "name": "label_1",
+                "rows": 1,
+                "text": {
+                    "id": "msg245",
+                    "text": "X",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "columns": 1,
+                "name": "label_2",
+                "rows": 1,
+                "text": {
+                    "id": "msg246",
+                    "text": "Y",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "columns": 1,
+                "name": "label_3",
+                "rows": 1,
+                "text": {
+                    "id": "msg247",
+                    "text": "Z",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            }
+        ],
+        [
+            {
+                "columns": 2,
+                "name": "label_4",
+                "rows": 1,
+                "text": {
+                    "id": "msg248",
+                    "text": "Point 1",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 1000,
+                "minimum": -1000,
+                "name": "p1_x",
+                "precision": 2,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": 0
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 1000,
+                "minimum": -1000,
+                "name": "p1_y",
+                "precision": 2,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": 0
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 1000,
+                "minimum": -1000,
+                "name": "p1_z",
+                "precision": 2,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": 0
+            }
+        ],
+        [
+            {
+                "columns": 2,
+                "name": "label_5",
+                "rows": 1,
+                "text": {
+                    "id": "msg249",
+                    "text": "Point 2",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 1000,
+                "minimum": -1000,
+                "name": "p2_x",
+                "precision": 2,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": 0
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 1000,
+                "minimum": -1000,
+                "name": "p2_y",
+                "precision": 2,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": 4
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 1000,
+                "minimum": -1000,
+                "name": "p2_z",
+                "precision": 2,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": 0
+            }
+        ],
+        [
+            {
+                "columns": 2,
+                "name": "label_6",
+                "rows": 1,
+                "text": {
+                    "id": "msg250",
+                    "text": "Radius 1",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+            },
+            {
+                "background_style": "",
+                "columns": 3,
+                "default_precision": false,
+                "maximum": 1000,
+                "minimum": 0,
+                "name": "radius_1",
+                "precision": 2,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": 4
+            },
+            {
+            },
+            {
+            }
+        ],
+        [
+            {
+                "columns": 2,
+                "name": "label_7",
+                "rows": 1,
+                "text": {
+                    "id": "msg251",
+                    "text": "Radius 2",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+            },
+            {
+                "background_style": "",
+                "columns": 3,
+                "default_precision": false,
+                "maximum": 1000,
+                "minimum": 0,
+                "name": "radius_2",
+                "precision": 2,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": 2
+            },
+            {
+            },
+            {
+            }
+        ]
+    ],
+    "control": {
+        "id": "OkCancel"
+    },
+    "embedding": "always_toplevel",
+    "position": "center",
+    "size": {
+        "height": 394,
+        "width": 444
+    },
+    "sizemode": "automatic",
+    "style": "",
+    "title": {
+        "id": "msg252",
+        "text": "Scripted Actual Cone",
+        "translatable": true
+    }
+}

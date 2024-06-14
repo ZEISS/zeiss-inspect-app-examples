@@ -1,0 +1,25 @@
+{
+    "display_name": "Scripted Actual Section",
+    "folded_blocks": [
+    ],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": true,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+            ],
+            "type": "command"
+        },
+        "script": "ude.scr_act_section",
+        "submenu": [
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "section",
+    "show_in_iinspect": false,
+    "show_in_menu": true,
+    "uuid": "06d1fc77-5d6a-48a1-9f01-cc4cb07466c9"
+}

@@ -1,0 +1,15 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "description": "This example demonstrates how to create a scalar curve check by a script. Also, the usage of custom coordinate systems in scripted checks is shown.",
+    "labels": [],
+    "licensing": {
+        "licenses": [],
+        "product-codes": []
+    },
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2025",
+    "tags": [],
+    "title": "ScriptedCurveCheck",
+    "uuid": "9839d24c-2728-46c5-9468-fa65e38389bd",
+    "version": "1.0.0"
+}

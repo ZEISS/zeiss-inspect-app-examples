@@ -2,3 +2,6 @@
 .vs
 .vscode
 *.whl
+*.zip
+*.addon
+*.zinspect

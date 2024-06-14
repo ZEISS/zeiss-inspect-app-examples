@@ -1,0 +1,16 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "description": "This example demonstrates how to access the image data of a volume section.",
+    "environment": "ZeissInspectExampleProjects",
+    "labels": [],
+    "licensing": {
+        "licenses": [],
+        "product-codes": []
+    },
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2025",
+    "tags": [],
+    "title": "VolumeSectionImageData",
+    "uuid": "a254652f-75b8-4d77-8be4-04b7c5578194",
+    "version": "1.0.0"
+}

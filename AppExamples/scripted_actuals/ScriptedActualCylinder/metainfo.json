@@ -1,0 +1,15 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "description": "This is an example for a scripted actual \u00e2\u20ac\u02dccylinder\u00e2\u20ac\u2122 element.",
+    "labels": [],
+    "licensing": {
+        "licenses": [],
+        "product-codes": []
+    },
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2025",
+    "tags": [],
+    "title": "ScriptedActualCylinder",
+    "uuid": "3afe4b3c-97b5-49de-b20e-3f4ac9ddf814",
+    "version": "1.0.0"
+}

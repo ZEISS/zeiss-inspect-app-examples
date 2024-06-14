@@ -1,0 +1,16 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "description": "This example shows how to get a list of elements selected in the element explorer and use it in a script dialog. ",
+    "environment": "ZeissInspectExampleProjects",
+    "labels": [],
+    "licensing": {
+        "licenses": [],
+        "product-codes": []
+    },
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2025",
+    "tags": [],
+    "title": "ExplorerSelectedElementsInDialog",
+    "uuid": "7fbfa2c1-8166-4835-9819-56746a63edff",
+    "version": "1.0.0"
+}

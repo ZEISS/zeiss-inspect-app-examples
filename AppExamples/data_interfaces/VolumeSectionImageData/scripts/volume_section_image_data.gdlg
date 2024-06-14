@@ -1,0 +1,54 @@
+{
+    "content": [
+        [
+            {
+                "columns": 1,
+                "name": "label",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Select volume section:",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "fast_filter": false,
+                "name": "section",
+                "rows": 1,
+                "supplier": "custom",
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::point3d"
+            }
+        ]
+    ],
+    "control": {
+        "id": "OkCancel"
+    },
+    "embedding": "",
+    "position": "",
+    "size": {
+        "height": 137,
+        "width": 198
+    },
+    "sizemode": "",
+    "style": "",
+    "title": {
+        "id": "",
+        "text": "Dialog Title",
+        "translatable": true
+    }
+}

@@ -1,0 +1,177 @@
+{
+    "content": [
+        [
+            {
+                "columns": 1,
+                "name": "label",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Element to check",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "columns": 1,
+                "fast_filter": false,
+                "name": "slct_element",
+                "rows": 1,
+                "supplier": "custom",
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::point3d"
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "label_1",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Check name",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "basename": {
+                    "id": "",
+                    "text": "ScrCrv",
+                    "translatable": true
+                },
+                "columns": 1,
+                "mode": "check_like",
+                "name": "elementname",
+                "numbering": false,
+                "read_only": false,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::elementname"
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "label_2",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Unit",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "columns": 1,
+                "name": "unit",
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::unit",
+                "value": "UNIT_NONE"
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "label_3",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Coordinate system",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "columns": 1,
+                "fast_filter": false,
+                "name": "cs",
+                "rows": 1,
+                "supplier": "coordinate_systems",
+                "tooltip": {
+                    "id": "",
+                    "text": "test",
+                    "translatable": true
+                },
+                "type": "input::point3d"
+            }
+        ],
+        [
+            {
+                "columns": 2,
+                "expanded": false,
+                "link_limits": true,
+                "lower": 0,
+                "lower_warn": 0,
+                "mode": "no_tolerance",
+                "name": "tolerances",
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "tolerances",
+                "unit": "UNIT_NONE",
+                "upper": 0,
+                "upper_warn": 0,
+                "use_warn_limit": false
+            },
+            {
+            }
+        ]
+    ],
+    "control": {
+        "id": "OkCancel"
+    },
+    "embedding": "",
+    "position": "",
+    "size": {
+        "height": 230,
+        "width": 257
+    },
+    "sizemode": "",
+    "style": "",
+    "title": {
+        "id": "",
+        "text": "Scripted Curve Check",
+        "translatable": true
+    }
+}

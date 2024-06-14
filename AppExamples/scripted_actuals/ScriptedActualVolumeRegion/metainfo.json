@@ -1,0 +1,16 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "description": "This is an example for a scripted actual \u00e2\u20ac\u02dcvolume region\u00e2\u20ac\u2122 element.",
+    "environment": "ZeissInspectExampleProjects",
+    "labels": [],
+    "licensing": {
+        "licenses": [],
+        "product-codes": []
+    },
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2025",
+    "tags": [],
+    "title": "ScriptedActualVolumeRegion",
+    "uuid": "1b3d4fe5-67d9-41a6-b950-6533fcddd099",
+    "version": "1.0.0"
+}

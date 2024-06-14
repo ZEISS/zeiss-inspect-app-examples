@@ -1,0 +1,15 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "description": "This is an example for a scripted actual \u00e2\u20ac\u02dccone\u00e2\u20ac\u2122 element.",
+    "labels": [],
+    "licensing": {
+        "licenses": [],
+        "product-codes": []
+    },
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2025",
+    "tags": [],
+    "title": "ScriptedActualCone",
+    "uuid": "8174c7e9-52de-4c18-9723-1d0f3ae66607",
+    "version": "1.0.0"
+}

@@ -1,0 +1,16 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "description": "This is an example for a scripted actual \u00e2\u20ac\u02dcsection\u00e2\u20ac\u2122 element.",
+    "environment": "ZeissInspectExampleProjects",
+    "labels": [],
+    "licensing": {
+        "licenses": [],
+        "product-codes": []
+    },
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2025",
+    "tags": [],
+    "title": "ScriptedActualSection",
+    "uuid": "1e1172be-c2f3-43f2-972c-a9abd279c27f",
+    "version": "1.0.0"
+}

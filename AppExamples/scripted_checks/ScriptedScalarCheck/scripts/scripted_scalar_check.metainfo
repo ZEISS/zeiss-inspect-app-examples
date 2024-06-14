@@ -1,0 +1,25 @@
+{
+    "display_name": "My Scalar Check",
+    "folded_blocks": [
+    ],
+    "icon": "",
+    "iinspect_condition": "true",
+    "interactive": true,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+            ],
+            "type": "command"
+        },
+        "script": "ude.scripted_scalar_check",
+        "submenu": [
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "scalar",
+    "script_element_type": "none",
+    "show_in_iinspect": true,
+    "show_in_menu": true,
+    "uuid": "d77d2a1e-bb74-447a-84af-a1cb1f8e49a6"
+}

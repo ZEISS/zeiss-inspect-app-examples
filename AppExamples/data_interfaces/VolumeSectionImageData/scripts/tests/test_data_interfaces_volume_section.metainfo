@@ -1,0 +1,25 @@
+{
+    "display_name": "test_data_interfaces__check_results",
+    "folded_blocks": [
+    ],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": false,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+            ],
+            "type": "command"
+        },
+        "script": "userscript.tests__test_data_interfaces_volume_section",
+        "submenu": [
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "none",
+    "show_in_iinspect": false,
+    "show_in_menu": true,
+    "uuid": "dd2ded0c-202a-4de5-8bd8-8b2528871e5d"
+}

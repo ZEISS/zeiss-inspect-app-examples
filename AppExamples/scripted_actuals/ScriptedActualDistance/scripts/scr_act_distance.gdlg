@@ -1,0 +1,274 @@
+{
+    "content": [
+        [
+            {
+                "columns": 1,
+                "name": "label",
+                "rows": 1,
+                "text": {
+                    "id": "msg193",
+                    "text": "Element Name",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "basename": {
+                    "id": "msg194",
+                    "text": "Distance",
+                    "translatable": true
+                },
+                "columns": 3,
+                "mode": "manually",
+                "name": "name",
+                "numbering": true,
+                "read_only": false,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::elementname"
+            },
+            {
+            },
+            {
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "maximum_size": -1,
+                "minimum_size": 0,
+                "name": "spacer",
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "spacer::vertical"
+            },
+            {
+                "columns": 1,
+                "name": "label_1",
+                "rows": 1,
+                "text": {
+                    "id": "msg195",
+                    "text": "X",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "columns": 1,
+                "name": "label_2",
+                "rows": 1,
+                "text": {
+                    "id": "msg196",
+                    "text": "Y",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "columns": 1,
+                "name": "label_3",
+                "rows": 1,
+                "text": {
+                    "id": "msg197",
+                    "text": "Z",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "label_4",
+                "rows": 1,
+                "text": {
+                    "id": "msg198",
+                    "text": "Point 1",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 1000,
+                "minimum": -1000,
+                "name": "p1_x",
+                "precision": 2,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": 1
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 1000,
+                "minimum": -1000,
+                "name": "p1_y",
+                "precision": 2,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": 2
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 1000,
+                "minimum": -1000,
+                "name": "p1_z",
+                "precision": 2,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": 3
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "label_5",
+                "rows": 1,
+                "text": {
+                    "id": "msg199",
+                    "text": "Point 2",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 1000,
+                "minimum": -1000,
+                "name": "p2_x",
+                "precision": 2,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": -1
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 1000,
+                "minimum": -1000,
+                "name": "p2_y",
+                "precision": 2,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": -2
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 1000,
+                "minimum": -1000,
+                "name": "p2_z",
+                "precision": 2,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": -3
+            }
+        ]
+    ],
+    "control": {
+        "id": "OkCancel"
+    },
+    "embedding": "always_toplevel",
+    "position": "center",
+    "size": {
+        "height": 192,
+        "width": 398
+    },
+    "sizemode": "automatic",
+    "style": "",
+    "title": {
+        "id": "msg200",
+        "text": "Scripted Actual Distance ",
+        "translatable": true
+    }
+}

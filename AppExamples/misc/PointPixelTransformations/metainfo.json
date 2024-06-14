@@ -1,0 +1,16 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "description": "This example demonstrates how to find the 2D pixel coordinates of a 3D point coordinate and vice versa.",
+    "environment": "ZeissInspectExampleProjects",
+    "labels": [],
+    "licensing": {
+        "licenses": [],
+        "product-codes": []
+    },
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2025",
+    "tags": [],
+    "title": "PointPixelTransformations",
+    "uuid": "e5c1a499-b268-4879-a0f7-6ff8385e5de5",
+    "version": "1.0.1"
+}

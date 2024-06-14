@@ -1,0 +1,15 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "description": "This example shows how an icon can be set to a script, whereas the icon itself resides in the App as a resource.",
+    "labels": [],
+    "licensing": {
+        "licenses": [],
+        "product-codes": []
+    },
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2025",
+    "tags": [],
+    "title": "ScriptIcon",
+    "uuid": "d791a884-e890-40bf-a87d-d9bdf806c2c2",
+    "version": "1.0.0"
+}

@@ -1,0 +1,25 @@
+{
+    "display_name": "Scripted Actual Circle",
+    "folded_blocks": [
+    ],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": true,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+            ],
+            "type": "command"
+        },
+        "script": "ude.scr_act_circle",
+        "submenu": [
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "circle",
+    "show_in_iinspect": false,
+    "show_in_menu": true,
+    "uuid": "66cca9a5-abb7-4866-b5eb-d8aac67a4a3f"
+}

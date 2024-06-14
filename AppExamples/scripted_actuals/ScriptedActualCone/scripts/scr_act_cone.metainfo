@@ -1,0 +1,25 @@
+{
+    "display_name": "Scripted Actual Cone",
+    "folded_blocks": [
+    ],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": true,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+            ],
+            "type": "command"
+        },
+        "script": "ude.scr_act_cone",
+        "submenu": [
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "cone",
+    "show_in_iinspect": false,
+    "show_in_menu": true,
+    "uuid": "3ef80e13-625c-4beb-8743-951c3b09710b"
+}

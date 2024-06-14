@@ -1,0 +1,25 @@
+{
+    "display_name": "Scripted Actual Cylinder",
+    "folded_blocks": [
+    ],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": true,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+            ],
+            "type": "command"
+        },
+        "script": "ude.scr_act_cylinder",
+        "submenu": [
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "cylinder",
+    "show_in_iinspect": false,
+    "show_in_menu": true,
+    "uuid": "0007d9a7-160b-4bdd-b69a-92c399d8a36d"
+}

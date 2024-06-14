@@ -1,0 +1,15 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "description": "This is an example for a scripted actual \u00e2\u20ac\u02dcsurface\u00e2\u20ac\u2122 element.",
+    "labels": [],
+    "licensing": {
+        "licenses": [],
+        "product-codes": []
+    },
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2025",
+    "tags": [],
+    "title": "ScriptedActualSurface",
+    "uuid": "afb88e11-9894-494d-9fa5-f69d2124e9a5",
+    "version": "1.0.0"
+}

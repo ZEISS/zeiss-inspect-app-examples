@@ -1,0 +1,167 @@
+{
+  "content": [
+    [
+      {
+        "columns": 1,
+        "maximum_size": -1,
+        "minimum_size": 0,
+        "name": "spacer_1",
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "spacer::horizontal"
+      },
+      {
+        "columns": 1,
+        "data": "AAAAAA==",
+        "file_name": "",
+        "height": 0,
+        "keep_aspect": true,
+        "keep_original_size": true,
+        "name": "image",
+        "rows": 1,
+        "system_image": "system_message_information",
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "image",
+        "use_system_image": true,
+        "width": 0
+      },
+      {
+        "columns": 1,
+        "default_font_family": "",
+        "default_font_size": 0,
+        "name": "text",
+        "rows": 1,
+        "text": {
+          "id": "msg287",
+          "text": "<html><p>Select a section which consists of multiple sub-sections.<br/>From this section, the script will create a new section which<br/>matches the filter criterion.</p></html>",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "display::text",
+        "wordwrap": false
+      }
+    ],
+    [
+      {
+        "columns": 2,
+        "name": "label",
+        "rows": 1,
+        "text": {
+          "id": "msg288",
+          "text": "Section",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "label",
+        "word_wrap": false
+      },
+      {},
+      {
+        "columns": 1,
+        "fast_filter": false,
+        "name": "i_elem",
+        "rows": 1,
+        "supplier": "custom",
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::point3d"
+      }
+    ],
+    [
+      {
+        "columns": 2,
+        "name": "Filter",
+        "rows": 1,
+        "text": {
+          "id": "msg289",
+          "text": "Filter by",
+          "translatable": true
+        },
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "label",
+        "word_wrap": false
+      },
+      {},
+      {
+        "columns": 1,
+        "default": "Max. Length",
+        "items": [
+          {
+            "id": "msg290",
+            "text": "Min. Length",
+            "translatable": true
+          },
+          {
+            "id": "msg291",
+            "text": "Max. Length",
+            "translatable": true
+          }
+        ],
+        "name": "i_mode",
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "input::list"
+      }
+    ],
+    [
+      {
+        "columns": 3,
+        "maximum_size": -1,
+        "minimum_size": 0,
+        "name": "spacer",
+        "rows": 1,
+        "tooltip": {
+          "id": "",
+          "text": "",
+          "translatable": true
+        },
+        "type": "spacer::vertical"
+      },
+      {},
+      {}
+    ]
+  ],
+  "control": {
+    "id": "OkCancel"
+  },
+  "embedding": "always_toplevel",
+  "position": "automatic",
+  "size": {
+    "height": 217,
+    "width": 402
+  },
+  "sizemode": "automatic",
+  "style": "",
+  "title": {
+    "id": "msg292",
+    "text": "Scripted Actual Section",
+    "translatable": true
+  }
+}

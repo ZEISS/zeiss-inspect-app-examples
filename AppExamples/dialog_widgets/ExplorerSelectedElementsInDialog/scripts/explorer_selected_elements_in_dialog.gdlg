@@ -1,0 +1,93 @@
+{
+    "content": [
+        [
+            {
+                "columns": 1,
+                "name": "label",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Selected actuals:",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "default_font_family": "",
+                "default_font_size": 0,
+                "name": "text",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "display::text",
+                "wordwrap": false
+            }
+        ],
+        [
+            {
+                "button_type": "push",
+                "columns": 1,
+                "icon": "AAAAAA==",
+                "icon_file_name": "",
+                "icon_size": {
+                    "value": "icon"
+                },
+                "icon_system_size": {
+                    "value": "default"
+                },
+                "icon_system_type": {
+                    "value": "ok"
+                },
+                "icon_type": {
+                    "value": "none"
+                },
+                "name": "refresh",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Refresh",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "button::pushbutton"
+            }
+        ]
+    ],
+    "control": {
+        "id": "OkCancel"
+    },
+    "embedding": "",
+    "position": "",
+    "size": {
+        "height": 213,
+        "width": 198
+    },
+    "sizemode": "",
+    "style": "",
+    "title": {
+        "id": "",
+        "text": "Dialog Title",
+        "translatable": true
+    }
+}

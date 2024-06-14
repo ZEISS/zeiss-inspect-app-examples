@@ -1,0 +1,15 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "description": "A simple example showing the usage of script resources.",
+    "labels": [],
+    "licensing": {
+        "licenses": [],
+        "product-codes": []
+    },
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2025",
+    "tags": [],
+    "title": "ScriptResources",
+    "uuid": "ffb0632f-850c-418b-a44a-2fa3b0187b78",
+    "version": "1.0.0"
+}
