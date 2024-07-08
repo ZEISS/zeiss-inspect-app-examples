@@ -11,19 +11,20 @@
 | misc | DialogReopenExample | This examples demonstrates, how a dialog can be closed from its own handler, just to be opened again. |
 | misc | PointPixelTransformations | This example demonstrates how to find the 2D pixel coordinates of a 3D point coordinate and vice versa. |
 | projects | ExampleProjects | ZEISS INSPECT Example Projects |
-| scripted_actuals | ScriptedActualCircle | This is an example for a scripted actual â€˜circleâ€™ element. |
-| scripted_actuals | ScriptedActualCone | This is an example for a scripted actual â€˜coneâ€™ element. |
-| scripted_actuals | ScriptedActualCurve | This is an example for a scripted actual â€˜curveâ€™ element. |
-| scripted_actuals | ScriptedActualDistance | This is an example for a scripted actual â€˜distanceâ€™ element. |
+| scripted_actuals | ScriptedActualCircle | This is an example for a scripted actual ‘circle’ element. |
+| scripted_actuals | ScriptedActualCone | This is an example for a scripted actual ‘cone’ element. |
+| scripted_actuals | ScriptedActualCurve | This is an example for a scripted actual ‘curve’ element. |
+| scripted_actuals | ScriptedActualCylinder | This is an example for a scripted actual ‘cylinder’ element. |
+| scripted_actuals | ScriptedActualDistance | This is an example for a scripted actual ‘distance’ element. |
 | scripted_actuals | ScriptedActualPoint | These are two examples for scripted actual points, which serve as an introduction to the concept of scripted actual elements. |
-| scripted_actuals | ScriptedActualPointCloud | This is an example for a scripted actual â€˜point cloudâ€™ element. |
-| scripted_actuals | ScriptedActualSection | This is an example for a scripted actual â€˜sectionâ€™ element. |
-| scripted_actuals | ScriptedActualSurface | This is an example for a scripted actual â€˜surfaceâ€™ element. |
-| scripted_actuals | ScriptedActualSurfaceCurve | This is an example for a scripted actual â€˜surface curveâ€™ element. |
-| scripted_actuals | ScriptedActualVolume | This is an example for a scripted actual â€˜volumeâ€™ element. |
-| scripted_actuals | ScriptedActualVolumeDefects | This is an example for a scripted actual â€˜volume defectsâ€™ element. |
-| scripted_actuals | ScriptedActualVolumeRegion | This is an example for a scripted actual â€˜volume regionâ€™ element. |
-| scripted_actuals | ScriptedActualVolumeSection | This is an example for a scripted actual â€˜volume sectionâ€™ element. |
+| scripted_actuals | ScriptedActualPointCloud | This is an example for a scripted actual ‘point cloud’ element. |
+| scripted_actuals | ScriptedActualSection | This is an example for a scripted actual ‘section’ element. |
+| scripted_actuals | ScriptedActualSurface | This is an example for a scripted actual ‘surface’ element. |
+| scripted_actuals | ScriptedActualSurfaceCurve | This is an example for a scripted actual ‘surface curve’ element. |
+| scripted_actuals | ScriptedActualVolume | This is an example for a scripted actual ‘volume’ element. |
+| scripted_actuals | ScriptedActualVolumeDefects | This is an example for a scripted actual ‘volume defects’ element. |
+| scripted_actuals | ScriptedActualVolumeRegion | This is an example for a scripted actual ‘volume region’ element. |
+| scripted_actuals | ScriptedActualVolumeSection | This is an example for a scripted actual ‘volume section’ element. |
 | scripted_actuals | ScriptedElementProgress | This examples demonstrates how to show progress information to the user while calcualting a scripted element. |
 | scripted_actuals | TrimeshDeformMesh | This example demonstrates how to generate a custom surface element using a scripted element. The example script accesses mesh information from an existing mesh in the project and adds a random deformation to each point. |
 | scripted_checks | ScriptedCurveCheck | This example demonstrates how to create a scalar curve check by a script. Also, the usage of custom coordinate systems in scripted checks is shown. |
