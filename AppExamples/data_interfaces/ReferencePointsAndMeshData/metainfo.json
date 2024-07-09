@@ -2,11 +2,15 @@
     "author": "Carl Zeiss GOM Metrology GmbH",
     "description": "This example demonstrates how to access the reference points in a measurement and the mesh from Python.",
     "environment": "ZeissInspectExampleProjects",
+    "example-projects": ["zeiss_part_test_project"],
     "labels": [],
     "licensing": {
         "licenses": [],
         "product-codes": []
     },
+    "references": [
+        ["HowTo", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/python_api_introduction/python_api_introduction.html#element-data-interfaces"]
+    ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2025",
     "tags": [],
