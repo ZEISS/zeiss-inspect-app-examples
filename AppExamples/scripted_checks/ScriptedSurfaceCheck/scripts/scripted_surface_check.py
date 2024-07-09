@@ -9,6 +9,7 @@
 # ---
 
 import gom
+import gom.api.scripted_checks_util
 import numpy as np
 
 #
