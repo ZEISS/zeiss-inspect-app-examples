@@ -10,13 +10,25 @@ EXAMPLE_PROJECTS = {
     'volume_test_project': {'index': 3}
 }
 
-APP_OVERVIEW  = "| Category | App | Description | Example Projects | References |\n"
-APP_OVERVIEW += "| -------- | --- | ----------- | ---------------- | ---------- |\n"
+APP_OVERVIEW = "# ZEISS INSPECT App Examples Overview\n"
+
+TABLE_HEADER  = "| App | Description | Example Projects | References |\n"
+TABLE_HEADER += "| --- | ----------- | ---------------- | ---------- |\n"
+#APP_OVERVIEW  = "| Category | App | Description | Example Projects | References |\n"
+#APP_OVERVIEW += "| -------- | --- | ----------- | ---------------- | ---------- |\n"
 
 categories = os.listdir(BASEDIR)
 for category in categories:
+    if category == '.gitignore':
+        continue
     #print(' Category:', category)
     #print(os.path.abspath(category))
+
+    # Category heading
+    APP_OVERVIEW += f"\n## {category}\n\n"
+
+    APP_OVERVIEW += TABLE_HEADER
+
     if os.path.isdir(os.path.abspath(os.path.join(BASEDIR, category))):
         apps = os.path.join(BASEDIR, category)
         #print(apps)
@@ -27,11 +39,11 @@ for category in categories:
                 metainfo = json.load(f)
                 #print(metainfo)
                 #print(metainfo['description'])
-                view = f"{category}/{app}/doc"
+                view = f"{category}/{app}/doc/Documentation.md"
                 download = f"https://software-store.zeiss.com/products/apps/{metainfo['title']}"
 
                 # Category & Title, links to source code and App download 
-                APP_OVERVIEW += f"| {category} | {metainfo['title']}<br>[view]({view}) / [download]({download}) | "
+                APP_OVERVIEW += f"| {metainfo['title']}<br>[view]({view}) / [download]({download}) | "
 
                 # Description
                 APP_OVERVIEW += f"{metainfo['description'].encode('windows-1252').decode('utf-8')} |"
@@ -53,7 +65,7 @@ for category in categories:
                 APP_OVERVIEW += "\n"
 
 # Table legend
-APP_OVERVIEW += "\nExample projects\n\n"
+APP_OVERVIEW += "\n## Example projects\n\n"
 
 for example in EXAMPLE_PROJECTS:
     APP_OVERVIEW += f"{EXAMPLE_PROJECTS[example]['index']}) {example}\n"
