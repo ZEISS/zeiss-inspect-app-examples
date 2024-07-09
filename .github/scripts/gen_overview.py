@@ -52,7 +52,7 @@ for category in categories:
                 if 'example-projects' in metainfo:
                     for example in metainfo['example-projects']:
                         if example in EXAMPLE_PROJECTS:
-                            APP_OVERVIEW += f" {EXAMPLE_PROJECTS[example]['index']}) "
+                            APP_OVERVIEW += f" [{EXAMPLE_PROJECTS[example]['index']})](#example-projects) "
                 APP_OVERVIEW += " | "
                 
                 # References
@@ -64,10 +64,17 @@ for category in categories:
 
                 APP_OVERVIEW += "\n"
 
-# Table legend
+# Example projects
 APP_OVERVIEW += "\n## Example projects\n\n"
 
 for example in EXAMPLE_PROJECTS:
     APP_OVERVIEW += f"{EXAMPLE_PROJECTS[example]['index']}) {example}\n"
+
+APP_OVERVIEW += "\n[Download Example Projects App](https://software-store.zeiss.com/products/apps/ExampleProjects)"
+
+# Related links 
+APP_OVERVIEW += "\n## Related\n\n"
+APP_OVERVIEW += "* [ZEISS IQS GitHub &mdash; App Development Documentation](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/index.html)\n"
+APP_OVERVIEW += "* [ZEISS Quality Software Store](https://software-store.zeiss.com)\n"
 
 print(APP_OVERVIEW)
