@@ -1,5 +1,9 @@
 # ZEISS INSPECT App Examples Overview
 
+<div style="background-color: #ffcc00; border-radius: 10px; padding: 5px; display: inline-block;">
+    Colored Text Background with Rounded Edges
+</div>
+
 ## data_interfaces
 
 | App | Description | Example Projects | References | Tags |
