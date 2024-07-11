@@ -38,6 +38,8 @@ def gen_table(category):
     | --- | ----------- | ---------------- | ---------- | ---- |
     """
 
+    global tag_index
+    
     # App table header
     # Using non-breaking spaces (&nbsp;) to enforce a common/minimum column width
     md  = f"| {24*'&nbsp;'}App{24*'&nbsp;'} | {36*'&nbsp;'}Description{36*'&nbsp;'} | Example Projects | References | {7*'&nbsp;'}Tags{7*'&nbsp;'} |\n"
@@ -77,9 +79,9 @@ def gen_table(category):
 
             # Tags
             for tag in metainfo['tags']:
-                if not tag in tagIndex:
-                    tagIndex[tag] = []
-                tagIndex[tag].append(title)
+                if not tag in tag_index:
+                    tag_index[tag] = []
+                tag_index[tag].append(title)
                 badge = tag.replace('-', '--')
                 if sphinx_doc:
                     md += f"<a href=\"#{tag}\">![Static Badge](https://img.shields.io/badge/{badge}-blue)</a><br>"
@@ -109,6 +111,7 @@ def gen_boilerplate(category):
             ...
     """
 
+    global tag_index
     md = ""
 
     apps = os.path.join(BASEDIR, category)
@@ -153,9 +156,9 @@ def gen_boilerplate(category):
                 md += ":Tags:\n"
                 md += "    "
                 for tag in metainfo['tags']:
-                    if not tag in tagIndex:
-                        tagIndex[tag] = []
-                    tagIndex[tag].append(title)
+                    if not tag in tag_index:
+                        tag_index[tag] = []
+                    tag_index[tag].append(title)
                     badge = tag.replace('-', '--')
                     if sphinx_doc:
                         md += f"<a href=\"#{tag}\">![Static Badge](https://img.shields.io/badge/{badge}-blue)</a> "
@@ -187,10 +190,11 @@ if __name__ == '__main__':
     args = parser.parse_args()
     sphinx_doc = args.sphinx_doc
 
-    APP_OVERVIEW = ""
+    tag_index = {}
+    app_overview = ""
 
     if sphinx_doc:
-        APP_OVERVIEW += \
+        app_overview += \
 f"""---
 myst:
     html_meta:
@@ -199,9 +203,7 @@ myst:
 ---
 """
 
-    APP_OVERVIEW += f"# {args.title}\n"
-
-    tagIndex = {}
+    app_overview += f"# {args.title}\n"
 
     categories = os.listdir(BASEDIR)
     for category in categories:
@@ -211,49 +213,49 @@ myst:
         if os.path.isdir(os.path.abspath(os.path.join(BASEDIR, category))):
 
             # Category heading
-            APP_OVERVIEW += f"\n## {category} &mdash; {CATEGORY_DESCRIPTIONS[category]}\n\n"
+            app_overview += f"\n## {category} &mdash; {CATEGORY_DESCRIPTIONS[category]}\n\n"
 
             if sphinx_doc:
-                APP_OVERVIEW += gen_boilerplate(category)
+                app_overview += gen_boilerplate(category)
             else:
-                APP_OVERVIEW += gen_table(category)
+                app_overview += gen_table(category)
 
 
     # Example projects
-    APP_OVERVIEW += "\n## Example projects\n\n"
+    app_overview += "\n## Example projects\n\n"
 
     for example, infos in EXAMPLE_PROJECTS.items():
         if sphinx_doc:
-            APP_OVERVIEW += f"* {example}\n"
+            app_overview += f"* {example}\n"
         else:
-            APP_OVERVIEW += f"{infos['index']}) {example}\n"
+            app_overview += f"{infos['index']}) {example}\n"
 
-    APP_OVERVIEW += "\n[Download Example Projects App](https://software-store.zeiss.com/products/apps/ExampleProjects)"
+    app_overview += "\n[Download Example Projects App](https://software-store.zeiss.com/products/apps/ExampleProjects)"
 
 
     # Tag index
-    APP_OVERVIEW += "\n\n## Tag Index\n"
+    app_overview += "\n\n## Tag Index\n"
 
-    for tag in sorted(tagIndex):
-        #APP_OVERVIEW += f"\n### {tag}:\n"
+    for tag in sorted(tag_index):
+        #app_overview += f"\n### {tag}:\n"
         badge = tag.replace('-', '--')
         if sphinx_doc:
-            APP_OVERVIEW += f"\n### <a id=\"{tag}\">![Static Badge](https://img.shields.io/badge/{badge}-blue)<a>\n\n"
+            app_overview += f"\n### <a id=\"{tag}\">![Static Badge](https://img.shields.io/badge/{badge}-blue)<a>\n\n"
         else:
-            APP_OVERVIEW += f"\n### ![Static Badge](https://img.shields.io/badge/{badge}-blue)\n\n"
+            app_overview += f"\n### ![Static Badge](https://img.shields.io/badge/{badge}-blue)\n\n"
 
-        for app in sorted(tagIndex[tag]):
+        for app in sorted(tag_index[tag]):
             if sphinx_doc:
-                APP_OVERVIEW += f"* <a href=\"#{app}\">{app}</a>\n"
+                app_overview += f"* <a href=\"#{app}\">{app}</a>\n"
             else:
-                APP_OVERVIEW += f"* [{app}](#{app})\n"
-        APP_OVERVIEW += "\n"
+                app_overview += f"* [{app}](#{app})\n"
+        app_overview += "\n"
 
 
     # Related links 
-    APP_OVERVIEW += "\n## Related\n\n"
-    APP_OVERVIEW += "* [ZEISS IQS GitHub &mdash; App Development Documentation](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/index.html)\n"
-    APP_OVERVIEW += "* [ZEISS Quality Software Store](https://software-store.zeiss.com)\n"
+    app_overview += "\n## Related\n\n"
+    app_overview += "* [ZEISS IQS GitHub &mdash; App Development Documentation](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/index.html)\n"
+    app_overview += "* [ZEISS Quality Software Store](https://software-store.zeiss.com)\n"
 
 
-    print(APP_OVERVIEW)
+    print(app_overview)
