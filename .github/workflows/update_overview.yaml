@@ -1,0 +1,66 @@
+name: Update overview and create PR
+on:
+  workflow_dispatch:
+jobs:
+  create_file_and_pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set branches
+        id: set_branches
+        run:
+          |
+          CURRENT_BRANCH=${GITHUB_REF#refs/*/}
+          echo "Current branch: ${CURRENT_BRANCH}"
+          TARGET_BRANCH=${GITHUB_REF#refs/*/}
+          echo "Target branch: ${TARGET_BRANCH}"
+          echo "current_branch=${CURRENT_BRANCH}" >> $GITHUB_OUTPUT
+          echo "target_branch=${TARGET_BRANCH}" >> $GITHUB_OUTPUT
+      - name: Set reviewers
+        id: reviewers
+        run:
+          |
+          REVIEWERS="fblankenburgzeiss,mprinkezs" # separate by commas
+          echo "Reviewers: ${REVIEWERS}"
+          echo "reviewers=${REVIEWERS}" >> $GITHUB_OUTPUT
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Check out the repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ format('{0}', steps.set_branches.outputs.current_branch) }}
+          fetch-depth: 0 # Fetch all history for all branches and tags
+
+      - name: Create a new branch
+        run: |
+          git checkout -b overview-update || git checkout overview-update
+        
+      - name: Update overview
+        run: |
+          python .github/scripts/gen_overview.py > AppExamples/README.md
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add AppExamples/README.md
+          git commit -m "Updated AppExamples/README.md"
+          git push origin +overview-update:ref/heads/overview-update
+
+      - name: Create Pull Request
+        uses: devops-infra/action-pull-request@v0.5.5
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          #source_branch: apidoc-update-main
+          target_branch: ${{ format('{0}', steps.set_branches.outputs.target_branch) }}
+          title: ${{ format('Updated App Examples Overview (AppExamples/README.md) ({0})', steps.set_branches.outputs.target_branch) }}
+          #template: .github/PULL_REQUEST_TEMPLATE.md
+          body: "**Automated pull request**"
+          reviewer: ${{ format('{0}', steps.reviewers.outputs.reviewers) }}
+          #assignee: octocat
+          label: documentation
+          #milestone: My milestone
+          #draft: true
+          #old_string: "<!-- Add your description here -->"
+          #new_string: "** Automatic pull request**"
+          get_diff: true
+          ignore_users: "dependabot"
+          allow_no_diff: false
