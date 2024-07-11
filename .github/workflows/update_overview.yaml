@@ -29,18 +29,15 @@ jobs:
       - name: Check out the repository
         uses: actions/checkout@v4
         with:
-          #ref: ${{ github.event.inputs.branch_name }}
           ref: ${{ format('{0}', steps.set_branches.outputs.current_branch) }}
           fetch-depth: 0 # Fetch all history for all branches and tags
 
       - name: Create a new branch
         run: |
-          #git checkout -b ${{ github.event.inputs.branch_name }} || git checkout ${{ github.event.inputs.branch_name }}
           git checkout -b overview-update || git checkout overview-update
         
       - name: Update overview
         run: |
-          # echo "${{ github.event.inputs.file_content }}" > ${{ github.event.inputs.file_path }}
           python .github/scripts/gen_overview.py > AppExamples/README.md
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
