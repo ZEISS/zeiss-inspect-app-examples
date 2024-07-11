@@ -30,30 +30,28 @@ EXAMPLE_PROJECTS = {
     'volume_test_project': {'index': 3}
 }
 
-def gen_table(category):
+def gen_table(_category, _tag_index):
     """
     Generate App overview as table
 
     | App | Description | Example Projects | References | Tags |
     | --- | ----------- | ---------------- | ---------- | ---- |
     """
-
-    global tag_index
     
     # App table header
     # Using non-breaking spaces (&nbsp;) to enforce a common/minimum column width
     md  = f"| {24*'&nbsp;'}App{24*'&nbsp;'} | {36*'&nbsp;'}Description{36*'&nbsp;'} | Example Projects | References | {7*'&nbsp;'}Tags{7*'&nbsp;'} |\n"
     md +=  "| --- | ----------- | ---------------- | ---------- | ---- |\n"
 
-    apps = os.path.join(BASEDIR, category)
-    for app in os.listdir(apps):
-        metainfo_path = os.path.abspath(os.path.join(BASEDIR, category, app, 'metainfo.json'))
+    apps = os.path.join(BASEDIR, _category)
+    for _app in os.listdir(apps):
+        metainfo_path = os.path.abspath(os.path.join(BASEDIR, _category, _app, 'metainfo.json'))
         with open(metainfo_path, 'r', encoding="utf-8") as f:
             metainfo = json.load(f)
             if sphinx_doc:
-                view = f"https://github.com/ZEISS/zeiss-inspect-app-examples/blob/dev/AppExamples/{category}/{app}/doc/Documentation.md"
+                view = f"https://github.com/ZEISS/zeiss-inspect-app-examples/blob/dev/AppExamples/{_category}/{_app}/doc/Documentation.md"
             else:
-                view = f"{category}/{app}/doc/Documentation.md"
+                view = f"{_category}/{_app}/doc/Documentation.md"
             download = f"https://software-store.zeiss.com/products/apps/{metainfo['title']}"
 
             # Title, links to source code and App download
@@ -65,9 +63,9 @@ def gen_table(category):
 
             # Example projects
             if 'example-projects' in metainfo:
-                for example in metainfo['example-projects']:
-                    if example in EXAMPLE_PROJECTS:
-                        md += f" [{EXAMPLE_PROJECTS[example]['index']})](#example-projects) "
+                for _example in metainfo['example-projects']:
+                    if _example in EXAMPLE_PROJECTS:
+                        md += f" [{EXAMPLE_PROJECTS[_example]['index']})](#example-projects) "
             md += " | "
 
             # References
@@ -78,21 +76,21 @@ def gen_table(category):
             md += " | "
 
             # Tags
-            for tag in metainfo['tags']:
-                if not tag in tag_index:
-                    tag_index[tag] = []
-                tag_index[tag].append(title)
-                badge = tag.replace('-', '--')
+            for _tag in metainfo['tags']:
+                if not _tag in _tag_index:
+                    _tag_index[_tag] = []
+                _tag_index[_tag].append(title)
+                _badge = _tag.replace('-', '--')
                 if sphinx_doc:
-                    md += f"<a href=\"#{tag}\">![Static Badge](https://img.shields.io/badge/{badge}-blue)</a><br>"
+                    md += f"<a href=\"#{_tag}\">![Static Badge](https://img.shields.io/badge/{_badge}-blue)</a><br>"
                 else:
-                    md += f"[![Static Badge](https://img.shields.io/badge/{badge}-blue)](#{tag})<br>"
+                    md += f"[![Static Badge](https://img.shields.io/badge/{_badge}-blue)](#{_tag})<br>"
             md += " |"
 
             md += "\n"
-    return md
+    return md, _tag_index
 
-def gen_boilerplate(category):
+def gen_boilerplate(_category, _tag_index):
     """
         Generate App overview as table
 
@@ -111,18 +109,17 @@ def gen_boilerplate(category):
             ...
     """
 
-    global tag_index
     md = ""
 
-    apps = os.path.join(BASEDIR, category)
-    for app in os.listdir(apps):
-        metainfo_path = os.path.abspath(os.path.join(BASEDIR, category, app, 'metainfo.json'))
+    apps = os.path.join(BASEDIR, _category)
+    for _app in os.listdir(apps):
+        metainfo_path = os.path.abspath(os.path.join(BASEDIR, _category, _app, 'metainfo.json'))
         with open(metainfo_path, 'r', encoding="utf-8") as f:
             metainfo = json.load(f)
             if sphinx_doc:
-                view = f"https://github.com/ZEISS/zeiss-inspect-app-examples/blob/dev/AppExamples/{category}/{app}/doc/Documentation.md"
+                view = f"https://github.com/ZEISS/zeiss-inspect-app-examples/blob/dev/AppExamples/{_category}/{_app}/doc/Documentation.md"
             else:
-                view = f"{category}/{app}/doc/Documentation.md"
+                view = f"{_category}/{_app}/doc/Documentation.md"
             download = f"https://software-store.zeiss.com/products/apps/{metainfo['title']}"
 
             # Title, links to source code and App download
@@ -138,9 +135,9 @@ def gen_boilerplate(category):
             # Example projects
             if 'example-projects' in metainfo:
                 md += ":Example Projects:\n"
-                for example in metainfo['example-projects']:
-                    if example in EXAMPLE_PROJECTS:
-                        md += f"    [{example}](#example-projects)\n"
+                for _example in metainfo['example-projects']:
+                    if _example in EXAMPLE_PROJECTS:
+                        md += f"    [{_example}](#example-projects)\n"
                 md += "\n"
             
             # References
@@ -155,18 +152,18 @@ def gen_boilerplate(category):
             if len(metainfo['tags']):
                 md += ":Tags:\n"
                 md += "    "
-                for tag in metainfo['tags']:
-                    if not tag in tag_index:
-                        tag_index[tag] = []
-                    tag_index[tag].append(title)
-                    badge = tag.replace('-', '--')
+                for _tag in metainfo['tags']:
+                    if not _tag in _tag_index:
+                        _tag_index[_tag] = []
+                    _tag_index[_tag].append(title)
+                    _badge = _tag.replace('-', '--')
                     if sphinx_doc:
-                        md += f"<a href=\"#{tag}\">![Static Badge](https://img.shields.io/badge/{badge}-blue)</a> "
+                        md += f"<a href=\"#{_tag}\">![Static Badge](https://img.shields.io/badge/{_badge}-blue)</a> "
                     else:
-                        md += f"[![Static Badge](https://img.shields.io/badge/{badge}-blue)](#{tag})<br> "
+                        md += f"[![Static Badge](https://img.shields.io/badge/{_badge}-blue)](#{_tag})<br> "
 
                 md += "\n"
-    return md
+    return md, _tag_index
 
 # ----------------------------------------------------------------------------
 # MAIN
@@ -190,8 +187,8 @@ if __name__ == '__main__':
     args = parser.parse_args()
     sphinx_doc = args.sphinx_doc
 
-    tag_index = {}
     app_overview = ""
+    tagIndex = {}
 
     if sphinx_doc:
         app_overview += \
@@ -216,10 +213,11 @@ myst:
             app_overview += f"\n## {category} &mdash; {CATEGORY_DESCRIPTIONS[category]}\n\n"
 
             if sphinx_doc:
-                app_overview += gen_boilerplate(category)
+                tmp, tagIndex = gen_boilerplate(category, tagIndex)
             else:
-                app_overview += gen_table(category)
-
+                tmp, tagIndex = gen_table(category, tagIndex)
+            
+            app_overview += tmp
 
     # Example projects
     app_overview += "\n## Example projects\n\n"
@@ -236,7 +234,7 @@ myst:
     # Tag index
     app_overview += "\n\n## Tag Index\n"
 
-    for tag in sorted(tag_index):
+    for tag in sorted(tagIndex):
         #app_overview += f"\n### {tag}:\n"
         badge = tag.replace('-', '--')
         if sphinx_doc:
@@ -244,7 +242,7 @@ myst:
         else:
             app_overview += f"\n### ![Static Badge](https://img.shields.io/badge/{badge}-blue)\n\n"
 
-        for app in sorted(tag_index[tag]):
+        for app in sorted(tagIndex[tag]):
             if sphinx_doc:
                 app_overview += f"* <a href=\"#{app}\">{app}</a>\n"
             else:
