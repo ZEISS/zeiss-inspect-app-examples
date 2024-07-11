@@ -43,7 +43,7 @@ jobs:
           git config --local user.name "GitHub Action"
           git add AppExamples/README.md
           git commit -m "Updated AppExamples/README.md"
-          git push origin +overview-update:ref/heads/overview-update
+          git push origin +overview-update:overview-update
 
       - name: Create Pull Request
         uses: devops-infra/action-pull-request@v0.5.5
