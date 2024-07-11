@@ -1,0 +1,33 @@
+name: Update overview and create PR
+on:
+  workflow_dispatch:
+jobs:
+  create_file_and_pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Check out the repository
+        uses: actions/checkout@v4
+        with:
+          #ref: ${{ github.event.inputs.branch_name }}
+          ref: main
+          fetch-depth: 0 # Fetch all history for all branches and tags
+
+      - name: Create a new branch
+        run: |
+          #git checkout -b ${{ github.event.inputs.branch_name }} || git checkout ${{ github.event.inputs.branch_name }}
+          git checkout -b overview-update || git checkout overview-update
+        
+      - name: Create a new file 
+        run: |
+          # echo "${{ github.event.inputs.file_content }}" > ${{ github.event.inputs.file_path }}
+          python .github/scripts/gen_overview > AppExamples/README.md
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add AppExamples/README.md
+          git commit -m "Updated AppExamples/README.md"
+          #git push --set-upstream origin ${{ github.event.inputs.branch_name }}
+          git push --set-upstream origin overview-update
