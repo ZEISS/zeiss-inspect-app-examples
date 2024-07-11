@@ -47,9 +47,9 @@ jobs:
           git add AppExamples/README.md
           git commit -m "Updated AppExamples/README.md"
           #git push --set-upstream origin ${{ github.event.inputs.branch_name }}
-          git branch --track origin overview-update
-          git pull origin overview-update
-          git push --set-upstream origin overview-update
+          #git branch --track origin overview-update
+          #git pull origin overview-update
+          git push +overview-update:ref/heads/overview-update
           #git push --set-upstream origin overview-update
 
       #- name: Create Pull Request
