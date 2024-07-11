@@ -88,7 +88,7 @@ def gen_table(category):
             md += " |"
 
             md += "\n"
-            return md
+    return md
 
 def gen_boilerplate(category):
     """
