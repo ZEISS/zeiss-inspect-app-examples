@@ -24,7 +24,7 @@ jobs:
       - name: Create a new file 
         run: |
           # echo "${{ github.event.inputs.file_content }}" > ${{ github.event.inputs.file_path }}
-          python .github/scripts/gen_overview > AppExamples/README.md
+          python .github/scripts/gen_overview.py > AppExamples/README.md
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add AppExamples/README.md
