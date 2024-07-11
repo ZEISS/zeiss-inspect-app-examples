@@ -10,17 +10,6 @@ import os
 import json
 import argparse
 
-#
-# Parse command line arguments
-#
-parser = argparse.ArgumentParser()
-
-# autopep8: off
-parser.add_argument('--sphinx-doc', action='store_true', help='Select sphinx_doc layout')
-# autopep8: on
-
-args = parser.parse_args()
-sphinx_doc = args.sphinx_doc
 
 BASEDIR = 'AppExamples'
 
@@ -40,23 +29,6 @@ EXAMPLE_PROJECTS = {
     'zeiss_part_test_measurement': {'index': 2},
     'volume_test_project': {'index': 3}
 }
-
-APP_OVERVIEW = ""
-
-if sphinx_doc:
-    APP_OVERVIEW += \
-"""---
-myst:
-   html_meta:
-      "description": "Examples for using the ZEISS INSPECT 2023 App Python API"
-      "keywords": "Metrology, ZEISS INSPECT, Python API, GOM API, Scripting, Add-ons, Apps, Examples"
----
-"""
-
-APP_OVERVIEW += "# ZEISS INSPECT App Examples Overview\n"
-
-
-tagIndex = {}
 
 def gen_table(category):
     """
@@ -193,57 +165,92 @@ def gen_boilerplate(category):
                 md += "\n"
     return md
 
-categories = os.listdir(BASEDIR)
-for category in categories:
-    if category == '.gitignore':
-        continue
+# ----------------------------------------------------------------------------
+# MAIN
+#
+if __name__ == '__main__':
+    #
+    # Parse command line arguments
+    #
+    parser = argparse.ArgumentParser()
 
-    if os.path.isdir(os.path.abspath(os.path.join(BASEDIR, category))):
+    # autopep8: off
+    parser.add_argument('--sphinx-doc', action='store_true', help='Select sphinx_doc layout')
+    parser.add_argument('--title', type=str,
+                        default='ZEISS INSPECT App Examples Overview',
+                        help='Python wheelhouse directory')
+    # autopep8: on
 
-        # Category heading
-        APP_OVERVIEW += f"\n## {category} &mdash; {CATEGORY_DESCRIPTIONS[category]}\n\n"
+    args = parser.parse_args()
+    sphinx_doc = args.sphinx_doc
 
-        if sphinx_doc:
-            APP_OVERVIEW += gen_boilerplate(category)
-        else:
-            APP_OVERVIEW += gen_table(category)
+    APP_OVERVIEW = ""
 
-
-# Example projects
-APP_OVERVIEW += "\n## Example projects\n\n"
-
-for example, infos in EXAMPLE_PROJECTS.items():
     if sphinx_doc:
-        APP_OVERVIEW += f"* {example}\n"
-    else:
-        APP_OVERVIEW += f"{infos['index']}) {example}\n"
+        APP_OVERVIEW += \
+    """---
+    myst:
+    html_meta:
+        "description": "Examples for using the ZEISS INSPECT 2025 App Python API"
+        "keywords": "Metrology, ZEISS INSPECT, Python API, GOM API, Scripting, Add-ons, Apps, Examples"
+    ---
+    """
 
-APP_OVERVIEW += "\n[Download Example Projects App](https://software-store.zeiss.com/products/apps/ExampleProjects)"
+    APP_OVERVIEW += f"# {args.title}\n"
+
+    tagIndex = {}
+
+    categories = os.listdir(BASEDIR)
+    for category in categories:
+        if category == '.gitignore':
+            continue
+
+        if os.path.isdir(os.path.abspath(os.path.join(BASEDIR, category))):
+
+            # Category heading
+            APP_OVERVIEW += f"\n## {category} &mdash; {CATEGORY_DESCRIPTIONS[category]}\n\n"
+
+            if sphinx_doc:
+                APP_OVERVIEW += gen_boilerplate(category)
+            else:
+                APP_OVERVIEW += gen_table(category)
 
 
-# Tag index
-APP_OVERVIEW += "\n\n## Tag Index\n"
+    # Example projects
+    APP_OVERVIEW += "\n## Example projects\n\n"
 
-for tag in sorted(tagIndex):
-    #APP_OVERVIEW += f"\n### {tag}:\n"
-    badge = tag.replace('-', '--')
-    if sphinx_doc:
-        APP_OVERVIEW += f"\n### <a id=\"{tag}\">![Static Badge](https://img.shields.io/badge/{badge}-blue)<a>\n\n"
-    else:
-        APP_OVERVIEW += f"\n### ![Static Badge](https://img.shields.io/badge/{badge}-blue)\n\n"
-
-    for app in sorted(tagIndex[tag]):
+    for example, infos in EXAMPLE_PROJECTS.items():
         if sphinx_doc:
-            APP_OVERVIEW += f"* <a href=\"#{app}\">{app}</a>\n"
+            APP_OVERVIEW += f"* {example}\n"
         else:
-            APP_OVERVIEW += f"* [{app}](#{app})\n"
-    APP_OVERVIEW += "\n"
+            APP_OVERVIEW += f"{infos['index']}) {example}\n"
+
+    APP_OVERVIEW += "\n[Download Example Projects App](https://software-store.zeiss.com/products/apps/ExampleProjects)"
 
 
-# Related links 
-APP_OVERVIEW += "\n## Related\n\n"
-APP_OVERVIEW += "* [ZEISS IQS GitHub &mdash; App Development Documentation](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/index.html)\n"
-APP_OVERVIEW += "* [ZEISS Quality Software Store](https://software-store.zeiss.com)\n"
+    # Tag index
+    APP_OVERVIEW += "\n\n## Tag Index\n"
+
+    for tag in sorted(tagIndex):
+        #APP_OVERVIEW += f"\n### {tag}:\n"
+        badge = tag.replace('-', '--')
+        if sphinx_doc:
+            APP_OVERVIEW += f"\n### <a id=\"{tag}\">![Static Badge](https://img.shields.io/badge/{badge}-blue)<a>\n\n"
+        else:
+            APP_OVERVIEW += f"\n### ![Static Badge](https://img.shields.io/badge/{badge}-blue)\n\n"
+
+        for app in sorted(tagIndex[tag]):
+            if sphinx_doc:
+                APP_OVERVIEW += f"* <a href=\"#{app}\">{app}</a>\n"
+            else:
+                APP_OVERVIEW += f"* [{app}](#{app})\n"
+        APP_OVERVIEW += "\n"
 
 
-print(APP_OVERVIEW)
+    # Related links 
+    APP_OVERVIEW += "\n## Related\n\n"
+    APP_OVERVIEW += "* [ZEISS IQS GitHub &mdash; App Development Documentation](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/index.html)\n"
+    APP_OVERVIEW += "* [ZEISS Quality Software Store](https://software-store.zeiss.com)\n"
+
+
+    print(APP_OVERVIEW)
