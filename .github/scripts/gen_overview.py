@@ -178,7 +178,10 @@ if __name__ == '__main__':
     parser.add_argument('--sphinx-doc', action='store_true', help='Select sphinx_doc layout')
     parser.add_argument('--title', type=str,
                         default='ZEISS INSPECT App Examples Overview',
-                        help='Python wheelhouse directory')
+                        help='Page title')
+    parser.add_argument('--meta-description', type=str,
+                        default='Examples for using the ZEISS INSPECT 2025 App Python API',
+                        help='Description in HTML metadata')
     # autopep8: on
 
     args = parser.parse_args()
@@ -188,13 +191,13 @@ if __name__ == '__main__':
 
     if sphinx_doc:
         APP_OVERVIEW += \
-    """---
-    myst:
+f"""---
+myst:
     html_meta:
-        "description": "Examples for using the ZEISS INSPECT 2025 App Python API"
+        "description": "{args.meta_description}"
         "keywords": "Metrology, ZEISS INSPECT, Python API, GOM API, Scripting, Add-ons, Apps, Examples"
-    ---
-    """
+---
+"""
 
     APP_OVERVIEW += f"# {args.title}\n"
 
