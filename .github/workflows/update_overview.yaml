@@ -48,8 +48,8 @@ jobs:
           git commit -m "Updated AppExamples/README.md"
           #git push --set-upstream origin ${{ github.event.inputs.branch_name }}
           git branch --track origin overview-update
-          git pull
-          git push
+          git pull origin/overview-update overview-update
+          git push --set-upstream origin overview-update
           #git push --set-upstream origin overview-update
 
       #- name: Create Pull Request
