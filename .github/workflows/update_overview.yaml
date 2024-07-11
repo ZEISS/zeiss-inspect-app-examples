@@ -5,7 +5,7 @@ jobs:
   create_file_and_pr:
     runs-on: ubuntu-latest
     steps:
-      - name: Set current/target branch
+      - name: Set branches
         id: set_branches
         run:
           |
@@ -38,7 +38,7 @@ jobs:
           #git checkout -b ${{ github.event.inputs.branch_name }} || git checkout ${{ github.event.inputs.branch_name }}
           git checkout -b overview-update || git checkout overview-update
         
-      - name: Create a new file 
+      - name: Update overview
         run: |
           # echo "${{ github.event.inputs.file_content }}" > ${{ github.event.inputs.file_path }}
           python .github/scripts/gen_overview.py > AppExamples/README.md
@@ -46,21 +46,7 @@ jobs:
           git config --local user.name "GitHub Action"
           git add AppExamples/README.md
           git commit -m "Updated AppExamples/README.md"
-          #git push --set-upstream origin ${{ github.event.inputs.branch_name }}
-          #git branch --track origin overview-update
-          #git pull origin overview-update
           git push origin +overview-update:ref/heads/overview-update
-          #git push --set-upstream origin overview-update
-
-      #- name: Create Pull Request
-      #  uses: repo-sync/pull-request@v3
-      #  with:
-      #    github_token: ${{ secrets.GITHUB_TOKEN }}
-      #   #destination_branch: "main" # Change to your default branch if it's not 'main'
-      #    destination_branch: "dev" # Change to your default branch if it's not 'main'
-      #    pr_title: "Updated App Examples Overview (AppExamples/README.md)"
-      #    pr_body: "AppExamples/README.md has been updated in the overview-update branch"
-      #    source_branch: overview-update
 
       - name: Create Pull Request
         uses: devops-infra/action-pull-request@v0.5.5
