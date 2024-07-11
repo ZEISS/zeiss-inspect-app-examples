@@ -203,7 +203,7 @@ myst:
     app_overview += f"# {args.title}\n"
 
     categories = os.listdir(BASEDIR)
-    for category in categories:
+    for category in sorted(categories):
         if category == '.gitignore':
             continue
 
