@@ -2,11 +2,15 @@
     "author": "Carl Zeiss GOM Metrology GmbH",
     "description": "This example demonstrates how to find the 2D pixel coordinates of a 3D point coordinate and vice versa.",
     "environment": "ZeissInspectExampleProjects",
+    "example-projects": ["zeiss_part_test_measurement"],
     "labels": [],
     "licensing": {
         "licenses": [],
         "product-codes": []
     },
+    "references": [
+        ["API", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/python_api.html#gom-api-imaging"]
+    ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2025",
     "tags": [],

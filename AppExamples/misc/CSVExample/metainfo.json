@@ -1,6 +1,7 @@
 {
     "author": "Carl Zeiss GOM Metrology GmbH",
     "description": "This example demonstrates how to read and write CSV files (comma separated values) from an App.",
+    "example-projects": ["zeiss_part_test_project"],
     "labels": [],
     "licensing": {
         "licenses": [],

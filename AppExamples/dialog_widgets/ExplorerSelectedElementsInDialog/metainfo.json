@@ -2,11 +2,15 @@
     "author": "Carl Zeiss GOM Metrology GmbH",
     "description": "This example shows how to get a list of elements selected in the element explorer and use it in a script dialog. ",
     "environment": "ZeissInspectExampleProjects",
+    "example-projects": ["zeiss_part_test_project"],
     "labels": [],
     "licensing": {
         "licenses": [],
         "product-codes": []
     },
+    "references": [
+        ["HowTo", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/python_api_introduction/user_defined_dialogs.html#selection-element-widget"]
+    ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2025",
     "tags": [],

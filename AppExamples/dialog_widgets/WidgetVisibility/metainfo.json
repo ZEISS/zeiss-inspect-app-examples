@@ -6,6 +6,9 @@
         "licenses": [],
         "product-codes": []
     },
+    "references": [
+        ["HowTo", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/python_api_introduction/user_defined_dialogs.html"]
+    ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2025",
     "tags": [],
