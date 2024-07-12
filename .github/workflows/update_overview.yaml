@@ -36,14 +36,14 @@ jobs:
         run: |
           git checkout -b overview-update || git checkout overview-update
         
-      - name: Update overview
+      - name: Update overview (ZEISS)
         run: |
           python .github/scripts/gen_overview.py > AppExamples/README.md
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add AppExamples/README.md
           git commit -m "Updated AppExamples/README.md"
-          git push origin +overview-update:overview-update
+          git push origin +overview-update:overview-update 
 
       - name: Create Pull Request
         uses: devops-infra/action-pull-request@v0.5.5
@@ -64,3 +64,14 @@ jobs:
           get_diff: true
           ignore_users: "dependabot"
           allow_no_diff: false
+
+      - name: Update overview (ZeissIQS)
+        run: |
+          gh repo clone ZeissIQS/zeiss-inspect-addon-api
+          cd zeiss-inspect-addon-api
+          #git checkout -b overview-update || git checkout overview-update
+          git checkout -b overview-update --track origin/main
+          cp ../AppExamples/README.md doc/python_examples/examples_overview.md
+          ls
+          ls -l doc/python_examples/
+          
