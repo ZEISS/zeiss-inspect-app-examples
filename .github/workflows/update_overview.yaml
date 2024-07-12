@@ -100,6 +100,7 @@ jobs:
       - name: Push changes (ZeissIQS)
         if: env.changes == 'true'
         run: |
+          cd zeiss-inspect-addon-api
           git add doc/python_examples/examples_overview.md
           git commit -m "Updated doc/python_examples/examples_overview.md"
           git push origin +overview-update:overview-update 
