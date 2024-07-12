@@ -138,7 +138,8 @@ jobs:
       - name: Create Pull Request (ZeissIQS)
         if: env.changes == 'true'
         run: |
-          #gh auth setup-git
+          cd zeiss-inspect-addon-api
+          gh auth setup-git
           gh pr create --repo ZeissIQS/zeiss-inspect-addon-api \
                        --head ${{ format('{0}', steps.set_branches.outputs.target_branch) }} \
                        --title "${{ format('Updated App Examples Overview (AppExamples/README.md) ({0})', steps.set_branches.outputs.target_branch) }}" \
