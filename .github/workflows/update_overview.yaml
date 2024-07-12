@@ -34,6 +34,11 @@ jobs:
           ref: ${{ format('{0}', steps.set_branches.outputs.current_branch) }}
           fetch-depth: 0 # Fetch all history for all branches and tags
 
+      - name: Git config
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
       - name: Create a new branch
         run: |
           git checkout -b overview-update || git checkout overview-update
@@ -48,12 +53,10 @@ jobs:
             echo "Changes detected."
             echo "changes=true" >> $GITHUB_ENV
           fi
-          
+      
       - name: Push changes (ZEISS)
         if: env.changes == 'true'
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
           git add AppExamples/README.md
           git commit -m "Updated AppExamples/README.md"
           git push origin +overview-update:overview-update 
@@ -86,6 +89,19 @@ jobs:
           #git checkout -b overview-update || git checkout overview-update
           git checkout -b overview-update --track origin/main
           cp ../AppExamples/README.md doc/python_examples/examples_overview.md
-          ls
-          ls -l doc/python_examples/
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No changes to commit."
+            echo "changes=false" >> $GITHUB_ENV
+          else
+            echo "Changes detected."
+            echo "changes=true" >> $GITHUB_ENV
+          fi
+
+      - name: Push changes (ZeissIQS)
+        if: env.changes == 'true'
+        run: |
+          git add doc/python_examples/examples_overview.md
+          git commit -m "Updated doc/python_examples/examples_overview.md"
+          git push origin +overview-update:overview-update 
+      
           
