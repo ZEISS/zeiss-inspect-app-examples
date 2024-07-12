@@ -137,7 +137,7 @@ jobs:
       #    allow_no_diff: false
 
       - name: Create Pull Request (ZeissIQS)
-        if: env.changes == 'true
+        if: env.changes == 'true'
         run: |
           #gh auth setup-git
           gh pr create --repo ZeissIQS/zeiss-inspect-addon-api \
