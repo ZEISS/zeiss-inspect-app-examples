@@ -1,6 +1,5 @@
 name: Update overview and create PR
-on:
-  workflow_dispatch:
+on: [workflow_dispatch,push]
 env:
   GH_TOKEN: ${{ github.token }}
 jobs:
@@ -84,7 +83,7 @@ jobs:
 
       - name: Update overview (ZeissIQS)
         run: |
-          python .github/scripts/gen_overview.py > examples_overview.md
+          python .github/scripts/gen_overview.py --sphinx-doc > examples_overview.md
           gh repo clone ZeissIQS/zeiss-inspect-addon-api
           cd zeiss-inspect-addon-api
           #git checkout -b overview-update || git checkout overview-update
