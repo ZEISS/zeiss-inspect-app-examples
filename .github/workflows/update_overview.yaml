@@ -108,7 +108,7 @@ jobs:
           git add doc/python_examples/examples_overview.md
           git commit -m "Updated doc/python_examples/examples_overview.md"
           #git remote add target https://x-access-token:${{ secrets.TARGET_REPO_PAT_2 }}@github.com/ZeissIQS/zeiss-inspect-addon-api.git
-          git remote add origin https://x-access-token:${{ secrets.TARGET_REPO_PAT_2 }}@/ZeissIQS/zeiss-inspect-addon-api.git
+          #git remote add origin https://x-access-token:${{ secrets.TARGET_REPO_PAT_2 }}@/ZeissIQS/zeiss-inspect-addon-api.git
           #git remote add origin 'git@github.com:ZeissIQS/zeiss-inspect-addon-api.git'
           #git remote add target https://"GitHub Action"@github.com/ZeissIQS/zeiss-inspect-addon-api.git
           git push origin +overview-update:overview-update 
