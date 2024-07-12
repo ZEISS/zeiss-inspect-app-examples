@@ -138,6 +138,7 @@ jobs:
       - name: Create Pull Request (ZeissIQS)
         if: env.changes == 'true'
         run: |
+          unset GH_TOKEN
           echo "${{ secrets.TARGET_REPO_PAT_2 }}" | gh auth login --with-token
           gh pr create --repo ZeissIQS/zeiss-inspect-addon-api \
                        --head overview-update \
