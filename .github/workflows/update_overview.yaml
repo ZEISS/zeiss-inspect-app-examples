@@ -1,6 +1,8 @@
 name: Update overview and create PR
 on:
   workflow_dispatch:
+env:
+  GH_TOKEN: ${{ github.token }}
 jobs:
   create_file_and_pr:
     runs-on: ubuntu-latest
