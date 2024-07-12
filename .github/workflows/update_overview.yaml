@@ -114,16 +114,16 @@ jobs:
           git remote set-url origin https://x-access-token:${{ secrets.TARGET_REPO_PAT_2 }}@github.com/ZeissIQS/zeiss-inspect-addon-api.git
           git push origin +overview-update:overview-update 
 
-      - name: Create Pull Request (ZeissIQS)
-        env:
-           permissions:
-             org:read
-        if: env.changes == 'true'
-        run: |
-          echo "${{ secrets.TARGET_REPO_PAT_2 }}" | gh auth login --with-token
-          gh pr create --repo ZeissIQS/zeiss-inspect-addon-api \
-                       --head overview-update \
-                       --title "${{ format('Updated App Examples Overview (AppExamples/README.md) ({0})', steps.set_branches.outputs.target_branch) }}" \
-                       --body "**Automated pull request**" \
-                       --label documentation \
-                       --reviewer ${{ format('{0}', steps.reviewers.outputs.reviewers) }}
+      #- name: Create Pull Request (ZeissIQS)
+      #  env:
+      #     permissions:
+      #       org:read
+      #  if: env.changes == 'true'
+      #  run: |
+      #    echo "${{ secrets.TARGET_REPO_PAT_2 }}" | gh auth login --with-token
+      #    gh pr create --repo ZeissIQS/zeiss-inspect-addon-api \
+      #                 --head overview-update \
+      #                 --title "${{ format('Updated App Examples Overview (AppExamples/README.md) ({0})', steps.set_branches.outputs.target_branch) }}" \
+      #                 --body "**Automated pull request**" \
+      #                 --label documentation \
+      #                 --reviewer ${{ format('{0}', steps.reviewers.outputs.reviewers) }}
