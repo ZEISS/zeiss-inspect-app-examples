@@ -208,7 +208,11 @@ myst:
         "description": "{args.meta_description}"
         "keywords": "Metrology, ZEISS INSPECT, Python API, GOM API, Scripting, Add-ons, Apps, Examples"
 ---
+"""
 
+    if sphinx_doc:
+        app_overview += \
+"""
 <style>
     .link-target {
         color: #000000;
@@ -219,8 +223,7 @@ myst:
     .example-block-even {
         background-color: #ffffff;
     }
-</style
-
+</style>
 """
 
     app_overview += f"# {args.title}\n"
