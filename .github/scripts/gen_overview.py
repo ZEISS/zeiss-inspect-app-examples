@@ -222,9 +222,6 @@ myst:
         app_overview += \
 """
 <style>
-    .link-target {
-        color: #000000;
-    }
     .example-block-odd {
         background-color: #f3f6f6;
     }
@@ -278,7 +275,7 @@ myst:
 
         for app in sorted(tagIndex[tag]):
             if sphinx_doc:
-                app_overview += f"* <a href=\"#{app}\">{app}</a>\n"
+                app_overview += f"* <a href=\"#{app.lower()}\">{app}</a>\n"
             else:
                 app_overview += f"* [{app}](#{app})\n"
         app_overview += "\n"
