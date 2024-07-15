@@ -130,8 +130,8 @@ def gen_boilerplate(_category, _tag_index):
             block_odd = not block_odd
             
             # Title, links to source code and App download
+            # Using HTML instead of markdown to allow alternating background color via <div> attribute 
             title = metainfo['title']
-            #md += f"### <a id=\"{title}\" class=\"link-target\">{title}</a> &mdash; [view]({view}) / [download]({download})\n\n"
             #md += f"### {title} &mdash; [view]({view}) / [download]({download})\n\n"
             md += f'<section id="{title.lower()}">\n'
             md += f'<div id="{title.lower()}" class="{next_class}">\n'
@@ -220,6 +220,7 @@ myst:
 ---
 """
 
+    # Override some default styles / add custom styles for this page
     if sphinx_doc:
         app_overview += \
 """
