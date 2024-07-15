@@ -97,8 +97,6 @@ jobs:
           fi
 
       - name: Push changes (ZeissIQS)
-        #env:
-        #  permissions: write-all
         if: env.changes == 'true'
         run: |
           cd zeiss-inspect-addon-api
