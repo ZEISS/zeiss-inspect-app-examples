@@ -110,7 +110,8 @@ def gen_boilerplate(_category, _tag_index):
     """
 
     md = ""
-
+    block_odd = True
+    
     apps = os.path.join(BASEDIR, _category)
     for _app in os.listdir(apps):
         metainfo_path = os.path.abspath(os.path.join(BASEDIR, _category, _app, 'metainfo.json'))
@@ -124,10 +125,16 @@ def gen_boilerplate(_category, _tag_index):
 
             # Title, links to source code and App download
             title = metainfo['title']
-            md += f"### <a id=\"{title}\">{title}</a> &mdash; [view]({view}) / [download]({download})\n\n"
+            md += f"### <a id=\"{title}\" class=\"link-target\">{title}</a> &mdash; [view]({view}) / [download]({download})\n\n"
 
             #md += f"![Icon](https://github.com/ZEISS/zeiss-inspect-app-examples/blob/dev/AppExamples/{category}/{app}/icon.png)\n"
 
+            if block_odd:
+                md += f'\n<div class="example-block-odd">\n'
+            else:
+                md += f'\n<div class="example-block-even">\n'
+            block_odd = not block_odd
+            
             # Description
             md += ":Description:\n"
             md += f"    {metainfo['description'].encode('windows-1252').decode('utf-8')}\n\n"
@@ -163,6 +170,9 @@ def gen_boilerplate(_category, _tag_index):
                         md += f"[![Static Badge](https://img.shields.io/badge/{_badge}-blue)](#{_tag})<br> "
 
                 md += "\n"
+
+            md += '\n</div>\n'
+    
     return md, _tag_index
 
 # ----------------------------------------------------------------------------
@@ -198,6 +208,19 @@ myst:
         "description": "{args.meta_description}"
         "keywords": "Metrology, ZEISS INSPECT, Python API, GOM API, Scripting, Add-ons, Apps, Examples"
 ---
+
+<style>
+    .link-target {
+        color: #000000;
+    }
+    .example-block-odd {
+        background-color: #f3f6f6;
+    }
+    .example-block-even {
+        background-color: #ffffff;
+    }
+</style
+
 """
 
     app_overview += f"# {args.title}\n"
