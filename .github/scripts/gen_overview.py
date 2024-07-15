@@ -134,9 +134,9 @@ def gen_boilerplate(_category, _tag_index):
             #md += f"### <a id=\"{title}\" class=\"link-target\">{title}</a> &mdash; [view]({view}) / [download]({download})\n\n"
             #md += f"### {title} &mdash; [view]({view}) / [download]({download})\n\n"
             md += f'<section id="{title.lower()}">\n'
-            md += f'<div id="title.lower()} class="{next_class}">\n'
+            md += f'<div id="{title.lower()}" class="{next_class}">\n'
             md += f'''
-                  <h3>{title}ReferencePointsAndMeshData — <a class="reference external" href="{view}">view</a> / 
+                  <h3>{title} — <a class="reference external" href="{view}">view</a> / 
                   <a class="reference external" href="{download}">download</a>
                   <a class="headerlink" href="#{title.lower()}" title="Link to this heading"></a></h3>
             '''
