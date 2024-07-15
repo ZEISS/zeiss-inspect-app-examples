@@ -224,9 +224,11 @@ myst:
 <style>
     .example-block-odd {
         background-color: #f3f6f6;
+        padding: 10px;
     }
     .example-block-even {
         background-color: #ffffff;
+        padding: 10px;
     }
     h2 {
         margin-top: 24px;
