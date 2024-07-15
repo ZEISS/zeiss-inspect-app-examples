@@ -130,9 +130,9 @@ def gen_boilerplate(_category, _tag_index):
             #md += f"![Icon](https://github.com/ZEISS/zeiss-inspect-app-examples/blob/dev/AppExamples/{category}/{app}/icon.png)\n"
 
             if block_odd:
-                md += f'\n<div class="example-block-odd">\n'
+                md += f'\n<div class="example-block-odd">\n\n'
             else:
-                md += f'\n<div class="example-block-even">\n'
+                md += f'\n<div class="example-block-even">\n\n'
             block_odd = not block_odd
             
             # Description
@@ -171,7 +171,7 @@ def gen_boilerplate(_category, _tag_index):
 
                 md += "\n"
 
-            md += '\n</div>\n'
+            md += '\n</div>\n\n'
     
     return md, _tag_index
 
