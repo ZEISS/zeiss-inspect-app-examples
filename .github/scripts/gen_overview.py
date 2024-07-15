@@ -123,17 +123,17 @@ def gen_boilerplate(_category, _tag_index):
                 view = f"{_category}/{_app}/doc/Documentation.md"
             download = f"https://software-store.zeiss.com/products/apps/{metainfo['title']}"
 
-            # Title, links to source code and App download
-            title = metainfo['title']
-            md += f"### <a id=\"{title}\" class=\"link-target\">{title}</a> &mdash; [view]({view}) / [download]({download})\n\n"
-
-            #md += f"![Icon](https://github.com/ZEISS/zeiss-inspect-app-examples/blob/dev/AppExamples/{category}/{app}/icon.png)\n"
-
             if block_odd:
                 md += f'\n<div class="example-block-odd">\n\n'
             else:
                 md += f'\n<div class="example-block-even">\n\n'
             block_odd = not block_odd
+            
+            # Title, links to source code and App download
+            title = metainfo['title']
+            md += f"### <a id=\"{title}\" class=\"link-target\">{title}</a> &mdash; [view]({view}) / [download]({download})\n\n"
+
+            #md += f"![Icon](https://github.com/ZEISS/zeiss-inspect-app-examples/blob/dev/AppExamples/{category}/{app}/icon.png)\n"
             
             # Description
             md += ":Description:\n"
