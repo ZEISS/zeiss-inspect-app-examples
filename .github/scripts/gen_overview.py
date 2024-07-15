@@ -228,6 +228,16 @@ myst:
     .example-block-even {
         background-color: #ffffff;
     }
+    h2 {
+        margin-top: 24px;
+        margin-bottom: 4px;
+    }
+    .rst-content h2 {
+        margin-bottom: 4px;
+    }
+    .small-margin {
+        margin-top: 4px;
+    }
 </style>
 """
 
@@ -242,6 +252,8 @@ myst:
 
             # Category heading
             app_overview += f"\n## {category} &mdash; {CATEGORY_DESCRIPTIONS[category]}\n\n"
+            if sphinx_doc:
+                app_overview += '<hr class="small-margin">'
 
             if sphinx_doc:
                 tmp, tagIndex = gen_boilerplate(category, tagIndex)
