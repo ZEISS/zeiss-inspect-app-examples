@@ -124,15 +124,23 @@ def gen_boilerplate(_category, _tag_index):
             download = f"https://software-store.zeiss.com/products/apps/{metainfo['title']}"
 
             if block_odd:
-                md += f'\n<div class="example-block-odd">\n\n'
+                next_class = f'\n<div class="example-block-odd">\n\n'
             else:
-                md += f'\n<div class="example-block-even">\n\n'
+                next_class = f'\n<div class="example-block-even">\n\n'
             block_odd = not block_odd
             
             # Title, links to source code and App download
             title = metainfo['title']
-            md += f"### <a id=\"{title}\" class=\"link-target\">{title}</a> &mdash; [view]({view}) / [download]({download})\n\n"
-
+            #md += f"### <a id=\"{title}\" class=\"link-target\">{title}</a> &mdash; [view]({view}) / [download]({download})\n\n"
+            #md += f"### {title} &mdash; [view]({view}) / [download]({download})\n\n"
+            md += f'<section id="{title.lower()}">\n'
+            md += f'<div id="title.lower()} class="{next_class}">\n'
+            md += f'''
+                  <h3>{title}ReferencePointsAndMeshData — <a class="reference external" href="{view}">view</a> / 
+                  <a class="reference external" href="{download}">download</a>
+                  <a class="headerlink" href="#{title.lower()}" title="Link to this heading"></a></h3>
+            '''
+            
             #md += f"![Icon](https://github.com/ZEISS/zeiss-inspect-app-examples/blob/dev/AppExamples/{category}/{app}/icon.png)\n"
             
             # Description
@@ -165,13 +173,13 @@ def gen_boilerplate(_category, _tag_index):
                     _tag_index[_tag].append(title)
                     _badge = _tag.replace('-', '--')
                     if sphinx_doc:
-                        md += f"<a href=\"#{_tag}\">![Static Badge](https://img.shields.io/badge/{_badge}-blue)</a> "
+                        md += f"<a href=\"#{_tag.lower()}\">![Static Badge](https://img.shields.io/badge/{_badge}-blue)</a> "
                     else:
                         md += f"[![Static Badge](https://img.shields.io/badge/{_badge}-blue)](#{_tag})<br> "
 
                 md += "\n"
-
-            md += '\n</div>\n\n'
+            md += '\n</div>\n'
+            md += '\n</section>\n\n'
     
     return md, _tag_index
 
