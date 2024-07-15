@@ -253,7 +253,7 @@ myst:
             # Category heading
             app_overview += f"\n## {category} &mdash; {CATEGORY_DESCRIPTIONS[category]}\n\n"
             if sphinx_doc:
-                app_overview += '<hr class="small-margin">'
+                app_overview += '<hr class="small-margin">\n'
 
             if sphinx_doc:
                 tmp, tagIndex = gen_boilerplate(category, tagIndex)
