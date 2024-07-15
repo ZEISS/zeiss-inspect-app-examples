@@ -124,9 +124,9 @@ def gen_boilerplate(_category, _tag_index):
             download = f"https://software-store.zeiss.com/products/apps/{metainfo['title']}"
 
             if block_odd:
-                next_class = f'\n<div class="example-block-odd">\n\n'
+                next_class = "example-block-odd"
             else:
-                next_class = f'\n<div class="example-block-even">\n\n'
+                next_class = "example-block-even"
             block_odd = not block_odd
             
             # Title, links to source code and App download
@@ -139,7 +139,7 @@ def gen_boilerplate(_category, _tag_index):
                   <h3>{title} — <a class="reference external" href="{view}">view</a> / 
                   <a class="reference external" href="{download}">download</a>
                   <a class="headerlink" href="#{title.lower()}" title="Link to this heading"></a></h3>
-            '''
+            \n\n'''
             
             #md += f"![Icon](https://github.com/ZEISS/zeiss-inspect-app-examples/blob/dev/AppExamples/{category}/{app}/icon.png)\n"
             
