@@ -158,9 +158,11 @@ f'''<h3>{title} — <a class="reference external" href="{view}">view</a> /
             # References
             if 'references' in metainfo:
                 md += ":References:\n"
-                for reference in metainfo['references']:
-                    md += f"    [{reference[0]}]({reference[1]})\n"
-
+                for i, reference in enumerate(metainfo['references']):
+                    if i == 0:
+                        md += f"    [{reference[0]}]({reference[1]})"
+                    else:
+                        md += f", [{reference[0]}]({reference[1]})"
                 md += "\n"
 
             # Tags
