@@ -12,7 +12,9 @@
     ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2025",
-    "tags": [],
+    "tags": [
+        "point-cloud", "scripted-actual"
+    ],
     "title": "ScriptedActualPointCloud",
     "uuid": "a6d289ff-3ff2-4369-9698-d768861eb2ed",
     "version": "1.0.0"

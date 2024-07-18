@@ -12,7 +12,9 @@
     ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2025",
-    "tags": [],
+    "tags": [
+        "distance", "scripted-actual"
+    ],
     "title": "ScriptedActualDistance",
     "uuid": "e355ce61-6e17-45f5-bcd2-3495aabef37d",
     "version": "1.0.0"

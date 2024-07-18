@@ -12,7 +12,9 @@
     ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2025",
-    "tags": ["xray"],
+    "tags": [
+        "xray", "volume", "scripted-actual"
+    ],
     "title": "ScriptedActualVolume",
     "uuid": "a5a38b5b-5f22-442e-98a4-65782b24fe39",
     "version": "1.0.0"

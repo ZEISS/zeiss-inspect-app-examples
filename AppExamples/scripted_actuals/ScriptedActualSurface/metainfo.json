@@ -12,7 +12,9 @@
     ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2025",
-    "tags": [],
+    "tags": [
+        "surface", "scripted-actual"
+    ],
     "title": "ScriptedActualSurface",
     "uuid": "afb88e11-9894-494d-9fa5-f69d2124e9a5",
     "version": "1.0.0"

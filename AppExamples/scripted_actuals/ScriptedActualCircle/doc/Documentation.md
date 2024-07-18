@@ -1,8 +1,8 @@
-# ScriptedActualPoint
+# ScriptedActualCircle
 
-![Scripted distance element example](distance.png)
+![Scripted circle element example](scripted_actual_circle.png)
 
-This is an example for a scripted 'distance' element.
+This is an example for a scripted 'circle' element.
 
 ```{note}
 Please see [ScriptedActualPoint](https://github.com/ZEISS/zeiss-inspect-app-examples/blob/dev/AppExamples/scripted_actuals/ScriptedActualPoint/doc/Documentation.md) for a complete scripted elements example with detailed description.
@@ -18,7 +18,6 @@ linenos:
 def dialog(context, params):
     #[...]
 
-
 def calculation(context, params):
     valid_results = False
 
@@ -27,10 +26,11 @@ def calculation(context, params):
         # Access element properties with error handling
         try:
             context.result[stage] = {
-                'point1': (params['p1_x'], params['p1_y'], params['p1_z']),
-                'point2': (params['p2_x'], params['p2_y'], params['p2_z'])
+                'center': (params['center_x'], params['center_y'], params['center_z']),
+                'direction': (params['dir_x'], params['dir_y'], params['dir_z']),
+                'radius': params['radius']
             }
-            context.data[stage] = {"ude_mykey": "Example 1"}
+            context.data[stage] = {"ude_mykey": "Example 2"}
         except Exception as error:
             context.error[stage] = str(error)
         else:
@@ -40,5 +40,5 @@ def calculation(context, params):
 
 ## Related
 
-* [Scripted actuals - Distance](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/scripted_elements_api.md#distance)
+* [Scripted actuals - Circle](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/scripted_elements_api.md#circle)
 * [How-to: User-defined dialogs](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/python_api_introduction/user_defined_dialogs.md)

@@ -13,7 +13,7 @@
     ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2025",
-    "tags": ["surface", "scripted-actual"],
+    "tags": ["mesh", "surface", "scripted-actual"],
     "title": "TrimeshDeformMesh",
     "uuid": "3ace1cee-6873-40ac-bb3c-ce4fa1f2f56c",
     "version": "1.0.0"
