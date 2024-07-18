@@ -1,4 +1,4 @@
-# resource_api_example
+# ScriptResources
 
 ![](script_resources.jpg)
 ## Short description

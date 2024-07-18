@@ -1,4 +1,4 @@
-# script_icon_from_file
+# ScriptIcon
 
 ![Menu entry with icon, light background](menu_icon_lightbg.jpg)
 
