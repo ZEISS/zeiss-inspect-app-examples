@@ -1,0 +1,20 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "description": "Example for triggering command execution via Internet (aka BSD) sockets",
+    "labels": [
+    ],
+    "licensing": {
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
+    },
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2025",
+    "tags": [
+        "import"
+    ],
+    "title": "IPCSocketsExample",
+    "uuid": "971fc9c2-14bc-47a4-a5a6-cf6aa7b84942",
+    "version": "1.0.0"
+}
