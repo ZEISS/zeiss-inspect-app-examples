@@ -11,7 +11,9 @@
     ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2025",
-    "tags": [],
+    "tags": [
+        "dialog", "widget-properties"
+    ],
     "title": "WidgetVisibility",
     "uuid": "ca7d5655-6eec-4e8f-8f70-4cf35fee4833",
     "version": "1.0.0"

@@ -13,7 +13,9 @@
     ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2025",
-    "tags": [],
+    "tags": [
+        "dialog", "selection-element-widget"
+    ],
     "title": "ExplorerSelectedElementsInDialog",
     "uuid": "7fbfa2c1-8166-4835-9819-56746a63edff",
     "version": "1.0.0"

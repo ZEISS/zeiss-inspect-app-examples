@@ -11,7 +11,9 @@
     ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2025",
-    "tags": [],
+    "tags": [
+        "dialog", "unit-widget"
+    ],
     "title": "UnitDialogEventHandler",
     "uuid": "edc0b486-0816-4a7c-b98f-04295605f942",
     "version": "1.0.0"

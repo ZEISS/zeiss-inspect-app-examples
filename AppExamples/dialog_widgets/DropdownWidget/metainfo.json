@@ -11,7 +11,9 @@
     ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2025",
-    "tags": [],
+    "tags": [
+        "dialog", "selection-list-widget"
+    ],
     "title": "DropdownWidget",
     "uuid": "7fbc06f5-86af-4b38-8161-965de5956f5f",
     "version": "1.0.0"
