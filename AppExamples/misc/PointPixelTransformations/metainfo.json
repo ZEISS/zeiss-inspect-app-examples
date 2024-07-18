@@ -13,7 +13,9 @@
     ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2025",
-    "tags": [],
+    "tags": [
+        "measurement", "reference-points"
+    ],
     "title": "PointPixelTransformations",
     "uuid": "e5c1a499-b268-4879-a0f7-6ff8385e5de5",
     "version": "1.0.1"
