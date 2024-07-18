@@ -1,0 +1,25 @@
+{
+    "display_name": "SQL_Example",
+    "folded_blocks": [
+    ],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": false,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+            ],
+            "type": "command"
+        },
+        "script": "userscript.SQL_Example",
+        "submenu": [
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "none",
+    "show_in_iinspect": false,
+    "show_in_menu": true,
+    "uuid": "e3a84dc8-7119-4260-b1a3-8c8f3e1dfa42"
+}
