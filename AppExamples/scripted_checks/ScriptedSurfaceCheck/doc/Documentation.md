@@ -1,6 +1,6 @@
-# scripted_surface_check
+# ScriptedSurfaceCheck
 
-![](scripted_surface_check.jpg)
+![Scripted surface check](scripted_surface_check.jpg)
 
 ## Short description
 
@@ -31,5 +31,5 @@ Using the example project `zeiss_part_test_project` and the viewing coordinate s
 
 ## Related
 
-* [How-to: Scripted checks](../../howtos/scripted_elements/scripted_checks.md)
-* [Scripted Element API](../../python_api/scripted_elements_api.md)
+* [How-to: Scripted checks](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/scripted_elements/scripted_checks.md)
+* [Scripted Element API](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/scripted_elements_api.md)
