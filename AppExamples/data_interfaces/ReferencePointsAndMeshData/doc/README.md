@@ -1,6 +1,6 @@
 ## ReferencePointsAndMeshData
 
-This App is part of the [ZEISS INSPECT Python API Examples](https://github.com/ZEISS/zeiss-inspect-app-examples/tree/dev/AppExamples).
+This App is part of the [ZEISS INSPECT Python API Examples](https://github.com/ZEISS/zeiss-inspect-app-examples/tree/main/AppExamples).
 
 See [App documentation](Documentation.md) for details.
 

@@ -13,7 +13,9 @@
     ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2025",
-    "tags": [],
+    "tags": [
+        "element-properties", "element-data"
+    ],
     "title": "CheckResultsDataArray",
     "uuid": "cc4de73f-a8b9-4c01-8f45-141a74f29333",
     "version": "1.0.0"

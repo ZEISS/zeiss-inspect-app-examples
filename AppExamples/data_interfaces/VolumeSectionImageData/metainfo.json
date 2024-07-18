@@ -13,7 +13,9 @@
     ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2025",
-    "tags": [],
+    "tags": [
+        "element-data"
+    ],
     "title": "VolumeSectionImageData",
     "uuid": "a254652f-75b8-4d77-8be4-04b7c5578194",
     "version": "1.0.0"

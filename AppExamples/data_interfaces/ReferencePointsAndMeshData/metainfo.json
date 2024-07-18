@@ -13,7 +13,9 @@
     ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2025",
-    "tags": [],
+    "tags": [
+        "reference-points", "mesh", "measurement"
+    ],
     "title": "ReferencePointsAndMeshData",
     "uuid": "be912619-f2b3-4733-83ff-69a0b5ce394e",
     "version": "1.0.0"
