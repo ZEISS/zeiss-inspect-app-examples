@@ -110,7 +110,8 @@ def gen_boilerplate(_category, _tag_index):
     """
 
     md = ""
-
+    block_odd = True
+    
     apps = os.path.join(BASEDIR, _category)
     for _app in os.listdir(apps):
         metainfo_path = os.path.abspath(os.path.join(BASEDIR, _category, _app, 'metainfo.json'))
@@ -122,12 +123,26 @@ def gen_boilerplate(_category, _tag_index):
                 view = f"{_category}/{_app}/doc/Documentation.md"
             download = f"https://software-store.zeiss.com/products/apps/{metainfo['title']}"
 
+            if block_odd:
+                next_class = "example-block-odd"
+            else:
+                next_class = "example-block-even"
+            block_odd = not block_odd
+            
             # Title, links to source code and App download
+            # Using HTML instead of markdown to allow alternating background color via <div> attribute 
             title = metainfo['title']
-            md += f"### <a id=\"{title}\">{title}</a> &mdash; [view]({view}) / [download]({download})\n\n"
-
+            #md += f"### {title} &mdash; [view]({view}) / [download]({download})\n\n"
+            md += f'<section id="{title.lower()}">\n'
+            md += f'<div id="{title.lower()}" class="{next_class}">\n'
+            md += \
+f'''<h3>{title} — <a class="reference external" href="{view}">view</a> / 
+<a class="reference external" href="{download}">download</a>
+<a class="headerlink" href="#{title.lower()}" title="Link to this heading"></a></h3>
+\n\n'''
+            
             #md += f"![Icon](https://github.com/ZEISS/zeiss-inspect-app-examples/blob/dev/AppExamples/{category}/{app}/icon.png)\n"
-
+            
             # Description
             md += ":Description:\n"
             md += f"    {metainfo['description'].encode('windows-1252').decode('utf-8')}\n\n"
@@ -143,9 +158,11 @@ def gen_boilerplate(_category, _tag_index):
             # References
             if 'references' in metainfo:
                 md += ":References:\n"
-                for reference in metainfo['references']:
-                    md += f"    [{reference[0]}]({reference[1]})\n"
-
+                for i, reference in enumerate(metainfo['references']):
+                    if i == 0:
+                        md += f"    [{reference[0]}]({reference[1]})"
+                    else:
+                        md += f", [{reference[0]}]({reference[1]})"
                 md += "\n"
 
             # Tags
@@ -158,11 +175,14 @@ def gen_boilerplate(_category, _tag_index):
                     _tag_index[_tag].append(title)
                     _badge = _tag.replace('-', '--')
                     if sphinx_doc:
-                        md += f"<a href=\"#{_tag}\">![Static Badge](https://img.shields.io/badge/{_badge}-blue)</a> "
+                        md += f"<a href=\"#{_tag.lower()}\">![Static Badge](https://img.shields.io/badge/{_badge}-blue)</a> "
                     else:
                         md += f"[![Static Badge](https://img.shields.io/badge/{_badge}-blue)](#{_tag})<br> "
 
                 md += "\n"
+            md += '\n</div>\n'
+            md += '\n</section>\n\n'
+    
     return md, _tag_index
 
 # ----------------------------------------------------------------------------
@@ -200,6 +220,32 @@ myst:
 ---
 """
 
+    # Override some default styles / add custom styles for this page
+    if sphinx_doc:
+        app_overview += \
+"""
+<style>
+    .example-block-odd {
+        background-color: #f3f6f6;
+        padding: 10px;
+    }
+    .example-block-even {
+        background-color: #ffffff;
+        padding: 10px;
+    }
+    h2 {
+        margin-top: 24px;
+        margin-bottom: 4px;
+    }
+    .rst-content h2 {
+        margin-bottom: 4px;
+    }
+    .small-margin {
+        margin-top: 4px;
+    }
+</style>
+"""
+
     app_overview += f"# {args.title}\n"
 
     categories = os.listdir(BASEDIR)
@@ -211,6 +257,8 @@ myst:
 
             # Category heading
             app_overview += f"\n## {category} &mdash; {CATEGORY_DESCRIPTIONS[category]}\n\n"
+            if sphinx_doc:
+                app_overview += '<hr class="small-margin">\n'
 
             if sphinx_doc:
                 tmp, tagIndex = gen_boilerplate(category, tagIndex)
@@ -244,7 +292,7 @@ myst:
 
         for app in sorted(tagIndex[tag]):
             if sphinx_doc:
-                app_overview += f"* <a href=\"#{app}\">{app}</a>\n"
+                app_overview += f"* <a href=\"#{app.lower()}\">{app}</a>\n"
             else:
                 app_overview += f"* [{app}](#{app})\n"
         app_overview += "\n"
