@@ -1,4 +1,4 @@
-# check_results_data_array
+# CheckResultsDataArray
 
 ![](check_results_data_array.png)
 

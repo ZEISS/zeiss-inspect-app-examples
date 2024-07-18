@@ -1,4 +1,4 @@
-# unit_dialog_event_handler
+# UnitDialogEventHandler
 
 ![](unit_dialog_event_handler.jpg)
 

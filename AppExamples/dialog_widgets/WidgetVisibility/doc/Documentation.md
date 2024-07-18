@@ -1,4 +1,4 @@
-# widget_visibility
+# WidgetVisibility
 
 ![](widget_visibility_off.jpg) ![](widget_visibility_on.jpg)
 

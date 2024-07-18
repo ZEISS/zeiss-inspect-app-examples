@@ -1,4 +1,4 @@
-# CSV import/export example
+# CSVExample
 
 ![CSV Example Figure](csv_example.png)
 

@@ -1,4 +1,4 @@
-# dialog_reopen_example
+# DialogReopenExample
 
 ![](dialog_reopen_example.jpg)
 

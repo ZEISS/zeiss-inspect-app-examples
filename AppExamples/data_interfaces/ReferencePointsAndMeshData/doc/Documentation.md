@@ -1,4 +1,4 @@
-# reference_points_and_mesh_data
+# ReferencePointsAndMeshData
 
 ![Point Cloud and Surface Elements from Reference Points/Mesh](refpoints_and_mesh.png){w=800px}
 

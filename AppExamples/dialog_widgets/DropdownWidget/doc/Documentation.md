@@ -1,4 +1,4 @@
-# dropdown_widget
+# DropdownWidget
 
 ![Selection list widget](dropdown_widget.jpg)
 

@@ -1,4 +1,4 @@
-# point_pixel_transformations
+# PointPixelTransformations
 
 ## Short description
 

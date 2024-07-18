@@ -1,4 +1,4 @@
-# volume_section_image_data
+# VolumeSectionImageData
 
 ![Volume section image](volume_section_image.jpg)
 

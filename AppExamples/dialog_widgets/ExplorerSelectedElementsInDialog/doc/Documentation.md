@@ -1,5 +1,4 @@
-# explorer_selected_elements_in_dialog
-
+# ExplorerSelectedElementsInDialog
 
 ![](explorer_selected_elements_in_dialog.png)
 
