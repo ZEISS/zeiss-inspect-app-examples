@@ -1,0 +1,23 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "description": "File Selection and Filtering Examples",
+    "labels": [
+    ],
+    "licensing": {
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
+    },
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2025",
+    "tags": [
+        "file",
+        "directory",
+        "folder",
+        "path"
+    ],
+    "title": "FileSelectionAndFiltering",
+    "uuid": "d8f317dd-1691-480e-a129-092f0cecc0bd",
+    "version": "1.0.0"
+}
