@@ -1,4 +1,4 @@
-# service_example
+# ServiceExample
 
 ## Short description
 
