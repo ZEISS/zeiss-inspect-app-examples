@@ -1,4 +1,4 @@
-# sql_example
+# SQLExample
 
 ![SQL Example Figure](sql_example.png)
 
