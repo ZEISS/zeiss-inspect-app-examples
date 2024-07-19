@@ -1,0 +1,20 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "description": "App template for running unit testing and generating a test coverage report",
+    "labels": [
+    ],
+    "licensing": {
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
+    },
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2025",
+    "tags": [
+        "testing"
+    ],
+    "title": "TemplateUnittestCoverage",
+    "uuid": "d569d88b-a493-4298-ad4a-0875f5173ce1",
+    "version": "1.0.0"
+}
