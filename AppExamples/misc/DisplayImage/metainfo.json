@@ -1,0 +1,20 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "description": "Display measurement as a single image",
+    "labels": [
+    ],
+    "licensing": {
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
+    },
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2025",
+    "tags": [
+        "image-widget", "measurement"
+    ],
+    "title": "Display Image",
+    "uuid": "74edeeeb-126b-4033-814f-66272bc7ba1f",
+    "version": "1.0.0"
+}
