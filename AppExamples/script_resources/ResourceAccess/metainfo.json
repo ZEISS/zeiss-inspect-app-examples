@@ -1,10 +1,11 @@
 {
     "author": "Carl Zeiss GOM Metrology GmbH",
-    "description": "A simple example showing the usage of script resources.",
-    "labels": [],
+    "description": "Accessing an image as an App based resources",
     "licensing": {
-        "licenses": [],
-        "product-codes": []
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
     },
     "references": [
         ["API", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/resource_api.html"]
@@ -12,9 +13,9 @@
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2025",
     "tags": [
-        "resources"
+        "resources", "image-widget"
     ],
-    "title": "ScriptResources",
-    "uuid": "ffb0632f-850c-418b-a44a-2fa3b0187b78",
+    "title": "Resource access example",
+    "uuid": "040e602d-40d6-47a1-9fb4-e558b231ada9",
     "version": "1.0.0"
 }
