@@ -1,0 +1,58 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "description": "Example App demonstrating usage of the settings API",
+    "licensing": {
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
+    },
+    "references": [
+        ["API", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/python_api.html#gom-api-settings"]
+    ],
+    "settings": [
+        {
+            "description": "Dialog configuration",
+            "name": "dialog"
+        },
+        {
+            "description": "Size of the dialog",
+            "name": "dialog.size"
+        },
+        {
+            "description": "Dialog width",
+            "digits": 0,
+            "name": "dialog.size.width",
+            "value": 640
+        },
+        {
+            "description": "Dialog height",
+            "digits": 0,
+            "name": "dialog.size.height",
+            "value": 480
+        },
+        {
+            "description": "Threshold",
+            "digits": 2,
+            "maximum": 10,
+            "minimum": 0,
+            "name": "dialog.threshold",
+            "step": 0.01,
+            "value": 1
+        },
+        {
+            "description": "Magic Key",
+            "name": "dialog.magic",
+            "value": "Default text",
+            "visible": false
+        }
+    ],
+    "tags": [
+        "settings"
+    ],
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2025",
+    "title": "Settings API example",
+    "uuid": "3b515488-aa7b-4035-85e1-b9509db8af4f",
+    "version": "1.0.5"
+}
