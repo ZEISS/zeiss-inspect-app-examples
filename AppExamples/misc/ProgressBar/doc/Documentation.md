@@ -8,7 +8,7 @@
 This example shows how to display a progress bar at the bottom of the ZEISS INSPECT main window.
 
 There are two other variants of a progress bar:
-* A specific API is available for showing <a href="https://github.com/ZEISS/zeiss-inspect-app-examples/tree/dev/AppExamples/scripted_actuals/ScriptedElementProgress">Scripted elements progress</a> in the ZEISS INSPECT main window
+* A specific API is available for showing <a href="https://github.com/ZEISS/zeiss-inspect-app-examples/tree/main/AppExamples/scripted_actuals/ScriptedElementProgress">Scripted elements progress</a> in the ZEISS INSPECT main window
 * The <a href="https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/python_api_introduction/user_defined_dialogs.html#progress-bar-widget">Progress bar widget</a> is used to show progress in a user-defined dialog.
 
 ## Highlights
