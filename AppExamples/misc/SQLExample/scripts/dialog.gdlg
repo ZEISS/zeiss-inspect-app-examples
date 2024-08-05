@@ -1,0 +1,621 @@
+{
+    "content": [
+        [
+            {
+                "columns": 4,
+                "name": "label",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "SQL Database Connection",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+            },
+            {
+            },
+            {
+            }
+        ],
+        [
+            {
+                "columns": 4,
+                "name": "separator",
+                "rows": 1,
+                "title": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "separator"
+            },
+            {
+            },
+            {
+            },
+            {
+            }
+        ],
+        [
+            {
+                "columns": 2,
+                "name": "label_1",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "SQL Server (Host)",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+            },
+            {
+                "columns": 2,
+                "name": "in_host",
+                "password": false,
+                "read_only": false,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::string",
+                "value": ""
+            },
+            {
+            }
+        ],
+        [
+            {
+                "columns": 2,
+                "name": "label_2",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "User",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+            },
+            {
+                "columns": 2,
+                "name": "in_user",
+                "password": false,
+                "read_only": false,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::string",
+                "value": ""
+            },
+            {
+            }
+        ],
+        [
+            {
+                "columns": 2,
+                "name": "label_3",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Password",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+            },
+            {
+                "columns": 2,
+                "name": "in_password",
+                "password": false,
+                "read_only": false,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::string",
+                "value": ""
+            },
+            {
+            }
+        ],
+        [
+            {
+                "columns": 2,
+                "name": "label_4",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Database",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+            },
+            {
+                "columns": 2,
+                "name": "in_database",
+                "password": true,
+                "read_only": false,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::string",
+                "value": ""
+            },
+            {
+            }
+        ],
+        [
+            {
+                "button_type": "push",
+                "columns": 2,
+                "icon": "AAAAAA==",
+                "icon_file_name": "",
+                "icon_size": {
+                    "value": "icon"
+                },
+                "icon_system_size": {
+                    "value": "default"
+                },
+                "icon_system_type": {
+                    "value": "ok"
+                },
+                "icon_type": {
+                    "value": "none"
+                },
+                "name": "bt_connect",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Connect",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "button::pushbutton"
+            },
+            {
+            },
+            {
+                "columns": 2,
+                "name": "out_status",
+                "password": false,
+                "read_only": true,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::string",
+                "value": ""
+            },
+            {
+            }
+        ],
+        [
+            {
+                "columns": 4,
+                "name": "label_5",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Project Keywords",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+            },
+            {
+            },
+            {
+            }
+        ],
+        [
+            {
+                "columns": 4,
+                "name": "separator_1",
+                "rows": 1,
+                "title": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "separator"
+            },
+            {
+            },
+            {
+            },
+            {
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "maximum_size": -1,
+                "minimum_size": 0,
+                "name": "spacer",
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "spacer::horizontal"
+            },
+            {
+                "columns": 1,
+                "name": "label_7",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "INSPECT",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "columns": 1,
+                "maximum_size": -1,
+                "minimum_size": 0,
+                "name": "spacer_1",
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "spacer::horizontal"
+            },
+            {
+                "columns": 1,
+                "name": "label_8",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Database",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            }
+        ],
+        [
+            {
+                "columns": 2,
+                "maximum_size": -1,
+                "minimum_size": 0,
+                "name": "spacer_4",
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "spacer::horizontal"
+            },
+            {
+            },
+            {
+                "button_type": "push",
+                "columns": 1,
+                "icon": "AAAAAA==",
+                "icon_file_name": "",
+                "icon_size": {
+                    "value": "icon"
+                },
+                "icon_system_size": {
+                    "value": "default"
+                },
+                "icon_system_type": {
+                    "value": "ok"
+                },
+                "icon_type": {
+                    "value": "none"
+                },
+                "name": "bt_save",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": ">",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "Save to Database",
+                    "translatable": true
+                },
+                "type": "button::pushbutton"
+            },
+            {
+                "columns": 1,
+                "maximum_size": -1,
+                "minimum_size": 0,
+                "name": "spacer_6",
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "spacer::horizontal"
+            }
+        ],
+        [
+            {
+                "columns": 2,
+                "maximum_size": -1,
+                "minimum_size": 0,
+                "name": "spacer_5",
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "spacer::horizontal"
+            },
+            {
+            },
+            {
+                "button_type": "push",
+                "columns": 1,
+                "icon": "AAAAAA==",
+                "icon_file_name": "",
+                "icon_size": {
+                    "value": "icon"
+                },
+                "icon_system_size": {
+                    "value": "default"
+                },
+                "icon_system_type": {
+                    "value": "ok"
+                },
+                "icon_type": {
+                    "value": "none"
+                },
+                "name": "bt_load",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "<",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "Load from Database",
+                    "translatable": true
+                },
+                "type": "button::pushbutton"
+            },
+            {
+                "columns": 1,
+                "maximum_size": -1,
+                "minimum_size": 0,
+                "name": "spacer_7",
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "spacer::horizontal"
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "label_6",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Key1",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "columns": 1,
+                "name": "out_k1_local",
+                "password": false,
+                "read_only": true,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::string",
+                "value": ""
+            },
+            {
+                "columns": 1,
+                "maximum_size": -1,
+                "minimum_size": 0,
+                "name": "spacer_2",
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "spacer::horizontal"
+            },
+            {
+                "columns": 1,
+                "name": "out_k1_db",
+                "password": false,
+                "read_only": true,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::string",
+                "value": ""
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "label_9",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Key2",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "columns": 1,
+                "name": "out_k2_local",
+                "password": false,
+                "read_only": false,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::string",
+                "value": ""
+            },
+            {
+                "columns": 1,
+                "maximum_size": -1,
+                "minimum_size": 0,
+                "name": "spacer_3",
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "spacer::horizontal"
+            },
+            {
+                "columns": 1,
+                "name": "out_k2_db",
+                "password": false,
+                "read_only": false,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::string",
+                "value": ""
+            }
+        ]
+    ],
+    "control": {
+        "id": "OkCancel"
+    },
+    "embedding": "always_toplevel",
+    "position": "",
+    "size": {
+        "height": 485,
+        "width": 347
+    },
+    "sizemode": "automatic",
+    "style": "",
+    "title": {
+        "id": "",
+        "text": "SQL Database Example",
+        "translatable": true
+    }
+}

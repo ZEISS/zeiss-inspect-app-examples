@@ -1,0 +1,20 @@
+{
+    "author": "Cals Zeiss GOM Metrology GmbH",
+    "description": "Example for SQL Database Access",
+    "labels": [
+    ],
+    "licensing": {
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
+    },
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2025",
+    "tags": [
+        "sql-database", "project-keywords"
+    ],
+    "title": "SQLExample",
+    "uuid": "58c970e7-c01d-4e72-88a2-7e8db7cd1dec",
+    "version": "1.0.0"
+}
