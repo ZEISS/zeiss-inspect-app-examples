@@ -1,0 +1,27 @@
+{
+  "display_name": "Generate MSA ANOVA-2 setup",
+  "folded_blocks": [
+  ],
+  "icon": "",
+  "iinspect_condition": "",
+  "interactive": false,
+  "main_menu_path": {
+      "anchor": {
+          "item": "reports",
+          "submenu": [
+              "operations"
+          ],
+          "type": "submenu"
+      },
+      "script": "userscript.newenv__Tools__MeasurementSystemAnalysis__msa_anova_2",
+      "submenu": [
+          "System analysis"
+      ]
+  },
+  "multicreation_script": false,
+  "script_check_type": "none",
+  "script_element_type": "none",
+  "show_in_iinspect": false,
+  "show_in_menu": true,
+  "uuid": "3633fc5a-e66e-4b44-bfdb-7ce63e82c38e"
+}

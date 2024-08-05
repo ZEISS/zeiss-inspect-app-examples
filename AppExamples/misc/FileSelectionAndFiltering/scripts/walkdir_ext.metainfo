@@ -1,0 +1,25 @@
+{
+    "display_name": "walkdir_ext.py",
+    "folded_blocks": [
+    ],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": true,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+            ],
+            "type": "command"
+        },
+        "script": "",
+        "submenu": [
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "none",
+    "show_in_iinspect": false,
+    "show_in_menu": true,
+    "uuid": "0f3bacce-ea63-444c-91c9-d315fa63689f"
+}

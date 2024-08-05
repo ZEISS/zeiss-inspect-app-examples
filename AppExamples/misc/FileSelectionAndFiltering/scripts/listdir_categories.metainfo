@@ -1,0 +1,25 @@
+{
+    "display_name": "listdir_categories.py",
+    "folded_blocks": [
+    ],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": true,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+            ],
+            "type": "command"
+        },
+        "script": "",
+        "submenu": [
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "none",
+    "show_in_iinspect": false,
+    "show_in_menu": true,
+    "uuid": "cc85df8c-d021-4c9b-93f2-2937430a6b0a"
+}

@@ -1,0 +1,25 @@
+{
+    "display_name": "walkdir_import_scripts.py",
+    "folded_blocks": [
+    ],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": true,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+            ],
+            "type": "command"
+        },
+        "script": "",
+        "submenu": [
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "none",
+    "show_in_iinspect": false,
+    "show_in_menu": true,
+    "uuid": "2c5a71fb-bd75-43c7-a7a9-297af76c0872"
+}

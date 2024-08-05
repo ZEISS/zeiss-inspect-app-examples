@@ -1,0 +1,21 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "description": "Accessing an image as an App based resources",
+    "licensing": {
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
+    },
+    "references": [
+        ["API", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/resource_api.html"]
+    ],
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2025",
+    "tags": [
+        "resources", "image-widget"
+    ],
+    "title": "Resource access example",
+    "uuid": "040e602d-40d6-47a1-9fb4-e558b231ada9",
+    "version": "1.0.0"
+}
