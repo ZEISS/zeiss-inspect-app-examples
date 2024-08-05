@@ -1,0 +1,36 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "description": "Service API Example",
+    "labels": [
+    ],
+    "licensing": {
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
+    },
+    "references": [
+        ["HowTo", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/using_services/using_services.html"],
+        ["API", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/python_api.html#gom-api-services"]
+    ],
+    "services": [
+        {
+            "endpoint": "gom.api.math",
+            "name": "Multiplicator",
+            "script": "multiplicator/service.py"
+        },
+        {
+            "endpoint": "gom.api.test",
+            "name": "Reflector",
+            "script": "reflector/service.py"
+        }
+    ],
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2025",
+    "tags": [
+        "service"
+    ],
+    "title": "Service Test",
+    "uuid": "8bc26aa3-4b79-44ab-a6a1-18641664a406",
+    "version": "1.0.0"
+}
