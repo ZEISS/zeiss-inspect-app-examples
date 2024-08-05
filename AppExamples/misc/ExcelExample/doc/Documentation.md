@@ -10,7 +10,7 @@ This example demonstrates how to read and write Excel files from an App. The Exc
 
 For demonstration purposes, project keywords are read from or written to an Excel file, but the example can be used as a template for other items.
 
-![Define Project Keywords Dialog](../../howtos/project_keywords/assets/define_project_keywords.png)
+![Define Project Keywords Dialog](define_project_keywords.png)
 
 ## Prerequisite
 
