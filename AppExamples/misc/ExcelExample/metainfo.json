@@ -1,6 +1,6 @@
 {
     "author": "Carl Zeiss GOM Metrology GmbH",
-    "description": "",
+    "description": "Example for reading and writing Excel files from an App",
     "labels": [],
     "licensing": {
         "licenses": [],
