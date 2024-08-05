@@ -1,0 +1,17 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "description": "",
+    "labels": [],
+    "licensing": {
+        "licenses": [],
+        "product-codes": []
+    },
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2025",
+    "tags": [
+        "import", "export", "project-keywords"
+    ],
+    "title": "ExcelExample",
+    "uuid": "b206780c-2ac5-488b-bf6a-f48263cbdbe5",
+    "version": "1.0.0"
+}
