@@ -2,14 +2,20 @@
     "author": "Carl Zeiss GOM Metrology GmbH",
     "description": "This example demonstrates two ways of accessing result data from checks using the element properties and data interfaces.",
     "environment": "ZeissInspectExampleProjects",
+    "example-projects": ["zeiss_part_test_project"],
     "labels": [],
     "licensing": {
         "licenses": [],
         "product-codes": []
     },
+    "references": [
+        ["HowTo", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/python_api_introduction/python_api_introduction.html#access-element-properties"]
+    ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2025",
-    "tags": [],
+    "tags": [
+        "element-properties", "element-data"
+    ],
     "title": "CheckResultsDataArray",
     "uuid": "cc4de73f-a8b9-4c01-8f45-141a74f29333",
     "version": "1.0.0"

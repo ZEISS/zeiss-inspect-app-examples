@@ -1,0 +1,44 @@
+{
+    "content": [
+        [
+            {
+                "columns": 1,
+                "default": "",
+                "file_types": [
+                ],
+                "file_types_default": "",
+                "limited": false,
+                "name": "file",
+                "rows": 1,
+                "selection_type": "file",
+                "title": {
+                    "id": "",
+                    "text": "Choose File",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::file"
+            }
+        ]
+    ],
+    "control": {
+        "id": "OkCancel"
+    },
+    "embedding": "always_toplevel",
+    "position": "automatic",
+    "size": {
+        "height": 112,
+        "width": 271
+    },
+    "sizemode": "automatic",
+    "style": "",
+    "title": {
+        "id": "",
+        "text": "Choose Excel File",
+        "translatable": true
+    }
+}

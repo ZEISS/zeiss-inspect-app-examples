@@ -5,7 +5,7 @@
 # Carl Zeiss GOM Metrology GmbH, 2024
 #
 # This App is part of the ZEISS INSPECT Python API Examples:
-# https://zeissiqs.github.io/zeiss-inspect-addon-api/2023/python_examples/
+# https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_examples/
 # ---
 
 import gom

@@ -8,7 +8,9 @@
     },
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2025",
-    "tags": [],
+    "tags": [
+        "menu"
+    ],
     "title": "ScriptIcon",
     "uuid": "d791a884-e890-40bf-a87d-d9bdf806c2c2",
     "version": "1.0.0"

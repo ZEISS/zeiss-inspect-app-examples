@@ -7,9 +7,15 @@
         "licenses": [],
         "product-codes": []
     },
+    "references": [
+        ["HowTo", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/scripted_elements/scripted_actuals.html"], 
+        ["API", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/scripted_elements_api.html#point"]
+    ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2025",
-    "tags": [],
+    "tags": [
+        "point", "scripted-actual"
+    ],
     "title": "ScriptedActualPoint",
     "uuid": "3222ba70-7a03-494d-b013-6310fde2f882",
     "version": "1.0.0"

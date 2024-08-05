@@ -1,10 +1,28 @@
 name: Update overview and create PR
-on:
-  workflow_dispatch:
+on: [workflow_dispatch,push]
+env:
+  GH_TOKEN: ${{ github.token }}
 jobs:
   create_file_and_pr:
     runs-on: ubuntu-latest
     steps:
+      - name: Set branches
+        id: set_branches
+        run:
+          |
+          CURRENT_BRANCH=${GITHUB_REF#refs/*/}
+          echo "Current branch: ${CURRENT_BRANCH}"
+          TARGET_BRANCH=${GITHUB_REF#refs/*/}
+          echo "Target branch: ${TARGET_BRANCH}"
+          echo "current_branch=${CURRENT_BRANCH}" >> $GITHUB_OUTPUT
+          echo "target_branch=${TARGET_BRANCH}" >> $GITHUB_OUTPUT
+      - name: Set reviewers
+        id: reviewers
+        run:
+          |
+          REVIEWERS="fblankenburgzeiss,mprinkezs" # separate by commas
+          echo "Reviewers: ${REVIEWERS}"
+          echo "reviewers=${REVIEWERS}" >> $GITHUB_OUTPUT
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
@@ -12,22 +30,90 @@ jobs:
       - name: Check out the repository
         uses: actions/checkout@v4
         with:
-          #ref: ${{ github.event.inputs.branch_name }}
-          ref: main
+          ref: ${{ format('{0}', steps.set_branches.outputs.current_branch) }}
           fetch-depth: 0 # Fetch all history for all branches and tags
 
+      - name: Git config
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          
       - name: Create a new branch
         run: |
-          #git checkout -b ${{ github.event.inputs.branch_name }} || git checkout ${{ github.event.inputs.branch_name }}
           git checkout -b overview-update || git checkout overview-update
         
-      - name: Create a new file 
+      - name: Update overview (ZEISS)
         run: |
-          # echo "${{ github.event.inputs.file_content }}" > ${{ github.event.inputs.file_path }}
-          python .github/scripts/gen_overview > AppExamples/README.md
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          python .github/scripts/gen_overview.py > AppExamples/README.md
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No changes to commit."
+            echo "changes=false" >> $GITHUB_ENV
+          else
+            echo "Changes detected."
+            echo "changes=true" >> $GITHUB_ENV
+          fi
+      
+      - name: Push changes (ZEISS)
+        if: env.changes == 'true'
+        run: |
           git add AppExamples/README.md
           git commit -m "Updated AppExamples/README.md"
-          #git push --set-upstream origin ${{ github.event.inputs.branch_name }}
-          git push --set-upstream origin overview-update
+          git push origin +overview-update:overview-update 
+
+      - name: Create Pull Request
+        if: env.changes == 'true'
+        uses: devops-infra/action-pull-request@v0.5.5
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          #source_branch: apidoc-update-main
+          target_branch: ${{ format('{0}', steps.set_branches.outputs.target_branch) }}
+          title: ${{ format('Updated App Examples Overview (AppExamples/README.md) ({0})', steps.set_branches.outputs.target_branch) }}
+          #template: .github/PULL_REQUEST_TEMPLATE.md
+          body: "**Automated pull request**"
+          reviewer: ${{ format('{0}', steps.reviewers.outputs.reviewers) }}
+          #assignee: octocat
+          label: documentation
+          #milestone: My milestone
+          #draft: true
+          #old_string: "<!-- Add your description here -->"
+          #new_string: "** Automatic pull request**"
+          get_diff: true
+          ignore_users: "dependabot"
+          allow_no_diff: false
+
+      - name: Update overview (ZeissIQS)
+        run: |
+          python .github/scripts/gen_overview.py --sphinx-doc > examples_overview.md
+          gh repo clone ZeissIQS/zeiss-inspect-addon-api
+          cd zeiss-inspect-addon-api
+          git checkout -b overview-update --track origin/main
+          cp ../examples_overview.md doc/python_examples/examples_overview.md
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No changes to commit."
+            echo "changes=false" >> $GITHUB_ENV
+          else
+            echo "Changes detected."
+            echo "changes=true" >> $GITHUB_ENV
+          fi
+
+      - name: Push changes (ZeissIQS)
+        if: env.changes == 'true'
+        run: |
+          cd zeiss-inspect-addon-api
+          git add doc/python_examples/examples_overview.md
+          git commit -m "Updated doc/python_examples/examples_overview.md"
+          git remote set-url origin https://x-access-token:${{ secrets.TARGET_REPO_PAT_2 }}@github.com/ZeissIQS/zeiss-inspect-addon-api.git
+          git push origin +overview-update:overview-update 
+
+      # Note: Pull Request in ZeissIQS project is created by a separate workflow in ZeissIQS due to permission issues 
+      #- name: Create Pull Request (ZeissIQS)
+      #  if: env.changes == 'true'
+      #  run: |
+      #    echo "${{ secrets.TARGET_REPO_PAT_2 }}" | gh auth login --with-token
+      #    gh pr create --repo ZeissIQS/zeiss-inspect-addon-api \
+      #                 --head overview-update \
+      #                 --title "${{ format('Updated App Examples Overview (AppExamples/README.md) ({0})', steps.set_branches.outputs.target_branch) }}" \
+      #                 --body "**Automated pull request**" \
+      #                 --label documentation \
+      #                 --reviewer ${{ format('{0}', steps.reviewers.outputs.reviewers) }}
+
