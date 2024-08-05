@@ -6,9 +6,15 @@
         "licenses": [],
         "product-codes": []
     },
+    "references": [
+        ["HowTo", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/scripted_elements/scripted_actuals.html"], 
+        ["API", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/scripted_elements_api.html#cone"]
+    ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2025",
-    "tags": [],
+    "tags": [
+        "cone", "scripted-actual"
+    ],
     "title": "ScriptedActualCone",
     "uuid": "8174c7e9-52de-4c18-9723-1d0f3ae66607",
     "version": "1.0.0"

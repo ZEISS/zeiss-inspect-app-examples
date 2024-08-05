@@ -2,14 +2,19 @@
     "author": "Carl Zeiss GOM Metrology GmbH",
     "description": "This example shows how to create a scalar check by script. A scalar check is the most basic check, as it assigns a scalar value to an element. Nearly all elements you can find in the software can be checked like this.",
     "environment": "ZeissInspectExampleProjects",
+    "example-projects": ["zeiss_part_test_project"],
     "labels": [],
     "licensing": {
         "licenses": [],
         "product-codes": []
     },
+    "references": [
+        ["HowTo", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/scripted_elements/scripted_checks.html"], 
+        ["API", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/scripted_elements_api.html#scalar"]
+    ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2025",
-    "tags": [],
+    "tags": ["scripted-check", "scalar"],
     "title": "ScriptedScalarCheck",
     "uuid": "1212cf39-9f41-4ae2-bb8f-f7f76b072d91",
     "version": "1.0.2"

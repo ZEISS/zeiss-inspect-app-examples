@@ -9,7 +9,9 @@
     },
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2025",
-    "tags": [],
+    "tags": [
+        "project"
+    ],
     "title": "ExampleProjects",
     "uuid": "eaca1f5c-bad1-4a37-b68b-7928fe46bf8c",
     "version": "1.0.0"

@@ -6,9 +6,15 @@
         "licenses": [],
         "product-codes": []
     },
+    "references": [
+        ["HowTo", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/scripted_elements/scripted_actuals.html"], 
+        ["API", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/scripted_elements_api.html#circle"]
+    ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2025",
-    "tags": [],
+    "tags": [
+        "circle", "scripted-actual"
+    ],
     "title": "ScriptedActualCircle",
     "uuid": "26eacb0d-2046-4757-9b16-0df005eb62b7",
     "version": "1.0.0"

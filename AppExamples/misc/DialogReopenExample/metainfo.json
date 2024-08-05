@@ -6,9 +6,14 @@
         "licenses": [],
         "product-codes": []
     },
+    "references": [
+        ["HowTo", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/python_api_introduction/user_defined_dialogs.html#executing-dialogs"]
+    ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2025",
-    "tags": [],
+    "tags": [
+        "dialog"
+    ],
     "title": "DialogReopenExample",
     "uuid": "7ae503b5-2988-4eff-9b46-f1c9d9c01f63",
     "version": "1.0.0"

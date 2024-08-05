@@ -7,9 +7,15 @@
         "licenses": [],
         "product-codes": []
     },
+    "references": [
+        ["HowTo", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/scripted_elements/scripted_actuals.html"], 
+        ["API", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/scripted_elements_api.html#section"]
+    ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2025",
-    "tags": [],
+    "tags": [
+        "section", "scripted-actual"
+    ],
     "title": "ScriptedActualSection",
     "uuid": "1e1172be-c2f3-43f2-972c-a9abd279c27f",
     "version": "1.0.0"
