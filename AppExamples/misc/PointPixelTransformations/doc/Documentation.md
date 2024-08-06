@@ -15,7 +15,7 @@ Each measurement has two arrays for reference points with matching indices:
 
 ### 1. Set the point coordinate
 
-```{code-block} python
+```python
 measurement = gom.app.project.measurement_series[MEASUREMENT_SERIES].measurements[MEASUREMENT]
 stage_index = 0
 
@@ -34,14 +34,14 @@ Reference points' IDs and coordinates
 
 ### 2. Get the left and right camera image
 
-```{code-block} python
+```python
 left = gom.api.project.get_image_acquisition(measurement, 'left camera', [stage_index])[0]
 right = gom.api.project.get_image_acquisition(measurement, 'right camera', [stage_index])[0]
 ```
 
 ### 3. Compute 2D pixel coordinates from 3D point
 
-```{code-block} python
+```python
 image_coordinates = gom.api.imaging.compute_pixels_from_point ([(reference_point, left), (reference_point, right)])
 print(f'\tImage coordinates of reference point (left, right): {image_coordinates}')
 ```
@@ -57,7 +57,7 @@ Image coordinates of reference point (left, right): [gom.Vec2d (1980.72990236120
 
 The resulting 2D pixels from the previous step are used as the input parameters to the transformation.
 
-```{code-block} python
+```python
 print(f'\tLeft image: {image_coordinates[0]}, Right image: {image_coordinates[1]}')
 use_calibration = False
 point_and_residuum = gom.api.imaging.compute_point_from_pixels ([[(image_coordinates[0], left), (image_coordinates[1], right)]], use_calibration)[0]
