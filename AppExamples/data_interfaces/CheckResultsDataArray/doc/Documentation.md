@@ -8,18 +8,22 @@ This example demonstrates two ways of accessing result data from checks using th
 
 ## Highlights
 
-Basically, if you have obtained an `gom.Reference` element reference, e.g. by selecting an element by name (`gom.app.project.inspection['Surface comparison 1']`), you can access the results of the check:
+Basically, if you have obtained an `gom.Reference` element reference, e.g. by selecting an element by name (`gom.app.project.inspection['Surface comparison 1']`), you can access the results of the check.
 
-1. **By evaluating an expression**
+### 1. Accessing element results by evaluating an expression
 
-   `single_scalar_value = element.get ('result_dimension[0].deviation')`
+```python
+single_scalar_value = element.get ('result_dimension[0].deviation')
+```
   
 * simple for single values
 * works without using `numpy` library
 
-2. **By the data interface of this element using the `.data` token**
+### 2. Accessing element results by the data interface using the `.data` token
 
-   `scalars = np.array (element.data.result_dimension.deviation)`
+```python
+scalars = np.array (element.data.result_dimension.deviation)
+```
 
 * gets large datasets of all stages very efficiently
 
