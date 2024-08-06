@@ -30,7 +30,7 @@ print(f'\tFirst reference point in {MEASUREMENT_SERIES} - {MEASUREMENT}: ID = {i
 
 Reference points' IDs and coordinates
 
-![Table: Reference Points](point_pixel_transformations/assets/reference_points_table.png){w=800px}
+![Table: Reference Points](reference_points_table.png){w=800px}
 
 ### 2. Get the left and right camera image
 
@@ -75,12 +75,12 @@ Computation result: P = gom.Vec3d (-144.2165521110654, 168.67899387974234, -172.
 
 Explorer: Measurement &mdash; Edit Creation Parameters
 
-![Measurement Creation Parameters](point_pixel_transformations/assets/measurement_creation_parameters.png){w=400px}
+![Measurement Creation Parameters](measurement_creation_parameters.png){w=400px}
 
 
 Edit Creation Parameters Dialog
 
-![Edit Creation Parameters Dialog](point_pixel_transformations/assets/camera_image_reference_points.png){w=800px}
+![Edit Creation Parameters Dialog](camera_image_reference_points.png){w=800px}
 
 ## Related
 
