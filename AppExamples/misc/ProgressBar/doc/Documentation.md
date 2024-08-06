@@ -15,7 +15,7 @@ There are two other variants of a progress bar:
 
 The following code example shows a progress bar:
 
-```{code-block} python
+```python
 import gom.api.progress
 import time
 
