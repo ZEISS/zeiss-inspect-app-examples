@@ -6,9 +6,11 @@ Based on `unitest` (https://docs.python.org/3/library/unittest.html) and `Covera
 
 ## Notes
 
-**Note 1:** The Python package `coverage` must be installed via the Add-on Explorer. 
+> [!NOTE]
+> The Python package `coverage` must be installed via the Add-on Explorer. 
 
-**Note 2:** The Add-on must be in editing mode to run the tests.
+> [!NOTE]
+> The Add-on must be in editing mode to run the tests.
 
 
 ## File contents
