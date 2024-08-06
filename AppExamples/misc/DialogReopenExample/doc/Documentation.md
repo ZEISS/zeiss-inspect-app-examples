@@ -6,9 +6,8 @@
 
 This examples demonstrates, how a dialog can be closed from its own handler, just to be opened again.
 
-```{warning}
-There are very rare occasions, where you should need this. Use this approach only, if you know what you are doing.
-```
+> [!WARNING]
+> There are very rare occasions, where you should need this. Use this approach only if you know what you are doing.
 
 ## Highlights
 
@@ -36,10 +35,8 @@ def dialog_event_handler (widget):
     reopen = True
 ```
 
-```{warning}
-Never reopen the dialog directly from its own handler to prevent getting undefined behaviour.
-```
-
+> [!WARNING]
+> Never reopen the dialog directly from its own handler to prevent getting undefined behaviour.
 
 ## Related
 
