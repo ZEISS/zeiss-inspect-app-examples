@@ -8,7 +8,7 @@ Demonstration for accessing add-on based resources via scripts.
 
 Resources are addressed with a relative or absolute file system path. In this example, the path relative to the Python script file is used:
 
-```{code-block} python
+```python
 data = gom.app.resource["assets/zeiss_logo.png"]
 ```
 
@@ -19,7 +19,7 @@ The equivalent absolute path is `:Resources/assets/zeiss_logo.png`.
 
 2. **Using an image from a resource**
 
-```{code-block} python
+```python
 print ('Type:', type (data))
 # Output: Type: <class 'bytes'>
 
