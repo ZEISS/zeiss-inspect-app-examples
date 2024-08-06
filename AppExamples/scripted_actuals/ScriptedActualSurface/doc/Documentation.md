@@ -4,22 +4,16 @@
 
 This is an example for a scripted 'surface' element. The dialog allows to specify the coordinates of eight vertices defining a mesh. The triangles for defining the mesh are hard-coded in this example. The resulting body is a cuboid.
 
-```{note}
-The mesh triangles are defined by indices into the array of vertices. The vertices defining a triangle must be specified in counter-clockwise
+> [!NOTE]
+> The mesh triangles are defined by indices into the array of vertices. The vertices defining a triangle must be specified in counter-clockwise
 order (as viewed from outside).
-```
 
-```{note}
-Please see [ScriptedActualPoint](https://github.com/ZEISS/zeiss-inspect-app-examples/blob/dev/AppExamples/scripted_actuals/ScriptedActualPoint/doc/Documentation.md) for a complete scripted elements example with detailed description.
-```
-
+> [!NOTE]
+> Please see [ScriptedActualPoint](https://github.com/ZEISS/zeiss-inspect-app-examples/blob/dev/AppExamples/scripted_actuals/ScriptedActualPoint/doc/Documentation.md) for a complete scripted elements example with detailed description.
 
 ## Source code excerpt
 
-```{code-block} python
----
-linenos:
----
+```python
 def dialog(context, params):
     #[...]
 
