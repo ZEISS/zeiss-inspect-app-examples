@@ -14,7 +14,7 @@ For demonstration purposes, project keywords are read from or written to a CSV f
 
 Both example scripts check if a project has been opened and quit with an error message dialog if this is not the case:
 
-```{code-block} python
+```python
 if not hasattr(gom.app, 'project'):
     gom.script.sys.execute_user_defined_dialog (file='no_project.gdlg')
     quit(0)
@@ -24,13 +24,13 @@ if not hasattr(gom.app, 'project'):
 
 The CSV module is imported:
 
-```{code-block} python
+```python
 import csv
 ```
 
 The current project keywords and their values are listed:
 
-```{code-block} python
+```python
 print("-- Current keywords --")
 for k in gom.app.project.project_keywords:
     print(f"{k}='{gom.app.project.get(k)}'")
@@ -38,13 +38,13 @@ for k in gom.app.project.project_keywords:
 
 A dialog is used to request the CSV file to be opened:
 
-```{code-block} python
+```python
 RESULT=gom.script.sys.execute_user_defined_dialog (file='import_file.gdlg')
 ```
 
 The CSV file is opened and a `csv_reader` object for accessing its content is created:
 
-```{code-block} python
+```python
 with open(RESULT.file) as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=';')
 ```
@@ -53,7 +53,7 @@ The class `csv.reader` allows some configurations, such as the column delimiter.
 
 The scripts reads the CSV file line by line. Each line is provided as an array with the columns as its array elements. The first line is expected to contain a specific table header (`Project Keyword;Description;Value`). The remaining lines are used to create or change project keywords:
 
-```{code-block} python
+```python
 with open(RESULT.file) as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=';')
     line_count = 0
@@ -83,7 +83,7 @@ The script distinguishes the following cases:
 3. The keyword in the Excel file already exists, but its description has changed
 4. The keyword in the Excel file already exists and remains unchanged
 
-```{code-block} python
+```python
 ukw = "user_" + key
 if not ukw in gom.app.project.project_keywords:
     print(f"New keyword {key}='{val}' added")
@@ -104,7 +104,7 @@ else:
 
 Finally, the updated project keywords are listed:
 
-```{code-block} python
+```python
 print("\n-- Updated keywords --")
 for k in gom.app.project.project_keywords:
     print(f"{k}='{gom.app.project.get(k)}'")
@@ -116,7 +116,7 @@ As in `csv_import.py`, the module `csv` is imported, the presence of an open pro
 
 The file is opened and the `keywords_writer` object is created. Some configuration settings are passed to the constructor. First, the header row is written using the method `writerow()` with an array containing the column headings. Next, a loop iterates over all project keywords and writes them to the CSV file using `writerow()`:
 
-```{code-block} python
+```python
 with open(RESULT.file, mode='w', newline='') as keywords_file:
     keywords_writer = csv.writer(
         keywords_file, 
