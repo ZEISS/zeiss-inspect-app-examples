@@ -4,21 +4,15 @@
 
 This is an example for a scripted 'volume region' element. The dialog allows to select a linked volume element and to set offset (in the global coordinate system) as well as the dimensions (in the voxel coordinate system) of the volume region. In this example, the volume region is shown in light green.
 
-```{caution}
-The voxel (measurement) coordinate system may differ from the CAD coordinate system. 
-```
+> [!CAUTION]
+> The voxel (measurement) coordinate system may differ from the CAD coordinate system. 
 
-```{note}
-Please see [ScriptedActualPoint](https://github.com/ZEISS/zeiss-inspect-app-examples/blob/dev/AppExamples/scripted_actuals/ScriptedActualPoint/doc/Documentation.md) for a complete scripted elements example with detailed description.
-```
-
+> [!NOTE]
+> Please see [ScriptedActualPoint](https://github.com/ZEISS/zeiss-inspect-app-examples/blob/dev/AppExamples/scripted_actuals/ScriptedActualPoint/doc/Documentation.md) for a complete scripted elements example with detailed description.
 
 ## Source code excerpt
 
-```{code-block} python
----
-linenos:
----
+```python
 def dialog(context, params):
     #[...]
 
