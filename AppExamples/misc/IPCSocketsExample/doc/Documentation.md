@@ -38,6 +38,7 @@ The server responds with "O.k." if the request was decoded successfully, otherwi
 ## Socket Client
 
 ![Test Client](TestClient.png)
+
 The client TestClientStandalone.py is implemented as a standalone Python program with a PySide 6 GUI. Export the client script from the App and start it from the Windows command line with `python TestClientStandalone.py`.
 
 After selecting the request parameters, click **Transmit image request** or **Transmit elements request**. This initiates setting up a connection to the server, transmitting the request, receiving the response and finally disconnecting from the server.
