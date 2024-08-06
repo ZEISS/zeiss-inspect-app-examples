@@ -6,21 +6,15 @@ This is an example for a scripted 'volume' element. The volume data is created a
 
 The dialog allows to set the gray values and to apply a transformation to the volume element.
 
-```{caution}
-The voxel (measurement) coordinate system may differ from the CAD coordinate system. 
-```
+> [!CAUTION]
+> The voxel (measurement) coordinate system may differ from the CAD coordinate system. 
 
-```{note}
-Please see [ScriptedActualPoint](https://github.com/ZEISS/zeiss-inspect-app-examples/blob/dev/AppExamples/scripted_actuals/ScriptedActualPoint/doc/Documentation.md) for a complete scripted elements example with detailed description.
-```
-
+> [!NOTE]
+> Please see [ScriptedActualPoint](https://github.com/ZEISS/zeiss-inspect-app-examples/blob/dev/AppExamples/scripted_actuals/ScriptedActualPoint/doc/Documentation.md) for a complete scripted elements example with detailed description.
 
 ## Function for setting voxel data
 
-```{code-block} python
----
-linenos:
----
+```python
 def set_voxeldata(voxels, gv, e):
     """Set the gray value of some voxels
 
