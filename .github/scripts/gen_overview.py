@@ -44,7 +44,9 @@ def gen_table(_category, _tag_index):
     md +=  "| --- | ----------- | ---------------- | ---------- | ---- |\n"
 
     apps = os.path.join(BASEDIR, _category)
-    for _app in os.listdir(apps).sort():
+    list_dir = os.listdir(apps)
+    list_dir.sort()
+    for _app in list_dir:
         metainfo_path = os.path.abspath(os.path.join(BASEDIR, _category, _app, 'metainfo.json'))
         with open(metainfo_path, 'r', encoding="utf-8") as f:
             metainfo = json.load(f)
@@ -113,7 +115,9 @@ def gen_boilerplate(_category, _tag_index):
     block_odd = True
     
     apps = os.path.join(BASEDIR, _category)
-    for _app in os.listdir(apps).sort():
+    list_dir = os.listdir(apps)
+    list_dir.sort()
+    for _app in list_dir:
         metainfo_path = os.path.abspath(os.path.join(BASEDIR, _category, _app, 'metainfo.json'))
         with open(metainfo_path, 'r', encoding="utf-8") as f:
             metainfo = json.load(f)
