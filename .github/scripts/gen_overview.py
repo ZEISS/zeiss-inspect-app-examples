@@ -25,9 +25,9 @@ CATEGORY_DESCRIPTIONS = {
 }
 
 EXAMPLE_PROJECTS = {
-    'zeiss_part_test_project': {'index': 1},
-    'zeiss_part_test_measurement': {'index': 2},
-    'volume_test_project': {'index': 3}
+    'zeiss_part_test_project': {'index': 1, 'description': 'Simple optically measured part with a CAD, mesh and some basic inspections'},
+    'zeiss_part_test_measurement': {'index': 2, 'description': 'Optical measurement series and preliminary mesh of ZEISS part'},
+    'volume_test_project': {'index': 3, 'description': 'A small test volume for CT related inspections'}
 }
 
 def gen_table(_category, _tag_index):
@@ -269,12 +269,21 @@ myst:
 
     # Example projects
     app_overview += "\n## Example projects\n\n"
-
+    
+    if sphinx_doc: 
+        app_overview += "| Project name | Description |\n"
+        app_overview += "| ------------ | ----------- |\n"
+    else:
+        app_overview += "| No. | Project name | Description |\n"
+        app_overview += "| --- | ------------ | ----------- |\n"
+        
     for example, infos in EXAMPLE_PROJECTS.items():
         if sphinx_doc:
-            app_overview += f"* {example}\n"
+            #app_overview += f"* {example}\n"
+            app_overview += f"| {example} | {infos['description']} |\n"
         else:
-            app_overview += f"{infos['index']}) {example}\n"
+            #app_overview += f"{infos['index']}) {example}\n"
+            app_overview += f"| {infos['index']} | {example} | {infos['description']} |\n"
 
     app_overview += "\n[Download Example Projects App](https://software-store.zeiss.com/products/apps/ExampleProjects)"
 
