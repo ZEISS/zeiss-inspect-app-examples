@@ -9,6 +9,7 @@
 # ---
 
 import gom
+import gom.api.scripted_checks_util
 
 #
 # Dialog function
