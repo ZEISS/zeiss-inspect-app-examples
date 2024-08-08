@@ -16,7 +16,7 @@ For demonstration purposes, project keywords are read from or written to an Exce
 
 Both example scripts check if a project has been opened and quit with an error message dialog if this is not the case:
 
-```{code-block} python
+```python
 if not hasattr(gom.app, 'project'):
     gom.script.sys.execute_user_defined_dialog (file='no_project.gdlg')
     quit(0)
@@ -26,14 +26,14 @@ if not hasattr(gom.app, 'project'):
 
 Two packages are imported from `openpyxl`:
 
-```{code-block} python
+```python
 from openpyxl import load_workbook
 from openpyxl.utils.cell import coordinate_from_string, column_index_from_string
 ```
 
 The current project keywords and their values are listed with:
 
-```{code-block} python
+```python
 print("-- Current keywords --")
 for k in gom.app.project.project_keywords:
 	print(f"{k}='{gom.app.project.get(k)}'")
@@ -41,21 +41,21 @@ for k in gom.app.project.project_keywords:
 
 A dialog is used to request the Excel file to be opened:
 
-```{code-block} python
+```python
 RESULT=gom.script.sys.execute_user_defined_dialog (file='dialog.gdlg')
 print("\nOpening", RESULT.file)
 ```
 
 The workbook is opened from the Excel file and a worksheet object `ws` is created:
 
-```{code-block} python
+```python
 wb = load_workbook(filename = RESULT.file)
 ws = wb['Sheet']
 ```
 
 As a tradeoff between simplicity and flexibility, the script allows to configure the cells which contain keywords, but assumes that the keyword descriptions and values are located at fixed positions in the adjacent cells:
 
-```{code-block} python
+```python
 # Cells containing the keywords
 # - descriptions are expected in column+1
 # - values are expected in column+2
@@ -70,7 +70,7 @@ layout = [
 Cells can be accessed by their coordinates (e.g. "A1") or by row and column. The method `coordinate_from_string()` splits the coordinate into row and column (e.g. `coordinate_from_string("A1") => ("A", 1)`). The method `column_index_from_string()` converts a column name into 
 a column index (e.g. `column_index_from_string("A") => 1`).
 
-```{code-block} python
+```python
 # Get keyword by cell name, e.g. cell="A1"
 key = ws[cell].value
 
@@ -95,7 +95,7 @@ The script distinguishes the following cases:
 3. The keyword in the Excel file already exists, but its description has changed
 4. The keyword in the Excel file already exists and remains unchanged
 
-```{code-block} python
+```python
 ukw = "user_" + key
 if not ukw in gom.app.project.project_keywords:
     print(f"New keyword {key}='{val}' added")
@@ -116,7 +116,7 @@ else:
 
 The steps described above are repeated for all Excel cells listed in `layout[]`:
 
-```{code-block} python
+```python
 for cell in layout:
     # Get keyword, description and value
     #...
@@ -130,7 +130,7 @@ for cell in layout:
 
 Finally, the updated project keywords are listed:
 
-```{code-block} python
+```python
 print("\n-- Updated keywords --")
 for k in gom.app.project.project_keywords:
     print(f"{k}='{gom.app.project.get(k)}'")
@@ -140,14 +140,14 @@ for k in gom.app.project.project_keywords:
 
 Two packages are imported from `openpyxl`:
 
-```{code-block} python
+```python
 from openpyxl import Workbook
 from openpyxl.styles import Font
 ```
 
 The following code creates a workbook and writes text into three cells of the worksheet as a table header:
 
-```{code-block} python
+```python
 # Create a workbook
 wb = Workbook()
 	
@@ -162,7 +162,7 @@ ws['C1'] = "Value"
 
 Next, the table header is formatted and the column widths are adjusted:
 
-```{code-block} python
+```python
 # Change table header layout
 for cell in ['A1', 'B1', 'C1']:
     ws[cell].font = Font(bold=True, size=16) 
@@ -173,7 +173,7 @@ for cell in ['A1', 'B1', 'C1']:
 
 The script iterates over all project keywords and gets the values and keyword descriptions. A type conversion has been implemented for date entries. The method `ws.append([key, val, desc])` writes the variables `key`, `val` and `desc` - which are combined into an array - to the next three cells of the worksheet.
 
-```{code-block} python
+```python
 for key in gom.app.project.project_keywords:
     val = gom.app.project.get(key)
     desc = gom.app.project.get(f'description({key})')
@@ -200,13 +200,13 @@ Specific cells can be selected with `ws.cell(row=<row>, column=<column>)`. This 
 
 Finally the prepared spreadsheet is written to a file. The file path has been requested previously with a dialog.  
 
-```{code-block} python
+```python
 wb.save(RESULT1.file)
 ```
 
 To handle the common case that the Excel file cannot been written by the script, because it it currently opened in the Excel software, a loop with exception handling has been implemented:
 
-```{code-block} python
+```python
 # Repeat until file was written successfully or
 # user has cancelled.
 while True:

@@ -6,13 +6,13 @@ This example demonstrates how to implement, use and manage services.
 
 ## Highlights
 
-1. Service implementation
+### 1. Service implementation
 
 The service API function has the `@apifunction` decorator and the service script calls `gom.run_api()`:
 
-```{code-block} python
-:caption: Service script example multiplicator/service.py
+**Service script example `multiplicator/service.py`**
 
+```python
 import gom
 from gom import apifunction
 
@@ -26,40 +26,38 @@ gom.run_api()
 
 The service is configured in the App's `metainfo.json`:
 
-```{code-block} json
+```json
 {
-    //...
     "services": [
         {
             "endpoint": "gom.api.math",
             "name": "Multiplicator",
             "script": "multiplicator/service.py"
         }
-    ]
-    //...
+    ],
 }
 ```
 
-2. Service usage
+### 2. Service usage
 
 The service must be installed and started before it can be used. To use a service in a script, import its API endpoint and call its API function:
 
-```{code-block} python
-:caption: Example script using the multiply() function provided by the multiplicator service with endpoint gom.api.math
+**Example script using the multiply() function provided by the multiplicator service with endpoint `gom.api.math`:**
 
+```python
 import gom.api.math
 
 result = gom.api.math.multiply (24, 7)
 print(result)
 ```
 
-3. Service management from a script
+### 3. Service management from a script
 
 [gom.api.services](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/python_api.html#gom-api-services) allows to query and control services from a script:
 
-```{code-block} python
-:caption: Example script for querying and controlling services
+**Example script for querying and controlling services:**
 
+```python
 import sys
 import gom.api.services
 

@@ -8,7 +8,7 @@ This example demonstrates how to access an SQL database from an App. For demonst
 
 The database access is implemented using [mysql-connector-python](https://pypi.org/project/mysql-connector-python/). A test database server is set up using [MySQL Community Server](https://dev.mysql.com/downloads/mysql/).
 
-Besides, <a href="../../python_api/python_api.html#gom-api-settings">gom.api.settings</a> is used to save and restore entries made in a dialog.
+Besides, <a href="https://zeissiqs.github.io/zeiss-inspect-addon-api/main/python_api/python_api.html#gom-api-settings">gom.api.settings</a> is used to save and restore entries made in a dialog.
 
 ## Highlights
 
@@ -18,7 +18,7 @@ Besides, <a href="../../python_api/python_api.html#gom-api-settings">gom.api.set
 
 A project must be loaded to access project keywords. This is checked with the following code:
 
-```{code-block} python
+```python
 if not hasattr(gom.app, 'project'):
   gom.script.sys.execute_user_defined_dialog (file='no_project.gdlg')
   quit(0)
@@ -29,7 +29,7 @@ For each of these variables, two text widgets are used - one for the value in ZE
 
 If available, the project keywords are written to the text widgets in the column 'INSPECT' (`*_zi`):
 
-```{code-block} python
+```python
 if 'user_project' in gom.app.project.project_keywords:
   DIALOG.project_zi.value = getattr(gom.app.project, 'user_project')
 ```
@@ -38,7 +38,7 @@ The text widget entries in the column 'INSPECT' can be edited or loaded from the
 
 Finally the project keywords are updated from the text widgets, if the dialog is closed with the 'Ok' button:
 
-```{code-block} python
+```python
 try:
   RESULT = gom.script.sys.show_user_defined_dialog (dialog=DIALOG)
 except gom.BreakError as e:
@@ -68,7 +68,7 @@ A new database is created using the function `create_database()`, which calls [M
 
 1. A connection is established without specifying a database
 
-```{code-block} python
+```python
 def create_database(host_name, user_name, user_password, database):
   try:
 	  connection = mysql.connector.connect(
@@ -85,7 +85,7 @@ def create_database(host_name, user_name, user_password, database):
 
 The SQL command `CREATE DATABASE {database} DEFAULT CHARACTER SET 'utf8'` is passed as a parameter to the [MySQLCursor.execute()](https://dev.mysql.com/doc/connector-python/en/connector-python-api-mysqlcursor-execute.html) method.
 
-```{code-block} python
+```python
 cursor = connection.cursor()
 try:
   cursor.execute("CREATE DATABASE {} DEFAULT CHARACTER SET 'utf8'".format(database))
@@ -100,7 +100,7 @@ else:
 
 Again, the method [MySQLCursor.execute()](https://dev.mysql.com/doc/connector-python/en/connector-python-api-mysqlcursor-execute.html) is called &mdash; this time with the SQL command `USE {database}`.
 
-```{code-block} python
+```python
 try:
   cursor.execute("USE {}".format(database))
 except mysql.connector.Error as err:
@@ -118,7 +118,7 @@ Table: `projects`
 | ------------------------------- | --------------------------- | -------------------- | --------------- | -------------------- |
 | int(11) NOT NULL AUTO_INCREMENT | varchar(80) NOT NULL UNIQUE | varchar(80) NOT NULL | varchar(80)     | varchar(80) NOT NULL |  
 
-```{code-block} python
+```python
 # Database - projects table
 TABLES = {}
 TABLES['projects'] = (
@@ -134,7 +134,7 @@ TABLES['projects'] = (
 
 The table data structure is passed as the SQL command to the method [MySQLCursor.execute()](https://dev.mysql.com/doc/connector-python/en/connector-python-api-mysqlcursor-execute.html).
 
-```{code-block} python
+```python
 for table_name in TABLES:
   table_description = TABLES[table_name]
   try:
@@ -154,7 +154,7 @@ for table_name in TABLES:
 
 The methods [MySQLCursor.close()](https://dev.mysql.com/doc/connector-python/en/connector-python-api-mysqlcursor-close.html) and [MySQLConnection.close()](https://dev.mysql.com/doc/connector-python/en/connector-python-api-mysqlconnection-close.html) are called.
 
-```{code-block} python
+```python
 cursor.close()
 connection.close()
 return None
@@ -164,7 +164,7 @@ return None
 
 The function `create_server_connection()` creates a connection to the server and selects the database by calling [MySQLConnection.connect()](https://dev.mysql.com/doc/connector-python/en/connector-python-api-mysqlconnection-connect.html).
 
-```{code-block} python
+```python
 def create_server_connection(host_name, user_name, user_password, database):
   connection = None
   error = None
@@ -187,7 +187,7 @@ def create_server_connection(host_name, user_name, user_password, database):
 
 In this example, whe only use the project name for selecting database entries. The project names must be unique, so we use [MySQLCursor.fetchone()](https://dev.mysql.com/doc/connector-python/en/connector-python-api-mysqlcursor-fetchone.html) to get a single row from the `projects` table as result.
 
-```{code-block} python
+```python
 query = """SELECT company_name, department_name, part_name FROM projects
         WHERE project_name=%s"""
 values = (DIALOG.project_zi.value, )
@@ -196,7 +196,7 @@ result, err = execute_query(CONNECTION, query, values)
 
 With:
 
-```{code-block} python
+```python
 def execute_query(connection, query, values):
   cursor = connection.cursor(buffered=True, dictionary=True)
   err = None
@@ -220,7 +220,7 @@ Both inserting a new and updating an existing table row are based on [MySQLCurso
 
 Inserting:
 
-```{code-block} python
+```python
 # New project, insert
 query = """INSERT INTO projects
         (project_name, company_name, department_name, part_name)
@@ -231,7 +231,7 @@ result, err = execute_commit(CONNECTION, query, values)
 
 Updating:
 
-```{code-block} python
+```python
 # Project already exists, update
 query = """UPDATE projects SET company_name=%s, department_name=%s, part_name=%s
         WHERE project_name=%s;"""
@@ -241,7 +241,7 @@ result, err = execute_commit(CONNECTION, query, values)
 
 Both transactions use the function `execute_commit()`:
 
-```{code-block} python
+```python
 def execute_commit(connection, query, values):
   cursor = connection.cursor(buffered=True)
   err = None
@@ -261,7 +261,7 @@ def execute_commit(connection, query, values):
 
 Deleting a table row implemented using `execute_query()`. 
 
-```{code-block} python
+```python
 query = """DELETE FROM projects WHERE project_name=%s"""
 values = (DIALOG.project_zi.value, )
 result, err = execute_query(CONNECTION, query, values)

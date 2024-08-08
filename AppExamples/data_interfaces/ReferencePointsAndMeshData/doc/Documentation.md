@@ -25,7 +25,7 @@ Index 1
 Index 2
 : Coordinate [x, y, z]
 
-```{code-block} python
+```python
 reference_points = np.array (gom.app.project.measurement_series[MEASUREMENT_SERIES].results['points'].data.coordinate)
 ```
 
@@ -49,7 +49,7 @@ reference_points = np.array (gom.app.project.measurement_series[MEASUREMENT_SERI
 
 This can be used as input parameter to a script for creating a point cloud element: 
 
-```{code-block} python
+```python
 create_point_cloud = gom.script.sys.create_element_by_script (
     check_type='none', 
     element_type='point_cloud', 
@@ -82,7 +82,7 @@ Index 1
 Index 2
 : Coordinate [x, y, z]
 
-```{code-block} python
+```python
 part_points = np.array (gom.app.project.parts[PART].actual.data.coordinate)
 ```
 
@@ -100,7 +100,7 @@ Example:
 
 Numpy-arrays can be handled very efficiently. The following code example creates a copy of the original mesh vertex points and shifts all points in Z direction by 200mm:
 
-```{code-block} python 
+```python 
 shifted_part_points = part_points.copy()
 shifted_part_points[0, :, 2] += 200
 ```
@@ -118,7 +118,7 @@ Index 1
 Index 2
 : Indices into array of vertex points [indexA, indexB, indexC], which define the points A, B, C of each triangle.
 
-```{code-block} python
+```python
 part_triangles = np.array (gom.app.project.parts[PART].actual.data.triangle)
 ```
 
@@ -146,7 +146,7 @@ C = [-260.18363995  -54.31011231  -29.50854346]
 
 The arrays of vertex points and triangles can be used as input parameters to a script for creating a surface element: 
 
-```{code-block} python
+```python
 create_surface = gom.script.sys.create_element_by_script (
     check_type='none', 
     element_type='surface', 
@@ -167,26 +167,26 @@ Since no user interaction is required, the `dialog()` function shown in [Introdu
 
 ![Create Surface - Script Properties](create_surface_script_properties.png)
 
-```{code-block} python
-:caption: create_surface.py
+**`create_surface.py`**:
 
+```python
 def calculation(context, params):
-	valid_results=False
-	
-	# Calculating all available stages
-	for stage in context.stages:
-		# Access element properties with error handling
-		try:
-			context.result[stage] = {
-				'vertices':  params['vertices'],
-				'triangles':  params['triangles']
-			}
-		except Exception as error:
-			context.error[stage] = str(error)
-		else:
-			valid_results=True
-	return valid_results
-``` 
+    valid_results=False
+
+# Calculating all available stages
+for stage in context.stages:
+    # Access element properties with error handling
+    try:
+        context.result[stage] = {
+            'vertices':  params['vertices'],
+            'triangles':  params['triangles']
+        }
+    except Exception as error:
+        context.error[stage] = str(error)
+    else:
+    valid_results=True
+return valid_results
+```
 
 ## Related
 

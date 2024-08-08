@@ -4,23 +4,17 @@
 
 This is an example for a scripted 'cone' element. 
 
-```{caution}
-Due to the internal represenstation of a Cone Element, the direction of the vector `point1` -> `point2` is always from the smaller to the larger circle (`radius1` < `radius2`).
+> [!CAUTION]
+> Due to the internal represenstation of a Cone Element, the direction of the vector `point1` -> `point2` is always from the smaller to the larger circle (`radius1` < `radius2`).
 
 If you specify `radius1` > `radius2` in the creation parameters, [`point1`; `radius1`] and [`point2`; `radius2`] are swapped automatically.
-```
 
-```{note}
-Please see [ScriptedActualPoint](https://github.com/ZEISS/zeiss-inspect-app-examples/blob/dev/AppExamples/scripted_actuals/ScriptedActualPoint/doc/Documentation.md) for a complete scripted elements example with detailed description.
-```
-
+> [!NOTE]
+> Please see [ScriptedActualPoint](https://github.com/ZEISS/zeiss-inspect-app-examples/blob/dev/AppExamples/scripted_actuals/ScriptedActualPoint/doc/Documentation.md) for a complete scripted elements example with detailed description.
 
 ## Source code excerpt
 
-```{code-block} python
----
-linenos:
----
+```python
 def dialog(context, params):
     #[...]
 
