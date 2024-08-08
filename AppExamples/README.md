@@ -21,20 +21,20 @@
 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Example Projects | References | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tags&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --- | ----------- | ---------------- | ---------- | ---- |
-| <a id="ExcelExample">ExcelExample</a><br>[view](misc/ExcelExample/doc/Documentation.md) / [download](https://software-store.zeiss.com/products/apps/ExcelExample) |  | |  | [![Static Badge](https://img.shields.io/badge/import-blue)](#import)<br>[![Static Badge](https://img.shields.io/badge/export-blue)](#export)<br>[![Static Badge](https://img.shields.io/badge/project--keywords-blue)](#project-keywords)<br> |
+| <a id="ExcelExample">ExcelExample</a><br>[view](misc/ExcelExample/doc/Documentation.md) / [download](https://software-store.zeiss.com/products/apps/ExcelExample) | Example for reading and writing Excel files from an App | |  | [![Static Badge](https://img.shields.io/badge/import-blue)](#import)<br>[![Static Badge](https://img.shields.io/badge/export-blue)](#export)<br>[![Static Badge](https://img.shields.io/badge/project--keywords-blue)](#project-keywords)<br> |
 | <a id="SQLExample">SQLExample</a><br>[view](misc/SQLExample/doc/Documentation.md) / [download](https://software-store.zeiss.com/products/apps/SQLExample) | Example for SQL Database Access | |  | [![Static Badge](https://img.shields.io/badge/sql--database-blue)](#sql-database)<br>[![Static Badge](https://img.shields.io/badge/project--keywords-blue)](#project-keywords)<br> |
-| <a id="Service Test">Service Test</a><br>[view](misc/ServiceExample/doc/Documentation.md) / [download](https://software-store.zeiss.com/products/apps/Service Test) | Service API Example | | [HowTo](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/using_services/using_services.html)<br>[API](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/python_api.html#gom-api-services)<br> | [![Static Badge](https://img.shields.io/badge/service-blue)](#service)<br> |
-| <a id="Settings API example">Settings API example</a><br>[view](misc/SettingsAPI/doc/Documentation.md) / [download](https://software-store.zeiss.com/products/apps/Settings API example) | Example App demonstrating usage of the settings API | | [API](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/python_api.html#gom-api-settings)<br> | [![Static Badge](https://img.shields.io/badge/settings-blue)](#settings)<br> |
+| <a id="ServiceExample">ServiceExample</a><br>[view](misc/ServiceExample/doc/Documentation.md) / [download](https://software-store.zeiss.com/products/apps/ServiceExample) | Service API Example | | [HowTo](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/using_services/using_services.html)<br>[API](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/python_api.html#gom-api-services)<br> | [![Static Badge](https://img.shields.io/badge/service-blue)](#service)<br> |
+| <a id="SettingsAPI">SettingsAPI</a><br>[view](misc/SettingsAPI/doc/Documentation.md) / [download](https://software-store.zeiss.com/products/apps/SettingsAPI) | Example App demonstrating usage of the settings API | | [API](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/python_api.html#gom-api-settings)<br> | [![Static Badge](https://img.shields.io/badge/settings-blue)](#settings)<br> |
 | <a id="CSVExample">CSVExample</a><br>[view](misc/CSVExample/doc/Documentation.md) / [download](https://software-store.zeiss.com/products/apps/CSVExample) | This example demonstrates how to read and write CSV files (comma separated values) from an App. | [1)](#example-projects)  |  | [![Static Badge](https://img.shields.io/badge/import-blue)](#import)<br>[![Static Badge](https://img.shields.io/badge/export-blue)](#export)<br>[![Static Badge](https://img.shields.io/badge/project--keywords-blue)](#project-keywords)<br> |
-| <a id="Text Detection">Text Detection</a><br>[view](misc/TextDetection/doc/Documentation.md) / [download](https://software-store.zeiss.com/products/apps/Text Detection) | Text detection examples | |  | [![Static Badge](https://img.shields.io/badge/measurement-blue)](#measurement)<br>[![Static Badge](https://img.shields.io/badge/image--widget-blue)](#image-widget)<br> |
+| <a id="TextDetection">TextDetection</a><br>[view](misc/TextDetection/doc/Documentation.md) / [download](https://software-store.zeiss.com/products/apps/TextDetection) | Text detection example | |  | [![Static Badge](https://img.shields.io/badge/measurement-blue)](#measurement)<br>[![Static Badge](https://img.shields.io/badge/image--widget-blue)](#image-widget)<br> |
 | <a id="IPCSocketsExample">IPCSocketsExample</a><br>[view](misc/IPCSocketsExample/doc/Documentation.md) / [download](https://software-store.zeiss.com/products/apps/IPCSocketsExample) | Example for triggering command execution via Internet (aka BSD) sockets | |  | [![Static Badge](https://img.shields.io/badge/import-blue)](#import)<br> |
 | <a id="PointPixelTransformations">PointPixelTransformations</a><br>[view](misc/PointPixelTransformations/doc/Documentation.md) / [download](https://software-store.zeiss.com/products/apps/PointPixelTransformations) | This example demonstrates how to find the 2D pixel coordinates of a 3D point coordinate and vice versa. | [2)](#example-projects)  | [API](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/python_api.html#gom-api-imaging)<br> | [![Static Badge](https://img.shields.io/badge/measurement-blue)](#measurement)<br>[![Static Badge](https://img.shields.io/badge/reference--points-blue)](#reference-points)<br> |
 | <a id="TemplateUnittestCoverage">TemplateUnittestCoverage</a><br>[view](misc/TemplateUnittestCoverage/doc/Documentation.md) / [download](https://software-store.zeiss.com/products/apps/TemplateUnittestCoverage) | App template for running unit testing and generating a test coverage report | |  | [![Static Badge](https://img.shields.io/badge/testing-blue)](#testing)<br> |
 | <a id="DialogReopenExample">DialogReopenExample</a><br>[view](misc/DialogReopenExample/doc/Documentation.md) / [download](https://software-store.zeiss.com/products/apps/DialogReopenExample) | This examples demonstrates, how a dialog can be closed from its own handler, just to be opened again. | | [HowTo](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/python_api_introduction/user_defined_dialogs.html#executing-dialogs)<br> | [![Static Badge](https://img.shields.io/badge/dialog-blue)](#dialog)<br> |
 | <a id="FileSelectionAndFiltering">FileSelectionAndFiltering</a><br>[view](misc/FileSelectionAndFiltering/doc/Documentation.md) / [download](https://software-store.zeiss.com/products/apps/FileSelectionAndFiltering) | File Selection and Filtering Examples | |  | [![Static Badge](https://img.shields.io/badge/file-blue)](#file)<br>[![Static Badge](https://img.shields.io/badge/directory-blue)](#directory)<br>[![Static Badge](https://img.shields.io/badge/folder-blue)](#folder)<br>[![Static Badge](https://img.shields.io/badge/path-blue)](#path)<br> |
-| <a id="Display Image">Display Image</a><br>[view](misc/DisplayImage/doc/Documentation.md) / [download](https://software-store.zeiss.com/products/apps/Display Image) | Display measurement as a single image | |  | [![Static Badge](https://img.shields.io/badge/image--widget-blue)](#image-widget)<br>[![Static Badge](https://img.shields.io/badge/measurement-blue)](#measurement)<br> |
+| <a id="DisplayImage">DisplayImage</a><br>[view](misc/DisplayImage/doc/Documentation.md) / [download](https://software-store.zeiss.com/products/apps/DisplayImage) | Display measurement as a single image | |  | [![Static Badge](https://img.shields.io/badge/image--widget-blue)](#image-widget)<br>[![Static Badge](https://img.shields.io/badge/measurement-blue)](#measurement)<br> |
 | <a id="ProgressBar">ProgressBar</a><br>[view](misc/ProgressBar/doc/Documentation.md) / [download](https://software-store.zeiss.com/products/apps/ProgressBar) | This example shows how to display a progress bar at the bottom of the ZEISS INSPECT main window | |  |  |
-| <a id="Measurement System Analysis">Measurement System Analysis</a><br>[view](misc/MeasurementSystemAnalysis/doc/Documentation.md) / [download](https://software-store.zeiss.com/products/apps/Measurement System Analysis) | MSA conformal measurement system analysis (ANOVA, ARM) | |  | [![Static Badge](https://img.shields.io/badge/measurement-blue)](#measurement)<br> |
+| <a id="MeasurementSystemAnalysis">MeasurementSystemAnalysis</a><br>[view](misc/MeasurementSystemAnalysis/doc/Documentation.md) / [download](https://software-store.zeiss.com/products/apps/MeasurementSystemAnalysis) | MSA conformal measurement system analysis (ANOVA, ARM) | |  | [![Static Badge](https://img.shields.io/badge/measurement-blue)](#measurement)<br> |
 
 ## projects &mdash; ZEISS INSPECT projects
 
@@ -52,7 +52,7 @@
 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Example Projects | References | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tags&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --- | ----------- | ---------------- | ---------- | ---- |
-| <a id="Resource access example">Resource access example</a><br>[view](script_resources/ResourceAccess/doc/Documentation.md) / [download](https://software-store.zeiss.com/products/apps/Resource access example) | Accessing an image as an App based resources | | [API](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/resource_api.html)<br> | [![Static Badge](https://img.shields.io/badge/resources-blue)](#resources)<br>[![Static Badge](https://img.shields.io/badge/image--widget-blue)](#image-widget)<br> |
+| <a id="ResourceAccessExample">ResourceAccessExample</a><br>[view](script_resources/ResourceAccess/doc/Documentation.md) / [download](https://software-store.zeiss.com/products/apps/ResourceAccessExample) | Accessing an image as an App based resources | | [API](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/resource_api.html)<br> | [![Static Badge](https://img.shields.io/badge/resources-blue)](#resources)<br>[![Static Badge](https://img.shields.io/badge/image--widget-blue)](#image-widget)<br> |
 | <a id="ScriptResources">ScriptResources</a><br>[view](script_resources/ScriptResources/doc/Documentation.md) / [download](https://software-store.zeiss.com/products/apps/ScriptResources) | A simple example showing the usage of script resources. | | [HowTo](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/python_api_introduction/using_script_resources.html)<br>[API](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/resource_api.html)<br> | [![Static Badge](https://img.shields.io/badge/resources-blue)](#resources)<br> |
 
 ## scripted_actuals &mdash; Building custom actual elements with Python code
@@ -168,9 +168,9 @@
 
 ### ![Static Badge](https://img.shields.io/badge/image--widget-blue)
 
-* [Display Image](#Display Image)
-* [Resource access example](#Resource access example)
-* [Text Detection](#Text Detection)
+* [DisplayImage](#DisplayImage)
+* [ResourceAccessExample](#ResourceAccessExample)
+* [TextDetection](#TextDetection)
 
 
 ### ![Static Badge](https://img.shields.io/badge/import-blue)
@@ -182,11 +182,11 @@
 
 ### ![Static Badge](https://img.shields.io/badge/measurement-blue)
 
-* [Display Image](#Display Image)
-* [Measurement System Analysis](#Measurement System Analysis)
+* [DisplayImage](#DisplayImage)
+* [MeasurementSystemAnalysis](#MeasurementSystemAnalysis)
 * [PointPixelTransformations](#PointPixelTransformations)
 * [ReferencePointsAndMeshData](#ReferencePointsAndMeshData)
-* [Text Detection](#Text Detection)
+* [TextDetection](#TextDetection)
 
 
 ### ![Static Badge](https://img.shields.io/badge/menu-blue)
@@ -235,7 +235,7 @@
 
 ### ![Static Badge](https://img.shields.io/badge/resources-blue)
 
-* [Resource access example](#Resource access example)
+* [ResourceAccessExample](#ResourceAccessExample)
 * [ScriptResources](#ScriptResources)
 
 
@@ -287,12 +287,12 @@
 
 ### ![Static Badge](https://img.shields.io/badge/service-blue)
 
-* [Service Test](#Service Test)
+* [ServiceExample](#ServiceExample)
 
 
 ### ![Static Badge](https://img.shields.io/badge/settings-blue)
 
-* [Settings API example](#Settings API example)
+* [SettingsAPI](#SettingsAPI)
 
 
 ### ![Static Badge](https://img.shields.io/badge/sql--database-blue)

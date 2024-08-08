@@ -1,6 +1,6 @@
 {
     "author": "Carl Zeiss GOM Metrology GmbH",
-    "description": "Text detection examples",
+    "description": "Text detection example",
     "labels": [
     ],
     "licensing": {
@@ -14,7 +14,7 @@
     "tags": [
         "measurement", "image-widget"
     ],
-    "title": "Text Detection",
+    "title": "TextDetection",
     "uuid": "ebf221f1-d3db-4677-96ff-d86f423cb70e",
     "version": "1.0.4"
 }
