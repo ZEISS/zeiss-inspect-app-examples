@@ -96,12 +96,12 @@
 
 ## Tag Index
 
-### ![Static Badge 0](https://img.shields.io/badge/circle-blue)
+### <a name="circle"></a>![Static Badge](https://img.shields.io/badge/circle-blue)
 
 * [ScriptedActualCircle](#ScriptedActualCircle)
 
 
-### ![Static Badge 1](https://img.shields.io/badge/computation--progress-blue)
+### <a name="computation--progress"></a>![Static Badge 1](https://img.shields.io/badge/computation--progress-blue)
 
 * [ScriptedElementProgress](#ScriptedElementProgress)
 
