@@ -298,10 +298,7 @@ myst:
     for tag in sorted(tagIndex):
         #app_overview += f"\n### {tag}:\n"
         badge = tag.replace('-', '--')
-        if sphinx_doc:
-            app_overview += f"\n### <a id=\"{tag}\">![Static Badge](https://img.shields.io/badge/{badge}-blue)<a>\n\n"
-        else:
-            app_overview += f"\n### ![Static Badge](https://img.shields.io/badge/{badge}-blue)\n\n"
+        app_overview += f'\n### <a name="{tag}"></a>![Static Badge](https://img.shields.io/badge/{badge}-blue)\n\n'
 
         for app in sorted(tagIndex[tag]):
             if sphinx_doc:
