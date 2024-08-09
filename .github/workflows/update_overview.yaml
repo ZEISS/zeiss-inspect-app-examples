@@ -1,5 +1,9 @@
 name: Update overview and create PR
-on: [workflow_dispatch,push]
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
 env:
   GH_TOKEN: ${{ github.token }}
 jobs:
