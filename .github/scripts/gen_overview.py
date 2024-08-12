@@ -30,6 +30,22 @@ EXAMPLE_PROJECTS = {
     'volume_test_project': {'index': 3, 'description': 'A small test volume for CT related inspections'}
 }
 
+def find_tags():
+    tags = []
+    for _category in CATEGORY_DESCRIPTIONS.keys():
+        apps = os.path.join(BASEDIR, _category)
+        list_dir = os.listdir(apps)
+        list_dir.sort()
+        for _app in list_dir:
+            metainfo_path = os.path.abspath(os.path.join(BASEDIR, _category, _app, 'metainfo.json'))
+            with open(metainfo_path, 'r', encoding="utf-8") as f:
+                metainfo = json.load(f)
+                for _tag in metainfo['tags']:
+                    if not _tag in tags:
+                        tags.append(_tag)
+        tags.sort()
+    return tags
+
 def gen_table(_category, _tag_index):
     """
     Generate App overview as table
@@ -92,7 +108,7 @@ def gen_table(_category, _tag_index):
             md += "\n"
     return md, _tag_index
 
-def gen_boilerplate(_category, _tag_index):
+def gen_boilerplate(_category, tags, _tag_index):
     """
         Generate App overview as table
 
@@ -179,7 +195,7 @@ f'''<h3>{title} — <a class="reference external" href="{view}">view</a> /
                     _tag_index[_tag].append(title)
                     _badge = _tag.replace('-', '--')
                     if sphinx_doc:
-                        md += f"<a href=\"#{_tag.lower()}\">![Static Badge](https://img.shields.io/badge/{_badge}-blue)</a> "
+                        md += f"<a href=\"#id{tags.index(_tag)}\">![Static Badge](https://img.shields.io/badge/{_badge}-blue)</a> "
                     else:
                         md += f"[![Static Badge](https://img.shields.io/badge/{_badge}-blue)](#{_tag})<br> "
 
@@ -265,7 +281,8 @@ myst:
                 app_overview += '<hr class="small-margin">\n'
 
             if sphinx_doc:
-                tmp, tagIndex = gen_boilerplate(category, tagIndex)
+                tags = find_tags()
+                tmp, tagIndex = gen_boilerplate(category, tags, tagIndex)
             else:
                 tmp, tagIndex = gen_table(category, tagIndex)
             
