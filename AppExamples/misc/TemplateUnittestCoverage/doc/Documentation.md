@@ -24,4 +24,4 @@ Based on `unitest` (https://docs.python.org/3/library/unittest.html) and `Covera
 
 ## See also
 
-See https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/testing_addons/testing_apps.html for more information.
+See https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/testing_apps/testing_apps.html for more information.
