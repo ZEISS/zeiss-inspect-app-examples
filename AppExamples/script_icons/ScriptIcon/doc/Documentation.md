@@ -24,4 +24,4 @@ If you use this approach, and follow our [icon guidelines](https://zeissiqs.gith
 
 ## Related
 
-* How-to: [Adding workspaces to packages](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/adding_workspaces_to_apps/adding_workspaces_to_apps.md)
+* How-to: [Adding workspaces to packages](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/adding_workspaces_to_apps/adding_workspaces_to_apps.html)
