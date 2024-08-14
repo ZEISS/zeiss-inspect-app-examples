@@ -1,4 +1,4 @@
-name: Links
+name: Linkcheck
 on:
   repository_dispatch:
   workflow_dispatch:
