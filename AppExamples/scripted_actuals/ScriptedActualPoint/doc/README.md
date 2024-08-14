@@ -2,7 +2,7 @@
 
 This App is part of the [ZEISS INSPECT Python API App Examples](https://github.com/ZEISS/zeiss-inspect-app-examples/tree/main/AppExamples).
 
-See [App documentation](Documentation.md) for details.
+See [documentation](https://github.com/ZEISS/zeiss-inspect-app-examples/blob/main/AppExamples/scripted_actuals/ScriptedActualPoint/doc/Documentation.md) for a detailed description.
 
 You can [download this App](https://software-store.zeiss.com/products/apps/ScriptedActualPoint) from the [ZEISS Quality Software Store](https://software-store.zeiss.com).
 
