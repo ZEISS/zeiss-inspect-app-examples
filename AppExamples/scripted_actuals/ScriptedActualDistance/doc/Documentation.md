@@ -5,7 +5,7 @@
 This is an example for a scripted 'distance' element.
 
 > [!NOTE]
-> Please see [ScriptedActualPoint](https://github.com/ZEISS/zeiss-inspect-app-examples/blob/dev/AppExamples/scripted_actuals/ScriptedActualPoint/doc/Documentation.html) for a complete scripted elements example with detailed description.
+> Please see [ScriptedActualPoint](https://github.com/ZEISS/zeiss-inspect-app-examples/blob/dev/AppExamples/scripted_actuals/ScriptedActualPoint/doc/Documentation.md) for a complete scripted elements example with detailed description.
 
 ## Source code excerpt
 
