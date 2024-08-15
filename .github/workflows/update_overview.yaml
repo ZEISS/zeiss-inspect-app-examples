@@ -36,10 +36,6 @@ jobs:
           python-version: '3.10'
       - name: Check out the repository
         uses: actions/checkout@v4
-        #with:
-        #  ref: ${{ format('{0}', steps.set_branches.outputs.current_branch) }}
-        #  fetch-depth: 0 # Fetch all history for all branches and tags
-
       - name: Git config
         run: |
           git config --global user.email "action@github.com"
