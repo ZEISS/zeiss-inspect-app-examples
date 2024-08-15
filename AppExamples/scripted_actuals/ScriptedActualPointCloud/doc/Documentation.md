@@ -5,7 +5,7 @@
 This is an example for a scripted 'point cloud' element. A parametric function is used to define the points, in this case the surface points of a torus. `np.arange()` is used to iterate from `u_min` to `u_max` and from `v_min` to `v_max` with non-integer step sizes. The step sizes `u_steps` and `v_steps` define the point density.
 
 > [!NOTE]
-> Please see [ScriptedActualPoint](https://github.com/ZEISS/zeiss-inspect-app-examples/blob/dev/AppExamples/scripted_actuals/ScriptedActualPoint/doc/Documentation.md) for a complete scripted elements example with detailed description.
+> Please see [ScriptedActualPoint](https://github.com/ZEISS/zeiss-inspect-app-examples/blob/main/AppExamples/scripted_actuals/ScriptedActualPoint/doc/Documentation.md) for a complete scripted elements example with detailed description.
 
 ## Source code excerpt
 
@@ -46,5 +46,5 @@ def calculation(context, params):
 
 ## Related
 
-* [Scripted actuals - Point cloud](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/scripted_elements_api.md#point-cloud)
-* [How-to: User-defined dialogs](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/python_api_introduction/user_defined_dialogs.md)
+* [Scripted actuals - Point cloud](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/scripted_elements_api.html#point-cloud)
+* [How-to: User-defined dialogs](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/python_api_introduction/user_defined_dialogs.html)

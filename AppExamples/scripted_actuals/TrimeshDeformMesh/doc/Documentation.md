@@ -65,4 +65,4 @@ To deform the mesh, we then apply some noise to the data using [trimesh's noise 
 
 ## Related
 
-* How-to: [Python API introduction - Element data interfaces](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/python_api_introduction/python_api_introduction.md#element-data-interfaces)
+* How-to: [Python API introduction - Element data interfaces](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/python_api_introduction/python_api_introduction.html#element-data-interfaces)
