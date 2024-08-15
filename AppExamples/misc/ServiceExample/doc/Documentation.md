@@ -59,9 +59,11 @@ print(result)
 
 ```python
 import sys
+import time
 import gom.api.services
 
 SERVICE_NAME = "Reflector"
+DELAY = 30
 
 # Find service handle by name
 srv = None
@@ -83,9 +85,11 @@ print(f"Number of instances: {srv.get_number_of_instances()}")
 print(srv.get_status())
 print("(Re-)Starting...", end="")
 srv.start()
+time.sleep(DELAY)
 print(srv.get_status())
 print("Stopping...", end="")
 srv.stop()
+time.sleep(DELAY)
 print(srv.get_status())
 print("Starting...", end="")
 srv.start()
