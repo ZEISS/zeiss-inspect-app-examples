@@ -38,7 +38,7 @@ def wait_for_status(service, status, timeout):
             break
         time.sleep(1)
 
-    return act_status
+    return service.get_status()
 
 
 if __name__ == '__main__':
