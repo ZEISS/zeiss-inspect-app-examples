@@ -59,9 +59,20 @@ print(result)
 
 ```python
 import sys
+import time
 import gom.api.services
 
 SERVICE_NAME = "Reflector"
+TIMEOUT = 30
+
+# Wait for expected status or timeout
+def wait_for_status(service, status, timeout):
+    for _ in range(timeout):
+        if service.get_status() == status:
+            break
+        time.sleep(1)
+
+    return service.get_status()
 
 # Find service handle by name
 srv = None
@@ -80,15 +91,18 @@ print(f"Endpoint: {srv.get_endpoint()}")
 print(f"Number of instances: {srv.get_number_of_instances()}")
 
 # Control service
-print(srv.get_status())
-print("(Re-)Starting...", end="")
-srv.start()
-print(srv.get_status())
+status = srv.get_status()
+print(f"Status: {status}")
+if status == "STOPPED":
+    print("(Re-)Starting...", end="")
+    srv.start()
+    status = wait_for_status(srv, "RUNNING", TIMEOUT)
+    print(status)
+
 print("Stopping...", end="")
 srv.stop()
-print(srv.get_status())
-print("Starting...", end="")
-srv.start()
+status = wait_for_status(srv, "STOPPED", TIMEOUT)
+print(status)
 ```
 
 ## Related
