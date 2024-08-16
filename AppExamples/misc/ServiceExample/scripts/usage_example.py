@@ -30,7 +30,6 @@ def wait_for_status(service, status, timeout):
 
     Returns:
         Final status.
-
     """
     for _ in range(timeout):
         if service.get_status() == status:
