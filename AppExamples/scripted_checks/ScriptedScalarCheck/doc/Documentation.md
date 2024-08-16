@@ -47,5 +47,5 @@ def calculation (context, params):
 
 ## Related
 
-* [How-to: Scripted checks](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/scripted_elements/scripted_checks.md)
-* [Scripted Element API](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/scripted_elements_api.md)
+* [How-to: Scripted checks](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/scripted_elements/scripted_checks.html)
+* [Scripted Element API](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/scripted_elements_api.html)

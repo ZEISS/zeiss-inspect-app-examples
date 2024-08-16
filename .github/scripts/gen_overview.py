@@ -67,7 +67,7 @@ def gen_table(_category, _tag_index):
         with open(metainfo_path, 'r', encoding="utf-8") as f:
             metainfo = json.load(f)
             if sphinx_doc:
-                view = f"https://github.com/ZEISS/zeiss-inspect-app-examples/blob/dev/AppExamples/{_category}/{_app}/doc/Documentation.md"
+                view = f"https://github.com/ZEISS/zeiss-inspect-app-examples/blob/main/AppExamples/{_category}/{_app}/doc/Documentation.md"
             else:
                 view = f"{_category}/{_app}/doc/Documentation.md"
             download = f"https://software-store.zeiss.com/products/apps/{metainfo['title']}"
@@ -138,7 +138,7 @@ def gen_boilerplate(_category, tags, _tag_index):
         with open(metainfo_path, 'r', encoding="utf-8") as f:
             metainfo = json.load(f)
             if sphinx_doc:
-                view = f"https://github.com/ZEISS/zeiss-inspect-app-examples/blob/dev/AppExamples/{_category}/{_app}/doc/Documentation.md"
+                view = f"https://github.com/ZEISS/zeiss-inspect-app-examples/blob/main/AppExamples/{_category}/{_app}/doc/Documentation.md"
             else:
                 view = f"{_category}/{_app}/doc/Documentation.md"
             download = f"https://software-store.zeiss.com/products/apps/{metainfo['title']}"
@@ -161,7 +161,7 @@ f'''<h3>{title} — <a class="reference external" href="{view}">view</a> /
 <a class="headerlink" href="#{title.lower()}" title="Link to this heading"></a></h3>
 \n\n'''
             
-            #md += f"![Icon](https://github.com/ZEISS/zeiss-inspect-app-examples/blob/dev/AppExamples/{category}/{app}/icon.png)\n"
+            #md += f"![Icon](https://github.com/ZEISS/zeiss-inspect-app-examples/blob/main/AppExamples/{category}/{app}/icon.png)\n"
             
             # Description
             md += ":Description:\n"
