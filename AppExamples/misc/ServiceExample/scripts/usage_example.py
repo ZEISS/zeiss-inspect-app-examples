@@ -33,8 +33,7 @@ def wait_for_status(service, status, timeout):
 
     """
     for _ in range(timeout):
-        act_status = service.get_status()
-        if act_status == status:
+        if service.get_status() == status:
             break
         time.sleep(1)
 
