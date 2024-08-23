@@ -4,7 +4,7 @@
 
 ## Short description
 
-This example provides a script for generation of scripted actual circles, which can provide data &mdash; their radius &mdash; to any of two scripted diagram services. The diagram service `RadiusPlot` plots the radius of each circle element, the diagram service `RadiusHistogram` creates a radius histogram.
+This example includes a script for generation of scripted actual circles, which can provide data &mdash; their radius &mdash; to any of two scripted diagram services. The diagram service `RadiusPlot` plots the radius of each circle element, the diagram service `RadiusHistogram` creates a radius histogram.
 
 > [!NOTE]
 > Only one service function may be used at a time.
