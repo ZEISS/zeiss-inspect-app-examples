@@ -1,0 +1,68 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "description": "Scripted diagram basics",
+    "labels": [
+    ],
+    "licensing": {
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
+    },
+    "references": [
+        ["HowTo", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/using_scripted_diagrams/using_scripted_diagrams.html"]
+    ],
+    "services": [
+        {
+            "endpoint": "gom.api.statistics",
+            "name": "RadiusHistogram",
+            "script": "radius_histogram.py"
+        },
+        {
+            "endpoint": "gom.api.diagram",
+            "name": "RadiusPlot",
+            "script": "radius_plot.py"
+        }
+    ],
+    "settings": [
+        {
+            "description": "Histogram bin edges",
+            "name": "bins",
+            "value": "0, 10, 20, 30",
+            "visible": true
+        },
+        {
+            "description": "Bar color",
+            "name": "barcolor",
+            "value": "blue",
+            "visible": true
+        },
+        {
+            "description": "Title",
+            "name": "title",
+            "value": "Circle radius histogram",
+            "visible": true
+        },
+        {
+            "description": "X label",
+            "name": "xlabel",
+            "value": "Radius",
+            "visible": true
+        },
+        {
+            "description": "Y label",
+            "name": "ylabel",
+            "value": "Count",
+            "visible": true
+        }
+    ],
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2025",
+    "tags": [
+        "settings",
+        "scripted-diagrams"
+    ],
+    "title": "ScriptedDiagramBasics",
+    "uuid": "f78561a2-6e1c-4a8e-ad56-1e738d478b1e",
+    "version": "1.0.0"
+}

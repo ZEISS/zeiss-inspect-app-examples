@@ -21,6 +21,7 @@ CATEGORY_DESCRIPTIONS = {
     'script_resources': 'How to access binary data of your App (resources)',
     'scripted_actuals': 'Building custom actual elements with Python code',
     'scripted_checks': 'Building custom checks with Python code',
+    'scripted_diagrams': 'Creating custom diagrams',
     'projects': 'ZEISS INSPECT projects'
 }
 
