@@ -91,4 +91,5 @@ The diagram is shown in the tab **Inspection Details** in the 3D view. Adding/re
 * [Tokens on scripted elements](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/scripted_elements/tokens_on_scripted_elements.html)
 * [Using services](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/using_services/using_services.html)
 * [Settings API](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/python_api.html#gom-api-settings)
+* [Matplotlib: Visualization with Python](https://matplotlib.org/)
 
