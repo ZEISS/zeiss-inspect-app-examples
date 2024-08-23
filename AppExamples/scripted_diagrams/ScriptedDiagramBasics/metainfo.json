@@ -9,6 +9,9 @@
         "product-codes": [
         ]
     },
+    "references": [
+        ["HowTo", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/using_scripted_diagrams/using_scripted_diagrams.html"]
+    ],
     "services": [
         {
             "endpoint": "gom.api.statistics",
@@ -56,6 +59,8 @@
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2025",
     "tags": [
+        "settings",
+        "scripted-diagrams"
     ],
     "title": "ScriptedDiagramBasics",
     "uuid": "f78561a2-6e1c-4a8e-ad56-1e738d478b1e",
