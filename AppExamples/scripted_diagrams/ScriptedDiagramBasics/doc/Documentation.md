@@ -1,4 +1,4 @@
-# OSMMapDiagram
+# ScriptedDiagramBasics
 
 ![Circle radius histogram](scripted_diagram-histogram.png)
 
