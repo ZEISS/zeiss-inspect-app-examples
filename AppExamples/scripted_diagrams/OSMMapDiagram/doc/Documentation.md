@@ -33,7 +33,7 @@ Review [Using scripted diagrams](https://zeissiqs.github.io/zeiss-inspect-addon-
 In addition to the general concept of using scripted elements directly as the data source for scripted diagrams, the GeoLocation elements can also serve as a proxy for location information stored as element keywords (of any element) or project keywords.
 
 The location information is passed as parameters to the scripted diagram service using:
-```
+``` python
 context.data[stage] = {
     "ude_diagram_custom": 1,                       # mandatory, fixed
     "ude_diagram_type": "SVGDiagram",              # mandatory, fixed
@@ -56,7 +56,7 @@ Use Apps->Manage Services... to start `OSMMapDiagram` and stop any diagram servi
 This feature is implemented using the [Settings API](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/python_api.html#gom-api-settings).
 
 The settings are stored in `metainfo.json`:
- ```
+```
 ...
 "settings": [
     {
