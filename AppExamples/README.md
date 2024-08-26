@@ -84,6 +84,13 @@
 | <a id="ScriptedScalarCheck">ScriptedScalarCheck</a><br>[view](scripted_checks/ScriptedScalarCheck/doc/Documentation.md) / [download](https://software-store.zeiss.com/products/apps/ScriptedScalarCheck) | This example shows how to create a scalar check by script. A scalar check is the most basic check, as it assigns a scalar value to an element. Nearly all elements you can find in the software can be checked like this. | [1)](#example-projects)  | [HowTo](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/scripted_elements/scripted_checks.html)<br>[API](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/scripted_elements_api.html#scalar)<br> | [![Static Badge](https://img.shields.io/badge/scripted--check-blue)](#scripted-check)<br>[![Static Badge](https://img.shields.io/badge/scalar-blue)](#scalar)<br> |
 | <a id="ScriptedSurfaceCheck">ScriptedSurfaceCheck</a><br>[view](scripted_checks/ScriptedSurfaceCheck/doc/Documentation.md) / [download](https://software-store.zeiss.com/products/apps/ScriptedSurfaceCheck) | This example demonstrates how to create a scalar surface check by a script. Also, the usage of custom coordinate systems and element preview in scripted checks is shown. | [1)](#example-projects)  | [HowTo](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/scripted_elements/scripted_checks.html)<br>[API](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/scripted_elements_api.html#scalar-surface)<br> | [![Static Badge](https://img.shields.io/badge/scripted--check-blue)](#scripted-check)<br>[![Static Badge](https://img.shields.io/badge/surface-blue)](#surface)<br> |
 
+## scripted_diagrams &mdash; Creating custom diagrams
+
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Example Projects | References | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tags&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| --- | ----------- | ---------------- | ---------- | ---- |
+| <a id="OSMMapDiagram">OSMMapDiagram</a><br>[view](scripted_diagrams/OSMMapDiagram/doc/Documentation.md) / [download](https://software-store.zeiss.com/products/apps/OSMMapDiagram) | Display geolocation using a scripted diagram | | [HowTo](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/using_scripted_diagrams/using_scripted_diagrams.html)<br> | [![Static Badge](https://img.shields.io/badge/settings-blue)](#settings)<br>[![Static Badge](https://img.shields.io/badge/scripted--diagrams-blue)](#scripted-diagrams)<br> |
+| <a id="ScriptedDiagramBasics">ScriptedDiagramBasics</a><br>[view](scripted_diagrams/ScriptedDiagramBasics/doc/Documentation.md) / [download](https://software-store.zeiss.com/products/apps/ScriptedDiagramBasics) | Scripted diagram basics | | [HowTo](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/using_scripted_diagrams/using_scripted_diagrams.html)<br> | [![Static Badge](https://img.shields.io/badge/settings-blue)](#settings)<br>[![Static Badge](https://img.shields.io/badge/scripted--diagrams-blue)](#scripted-diagrams)<br> |
+
 ## Example projects
 
 | No. | Project name | Description |
@@ -272,6 +279,12 @@
 * [ScriptedSurfaceCheck](#ScriptedSurfaceCheck)
 
 
+### <a name="scripted-diagrams"></a>![Static Badge](https://img.shields.io/badge/scripted--diagrams-blue)
+
+* [OSMMapDiagram](#OSMMapDiagram)
+* [ScriptedDiagramBasics](#ScriptedDiagramBasics)
+
+
 ### <a name="section"></a>![Static Badge](https://img.shields.io/badge/section-blue)
 
 * [ScriptedActualSection](#ScriptedActualSection)
@@ -294,6 +307,8 @@
 
 ### <a name="settings"></a>![Static Badge](https://img.shields.io/badge/settings-blue)
 
+* [OSMMapDiagram](#OSMMapDiagram)
+* [ScriptedDiagramBasics](#ScriptedDiagramBasics)
 * [SettingsAPI](#SettingsAPI)
 
 
