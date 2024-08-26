@@ -6,7 +6,7 @@
 
 ## Short description
 
-This examples demonstrates how to show progress information to the user while calcualting a scripted element.
+This examples demonstrates how to show progress information to the user while calculating a scripted element.
 
 ## Highlights
 
