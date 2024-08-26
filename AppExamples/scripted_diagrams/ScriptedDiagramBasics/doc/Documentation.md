@@ -21,7 +21,7 @@ Review [Using scripted diagrams](https://zeissiqs.github.io/zeiss-inspect-addon-
 The script `scr_act_circle.py` creates a scripted circle and passes the radius to any of the two scripted diagram services, which is selected from the circle's creation parameters dialog.
 
 The radius of any scripted circle is passed as a parameter to the scripted diagram service using:
-```
+``` python
 context.data[stage] = {
     "ude_diagram_custom": 1,
     "ude_diagram_type": "SVGDiagram",
