@@ -1,6 +1,6 @@
 # Release Notes SettingsAPI
 
-## Released at 2024-08-30 (v1.0.5)
+## Released at 2024-09-30 (v1.0.5)
 
 * Updated license.txt
 * Updated README.md

@@ -1,6 +1,6 @@
 # Release Notes MeasurementSystemAnalysis
 
-## Released at 2024-08-30 (v1.0.6)
+## Released at 2024-09-30 (v1.0.6)
 
 * Updated license.txt
 * Added tags

@@ -1,6 +1,6 @@
 # Release Notes TextDetection
 
-## Released at: 2024-08-30 (v1.0.4)
+## Released at: 2024-09-30 (v1.0.4)
 
 * Updated README.md
 * Corrections and comments

@@ -1,6 +1,6 @@
 # Release Notes TemplateUnittestCoverage
 
-## Released at: 2024-08-30 (v1.0.1)
+## Released at: 2024-09-30 (v1.0.1)
 
 * Updated README.md
 * Added Documentation.md
