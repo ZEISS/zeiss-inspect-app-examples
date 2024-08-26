@@ -1,0 +1,84 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "description": "Display geolocation using a scripted diagram",
+    "labels": [
+    ],
+    "licensing": {
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
+    },
+    "references": [
+        [
+            "HowTo",
+            "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/using_scripted_diagrams/using_scripted_diagrams.html"
+        ]
+    ],
+    "services": [
+        {
+            "endpoint": "gom.api.osm",
+            "name": "OSMMapDiagram",
+            "script": "service.py"
+        }
+    ],
+    "settings": [
+        {
+            "description": "Title",
+            "name": "title",
+            "value": "Acquisition Location",
+            "visible": true
+        },
+        {
+            "description": "Map range [m]",
+            "name": "range",
+            "value": 5000,
+            "visible": true
+        },
+        {
+            "description": "Map aspect ratio (w:h)",
+            "name": "aspect",
+            "value": 1,
+            "visible": true
+        },
+        {
+            "description": "Marker style (see Matplotlib)",
+            "name": "marker_style",
+            "value": "x",
+            "visible": true
+        },
+        {
+            "description": "Marker size [pt]",
+            "name": "marker_size",
+            "value": 100,
+            "visible": true
+        },
+        {
+            "description": "Marker color (see Matplotlib)",
+            "name": "marker_color",
+            "value": "blue",
+            "visible": true
+        },
+        {
+            "description": "Label x-offset",
+            "name": "label_xoffset",
+            "value": 50,
+            "visible": true
+        },
+        {
+            "description": "Label y-offset",
+            "name": "label_yoffset",
+            "value": 30,
+            "visible": true
+        }
+    ],
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2025",
+    "tags": [
+        "settings",
+        "scripted-diagrams"
+    ],
+    "title": "OSMMapDiagram",
+    "uuid": "55724c8e-3b9d-45ed-8353-6d52af564c97",
+    "version": "1.0.5"
+}

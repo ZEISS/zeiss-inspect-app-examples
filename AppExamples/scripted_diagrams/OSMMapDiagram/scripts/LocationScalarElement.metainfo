@@ -1,0 +1,25 @@
+{
+    "display_name": "MapScalarElement",
+    "folded_blocks": [
+    ],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": true,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+            ],
+            "type": "command"
+        },
+        "script": "ude.LocationScalarElement",
+        "submenu": [
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "value",
+    "show_in_iinspect": false,
+    "show_in_menu": true,
+    "uuid": "cd09fd45-fd6e-4ec2-8e9a-98b2d94bd514"
+}
