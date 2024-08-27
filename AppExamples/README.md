@@ -52,7 +52,7 @@
 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Example Projects | References | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tags&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --- | ----------- | ---------------- | ---------- | ---- |
-| <a id="ResourceAccessExample">ResourceAccessExample</a><br>[view](script_resources/ResourceAccess/doc/Documentation.md) / [download](https://software-store.zeiss.com/products/apps/ResourceAccessExample) | Accessing an image as an App based resources | | [API](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/resource_api.html)<br> | [![Static Badge](https://img.shields.io/badge/resources-blue)](#resources)<br>[![Static Badge](https://img.shields.io/badge/image--widget-blue)](#image-widget)<br> |
+| <a id="ResourceAccess">ResourceAccess</a><br>[view](script_resources/ResourceAccess/doc/Documentation.md) / [download](https://software-store.zeiss.com/products/apps/ResourceAccess) | Accessing an image as an App based resources | | [API](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/resource_api.html)<br> | [![Static Badge](https://img.shields.io/badge/resources-blue)](#resources)<br>[![Static Badge](https://img.shields.io/badge/image--widget-blue)](#image-widget)<br> |
 | <a id="ScriptResources">ScriptResources</a><br>[view](script_resources/ScriptResources/doc/Documentation.md) / [download](https://software-store.zeiss.com/products/apps/ScriptResources) | A simple example showing the usage of script resources. | | [HowTo](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/python_api_introduction/using_script_resources.html)<br>[API](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/resource_api.html)<br> | [![Static Badge](https://img.shields.io/badge/resources-blue)](#resources)<br> |
 
 ## scripted_actuals &mdash; Building custom actual elements with Python code
@@ -178,7 +178,7 @@
 ### <a name="image-widget"></a>![Static Badge](https://img.shields.io/badge/image--widget-blue)
 
 * [DisplayImage](#DisplayImage)
-* [ResourceAccessExample](#ResourceAccessExample)
+* [ResourceAccess](#ResourceAccess)
 * [TextDetection](#TextDetection)
 
 
@@ -244,7 +244,7 @@
 
 ### <a name="resources"></a>![Static Badge](https://img.shields.io/badge/resources-blue)
 
-* [ResourceAccessExample](#ResourceAccessExample)
+* [ResourceAccess](#ResourceAccess)
 * [ScriptResources](#ScriptResources)
 
 
