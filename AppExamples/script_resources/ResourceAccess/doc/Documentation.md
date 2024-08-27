@@ -1,6 +1,6 @@
 # ResourceAccess
 
-Demonstration for accessing add-on based resources via scripts.
+Demonstration for accessing App based resources via scripts.
 
 ## Highlights
 
