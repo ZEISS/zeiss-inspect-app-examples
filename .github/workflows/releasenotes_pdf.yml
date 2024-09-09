@@ -30,5 +30,10 @@ jobs:
             echo $basepath
             if [ ! -f "$basepath/Releasenotes.pdf" ]; then
               pandoc "{}" -o "$basepath/Releasenotes.pdf"
+              git config --global user.name "GitHub Action"
+              git config --global user.email "action@github.com"
+              git add "$basepath/Releasenotes.pdf"
+              git commit -m "Add Releasenotes.pdf"
+              git push origin main
             fi
           ' \;
