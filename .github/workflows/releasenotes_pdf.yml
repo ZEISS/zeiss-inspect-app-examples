@@ -24,8 +24,10 @@ jobs:
       - name: Find and Convert Release Notes
         id: convert_notes
         run: |
+          pwd
           find . -type f -name 'Releasenotes.md' -exec sh -c '
             basepath=$(dirname "{}") # Get the folder path
+            echo $basepath
             if [ ! -f "$basepath/Releasenotes.pdf" ]; then
               pandoc "{}" -o "$basepath/Releasenotes.pdf"
             fi
