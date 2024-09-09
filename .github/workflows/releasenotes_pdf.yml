@@ -1,0 +1,28 @@
+name: Create Release Notes PDF
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  create_pdf:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
+      - name: Install Pandoc
+        uses: pandoc/setup-pandoc@v1
+        
+      - name: Find and Convert Release Notes
+        id: convert_notes
+        run: |
+          find . -type f -name 'Releasenotes.md' -exec sh -c '
+            basepath=$(dirname "{}") # Get the folder path
+            if [ ! -f "$basepath/Releasenotes.pdf" ]; then
+              pandoc "{}" -o "$basepath/Releasenotes.pdf"
+            fi
+          ' \;
