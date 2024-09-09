@@ -15,7 +15,9 @@ jobs:
         uses: actions/checkout@v2
         
       - name: Install Pandoc
-        uses: pandoc/setup-pandoc@v1
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc
         
       - name: Find and Convert Release Notes
         id: convert_notes
