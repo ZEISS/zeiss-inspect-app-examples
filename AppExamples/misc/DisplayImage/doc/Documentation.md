@@ -8,9 +8,9 @@ This example demonstrates how to read a measurement image from a project and dis
 
 ## Preliminaries
 
-* For the sake of simplicity it is assumed that the measurement list from which the image is read has a fixed name ('Scan 1').
+* For the sake of simplicity, it is assumed that the measurement list from which the image is read has a fixed name ('Scan 1').
 * You have to install [OpenCV python](https://pypi.org/project/opencv-python/) for the example to run.
-* The example code must be part of an add-on, so that this python wheel can be added to that add-on's environment.
+* The example code is part of an App, so OpenCV Python wheel must be added to this App's environment.
 
 ![](images/wheel1.png)
 
