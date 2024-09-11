@@ -14,13 +14,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         
-      - name: Install Pandoc
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install markdown_pdf
         run: |
-          sudo apt-get update
-          # Install pdflatex as prerequisite for pandoc PDF output
-          sudo apt-get install -y texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
-          sudo apt-get install -y pandoc 
-        
+          pip install markdown_pdf
+      
       - name: Find and Convert Release Notes
         id: convert_notes
         run: |
@@ -29,11 +31,11 @@ jobs:
             basepath=$(dirname "{}") # Get the folder path
             echo $basepath
             if [ ! -f "$basepath/Releasenotes.pdf" ]; then
-              pandoc --variable mainfont="Arial" "{}" -o "$basepath/Releasenotes.pdf"
+              python .github/scripts/md2pdf.py "{}" "$basepath/Releasenotes.pdf" 
               git config --global user.name "GitHub Action"
               git config --global user.email "action@github.com"
               git add "$basepath/Releasenotes.pdf"
               git commit -m "Add Releasenotes.pdf"
-              git push origin main
+              git push origin ${GITHUB_REF#refs/*/}
             fi
           ' \;
