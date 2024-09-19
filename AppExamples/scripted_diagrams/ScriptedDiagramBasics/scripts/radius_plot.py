@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 #
-# radius_histogram.py
+# radius_plot.py
 #
-# Service function which receives the radii of all elements plots
+# Service function which receives the radii of all elements and plots
 # radius and element name.
 # See https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html
 #
@@ -13,76 +13,32 @@
 # ---
 """Scripted diagram service plotting radius / element name"""
 
-import io
 import gom
+
 from gom import apifunction
+
 import matplotlib.pyplot as plt
-
-
-# Set path for debugging
-SVG_PATH = None
-#SVG_PATH = 'C:/temp/ScriptedDiagram.svg'
-
-# Set SVG resolution in dpi
-SVG_DPI = 'figure'
-
-def filter_all(k, v):
-    """Filter all elements by key, value
-    
-     Args:
-        k (string): key
-        v (any): value
-
-    Returns:
-        list: element references
-    """
-    r = []
-    for g in [gom.app.project.nominal_elements, gom.app.project.inspection, gom.app.project.actual_elements]:
-        r += g.filter(k, v)
-    return r
+import gom.api.extensions.diagrams.matplotlib_tools as mpltools
 
 @apifunction
-def radius_plot(*args, **kwargs)->str:
-    """Plot a radius histogram
-    
-    Args:
-        args (any): (unused)
-        kwargs (dict): {'<uuid>': {'ude_diagram_custom': 1, 'ude_diagram_radius': <radius>, ...}, ...}
-
-    Returns:
-        string: SVG image
+def radius_plot(view, element_data)->str:
+    """
+    Plot circle radius marks
     """
     gom.log.info('Radius Plot Service')
-    gom.log.info(f'{kwargs=}')
+    gom.log.info(f'{view=}, {element_data=}')
 
-    radius = []
-    elementnames = []    
-    for uuid, params in kwargs.items():
-        element = filter_all('uuid_draft', uuid)[0]
-        elementnames.append(element.name)
-        radius.append(params['ude_diagram_radius'])
+    mpltools.setup_plot (plt, view)
 
-    # create x/y plot
-    plt.figure(figsize = (10, 5))
-    plt.plot(elementnames, radius, 'bx')
+    for e in element_data:
+        element = e['element']
+        data = e['data']
+
+        plt.plot ([element.name], [data['ude_diagram_radius']], 'bx')
+
+
     plt.xticks(rotation = 90)
-    plt.subplots_adjust(bottom=0.2)
 
-    if SVG_PATH:
-        plt.savefig(SVG_PATH, format='svg', dpi=SVG_DPI)
-
-    # Create an empty file-like object
-    svg_output = io.StringIO()
-
-    # Save the plot to the file-like object
-    plt.savefig(svg_output, format='svg', dpi=SVG_DPI)
-
-    # Get the SVG string from the file-like object
-    svg_string = svg_output.getvalue()
-
-    # Close the file-like object
-    svg_output.close()
-
-    return svg_string
+    return mpltools.create_svg (plt, view) 
 
 gom.run_api()

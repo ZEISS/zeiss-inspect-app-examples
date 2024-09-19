@@ -13,43 +13,34 @@
 # ---
 """Scripted diagram service creating a radius histogram"""
 
-import io
 import gom
 import gom.api.settings
+
 from gom import apifunction
+
 import matplotlib.pyplot as plt
-
-# Set path for debugging
-SVG_PATH = None
-#SVG_PATH = 'C:/temp/OSMMapDiagram.svg'
-
-# Set SVG resolution in dpi
-SVG_DPI = 'figure'
+import gom.api.extensions.diagrams.matplotlib_tools as mpltools
 
 @apifunction
-def radius_histogram(*args, **kwargs)->str:
-    """Plot element name/radius
-    
-    Args:
-        args (any): (unused)
-        kwargs (dict): {'<uuid>': {'ude_diagram_custom': 1, 'ude_diagram_radius': <radius>, ...}, ...}
-
-    Returns:
-        string: SVG image
+def radius_histogram(view, element_data)->str:
+    """
+    Plot radius histogram
     """
     gom.log.info('Radius Histogram Service')
-    gom.log.info(f'{kwargs=}')
+    gom.log.info(f'{view=}, {element_data=}')
+
     bins = gom.api.settings.get('bins')
     bins = [int(elem) for elem in bins.split(',') if elem.strip().isnumeric()]
+
+    mpltools.setup_plot (plt, view)
+
     radius = []
 
-    for uuid, params in kwargs.items():
-        radius.append(params['ude_diagram_radius'])
+    for e in element_data:
+        data = e['data']
 
-    gom.log.debug(f'{bins=}')
-    gom.log.debug(f'{radius=}')
+        radius.append(data['ude_diagram_radius'])
 
-    plt.figure(figsize = (10, 5))
     color =  gom.api.settings.get('barcolor')
 
     # Creating the histogram plot
@@ -74,21 +65,6 @@ def radius_histogram(*args, **kwargs)->str:
             xlabels.append(f'[{bins[i]},{bins[i+1]}]')
     plt.xticks(xticks, xlabels)
 
-    if SVG_PATH:
-        plt.savefig(SVG_PATH, format='svg', dpi=SVG_DPI)
-
-    # Create an empty file-like object
-    svg_output = io.StringIO()
-
-    # Save the plot to the file-like object
-    plt.savefig(svg_output, format='svg', dpi=SVG_DPI)
-
-    # Get the SVG string from the file-like object
-    svg_string = svg_output.getvalue()
-
-    # Close the file-like object
-    svg_output.close()
-
-    return svg_string
+    return mpltools.create_svg (plt, view)
 
 gom.run_api()

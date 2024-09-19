@@ -70,7 +70,7 @@ def dialog(context, params):
 
     DIALOG.handler = dialog_event_handler
     # -------------------------------------------------------------------------
-    RESULT = gom.script.sys.show_user_defined_dialog(dialog=DIALOG)
+    gom.script.sys.show_user_defined_dialog(dialog=DIALOG)
     return params
 
 # -------------------------------------------------------------------------
@@ -88,13 +88,23 @@ def calculation(context, params):
                 'direction': (params['dir_x'], params['dir_y'], params['dir_z']),
                 'radius': params['radius']
             }
+
+            polisher = None
+            if params['service'].lower () == 'radius':
+                polisher = 'gom.api.diagram.radius_plot'
+            elif params['service'].lower () == 'histogram':
+                polisher = 'gom.api.statistics.radius_histogram'
+            else:
+                raise RuntimeError ('Unknown polisher service')
+
             context.data[stage] = {
                 "ude_diagram_custom": 1,
                 "ude_diagram_type": "SVGDiagram",
-                # "gom.api.diagram.radius_plot" or "gom.api.statistics.radius_histogram"
-                "ude_diagram_service" : params['service'],
+                "ude_diagram_service" : polisher,
                 "ude_diagram_radius": params['radius'],
-                "ude_diagram_center": gom.Vec3d(params['center_x'], params['center_y'], params['center_z'])
+                "ude_diagram_center": gom.Vec3d(
+                    params['center_x'], params['center_y'], params['center_z']
+                )
             }
             print(f'{context.data[stage]}')
         except Exception as error:
