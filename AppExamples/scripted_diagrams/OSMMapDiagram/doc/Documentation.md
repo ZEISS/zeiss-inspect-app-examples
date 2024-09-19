@@ -4,13 +4,9 @@
 
 ## Short description
 
-The script `LocationScalarElement.py` generates a scripted value element, which passes location information to the diagram service `OSMMapDiagram`. The service implemented in `service.py` creates a map from [OpenStreetMap](https://www.openstreetmap.org/) (OSM) data using the Python packages [Cartopy](https://scitools.org.uk/cartopy/docs/latest/index.html) and [Matplotlib](https://matplotlib.org/). The map's center is defined by the location data. The location markers and labels (optional) are added to the map. Some map configurations can be set via Preferences ► App-Settings.
+The script `LocationScalarElement.py` generates a scripted value element, which passes location information to the diagram service `OSMMapDiagram`. The service implemented in `service.py` creates a map from [OpenStreetMap](https://www.openstreetmap.org/) (OSM) data using the Python packages [Cartopy](https://scitools.org.uk/cartopy/docs/latest/index.html), [Matplotlib](https://matplotlib.org/) and [NumPy](https://numpy.org/). The map's center is defined by the location data. The location markers and labels (optional) are added to the map. Some map configurations can be set via Preferences ► App-Settings.
 
 This example demonstrates the flexibility of scripted diagrams. It can be used for reporting of measurements acquired 'in the field', e.g. with ZEISS [T-SCAN hawk 2](https://www.handsonmetrology.com/products/t-scan-hawk-2/) or ZEISS [TRITOP](https://www.zeiss.com/metrology/en/systems/optical-3d/3d-photogrammetry/tritop.html).
-
-> [!WARNING]
-> Only one service function may be used at a time.
-> All diagram services currently not in use must be stopped, otherwise no diagram is created.
 
 Location information can be provided by
 * Manual input in the GeoLocation element creation dialog
@@ -37,8 +33,7 @@ The location information is passed as parameters to the scripted diagram service
 context.data[stage] = {
     "ude_diagram_custom": 1,                       # mandatory, fixed
     "ude_diagram_type": "SVGDiagram",              # mandatory, fixed
-    "ude_diagram_alt": <altitude>,                 # altitude
-    "ude_diagram_alt_en": <enable_altitude_label>, # True or False
+    "ude_diagram_alt": <altitude>,                 # altitude, can be None
     "ude_diagram_label": '<label>',                # optional, can be empty
     'ude_diagram_lat': <latitude>,                 # latitude in decimal degrees
     'ude_diagram_lon': <longitude>                 # longitude in decimal degrees
@@ -47,7 +42,7 @@ context.data[stage] = {
  
 ## Managing the scripted diagram services
 
-Use Apps->Manage Services... to start `OSMMapDiagram` and stop any diagram service currently not in use. Only one diagram service may be active!
+Use Apps->Manage Services... to start `OSMMapDiagram`.
 
 ## Diagram settings
  
