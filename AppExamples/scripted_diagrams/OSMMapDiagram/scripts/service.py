@@ -28,9 +28,6 @@ import cartopy.io.img_tiles as cimgt
 SVG_PATH = None
 #SVG_PATH = 'C:/temp/OSMMapDiagram.svg'
 
-# Set SVG resolution in dpi
-SVG_DPI = 'figure'
-
 ALTITUDE = gom.tr("Alt.")
 
 # helper function
