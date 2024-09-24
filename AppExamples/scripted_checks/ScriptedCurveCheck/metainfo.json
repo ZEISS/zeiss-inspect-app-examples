@@ -12,7 +12,7 @@
         ["API", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/scripted_elements_api.html#scalar-curve"]
     ],
     "software-revision": "0000",
-    "software-version": "ZEISS INSPECT 2025",
+    "software-version": "ZEISS INSPECT 2023",
     "tags": ["scripted-check", "curve"],
     "title": "ScriptedCurveCheck",
     "uuid": "9839d24c-2728-46c5-9468-fa65e38389bd",
