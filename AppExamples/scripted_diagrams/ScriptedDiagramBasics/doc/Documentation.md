@@ -4,11 +4,7 @@
 
 ## Short description
 
-This example includes a script for generation of scripted actual circles, which can provide data &mdash; their radius &mdash; to any of two scripted diagram services. The diagram service `RadiusPlot` plots the radius of each circle element, the diagram service `RadiusHistogram` creates a radius histogram.
-
-> [!WARNING]
-> Only one service function may be used at a time.
-> All diagram services currently not in use must be stopped, otherwise no diagram is created.
+This example includes a script for generating scripted actual circles, which can provide data &mdash; their radius &mdash; to any of two scripted diagram services. The diagram service `RadiusPlot` plots the radius of each circle element, the diagram service `RadiusHistogram` creates a radius histogram.
 
 ## Prerequisite
 
@@ -25,15 +21,16 @@ The radius of any scripted circle is passed as a parameter to the scripted diagr
 context.data[stage] = {
     "ude_diagram_custom": 1,
     "ude_diagram_type": "SVGDiagram",
-    # Selected by circle creation dialog: "gom.api.diagram.radius_plot" or "gom.api.statistics.radius_histogram"
-    "ude_diagram_service" : params['service'],
+    # Selected by circle creation dialog:
+    # polisher = 'gom.api.diagram.radius_plot' or polisher = 'gom.api.statistics.radius_histogram'
+    "ude_diagram_service" : polisher,
     "ude_diagram_radius": params['radius']
 }
 ```
 
 ## Managing the scripted diagram services
 
-Use Apps->Manage Services... to start either `RadiusPlot` or `RadiusHistogram` and stop any diagram service currently not in use. Only one diagram service may be active!
+Use Apps->Manage Services... to start `RadiusPlot` and/or `RadiusHistogram`.
 
 ## Diagram settings
 
