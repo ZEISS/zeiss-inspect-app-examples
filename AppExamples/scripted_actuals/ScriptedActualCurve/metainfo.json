@@ -11,7 +11,7 @@
         ["API", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/scripted_elements_api.html#curve"]
     ],
     "software-revision": "0000",
-    "software-version": "ZEISS INSPECT 2025",
+    "software-version": "ZEISS INSPECT 2023",
     "tags": [
         "curve", "scripted-actual"
     ],
