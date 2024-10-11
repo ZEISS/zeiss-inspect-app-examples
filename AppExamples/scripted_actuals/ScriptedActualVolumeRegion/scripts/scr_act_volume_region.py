@@ -72,7 +72,7 @@ def dialog(context, params):
 
     def element_filter(element):
         try:
-            if element.type == 'volume' or element.type == 'linked_volume':
+            if element.type == 'linked_volume':
                 return True
         except Exception as e:
             pass
