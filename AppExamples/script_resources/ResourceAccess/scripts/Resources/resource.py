@@ -13,9 +13,10 @@
 import gom
 
 #
-# Resources are addressed with a relative or absolute file system path
+# Resources are addressed with a relative or absolute file system path.
 #
-data = gom.app.resource["assets/zeiss_logo.png"]
+with gom.Resource("assets/zeiss_logo.png").open() as fh:
+    data = fh.read()
 
 print ('Type:', type (data))
 print ('Size:', len (data))
