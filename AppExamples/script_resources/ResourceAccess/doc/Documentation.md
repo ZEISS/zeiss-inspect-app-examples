@@ -9,7 +9,8 @@ Demonstration for accessing App based resources via scripts.
 Resources are addressed with a relative or absolute file system path. In this example, the path relative to the Python script file is used:
 
 ```python
-data = gom.app.resource["assets/zeiss_logo.png"]
+with gom.Resource("assets/zeiss_logo.png").open() as fh:
+    data = fh.read()
 ```
 
 The equivalent absolute path is `:Resources/assets/zeiss_logo.png`.
