@@ -75,7 +75,9 @@ def gen_table(_category, _tag_index):
 
             # Title, links to source code and App download
             title = metainfo['title']
-            md += f"| <a id=\"{title}\">{title}</a><br>[view]({view}) / [download]({download}) | "
+            # Temporarily removed download links until Apps are available in the store
+            #md += f"| <a id=\"{title}\">{title}</a><br>[view]({view}) / [download]({download}) | "
+            md += f"| <a id=\"{title}\">{title}</a><br>[view]({view}) | "
 
             # Description
             md += f"{metainfo['description'].encode('windows-1252').decode('utf-8')} |"
@@ -156,12 +158,16 @@ def gen_boilerplate(_category, tags, _tag_index):
             #md += f"### {title} &mdash; [view]({view}) / [download]({download})\n\n"
             md += f'<section id="{title.lower()}">\n'
             md += f'<div id="{title.lower()}" class="{next_class}">\n'
+# Temporarily removed download links until Apps are available in the store
+#            md += \
+#f'''<h3>{title} — <a class="reference external" href="{view}">view</a> / 
+#<a class="reference external" href="{download}">download</a>
+#<a class="headerlink" href="#{title.lower()}" title="Link to this heading"></a></h3>
+#\n\n'''
             md += \
 f'''<h3>{title} — <a class="reference external" href="{view}">view</a> / 
-<a class="reference external" href="{download}">download</a>
 <a class="headerlink" href="#{title.lower()}" title="Link to this heading"></a></h3>
 \n\n'''
-            
             #md += f"![Icon](https://github.com/ZEISS/zeiss-inspect-app-examples/blob/main/AppExamples/{category}/{app}/icon.png)\n"
             
             # Description
