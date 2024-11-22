@@ -165,7 +165,7 @@ def gen_boilerplate(_category, tags, _tag_index):
 #<a class="headerlink" href="#{title.lower()}" title="Link to this heading"></a></h3>
 #\n\n'''
             md += \
-f'''<h3>{title} — <a class="reference external" href="{view}">view</a> / 
+f'''<h3>{title} — <a class="reference external" href="{view}">view</a>  
 <a class="headerlink" href="#{title.lower()}" title="Link to this heading"></a></h3>
 \n\n'''
             #md += f"![Icon](https://github.com/ZEISS/zeiss-inspect-app-examples/blob/main/AppExamples/{category}/{app}/icon.png)\n"
