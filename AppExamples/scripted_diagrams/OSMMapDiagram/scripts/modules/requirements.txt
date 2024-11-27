@@ -1,2 +1,2 @@
-Cartopy
-numpy < 2.0.0
+Cartopy == 0.24.1
+numpy == 1.26.4
