@@ -1,6 +1,6 @@
 # ZEISS INSPECT App Examples
 
-This repository contains various [ZEISS INSPECT](https://www.zeiss.com/metrology/products/software.html#inspectionsolutions) App examples for educational and inspirational purposes.
+This repository contains various [ZEISS INSPECT](https://www.zeiss.com/metrology/en/software/zeiss-inspect.html) App examples for educational and inspirational purposes.
 
 > [!NOTE]
 > Please have a look into the [ZEISS INSPECT App Development Documentation](https://zeissiqs.github.io/) for a general introduction to ZEISS INSPECT App development and the API specification.
