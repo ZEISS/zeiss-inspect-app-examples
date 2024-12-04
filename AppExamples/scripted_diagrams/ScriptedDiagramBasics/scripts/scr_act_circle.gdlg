@@ -315,16 +315,16 @@
             },
             {
                 "columns": 3,
-                "default": "gom.api.diagram.radius_plot",
+                "default": "Radius",
                 "items": [
                     {
                         "id": "",
-                        "text": "gom.api.diagram.radius_plot",
+                        "text": "Radius",
                         "translatable": true
                     },
                     {
                         "id": "",
-                        "text": "gom.api.statistics.radius_histogram",
+                        "text": "Histogram",
                         "translatable": true
                     }
                 ],
