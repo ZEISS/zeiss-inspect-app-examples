@@ -44,7 +44,7 @@ def meters_to_deg(dist):
 @apifunction
 def geolocation(view, element_data)->str:
     gom.log.info('Geolocation Service')
-    gom.log.info(f'{view=}, {elements=}')
+    gom.log.info(f'{view=}, {element_data=}')
     request = cimgt.OSM()
 
     # Find bounding box
