@@ -410,10 +410,6 @@ def dialog(context, params):
         DIALOG.en_alt.value = params['en_alt']
     if 'alt' in params:
         DIALOG.alt.value = params['alt']
-    if 'range' in params:
-        DIALOG.range.value = params['range']
-    if 'aspect' in params:
-        DIALOG.aspect.value = params['aspect']
 
     # Get previous element name, when started from "Edit creation"
     if len(params) > 0:
