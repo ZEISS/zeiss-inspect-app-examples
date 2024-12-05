@@ -410,10 +410,6 @@ def dialog(context, params):
         DIALOG.en_alt.value = params['en_alt']
     if 'alt' in params:
         DIALOG.alt.value = params['alt']
-    if 'range' in params:
-        DIALOG.range.value = params['range']
-    if 'aspect' in params:
-        DIALOG.aspect.value = params['aspect']
 
     # Get previous element name, when started from "Edit creation"
     if len(params) > 0:
@@ -506,8 +502,6 @@ def dialog(context, params):
         params['lon'] = DIALOG.lon.value
         params['en_alt'] = DIALOG.en_alt.value
         params['alt'] = DIALOG.alt.value
-        params['range'] = DIALOG.range.value
-        params['aspect'] = DIALOG.aspect.value
 
     context.name = DIALOG.name.value
     DIALOG.element.filter = lambda elem: not getattr(elem, "user_GPSLongitude", None) is None and not getattr(elem, "user_GPSLatitude", None) is None
