@@ -502,8 +502,6 @@ def dialog(context, params):
         params['lon'] = DIALOG.lon.value
         params['en_alt'] = DIALOG.en_alt.value
         params['alt'] = DIALOG.alt.value
-        params['range'] = DIALOG.range.value
-        params['aspect'] = DIALOG.aspect.value
 
     context.name = DIALOG.name.value
     DIALOG.element.filter = lambda elem: not getattr(elem, "user_GPSLongitude", None) is None and not getattr(elem, "user_GPSLatitude", None) is None
