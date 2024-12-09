@@ -1,0 +1,20 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "description": "Example for triggering command execution via WebSocket protocol",
+    "labels": [
+    ],
+    "licensing": {
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
+    },
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2023",
+    "tags": [
+	    "import"
+    ],
+    "title": "IPCWebsocketExample",
+    "uuid": "ba74695d-1cf1-47b9-8320-81035b533806",
+    "version": "1.0.0"
+}

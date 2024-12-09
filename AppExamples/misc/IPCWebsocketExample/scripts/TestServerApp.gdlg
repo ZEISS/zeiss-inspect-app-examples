@@ -1,0 +1,60 @@
+{
+    "content": [
+        [
+            {
+                "columns": 1,
+                "data": "AAAAAA==",
+                "file_name": "",
+                "height": 0,
+                "keep_aspect": true,
+                "keep_original_size": true,
+                "name": "image",
+                "rows": 1,
+                "system_image": "system_message_information",
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "image",
+                "use_system_image": true,
+                "width": 0
+            },
+            {
+                "columns": 1,
+                "default_font_family": "",
+                "default_font_size": 0,
+                "name": "text",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "<html><p>&lt;The actual text is set at run time!></p><p style=\"-qt-paragraph-type:empty;\"><br/></p><p style=\"-qt-paragraph-type:empty;\"><br/></p></html>",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "display::text",
+                "wordwrap": false
+            }
+        ]
+    ],
+    "control": {
+        "id": "OkCancel"
+    },
+    "embedding": "always_toplevel",
+    "position": "automatic",
+    "size": {
+        "height": 158,
+        "width": 264
+    },
+    "sizemode": "automatic",
+    "style": "",
+    "title": {
+        "id": "",
+        "text": "ZEISS INSPECT IPC Example",
+        "translatable": true
+    }
+}

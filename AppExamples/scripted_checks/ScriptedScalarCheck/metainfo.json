@@ -17,5 +17,5 @@
     "tags": ["scripted-check", "scalar"],
     "title": "ScriptedScalarCheck",
     "uuid": "1212cf39-9f41-4ae2-bb8f-f7f76b072d91",
-    "version": "1.0.2"
+    "version": "1.0.0"
 }
