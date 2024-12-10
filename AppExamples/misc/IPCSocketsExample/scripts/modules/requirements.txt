@@ -1,4 +1,0 @@
-# NOTE: PySide6 must be installed as Python Wheelhouse!
-# See https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/using_wheelhouses/using_wheelhouses.html
-pyside6 == 6.8.0.2
-
