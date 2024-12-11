@@ -1,6 +1,6 @@
 # Release Notes CheckResultsDataArray
 
-## Released at 2024-09-30 (v1.0.0)
+## Released at 2024-12-13 (v1.0.0)
 
 * Created from PythonApiExamples
 * Added tags and references
