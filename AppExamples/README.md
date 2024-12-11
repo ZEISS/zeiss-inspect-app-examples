@@ -26,7 +26,7 @@
 | <a id="DisplayImage">DisplayImage</a><br>[view](misc/DisplayImage/doc/Documentation.md) | Display measurement as a single image | |  | [![Static Badge](https://img.shields.io/badge/image--widget-blue)](#image-widget)<br>[![Static Badge](https://img.shields.io/badge/measurement-blue)](#measurement)<br> |
 | <a id="ExcelExample">ExcelExample</a><br>[view](misc/ExcelExample/doc/Documentation.md) | Example for reading and writing Excel files from an App | |  | [![Static Badge](https://img.shields.io/badge/import-blue)](#import)<br>[![Static Badge](https://img.shields.io/badge/export-blue)](#export)<br>[![Static Badge](https://img.shields.io/badge/project--keywords-blue)](#project-keywords)<br> |
 | <a id="FileSelectionAndFiltering">FileSelectionAndFiltering</a><br>[view](misc/FileSelectionAndFiltering/doc/Documentation.md) | File Selection and Filtering Examples | |  | [![Static Badge](https://img.shields.io/badge/file-blue)](#file)<br>[![Static Badge](https://img.shields.io/badge/directory-blue)](#directory)<br>[![Static Badge](https://img.shields.io/badge/folder-blue)](#folder)<br>[![Static Badge](https://img.shields.io/badge/path-blue)](#path)<br> |
-| <a id="IPCSocketsExample">IPCSocketsExample</a><br>[view](misc/IPCSocketsExample/doc/Documentation.md) | Example for triggering command execution via Internet (aka BSD) sockets | |  | [![Static Badge](https://img.shields.io/badge/import-blue)](#import)<br> |
+| <a id="IPCWebsocketExample">IPCWebsocketExample</a><br>[view](misc/IPCWebsocketExample/doc/Documentation.md) | Example for triggering command execution via WebSocket protocol | |  | [![Static Badge](https://img.shields.io/badge/import-blue)](#import)<br> |
 | <a id="MeasurementSystemAnalysis">MeasurementSystemAnalysis</a><br>[view](misc/MeasurementSystemAnalysis/doc/Documentation.md) | MSA conformal measurement system analysis (ANOVA, ARM) | |  | [![Static Badge](https://img.shields.io/badge/measurement-blue)](#measurement)<br> |
 | <a id="PointPixelTransformations">PointPixelTransformations</a><br>[view](misc/PointPixelTransformations/doc/Documentation.md) | This example demonstrates how to find the 2D pixel coordinates of a 3D point coordinate and vice versa. | [2)](#example-projects)  | [API](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/python_api.html#gom-api-imaging)<br> | [![Static Badge](https://img.shields.io/badge/measurement-blue)](#measurement)<br>[![Static Badge](https://img.shields.io/badge/reference--points-blue)](#reference-points)<br> |
 | <a id="ProgressBar">ProgressBar</a><br>[view](misc/ProgressBar/doc/Documentation.md) | This example shows how to display a progress bar at the bottom of the ZEISS INSPECT main window | |  |  |
@@ -186,7 +186,7 @@
 
 * [CSVExample](#CSVExample)
 * [ExcelExample](#ExcelExample)
-* [IPCSocketsExample](#IPCSocketsExample)
+* [IPCWebsocketExample](#IPCWebsocketExample)
 
 
 ### <a name="measurement"></a>![Static Badge](https://img.shields.io/badge/measurement-blue)
