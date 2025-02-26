@@ -99,7 +99,7 @@
 | 2 | zeiss_part_test_measurement | Optical measurement series and preliminary mesh of ZEISS part |
 | 3 | volume_test_project | A small test volume for CT related inspections |
 
-[Download Example Projects App](https://software-store.zeiss.com/products/apps/ExampleProjects)
+[Download Example Projects App](https://software-store.zeiss.com/products/apps/example-projects)
 
 ## Tag Index
 
