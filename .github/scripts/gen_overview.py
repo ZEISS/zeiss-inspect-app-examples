@@ -7,9 +7,13 @@
 '''Generate ZEISS INSPECT App Examples Overview markdown file'''
 
 import os
+import re
 import json
 import argparse
 
+APP_EXAMPLES_REPO = "https://github.com/ZEISS/zeiss-inspect-app-examples/blob/main/"
+
+APP_DEV_DOC = "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/index.html"
 
 BASEDIR = 'AppExamples'
 
@@ -31,7 +35,18 @@ EXAMPLE_PROJECTS = {
     'volume_test_project': {'index': 3, 'description': 'A small test volume for CT related inspections'}
 }
 
+PUBLISHED_APPS_LIST = 'published_apps.txt'
+published_apps = []
+sphinx_doc = False
+
+def pascal_to_kebab(pascal_str):
+    """Convert string from PascalCase to kebab-case"""
+    # Use regex to find the positions to insert underscores
+    kebab_str = re.sub(r'(?<!^)(?=[A-Z])', '-', pascal_str).lower()
+    return kebab_str
+
 def find_tags():
+    """Find tags in metainfo.json files"""
     tags = []
     for _category in CATEGORY_DESCRIPTIONS.keys():
         apps = os.path.join(BASEDIR, _category)
@@ -42,7 +57,7 @@ def find_tags():
             with open(metainfo_path, 'r', encoding="utf-8") as f:
                 metainfo = json.load(f)
                 for _tag in metainfo['tags']:
-                    if not _tag in tags:
+                    if _tag not in tags:
                         tags.append(_tag)
         tags.sort()
     return tags
@@ -54,7 +69,7 @@ def gen_table(_category, _tag_index):
     | App | Description | Example Projects | References | Tags |
     | --- | ----------- | ---------------- | ---------- | ---- |
     """
-    
+
     # App table header
     # Using non-breaking spaces (&nbsp;) to enforce a common/minimum column width
     md  = f"| {24*'&nbsp;'}App{24*'&nbsp;'} | {36*'&nbsp;'}Description{36*'&nbsp;'} | Example Projects | References | {7*'&nbsp;'}Tags{7*'&nbsp;'} |\n"
@@ -68,16 +83,16 @@ def gen_table(_category, _tag_index):
         with open(metainfo_path, 'r', encoding="utf-8") as f:
             metainfo = json.load(f)
             if sphinx_doc:
-                view = f"https://github.com/ZEISS/zeiss-inspect-app-examples/blob/main/AppExamples/{_category}/{_app}/doc/Documentation.md"
+                view = APP_EXAMPLES_REPO + f"AppExamples/{_category}/{_app}/doc/Documentation.md"
             else:
                 view = f"{_category}/{_app}/doc/Documentation.md"
-            download = f"https://software-store.zeiss.com/products/apps/{metainfo['title']}"
+            store_title = pascal_to_kebab(metainfo['title'])
+            download = f"https://software-store.zeiss.com/products/apps/{store_title}"
 
             # Title, links to source code and App download
             title = metainfo['title']
-            # Temporarily removed download links until Apps are available in the store
-            #md += f"| <a id=\"{title}\">{title}</a><br>[view]({view}) / [download]({download}) | "
-            md += f"| <a id=\"{title}\">{title}</a><br>[view]({view}) | "
+            link = f" / [download]({download})" if f"{_category}/{_app}" in published_apps else ""
+            md += f"| <a id=\"{title}\">{title}</a><br>[view]({view}) {link} | "
 
             # Description
             md += f"{metainfo['description'].encode('windows-1252').decode('utf-8')} |"
@@ -98,7 +113,7 @@ def gen_table(_category, _tag_index):
 
             # Tags
             for _tag in metainfo['tags']:
-                if not _tag in _tag_index:
+                if _tag not in _tag_index:
                     _tag_index[_tag] = []
                 _tag_index[_tag].append(title)
                 _badge = _tag.replace('-', '--')
@@ -132,7 +147,7 @@ def gen_boilerplate(_category, tags, _tag_index):
 
     md = ""
     block_odd = True
-    
+
     apps = os.path.join(BASEDIR, _category)
     list_dir = os.listdir(apps)
     list_dir.sort()
@@ -141,35 +156,32 @@ def gen_boilerplate(_category, tags, _tag_index):
         with open(metainfo_path, 'r', encoding="utf-8") as f:
             metainfo = json.load(f)
             if sphinx_doc:
-                view = f"https://github.com/ZEISS/zeiss-inspect-app-examples/blob/main/AppExamples/{_category}/{_app}/doc/Documentation.md"
+                view = APP_EXAMPLES_REPO + f"AppExamples/{_category}/{_app}/doc/Documentation.md"
             else:
                 view = f"{_category}/{_app}/doc/Documentation.md"
-            download = f"https://software-store.zeiss.com/products/apps/{metainfo['title']}"
+            store_title = pascal_to_kebab(metainfo['title'])
+            download = f"https://software-store.zeiss.com/products/apps/{store_title}"
 
             if block_odd:
                 next_class = "example-block-odd"
             else:
                 next_class = "example-block-even"
             block_odd = not block_odd
-            
+
             # Title, links to source code and App download
-            # Using HTML instead of markdown to allow alternating background color via <div> attribute 
+            # Using HTML instead of markdown to allow alternating background color
+            # via <div> attribute
             title = metainfo['title']
-            #md += f"### {title} &mdash; [view]({view}) / [download]({download})\n\n"
             md += f'<section id="{title.lower()}">\n'
             md += f'<div id="{title.lower()}" class="{next_class}">\n'
-# Temporarily removed download links until Apps are available in the store
-#            md += \
-#f'''<h3>{title} — <a class="reference external" href="{view}">view</a> / 
-#<a class="reference external" href="{download}">download</a>
-#<a class="headerlink" href="#{title.lower()}" title="Link to this heading"></a></h3>
-#\n\n'''
+            if f"{_category}/{_app}" in published_apps:
+                link = f' / <a class="reference external" href="{download}">download</a>'
+            else:
+                link = ""
             md += \
-f'''<h3>{title} — <a class="reference external" href="{view}">view</a>  
+f'''<h3>{title} — <a class="reference external" href="{view}">view</a> {link}
 <a class="headerlink" href="#{title.lower()}" title="Link to this heading"></a></h3>
 \n\n'''
-            #md += f"![Icon](https://github.com/ZEISS/zeiss-inspect-app-examples/blob/main/AppExamples/{category}/{app}/icon.png)\n"
-            
             # Description
             md += ":Description:\n"
             md += f"    {metainfo['description'].encode('windows-1252').decode('utf-8')}\n\n"
@@ -181,7 +193,7 @@ f'''<h3>{title} — <a class="reference external" href="{view}">view</a>
                     if _example in EXAMPLE_PROJECTS:
                         md += f"    [{_example}](#example-projects)\n"
                 md += "\n"
-            
+
             # References
             if 'references' in metainfo:
                 md += ":References:\n"
@@ -197,7 +209,7 @@ f'''<h3>{title} — <a class="reference external" href="{view}">view</a>
                 md += ":Tags:\n"
                 md += "    "
                 for _tag in metainfo['tags']:
-                    if not _tag in _tag_index:
+                    if _tag not in _tag_index:
                         _tag_index[_tag] = []
                     _tag_index[_tag].append(title)
                     _badge = _tag.replace('-', '--')
@@ -236,6 +248,14 @@ if __name__ == '__main__':
 
     app_overview = ""
     tagIndex = {}
+
+    # Read list of approved Apps (ZEISS Quality Software Store)
+    filename = os.path.join(os.path.dirname(os.path.abspath(__file__)), PUBLISHED_APPS_LIST)
+    with open(filename, 'r', encoding="utf-8") as file:
+        for line in file:
+            if line.startswith('#'):
+                continue
+            published_apps.append(line.strip())
 
     if sphinx_doc:
         app_overview += \
@@ -292,25 +312,23 @@ myst:
                 tmp, tagIndex = gen_boilerplate(category, tags, tagIndex)
             else:
                 tmp, tagIndex = gen_table(category, tagIndex)
-            
+
             app_overview += tmp
 
     # Example projects
     app_overview += "\n## Example projects\n\n"
-    
+
     if sphinx_doc: 
         app_overview += "| Project name | Description |\n"
         app_overview += "| ------------ | ----------- |\n"
     else:
         app_overview += "| No. | Project name | Description |\n"
         app_overview += "| --- | ------------ | ----------- |\n"
-        
+
     for example, infos in EXAMPLE_PROJECTS.items():
         if sphinx_doc:
-            #app_overview += f"* {example}\n"
             app_overview += f"| {example} | {infos['description']} |\n"
         else:
-            #app_overview += f"{infos['index']}) {example}\n"
             app_overview += f"| {infos['index']} | {example} | {infos['description']} |\n"
 
     app_overview += "\n[Download Example Projects App](https://software-store.zeiss.com/products/apps/ExampleProjects)"
@@ -320,7 +338,6 @@ myst:
     app_overview += "\n\n## Tag Index\n"
 
     for tag in sorted(tagIndex):
-        #app_overview += f"\n### {tag}:\n"
         badge = tag.replace('-', '--')
         app_overview += f'\n### <a name="{tag}"></a>![Static Badge](https://img.shields.io/badge/{badge}-blue)\n\n'
 
@@ -332,9 +349,9 @@ myst:
         app_overview += "\n"
 
 
-    # Related links 
+    # Related links
     app_overview += "\n## Related\n\n"
-    app_overview += "* [ZEISS IQS GitHub &mdash; App Development Documentation](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/index.html)\n"
+    app_overview += f"* [ZEISS IQS GitHub &mdash; App Development Documentation]({APP_DEV_DOC})\n"
     app_overview += "* [ZEISS Quality Software Store](https://software-store.zeiss.com)\n"
 
 
