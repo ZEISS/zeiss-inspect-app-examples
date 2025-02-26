@@ -1,0 +1,18 @@
+# List of Apps available in the ZEISS Quality Software Store 
+projects/ExampleProjects
+dialog_widgets/WidgetVisibility
+dialog_widgets/UnitDialogEventHandler
+dialog_widgets/ExplorerSelectedElementsInDialog
+script_resources/ResourceAccess
+dialog_widgets/DropdownWidget
+script_resources/ScriptResources
+script_icons/ScriptIcon
+scripted_checks/ScriptedScalarCheck
+misc/ProgressBar
+misc/SettingsAPI
+misc/PointPixelTransformations
+scripted_actuals/ScriptedActualCone
+scripted_actuals/ScriptedActualCircle
+scripted_actuals/ScriptedActualCylinder
+scripted_actuals/ScriptedActualDistance
+scripted_actuals/ScriptedElementProgress
