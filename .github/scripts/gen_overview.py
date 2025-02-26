@@ -331,7 +331,7 @@ myst:
         else:
             app_overview += f"| {infos['index']} | {example} | {infos['description']} |\n"
 
-    app_overview += "\n[Download Example Projects App](https://software-store.zeiss.com/products/apps/ExampleProjects)"
+    app_overview += "\n[Download Example Projects App](https://software-store.zeiss.com/products/apps/example-projects)"
 
 
     # Tag index
