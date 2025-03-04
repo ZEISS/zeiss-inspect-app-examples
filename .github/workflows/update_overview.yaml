@@ -88,7 +88,7 @@ jobs:
         run: |
           python .github/scripts/gen_overview.py --sphinx-doc > examples_overview.md
           gh repo clone Zeiss/zeiss-inspect-app-api
-          cd zeiss-inspect-addon-api
+          cd zeiss-inspect-app-api
           git checkout -b overview-update --track origin/main
           cp ../examples_overview.md doc/python_examples/examples_overview.md
           if [ -z "$(git status --porcelain)" ]; then
@@ -102,7 +102,7 @@ jobs:
       - name: Push changes (Zeiss/zeiss-inspect-app-api)
         if: env.changes == 'true'
         run: |
-          cd zeiss-inspect-addon-api
+          cd zeiss-inspect-app-api
           git add doc/python_examples/examples_overview.md
           git commit -m "Updated doc/python_examples/examples_overview.md"
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/Zeiss/zeiss-inspect-app-api.git
