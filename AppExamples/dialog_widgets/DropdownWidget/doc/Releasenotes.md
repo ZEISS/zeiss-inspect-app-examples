@@ -6,3 +6,7 @@
 * Added tags and references
 * Added Documentation.md
 * Modified README.md
+
+## Released at 2025-xx-xx (vX.Y.Z)
+
+* Modified script name shown in menu
