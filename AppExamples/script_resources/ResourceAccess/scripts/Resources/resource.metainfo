@@ -1,10 +1,22 @@
 {
-    "display_name": "resource",
+    "display_name": "ResourceAccess",
+    "folded_blocks": [
+    ],
     "icon": "",
     "iinspect_condition": "",
     "interactive": false,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+            ],
+            "type": "command"
+        },
+        "script": "userscript.resource",
+        "submenu": [
+        ]
+    },
     "multicreation_script": false,
-    "name": "resource",
     "script_check_type": "none",
     "script_element_type": "none",
     "show_in_iinspect": false,
