@@ -1,5 +1,5 @@
 {
-    "display_name": "text_extraction",
+    "display_name": "Text Extraction",
     "folded_blocks": [
     ],
     "icon": "",
@@ -9,17 +9,21 @@
         "anchor": {
             "item": "",
             "submenu": [
+                "macro"
             ],
             "type": "command"
         },
         "script": "userscript.text_extraction",
         "submenu": [
+            "App Examples",
+            "misc",
+            "TextDetection"
         ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
     "script_element_type": "none",
     "show_in_iinspect": false,
-    "show_in_menu": true,
+    "show_in_menu": false,
     "uuid": "5f3a02f4-23fe-466a-8144-7b828df11090"
 }
