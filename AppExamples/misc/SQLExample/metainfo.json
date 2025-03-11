@@ -16,5 +16,8 @@
     ],
     "title": "SQLExample",
     "uuid": "58c970e7-c01d-4e72-88a2-7e8db7cd1dec",
-    "version": "1.0.0"
+    "version": "1.0.1",
+    "technical-category": "App Examples",
+    "business-category": "minor",
+    "compatible-software": ["ZEISS INSPECT Optical 3D", "ZEISS INSPECT X-Ray", "ZEISS INSPECT CMM", "ZEISS INSPECT VMM", "ZEISS CORRELATE"]
 }
