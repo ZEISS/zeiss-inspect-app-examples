@@ -16,5 +16,8 @@
     ],
     "title": "IPCWebsocketExample",
     "uuid": "ba74695d-1cf1-47b9-8320-81035b533806",
-    "version": "1.0.0"
+    "version": "1.0.1",
+    "technical-category": "App Examples",
+    "business-category": "minor",
+    "compatible-software": ["ZEISS INSPECT Optical 3D", "ZEISS INSPECT X-Ray", "ZEISS INSPECT CMM", "ZEISS INSPECT VMM", "ZEISS CORRELATE"]
 }
