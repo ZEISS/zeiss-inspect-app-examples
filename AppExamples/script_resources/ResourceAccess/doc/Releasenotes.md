@@ -1,8 +1,8 @@
 # Release Notes ResourceAccess
 
-## Released at 2025-xx-xx (v1.X.Y)
+## Released at 2025-03-30 (v1.0.1)
 
-* Updeted script meta information
+* Changed menu integration
 
 ## Released at 2024-09-30 (v1.0.0)
 
