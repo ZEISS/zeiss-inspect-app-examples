@@ -1,5 +1,5 @@
 {
-    "display_name": "csv_export",
+    "display_name": "CSVExport",
     "folded_blocks": [
     ],
     "icon": "",
@@ -9,17 +9,21 @@
         "anchor": {
             "item": "",
             "submenu": [
+                "macro"
             ],
             "type": "command"
         },
         "script": "userscript.csv_export",
         "submenu": [
+            "App Examples",
+            "misc",
+            "CSVExample"
         ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
     "script_element_type": "none",
     "show_in_iinspect": false,
-    "show_in_menu": true,
+    "show_in_menu": false,
     "uuid": "a391bd6e-e700-429b-ae99-94bcaac8ede3"
 }
