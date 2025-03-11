@@ -1,5 +1,5 @@
 {
-    "display_name": "volume_section_image_data",
+    "display_name": "VolumeSectionImageData",
     "folded_blocks": [
     ],
     "icon": "",
@@ -9,17 +9,20 @@
         "anchor": {
             "item": "",
             "submenu": [
+                "macro"
             ],
             "type": "command"
         },
         "script": "userscript.volume_section_image_data",
         "submenu": [
+            "App Examples",
+            "data_interfaces"
         ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
     "script_element_type": "none",
     "show_in_iinspect": false,
-    "show_in_menu": true,
+    "show_in_menu": false,
     "uuid": "8cbf13b7-2d92-495f-9dff-9c6bc302bcef"
 }
