@@ -1,5 +1,5 @@
 {
-    "display_name": "resource_api_example",
+    "display_name": "ScriptResources",
     "folded_blocks": [
     ],
     "icon": "",
@@ -14,12 +14,14 @@
         },
         "script": "userscript.resource_api_example",
         "submenu": [
+            "App Examples",
+            "script_resources"
         ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
     "script_element_type": "none",
     "show_in_iinspect": false,
-    "show_in_menu": true,
+    "show_in_menu": false,
     "uuid": "122d6a35-c0c1-4048-8e14-dcafc1014ad4"
 }
