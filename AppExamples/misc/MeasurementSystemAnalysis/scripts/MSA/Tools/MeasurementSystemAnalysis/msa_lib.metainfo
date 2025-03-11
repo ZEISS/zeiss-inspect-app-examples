@@ -1,1 +1,27 @@
-{"breakpoints":[],"display_name":"msa_lib","folded_blocks":[],"icon":"","main_menu_path":"","script_element_type":"none","show_in_menu":false,"uuid":"ab37d5d4-7dc5-4fe4-b0e3-54b80ceafff8"}
+{
+    "display_name": "msa_gui",
+    "folded_blocks": [
+    ],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": false,
+    "main_menu_path": {
+        "anchor": {
+            "item": "reports",
+            "submenu": [
+                "operations"
+            ],
+            "type": "submenu"
+        },
+        "script": "userscript.MSA__Tools__MeasurementSystemAnalysis__msa_lib",
+        "submenu": [
+            "System analysis"
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "none",
+    "show_in_iinspect": false,
+    "show_in_menu": false,
+    "uuid": "ab37d5d4-7dc5-4fe4-b0e3-54b80ceafff8"
+}

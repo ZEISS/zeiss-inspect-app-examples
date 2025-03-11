@@ -1,1 +1,25 @@
-{"breakpoints":[],"display_name":"msa_config","folded_blocks":[],"icon":"","main_menu_path":"","script_element_type":"none","show_in_menu":false,"uuid":"e85ed25b-4642-4de5-91cf-943926c19319"}
+{
+    "display_name": "msa_config",
+    "folded_blocks": [
+    ],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": false,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+            ],
+            "type": "submenu"
+        },
+        "script": "userscript.MSA__Tools__MeasurementSystemAnalysis__msa_config",
+        "submenu": [
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "none",
+    "show_in_iinspect": false,
+    "show_in_menu": false,
+    "uuid": "e85ed25b-4642-4de5-91cf-943926c19319"
+}

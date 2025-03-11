@@ -13,7 +13,7 @@
           ],
           "type": "submenu"
       },
-      "script": "userscript.newenv__Tools__MeasurementSystemAnalysis__msa_anova_2",
+      "script": "userscript.MSA__Tools__MeasurementSystemAnalysis__msa_anova_2",
       "submenu": [
           "System analysis"
       ]
