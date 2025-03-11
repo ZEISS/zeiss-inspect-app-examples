@@ -18,5 +18,8 @@
     ],
     "title": "PointPixelTransformations",
     "uuid": "e5c1a499-b268-4879-a0f7-6ff8385e5de5",
-    "version": "1.0.1"
+    "version": "1.0.2",
+    "technical-category": "App Examples",
+    "business-category": "minor",
+    "compatible-software": ["ZEISS INSPECT Optical 3D", "ZEISS INSPECT X-Ray", "ZEISS INSPECT CMM", "ZEISS INSPECT VMM", "ZEISS CORRELATE"]
 }
