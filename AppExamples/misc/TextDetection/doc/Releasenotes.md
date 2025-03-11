@@ -1,5 +1,9 @@
 # Release Notes TextDetection
 
+## Released at 2025-03-30 (v1.0.5)
+
+* Changed menu integration
+
 ## Released at: 2024-09-30 (v1.0.4)
 
 * Updated README.md

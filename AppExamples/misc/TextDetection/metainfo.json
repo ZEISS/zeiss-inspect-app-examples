@@ -16,5 +16,8 @@
     ],
     "title": "TextDetection",
     "uuid": "ebf221f1-d3db-4677-96ff-d86f423cb70e",
-    "version": "1.0.4"
+    "version": "1.0.5",
+    "technical-category": "App Examples",
+    "business-category": "minor",
+    "compatible-software": ["ZEISS INSPECT Optical 3D", "ZEISS INSPECT X-Ray", "ZEISS INSPECT CMM", "ZEISS INSPECT VMM", "ZEISS CORRELATE"]
 }
