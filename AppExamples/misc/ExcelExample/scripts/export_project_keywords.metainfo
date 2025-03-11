@@ -1,5 +1,5 @@
 {
-    "display_name": "export_project_keywords",
+    "display_name": "ExportProjectKeywords",
     "folded_blocks": [
     ],
     "icon": "",
@@ -9,17 +9,21 @@
         "anchor": {
             "item": "",
             "submenu": [
+                "macro"
             ],
             "type": "command"
         },
         "script": "userscript.export_project_keywords",
         "submenu": [
+            "App Examples",
+            "misc",
+            "ExcelExample"
         ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
     "script_element_type": "none",
     "show_in_iinspect": false,
-    "show_in_menu": true,
+    "show_in_menu": false,
     "uuid": "a617dacb-655e-4b23-b615-af1def65c5c5"
 }
