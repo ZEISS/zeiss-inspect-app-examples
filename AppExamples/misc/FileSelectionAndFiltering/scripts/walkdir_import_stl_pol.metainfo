@@ -1,5 +1,5 @@
 {
-    "display_name": "walkdir_import_stl_pol.py",
+    "display_name": "Walk dir import stl/pol",
     "folded_blocks": [
     ],
     "icon": "",
@@ -9,17 +9,21 @@
         "anchor": {
             "item": "",
             "submenu": [
+                "macro"
             ],
             "type": "command"
         },
-        "script": "",
+        "script": "userscript.walkdir_import_stl_pol",
         "submenu": [
+            "App Examples",
+            "misc",
+            "FileSelectionAndFiltering"
         ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
     "script_element_type": "none",
     "show_in_iinspect": false,
-    "show_in_menu": true,
+    "show_in_menu": false,
     "uuid": "02b64497-9b28-4aa1-be7f-b2054fbd7c19"
 }

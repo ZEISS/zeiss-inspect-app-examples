@@ -1,5 +1,5 @@
 {
-    "display_name": "walkdir_import_scripts.py",
+    "display_name": "Walk dir - import scripts",
     "folded_blocks": [
     ],
     "icon": "",
@@ -9,17 +9,21 @@
         "anchor": {
             "item": "",
             "submenu": [
+                "macro"
             ],
             "type": "command"
         },
-        "script": "",
+        "script": "userscript.walkdir_import_scripts",
         "submenu": [
+            "App Examples",
+            "misc",
+            "FileSelectionAndFiltering"
         ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
     "script_element_type": "none",
     "show_in_iinspect": false,
-    "show_in_menu": true,
+    "show_in_menu": false,
     "uuid": "2c5a71fb-bd75-43c7-a7a9-297af76c0872"
 }

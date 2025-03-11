@@ -1,5 +1,5 @@
 {
-    "display_name": "listdir_dialog.py",
+    "display_name": "List dir - dialog",
     "folded_blocks": [
     ],
     "icon": "",
@@ -9,17 +9,21 @@
         "anchor": {
             "item": "",
             "submenu": [
+                "macro"
             ],
             "type": "command"
         },
-        "script": "",
+        "script": "userscript.listdir_dialog",
         "submenu": [
+            "App Examples",
+            "misc",
+            "FileSelectionAndFiltering"
         ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
     "script_element_type": "none",
     "show_in_iinspect": false,
-    "show_in_menu": true,
+    "show_in_menu": false,
     "uuid": "a36986e8-a7b9-4c17-baf7-51099143e07d"
 }
