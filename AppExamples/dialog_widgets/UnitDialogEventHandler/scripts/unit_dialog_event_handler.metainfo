@@ -1,5 +1,5 @@
 {
-    "display_name": "unit_dialog_event_handler",
+    "display_name": "UnitDialogEventHandler",
     "folded_blocks": [
     ],
     "icon": "",
@@ -12,14 +12,16 @@
             ],
             "type": "command"
         },
-        "script": "",
+        "script": "userscript.unit_dialog_event_handler",
         "submenu": [
+            "App Examples",
+            "dialog_widgets"
         ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
     "script_element_type": "none",
     "show_in_iinspect": false,
-    "show_in_menu": true,
+    "show_in_menu": false,
     "uuid": "c90cde84-1aaa-412e-a29f-b54982d2e8f3"
 }
