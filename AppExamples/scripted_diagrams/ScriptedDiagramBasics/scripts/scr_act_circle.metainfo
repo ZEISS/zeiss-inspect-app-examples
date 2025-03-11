@@ -9,17 +9,20 @@
         "anchor": {
             "item": "",
             "submenu": [
+                "macro"
             ],
             "type": "command"
         },
         "script": "ude.scr_act_circle",
         "submenu": [
+            "App Examples",
+            "scripted_diagrams"
         ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
     "script_element_type": "circle",
     "show_in_iinspect": false,
-    "show_in_menu": true,
+    "show_in_menu": false,
     "uuid": "40ef7e1e-eb39-494e-b8d0-268e500d0c4b"
 }

@@ -64,5 +64,8 @@
     ],
     "title": "ScriptedDiagramBasics",
     "uuid": "f78561a2-6e1c-4a8e-ad56-1e738d478b1e",
-    "version": "1.0.0"
+    "version": "1.0.1",
+    "technical-category": "App Examples",
+    "business-category": "minor",
+    "compatible-software": ["ZEISS INSPECT Optical 3D", "ZEISS INSPECT X-Ray", "ZEISS INSPECT CMM", "ZEISS INSPECT VMM", "ZEISS CORRELATE"]
 }
