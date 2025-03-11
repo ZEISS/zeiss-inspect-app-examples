@@ -15,5 +15,8 @@
     ],
     "title": "ProgressBar",
     "uuid": "73fac189-b974-480c-97c5-6c3773a9831f",
-    "version": "1.0.0"
+    "version": "1.0.1",
+    "technical-category": "App Examples",
+    "business-category": "minor",
+    "compatible-software": ["ZEISS INSPECT Optical 3D", "ZEISS INSPECT X-Ray", "ZEISS INSPECT CMM", "ZEISS INSPECT VMM", "ZEISS CORRELATE"]
 }
