@@ -1,5 +1,5 @@
 {
-    "display_name": "SQL_Example",
+    "display_name": "SQLExample",
     "folded_blocks": [
     ],
     "icon": "",
@@ -9,17 +9,20 @@
         "anchor": {
             "item": "",
             "submenu": [
+                "macro"
             ],
             "type": "command"
         },
         "script": "userscript.SQL_Example",
         "submenu": [
+            "App Examples",
+            "misc"
         ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
     "script_element_type": "none",
     "show_in_iinspect": false,
-    "show_in_menu": true,
+    "show_in_menu": false,
     "uuid": "e3a84dc8-7119-4260-b1a3-8c8f3e1dfa42"
 }
