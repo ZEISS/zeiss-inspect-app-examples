@@ -10,7 +10,7 @@
         ]
     },
     "references": [
-        ["HowTo", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/using_scripted_diagrams/using_scripted_diagrams.html"]
+        ["HowTo", "https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/using_scripted_diagrams/using_scripted_diagrams.html"]
     ],
     "services": [
         {
