@@ -8,7 +8,7 @@ This example demonstrates how to access an SQL database from an App. For demonst
 
 The database access is implemented using [mysql-connector-python](https://pypi.org/project/mysql-connector-python/). A test database server is set up using [MySQL Community Server](https://dev.mysql.com/downloads/mysql/).
 
-Besides, <a href="https://zeissiqs.github.io/zeiss-inspect-addon-api/main/python_api/python_api.html#gom-api-settings">gom.api.settings</a> is used to save and restore entries made in a dialog.
+Besides, <a href="https://zeiss.github.io/zeiss-inspect-app-api/main/python_api/python_api.html#gom-api-settings">gom.api.settings</a> is used to save and restore entries made in a dialog.
 
 ## Highlights
 
@@ -71,7 +71,7 @@ A new database is created using the function `create_database()`, which calls [M
 ```python
 def create_database(host_name, user_name, user_password, database):
   try:
-	  connection = mysql.connector.connect(
+    connection = mysql.connector.connect(
       host=host_name,
       user=user_name,
       passwd=user_password
@@ -269,4 +269,4 @@ result, err = execute_query(CONNECTION, query, values)
 
 ## Related
 
-* How-to: [User-defined Dialogs](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/python_api_introduction/user_defined_dialogs.html)
+* How-to: [User-defined Dialogs](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/python_api_introduction/user_defined_dialogs.html)
