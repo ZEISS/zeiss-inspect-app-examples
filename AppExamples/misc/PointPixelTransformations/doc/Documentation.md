@@ -21,8 +21,8 @@ stage_index = 0
 
 # Using the first valid reference point in the selected measurement as the point example
 for index, id in enumerate(measurement.reference_point_id):
-	if id is not None:
-		break
+    if id is not None:
+        break
 
 reference_point = measurement.reference_point_coordinate[index]
 print(f'\tFirst reference point in {MEASUREMENT_SERIES} - {MEASUREMENT}: ID = {id}, P = {reference_point})')
@@ -84,5 +84,5 @@ Edit Creation Parameters Dialog
 
 ## Related
 
-* <a href="https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/python_api.html#gom-api-imaging-compute-pixels-from-point">gom.api.imaging.compute_pixels_from_point</a>
-* <a href="https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/python_api.html#gom-api-imaging-compute-point-from-pixels">gom.api.imaging.compute_point_from_pixels</a>
+* <a href="https://zeiss.github.io/zeiss-inspect-app-api/2025/python_api/python_api.html#gom-api-imaging-compute-pixels-from-point">gom.api.imaging.compute_pixels_from_point</a>
+* <a href="https://zeiss.github.io/zeiss-inspect-app-api/2025/python_api/python_api.html#gom-api-imaging-compute-point-from-pixels">gom.api.imaging.compute_point_from_pixels</a>

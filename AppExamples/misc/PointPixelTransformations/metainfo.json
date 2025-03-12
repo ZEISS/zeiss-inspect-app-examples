@@ -9,7 +9,7 @@
         "product-codes": []
     },
     "references": [
-        ["API", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/python_api.html#gom-api-imaging"]
+        ["API", "https://zeiss.github.io/zeiss-inspect-app-api/2025/python_api/python_api.html#gom-api-imaging"]
     ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2023",
