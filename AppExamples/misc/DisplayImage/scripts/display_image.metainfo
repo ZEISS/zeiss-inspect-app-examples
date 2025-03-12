@@ -1,5 +1,5 @@
 {
-    "display_name": "display_image",
+    "display_name": "DisplayImage",
     "folded_blocks": [
     ],
     "icon": "",
@@ -9,17 +9,20 @@
         "anchor": {
             "item": "",
             "submenu": [
+                "macro"
             ],
             "type": "command"
         },
         "script": "userscript.display_image",
         "submenu": [
+            "App Examples",
+            "misc"
         ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
     "script_element_type": "none",
     "show_in_iinspect": false,
-    "show_in_menu": true,
+    "show_in_menu": false,
     "uuid": "c269d2dc-b6c2-471d-ace9-c2d58d5fa767"
 }
