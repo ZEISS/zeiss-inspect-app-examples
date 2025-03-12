@@ -13,7 +13,7 @@
           ],
           "type": "submenu"
       },
-      "script": "userscript.newenv__Tools__MeasurementSystemAnalysis__msa_arm",
+      "script": "userscript.MSA__Tools__MeasurementSystemAnalysis__msa_arm",
       "submenu": [
           "System analysis"
       ]
