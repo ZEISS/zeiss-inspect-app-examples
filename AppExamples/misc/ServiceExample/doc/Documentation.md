@@ -18,9 +18,9 @@ from gom import apifunction
 
 @apifunction
 def multiply(value1: float, value2: float) -> float:
-	gom.log.debug('Function "multiply" called')
-	return value1 * value2
-	
+    gom.log.debug('Function "multiply" called')
+    return value1 * value2
+    
 gom.run_api()
 ```
 
@@ -53,7 +53,7 @@ print(result)
 
 ### 3. Service management from a script
 
-[gom.api.services](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/python_api.html#gom-api-services) allows to query and control services from a script:
+[gom.api.services](https://zeiss.github.io/zeiss-inspect-app-api/2025/python_api/python_api.html#gom-api-services) allows to query and control services from a script:
 
 **Example script for querying and controlling services:**
 
@@ -77,11 +77,11 @@ def wait_for_status(service, status, timeout):
 # Find service handle by name
 srv = None
 for s in gom.api.services.get_services():
-	if s.get_name() == SERVICE_NAME:
-		srv = s
+    if s.get_name() == SERVICE_NAME:
+        srv = s
 
 if not srv:
-	print("Failed to get {SERVICE_NAME} service handle")
+    print("Failed to get {SERVICE_NAME} service handle")
    sys.exit(0)
 
 # Query service properties
@@ -107,5 +107,5 @@ print(status)
 
 ## Related
 
-* How-to: [Using services](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/using_services/using_services.html)
-* [gom.api.services](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/python_api.html#gom-api-services)
+* How-to: [Using services](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/using_services/using_services.html)
+* [gom.api.services](https://zeiss.github.io/zeiss-inspect-app-api/2025/python_api/python_api.html#gom-api-services)
