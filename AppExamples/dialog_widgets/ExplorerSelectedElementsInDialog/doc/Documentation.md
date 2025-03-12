@@ -31,6 +31,6 @@ gom.script.explorer.apply_selection (selection=example_selection)
 
 ## Related
 
-* How-to: [Python API Introduction](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/python_api_introduction/python_api_introduction.html)
-* How-to: [User-defined Dialogs](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/python_api_introduction/user_defined_dialogs.html)
-* How-to: [Selecting elements in scripts](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/python_api_introduction/selecting_elements.html)
+* How-to: [Python API Introduction](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/python_api_introduction/python_api_introduction.html)
+* How-to: [User-defined Dialogs](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/python_api_introduction/user_defined_dialogs.html)
+* How-to: [Selecting elements in scripts](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/python_api_introduction/selecting_elements.html)
