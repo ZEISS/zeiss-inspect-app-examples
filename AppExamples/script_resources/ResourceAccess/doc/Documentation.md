@@ -38,5 +38,5 @@ DIALOG.image.data = data
 
 ## See also
 
-* [gom.api.resource](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/resource_api.html)
-* [Image widget](https://zeissiqs.github.io/zeiss-inspect-addon-api/main/howtos/python_api_introduction/user_defined_dialogs.html#image-widget)
+* [gom.api.resource](https://zeiss.github.io/zeiss-inspect-app-api/2025/python_api/resource_api.html)
+* [Image widget](https://zeiss.github.io/zeiss-inspect-app-api/main/howtos/python_api_introduction/user_defined_dialogs.html#image-widget)

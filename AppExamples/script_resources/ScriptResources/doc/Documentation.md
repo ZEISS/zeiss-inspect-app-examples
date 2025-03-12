@@ -33,5 +33,5 @@ For details on how to read and write resource data, see the related documentatio
 
 ## Related
 
-* [How to: Using script resources](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/python_api_introduction/using_script_resources.html)
-* [`gom.Resource` API Definition](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/resource_api.html)
+* [How to: Using script resources](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/python_api_introduction/using_script_resources.html)
+* [`gom.Resource` API Definition](https://zeiss.github.io/zeiss-inspect-app-api/2025/python_api/resource_api.html)

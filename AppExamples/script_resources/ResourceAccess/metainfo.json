@@ -8,7 +8,7 @@
         ]
     },
     "references": [
-        ["API", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/resource_api.html"]
+        ["API", "https://zeiss.github.io/zeiss-inspect-app-api/2025/python_api/resource_api.html"]
     ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2023",
