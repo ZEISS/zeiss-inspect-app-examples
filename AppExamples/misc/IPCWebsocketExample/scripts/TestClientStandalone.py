@@ -14,7 +14,7 @@
 # Carl Zeiss GOM Metrology GmbH, 2024
 #
 # This test is part of the "Python API Examples" Add-on.
-# https://zeissiqs.github.io/zeiss-inspect-addon-api/main/python_examples/
+# https://zeiss.github.io/zeiss-inspect-app-api/2025/python_examples/examples_overview.html
 # ---
 
 import socket
@@ -24,7 +24,7 @@ import asyncio
 from websockets.asyncio.client import connect
 from PySide6.QtCore import Qt, QSettings, QCoreApplication
 from PySide6.QtWidgets import QApplication, QWidget, QVBoxLayout, QHBoxLayout, QFrame, QSpacerItem, \
-								QLabel, QFileDialog, QDoubleSpinBox, QComboBox, QLineEdit, QPushButton, QTextEdit
+                                QLabel, QFileDialog, QDoubleSpinBox, QComboBox, QLineEdit, QPushButton, QTextEdit
 
 HOST = 'localhost'
 """string: Hostname or IP address"""
@@ -41,122 +41,122 @@ APP = "TestClient"
 """string: App name for settings storage"""
 
 class MyWindow(QWidget):
-	"""
-	The MyWindow class allows to save the current widget settings when the program is closed
-	and to restore them at startup
-	"""
-	def __init__(self):
-		super().__init__()
-		
-		# Set the organization name and application name
-		QCoreApplication.setOrganizationName("ZEISS")
-		QCoreApplication.setApplicationName("ZEISS INSPECT IPC Test Client")
-		# Load the widget settings
-		self.loadSettings()
-	
-	def closeEvent(self, event):
-		"""Quit the websocket connection and save the widget settings before closing
-		
-		Args:
-			event: Qt event
-		"""
-		asyncio.run(transmitReceive("quit"))
-		self.saveSettings()
-		super().closeEvent(event)
-		
-	def loadSettings(self):
-		"""Load the widget settings from the storage"""
-		settings = QSettings()
-		imageFilePathEdit.setText(settings.value(f"{APP}/ImageFile", ""))
-		focalLengthSpinBox.setValue(
-			focalLengthSpinBox.valueFromText(
-				settings.value(f"{APP}/FocalLength",
-					focalLengthSpinBox.textFromValue(focalLengthSpinBox.value())
-				)
-			)
-		)
-		measSeriesInput.setText(settings.value(f"{APP}/MeasurementSeries", ""))
-		elementsFilePathEdit.setText(settings.value(f"{APP}/ElementsFile", ""))
-		importModeComboBox.setCurrentIndex(settings.value(f"{APP}/ImportMode", 0))
-	
-	def saveSettings(self):
-		"""Save the widget settings to the storage"""
-		settings = QSettings()
-		settings.setValue(f"{APP}/ImageFile", imageFilePathEdit.text())
-		settings.setValue(f"{APP}/MeasurementSeries", measSeriesInput.text())
-		settings.setValue(f"{APP}/FocalLength", focalLengthSpinBox.textFromValue(focalLengthSpinBox.value()))
-		settings.setValue(f"{APP}/ElementsFile", elementsFilePathEdit.text())
-		settings.setValue(f"{APP}/ImportMode", importModeComboBox.currentIndex())
+    """
+    The MyWindow class allows to save the current widget settings when the program is closed
+    and to restore them at startup
+    """
+    def __init__(self):
+        super().__init__()
+
+        # Set the organization name and application name
+        QCoreApplication.setOrganizationName("ZEISS")
+        QCoreApplication.setApplicationName("ZEISS INSPECT IPC Test Client")
+        # Load the widget settings
+        self.loadSettings()
+
+    def closeEvent(self, event):
+        """Quit the websocket connection and save the widget settings before closing
+        
+        Args:
+            event: Qt event
+        """
+        asyncio.run(transmitReceive("quit"))
+        self.saveSettings()
+        super().closeEvent(event)
+
+    def loadSettings(self):
+        """Load the widget settings from the storage"""
+        settings = QSettings()
+        imageFilePathEdit.setText(settings.value(f"{APP}/ImageFile", ""))
+        focalLengthSpinBox.setValue(
+            focalLengthSpinBox.valueFromText(
+                settings.value(f"{APP}/FocalLength",
+                    focalLengthSpinBox.textFromValue(focalLengthSpinBox.value())
+                )
+            )
+        )
+        measSeriesInput.setText(settings.value(f"{APP}/MeasurementSeries", ""))
+        elementsFilePathEdit.setText(settings.value(f"{APP}/ElementsFile", ""))
+        importModeComboBox.setCurrentIndex(settings.value(f"{APP}/ImportMode", 0))
+
+    def saveSettings(self):
+        """Save the widget settings to the storage"""
+        settings = QSettings()
+        settings.setValue(f"{APP}/ImageFile", imageFilePathEdit.text())
+        settings.setValue(f"{APP}/MeasurementSeries", measSeriesInput.text())
+        settings.setValue(f"{APP}/FocalLength", focalLengthSpinBox.textFromValue(focalLengthSpinBox.value()))
+        settings.setValue(f"{APP}/ElementsFile", elementsFilePathEdit.text())
+        settings.setValue(f"{APP}/ImportMode", importModeComboBox.currentIndex())
 
 def openImageFileDialog():
-	"""Image file dialog"""
-	fileDialog = QFileDialog()
-	fileDialog.setNameFilter("JPEG files (*.jpeg *.jpg);;TIFF files (*.tif *.tiff);;All files (*.*)")
-	if fileDialog.exec() == QFileDialog.Accepted:
-		selectedFile = fileDialog.selectedFiles()[0]
-		imageFilePathEdit.setText(selectedFile)
-	checkImageFilePath()
+    """Image file dialog"""
+    fileDialog = QFileDialog()
+    fileDialog.setNameFilter("JPEG files (*.jpeg *.jpg);;TIFF files (*.tif *.tiff);;All files (*.*)")
+    if fileDialog.exec() == QFileDialog.Accepted:
+        selectedFile = fileDialog.selectedFiles()[0]
+        imageFilePathEdit.setText(selectedFile)
+    checkImageFilePath()
 
 def checkImageFilePath():
-	"""Check if image file path is empty and enable/disable transmit button accordingly"""
-	if imageFilePathEdit.text() == "":
-		imageRequestButton.setEnabled(False)
-	else:
-		imageRequestButton.setEnabled(True)
+    """Check if image file path is empty and enable/disable transmit button accordingly"""
+    if imageFilePathEdit.text() == "":
+        imageRequestButton.setEnabled(False)
+    else:
+        imageRequestButton.setEnabled(True)
 
 def openElementsFileDialog():
-	"""Elements file dialog"""
-	fileDialog = QFileDialog()
-	fileDialog.setNameFilter("GOM Element files (*.gxml);;All files (*.*)")
-	if fileDialog.exec() == QFileDialog.Accepted:
-		selectedFile = fileDialog.selectedFiles()[0]
-		elementsFilePathEdit.setText(selectedFile)
-	checkElementsFilePath()
+    """Elements file dialog"""
+    fileDialog = QFileDialog()
+    fileDialog.setNameFilter("GOM Element files (*.gxml);;All files (*.*)")
+    if fileDialog.exec() == QFileDialog.Accepted:
+        selectedFile = fileDialog.selectedFiles()[0]
+        elementsFilePathEdit.setText(selectedFile)
+    checkElementsFilePath()
 
 def checkElementsFilePath():
-	"""Check if elements file path is empty and enable/disable transmit button accordingly"""
-	if elementsFilePathEdit.text() == "":
-		elementsRequestButton.setEnabled(False)
-	else:
-		elementsRequestButton.setEnabled(True)
+    """Check if elements file path is empty and enable/disable transmit button accordingly"""
+    if elementsFilePathEdit.text() == "":
+        elementsRequestButton.setEnabled(False)
+    else:
+        elementsRequestButton.setEnabled(True)
 
 async def transmitReceive(payload):
-	try:
-		async with connect(URI) as websocket:
-			try:
-				await websocket.send(payload + '\n')
-	
-				response = await websocket.recv()
-				outputWidget.setText(response)
-			except websockets.exceptions.ConnectionClosed as e:
-				outputWidget.setText(f"Connection closed: {e.code}, reason: {e.reason}")
-			except Exception as e:
-				outputWidget.setText(f"An error occurred: {e}")
-			else:
-				outputWidget.setText(response)
-	except Exception as e:
-		outputWidget.setText(f"An error occurred: {e}")
-			
+    try:
+        async with connect(URI) as websocket:
+            try:
+                await websocket.send(payload + '\n')
+
+                response = await websocket.recv()
+                outputWidget.setText(response)
+            except websockets.exceptions.ConnectionClosed as e:
+                outputWidget.setText(f"Connection closed: {e.code}, reason: {e.reason}")
+            except Exception as e:
+                outputWidget.setText(f"An error occurred: {e}")
+            else:
+                outputWidget.setText(response)
+    except Exception as e:
+        outputWidget.setText(f"An error occurred: {e}")
+
 def transmitImageRequest():
-	"""Create image request from user input
-	"""
-	request = '{"image": {'
-	request += f'"file": "{imageFilePathEdit.text()}", '
-	request += f'"name": "{measSeriesInput.text()}", '
-	request += f'"focal_length": "{focalLengthSpinBox.value()}"'
-	request += '}}'
-	print(f'{request=}')
-	asyncio.run(transmitReceive(request))
+    """Create image request from user input
+    """
+    request = '{"image": {'
+    request += f'"file": "{imageFilePathEdit.text()}", '
+    request += f'"name": "{measSeriesInput.text()}", '
+    request += f'"focal_length": "{focalLengthSpinBox.value()}"'
+    request += '}}'
+    print(f'{request=}')
+    asyncio.run(transmitReceive(request))
 
 def transmitElementsRequest():
-	"""Create elements request from user input
-	"""
-	request = '{"elements": {'
-	request += f'"file": "{elementsFilePathEdit.text()}", '
-	request += f'"import_mode": "{importModeComboBox.currentData()}"'
-	request += '}}'
-	print(f'{request=}')
-	asyncio.run(transmitReceive(request))
+    """Create elements request from user input
+    """
+    request = '{"elements": {'
+    request += f'"file": "{elementsFilePathEdit.text()}", '
+    request += f'"import_mode": "{importModeComboBox.currentData()}"'
+    request += '}}'
+    print(f'{request=}')
+    asyncio.run(transmitReceive(request))
 
 #
 # PySide6 GUI
@@ -292,10 +292,10 @@ widget.setLayout(layout)
 widget.setWindowTitle("Test Client")
 
 if elementsFilePathEdit.text() == "":
-	elementsRequestButton.setEnabled(False)
+    elementsRequestButton.setEnabled(False)
 
 if imageFilePathEdit.text() == "":
-	imageRequestButton.setEnabled(False)
+    imageRequestButton.setEnabled(False)
 
 # Show the widget
 widget.show()
