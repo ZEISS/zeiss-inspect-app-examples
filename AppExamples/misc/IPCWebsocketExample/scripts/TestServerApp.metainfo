@@ -16,7 +16,8 @@
         "script": "userscript.TestServerApp",
         "submenu": [
             "App Examples",
-            "misc"
+            "misc",
+            "IPCWebsocketExample"
         ]
     },
     "multicreation_script": false,
