@@ -9,13 +9,11 @@
         "anchor": {
             "item": "reports",
             "submenu": [
-                "operations"
             ],
-            "type": "submenu"
+            "type": "command"
         },
         "script": "userscript.MSA__Tools__MeasurementSystemAnalysis__msa_gui",
         "submenu": [
-            "System analysis"
         ]
     },
     "multicreation_script": false,
