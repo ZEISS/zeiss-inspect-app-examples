@@ -29,4 +29,4 @@ scalars = np.array (element.data.result_dimension.deviation)
 
 ## Related
 
-* How-to: [Access element properties and data](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/python_api_introduction/python_api_introduction.html#access-element-properties)
+* How-to: [Access element properties and data](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/python_api_introduction/python_api_introduction.html#access-element-properties)
