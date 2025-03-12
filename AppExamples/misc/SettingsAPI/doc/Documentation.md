@@ -6,4 +6,4 @@ The API allows reading/writing values into the ZEISS INSPECT application configu
 
 The configuration entries must be defined in the App's `metainfo.json` file. This configuration defines the available keys, the entry types and the entry properties. If the entry type can be represented by some widget, the setting entry will also be present in the application's ‘preferences’ dialog and can be adapted interactively there.
 
-See [Settings API](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/python_api.html#gom-api-settings) for details.
+See [Settings API](https://zeiss.github.io/zeiss-inspect-app-api/2025/python_api/python_api.html#gom-api-settings) for details.
