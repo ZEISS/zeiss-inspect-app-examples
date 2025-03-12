@@ -9,7 +9,7 @@
         "anchor": {
             "item": "",
             "submenu": [
-                "misc"
+                "macro"
             ],
             "type": "command"
         },
