@@ -36,7 +36,7 @@ The current project keywords and their values are listed with:
 ```python
 print("-- Current keywords --")
 for k in gom.app.project.project_keywords:
-	print(f"{k}='{gom.app.project.get(k)}'")
+    print(f"{k}='{gom.app.project.get(k)}'")
 ```
 
 A dialog is used to request the Excel file to be opened:
@@ -60,9 +60,9 @@ As a tradeoff between simplicity and flexibility, the script allows to configure
 # - descriptions are expected in column+1
 # - values are expected in column+2
 layout = [
-	"A2",
-	"A3",
-	"A4",
+    "A2",
+    "A3",
+    "A4",
   #...
 ]
 ```
@@ -112,7 +112,7 @@ else:
         if desc != ex_desc:
             print(f"Existing keyword {key} - description '{ex_desc}' changed to '{desc}'")
             gom.script.sys.set_project_keywords(keywords_description={key:desc})
-```			
+```
 
 The steps described above are repeated for all Excel cells listed in `layout[]`:
 
@@ -150,10 +150,10 @@ The following code creates a workbook and writes text into three cells of the wo
 ```python
 # Create a workbook
 wb = Workbook()
-	
+    
 # Select the active worksheet
 ws = wb.active
-	
+    
 # Create table header
 ws['A1'] = "Project Keyword"
 ws['B1'] = "Description"
@@ -181,7 +181,7 @@ for key in gom.app.project.project_keywords:
     # Remove prefix 'user_' from key
     key = key[5:]
     print(f"{key} - {desc}: {val}")
-		
+        
     # Special case - convert gom.Date to datetime-object
     # and format Excel cell accordingly 
     if type(val) is gom.Date:
