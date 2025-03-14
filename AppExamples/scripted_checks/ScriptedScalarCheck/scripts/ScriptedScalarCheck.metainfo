@@ -1,9 +1,9 @@
 {
-    "display_name": "Scripted Actual Volume",
+    "display_name": "My Scalar Check",
     "folded_blocks": [
     ],
     "icon": "",
-    "iinspect_condition": "",
+    "iinspect_condition": "true",
     "interactive": true,
     "main_menu_path": {
         "anchor": {
@@ -12,14 +12,14 @@
             ],
             "type": "command"
         },
-        "script": "ude.scr_act_volume",
+        "script": "ude.ScriptedScalarCheck",
         "submenu": [
         ]
     },
     "multicreation_script": false,
-    "script_check_type": "none",
-    "script_element_type": "volume",
-    "show_in_iinspect": false,
+    "script_check_type": "scalar",
+    "script_element_type": "none",
+    "show_in_iinspect": true,
     "show_in_menu": true,
-    "uuid": "5c0e7e3f-cf8c-4acd-8526-85b895b3f902"
+    "uuid": "d77d2a1e-bb74-447a-84af-a1cb1f8e49a6"
 }

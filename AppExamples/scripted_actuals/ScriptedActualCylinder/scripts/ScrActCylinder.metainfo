@@ -1,9 +1,9 @@
 {
-    "display_name": "My Surface Check",
+    "display_name": "Scripted Actual Cylinder",
     "folded_blocks": [
     ],
     "icon": "",
-    "iinspect_condition": "true",
+    "iinspect_condition": "",
     "interactive": true,
     "main_menu_path": {
         "anchor": {
@@ -12,14 +12,14 @@
             ],
             "type": "command"
         },
-        "script": "ude.scripted_surface_check",
+        "script": "ude.ScrActCylinder",
         "submenu": [
         ]
     },
     "multicreation_script": false,
-    "script_check_type": "scalar_surface",
-    "script_element_type": "none",
-    "show_in_iinspect": true,
+    "script_check_type": "none",
+    "script_element_type": "cylinder",
+    "show_in_iinspect": false,
     "show_in_menu": true,
-    "uuid": "e453abcb-1b50-46cd-a3da-ae9e8ca7a859"
+    "uuid": "0007d9a7-160b-4bdd-b69a-92c399d8a36d"
 }

@@ -1,5 +1,5 @@
 {
-    "display_name": "Scripted Actual Distance",
+    "display_name": "Scripted Actual Volume Region",
     "folded_blocks": [
     ],
     "icon": "",
@@ -12,14 +12,14 @@
             ],
             "type": "command"
         },
-        "script": "ude.scr_act_distance",
+        "script": "ude.ScrActVolumeRegion",
         "submenu": [
         ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
-    "script_element_type": "distance",
+    "script_element_type": "volume_region",
     "show_in_iinspect": false,
     "show_in_menu": true,
-    "uuid": "bf597507-04cc-4b36-b482-f586240d359b"
+    "uuid": "de9e475c-6502-4fde-9a1a-b133507dfbac"
 }

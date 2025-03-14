@@ -1,7 +1,6 @@
 {
-    "display_name": "Trimesh Deform Mesh",
+    "display_name": "Scripted Actual Curve",
     "folded_blocks": [
-        22
     ],
     "icon": "",
     "iinspect_condition": "",
@@ -9,16 +8,18 @@
     "main_menu_path": {
         "anchor": {
             "item": "",
-            "submenu": [],
+            "submenu": [
+            ],
             "type": "command"
         },
-        "script": "ude.PythonApiExamples__PythonApiExamples__examples__scripted_actuals__trimesh_deform_mesh",
-        "submenu": []
+        "script": "ude.ScrActCurve",
+        "submenu": [
+        ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
-    "script_element_type": "surface",
+    "script_element_type": "curve",
     "show_in_iinspect": false,
     "show_in_menu": true,
-    "uuid": "08e4331c-4ccb-47f5-9df1-9db0e3b1124a"
+    "uuid": "4ab57011-ead1-4a66-9681-8d61e3fb971c"
 }

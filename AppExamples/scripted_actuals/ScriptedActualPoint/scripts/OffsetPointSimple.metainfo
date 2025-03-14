@@ -1,9 +1,11 @@
 {
-    "display_name": "My Scalar Check",
+    "display_name": "offset_point_simple",
     "folded_blocks": [
+        13,
+        15
     ],
     "icon": "",
-    "iinspect_condition": "true",
+    "iinspect_condition": "",
     "interactive": true,
     "main_menu_path": {
         "anchor": {
@@ -12,14 +14,14 @@
             ],
             "type": "command"
         },
-        "script": "ude.scripted_scalar_check",
+        "script": "ude.OffsetPointSimple",
         "submenu": [
         ]
     },
     "multicreation_script": false,
-    "script_check_type": "scalar",
-    "script_element_type": "none",
-    "show_in_iinspect": true,
+    "script_check_type": "none",
+    "script_element_type": "point",
+    "show_in_iinspect": false,
     "show_in_menu": true,
-    "uuid": "d77d2a1e-bb74-447a-84af-a1cb1f8e49a6"
+    "uuid": "dda4f4d3-b9e8-4dc8-9f7c-355c92299022"
 }

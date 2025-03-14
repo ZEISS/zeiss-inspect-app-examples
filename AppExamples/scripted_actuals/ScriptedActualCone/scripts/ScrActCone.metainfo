@@ -1,7 +1,6 @@
 {
-    "display_name": "scripted_element_progress",
+    "display_name": "Scripted Actual Cone",
     "folded_blocks": [
-        19
     ],
     "icon": "",
     "iinspect_condition": "",
@@ -13,14 +12,14 @@
             ],
             "type": "command"
         },
-        "script": "ude.PythonApiExamples__PythonApiExamples__examples__scripted_actuals__scripted_element_progress",
+        "script": "ude.ScrActCone",
         "submenu": [
         ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
-    "script_element_type": "point",
+    "script_element_type": "cone",
     "show_in_iinspect": false,
     "show_in_menu": true,
-    "uuid": "06fc3f3d-a9ac-4dc5-8914-c0e0eb48ff0c"
+    "uuid": "3ef80e13-625c-4beb-8743-951c3b09710b"
 }

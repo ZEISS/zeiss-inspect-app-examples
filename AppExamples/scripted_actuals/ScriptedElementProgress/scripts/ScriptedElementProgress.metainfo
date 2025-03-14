@@ -1,22 +1,26 @@
 {
-    "display_name": "Scripted Actual Surface",
-    "folded_blocks": [],
+    "display_name": "scripted_element_progress",
+    "folded_blocks": [
+        19
+    ],
     "icon": "",
     "iinspect_condition": "",
     "interactive": true,
     "main_menu_path": {
         "anchor": {
             "item": "",
-            "submenu": [],
+            "submenu": [
+            ],
             "type": "command"
         },
-        "script": "ude.PythonApiExamples__examples__scripted_actuals__ex08_surface",
-        "submenu": []
+        "script": "ude.ScriptedElementProgress",
+        "submenu": [
+        ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
-    "script_element_type": "surface",
+    "script_element_type": "point",
     "show_in_iinspect": false,
     "show_in_menu": true,
-    "uuid": "d22db76e-4f9e-49c4-9d57-9a4bd0756422"
+    "uuid": "06fc3f3d-a9ac-4dc5-8914-c0e0eb48ff0c"
 }
