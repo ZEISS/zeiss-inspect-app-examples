@@ -67,7 +67,7 @@ jobs:
         if: env.changes == 'true'
         uses: devops-infra/action-pull-request@v0.5.5
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.TARGET_REPO_PAT }}
           #source_branch: apidoc-update-main
           target_branch: ${{ format('{0}', steps.set_branches.outputs.target_branch) }}
           title: ${{ format('Updated App Examples Overview (AppExamples/README.md) ({0})', steps.set_branches.outputs.target_branch) }}
