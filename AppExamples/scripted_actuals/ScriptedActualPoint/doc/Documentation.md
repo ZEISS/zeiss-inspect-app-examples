@@ -7,7 +7,7 @@
 ### Short description
 
 > [!NOTE]
-> This is a basic example meant to introduce you to the concept of scripted actual elements. Therefore, head over to the [How-to: Scripted actuals](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/scripted_elements/scripted_actuals.html) for the documentation of this example.
+> This is a basic example meant to introduce you to the concept of scripted actual elements. Therefore, head over to the [How-to: Scripted actuals](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/scripted_elements/scripted_actuals.html) for the documentation of this example.
 
 ## offset_point_v2 (Includes preview calculation)
 
@@ -23,7 +23,7 @@ This example is an extension of the `offset_point_simple` example. It shows how 
 
 From many of the built-in commands of ZEISS INSPECT, you know the calculation of a preview element during the creation dialog. This means, you can already see the calculation result in the 3D view, while tweaking some parameters in the dialog.
 
-To achieve this behaviour in a scripted element, you need to set up an event handler for the dialog (see also: [How-to: User-defined dialogs](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/python_api_introduction/user_defined_dialogs.html)). 
+To achieve this behaviour in a scripted element, you need to set up an event handler for the dialog (see also: [How-to: User-defined dialogs](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/python_api_introduction/user_defined_dialogs.html)). 
 
 ```python
 def dialog_event_handler (widget):
@@ -97,9 +97,9 @@ def calculation(context, params):
 The first noticeable difference to the *offset_point_simple* example is the calculation over all *stages* of the project, whose indices can be obtained using `context.stages` (line 4).
 
 > [!TIP]
-> If you are not familiar with the concept of *stages*, get an impression in our [Starter Training](https://training.gom.com/course/277348/module/788965). 
+> If you are not familiar with the concept of *stages*, get an impression in our [INSPECT Optical 3D Basic eLearning](https://qualitytraining.zeiss.com/home/LearningPath/18109). 
 
-Second, the [access of element properties](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/python_api_introduction/python_api_introduction.html#access-element-properties) is also respecting the current stage using the `.in_stage` mechanism (line 7).
+Second, the [access of element properties](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/python_api_introduction/python_api_introduction.html#access-element-properties) is also respecting the current stage using the `.in_stage` mechanism (line 7).
 
 Third, you can see that the calculation is surrounded by a `try/except` block that catches potential errors and sets arising error messages to `context.error`. This examples catches all exceptions in a very basic way. In a real-world application, you should distinguish several types of exceptions you'd expect and set meaningful error messages. The `context.error` message is then handled in the dialog as discussed above (see [Status and error handling](#status-and-error-handling)).
 
@@ -108,7 +108,7 @@ Third, you can see that the calculation is surrounded by a `try/except` block th
 You can observe an assignment to the `context.data` member (line 9). If you assign a dictionary (map) to this data structure, you can save *user-defined tokens* to the scripted element. These are key/value pairs that can hold generic information you might to retrieve in consecutive scripts or checks that reference the created scripted element. 
 
 > [!NOTE]
-> Keys of *user-defined tokens* need to start with `ude_`. For more information, see the [Scripted elements API documentation](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/scripted_elements_api.html).
+> Keys of *user-defined tokens* need to start with `ude_`. For more information, see the [Scripted elements API documentation](https://zeiss.github.io/zeiss-inspect-app-api/2025/python_api/scripted_elements_api.html).
 
 After element creation of such an offset point with name "Offset point 1", you could access this data again like:
 ```python
@@ -124,5 +124,5 @@ Output:
 
 ## Related
 
-* [Scripted actuals - Point](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/scripted_elements_api.html#point)
-* [How-to: User-defined dialogs](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/python_api_introduction/user_defined_dialogs.html)
+* [Scripted actuals - Point](https://zeiss.github.io/zeiss-inspect-app-api/2025/python_api/scripted_elements_api.html#point)
+* [How-to: User-defined dialogs](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/python_api_introduction/user_defined_dialogs.html)
