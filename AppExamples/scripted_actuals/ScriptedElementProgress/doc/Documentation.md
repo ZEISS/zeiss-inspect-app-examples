@@ -26,4 +26,4 @@ To indicate progress, you need to set `context.progress_stages_total` to the amo
 
 ## Related
 
-* How-to: [Scripted actuals](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/scripted_elements/scripted_actuals.html)
+* How-to: [Scripted actuals](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/scripted_elements/scripted_actuals.html)
