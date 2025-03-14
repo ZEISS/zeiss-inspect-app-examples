@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 #
-# scripted_curve_check.py
+# ScriptedCurveCheck.py
 #
-# Carl Zeiss GOM Metrology GmbH, 2024
+# Carl Zeiss GOM Metrology GmbH, 2025
 #
 # This App is part of the ZEISS INSPECT Python API Examples:
-# https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_examples/
+# https://zeiss.github.io/zeiss-inspect-app-api/2025/python_examples/examples_overview.html
 # ---
 
 
@@ -13,14 +13,12 @@ import gom
 import gom.api.scripted_checks_util
 import numpy as np
 
-#
-# Dialog function
-#
-# This function will show the creation / editing dialog
-#
-
 
 def dialog(context, params):
+    """Dialog function
+
+    This function will show the creation / editing dialog
+    """
     #
     # Create user defined dialog. The dialog layout is loaded from the file 'CheckCurveDialog.gdlg'.
     #
@@ -78,16 +76,14 @@ def dialog(context, params):
     params['abbreviation'] = 'ScrCrv'
     return params
 
-#
-# Calculation function
-#
-# This function is executed when an element should be created from a parameter
-# set. The parameters can either originate from a recorded command, from a triggered
-# preview computation or simply from a dialog which is ok'ed.
-#
-
 
 def calculation(context, params):
+    """Calculation function
+
+    This function is executed when an element should be created from a parameter
+    set. The parameters can either originate from a recorded command, from a triggered
+    preview computation or simply from a dialog which is ok'ed.
+    """
     # Getting a handle to the element chosen in the dialog
     element = params['checked_element']
 
