@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# scr_act_volume_section.py
+# ScrActVolumeSection.py
 #
 # Example for creating a scripted volume section element from image data and transformation parameters
 #
@@ -9,10 +9,10 @@
 #
 # NOTE: This example requires ZEISS INSPECT X-Ray
 #
-# Carl Zeiss GOM Metrology GmbH, 2024
+# Carl Zeiss GOM Metrology GmbH, 2025
 #
 # This App is part of the ZEISS INSPECT Python API Examples:
-# https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_examples/
+# https://zeiss.github.io/zeiss-inspect-app-api/2025/python_examples/examples_overview.html
 # ---
 
 import gom
@@ -23,7 +23,7 @@ from io import BytesIO
 
 
 def dialog(context, params):
-    DIALOG = gom.script.sys.create_user_defined_dialog(file='scr_act_volume_section.gdlg')
+    DIALOG = gom.script.sys.create_user_defined_dialog(file='ScrActVolumeSection.gdlg')
 
     if 'rx' in params:
         DIALOG.rx.value = params['rx']
