@@ -1,16 +1,16 @@
 # -*- coding: utf-8 -*-
 #
-# scr_act_volume_defect.py
+# ScrActVolumeDefects.py
 #
 # Example for creating a scripted volume element from a tetrahedron defined by four vertices.
 # The vertices are provided as parameters, the triangles connecting the vertices are fixed.
 #
 # NOTE: This example requires ZEISS INSPECT X-Ray
 #
-# Carl Zeiss GOM Metrology GmbH, 2024
+# Carl Zeiss GOM Metrology GmbH, 2025
 #
 # This App is part of the ZEISS INSPECT Python API Examples:
-# https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_examples/
+# https://zeiss.github.io/zeiss-inspect-app-api/2025/python_examples/examples_overview.html
 # ---
 
 import gom
@@ -87,7 +87,7 @@ def dialog(context, params):
 
     DIALOG.handler = dialog_event_handler
     # -------------------------------------------------------------------------
-    RESULT = gom.script.sys.show_user_defined_dialog(dialog=DIALOG)
+    gom.script.sys.show_user_defined_dialog(dialog=DIALOG)
     return params
 
 # -------------------------------------------------------------------------
