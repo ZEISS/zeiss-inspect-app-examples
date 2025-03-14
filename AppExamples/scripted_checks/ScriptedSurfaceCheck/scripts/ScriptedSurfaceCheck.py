@@ -1,29 +1,27 @@
 # -*- coding: utf-8 -*-
 #
-# scripted_surface_check.py
+# ScriptedSurfaceCheck.py
 #
-# Carl Zeiss GOM Metrology GmbH, 2024
+# Carl Zeiss GOM Metrology GmbH, 2025
 #
 # This App is part of the ZEISS INSPECT Python API Examples:
-# https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_examples/
+# https://zeiss.github.io/zeiss-inspect-app-api/2025/python_examples/examples_overview.html
 # ---
 
 import gom
 import gom.api.scripted_checks_util
 import numpy as np
 
-#
-# Dialog function
-#
-# This function will show the creation / editing dialog
-#
-
 
 def dialog(context, params):
+    """Dialog function
+
+    This function will show the creation / editing dialog
+    """
     #
     # Create user defined dialog. The dialog layout is loaded from the file 'check_scalar.gdlg'.
     #
-    DIALOG = gom.script.sys.create_user_defined_dialog(file='check_surface_dialog.gdlg')
+    DIALOG = gom.script.sys.create_user_defined_dialog(file='CheckSurfaceDialog.gdlg')
 
     def dialog_event_handler(event):
         if str(event) == 'system':
@@ -83,12 +81,9 @@ def dialog(context, params):
 
     return params
 
-#
-# Calculation function
-#
-
 
 def calculation(context, params):
+    """Calculation function"""
 
     # Getting a handle to the element chosen in the dialog
     element = params['checked_element']

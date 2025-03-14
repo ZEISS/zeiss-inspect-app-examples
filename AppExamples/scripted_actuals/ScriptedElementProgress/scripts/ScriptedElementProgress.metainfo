@@ -10,17 +10,20 @@
         "anchor": {
             "item": "",
             "submenu": [
+                "macro"
             ],
             "type": "command"
         },
         "script": "ude.ScriptedElementProgress",
         "submenu": [
+            "App Examples",
+            "scripted_actuals"
         ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
     "script_element_type": "point",
     "show_in_iinspect": false,
-    "show_in_menu": true,
+    "show_in_menu": false,
     "uuid": "06fc3f3d-a9ac-4dc5-8914-c0e0eb48ff0c"
 }

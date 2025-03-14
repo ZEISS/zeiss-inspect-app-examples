@@ -9,17 +9,20 @@
         "anchor": {
             "item": "",
             "submenu": [
+                "macro"
             ],
             "type": "command"
         },
         "script": "ude.ScrActSurfaceCurve",
         "submenu": [
+            "App Examples",
+            "scripted_actuals"
         ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
     "script_element_type": "surface_curve",
     "show_in_iinspect": false,
-    "show_in_menu": true,
+    "show_in_menu": false,
     "uuid": "2404f3c0-bbcc-47f8-9508-9b5021514c33"
 }

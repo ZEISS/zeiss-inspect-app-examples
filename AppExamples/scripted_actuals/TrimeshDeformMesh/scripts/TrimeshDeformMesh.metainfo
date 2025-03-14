@@ -9,16 +9,21 @@
     "main_menu_path": {
         "anchor": {
             "item": "",
-            "submenu": [],
+            "submenu": [
+                "macro"
+            ],
             "type": "command"
         },
         "script": "ude.TrimeshDeformMesh",
-        "submenu": []
+        "submenu": [
+            "App Examples",
+            "scripted_actuals"
+        ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
     "script_element_type": "surface",
     "show_in_iinspect": false,
-    "show_in_menu": true,
+    "show_in_menu": false,
     "uuid": "08e4331c-4ccb-47f5-9df1-9db0e3b1124a"
 }

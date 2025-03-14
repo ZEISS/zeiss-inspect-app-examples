@@ -11,17 +11,20 @@
         "anchor": {
             "item": "",
             "submenu": [
+                "macro"
             ],
             "type": "command"
         },
         "script": "ude.OffsetPointSimple",
         "submenu": [
+            "App Examples",
+            "scripted_actuals"
         ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
     "script_element_type": "point",
     "show_in_iinspect": false,
-    "show_in_menu": true,
+    "show_in_menu": false,
     "uuid": "dda4f4d3-b9e8-4dc8-9f7c-355c92299022"
 }

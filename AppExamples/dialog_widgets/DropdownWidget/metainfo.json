@@ -16,5 +16,8 @@
     ],
     "title": "DropdownWidget",
     "uuid": "7fbc06f5-86af-4b38-8161-965de5956f5f",
-    "version": "1.0.1"
+    "version": "1.0.1",
+    "technical-category": "App Examples",
+    "business-category": "minor",
+    "compatible-software": ["ZEISS INSPECT Optical 3D", "ZEISS INSPECT X-Ray", "ZEISS INSPECT CMM", "ZEISS INSPECT VMM", "ZEISS CORRELATE"]
 }

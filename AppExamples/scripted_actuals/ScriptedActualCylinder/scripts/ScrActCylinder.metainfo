@@ -9,17 +9,20 @@
         "anchor": {
             "item": "",
             "submenu": [
+                "macro"
             ],
             "type": "command"
         },
         "script": "ude.ScrActCylinder",
         "submenu": [
+            "App Examples",
+            "scripted_actuals"
         ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
     "script_element_type": "cylinder",
     "show_in_iinspect": false,
-    "show_in_menu": true,
+    "show_in_menu": false,
     "uuid": "0007d9a7-160b-4bdd-b69a-92c399d8a36d"
 }

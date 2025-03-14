@@ -1,26 +1,23 @@
 # -*- coding: utf-8 -*-
 #
-# trimesh_deform_mesh.py
+# TrimeshDeformMesh.py
 #
-# Carl Zeiss GOM Metrology GmbH, 2024
+# Carl Zeiss GOM Metrology GmbH, 2025
 #
 # This App is part of the ZEISS INSPECT Python API Examples:
-# https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_examples/
+# https://zeiss.github.io/zeiss-inspect-app-api/2025/python_examples/examples_overview.html
 # ---
 
-# NOTE: Open a project with a mesh, e.g. "zeiss_part_test_project" from the examples
+# NOTE: Open a project with a mesh, e.g. "zeiss_part_test_project" from the Example Projects
 # to try this example properly.
 
 import gom
 import numpy as np
 import trimesh
 
-#
-# This function will show the creation / editing dialog
-#
-
 
 def dialog(context, params):
+    """This function will show the creation / editing dialog"""
 
     DIALOG = gom.script.sys.create_user_defined_dialog(dialog={
         "content": [
@@ -188,13 +185,9 @@ def dialog(context, params):
 
     return params
 
-#
-# Calculation: deforming the selected mesh
-#
-
 
 def calculation(context, params):
-
+    """Calculation: deforming the selected mesh"""
     selected_element = params['selected_element']
     deformation = params['deformation_value']
 

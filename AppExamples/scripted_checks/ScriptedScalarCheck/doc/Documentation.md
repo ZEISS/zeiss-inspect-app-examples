@@ -7,7 +7,7 @@
 This example shows how to create a scalar check by script. A scalar check is the most basic check, as it assigns a scalar value to an element. Nearly all elements you can find in the software can be checked like this.
 
 > [!NOTE]
-> A scripted check has a lot in common with the scripted actual elements. Therefore, the identical mechanisms and concepts will not be explained here. See [How-to: Scripted actuals](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/scripted_elements/scripted_actuals.html) if you are not already familiar with the concept of scripted elements. 
+> A scripted check has a lot in common with the scripted actual elements. Therefore, the identical mechanisms and concepts will not be explained here. See [How-to: Scripted actuals](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/scripted_elements/scripted_actuals.html) if you are not already familiar with the concept of scripted elements. 
 
 ## Highlights
 
@@ -19,7 +19,7 @@ DIALOG.slct_element.filter = gom.api.scripted_checks_util.is_scalar_checkable
 
 As you can assign a scalar value to all common element types, this filter allows all element types available in the *element explorer*.
 
-Furthermore, as described in the [How-to: Scripted checks](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/scripted_elements/scripted_checks.html), the special parameters for scripted checks are also assigned in the `dialog` function. For ease of use, the respective dialog widgets are used, so we only need to assign the widgets' values to the parameters array.
+Furthermore, as described in the [How-to: Scripted checks](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/scripted_elements/scripted_checks.html), the special parameters for scripted checks are also assigned in the `dialog` function. For ease of use, the respective dialog widgets are used, so we only need to assign the widgets' values to the parameters array.
 
 ```python 
 def dialog (context, params):
@@ -47,5 +47,5 @@ def calculation (context, params):
 
 ## Related
 
-* [How-to: Scripted checks](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/scripted_elements/scripted_checks.html)
-* [Scripted Element API](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/scripted_elements_api.html)
+* [How-to: Scripted checks](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/scripted_elements/scripted_checks.html)
+* [Scripted Element API](https://zeiss.github.io/zeiss-inspect-app-api/2025/python_api/scripted_elements_api.html)

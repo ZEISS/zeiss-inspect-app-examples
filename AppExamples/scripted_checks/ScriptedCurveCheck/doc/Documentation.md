@@ -68,5 +68,5 @@ Using the example project `zeiss_part_test_project` and the viewing coordinate s
 
 ## Related
 
-* [How-to: Scripted checks](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/scripted_elements/scripted_checks.html)
-* [Scripted Element API](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/scripted_elements_api.html)
+* [How-to: Scripted checks](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/scripted_elements/scripted_checks.html)
+* [Scripted Element API](https://zeiss.github.io/zeiss-inspect-app-api/2025/python_api/scripted_elements_api.html)

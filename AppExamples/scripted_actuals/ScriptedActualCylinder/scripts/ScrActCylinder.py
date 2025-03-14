@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 #
-# ex05_cylinder.py
+# ScrActCylinder.py
 #
 # Example for creating a scripted cylinder element from point, direction, radius and inner (flag)
 #
-# Carl Zeiss GOM Metrology GmbH, 2023
+# Carl Zeiss GOM Metrology GmbH, 2025
 #
 # This test is part of the "Python API Examples" Add-on.
-# https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_examples/
+# https://zeiss.github.io/zeiss-inspect-app-api/2025/python_examples/examples_overview.html
 # ---
 
 import gom
@@ -68,7 +68,7 @@ def dialog(context, params):
 
     DIALOG.handler = dialog_event_handler
     # -------------------------------------------------------------------------
-    RESULT = gom.script.sys.show_user_defined_dialog(dialog=DIALOG)
+    gom.script.sys.show_user_defined_dialog(dialog=DIALOG)
     return params
 
 # -------------------------------------------------------------------------

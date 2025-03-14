@@ -9,17 +9,20 @@
         "anchor": {
             "item": "",
             "submenu": [
+                "macro"
             ],
             "type": "command"
         },
         "script": "ude.ScriptedScalarCheck",
         "submenu": [
+            "App Examples",
+            "scripted_actuals"
         ]
     },
     "multicreation_script": false,
     "script_check_type": "scalar",
     "script_element_type": "none",
     "show_in_iinspect": true,
-    "show_in_menu": true,
+    "show_in_menu": false,
     "uuid": "d77d2a1e-bb74-447a-84af-a1cb1f8e49a6"
 }

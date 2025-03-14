@@ -43,5 +43,5 @@ def calculation(context, params):
 
 ## Related
 
-* [Scripted actuals - Curve](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/scripted_elements_api.html#curve)
-* [How-to: User-defined dialogs](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/python_api_introduction/user_defined_dialogs.html)
+* [Scripted actuals - Curve](https://zeiss.github.io/zeiss-inspect-app-api/2025/python_api/scripted_elements_api.html#curve)
+* [How-to: User-defined dialogs](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/python_api_introduction/user_defined_dialogs.html)
