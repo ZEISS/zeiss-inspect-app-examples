@@ -9,13 +9,16 @@
         "product-codes": []
     },
     "references": [
-        ["HowTo", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/scripted_elements/scripted_checks.html"], 
-        ["API", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/scripted_elements_api.html#scalar"]
+        ["HowTo", "https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/scripted_elements/scripted_checks.html"], 
+        ["API", "https://zeiss.github.io/zeiss-inspect-app-api/2025/python_api/scripted_elements_api.html#scalar"]
     ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2023",
     "tags": ["scripted-check", "scalar"],
     "title": "ScriptedScalarCheck",
     "uuid": "1212cf39-9f41-4ae2-bb8f-f7f76b072d91",
-    "version": "1.0.0"
+    "version": "1.0.1",
+    "technical-category": "App Examples",
+    "business-category": "minor",
+    "compatible-software": ["ZEISS INSPECT Optical 3D", "ZEISS INSPECT X-Ray", "ZEISS INSPECT CMM", "ZEISS INSPECT VMM", "ZEISS CORRELATE"]
 }
