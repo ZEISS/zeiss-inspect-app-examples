@@ -67,7 +67,7 @@ jobs:
         if: env.changes == 'true'
         uses: devops-infra/action-pull-request@v0.6.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.UPDATE_APP_OVERVIEW }}
           #source_branch: apidoc-update-main
           target_branch: ${{ format('{0}', steps.set_branches.outputs.target_branch) }}
           title: ${{ format('Updated App Examples Overview (AppExamples/README.md) ({0})', steps.set_branches.outputs.target_branch) }}
@@ -105,7 +105,7 @@ jobs:
           cd zeiss-inspect-app-api
           git add doc/python_examples/examples_overview.md
           git commit -m "Updated doc/python_examples/examples_overview.md"
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/Zeiss/zeiss-inspect-app-api.git
+          git remote set-url origin https://x-access-token:${{ secrets.UPDATE_APP_OVERVIEW }}@github.com/Zeiss/zeiss-inspect-app-api.git
           git push origin +overview-update:overview-update 
 
       # Note: Pull Request is created by a separate workflow in Zeiss/zeiss-inspect-app-api
