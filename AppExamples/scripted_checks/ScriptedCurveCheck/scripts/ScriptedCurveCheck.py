@@ -22,9 +22,9 @@ import numpy as np
 
 def dialog(context, params):
     #
-    # Create user defined dialog. The dialog layout is loaded from the file 'check_scalar.gdlg'.
+    # Create user defined dialog. The dialog layout is loaded from the file 'CheckCurveDialog.gdlg'.
     #
-    DIALOG = gom.script.sys.create_user_defined_dialog(file='check_curve_dialog.gdlg')
+    DIALOG = gom.script.sys.create_user_defined_dialog(file='CheckCurveDialog.gdlg')
 
     def dialog_event_handler(event):
         if str(event) == 'system':
@@ -95,7 +95,9 @@ def calculation(context, params):
     # Get coordinate transformation for local coordinate system
     trafo_matrices = None
     if params["coordinate_system"] is not None:
-        trafo_matrices = np.array(gom.api.scripted_checks_util.get_cs_transformation_4x4(params["coordinate_system"]))
+        trafo_matrices = np.array(gom.api.scripted_checks_util.get_cs_transformation_4x4(
+            params["coordinate_system"]
+        ))
     # -------------------------------------------------------------------------
 
     # Iterating over all stages

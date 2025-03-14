@@ -1,25 +1,22 @@
 {
-    "display_name": "Scripted Actual Volume Defects",
-    "folded_blocks": [
-    ],
+    "display_name": "Scripted Actual Surface",
+    "folded_blocks": [],
     "icon": "",
     "iinspect_condition": "",
     "interactive": true,
     "main_menu_path": {
         "anchor": {
             "item": "",
-            "submenu": [
-            ],
+            "submenu": [],
             "type": "command"
         },
-        "script": "ude.scr_act_volume_defects",
-        "submenu": [
-        ]
+        "script": "ude.ScrActSection",
+        "submenu": []
     },
     "multicreation_script": false,
     "script_check_type": "none",
-    "script_element_type": "volume_defects",
+    "script_element_type": "surface",
     "show_in_iinspect": false,
     "show_in_menu": true,
-    "uuid": "dd718b66-8bb0-40de-bc42-23b389544d7e"
+    "uuid": "d22db76e-4f9e-49c4-9d57-9a4bd0756422"
 }

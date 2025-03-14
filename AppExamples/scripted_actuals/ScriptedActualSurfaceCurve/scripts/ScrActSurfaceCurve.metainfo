@@ -1,5 +1,5 @@
 {
-    "display_name": "Scripted Actual Curve",
+    "display_name": "Scripted Actual Surface Curve",
     "folded_blocks": [
     ],
     "icon": "",
@@ -12,14 +12,14 @@
             ],
             "type": "command"
         },
-        "script": "ude.scr_act_curve",
+        "script": "ude.ScrActSurfaceCurve",
         "submenu": [
         ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
-    "script_element_type": "curve",
+    "script_element_type": "surface_curve",
     "show_in_iinspect": false,
     "show_in_menu": true,
-    "uuid": "4ab57011-ead1-4a66-9681-8d61e3fb971c"
+    "uuid": "2404f3c0-bbcc-47f8-9508-9b5021514c33"
 }

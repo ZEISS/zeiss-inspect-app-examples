@@ -1,7 +1,6 @@
 {
-    "display_name": "offset_point_v2",
+    "display_name": "Scripted Actual Circle",
     "folded_blocks": [
-        15
     ],
     "icon": "",
     "iinspect_condition": "",
@@ -13,14 +12,14 @@
             ],
             "type": "command"
         },
-        "script": "ude.PythonApiExamples__PythonApiExamples__examples__scripted_actuals__offset_point_v2",
+        "script": "ude.ScrActCircle",
         "submenu": [
         ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
-    "script_element_type": "point",
+    "script_element_type": "circle",
     "show_in_iinspect": false,
     "show_in_menu": true,
-    "uuid": "43aa2e6e-b79e-4861-9645-1af8c6a398f7"
+    "uuid": "66cca9a5-abb7-4866-b5eb-d8aac67a4a3f"
 }

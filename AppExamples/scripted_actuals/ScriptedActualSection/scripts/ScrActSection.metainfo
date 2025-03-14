@@ -1,5 +1,5 @@
 {
-    "display_name": "Scripted Actual Circle",
+    "display_name": "Scripted Actual Section",
     "folded_blocks": [
     ],
     "icon": "",
@@ -12,14 +12,14 @@
             ],
             "type": "command"
         },
-        "script": "ude.scr_act_circle",
+        "script": "ude.ScrActSection",
         "submenu": [
         ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
-    "script_element_type": "circle",
+    "script_element_type": "section",
     "show_in_iinspect": false,
     "show_in_menu": true,
-    "uuid": "66cca9a5-abb7-4866-b5eb-d8aac67a4a3f"
+    "uuid": "06d1fc77-5d6a-48a1-9f01-cc4cb07466c9"
 }

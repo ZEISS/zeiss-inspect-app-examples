@@ -22,7 +22,7 @@ def dialog(context, params):
     #
     # Create user defined dialog. The dialog layout is loaded from file.
     #
-    DIALOG = gom.script.sys.create_user_defined_dialog(file='check_scalar_dialog.gdlg')
+    DIALOG = gom.script.sys.create_user_defined_dialog(file='CheckScalarDialog.gdlg')
 
     def dialog_event_handler(event):
         if str(event) == 'system':

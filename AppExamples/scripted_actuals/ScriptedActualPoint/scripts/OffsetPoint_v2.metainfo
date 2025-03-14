@@ -1,6 +1,7 @@
 {
-    "display_name": "Scripted Actual Cylinder",
+    "display_name": "Offset Point v2",
     "folded_blocks": [
+        15
     ],
     "icon": "",
     "iinspect_condition": "",
@@ -12,14 +13,14 @@
             ],
             "type": "command"
         },
-        "script": "ude.scr_act_cylinder",
+        "script": "ude.OffsetPoint_v2",
         "submenu": [
         ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
-    "script_element_type": "cylinder",
+    "script_element_type": "point",
     "show_in_iinspect": false,
     "show_in_menu": true,
-    "uuid": "0007d9a7-160b-4bdd-b69a-92c399d8a36d"
+    "uuid": "43aa2e6e-b79e-4861-9645-1af8c6a398f7"
 }

@@ -1,8 +1,6 @@
 {
-    "display_name": "offset_point_simple",
+    "display_name": "Scripted Actual Volume Defects",
     "folded_blocks": [
-        13,
-        15
     ],
     "icon": "",
     "iinspect_condition": "",
@@ -14,14 +12,14 @@
             ],
             "type": "command"
         },
-        "script": "ude.PythonApiExamples__PythonApiExamples__examples__scripted_actuals__offset_point_simple",
+        "script": "ude.ScrActVolumeDefects",
         "submenu": [
         ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
-    "script_element_type": "point",
+    "script_element_type": "volume_defects",
     "show_in_iinspect": false,
     "show_in_menu": true,
-    "uuid": "dda4f4d3-b9e8-4dc8-9f7c-355c92299022"
+    "uuid": "dd718b66-8bb0-40de-bc42-23b389544d7e"
 }

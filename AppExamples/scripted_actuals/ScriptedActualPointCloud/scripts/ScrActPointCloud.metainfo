@@ -1,5 +1,5 @@
 {
-    "display_name": "Scripted Actual Cone",
+    "display_name": "Scripted Actual Point Cloud",
     "folded_blocks": [
     ],
     "icon": "",
@@ -12,14 +12,14 @@
             ],
             "type": "command"
         },
-        "script": "ude.scr_act_cone",
+        "script": "ude.ScrActPointCloud",
         "submenu": [
         ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
-    "script_element_type": "cone",
+    "script_element_type": "point_cloud",
     "show_in_iinspect": false,
     "show_in_menu": true,
-    "uuid": "3ef80e13-625c-4beb-8743-951c3b09710b"
+    "uuid": "3457e91a-4a17-47a9-9f5b-045ba2423c70"
 }

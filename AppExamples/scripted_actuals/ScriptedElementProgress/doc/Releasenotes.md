@@ -6,3 +6,7 @@
 * Added tags and references
 * Added Documentation.md
 * Modified README.md
+
+## Release at 2025-xx-xx (v1.x.x)
+
+* Changed naming convention for scripted elements

@@ -12,7 +12,7 @@
             ],
             "type": "command"
         },
-        "script": "ude.PythonApiExamples__PythonApiExamples__examples__scripted_checks__scripted_curve_check",
+        "script": "ude.ScriptedCurveCheck",
         "submenu": [
         ]
     },
