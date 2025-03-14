@@ -13,5 +13,8 @@
     ],
     "title": "ExcelExample",
     "uuid": "b206780c-2ac5-488b-bf6a-f48263cbdbe5",
-    "version": "1.0.0"
+    "version": "1.0.1",
+    "technical-category": "App Examples",
+    "business-category": "minor",
+    "compatible-software": ["ZEISS INSPECT Optical 3D", "ZEISS INSPECT X-Ray", "ZEISS INSPECT CMM", "ZEISS INSPECT VMM", "ZEISS CORRELATE"]
 }

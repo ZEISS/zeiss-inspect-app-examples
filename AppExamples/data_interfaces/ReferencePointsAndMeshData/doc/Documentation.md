@@ -190,7 +190,7 @@ return valid_results
 
 ## Related
 
-* How-to: [Access element properties and data](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/python_api_introduction/python_api_introduction.html#access-element-properties)
-* How-to: [Introduction to scripted elements](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/scripted_elements/scripted_elements_introduction.html)
-* How-to: [Scripted actuals](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/scripted_elements/scripted_actuals.html)
-* Python API Specification: [Scripted elements API](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/scripted_elements_api.html)
+* How-to: [Access element properties and data](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/python_api_introduction/python_api_introduction.html#access-element-properties)
+* How-to: [Introduction to scripted elements](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/scripted_elements/scripted_elements_introduction.html)
+* How-to: [Scripted actuals](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/scripted_elements/scripted_actuals.html)
+* Python API Specification: [Scripted elements API](https://zeiss.github.io/zeiss-inspect-app-api/2025/python_api/scripted_elements_api.html)

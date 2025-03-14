@@ -1,5 +1,5 @@
 {
-    "display_name": "dropdown_widget.py",
+    "display_name": "DropdownWidget",
     "folded_blocks": [
     ],
     "icon": "",
@@ -9,17 +9,20 @@
         "anchor": {
             "item": "",
             "submenu": [
+                "macro"
             ],
             "type": "command"
         },
         "script": "",
         "submenu": [
+            "App Examples",
+            "dialog_widgets"
         ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
     "script_element_type": "none",
     "show_in_iinspect": false,
-    "show_in_menu": true,
+    "show_in_menu": false,
     "uuid": "a1650ffc-06b8-4cc0-a664-bb6ddd725980"
 }

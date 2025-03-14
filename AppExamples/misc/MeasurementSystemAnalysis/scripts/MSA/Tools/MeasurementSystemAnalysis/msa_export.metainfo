@@ -1,1 +1,27 @@
-{"breakpoints":[],"display_name":"Generate MSA export setup","folded_blocks":[],"icon":"","main_menu_path":"","script_element_type":"none","show_in_menu":true,"uuid":"02dd5b25-98eb-46c0-acdd-7106e7a4abba"}
+{
+    "display_name": "Generate MSA export setup",
+    "folded_blocks": [
+    ],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": false,
+    "main_menu_path": {
+        "anchor": {
+            "item": "reports",
+            "submenu": [
+                "operations"
+            ],
+            "type": "submenu"
+        },
+        "script": "userscript.MSA__Tools__MeasurementSystemAnalysis__msa_export",
+        "submenu": [
+            "System analysis"
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "none",
+    "show_in_iinspect": false,
+    "show_in_menu": true,
+    "uuid": "02dd5b25-98eb-46c0-acdd-7106e7a4abba"
+  }

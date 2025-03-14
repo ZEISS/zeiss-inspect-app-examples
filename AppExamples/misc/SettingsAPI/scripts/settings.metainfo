@@ -1,5 +1,5 @@
 {
-    "display_name": "settings",
+    "display_name": "SettingsAPI",
     "folded_blocks": [
     ],
     "icon": "",
@@ -9,17 +9,20 @@
         "anchor": {
             "item": "",
             "submenu": [
+                "macro"
             ],
             "type": "command"
         },
         "script": "userscript.settings",
         "submenu": [
+            "App Examples",
+            "misc"
         ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
     "script_element_type": "none",
     "show_in_iinspect": false,
-    "show_in_menu": true,
+    "show_in_menu": false,
     "uuid": "8b857af8-cfdf-4a0c-96c9-90795cd4f9c3"
 }

@@ -1,5 +1,5 @@
 {
-    "display_name": "listdir_categories.py",
+    "display_name": "List dir - categories",
     "folded_blocks": [
     ],
     "icon": "",
@@ -9,17 +9,21 @@
         "anchor": {
             "item": "",
             "submenu": [
+                "macro"
             ],
             "type": "command"
         },
-        "script": "",
+        "script": "userscript.listdir_categories",
         "submenu": [
+            "App Examples",
+            "misc",
+            "FileSelectionAndFiltering"
         ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
     "script_element_type": "none",
     "show_in_iinspect": false,
-    "show_in_menu": true,
+    "show_in_menu": false,
     "uuid": "cc85df8c-d021-4c9b-93f2-2937430a6b0a"
 }

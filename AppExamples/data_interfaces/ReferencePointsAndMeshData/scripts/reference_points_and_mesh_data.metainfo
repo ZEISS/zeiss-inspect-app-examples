@@ -1,5 +1,5 @@
 {
-    "display_name": "reference_points_and_mesh_data",
+    "display_name": "ReferencePointsAndMeshData",
     "folded_blocks": [
     ],
     "icon": "",
@@ -9,17 +9,20 @@
         "anchor": {
             "item": "",
             "submenu": [
+                "macro"
             ],
             "type": "command"
         },
-        "script": "",
+        "script": "userscript.reference_points_and_mesh_data",
         "submenu": [
+            "App Examples",
+            "data_interfaces"
         ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
     "script_element_type": "none",
     "show_in_iinspect": false,
-    "show_in_menu": true,
+    "show_in_menu": false,
     "uuid": "6dfab4a4-a45f-4f73-a45e-770896e178c3"
 }

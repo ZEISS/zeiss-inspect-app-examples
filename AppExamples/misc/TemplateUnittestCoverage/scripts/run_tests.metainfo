@@ -1,5 +1,5 @@
 {
-    "display_name": "run_tests",
+    "display_name": "Run tests",
     "folded_blocks": [
     ],
     "icon": "",
@@ -9,17 +9,21 @@
         "anchor": {
             "item": "",
             "submenu": [
+                "macro"
             ],
             "type": "command"
         },
         "script": "userscript.run_tests",
         "submenu": [
+            "App Examples",
+            "misc",
+            "TemplateUnittestCoverage"
         ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
     "script_element_type": "none",
     "show_in_iinspect": false,
-    "show_in_menu": true,
+    "show_in_menu": false,
     "uuid": "597f1fa8-b9d9-4e19-b40d-836b4460d036"
 }

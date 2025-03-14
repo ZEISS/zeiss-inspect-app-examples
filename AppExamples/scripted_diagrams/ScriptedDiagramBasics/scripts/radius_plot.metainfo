@@ -1,5 +1,5 @@
 {
-    "display_name": "radius_plot",
+    "display_name": "RadiusPlot",
     "folded_blocks": [
     ],
     "icon": "",
@@ -20,6 +20,6 @@
     "script_check_type": "none",
     "script_element_type": "none",
     "show_in_iinspect": false,
-    "show_in_menu": true,
+    "show_in_menu": false,
     "uuid": "80e6580d-5f5c-4f1e-990b-059f8ba65f33"
 }

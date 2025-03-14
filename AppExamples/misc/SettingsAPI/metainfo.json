@@ -8,7 +8,7 @@
         ]
     },
     "references": [
-        ["API", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/python_api.html#gom-api-settings"]
+        ["API", "https://zeiss.github.io/zeiss-inspect-app-api/2025/python_api/python_api.html#gom-api-settings"]
     ],
     "settings": [
         {
@@ -54,5 +54,8 @@
     "software-version": "ZEISS INSPECT 2023",
     "title": "SettingsAPI",
     "uuid": "3b515488-aa7b-4035-85e1-b9509db8af4f",
-    "version": "1.0.5"
+    "version": "1.0.6",
+    "technical-category": "App Examples",
+    "business-category": "minor",
+    "compatible-software": ["ZEISS INSPECT Optical 3D", "ZEISS INSPECT X-Ray", "ZEISS INSPECT CMM", "ZEISS INSPECT VMM", "ZEISS CORRELATE"]
 }

@@ -1,5 +1,5 @@
 {
-    "display_name": "radius_histogram",
+    "display_name": "RadiusHistogram",
     "folded_blocks": [
     ],
     "icon": "",
@@ -20,6 +20,6 @@
     "script_check_type": "none",
     "script_element_type": "none",
     "show_in_iinspect": false,
-    "show_in_menu": true,
+    "show_in_menu": false,
     "uuid": "7899dbad-0a51-4fa7-af36-fae881acca58"
 }

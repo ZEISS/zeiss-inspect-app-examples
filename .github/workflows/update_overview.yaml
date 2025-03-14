@@ -45,7 +45,7 @@ jobs:
         run: |
           git checkout -b overview-update || git checkout overview-update
         
-      - name: Update overview (ZEISS)
+      - name: Update overview (ZEISS/zeiss-inspect-app-examples)
         run: |
           python .github/scripts/gen_overview.py > AppExamples/README.md
           if [ -z "$(git status --porcelain)" ]; then
@@ -56,7 +56,7 @@ jobs:
             echo "changes=true" >> $GITHUB_ENV
           fi
       
-      - name: Push changes (ZEISS)
+      - name: Push changes (ZEISS/zeiss-inspect-app-examples)
         if: env.changes == 'true'
         run: |
           git add AppExamples/README.md

@@ -5,7 +5,7 @@
 # Carl Zeiss GOM Metrology GmbH, 2024
 #
 # This App is part of the ZEISS INSPECT Python API Examples:
-# https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_examples/
+# https://zeiss.github.io/zeiss-inspect-app-api/2025/python_examples/examples_overview.html
 # ---
 
 import gom
@@ -13,23 +13,22 @@ import numpy as np
 from ExampleProjects.setup_project import open_project
 from PIL import Image # Package: pillow
 
-# Get the image in RGB(A) format (rendered image as displayed)
 
-
-def get_image_data_rgb(element):
+def get_image_data_rgb(el):
+    """Get the image in RGB(A) format (rendered image as displayed)
+    """
     # -------------------------------------------------------------------------
-    rgb_image = np.array(element.data.rgb)
+    img = np.array(el.data.rgb)
     # -------------------------------------------------------------------------
-    return rgb_image
+    return img
 
-# Get the image in raw format (values as in the corresponding volume)
-
-
-def get_image_data_raw(element):
+def get_image_data_raw(el):
+    """Get the image in raw format (values as in the corresponding volume)
+    """
     # -------------------------------------------------------------------------
-    raw_image = np.array(element.data.raw)
+    img = np.array(el.data.raw)
     # -------------------------------------------------------------------------
-    return raw_image
+    return img
 
 
 #

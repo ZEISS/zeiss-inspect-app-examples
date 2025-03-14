@@ -1,5 +1,5 @@
 {
-    "display_name": "point_pixel_transformations",
+    "display_name": "PointPixelTransformations",
     "folded_blocks": [
     ],
     "icon": "",
@@ -9,17 +9,20 @@
         "anchor": {
             "item": "",
             "submenu": [
+                "macro"
             ],
             "type": "command"
         },
         "script": "userscript.point_pixel_transformations",
         "submenu": [
+            "App Examples",
+            "misc"
         ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
     "script_element_type": "none",
     "show_in_iinspect": false,
-    "show_in_menu": true,
+    "show_in_menu": false,
     "uuid": "e7813c0f-5599-42da-9fa4-bc7f600cf42b"
 }

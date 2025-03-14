@@ -7,7 +7,7 @@
         "product-codes": []
     },
     "references": [
-        ["HowTo", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/python_api_introduction/user_defined_dialogs.html#selection-list-widget"]
+        ["HowTo", "https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/python_api_introduction/user_defined_dialogs.html#selection-list-widget"]
     ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2023",
@@ -16,5 +16,5 @@
     ],
     "title": "DropdownWidget",
     "uuid": "7fbc06f5-86af-4b38-8161-965de5956f5f",
-    "version": "1.0.0"
+    "version": "1.0.1"
 }

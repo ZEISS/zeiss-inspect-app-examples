@@ -1,5 +1,5 @@
 {
-    "display_name": "explorer_selected_elements_in_dialog",
+    "display_name": "ExplorerSelectedElementsInDialog",
     "folded_blocks": [
     ],
     "icon": "",
@@ -9,17 +9,20 @@
         "anchor": {
             "item": "",
             "submenu": [
+                "macro"
             ],
             "type": "command"
         },
         "script": "userscript.explorer_selected_elements_in_dialog",
         "submenu": [
+            "App Examples",
+            "dialog_widgets"
         ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
     "script_element_type": "none",
     "show_in_iinspect": false,
-    "show_in_menu": true,
+    "show_in_menu": false,
     "uuid": "152c9296-c32e-458a-b5eb-af44a2ad76e8"
 }

@@ -1,5 +1,5 @@
 {
-    "display_name": "listdir_ext.py",
+    "display_name": "List dir - extensions",
     "folded_blocks": [
     ],
     "icon": "",
@@ -9,17 +9,21 @@
         "anchor": {
             "item": "",
             "submenu": [
+                "macro"
             ],
             "type": "command"
         },
-        "script": "",
+        "script": "userscript.listdir_ext",
         "submenu": [
+            "App Examples",
+            "misc",
+            "FileSelectionAndFiltering"
         ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
     "script_element_type": "none",
     "show_in_iinspect": false,
-    "show_in_menu": true,
+    "show_in_menu": false,
     "uuid": "7fe49a33-9ebc-487d-9931-7ef6ece874f7"
 }

@@ -1,5 +1,9 @@
 # Release Notes SettingsAPI
 
+## Released at 2025-03-30 (v1.0.6)
+
+* Changed menu integration
+
 ## Released at 2024-09-30 (v1.0.5)
 
 * Updated license.txt

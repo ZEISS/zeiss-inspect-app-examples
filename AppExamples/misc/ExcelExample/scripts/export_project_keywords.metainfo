@@ -1,5 +1,5 @@
 {
-    "display_name": "MSA ANOVA-2 Excel Sheet Generation",
+    "display_name": "ExportProjectKeywords",
     "folded_blocks": [
     ],
     "icon": "",
@@ -7,21 +7,23 @@
     "interactive": false,
     "main_menu_path": {
         "anchor": {
-            "item": "reports",
+            "item": "",
             "submenu": [
-                "operations"
+                "macro"
             ],
-            "type": "submenu"
+            "type": "command"
         },
-        "script": "userscript.MSA__Tools__MeasurementSystemAnalysis__msa_excel",
+        "script": "userscript.export_project_keywords",
         "submenu": [
-            "System analysis"
+            "App Examples",
+            "misc",
+            "ExcelExample"
         ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
     "script_element_type": "none",
     "show_in_iinspect": false,
-    "show_in_menu": true,
-    "uuid": "81348b5e-3370-4efc-87c2-424578c221d9"
+    "show_in_menu": false,
+    "uuid": "a617dacb-655e-4b23-b615-af1def65c5c5"
 }

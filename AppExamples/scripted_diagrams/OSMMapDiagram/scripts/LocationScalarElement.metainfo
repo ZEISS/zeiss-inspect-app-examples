@@ -9,17 +9,20 @@
         "anchor": {
             "item": "",
             "submenu": [
+                "macro"
             ],
             "type": "command"
         },
         "script": "ude.LocationScalarElement",
         "submenu": [
+            "App Examples",
+            "scripted_diagrams"
         ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
     "script_element_type": "value",
     "show_in_iinspect": false,
-    "show_in_menu": true,
+    "show_in_menu": false,
     "uuid": "cd09fd45-fd6e-4ec2-8e9a-98b2d94bd514"
 }

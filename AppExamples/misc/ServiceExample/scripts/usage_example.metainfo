@@ -1,5 +1,5 @@
 {
-    "display_name": "usage_example",
+    "display_name": "Services usage example",
     "folded_blocks": [
     ],
     "icon": "",
@@ -9,11 +9,14 @@
         "anchor": {
             "item": "",
             "submenu": [
+                "macro"
             ],
             "type": "command"
         },
         "script": "",
         "submenu": [
+            "App Examples",
+            "misc"
         ]
     },
     "multicreation_script": false,

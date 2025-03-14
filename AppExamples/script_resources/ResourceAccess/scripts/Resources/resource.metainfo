@@ -1,13 +1,28 @@
 {
-    "display_name": "resource",
+    "display_name": "ResourceAccess",
+    "folded_blocks": [
+    ],
     "icon": "",
     "iinspect_condition": "",
     "interactive": false,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+                "macro"
+            ],
+            "type": "command"
+        },
+        "script": "userscript.resource",
+        "submenu": [
+            "App Examples",
+            "script_resources"
+        ]
+    },
     "multicreation_script": false,
-    "name": "resource",
     "script_check_type": "none",
     "script_element_type": "none",
     "show_in_iinspect": false,
-    "show_in_menu": true,
+    "show_in_menu": false,
     "uuid": "6035f426-b00d-4b6d-bd89-4fc3689f451b"
 }

@@ -5,7 +5,7 @@
 # Carl Zeiss GOM Metrology GmbH, 2024
 #
 # This App is part of the ZEISS INSPECT Python API Examples:
-# https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_examples/
+# https://zeiss.github.io/zeiss-inspect-app-api/2025/python_examples/examples_overview.html
 # ---
 
 import gom
@@ -23,10 +23,10 @@ def get_resource_content(res):
 
 
 def create_resource_with_content(res_name, content):
-    res = gom.Resource(res_name)
-    resfile = res.open(len(string_bytes))
-    resfile.write(string_bytes)
-    res.save()  # saving memory to hard disk
+    _res = gom.Resource(res_name)
+    resfile = _res.open(len(content))
+    resfile.write(content)
+    _res.save()  # saving memory to hard disk
 
 
 if __name__ == '__main__':
@@ -34,10 +34,10 @@ if __name__ == '__main__':
     print("\n".join(get_available_resources()))
     # -------------------------------------------------------------------------
     res = gom.Resource("test_resource.txt")
-    if (res.exists()):
+    if res.exists():
         print("Resource found with content: ", get_resource_content(res))
     else:
-        string_bytes = b"Hello World"
-        create_resource_with_content("test_resource.txt", string_bytes)
-        print("Resource created with content:", string_bytes)
+        STRING_BYTES = b"Hello World"
+        create_resource_with_content("test_resource.txt", STRING_BYTES)
+        print("Resource created with content:", STRING_BYTES)
     # -------------------------------------------------------------------------
