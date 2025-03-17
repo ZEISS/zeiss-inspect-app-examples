@@ -8,13 +8,16 @@
         "product-codes": []
     },
     "references": [
-        ["HowTo", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/scripted_elements/scripted_actuals.html"], 
-        ["API", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/scripted_elements_api.html#surface"]
+        ["HowTo", "https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/scripted_elements/scripted_actuals.html"], 
+        ["API", "https://zeiss.github.io/zeiss-inspect-app-api/2025/python_api/scripted_elements_api.html#surface"]
     ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2023",
     "tags": ["mesh", "surface", "scripted-actual"],
     "title": "TrimeshDeformMesh",
     "uuid": "3ace1cee-6873-40ac-bb3c-ce4fa1f2f56c",
-    "version": "1.0.0"
+    "version": "1.0.1",
+    "technical-category": "App Examples",
+    "business-category": "minor",
+    "compatible-software": ["ZEISS INSPECT Optical 3D", "ZEISS INSPECT X-Ray", "ZEISS INSPECT CMM", "ZEISS INSPECT VMM", "ZEISS CORRELATE"]
 }

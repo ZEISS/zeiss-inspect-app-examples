@@ -9,17 +9,20 @@
         "anchor": {
             "item": "",
             "submenu": [
+                "macro"
             ],
             "type": "command"
         },
-        "script": "ude.scr_act_volume_section",
+        "script": "ude.ScrActVolumeSection",
         "submenu": [
+            "App Examples",
+            "scripted_actuals"
         ]
     },
     "multicreation_script": false,
     "script_check_type": "none",
     "script_element_type": "volume_section",
     "show_in_iinspect": false,
-    "show_in_menu": true,
+    "show_in_menu": false,
     "uuid": "a1b9b0ba-42d0-4bd9-bdbb-f2ac285df7cb"
 }

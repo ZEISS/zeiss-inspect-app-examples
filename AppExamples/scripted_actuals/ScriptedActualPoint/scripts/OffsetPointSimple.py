@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 #
-# offset_point_simple.py
+# OffsetPointSimple.py
 #
-# Carl Zeiss GOM Metrology GmbH, 2024
+# Carl Zeiss GOM Metrology GmbH, 2025
 #
 # This App is part of the ZEISS INSPECT Python API Examples:
-# https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_examples/
+# https://zeiss.github.io/zeiss-inspect-app-api/2025/python_examples/examples_overview.html
 # ---
 
 import gom
@@ -109,7 +109,7 @@ def dialog(context, params):
     if 'base' in params:
         DIALOG.point.value = params['base']
 
-    RESULT = gom.script.sys.show_user_defined_dialog(dialog=DIALOG)
+    gom.script.sys.show_user_defined_dialog(dialog=DIALOG)
 
     params['x'] = DIALOG.i_x.value
     params['base'] = DIALOG.point.value

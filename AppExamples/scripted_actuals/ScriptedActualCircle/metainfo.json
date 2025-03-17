@@ -1,14 +1,14 @@
 {
     "author": "Carl Zeiss GOM Metrology GmbH",
-    "description": "This is an example for a scripted actual \u00e2\u20ac\u02dccircle\u00e2\u20ac\u2122 element.",
+    "description": "This is an example for a scripted actual 'circle' element.",
     "labels": [],
     "licensing": {
         "licenses": [],
         "product-codes": []
     },
     "references": [
-        ["HowTo", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/scripted_elements/scripted_actuals.html"], 
-        ["API", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/scripted_elements_api.html#circle"]
+        ["HowTo", "https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/scripted_elements/scripted_actuals.html"], 
+        ["API", "https://zeiss.github.io/zeiss-inspect-app-api/2025/python_api/scripted_elements_api.html#circle"]
     ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2023",
@@ -17,5 +17,8 @@
     ],
     "title": "ScriptedActualCircle",
     "uuid": "26eacb0d-2046-4757-9b16-0df005eb62b7",
-    "version": "1.0.0"
+    "version": "1.0.1",
+    "technical-category": "App Examples",
+    "business-category": "minor",
+    "compatible-software": ["ZEISS INSPECT Optical 3D", "ZEISS INSPECT X-Ray", "ZEISS INSPECT CMM", "ZEISS INSPECT VMM", "ZEISS CORRELATE"]
 }

@@ -1,14 +1,14 @@
 {
     "author": "Carl Zeiss GOM Metrology GmbH",
-    "description": "This is an example for a scripted actual \u00e2\u20ac\u02dccylinder\u00e2\u20ac\u2122 element.",
+    "description": "This is an example for a scripted actual 'cylinder' element.",
     "labels": [],
     "licensing": {
         "licenses": [],
         "product-codes": []
     },
     "references": [
-        ["HowTo", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/scripted_elements/scripted_actuals.html"], 
-        ["API", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/scripted_elements_api.html#cylinder"]
+        ["HowTo", "https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/scripted_elements/scripted_actuals.html"], 
+        ["API", "https://zeiss.github.io/zeiss-inspect-app-api/2025/python_api/scripted_elements_api.html#cylinder"]
     ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2023",
@@ -17,5 +17,8 @@
     ],
     "title": "ScriptedActualCylinder",
     "uuid": "3afe4b3c-97b5-49de-b20e-3f4ac9ddf814",
-    "version": "1.0.0"
+    "version": "1.0.1",
+    "technical-category": "App Examples",
+    "business-category": "minor",
+    "compatible-software": ["ZEISS INSPECT Optical 3D", "ZEISS INSPECT X-Ray", "ZEISS INSPECT CMM", "ZEISS INSPECT VMM", "ZEISS CORRELATE"]
 }

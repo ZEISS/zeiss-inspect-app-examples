@@ -8,13 +8,16 @@
         "product-codes": []
     },
     "references": [
-        ["HowTo", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/scripted_elements/scripted_checks.html"], 
-        ["API", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/scripted_elements_api.html#scalar-surface"]
+        ["HowTo", "https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/scripted_elements/scripted_checks.html"], 
+        ["API", "https://zeiss.github.io/zeiss-inspect-app-api/2025/python_api/scripted_elements_api.html#scalar-surface"]
     ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2023",
     "tags": ["scripted-check", "surface"],
     "title": "ScriptedSurfaceCheck",
     "uuid": "81ff67e8-7701-4179-869f-e187d62b945a",
-    "version": "1.0.0"
+    "version": "1.0.1",
+    "technical-category": "App Examples",
+    "business-category": "minor",
+    "compatible-software": ["ZEISS INSPECT Optical 3D", "ZEISS INSPECT X-Ray", "ZEISS INSPECT CMM", "ZEISS INSPECT VMM", "ZEISS CORRELATE"]
 }

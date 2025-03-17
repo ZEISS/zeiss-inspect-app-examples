@@ -1,24 +1,22 @@
 # -*- coding: utf-8 -*-
 #
-# scripted_element_progress.py
+# ScriptedElementProgress.py
 #
-# Carl Zeiss GOM Metrology GmbH, 2024
+# Carl Zeiss GOM Metrology GmbH, 2025
 #
 # This App is part of the ZEISS INSPECT Python API Examples:
-# https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_examples/
+# https://zeiss.github.io/zeiss-inspect-app-api/2025/python_examples/examples_overview.html
 # ---
 
 import gom
 import time
-#
-# Dialog function
-#
-# This function will show the creation / editing dialog
-#
 
 
 def dialog(context, params):
+    """Dialog function
 
+    This function will show the creation / editing dialog
+    """
     DIALOG = gom.script.sys.create_user_defined_dialog(dialog={
         "content": [
             [
@@ -83,12 +81,9 @@ def dialog(context, params):
     params["test"] = "test"
     return params
 
-#
-# Calculation function
-#
-
 
 def calculation(context, params):
+    """Calculation function"""
     # -------------------------------------------------------------------------
     limit = 100
     context.progress_stages_total = limit
