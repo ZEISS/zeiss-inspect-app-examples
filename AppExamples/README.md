@@ -374,6 +374,6 @@
 
 ## Related
 
-* [ZEISS IQS GitHub &mdash; App Development Documentation](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/index.html)
+* [ZEISS IQS GitHub &mdash; App Development Documentation](https://zeiss.github.io/zeiss-inspect-app-api/2025/index.html)
 * [ZEISS Quality Software Store](https://software-store.zeiss.com)
 
