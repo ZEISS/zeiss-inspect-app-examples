@@ -18,7 +18,7 @@
     ],
     "title": "ExplorerSelectedElementsInDialog",
     "uuid": "7fbfa2c1-8166-4835-9819-56746a63edff",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "technical-category": "App Examples",
     "business-category": "minor",
     "compatible-software": ["ZEISS INSPECT Optical 3D", "ZEISS INSPECT X-Ray", "ZEISS INSPECT CMM", "ZEISS INSPECT VMM", "ZEISS CORRELATE"]
