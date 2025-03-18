@@ -13,7 +13,7 @@ import argparse
 
 APP_EXAMPLES_REPO = "https://github.com/ZEISS/zeiss-inspect-app-examples/blob/main/"
 
-APP_DEV_DOC = "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/index.html"
+APP_DEV_DOC = "https://zeiss.github.io/zeiss-inspect-app-api/2025/index.html"
 
 BASEDIR = 'AppExamples'
 
