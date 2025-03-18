@@ -1,5 +1,5 @@
 {
-    "author": "Carl Zeiss GOM Metrology GmbH ",
+    "author": "Carl Zeiss GOM Metrology GmbH",
     "description": "This basic example demonstrates how to use an event handler on a script dialog to set the unit to multiple widgets.",
     "labels": [],
     "licensing": {
