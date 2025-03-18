@@ -1,4 +1,4 @@
-# Release UnitDialogEventHandler
+# Release Notes UnitDialogEventHandler
 
 ## Released at 2025-03-30 (v1.0.1)
 
