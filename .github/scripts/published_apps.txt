@@ -1,4 +1,6 @@
 # List of Apps available in the ZEISS Quality Software Store 
+data_interfaces/CheckResultsDataArray
+data_interfaces/ReferencePointsAndMeshData
 projects/ExampleProjects
 dialog_widgets/WidgetVisibility
 dialog_widgets/UnitDialogEventHandler
@@ -13,6 +15,17 @@ misc/SettingsAPI
 misc/PointPixelTransformations
 scripted_actuals/ScriptedActualCone
 scripted_actuals/ScriptedActualCircle
+scripted_actuals/ScriptedActualCurve
 scripted_actuals/ScriptedActualCylinder
 scripted_actuals/ScriptedActualDistance
+scripted_actuals/ScriptedActualPoint
+scripted_actuals/ScriptedActualPointCloud
 scripted_actuals/ScriptedElementProgress
+scripted_actuals/ScriptedActualSection
+scripted_actuals/ScriptedActualSurface
+scripted_actuals/ScriptedActualSurfaceCurve
+scripted_actuals/ScriptedActualVolume
+scripted_actuals/ScriptedActualVolumeDefects
+scripted_actuals/ScriptedActualVolumeRegion
+scripted_checks/ScriptedCurveCheck
+scripted_checks/ScriptedSurfaceCheck
