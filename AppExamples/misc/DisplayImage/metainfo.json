@@ -1,6 +1,7 @@
 {
     "author": "Carl Zeiss GOM Metrology GmbH",
     "description": "Display measurement as a single image",
+    "environment": "ZeissInspectExampleProjects",
     "labels": [
     ],
     "licensing": {

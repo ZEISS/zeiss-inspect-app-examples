@@ -2,7 +2,8 @@
 
 ## Released at 2025-03-30 (v1.0.5)
 
-* Changed menu integration 
+* Changed menu integration
+* Added loading of example project
 
 ## Released at: 2024-09-30 (v1.0.4)
 

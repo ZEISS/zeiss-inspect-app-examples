@@ -4,7 +4,7 @@
 #
 # Display an optical measurement using the image widget
 #
-# Carl Zeiss GOM Metrology GmbH, 2024
+# Carl Zeiss GOM Metrology GmbH, 2025
 #
 # This App is part of the ZEISS INSPECT Python API Examples:
 # https://zeiss.github.io/zeiss-inspect-app-api/2025/python_examples/examples_overview.html
@@ -13,6 +13,7 @@
 import gom
 import cv2
 import numpy as np
+from ExampleProjects.setup_project import open_project
 
 def get_image ():
     """ Read image from project """
@@ -30,10 +31,14 @@ def image_to_png (image):
     _, data = cv2.imencode(".png", image)
     return data.tobytes()
 
-image = get_image ()
 
-DIALOG=gom.script.sys.create_user_defined_dialog (file='dialog.gdlg')
+if __name__ == '__main__':
+    open_project('zeiss_training_object_42')
 
-DIALOG.image.data = image_to_png (cv2.resize (image, (640, 480)))
+    image = get_image ()
 
-gom.script.sys.show_user_defined_dialog (dialog=DIALOG)
+    DIALOG=gom.script.sys.create_user_defined_dialog (file='dialog.gdlg')
+
+    DIALOG.image.data = image_to_png (cv2.resize (image, (640, 480)))
+
+    gom.script.sys.show_user_defined_dialog (dialog=DIALOG)
