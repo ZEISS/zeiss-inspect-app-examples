@@ -3,17 +3,18 @@
 # display_image.py
 #
 # Convert measurement to PNG image and display image in dialog
-# This is the first stage of the TextDetection implementation 
+# This is the first stage of the TextDetection implementation
 #
-# Carl Zeiss GOM Metrology GmbH, 2024
+# Carl Zeiss GOM Metrology GmbH, 2025
 #
 # This App is part of the ZEISS INSPECT Python API Examples:
-# https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_examples/
+# https://zeiss.github.io/zeiss-inspect-app-api/2025/python_examples/examples_overview.html
 # ---
 
 import gom
 import cv2
 import numpy as np
+from ExampleProjects.setup_project import open_project
 
 def get_image ():
     '''
@@ -39,11 +40,15 @@ def image_to_png (image):
     _, data = cv2.imencode(".png", image)
     return data.tobytes()
 
-# Define user defined dialog. The dialog is not displayed yet, but its widgets can be accessed
-DIALOG=gom.script.sys.create_user_defined_dialog (file='display_image.gdlg')
+if __name__ == '__main__':
+    open_project('zeiss_training_object_42')
 
-# Display read, converted and rescaled image in the dialogs image viewing widget 
-DIALOG.image.data = image_to_png (cv2.resize (get_image (), (1024, 768)))
+    # Define user defined dialog. The dialog is not displayed yet, but its widgets can be accessed
+    DIALOG=gom.script.sys.create_user_defined_dialog (file='display_image.gdlg')
 
-# Display user defined dialog. The script execution will be stalled here until the dialog is closed again.
-gom.script.sys.show_user_defined_dialog (dialog=DIALOG)
+    # Display read, converted and rescaled image in the dialogs image viewing widget
+    DIALOG.image.data = image_to_png (cv2.resize (get_image (), (1024, 768)))
+
+    # Display user defined dialog. The script execution will be stalled here
+    # until the dialog is closed again.
+    gom.script.sys.show_user_defined_dialog (dialog=DIALOG)

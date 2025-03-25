@@ -5,28 +5,25 @@
 # Convert measurement to PNG image, display image and perform text detection
 # This is the second stage of the TextDetection implementation
 #
-# Carl Zeiss GOM Metrology GmbH, 2024
+# Carl Zeiss GOM Metrology GmbH, 2025
 #
 # This App is part of the ZEISS INSPECT Python API Examples:
-# https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_examples/
+# https://zeiss.github.io/zeiss-inspect-app-api/2025/python_examples/examples_overview.html
 # ---
 
 import gom
+import os
 import pytesseract
 import cv2
 import numpy as np
+from ExampleProjects.setup_project import open_project
 
-#
-# Path to the installed terresact executable
-#
-TESSERACT_PATH = '<ENTER PATH TO TESSERACT BINARY HERE>'
 
 def get_image ():
     '''
     Get RGB image data from measurement
     '''
     measurement = gom.app.project.measurement_series['Scan 1'].measurements['M1']
-    acquisition = gom.api.project.get_image_acquisition (measurement, 'left camera',[0])[0]
 
     image = np.array (measurement.images['left camera'].data.rgb )[0]
     return cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
@@ -36,7 +33,6 @@ def get_preview_image ():
     Get a preview image of the measurement from left camera
     '''
     measurement = gom.app.project.measurement_series['Scan 1'].measurements['M1']
-    acquisition = gom.api.project.get_image_acquisition (measurement, 'left camera',[0])[0]
 
     image = np.array (measurement.images['left camera'].data.rgb )[0]
     image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
@@ -56,7 +52,13 @@ def detect_text (threshold):
     '''
     Perform text detection
     '''
-    pytesseract.pytesseract.tesseract_cmd = TESSERACT_PATH
+    # Get path to installed terresact executable
+    # 'C:/Users/<user>/AppData/Local/Programs/Tesseract-OCR/tesseract.exe'
+    user_profile = os.environ.get('USERPROFILE')
+    local_appdata_path = os.path.join(user_profile, 'AppData', 'Local')
+    tesseract_path = os.path.join(local_appdata_path, 'Programs', 'Tesseract-OCR', 'tesseract.exe')
+
+    pytesseract.pytesseract.tesseract_cmd = tesseract_path
 
     results = pytesseract.image_to_data (image,
                                          output_type=pytesseract.Output.DICT,
@@ -88,8 +90,11 @@ def dialog_handler (object):
         DIALOG.threshold.enabled = True
         DIALOG.detect.enabled = True
 
-DIALOG.image.data = image_to_png (cv2.resize (image, (640, 480)))
+if __name__ == '__main__':
+    open_project('zeiss_training_object_42')
 
-DIALOG.handler = dialog_handler
+    DIALOG.image.data = image_to_png (cv2.resize (image, (640, 480)))
 
-gom.script.sys.show_user_defined_dialog (dialog=DIALOG)
+    DIALOG.handler = dialog_handler
+
+    gom.script.sys.show_user_defined_dialog (dialog=DIALOG)
