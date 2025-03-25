@@ -17,7 +17,6 @@ import os
 import pytesseract
 import cv2
 import numpy as np
-from ExampleProjects.setup_project import open_project
 
 
 def get_image (scan):
@@ -134,6 +133,3 @@ def calculation(context, params):
             context.error[stage] = str (error)
 
     return ok
-
-if __name__ == '__main__':
-    open_project('zeiss_training_object_42')
