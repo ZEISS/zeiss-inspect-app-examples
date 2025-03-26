@@ -3,6 +3,10 @@
 ## Released at 2025-03-30 (v1.0.5)
 
 * Changed menu integration
+* Updated links
+* Added loading of example project
+* Modified configuration of tesseract executable path
+* Added missing package requirement pytesseract
 
 ## Released at: 2024-09-30 (v1.0.4)
 

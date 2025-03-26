@@ -1,6 +1,7 @@
 {
     "author": "Carl Zeiss GOM Metrology GmbH",
     "description": "Text detection example",
+    "environment": "ZeissInspectExampleProjects",
     "labels": [
     ],
     "licensing": {

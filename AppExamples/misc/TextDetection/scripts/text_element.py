@@ -6,21 +6,17 @@
 # create scripted element from test
 # This is the third and final stage of the TextDetection implementation
 #
-# Carl Zeiss GOM Metrology GmbH, 2024
+# Carl Zeiss GOM Metrology GmbH, 2025
 #
 # This App is part of the ZEISS INSPECT Python API Examples:
-# https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_examples/
+# https://zeiss.github.io/zeiss-inspect-app-api/2025/python_examples/examples_overview.html
 # ---
 
 import gom
+import os
 import pytesseract
 import cv2
 import numpy as np
-
-#
-# Path to the installed terresact executable
-#
-TESSERACT_PATH = 'C:/Users/IQFBLANK/AppData/Local/Programs/Tesseract-OCR/tesseract.exe'
 
 
 def get_image (scan):
@@ -37,7 +33,13 @@ def image_to_png (image):
 
 def detect_text (image, threshold):
     """Detect text label in the given image"""
-    pytesseract.pytesseract.tesseract_cmd = TESSERACT_PATH
+    # Get path to installed terresact executable
+    # 'C:/Users/<user>/AppData/Local/Programs/Tesseract-OCR/tesseract.exe'
+    user_profile = os.environ.get('USERPROFILE')
+    local_appdata_path = os.path.join(user_profile, 'AppData', 'Local')
+    tesseract_path = os.path.join(local_appdata_path, 'Programs', 'Tesseract-OCR', 'tesseract.exe')
+
+    pytesseract.pytesseract.tesseract_cmd = tesseract_path
 
     results = pytesseract.image_to_data (image,
                                          output_type=pytesseract.Output.DICT,
@@ -63,7 +65,7 @@ def dialog(context, params):
 
         calc = False
 
-        if object == 'initialize':
+        if object == 'initialize' or object == DIALOG.element:
             image = get_image (DIALOG.element.value)
             DIALOG.image.data = image_to_png (cv2.resize (image, (640, 480)))
 
@@ -73,12 +75,6 @@ def dialog(context, params):
             DIALOG.result.text = '-'
             if 'ude_text' in context.data[0]:
                 DIALOG.result.text = context.data[0]['ude_text']
-
-        elif object == DIALOG.element:
-            image = get_image (DIALOG.element.value)
-            DIALOG.image.data = image_to_png (cv2.resize (image, (640, 480)))
-
-            calc = True
 
         elif object == DIALOG.threshold:
             calc = True
@@ -90,7 +86,7 @@ def dialog(context, params):
             context.name = 'Part id'
             DIALOG.control.ok.enabled = False
 
-            result = context.calc (params=params, dialog=DIALOG)
+            context.calc (params=params, dialog=DIALOG)
 
             DIALOG.control.ok.enabled = True
 
