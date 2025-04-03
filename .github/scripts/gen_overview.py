@@ -295,6 +295,13 @@ myst:
 
     app_overview += f"# {args.title}\n"
 
+    app_overview += \
+"""
+> [!IMPORTANT]
+> The examples provided here serve as illustrative versions of ZEISS INSPECT Apps. They are not intended for productive use.
+> Users may utilize these examples at their own risk, and ZEISS assumes no liability for their use.
+"""
+
     categories = os.listdir(BASEDIR)
     for category in sorted(categories):
         if category == '.gitignore':
