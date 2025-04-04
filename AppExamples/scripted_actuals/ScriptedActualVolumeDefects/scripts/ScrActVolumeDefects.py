@@ -105,12 +105,12 @@ def calculation(context, params):
         # Access element properties with error handling
         try:
             context.result[stage] = {
-                'vertices': [np.array([v0, v1, v2, v3])],
+                'vertices': [np.array([v0, v1, v2, v3], dtype=np.float64)],
                 # Note:
                 # Triangles are defined by indices into the array of vertices.
                 # The vertices defining a triangle must be specified in counter-clockwise
                 # order, otherwise the resulting surface would be inverted, i.e. invisible!
-                'triangles': [np.array([(0, 1, 2), (1, 0, 3), (0, 2, 3), (2, 1, 3)])]
+                'triangles': [np.array([(0, 1, 2), (1, 0, 3), (0, 2, 3), (2, 1, 3)], dtype=np.int32)]
             }
             context.data[stage] = {"ude_mykey": "Scripted Volume Defects"}
         except Exception as error:
