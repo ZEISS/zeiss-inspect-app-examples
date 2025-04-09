@@ -1,0 +1,28 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "business-category": "minor",
+    "compatible-software": [
+        "ZEISS INSPECT Optical 3D",
+        "ZEISS INSPECT X-Ray",
+        "ZEISS INSPECT CMM",
+        "ZEISS INSPECT VMM",
+        "ZEISS CORRELATE"
+    ],
+    "description": "Basic example for triggering command execution in ZEISS INSPECT from command line via WebSocket protocol",
+    "labels": [
+    ],
+    "licensing": {
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
+    },
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2023",
+    "tags": [
+    ],
+    "technical-category": "App Examples",
+    "title": "IPCWebsocketBasics",
+    "uuid": "0f41489c-eb99-4ff9-bf8b-36fe76c53377",
+    "version": "1.0.0"
+}

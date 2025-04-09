@@ -1,0 +1,29 @@
+{
+    "display_name": "Websocket Server App (Console)",
+    "folded_blocks": [
+    ],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": false,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+                "macro"
+            ],
+            "type": "command"
+        },
+        "script": "userscript.websocket_server_app",
+        "submenu": [
+            "App Examples",
+            "misc",
+            "IPCWebsocketBasics"
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "none",
+    "show_in_iinspect": false,
+    "show_in_menu": false,
+    "uuid": "3f082ec3-0604-40bb-b687-8643df7cc4d9"
+}
