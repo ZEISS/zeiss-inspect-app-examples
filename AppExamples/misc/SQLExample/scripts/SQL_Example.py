@@ -9,10 +9,10 @@
 # | project_no (auto_increment) | project_name (unique) | company_name | department_name | part_name | 
 #  --------------------------------------------------------------------------------------------------
 #
-# Carl Zeiss GOM Metrology GmbH, 2024
+# Carl Zeiss GOM Metrology GmbH, 2025
 #
 # This App is part of the ZEISS INSPECT Python API Examples:
-# https://zeissiqs.github.io/zeiss-inspect-addon-api/main/python_examples/
+# https://zeiss.github.io/zeiss-inspect-app-api/main/python_examples/
 # ---
 
 import gom
