@@ -9,18 +9,16 @@
 # | project_no (auto_increment) | project_name (unique) | company_name | department_name | part_name | 
 #  --------------------------------------------------------------------------------------------------
 #
-# Carl Zeiss GOM Metrology GmbH, 2024
+# Carl Zeiss GOM Metrology GmbH, 2025
 #
 # This App is part of the ZEISS INSPECT Python API Examples:
-# https://zeissiqs.github.io/zeiss-inspect-addon-api/main/python_examples/
+# https://zeiss.github.io/zeiss-inspect-app-api/main/python_examples/
 # ---
 
 import gom
 import mysql.connector
 from mysql.connector import Error
 from mysql.connector import errorcode
-
-PW = 'SqlT3st!' # Password for testing
 
 # Database - projects table
 TABLES = {}
@@ -201,7 +199,6 @@ def dialog_event_handler (widget):
         # Init input fields from settings
         DIALOG.in_host.value = gom.api.settings.get ('dialog.in_host')
         DIALOG.in_user.value = gom.api.settings.get ('dialog.in_user')
-        DIALOG.in_password.value = PW # TODO remove
         DIALOG.in_database.value = gom.api.settings.get ('dialog.in_database')
 
         # Update inputs fields from project valiables
@@ -211,7 +208,7 @@ def dialog_event_handler (widget):
             DIALOG.company_zi.value = getattr(gom.app.project, 'user_company')
         if 'user_department' in gom.app.project.project_keywords:
             DIALOG.department_zi.value = getattr(gom.app.project, 'user_department')        
-        if 'user_company' in gom.app.project.project_keywords:
+        if 'user_part' in gom.app.project.project_keywords:
             DIALOG.part_zi.value = getattr(gom.app.project, 'user_part')
 
     elif widget == DIALOG.in_host:
