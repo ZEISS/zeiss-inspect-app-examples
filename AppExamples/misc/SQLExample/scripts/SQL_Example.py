@@ -20,8 +20,6 @@ import mysql.connector
 from mysql.connector import Error
 from mysql.connector import errorcode
 
-PW = 'SqlT3st!' # Password for testing
-
 # Database - projects table
 TABLES = {}
 TABLES['projects'] = (
@@ -201,7 +199,6 @@ def dialog_event_handler (widget):
         # Init input fields from settings
         DIALOG.in_host.value = gom.api.settings.get ('dialog.in_host')
         DIALOG.in_user.value = gom.api.settings.get ('dialog.in_user')
-        DIALOG.in_password.value = PW # TODO remove
         DIALOG.in_database.value = gom.api.settings.get ('dialog.in_database')
 
         # Update inputs fields from project valiables
