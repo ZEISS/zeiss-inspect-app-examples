@@ -10,12 +10,11 @@ import os
 import os.path
 import re
 import shutil
-import sys
 import tempfile
 import zipfile
 
 import xml.etree.ElementTree as ET
-from xml.dom import minidom
+#from defusedxml import minidom
 
 import Tools.MeasurementSystemAnalysis.msa_config as cfg
 import Tools.MeasurementSystemAnalysis.msa_gui as gui
