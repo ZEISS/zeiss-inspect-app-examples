@@ -1,9 +1,10 @@
 # Release Notes MeasurementSystemAnalysis
 
-## Released at 2025-03-30 (v1.0.7)
+## Released at 2025-04-30 (v1.0.7)
 
 * Updated scripts' meta information
 * Replaced scripts/modules/README.txt by scripts/modules/requirements.txt
+* XML parsing security improvement
 
 ## Released at 2024-09-30 (v1.0.6)
 

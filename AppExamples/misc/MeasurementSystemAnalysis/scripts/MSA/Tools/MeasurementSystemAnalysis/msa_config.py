@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+#
+# Carl Zeiss GOM Metrology GmbH, 2025
+#
 
 import gom
 
