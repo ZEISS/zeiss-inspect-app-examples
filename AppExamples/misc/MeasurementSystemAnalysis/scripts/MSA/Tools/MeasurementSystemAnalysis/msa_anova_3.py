@@ -13,9 +13,8 @@
 #
 
 import gom
-import xml.etree
 import xml.etree.ElementTree as ET
-import xml.dom.minidom
+from defusedxml import minidom
 import Tools.MeasurementSystemAnalysis.msa_lib as msa
 import Tools.MeasurementSystemAnalysis.msa_gui as gui
 import Tools.MeasurementSystemAnalysis.msa_config as cfg
@@ -221,7 +220,7 @@ def create_anova_3_table_template(template_name, config):
             row, col_index, 'RR [%]', gauge_rr_expression + msa.create_percent_expression(type, 'RR'), 1)
         col_index = msa.create_cell(row, col_index, 'Tol.', msa.get_tolerance_expression(type), 1)
 
-    return xml.dom.minidom.parseString(ET.tostring(root)).toprettyxml()
+    return minidom.parseString(ET.tostring(root)).toprettyxml()
 
 
 # ----------------------------------------------------------------------------------
