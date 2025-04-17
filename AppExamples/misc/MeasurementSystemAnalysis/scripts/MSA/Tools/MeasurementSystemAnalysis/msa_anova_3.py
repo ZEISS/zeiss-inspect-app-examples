@@ -152,7 +152,7 @@ EV = sigma_factor * sqr (s2e)
 RR = EV 
 """
     return text.format(
-        result=msa.get_result_token(type),
+        result=msa.get_result_type(type),
         sigma=cfg.sigma_tag,
         appraiser=cfg.appraiser_tag,
         part=cfg.part_tag,

@@ -190,10 +190,10 @@ def fill_import_sheet(access, element):
 
     # Nominal value. This is always '0.0' because we are computing with deviations.
     access['B1'] = 0.0
-    access['D1'] = element.get(msa.get_tolerance_tokens(type)[1])  # Upper tolerance limit
-    access['E1'] = element.get(msa.get_tolerance_tokens(type)[0])  # Lower tolerance limit
+    access['D1'] = element.get(msa.get_tolerance_types(type)[1])  # Upper tolerance limit
+    access['E1'] = element.get(msa.get_tolerance_types(type)[0])  # Lower tolerance limit
 
-    unit = element.get('format ({token}, "", show_unit=true)'.format(token=msa.get_result_token(type))).split(' ')
+    unit = element.get('format ({token}, "", show_unit=true)'.format(token=msa.get_result_type(type))).split(' ')
     access['G1'] = unit[-1] if len(unit) > 1 else ''
 
     access['J1'] = gom.app.project.inspection[cfg.sigma_tag].value

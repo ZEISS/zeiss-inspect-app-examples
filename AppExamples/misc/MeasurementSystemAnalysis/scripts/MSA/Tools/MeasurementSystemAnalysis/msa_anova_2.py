@@ -164,7 +164,7 @@ PV = sigma_factor * sqr (VT)
 RR  = not interaction ? sqr (EV * EV + AV * AV) : sqr (EV * EV + AV * AV + IA * IA)
 """
     return text.format(
-        result=msa.get_result_token(type),
+        result=msa.get_result_type(type),
         sigma=cfg.sigma_tag,
         appraiser=cfg.appraiser_tag,
         part=cfg.part_tag,
