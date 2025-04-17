@@ -11,6 +11,8 @@
 # again if, e.g., stages are added or an appraiser is renamed. It does not need to
 # be executed again if the checks or stages are edited in any other way.
 #
+# Carl Zeiss GOM Metrology GmbH, 2025
+#
 
 import gom
 import xml.etree.ElementTree as ET

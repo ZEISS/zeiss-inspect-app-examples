@@ -2,6 +2,8 @@
 #
 # msa_excel - Script for generating excel table sheets for Gauge R&R values
 #
+# Carl Zeiss GOM Metrology GmbH, 2025
+#
 
 import gom
 
