@@ -2,15 +2,13 @@
 #
 # msa_lib - Common library functions for generating MSA / Gauge R&R setups
 #
+# Carl Zeiss GOM Metrology GmbH, 2025
+#
 
 import gom
 import os
 import os.path
-import re
-import xml.etree
 import xml.etree.ElementTree as ET
-import xml.dom.minidom
-import stringprep
 
 import Tools.MeasurementSystemAnalysis.msa_config as cfg
 
