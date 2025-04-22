@@ -2,15 +2,13 @@
 #
 # msa_lib - Common library functions for generating MSA / Gauge R&R setups
 #
+# Carl Zeiss GOM Metrology GmbH, 2025
+#
 
 import gom
 import os
 import os.path
-import re
-import xml.etree
 import xml.etree.ElementTree as ET
-import xml.dom.minidom
-import stringprep
 
 import Tools.MeasurementSystemAnalysis.msa_config as cfg
 
@@ -383,7 +381,7 @@ def get_element_type(element):
 #
 # Generate result token access matching the given type
 #
-def get_result_token(type):
+def get_result_type(type):
     if type == cfg.Type_Inspection:
         return 'result_dimension.deviation'
     elif type == cfg.Type_GDAT:
@@ -392,7 +390,7 @@ def get_result_token(type):
     raise AssertionError('Unknown element family type')
 
 
-def get_tolerance_tokens(type):
+def get_tolerance_types(type):
     if type == cfg.Type_GDAT:
         return ('result_gdat_size.lower_tolerance_limit', 'result_gdat_size.upper_tolerance_limit')
 
@@ -416,7 +414,7 @@ def get_tolerance_expression(type):
 #
 
 
-def get_tolerance_used_token(type):
+def get_tolerance_type_used(type):
     if type == cfg.Type_Inspection:
         return 'result_dimension.is_tolerance_used'
     elif type == cfg.Type_GDAT:
@@ -430,7 +428,7 @@ def get_tolerance_used_token(type):
 
 
 def create_stage_access_expression(config, appraiser, part, trial, type):
-    return 'avg ({0}, index=gom.app.project.stage_markers["{1}"], condition={2})'.format(get_result_token(type), cfg.all_stages_range_name, create_stage_filter(appraiser, part, trial))
+    return 'avg ({0}, index=gom.app.project.stage_markers["{1}"], condition={2})'.format(get_result_type(type), cfg.all_stages_range_name, create_stage_filter(appraiser, part, trial))
 
 #
 # Create average over multiple expressions
@@ -456,7 +454,7 @@ def create_range_expression(params):
 
 
 def create_restricted_avg_expression(config, appraiser, part, trial, type):
-    token = get_result_token(type)
+    token = get_result_type(type)
 
     #
     # Case 1: Stage range covering all stages. Using 'index="stages"' here instead does not work because
@@ -469,7 +467,7 @@ def create_restricted_avg_expression(config, appraiser, part, trial, type):
     # Case 2: A dedicated set of stages
     #
     else:
-        return 'avg ({0}, index=gom.app.project.stage_markers["{1}"], condition={2})'.format(get_result_token(type), cfg.all_stages_range_name, create_stage_filter(appraiser, part, trial))
+        return 'avg ({0}, index=gom.app.project.stage_markers["{1}"], condition={2})'.format(get_result_type(type), cfg.all_stages_range_name, create_stage_filter(appraiser, part, trial))
 
 #
 # Create expression for computing the range (max - min) value restricted to a single stage range
@@ -478,7 +476,7 @@ def create_restricted_avg_expression(config, appraiser, part, trial, type):
 
 def create_restricted_range_expression(data, appraiser, part, trial, type):
     return 'max ({0}, index=gom.app.project.stage_markers["{1}"], condition={2}) - min ({0}, index=gom.app.project.stage_markers["{1}"], condition={2})' \
-        .format(get_result_token(type), cfg.all_stages_range_name, create_stage_filter(appraiser, part, trial))
+        .format(get_result_type(type), cfg.all_stages_range_name, create_stage_filter(appraiser, part, trial))
 
 
 #
@@ -486,7 +484,7 @@ def create_restricted_range_expression(data, appraiser, part, trial, type):
 #
 def create_percent_expression(type, variable, prefix_function=None):
     expression = '{0} ? 100.0 * {1} / {2} : "No tol."'.format(
-        get_tolerance_used_token(type), variable, get_tolerance_expression(type))
+        get_tolerance_type_used(type), variable, get_tolerance_expression(type))
 
     if prefix_function:
         expression = prefix_function + ' (' + expression + ')'

@@ -11,14 +11,12 @@
 # again if, e.g., stages are added or an appraiser is renamed. It does not need to
 # be executed again if the checks or stages are edited in any other way.
 #
+# Carl Zeiss GOM Metrology GmbH, 2025
+#
 
 import gom
-import os
-import os.path
-import re
-import xml.etree
 import xml.etree.ElementTree as ET
-import xml.dom.minidom
+from defusedxml import minidom
 
 import Tools.MeasurementSystemAnalysis.msa_lib as msa
 import Tools.MeasurementSystemAnalysis.msa_config as cfg
@@ -120,7 +118,7 @@ def create_export_table_template(template_name, config):
 
             row_index += 1
 
-    return xml.dom.minidom.parseString(ET.tostring(root)).toprettyxml()
+    return minidom.parseString(ET.tostring(root)).toprettyxml()
 
 
 # ----------------------------------------------------------------------------------
