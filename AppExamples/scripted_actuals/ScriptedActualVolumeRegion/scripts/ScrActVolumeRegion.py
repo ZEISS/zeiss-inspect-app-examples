@@ -63,10 +63,9 @@ def dialog(context, params):
         params['dz'] = DIALOG.dz.value
         params['volume_ele'] = DIALOG.volume_ele.value
 
-        if DIALOG.volume_ele is None:
-            context.name = "New Volume Region"
-        else:
+        if DIALOG.volume_ele.value is not None:
             context.name = str(DIALOG.volume_ele.value) + ".Region"
+
         DIALOG.control.ok.enabled = False
         context.calc(params=params, dialog=DIALOG)
 
@@ -89,6 +88,10 @@ def dialog(context, params):
 
 def calculation(context, params):
     valid_results = False
+
+    if params['volume_ele'] == None:
+        context.error[context.stages[0]] = 'No volume Selected.'
+        return False
 
     x0 = params['x0']
     y0 = params['y0']
