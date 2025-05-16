@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# test_scripted_actuals_simple_offset_point.py
+# test_scripted_actuals_offset_point.py
 #
 # Carl Zeiss GOM Metrology GmbH, 2025
 #
