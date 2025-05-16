@@ -52,10 +52,3 @@ def test_offset_point_v2():
     element_test = ElementTest('scripted_actuals_point_v2.dat')
     element_test.testElementValues(test_element, ['center_coordinate', 'computation_status', 'ude_mykey'])
     element_test.callTest()
-    
-#
-# Test execution
-#
-if __name__ == '__main__':
-     test_simple_offset_point()
-     test_offset_point_v2()
