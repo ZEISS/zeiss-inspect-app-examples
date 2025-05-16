@@ -6,10 +6,10 @@
 # radius and element name.
 # See https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html
 #
-# Carl Zeiss GOM Metrology GmbH, 2024
+# Carl Zeiss GOM Metrology GmbH, 2025
 #
 # This App is part of the ZEISS INSPECT Python API Examples:
-# https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_examples/
+# https://zeiss.github.io/zeiss-inspect-app-api/2025/python_examples/examples_overview.html
 # ---
 """Scripted diagram service plotting radius / element name"""
 

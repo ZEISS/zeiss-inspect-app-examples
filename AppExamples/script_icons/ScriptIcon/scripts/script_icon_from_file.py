@@ -2,7 +2,7 @@
 #
 # script_icon_from_file.py
 #
-# Carl Zeiss GOM Metrology GmbH, 2024
+# Carl Zeiss GOM Metrology GmbH, 2025
 #
 # This App is part of the ZEISS INSPECT Python API Examples:
 # https://zeiss.github.io/zeiss-inspect-app-api/2025/python_examples/
@@ -14,7 +14,7 @@ import gom
 # icons can be set to scripts and scripts can be put into the menu.
 #
 # For details, see:
-# https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_examples/script_icons/script_icon_from_file.html
+# https://zeiss.github.io/zeiss-inspect-app-api/2025/python_examples/examples_overview.htmlscript_icons/script_icon_from_file.html
 
 RESULT = gom.script.sys.execute_user_defined_dialog(dialog={
     "content": [
