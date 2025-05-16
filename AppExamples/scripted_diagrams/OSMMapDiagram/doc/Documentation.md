@@ -20,7 +20,7 @@ The supported element keywords / project keywords are `GPSLatitude`, `GPSLongitu
 
 ## Prerequisite
 
-Review [Using scripted diagrams](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/using_scripted_diagrams/using_scripted_diagrams.html) for a general introduction.
+Review [Using scripted diagrams](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/using_scripted_diagrams/using_scripted_diagrams.html) for a general introduction.
 
 ## Creating a GeoLocation scripted value element
 

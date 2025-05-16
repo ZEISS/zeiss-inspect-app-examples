@@ -6,8 +6,8 @@ See [App documentation](Documentation.md) for details.
 
 You can [download this App](https://software-store.zeiss.com/products/apps/SettingsAPI) from the [ZEISS Quality Software Store](https://software-store.zeiss.com).
 
-The ZEISS INSPECT App develomment documentation can be found on [ZEISS IQS GitHub](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/index.html).
+The ZEISS INSPECT App develomment documentation can be found on [ZEISS IQS GitHub](https://zeiss.github.io/zeiss-inspect-app-api/2025/index.html).
 
 ## See also
 
-[gom.api.settings](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/python_api.html#gom-api-settings)
+[gom.api.settings](https://zeiss.github.io/zeiss-inspect-app-api/2025/python_api/python_api.html#gom-api-settings)
