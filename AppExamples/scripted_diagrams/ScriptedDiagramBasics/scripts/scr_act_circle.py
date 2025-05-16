@@ -6,10 +6,10 @@
 # Select the Scripted Diagram's Service in the element creation dialog.
 # The radius is passed to the Scripted Diagram's Service.
 #
-# Carl Zeiss GOM Metrology GmbH, 2023
+# Carl Zeiss GOM Metrology GmbH, 2025
 #
 # This test is part of the "Python API Examples" Add-on.
-# https://zeissiqs.github.io/zeiss-inspect-addon-api/2023/python_examples/
+# https://zeiss.github.io/zeiss-inspect-app-api/2023/python_examples/
 # ---
 
 import gom

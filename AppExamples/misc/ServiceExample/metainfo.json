@@ -10,8 +10,8 @@
         ]
     },
     "references": [
-        ["HowTo", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/using_services/using_services.html"],
-        ["API", "https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_api/python_api.html#gom-api-services"]
+        ["HowTo", "https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/using_services/using_services.html"],
+        ["API", "https://zeiss.github.io/zeiss-inspect-app-api/2025/python_api/python_api.html#gom-api-services"]
     ],
     "services": [
         {

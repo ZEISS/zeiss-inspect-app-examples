@@ -163,7 +163,7 @@ create_surface = gom.script.sys.create_element_by_script (
 
 The scripts `create_point_cloud.py` and `create_surface.py` are provided in the example Add-on.
 
-Since no user interaction is required, the `dialog()` function shown in [Introduction to scripted elements](https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/howtos/scripted_elements/scripted_elements_introduction.html) as part of the code pattern can be omitted. Consequently, the checkbox Interactive Script in the Script Properties dialog is disabled.
+Since no user interaction is required, the `dialog()` function shown in [Introduction to scripted elements](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/scripted_elements/scripted_elements_introduction.html) as part of the code pattern can be omitted. Consequently, the checkbox Interactive Script in the Script Properties dialog is disabled.
 
 ![Create Surface - Script Properties](create_surface_script_properties.png)
 

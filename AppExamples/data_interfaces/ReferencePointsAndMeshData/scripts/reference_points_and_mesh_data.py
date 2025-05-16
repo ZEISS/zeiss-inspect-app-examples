@@ -78,7 +78,7 @@ if __name__ == '__main__':
         print(" done.")
 
     # Image data - list of RGB values
-    # To display it, see https://github.com/ZeissIQS/AddOnExamples/tree/main (DisplayImage)
+    # To display it, see https://github.com/ZEISS/zeiss-inspect-app-examples/tree/main/AppExamples/misc/DisplayImage
     # image_left = gom.app.project.measurement_series['Scan 1'].measurements['M1'].images['left camera'].data.rgb
 
     #################################################################################################
