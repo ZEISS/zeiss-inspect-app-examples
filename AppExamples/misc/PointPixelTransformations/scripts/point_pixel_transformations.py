@@ -11,7 +11,7 @@
 # 1) Get 2D image pixel coordinates of 3D point coordinates
 # 2) Get 3D point coordinates of 2D image pixel coordinates
 #
-# Carl Zeiss GOM Metrology GmbH, 2023
+# Carl Zeiss GOM Metrology GmbH, 2025
 #
 # This App is part of the ZEISS INSPECT Python API Examples:
 # https://zeiss.github.io/zeiss-inspect-app-api/2025/python_examples/examples_overview.html
@@ -34,7 +34,7 @@ if __name__ == '__main__':
     #
     # 1) Get 2D image pixel coordinates of 3D point coordinates
     #
-    # See https://zeissiqs.github.io/zeiss-inspect-addon-api/2023/python_api/python_api.html#gom-api-imaging-compute-pixels-from-point
+    # See https://zeiss.github.io/zeiss-inspect-app-api/2023/python_api/python_api.html#gom-api-imaging-compute-pixels-from-point
     #
     #################################################################################################
 
@@ -60,7 +60,7 @@ if __name__ == '__main__':
     #
     # 2) Get 3D point coordinates of 2D image pixel coordinates
     #
-    # https://zeissiqs.github.io/zeiss-inspect-addon-api/2023/python_api/python_api.html#gom-api-imaging-compute-point-from-pixels
+    # https://zeiss.github.io/zeiss-inspect-app-api/2023/python_api/python_api.html#gom-api-imaging-compute-point-from-pixels
     #
     ##################################################################################################
 

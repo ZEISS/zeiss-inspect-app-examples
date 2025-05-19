@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 #
-# test_scripted_actuals_simple_offset_point.py
+# test_scripted_actuals_offset_point.py
 #
-# Carl Zeiss GOM Metrology GmbH, 2024
+# Carl Zeiss GOM Metrology GmbH, 2025
 #
 # This test is part of the "Python API Examples" Add-on. For documentation, see:
-# https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_examples/
+# https://zeiss.github.io/zeiss-inspect-app-api/2025/python_examples/examples_overview.html
 # ---
 
 import gom
@@ -52,10 +52,3 @@ def test_offset_point_v2():
     element_test = ElementTest('scripted_actuals_point_v2.dat')
     element_test.testElementValues(test_element, ['center_coordinate', 'computation_status', 'ude_mykey'])
     element_test.callTest()
-    
-#
-# Test execution
-#
-if __name__ == '__main__':
-     test_simple_offset_point()
-     test_offset_point_v2()

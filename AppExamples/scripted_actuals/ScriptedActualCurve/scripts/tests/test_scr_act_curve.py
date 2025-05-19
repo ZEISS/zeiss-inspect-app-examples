@@ -1,12 +1,12 @@
 
 # -*- coding: utf-8 -*-
 #
-# test_ex03_curve.py
+# test_scr_act_curve.py
 #
 # Carl Zeiss GOM Metrology GmbH, 2023
 #
 # This App is part of the ZEISS INSPECT Python API Examples:
-# https://zeissiqs.github.io/zeiss-inspect-addon-api/2025/python_examples/
+# https://zeiss.github.io/zeiss-inspect-app-api/2025/python_examples/examples_overview.html
 # ---
 
 import gom
