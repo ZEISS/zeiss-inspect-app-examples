@@ -72,8 +72,8 @@ def gen_table(_category, _tag_index):
 
     # App table header
     # Using non-breaking spaces (&nbsp;) to enforce a common/minimum column width
-    md  = f"| {24*'&nbsp;'}App{24*'&nbsp;'} | {36*'&nbsp;'}Description{36*'&nbsp;'} | Example Projects | References | {7*'&nbsp;'}Tags{7*'&nbsp;'} |\n"
-    md +=  "| --- | ----------- | ---------------- | ---------- | ---- |\n"
+    md  = f"| {24*'&nbsp;'}App{24*'&nbsp;'} | {36*'&nbsp;'}Description{36*'&nbsp;'} | Example Projects | Required Software | References | {7*'&nbsp;'}Tags{7*'&nbsp;'} |\n"
+    md +=  "| --- | ----------- | ---------------- | -------- | ---------- | ---- |\n"
 
     apps = os.path.join(BASEDIR, _category)
     list_dir = os.listdir(apps)
@@ -110,6 +110,9 @@ def gen_table(_category, _tag_index):
                     md += f"[{reference[0]}]({reference[1]})<br>"
 
             md += " | "
+
+            # Required Software
+            md += f"{metainfo['software version']} | "
 
             # Tags
             for _tag in metainfo['tags']:
@@ -205,7 +208,7 @@ f'''<h3>{title} — <a class="reference external" href="{view}">view</a> {link}
                         md += f"    [{reference[0]}]({reference[1]})"
                     else:
                         md += f", [{reference[0]}]({reference[1]})"
-                md += "\n"
+                md += "\n\n"
 
             md += f":Required Software:\n    {metainfo['software-version']}\n\n"
 
@@ -268,7 +271,7 @@ f"""---
 myst:
     html_meta:
         "description": "{args.meta_description}"
-        "keywords": "Metrology, ZEISS INSPECT, Python API, GOM API, Scripting, Add-ons, Apps, Examples"
+        "keywords": "Metrology, ZEISS INSPECT, Python API, App API, GOM API, Scripting, Add-ons, Apps, Examples"
 ---
 """
 
