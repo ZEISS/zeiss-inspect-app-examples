@@ -72,7 +72,7 @@ def gen_table(_category, _tag_index):
 
     # App table header
     # Using non-breaking spaces (&nbsp;) to enforce a common/minimum column width
-    md  = f"| {24*'&nbsp;'}App{24*'&nbsp;'} | {36*'&nbsp;'}Description{36*'&nbsp;'} | Example Projects | References | Required Software | {7*'&nbsp;'}Tags{7*'&nbsp;'} |\n"
+    md  = f"| {24*'&nbsp;'}App{24*'&nbsp;'} | {30*'&nbsp;'}Description{30*'&nbsp;'} | Example Projects | References | Required Software | {7*'&nbsp;'}Tags{7*'&nbsp;'} |\n"
     md +=  "| --- | ----------- | ---------------- | -------- | ---------- | -------- | ---- |\n"
 
     apps = os.path.join(BASEDIR, _category)
