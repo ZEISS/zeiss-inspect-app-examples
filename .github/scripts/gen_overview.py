@@ -112,7 +112,7 @@ def gen_table(_category, _tag_index):
             md += " | "
 
             # Required Software
-            md += f"{metainfo['software version']} | "
+            md += f"{metainfo['software-version']} | "
 
             # Tags
             for _tag in metainfo['tags']:
