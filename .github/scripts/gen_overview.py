@@ -141,6 +141,9 @@ def gen_boilerplate(_category, tags, _tag_index):
         References
             ...
         
+        Minimum SW Required
+            ...
+        
         Tags
             ...
     """
@@ -203,6 +206,8 @@ f'''<h3>{title} — <a class="reference external" href="{view}">view</a> {link}
                     else:
                         md += f", [{reference[0]}]({reference[1]})"
                 md += "\n"
+
+            md += f":Required Software:\n    {metainfo['software-version']}\n\n"
 
             # Tags
             if len(metainfo['tags']):
