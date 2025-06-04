@@ -17,7 +17,7 @@
     ],
     "title": "ScriptedActualPointCloud",
     "uuid": "a6d289ff-3ff2-4369-9698-d768861eb2ed",
-    "version": "1.0.2",
+    "version": "1.0.1",
     "technical-category": "App Examples",
     "business-category": "minor",
     "compatible-software": ["ZEISS INSPECT Optical 3D", "ZEISS INSPECT X-Ray", "ZEISS INSPECT CMM", "ZEISS INSPECT VMM", "ZEISS CORRELATE"]

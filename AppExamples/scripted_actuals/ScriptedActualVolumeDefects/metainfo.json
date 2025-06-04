@@ -17,7 +17,7 @@
     ],
     "title": "ScriptedActualVolumeDefects",
     "uuid": "4b9bc4ad-b369-4f2f-8b18-e90f2405c5a0",
-    "version": "1.0.3",
+    "version": "1.0.2",
     "technical-category": "App Examples",
     "business-category": "minor",
     "compatible-software": ["ZEISS INSPECT Optical 3D", "ZEISS INSPECT X-Ray", "ZEISS INSPECT CMM", "ZEISS INSPECT VMM", "ZEISS CORRELATE"]

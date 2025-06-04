@@ -18,7 +18,7 @@
     ],
     "title": "ScriptedActualSection",
     "uuid": "1e1172be-c2f3-43f2-972c-a9abd279c27f",
-    "version": "1.0.2",
+    "version": "1.0.1",
     "technical-category": "App Examples",
     "business-category": "minor",
     "compatible-software": ["ZEISS INSPECT Optical 3D", "ZEISS INSPECT X-Ray", "ZEISS INSPECT CMM", "ZEISS INSPECT VMM", "ZEISS CORRELATE"]

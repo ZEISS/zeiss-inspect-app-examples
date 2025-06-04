@@ -17,7 +17,7 @@
     ],
     "title": "ScriptedActualSurface",
     "uuid": "afb88e11-9894-494d-9fa5-f69d2124e9a5",
-    "version": "1.0.2",
+    "version": "1.0.1",
     "technical-category": "App Examples",
     "business-category": "minor",
     "compatible-software": ["ZEISS INSPECT Optical 3D", "ZEISS INSPECT X-Ray", "ZEISS INSPECT CMM", "ZEISS INSPECT VMM", "ZEISS CORRELATE"]
