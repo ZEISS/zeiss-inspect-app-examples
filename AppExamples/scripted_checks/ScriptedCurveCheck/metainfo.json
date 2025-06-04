@@ -16,7 +16,7 @@
     "tags": ["scripted-check", "curve"],
     "title": "ScriptedCurveCheck",
     "uuid": "9839d24c-2728-46c5-9468-fa65e38389bd",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "technical-category": "App Examples",
     "business-category": "minor",
     "compatible-software": ["ZEISS INSPECT Optical 3D", "ZEISS INSPECT X-Ray", "ZEISS INSPECT CMM", "ZEISS INSPECT VMM", "ZEISS CORRELATE"]
