@@ -17,7 +17,7 @@
     ],
     "title": "ScriptedActualVolume",
     "uuid": "a5a38b5b-5f22-442e-98a4-65782b24fe39",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "technical-category": "App Examples",
     "business-category": "minor",
     "compatible-software": ["ZEISS INSPECT Optical 3D", "ZEISS INSPECT X-Ray", "ZEISS INSPECT CMM", "ZEISS INSPECT VMM", "ZEISS CORRELATE"]
