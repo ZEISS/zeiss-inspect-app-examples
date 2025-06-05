@@ -4,7 +4,6 @@
 
 * Changed menu integration
 * Updated requirements
-  * numpy v2.0.2
   * pillow v11.2.1 
 
 ## Released at 2024-12-13 (v1.0.0)
