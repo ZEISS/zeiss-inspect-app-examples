@@ -1,4 +1,4 @@
-# Workspace editor tools
+# Workspace
 
 This App contains:
 
