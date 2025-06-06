@@ -8,6 +8,9 @@
   "labels": [
     "API"
   ],
+  "references": [
+    ["HowTo", "https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/adding_workspaces_to_apps/adding_workspaces_to_apps.html"]
+  ],
   "software-revision": "0000",
   "software-version": "ZEISS INSPECT 2023",
   "uuid": "3ccbed49-0ca8-4c90-b900-2c5255f9f939",
