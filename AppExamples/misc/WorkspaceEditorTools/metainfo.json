@@ -1,0 +1,18 @@
+{
+  "author": "Carl Zeiss GOM Metrology GmbH",
+  "title": "Workspace editor tools",
+  "description": "Tools for editing package based workspaces",
+  "tags": [
+    "api"
+  ],
+  "labels": [
+    "API"
+  ],
+  "software-revision": "0000",
+  "software-version": "ZEISS INSPECT 2023",
+  "uuid": "3ccbed49-0ca8-4c90-b900-2c5255f9f939",
+  "version": "1.0.3",
+  "technical-category": "App Examples",
+  "business-category": "minor",
+  "compatible-software": ["ZEISS INSPECT Optical 3D", "ZEISS INSPECT X-Ray", "ZEISS INSPECT CMM", "ZEISS INSPECT VMM", "ZEISS CORRELATE"]
+}
