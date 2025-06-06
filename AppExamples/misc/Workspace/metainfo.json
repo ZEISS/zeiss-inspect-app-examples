@@ -1,7 +1,7 @@
 {
   "author": "Carl Zeiss GOM Metrology GmbH",
-  "title": "Workspace editor tools",
-  "description": "Tools for editing package based workspaces",
+  "title": "Workspace",
+  "description": "Template for custom workspaces",
   "tags": [
     "api"
   ],

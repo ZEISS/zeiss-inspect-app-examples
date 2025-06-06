@@ -1,7 +1,8 @@
-# Release Notes WorkspaceEditorTools
+# Release Notes Workspace
 
 ## Released at 2025-06-30 (v1.0.3)
 
+* Renamed WorkspaceEditorTools to Workspace
 * Added group of scripts to the workspace toolbar
 * Added release notes
 * Updated documentation
