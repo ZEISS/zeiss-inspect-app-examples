@@ -13,13 +13,14 @@ misc/DialogReopenExample
 misc/FileSelectionAndFiltering
 #misc/IPCWebsocketBasics
 #misc/IPCWebsocketExample
-#misc/MeasurementSystemAnalysis
+misc/MeasurementSystemAnalysis
 misc/PointPixelTransformations
 misc/ProgressBar
 #misc/SQLExample
 misc/ServiceExample
 misc/SettingsAPI
 #misc/TextDetection
+#misc/Workspace
 projects/ExampleProjects
 script_icons/ScriptIcon
 script_resources/ResourceAccess
