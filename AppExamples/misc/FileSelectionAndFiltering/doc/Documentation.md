@@ -21,6 +21,6 @@ A detailed description can be found in the ZEISS Quality Tech Guide: [How Do I S
 
 * How-to: [Selecting a file or folder](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/python_api_introduction/file_selection_dialog.html)
 * [User defined dialogs &mdash; File widget](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/python_api_introduction/user_defined_dialogs.html#file-widget)
-* [User defined dialogs &mdash; File system browser widget](https://zeiss.github.io/zeiss-inspect-app-api/main/howtos/python_api_introduction/user_defined_dialogs.html#file-system-browser-widget)
+* [User defined dialogs &mdash; File system browser widget](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/python_api_introduction/user_defined_dialogs.html#file-system-browser-widget)
 * [Python3 documentation &mdash; os module &mdash; Files and direcories ](https://docs.python.org/3/library/os.html#files-and-directories)
 * [Python3 documentation &mdash; os.path module](https://docs.python.org/3/library/os.path.html)
