@@ -2,7 +2,7 @@
 data_interfaces/CheckResultsDataArray
 data_interfaces/ReferencePointsAndMeshData
 #data_interfaces/VolumeSectionImageData
-dialogWidgets/DropdownWidget
+dialog_widgets/DropdownWidget
 dialog_widgets/WidgetVisibility
 dialog_widgets/UnitDialogEventHandler
 dialog_widgets/ExplorerSelectedElementsInDialog
