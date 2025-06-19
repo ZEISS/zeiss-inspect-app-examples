@@ -10,7 +10,7 @@
 
 import gom
 
-# Importing, what we want to test
+# Importing what we want to test
 import dropdown_widget as example
 
 # Setup test project
@@ -24,5 +24,5 @@ import dropdown_widget as example
 def test_dropdown_widget():
     DIALOG = example.setup_dialog()
 
-    # Test if the widgets are initialized without unit
-    assert DIALOG.list.items == [' yes', 'we', 'can']
+    # Test if the widgets are initialized
+    assert DIALOG.list.items == ['yes', 'we', 'can']
