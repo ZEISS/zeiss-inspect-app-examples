@@ -185,7 +185,7 @@ def create_server_connection(host_name, user_name, user_password, database):
 
 #### Querying the database
 
-In this example, whe only use the project name for selecting database entries. The project names must be unique, so we use [MySQLCursor.fetchone()](https://dev.mysql.com/doc/connector-python/en/connector-python-api-mysqlcursor-fetchone.html) to get a single row from the `projects` table as result.
+In this example, we only use the project name for selecting database entries. The project names must be unique, so we use [MySQLCursor.fetchone()](https://dev.mysql.com/doc/connector-python/en/connector-python-api-mysqlcursor-fetchone.html) to get a single row from the `projects` table as result.
 
 ```python
 query = """SELECT company_name, department_name, part_name FROM projects
