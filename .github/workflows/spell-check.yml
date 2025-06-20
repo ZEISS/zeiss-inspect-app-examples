@@ -29,4 +29,4 @@ jobs:
 
     - name: Run codespell
       run: |
-        codespell --ignore-words-list="nd,thru" --skip="*.py" .
+        codespell --ignore-words-list="nd,thru" --skip="*.py,*.pdf,license.txt" .
