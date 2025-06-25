@@ -1,0 +1,36 @@
+{
+  "id": "9fa58ddf-638a-4818-8eb8-609ec3fb6757",
+  "name": "Custom wizard example",
+  "using": [
+    {
+      "name": "inspect",
+      "id": "bd0ec39e-4155-4d7d-9771-9ed0d5f86e59"
+    }
+  ],
+  "objects": [
+    {
+      "type": "NextPageEntry",
+      "name": "Custom wizard example",
+      "description": "hook for custom wizard assistant",
+      "page": "homepage",
+      "origin": "",
+      "id": "hook_for_inspect",
+      "position": {
+        "insert": "inspect/inspection_home",
+        "before": ""
+      }
+    },
+    {
+      "type": "MenuPage",
+      "id": "homepage",
+      "name": "custom wizard example homepage",
+      "entries": [
+        {
+          "type": "EmbeddedCommandPage",
+          "description": "Custom description for command",
+          "command": "userscript.workflows__wizard_workflow"
+        }
+      ]
+    }
+  ]
+}

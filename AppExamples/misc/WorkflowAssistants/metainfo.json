@@ -1,0 +1,23 @@
+{
+  "author": "Carl Zeiss GOM Metrology GmbH",
+  "description": "Examples for Workflow Assistants",
+  "labels": [],
+  "licensing": {
+    "licenses": [],
+    "product-codes": []
+  },
+  "references": [
+    ["HowTo", "https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/workflow_assistant/workflow_assistant.html"]
+  ],
+  "software-revision": "0000",
+  "software-version": "ZEISS INSPECT 2025",
+  "tags": [
+    "workflow-assistant", "workspace"
+  ],
+  "title": "WorkflowAssistants",
+  "uuid": "97d5c8a9-3737-4e6d-97d5-e88d6233fa91",
+  "version": "1.0.2",
+  "technical-category": "App Examples",
+  "business-category": "minor",
+  "compatible-software": ["ZEISS INSPECT Optical 3D", "ZEISS INSPECT X-Ray", "ZEISS INSPECT CMM", "ZEISS INSPECT VMM", "ZEISS CORRELATE"]
+}

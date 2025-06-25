@@ -1,0 +1,39 @@
+{
+    "content": [
+        [
+            {
+                "columns": 1,
+                "expanded": true,
+                "name": "information",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Action performed. Close dialog to complete step.",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "information"
+            }
+        ]
+    ],
+    "control": {
+        "id": "Close"
+    },
+    "embedding": "always_toplevel",
+    "position": "automatic",
+    "size": {
+        "height": 140,
+        "width": 211
+    },
+    "sizemode": "automatic",
+    "style": "",
+    "title": {
+        "id": "",
+        "text": "Dialog Title",
+        "translatable": true
+    }
+}

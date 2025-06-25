@@ -1,0 +1,459 @@
+{
+    "content": [
+        [
+            {
+                "columns": 1,
+                "name": "wizard",
+                "rows": 1,
+                "steps": [
+                    {
+                        "content": [
+                            [
+                                {
+                                    "columns": 1,
+                                    "expanded": true,
+                                    "name": "information_1",
+                                    "rows": 1,
+                                    "text": {
+                                        "id": "",
+                                        "text": "This is the first step of the wizard. Flip the toggle switch to complete it.",
+                                        "translatable": true
+                                    },
+                                    "tooltip": {
+                                        "id": "",
+                                        "text": "",
+                                        "translatable": true
+                                    },
+                                    "type": "information"
+                                }
+                            ],
+                            [
+                                {
+                                    "columns": 1,
+                                    "name": "checkbox_1",
+                                    "rows": 1,
+                                    "style": "toggle",
+                                    "title": {
+                                        "id": "",
+                                        "text": "Toggle to complete",
+                                        "translatable": true
+                                    },
+                                    "tooltip": {
+                                        "id": "",
+                                        "text": "",
+                                        "translatable": true
+                                    },
+                                    "type": "input::checkbox",
+                                    "value": false
+                                }
+                            ]
+                        ],
+                        "title": {
+                            "id": "",
+                            "text": "Initial Step",
+                            "translatable": true
+                        }
+                    },
+                    {
+                        "content": [
+                            [
+                                {
+                                    "columns": 1,
+                                    "expanded": true,
+                                    "name": "information",
+                                    "rows": 1,
+                                    "text": {
+                                        "id": "",
+                                        "text": "This step is optional. It can be completed by entering text in the box below. If the box is empty it can be skipped instead. If a separate skip button is shown, the step can be skipped even if it is completed.",
+                                        "translatable": true
+                                    },
+                                    "tooltip": {
+                                        "id": "",
+                                        "text": "",
+                                        "translatable": true
+                                    },
+                                    "type": "information"
+                                }
+                            ],
+                            [
+                                {
+                                    "columns": 1,
+                                    "name": "text_1",
+                                    "password": false,
+                                    "read_only": false,
+                                    "rows": 1,
+                                    "tooltip": {
+                                        "id": "",
+                                        "text": "",
+                                        "translatable": true
+                                    },
+                                    "type": "input::string",
+                                    "value": ""
+                                }
+                            ],
+                            [
+                                {
+                                    "columns": 1,
+                                    "name": "separate_skip_button",
+                                    "rows": 1,
+                                    "style": "toggle",
+                                    "title": {
+                                        "id": "",
+                                        "text": "Show separate skip button",
+                                        "translatable": true
+                                    },
+                                    "tooltip": {
+                                        "id": "",
+                                        "text": "",
+                                        "translatable": true
+                                    },
+                                    "type": "input::checkbox",
+                                    "value": false
+                                }
+                            ]
+                        ],
+                        "title": {
+                            "id": "",
+                            "text": "Optional Step",
+                            "translatable": true
+                        }
+                    },
+                    {
+                        "content": [
+                            [
+                                {
+                                    "columns": 1,
+                                    "expanded": true,
+                                    "name": "information_2",
+                                    "rows": 1,
+                                    "text": {
+                                        "id": "",
+                                        "text": "This is a step where the wizard diverges. Select an entry from the list to choose the step you want to go to. Click the button to complete the step.",
+                                        "translatable": true
+                                    },
+                                    "tooltip": {
+                                        "id": "",
+                                        "text": "",
+                                        "translatable": true
+                                    },
+                                    "type": "information"
+                                }
+                            ],
+                            [
+                                {
+                                    "columns": 1,
+                                    "default": "Option A",
+                                    "items": [
+                                        {
+                                            "id": "",
+                                            "text": "Option A",
+                                            "translatable": true
+                                        },
+                                        {
+                                            "id": "",
+                                            "text": "Option B",
+                                            "translatable": true
+                                        }
+                                    ],
+                                    "name": "list_1",
+                                    "rows": 1,
+                                    "tooltip": {
+                                        "id": "",
+                                        "text": "",
+                                        "translatable": true
+                                    },
+                                    "type": "input::list"
+                                }
+                            ],
+                            [
+                                {
+                                    "button_type": "push",
+                                    "columns": 1,
+                                    "icon": "AAAAAA==",
+                                    "icon_file_name": "",
+                                    "icon_size": {
+                                        "value": "icon"
+                                    },
+                                    "icon_system_size": {
+                                        "value": "default"
+                                    },
+                                    "icon_system_type": {
+                                        "value": "ok"
+                                    },
+                                    "icon_type": {
+                                        "value": "none"
+                                    },
+                                    "name": "button",
+                                    "rows": 1,
+                                    "text": {
+                                        "id": "",
+                                        "text": "Press to perform action",
+                                        "translatable": true
+                                    },
+                                    "tooltip": {
+                                        "id": "",
+                                        "text": "",
+                                        "translatable": true
+                                    },
+                                    "type": "button::pushbutton"
+                                }
+                            ]
+                        ],
+                        "title": {
+                            "id": "",
+                            "text": "Decider Step",
+                            "translatable": true
+                        }
+                    },
+                    {
+                        "content": [
+                            [
+                                {
+                                    "columns": 1,
+                                    "expanded": true,
+                                    "name": "information_3",
+                                    "rows": 1,
+                                    "text": {
+                                        "id": "",
+                                        "text": "This is branch A of the wizard. Flip the switch",
+                                        "translatable": true
+                                    },
+                                    "tooltip": {
+                                        "id": "",
+                                        "text": "",
+                                        "translatable": true
+                                    },
+                                    "type": "information"
+                                }
+                            ],
+                            [
+                                {
+                                    "columns": 1,
+                                    "name": "checkbox_2",
+                                    "rows": 1,
+                                    "style": "toggle",
+                                    "title": {
+                                        "id": "",
+                                        "text": "Toggle to complete",
+                                        "translatable": true
+                                    },
+                                    "tooltip": {
+                                        "id": "",
+                                        "text": "",
+                                        "translatable": true
+                                    },
+                                    "type": "input::checkbox",
+                                    "value": false
+                                }
+                            ]
+                        ],
+                        "title": {
+                            "id": "",
+                            "text": "Diverging Step - Option A",
+                            "translatable": true
+                        }
+                    },
+                    {
+                        "content": [
+                            [
+                                {
+                                    "columns": 1,
+                                    "expanded": true,
+                                    "name": "information_4",
+                                    "rows": 1,
+                                    "text": {
+                                        "id": "",
+                                        "text": "This is branch B of the wizard. Enter valid text.",
+                                        "translatable": true
+                                    },
+                                    "tooltip": {
+                                        "id": "",
+                                        "text": "",
+                                        "translatable": true
+                                    },
+                                    "type": "information"
+                                }
+                            ],
+                            [
+                                {
+                                    "columns": 1,
+                                    "name": "text_2",
+                                    "password": false,
+                                    "read_only": false,
+                                    "rows": 1,
+                                    "tooltip": {
+                                        "id": "",
+                                        "text": "",
+                                        "translatable": true
+                                    },
+                                    "type": "input::string",
+                                    "value": ""
+                                }
+                            ]
+                        ],
+                        "title": {
+                            "id": "",
+                            "text": "Diverging Step - Option B",
+                            "translatable": true
+                        }
+                    },
+                    {
+                        "content": [
+                            [
+                                {
+                                    "columns": 1,
+                                    "expanded": true,
+                                    "name": "information_5",
+                                    "rows": 1,
+                                    "text": {
+                                        "id": "",
+                                        "text": "This step has a branch button. The next step is chosen based on which button is pressed.",
+                                        "translatable": true
+                                    },
+                                    "tooltip": {
+                                        "id": "",
+                                        "text": "",
+                                        "translatable": true
+                                    },
+                                    "type": "information"
+                                }
+                            ],
+                            [
+                                {
+                                    "columns": 1,
+                                    "name": "checkbox_branch",
+                                    "rows": 1,
+                                    "style": "toggle",
+                                    "title": {
+                                        "id": "",
+                                        "text": "Toggle to complete",
+                                        "translatable": true
+                                    },
+                                    "tooltip": {
+                                        "id": "",
+                                        "text": "",
+                                        "translatable": true
+                                    },
+                                    "type": "input::checkbox",
+                                    "value": false
+                                }
+                            ]
+                        ],
+                        "title": {
+                            "id": "",
+                            "text": "Branching Step",
+                            "translatable": true
+                        }
+                    },
+                    {
+                        "content": [
+                            [
+                                {
+                                    "columns": 1,
+                                    "expanded": true,
+                                    "name": "information_6",
+                                    "rows": 1,
+                                    "text": {
+                                        "id": "",
+                                        "text": "There is nothing to do here except press the next button, which has a different lable here.",
+                                        "translatable": true
+                                    },
+                                    "tooltip": {
+                                        "id": "",
+                                        "text": "",
+                                        "translatable": true
+                                    },
+                                    "type": "information"
+                                }
+                            ]
+                        ],
+                        "title": {
+                            "id": "",
+                            "text": "Next Step",
+                            "translatable": true
+                        }
+                    },
+                    {
+                        "content": [
+                            [
+                                {
+                                    "columns": 1,
+                                    "expanded": true,
+                                    "name": "information_7",
+                                    "rows": 1,
+                                    "text": {
+                                        "id": "",
+                                        "text": "There is nothing to do here except press the next button, which has a different lable here.",
+                                        "translatable": true
+                                    },
+                                    "tooltip": {
+                                        "id": "",
+                                        "text": "",
+                                        "translatable": true
+                                    },
+                                    "type": "information"
+                                }
+                            ]
+                        ],
+                        "title": {
+                            "id": "",
+                            "text": "Alternative Step",
+                            "translatable": true
+                        }
+                    },
+                    {
+                        "content": [
+                            [
+                                {
+                                    "columns": 1,
+                                    "expanded": true,
+                                    "name": "information_8",
+                                    "rows": 1,
+                                    "text": {
+                                        "id": "",
+                                        "text": "This is the final step. The wizard can be closed by clicking the finish button, wich will return to the preveous MenuPage. By clicking on the branch button the next workflow can also be directly started.",
+                                        "translatable": true
+                                    },
+                                    "tooltip": {
+                                        "id": "",
+                                        "text": "",
+                                        "translatable": true
+                                    },
+                                    "type": "information"
+                                }
+                            ]
+                        ],
+                        "title": {
+                            "id": "",
+                            "text": "Final Step",
+                            "translatable": true
+                        }
+                    }
+                ],
+                "style": "list",
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "layout::wizard"
+            }
+        ]
+    ],
+    "control": {
+        "id": "Empty"
+    },
+    "embedding": "embedded_as_widget",
+    "position": "automatic",
+    "size": {
+        "height": 523,
+        "width": 453
+    },
+    "sizemode": "automatic",
+    "style": "",
+    "title": {
+        "id": "",
+        "text": "Dialog Title",
+        "translatable": true
+    }
+}

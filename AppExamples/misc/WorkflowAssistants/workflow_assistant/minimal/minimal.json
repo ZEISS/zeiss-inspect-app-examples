@@ -1,0 +1,57 @@
+{
+  "id": "8d7724f7-5cf3-4262-b39a-7228d69952e8",
+  "name": "Minimal example",
+  "using": [
+    {
+      "name": "inspect",
+      "id": "bd0ec39e-4155-4d7d-9771-9ed0d5f86e59"
+    }
+  ],
+  "objects": [
+    {
+      "type": "NextPageEntry",
+      "name": "Minimal example",
+      "description": "hook for example assistant",
+      "page": "homepage",
+      "id": "hook_for_inspect",
+      "position": {
+        "insert": "inspect/inspection_home",
+        "before": ""
+      }
+    },
+    {
+      "type": "MenuPage",
+      "id": "homepage",
+      "name": "a minimal homepage",
+      "entries": [
+        {
+          "type": "NextPageEntry",
+          "page": "create_diameter"
+        },
+        {
+          "type": "EmbeddedCommandPage",
+          "description": "Custom description for command",
+          "command": "comparison.create_multiple_surface_comparison_on_cad"
+        }
+      ]
+    },
+    {
+      "type": "WizardPage",
+      "id": "create_diameter",
+      "name": "(Page name) Diameter Inspections",
+      "description": "(Page description) Create diameter checks",
+      "icon": "cmd_inspect_diameter",
+      "steps": [
+        {
+          "type": "EmbeddedCommandStep",
+          "command": "primitive.cylinder_circle_quick_creation_draft",
+          "info": "Each step in a wizard references a command. An additional info box can be provided. The info box is separate for each command and may be omitted in each step (see next step)."
+        },
+        {
+          "type": "EmbeddedCommandStep",
+          "command": "internal.check_scalar_diameter"
+        }
+      ]
+    }
+  ]
+}
