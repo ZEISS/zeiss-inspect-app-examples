@@ -35,6 +35,10 @@ The translation ids are resolved using the resources in the '/languages' directo
 
 ### Custom wizard example
 
+```{caution}
+This example requires ZEISS INSPECT 2026 or later!
+```
+
 The 'custom_wizard' example demonstrates the creation of a script-based wizard that can be displayed in the Workflow Assistant.
 These can be used to implement custom behavior for workflows.
 
