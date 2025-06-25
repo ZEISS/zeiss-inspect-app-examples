@@ -355,7 +355,7 @@
                                     "rows": 1,
                                     "text": {
                                         "id": "",
-                                        "text": "There is nothing to do here except press the next button, which has a different lable here.",
+                                        "text": "There is nothing to do here except press the next button, which has a different label here.",
                                         "translatable": true
                                     },
                                     "tooltip": {
@@ -411,7 +411,7 @@
                                     "rows": 1,
                                     "text": {
                                         "id": "",
-                                        "text": "This is the final step. The wizard can be closed by clicking the finish button, wich will return to the preveous MenuPage. By clicking on the branch button the next workflow can also be directly started.",
+                                        "text": "This is the final step. The wizard can be closed by clicking the finish button, wich will return to the previous MenuPage. By clicking on the branch button the next workflow can also be directly started.",
                                         "translatable": true
                                     },
                                     "tooltip": {

@@ -182,7 +182,7 @@ DIALOG.checkbox_branch.handler = complete_with_branch_button
 
 #
 # The next button also does not always have to be labeled as such.
-# We can then also set steps completed from the start of cause.
+# We can then also set steps completed from the start of course.
 #
 DIALOG.wizard.step_set_next_button_text(NEXT_STEP, "Do the thing")
 DIALOG.wizard.step_set_next_button_text(ALTERNATIVE_STEP, "Do the other thing")
@@ -236,7 +236,7 @@ def wizard_handler(params):
     if params["step"] == INITIAL_STEP:
         #
         # And then we would filter by event type.
-        # Not all types need to be considered for every step of cause.
+        # Not all types need to be considered for every step of course.
         #
         if params["type"] == "initialized":
             #
@@ -283,7 +283,7 @@ def wizard_handler(params):
 
     #
     # We can also check the step and type together.
-    # In this case we handle the branch button on the final step to go directly to the lable wizard in the Workflow Assistant.
+    # In this case we handle the branch button on the final step to go directly to the label wizard in the Workflow Assistant.
     # However we need to first close the dialog so that it is successfully finished instead of aborted when the Workflow Assistant page changes.
     #
     if params["step"] == FINAL_STEP and params["type"] == "branched":
