@@ -37,7 +37,7 @@ with gom.api.progress.ProgressBar() as bar:
         time.sleep(0.1)
         # Increase the progress
         bar.set_progress(i)
-    bar.set_message("That's enough to buy a coffee - stoppping for a coffee break!")
+    bar.set_message("That's enough to buy a coffee - stopping for a coffee break!")
     time.sleep(5)
     # Remove progress bar
     bar.finish_progress()
