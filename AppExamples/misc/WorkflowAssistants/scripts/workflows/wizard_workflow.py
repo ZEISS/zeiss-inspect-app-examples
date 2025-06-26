@@ -255,7 +255,7 @@ def wizard_handler(params):
             pass
         elif params["type"] == "committed":
             #
-            # The current step has committed by the user.
+            # The current step has been committed by the user.
             #
             # Finalize actions relevant to the step, e.g., create some (intermediate) element based on the current Dialog parameters.
             #
