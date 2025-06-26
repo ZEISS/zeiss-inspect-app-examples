@@ -43,12 +43,12 @@ FINAL_STEP = 8
 # Now we define a few event handler functions that can react to actions by the user.
 # These can be attached to (one or more) individual dialog widgets to only receive events from those specific widgets.
 #
-# We can also attache one handler to the dialog itself.
+# We can also attach one handler to the dialog itself.
 # In this handler the widget argument can then be checked against the widgets we want to react to.
 #
 
 #
-# Before a user is allowed to proceed to the next step, they usually have to complete one ore more actions.
+# Before a user is allowed to proceed to the next step, they usually have to complete one or more actions.
 # Here they just have to flip a toggle button.
 # The handler connected to that button then sets the complete state of the step, which enables the next button.
 # We could also connect the same handler to multiple widgets in one step to check if their values are all valid.
@@ -225,7 +225,7 @@ DIALOG.wizard.step_set_branch_button_text(FINAL_STEP, "Deviation Labels")
 def wizard_handler(params):
     '''
     General function to react to changes of the wizard step.
-    This can be used to perform action when initializing or commiting a wizard step.
+    This can be used to perform action when initializing or committing a wizard step.
     '''
 
     print(f'Step {params["step"]}: {params["type"]}')
