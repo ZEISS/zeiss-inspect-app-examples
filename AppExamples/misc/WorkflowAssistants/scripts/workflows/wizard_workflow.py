@@ -242,7 +242,7 @@ def wizard_handler(params):
             #
             # A new step has been reached.
             #
-            # Do setup for the new wizard step here, e.g., change the selection.
+            # Do setup for the new wizard step here, e.g. change the selection.
             #
             pass
         elif params["type"] == "discarded":
