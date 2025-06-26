@@ -448,7 +448,7 @@ for element in elements:
 
         #
         # Convert back into string representation and add the original worksheet header
-        # containig the namespace definitions again.
+        # containing the namespace definitions again.
         #
         with open(os.path.join(tempdir, IMPORT_SHEET_FILE_NAME), 'w') as file:
             file.write(insert_worksheet_header(str(ET.tostring(import_root), 'utf-8'), worksheet_header))
