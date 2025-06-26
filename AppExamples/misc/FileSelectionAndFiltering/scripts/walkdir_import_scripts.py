@@ -34,7 +34,7 @@ RESULT=gom.script.sys.execute_user_defined_dialog (dialog={
                 },
                 "tooltip": {
                     "id": "",
-                    "text": "Klick to select a folder",
+                    "text": "Click to select a folder",
                     "translatable": True
                 },
                 "type": "input::file"
