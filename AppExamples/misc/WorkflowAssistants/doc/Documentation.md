@@ -42,7 +42,7 @@ This example requires ZEISS INSPECT 2026 or later!
 The 'custom_wizard' example demonstrates the creation of a script-based wizard that can be displayed in the Workflow Assistant.
 These can be used to implement custom behavior for workflows.
 
-Please see the implementation details and additional comments in the script file '/scripts/wizard_workflow.py'.
+Please see the implementation details and additional comments in the script file 'scripts/wizard_workflow.py'.
 
 
 ### Custom workspace with custom Workflow Assistant
