@@ -3,7 +3,7 @@
   "title": "Workspace",
   "description": "Template for custom workspaces",
   "tags": [
-    "api"
+    "api", "workspace"
   ],
   "labels": [
     "API"

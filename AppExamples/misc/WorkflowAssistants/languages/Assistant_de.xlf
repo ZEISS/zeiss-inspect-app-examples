@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.1" version="1.1">
+	<file original="translation.json" datatype="json" target-language="en" source-language="de">
+		<group restype="x-gettext-domain" resname="translation.json">
+      <trans-unit id="assistantmsg80828">
+				<source xml:space="preserve">Deviation Labels</source>
+				<target xml:space="preserve">Abweichungsfähnchen</target>
+			</trans-unit>
+			<trans-unit id="assistantmsg80829">
+				<source xml:space="preserve">Visualize local deviations numerically</source>
+				<target xml:space="preserve">Lokale Abweichungen numerisch visualisieren</target>
+			</trans-unit>
+			<trans-unit id="assistantmsg81383">
+				<source xml:space="preserve">Create Deviation Label</source>
+				<target xml:space="preserve">Abweichungsfähnchen erzeugen</target>
+			</trans-unit>
+			<trans-unit id="assistantmsg81384">
+				<source xml:space="preserve">To visualize local deviations numerically, create deviation labels on the color representation in the 3D view. To finish or cancel the creation, press ESC/RMB.</source>
+				<target xml:space="preserve">Um lokale Abweichungen numerisch zu visualisieren, erzeugen Sie Abweichungsfähnchen auf der farbigen Darstellung in der 3D-Ansicht.  Um die Erzeugung zu beenden oder abzubrechen, drücken Sie ESC oder RMB.</target>
+			</trans-unit>
+			<trans-unit id="assistantmsg81385">
+				<source xml:space="preserve">Compute statistics for deviation analysis on an inspection element with color deviation representation. Select an area on the color deviation representation with any of the point selection functions.</source>
+				<target xml:space="preserve">Berechnen Sie Statistiken für Abweichungsanalysen auf einem Inspektionselement mit einer farbigen Abweichungsdarstellung. Selektieren Sie mit einer beliebigen Punktselektionsfunktion einen Bereich auf der farbigen Abweichungsdarstellung.</target>
+			</trans-unit>
+			<trans-unit id="assistantmsg81386">
+				<source xml:space="preserve">Create evenly distributed deviation labels on color deviation representations and inspection sections. The deviation representation must be selected in the explorer and visible in the 3D view.</source>
+				<target xml:space="preserve">Erzeugen Sie gleichmäßig verteilte Abweichungsfähnchen auf farbigen Abweichungsdarstellungen und Inspektionsschnitten. Die Abweichungsdarstellung muss im Explorer selektiert und in der 3D-Ansicht sichtbar sein.</target>
+			</trans-unit>
+      <trans-unit id="assistantmsg99998">
+				<source xml:space="preserve">Hook for Translation Example</source>
+				<target xml:space="preserve">Anker für das Übersetzungsbeispiel</target>
+			</trans-unit>
+      <trans-unit id="assistantmsg99999">
+				<source xml:space="preserve">The Translation Homepage</source>
+				<target xml:space="preserve">Die Übersetzungs-Homepage</target>
+			</trans-unit>
+		</group>
+	</file>
+</xliff>

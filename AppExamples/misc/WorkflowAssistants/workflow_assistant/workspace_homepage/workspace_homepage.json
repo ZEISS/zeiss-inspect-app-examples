@@ -1,0 +1,57 @@
+{
+  "id": "e04c76b0-8431-41b2-8efb-a34a2db96113",
+  "name": "Workspace homepage",
+  "using": [
+    {
+      "name": "wizard",
+      "id": "9fa58ddf-638a-4818-8eb8-609ec3fb6757"
+    },
+    {
+      "name": "minimal",
+      "id": "8d7724f7-5cf3-4262-b39a-7228d69952e8"
+    },
+    {
+      "name": "translation",
+      "id": "d11d40a2-ede6-4085-b6d1-cf6be0335d0e"
+    },
+    {
+      "name": "service",
+      "id": "3683d02b-5123-41d5-a14c-c27643fb57bd"
+    },
+    {
+      "name": "inspect",
+      "id": "bd0ec39e-4155-4d7d-9771-9ed0d5f86e59"
+    }
+  ],
+  "objects": [
+    {
+      "type": "MenuPage",
+      "id": "example_workspace_homepage",
+      "name": "Personalized homepage",
+      "entries": [
+        {
+          "type": "NextPageEntry",
+          "page": "minimal/homepage"
+        },
+        {
+          "type": "NextPageEntry",
+          "page": "translation/homepage"
+        },
+        {
+          "type": "NextPageEntry",
+          "page": "wizard/homepage"
+        },
+        {
+          "type": "NextPageEntry",
+          "page": "service/homepage"
+        },
+        {
+          "type": "NextPageEntry",
+          "page": "inspect/inspection_home",
+          "name": "Inspection Digitize",
+          "description": "Link to the original Inspection Digitize Workflow Assistant"
+        }
+      ]
+    }
+  ]
+}

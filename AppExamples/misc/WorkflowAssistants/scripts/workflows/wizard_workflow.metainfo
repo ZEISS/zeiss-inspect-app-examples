@@ -1,0 +1,22 @@
+{
+    "display_name": "wizard_workflow",
+    "folded_blocks": [],
+    "icon": "icon.png",
+    "iinspect_condition": "",
+    "interactive": false,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [],
+            "type": "command"
+        },
+        "script": "userscript.workflows__wizard_workflow",
+        "submenu": []
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "none",
+    "show_in_iinspect": false,
+    "show_in_menu": true,
+    "uuid": "3e328228-8ef0-48d9-be8b-f891ff28c447"
+}
