@@ -30,7 +30,7 @@ The basic building blocks for the menu structure are:
 
 The translation example demonstrates the format of translatable texts in the Workflow Assistant. 
 All text entries that are directly visible to the user can be given as 'TranslatableText' entry, containing the base text and a translation id.
-The translation ids are resolved using the resources in the '/languages' directory.
+The translation ids are resolved using the resources in the 'languages/' directory.
 
 
 ### Custom wizard example
