@@ -41,7 +41,8 @@ Users may utilize these examples at their own risk, and ZEISS assumes no liabili
 | <a id="SettingsAPI">SettingsAPI</a><br>[view](misc/SettingsAPI/doc/Documentation.md)  / [download](https://software-store.zeiss.com/products/apps/settings-a-p-i) | Example App demonstrating usage of the settings API | | [API](https://zeiss.github.io/zeiss-inspect-app-api/2025/python_api/python_api.html#gom-api-settings)<br> | ZEISS INSPECT 2023 | [![Static Badge](https://img.shields.io/badge/settings-blue)](#settings)<br> |
 | <a id="TemplateUnittestCoverage">TemplateUnittestCoverage</a><br>[view](misc/TemplateUnittestCoverage/doc/Documentation.md)  | App template for running unit testing and generating a test coverage report | | [HowTo](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/testing_apps/testing_apps.html)<br> | ZEISS INSPECT 2023 | [![Static Badge](https://img.shields.io/badge/testing-blue)](#testing)<br> |
 | <a id="TextDetection">TextDetection</a><br>[view](misc/TextDetection/doc/Documentation.md)  | Text detection example | |  | ZEISS INSPECT 2023 | [![Static Badge](https://img.shields.io/badge/measurement-blue)](#measurement)<br>[![Static Badge](https://img.shields.io/badge/image--widget-blue)](#image-widget)<br> |
-| <a id="Workspace">Workspace</a><br>[view](misc/Workspace/doc/Documentation.md)  | Template for custom workspaces | | [HowTo](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/adding_workspaces_to_apps/adding_workspaces_to_apps.html)<br> | ZEISS INSPECT 2023 | [![Static Badge](https://img.shields.io/badge/api-blue)](#api)<br> |
+| <a id="WorkflowAssistants">WorkflowAssistants</a><br>[view](misc/WorkflowAssistants/doc/Documentation.md)  | Examples for Workflow Assistants | | [HowTo](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/workflow_assistant/workflow_assistant.html)<br> | ZEISS INSPECT 2025 | [![Static Badge](https://img.shields.io/badge/workflow--assistant-blue)](#workflow-assistant)<br>[![Static Badge](https://img.shields.io/badge/workspace-blue)](#workspace)<br> |
+| <a id="Workspace">Workspace</a><br>[view](misc/Workspace/doc/Documentation.md)  | Template for custom workspaces | | [HowTo](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/adding_workspaces_to_apps/adding_workspaces_to_apps.html)<br> | ZEISS INSPECT 2023 | [![Static Badge](https://img.shields.io/badge/api-blue)](#api)<br>[![Static Badge](https://img.shields.io/badge/workspace-blue)](#workspace)<br> |
 
 ## projects &mdash; ZEISS INSPECT projects
 
@@ -374,6 +375,17 @@ Users may utilize these examples at their own risk, and ZEISS assumes no liabili
 ### <a name="widget-properties"></a>![Static Badge](https://img.shields.io/badge/widget--properties-blue)
 
 * [WidgetVisibility](#WidgetVisibility)
+
+
+### <a name="workflow-assistant"></a>![Static Badge](https://img.shields.io/badge/workflow--assistant-blue)
+
+* [WorkflowAssistants](#WorkflowAssistants)
+
+
+### <a name="workspace"></a>![Static Badge](https://img.shields.io/badge/workspace-blue)
+
+* [WorkflowAssistants](#WorkflowAssistants)
+* [Workspace](#Workspace)
 
 
 ### <a name="xray"></a>![Static Badge](https://img.shields.io/badge/xray-blue)
