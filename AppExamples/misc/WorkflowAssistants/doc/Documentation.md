@@ -15,7 +15,7 @@ The basic building blocks for the menu structure are:
     - A menu page with multiple entries that can be shown in the Workflow Assistant view.
 
 2. NextPageEntry
-    - A menu entry that allows the user to navigate to another menu or wizard page
+    - A menu entry that allows the user to navigate to another menu or wizard page.
     - Uses 'name', 'icon' and 'description' of referenced page if not given explicitly.
 
 3. EmbeddedCommandPage
@@ -23,7 +23,7 @@ The basic building blocks for the menu structure are:
 
 4. WizardPage
     - A page to show multiple commands as a sequence in a wizard layout.
-    - EmbeddedCommandStep is used to represent each step
+    - EmbeddedCommandStep is used to represent each step.
     
     
 ### Translation example
