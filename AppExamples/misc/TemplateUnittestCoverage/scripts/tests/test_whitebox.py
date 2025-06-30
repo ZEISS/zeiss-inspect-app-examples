@@ -2,7 +2,7 @@
 #
 # test_blackbox.py
 #
-# The test calls the function get_project_keywords() from the script (UUT) and checks the return value (actual) agains the expected result (EXPECTED)
+# The test calls the function get_project_keywords() from the script (UUT) and checks the return value (actual) against the expected result (EXPECTED)
 #
 # Carl Zeiss GOM Metrology GmbH, 2024
 # 

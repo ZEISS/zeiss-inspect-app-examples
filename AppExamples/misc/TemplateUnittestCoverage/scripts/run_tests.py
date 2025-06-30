@@ -2,7 +2,7 @@
 #
 # run_tests.py
 #
-# Test framwork using 
+# Test framework using 
 # unitest (https://docs.python.org/3/library/unittest.html)
 # and
 # Coverage.py (https://coverage.readthedocs.io/)

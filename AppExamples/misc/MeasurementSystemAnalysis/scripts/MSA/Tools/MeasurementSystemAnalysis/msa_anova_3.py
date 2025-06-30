@@ -206,7 +206,7 @@ def create_anova_3_table_template(template_name, config):
         row.attrib['index'] = '0'
 
         #
-        # Fill entry colums. The number of cells here must match the number of header texts above.
+        # Fill entry columns. The number of cells here must match the number of header texts above.
         #
         gauge_rr_expression = create_anova_3_rr_expression(type, config)
 
