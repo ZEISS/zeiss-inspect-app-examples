@@ -9,17 +9,6 @@
   ],
   "objects": [
     {
-      "type": "NextPageEntry",
-      "name": "Minimal example",
-      "description": "hook for example assistant",
-      "page": "homepage",
-      "id": "hook_for_inspect",
-      "position": {
-        "insert": "inspect/inspection_home",
-        "before": ""
-      }
-    },
-    {
       "type": "MenuPage",
       "id": "homepage",
       "name": "a minimal homepage",
@@ -34,6 +23,17 @@
           "command": "comparison.create_multiple_surface_comparison_on_cad"
         }
       ]
+    },
+    {
+      "type": "NextPageEntry",
+      "name": "Minimal example",
+      "description": "hook for example assistant",
+      "page": "homepage",
+      "id": "hook_for_inspect",
+      "position": {
+        "insert": "inspect/inspection_home",
+        "before": ""
+      }
     },
     {
       "type": "WizardPage",
