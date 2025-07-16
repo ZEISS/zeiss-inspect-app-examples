@@ -1,0 +1,29 @@
+{
+    "display_name": "testrunner",
+    "folded_blocks": [
+    ],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": false,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+                "macro"
+            ],
+            "type": "command"
+        },
+        "script": "userscript.tests__testrunner",
+        "submenu": [
+            "App Examples",
+            "misc",
+            "PytestTemplate"
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "none",
+    "show_in_iinspect": false,
+    "show_in_menu": false,
+    "uuid": "f5aae4c2-8dd1-44b1-bc11-71a440a40fcc"
+}

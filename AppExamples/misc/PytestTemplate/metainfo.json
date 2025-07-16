@@ -1,0 +1,35 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "business-category": "minor",
+    "compatible-software": [
+        "ZEISS INSPECT Optical 3D",
+        "ZEISS INSPECT X-Ray",
+        "ZEISS INSPECT CMM",
+        "ZEISS INSPECT VMM",
+        "ZEISS CORRELATE"
+    ],
+    "description": "App template for running integration tests with coverage using pytest",
+    "labels": [
+    ],
+    "licensing": {
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
+    },
+    "references": [
+        [
+            "HowTo",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/testing_apps/testing_apps.html"
+        ]
+    ],
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2025",
+    "tags": [
+        "testing"
+    ],
+    "technical-category": "App Examples",
+    "title": "PytestTemplate",
+    "uuid": "d085fe43-f802-4e28-8620-1751fc300a66",
+    "version": "1.0.0"
+}
