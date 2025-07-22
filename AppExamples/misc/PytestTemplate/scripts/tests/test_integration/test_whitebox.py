@@ -10,7 +10,7 @@
 
 import gom
 
-# Name of the UUT script
+# Name of the UUT (unit-under-test) script
 import uut_project_keywords
 
 

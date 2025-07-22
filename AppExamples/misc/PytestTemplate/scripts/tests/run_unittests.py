@@ -1,40 +1,36 @@
-"""App test runner using pytest ()
-
-Runs all test cases in the App's scripts/tests/ folder and its subfolders.
-see https://docs.pytest.org/
-
-Carl Zeiss GOM Metrology GmbH, 2025
-"""
-
-import gom
 import sys
 import os
 import json
 import pytest
 from datetime import datetime
 
-VERSION = gom.app.application_build_information.version.split()[0]
+class MockGom:
+    """Define a mock version of the 'gom' module
 
-class PseudoTTY:
-    """Patch for terminal output in ZEISS INSPECT
+    This allows to import a unit-under-test into unit test cases,
+    even if it contains an 'import gom' command.
+    Provide any functions or attributes that the UUT expects, but
+    where the functionality is actually not needed for unit tests.
     """
-    def __init__(self, underlying):
-        self.__underlying = underlying
+    def mock_function(self):
+        """Dummy method"""
+        return "This is a mock function."
 
-    def __getattr__(self, name):
-        return getattr(self.__underlying, name)
+    def run_function(self, original_function):
+        """run_function() is required by ZEISS INSPECT test runner"""
+        def wrapped_function(*args, **kwargs):
+            # Log the function name and arguments
+            #print(f"Calling function: {original_function.__name__}")
+            #print(f"Arguments: {args}, {kwargs}")
 
-    def isatty(self):
-        """Pretend to be a TTY"""
-        return True
+            # Call the original function
+            result = original_function(*args, **kwargs)
 
-    def write(self, message):
-        """Write the message to the underlying stream (file)"""
-        self.__underlying.write(message)
+            # Optionally log the result
+            #print(f"Result: {result}")
 
-    def flush(self):
-        """Ensure that the underlying stream is flushed"""
-        self.__underlying.flush()
+            return result
+        return wrapped_function
 
 def read_config(file_path):
     """Read configuration values from a JSON file."""
@@ -83,7 +79,7 @@ def main(config):
     '''Run tests and generate coverage report'''
 
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    print(f'ZEISS INSPECT {VERSION} Testrunner Logfile, created {timestamp}\n')
+    print(f'Unit Test Runner Logfile, created {timestamp}\n')
 
     # Get test case folder
     tests_path = os.path.dirname(os.path.abspath(__file__))
@@ -95,8 +91,8 @@ def main(config):
     if not os.path.exists(reports_path):
         reports_path = os.path.join(tests_path, reports_path)
 
-    junit_path = os.path.join(reports_path, "junit", f"integration-test-sw{VERSION}-results.xml")
-    html_path =  os.path.join(reports_path, "html", f"integration-test-sw{VERSION}-results.html")
+    junit_path = os.path.join(reports_path, "junit", "unit-test-results.xml")
+    html_path =  os.path.join(reports_path, "html", "unit-test-results.html")
 
     cov_path = os.path.join(reports_path, 'cov')
     if not os.path.exists(cov_path):
@@ -105,7 +101,7 @@ def main(config):
         except Exception as e:
             print(f"An error occurred: {e}")
 
-    os.chdir(cov_path)
+    #os.chdir(cov_path)
 
     pytest_args = [
         f"{tests_path}", 
@@ -113,7 +109,9 @@ def main(config):
         "-vv", 
         "--durations", "0", 
         "--junitxml", f"{junit_path}",
-        "--html", f"{html_path}"
+        "--html", f"{html_path}",
+        "--cov-report", f"html:{os.path.join(cov_path, 'unittest-coverage')}",
+        "--cov-report", f"xml:{os.path.join(cov_path, 'unittest-coverage.xml')}"
     ]
 
     if 'pytest_cfg' in config and config['pytest_cfg']:
@@ -129,38 +127,17 @@ def main(config):
 
     print('\n')
     print(f"Test Report: file://{html_path}")
-    print(f"Coverage Report: file://{cov_path}/integrationtest-coverage/index.html")
+    print(f"Coverage Report: file://{cov_path}/unittest-coverage/index.html")
     return rv
 
 if __name__ == "__main__":
-    addon = gom.api.addons.get_current_addon()
-    is_finalized = addon.get_file().endswith('.addon')
-    assert not is_finalized, "ERROR: App must be in editing mode or in connected folder!"
-    
-    gom.script.sys.update_addon_database()
     scripts_dir = get_scripts_path()
 
-    test_config = read_config(os.path.join(scripts_dir, "tests", "testrunner_config.json"))
+    test_config = read_config(os.path.join(scripts_dir, "tests", "run_unittests_config.json"))
 
-    if 'pytest_log_dir' in test_config:
-        log_path = test_config['pytest_log_dir']
-        if not os.path.exists(log_path):
-            log_path = os.path.join(scripts_dir, 'tests', log_path)
-        assert os.access(log_path, os.W_OK), "ERROR: Log directory is not writable!"
-        log_path = os.path.join(log_path, f"pytest_sw{VERSION}.log")
-        print(f"See {log_path}") 
-        with open(os.path.join(log_path), 'w', encoding='cp437') as f:
-            sys.stdout = PseudoTTY(f)
-            sys.stderr = PseudoTTY(f)
-            prepare_sys_path(scripts_dir)
-            main(test_config)
-    else:
-        sys.stdout = PseudoTTY(sys.stdout)
-        main(test_config)
+    prepare_sys_path(scripts_dir)
 
-    # Catch exception in case the script was started from the App Editor
-    try:
-        # Works with ZEISS INSPECT SW2025 and newer
-        gom.script.sys.exit_program (0)
-    except gom.RequestError:
-        pass
+    # Add the mock gom module to sys.modules
+    sys.modules['gom'] = MockGom()
+
+    main(test_config)

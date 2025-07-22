@@ -11,4 +11,5 @@
 import gom
 
 def test_pass():
+    """This test has no unit-under-test and always passes"""
     assert True
