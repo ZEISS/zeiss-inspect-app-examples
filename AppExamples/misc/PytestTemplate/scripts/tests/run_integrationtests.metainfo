@@ -13,7 +13,7 @@
             ],
             "type": "command"
         },
-        "script": "userscript.tests__testrunner",
+        "script": "userscript.tests__run_integrationtests",
         "submenu": [
             "App Examples",
             "misc",
