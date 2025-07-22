@@ -1,5 +1,4 @@
 {
     "pytest_cfg": "pytest_unittest_coverage.ini",
-    "pytest_log_dir": "log",
     "reports_dir": "reports"
 }
