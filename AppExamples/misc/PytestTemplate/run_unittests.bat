@@ -14,7 +14,6 @@
 ::   -- install with initial run (see below)
 :: * Set zixVersion to the ZEISS INSPECT version to select the Python interpreter
 :: * Set ZIX_VERSIONS to the ZEISS INSPECT versions you want to use for testing
-:: * See scripts/tests/log/ for logfiles.
 :: * See doc/ for more information.
 :: ###########################################################################
 
@@ -23,12 +22,8 @@ setlocal
 set ZIX_VERSION=2025
 set "PYTHON_EXE=C:\Program Files\Zeiss\INSPECT\%ZIX_VERSION%\python\python.exe"
 
-:: Uncomment the following lines to install pytest and its
-:: required submodules with initial run
-rem call "%PYTHON_EXE%" -m pip install pytest
-rem call "%PYTHON_EXE%" -m pip install pytest-cov
-rem call "%PYTHON_EXE%" -m pip install pytest-html
-rem call "%PYTHON_EXE%" -m pip install pytest-xdist
+:: Comment out the following line to reduce startup time
+call "%PYTHON_EXE%" -m pip install -r scripts\modules\requirements.txt
 
 call "%PYTHON_EXE%" .\scripts\tests\run_unittests.py
 
