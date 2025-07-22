@@ -15,7 +15,7 @@ import gom
 # Note: This entire script is run by test_blackbox
 ####################################################################################
 
-# Create a new project. This will rais an exception if a project is already open - which is fine.
+# Create a new project. This will raise an exception if a project is already open - which is fine.
 try:
     gom.script.sys.create_project ()
 except:
