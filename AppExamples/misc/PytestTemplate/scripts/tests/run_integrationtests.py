@@ -142,7 +142,7 @@ if __name__ == "__main__":
     gom.script.sys.update_addon_database()
     scripts_dir = get_scripts_path()
 
-    test_config = read_config(os.path.join(scripts_dir, "tests", "integrationtests_config.json"))
+    test_config = read_config(os.path.join(scripts_dir, "tests", "run_integrationtests_config.json"))
 
     if 'pytest_log_dir' in test_config:
         log_path = test_config['pytest_log_dir']
