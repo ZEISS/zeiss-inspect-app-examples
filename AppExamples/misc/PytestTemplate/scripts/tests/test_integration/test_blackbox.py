@@ -5,7 +5,7 @@
 # This test runs the Unit Under Test (UUT) as script and treats it as opaque. After running it, the ZEISS INSPECT project
 # is checked for the expected changes of state (in this example: project keywords).
 #
-# Carl Zeiss GOM Metrology GmbH, 2024
+# Carl Zeiss GOM Metrology GmbH, 2025
 # 
 # ---
 
@@ -14,6 +14,8 @@ import os
 
 def test_blackbox():
     '''Executing the UUT as the entire script'''
+    gom.script.sys.close_project()
+    gom.script.sys.create_project()
 
     # Add-on relative path to UUT
     uut_path = 'scripts/uut_project_keywords.py'
