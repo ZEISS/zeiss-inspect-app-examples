@@ -8,7 +8,7 @@
         "ZEISS INSPECT VMM",
         "ZEISS CORRELATE"
     ],
-    "description": "App template for running integration tests with coverage using pytest",
+    "description": "App template for running integration tests and unit tests with coverage using pytest",
     "labels": [
     ],
     "licensing": {
@@ -22,6 +22,13 @@
             "HowTo",
             "https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/testing_apps/testing_apps.html"
         ]
+    ],
+    "services": [
+        {
+            "endpoint": "gom.api.myservice",
+            "name": "Pytest Reflector",
+            "script": "services/reflector.py"
+        }
     ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2025",
