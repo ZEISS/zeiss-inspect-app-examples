@@ -1,8 +1,11 @@
 # PytestTemplate
 
-Template for App integration testing using pytest
+Template for App integration testing and unit testing using pytest
 
 Generates test reports and test coverage reports.
+
+* **Integration testing**: Test cases are running in ZEISS INSPECT
+* **Unit testing**: Test cases are running in standalone Python interpreter
 
 Python package requirements:
 * [pytest](https://pypi.org/project/pytest/)
@@ -21,6 +24,12 @@ Python package requirements:
 > [!NOTE]
 > The unit tests are run from a command line &ndash; Windows command prompt (`run_unittests.bat`) or PowerShell (`run_unittests.ps1`).
 
+> [!NOTE]
+> A service "Pytest Reflector" is provided as an example by this App. It is used in the test case `test_service.py`.
+
+> [!CAUTION]
+> Test coverage does not include scripted elements and services, because those features are running in separate Python interpreter processes!
+
 ## App Contents
 
 - `run_integrationtests.bat` - Script for running integration tests from Windows command prompt
@@ -28,12 +37,20 @@ Python package requirements:
 - `run_unittests.bat` - Script for running unit tests from Windows command prompt
 - `run_unittests.ps1` - Script for running unit tests from Windows PowerShell
 - `scripts/` - Scripts folder
+   - `scripted_elements` - Scripted elements folder
+      - `Scripted_Circle.py` - Scripted actual circle example
+      - `Scripted_Circle.gdlg` - Dialog definition for scripted actual circle example
+   - `services/` - Service scripts folder
+      - `reflector.py` - Example service script
    - `uut_project_keywords.py` - Example (dummy) App as Unit Under Test (UUT)
-   - `tests/` - Test case folder
+   - `tests/` - Testcase folder
       - `test_integration` - Test group folder for integration tests (just as an example)
-         - `test_blackbox.py` - Example test case which treats the UUT as black box. It executes the UUT as script and checks the ZEISS INSPECT project for the expected changes of state afterwards (in this example: set project keywords).
+         - `test_blackbox.py` - Example testcase which treats the UUT as black box. It executes the UUT as script and checks the ZEISS INSPECT project for the expected changes of state afterwards (in this example: set project keywords).
          - `test_fail.py` - Dummy testcase which always fails
+         - `test_dialog.py` - Example testcase for user-defined dialogs
          - `test_pass.py` - Dummy testcase which always passes
+         - `test_scripted_element.py` - Example testcase for scripted elements
+         - `test_service.py` - Example testcase for services
          - `test_whitebox.py` - Example testcase which calls the UUT function `get_project_keywords()` and checks its return value
       - `test_units` - Test group folder for unit tests (just as an example)
          - `test_units.py` - Unit testcase
@@ -72,7 +89,7 @@ See [pytest documentation](https://pytest-html.readthedocs.io/en/latest/) for mo
 
 ### Unit Tests
 
-#### Testrunnder
+#### Testrunner
 
 `run_unittests_config.json`
 
@@ -92,4 +109,7 @@ See [pytest documentation](https://pytest-html.readthedocs.io/en/latest/) and
 
 ## See also
 
-See https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/testing_apps/testing_apps.html for more information.
+* [Testing Apps](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/testing_apps/testing_apps.html)
+* [Scripted elements](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/scripted_elements/scripted_elements_toc.html)
+* [Using services](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/using_services/using_services.html)
+
