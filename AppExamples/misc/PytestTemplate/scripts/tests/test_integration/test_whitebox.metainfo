@@ -12,7 +12,7 @@
             ],
             "type": "command"
         },
-        "script": "userscript.tests__test_whitebox",
+        "script": "userscript.tests__test_integration__test_whitebox",
         "submenu": [
         ]
     },
