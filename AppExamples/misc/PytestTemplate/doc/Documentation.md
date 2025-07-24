@@ -101,7 +101,7 @@ See [pytest documentation](https://pytest-html.readthedocs.io/en/latest/) for mo
 Default file defined in `tests/run_unittests_config.json`: `pytest_unittest_coverage.ini`
 
 * Coverage target(s) (default: `uut_project_keywords`)
-* pytest cache directory (default: scripts/tests/.pytest_cache)
+* pytest cache directory (default: `scripts/tests/.pytest_cache`)
 * Number of parallel worker processes (default: not used)
 
 See [pytest documentation](https://pytest-html.readthedocs.io/en/latest/) and 
