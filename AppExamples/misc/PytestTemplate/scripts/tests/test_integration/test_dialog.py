@@ -11,7 +11,7 @@ import uut_project_keywords
 from gom_test_helpers.dialogs.AutoDialogContext import AutoDialogContext
 
 def dialog_callback(dialog):
-    '''Callback function for simulating interaction wit user-defined dialog'''
+    '''Callback function for simulating interaction with user-defined dialog'''
     if 'Project Keywords' in dialog.title:
         dialog.project.value = 'Pytest Project'
         dialog.inspector.value = 'Pytest'
