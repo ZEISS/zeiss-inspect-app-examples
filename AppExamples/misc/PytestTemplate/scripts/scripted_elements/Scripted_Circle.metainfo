@@ -1,0 +1,25 @@
+{
+    "display_name": "Scripted_Circle",
+    "folded_blocks": [
+    ],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": false,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+            ],
+            "type": "command"
+        },
+        "script": "ude.scripted_elements__Scripted_Circle",
+        "submenu": [
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "circle",
+    "show_in_iinspect": false,
+    "show_in_menu": false,
+    "uuid": "e25daf21-2347-474c-86e4-fac70ff088f5"
+}
