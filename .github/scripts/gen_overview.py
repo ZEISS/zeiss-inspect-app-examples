@@ -46,7 +46,7 @@ def pascal_to_kebab(pascal_str):
     # This regex pattern matches a lowercase letter followed by an uppercase letter
     pattern = r'(?<=[a-z])(?=[A-Z])'
     # Replace the matches with a dash inserted before the uppercase letter
-    temp = re.sub(pattern, '-', s)
+    temp = re.sub(pattern, '-', pascal_str)
 
     # This regex pattern matches an upper case letter followed by an uppercase-lowercase sequence
     pattern = r'(?<=[A-Z])(?=[A-Z][a-z])'
