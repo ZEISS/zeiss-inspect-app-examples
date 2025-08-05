@@ -42,7 +42,7 @@ scripted_actuals/ScriptedActualVolumeDefects
 scripted_actuals/ScriptedActualVolumeRegion
 #scripted_actuals/ScriptedActualVolumeSection
 scripted_actuals/ScriptedElementProgress
-#scripted_actuals/TrimeshDeformMesh
+scripted_actuals/TrimeshDeformMesh
 scripted_checks/ScriptedScalarCheck
 scripted_checks/ScriptedCurveCheck
 scripted_checks/ScriptedSurfaceCheck
