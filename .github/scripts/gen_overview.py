@@ -42,7 +42,16 @@ sphinx_doc = False
 def pascal_to_kebab(pascal_str):
     """Convert string from PascalCase to kebab-case"""
     # Use regex to find the positions to insert underscores
-    kebab_str = re.sub(r'(?<!^)(?=[A-Z])', '-', pascal_str).lower()
+    
+    # This regex pattern matches a lowercase letter followed by an uppercase letter
+    pattern = r'(?<=[a-z])(?=[A-Z])'
+    # Replace the matches with a dash inserted before the uppercase letter
+    temp = re.sub(pattern, '-', pascal_str)
+
+    # This regex pattern matches an upper case letter followed by an uppercase-lowercase sequence
+    pattern = r'(?<=[A-Z])(?=[A-Z][a-z])'
+    # Replace the matches with a dash inserted before the uppercase-lowercase sequence
+    kebab_str = re.sub(pattern, '-', temp).lower()
     return kebab_str
 
 def find_tags():

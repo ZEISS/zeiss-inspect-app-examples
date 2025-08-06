@@ -6,7 +6,7 @@ dialog_widgets/DropdownWidget
 dialog_widgets/WidgetVisibility
 dialog_widgets/UnitDialogEventHandler
 dialog_widgets/ExplorerSelectedElementsInDialog
-#misc/CSVExample
+misc/CSVExample
 misc/DialogReopenExample
 #misc/DisplayImage
 #misc/ExcelExample
@@ -16,6 +16,7 @@ misc/FileSelectionAndFiltering
 misc/MeasurementSystemAnalysis
 misc/PointPixelTransformations
 misc/ProgressBar
+#misc/PytestTemplate
 #misc/SQLExample
 misc/ServiceExample
 misc/SettingsAPI
@@ -41,7 +42,7 @@ scripted_actuals/ScriptedActualVolumeDefects
 scripted_actuals/ScriptedActualVolumeRegion
 #scripted_actuals/ScriptedActualVolumeSection
 scripted_actuals/ScriptedElementProgress
-#scripted_actuals/TrimeshDeformMesh
+scripted_actuals/TrimeshDeformMesh
 scripted_checks/ScriptedScalarCheck
 scripted_checks/ScriptedCurveCheck
 scripted_checks/ScriptedSurfaceCheck
