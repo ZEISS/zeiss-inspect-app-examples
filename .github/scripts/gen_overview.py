@@ -231,7 +231,7 @@ f'''<h3>{title} — <a class="reference external" href="{view}">view</a> {link}
                     _tag_index[_tag].append(title)
                     _badge = _tag.replace('-', '--')
                     if sphinx_doc:
-                        md += f"<a href=\"#id{tags.index(_tag) + 1}\">![Static Badge](https://img.shields.io/badge/{_badge}-blue)</a> "
+                        md += f"<a href=\"#{_tag}\">![Static Badge](https://img.shields.io/badge/{_badge}-blue)</a> "
                     else:
                         md += f"[![Static Badge](https://img.shields.io/badge/{_badge}-blue)](#{_tag})<br> "
 
@@ -364,7 +364,7 @@ Users may utilize these examples at their own risk, and ZEISS assumes no liabili
 
     for tag in sorted(tagIndex):
         badge = tag.replace('-', '--')
-        app_overview += f'\n### <a name="{tag}"></a>![Static Badge](https://img.shields.io/badge/{badge}-blue)\n\n'
+        app_overview += f'\n<a name="{tag}"></a>![Static Badge](https://img.shields.io/badge/{badge}-blue)\n\n'
 
         for app in sorted(tagIndex[tag]):
             if sphinx_doc:
