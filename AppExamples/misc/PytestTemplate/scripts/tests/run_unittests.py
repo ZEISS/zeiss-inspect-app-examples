@@ -37,55 +37,24 @@ def read_config(file_path):
     _config = []
     try:
         with open(file_path, 'r', encoding='utf-8') as config_file:
-            _config = json.load(config_file)  # Parse the JSON data
+            _config = json.load(config_file)
     except FileNotFoundError:
         pass
 
     return _config
 
-def get_scripts_path():
-    """Get the App's scripts/ path
-    """
-    scripts_path = os.path.abspath(__file__)
-    while os.path.basename(scripts_path) != "scripts":
-        scripts_path = os.path.dirname(scripts_path)
-    return scripts_path
-
-def prepare_sys_path(scripts_path):
-    """Add directory tree starting from <App>/scripts to sys.path
-    
-    This allows to import any Python file within the App as module.
-    """
-    sys.path.append(scripts_path)
-
-    skip_paths = []
-    for d in ["modules", "tests"]:
-        skip_paths.append(os.path.join(scripts_path, d))
-
-    for root, dirs, _ in os.walk(scripts_path):
-        skip = False
-        for p in skip_paths:
-            if root.find(p) != -1:
-                skip = True
-        if skip:
-            continue
-
-        for my_dir in dirs:
-            full_path = os.path.join(root, my_dir)
-            if not full_path in skip_paths:
-                sys.path.append(full_path)
-
 def main(config):
     '''Run tests and generate coverage report'''
 
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    print(f'Unit Test Runner Logfile, created {timestamp}\n')
+    print(f'Unit Test Runner Log, {timestamp}\n')
 
     # Get test case folder
     tests_path = os.path.dirname(os.path.abspath(__file__))
     print(f'Test case folder: {tests_path}\n')
 
-    print(f'{sys.path=}\n')
+    print('sys.path=')
+    print(*sys.path, sep='\n', end='\n\n')
 
     reports_path = config['reports_dir']
     if not os.path.exists(reports_path):
@@ -100,8 +69,6 @@ def main(config):
             os.mkdir(cov_path)
         except Exception as e:
             print(f"An error occurred: {e}")
-
-    #os.chdir(cov_path)
 
     pytest_args = [
         f"{tests_path}", 
@@ -131,11 +98,8 @@ def main(config):
     return rv
 
 if __name__ == "__main__":
-    scripts_dir = get_scripts_path()
-
-    test_config = read_config(os.path.join(scripts_dir, "tests", "run_unittests_config.json"))
-
-    prepare_sys_path(scripts_dir)
+    cfg_path = os.path.dirname(os.path.abspath(os.path.abspath(__file__)))
+    test_config = read_config(os.path.join(cfg_path, "run_unittests_config.json"))
 
     # Add the mock gom module to sys.modules
     sys.modules['gom'] = MockGom()
