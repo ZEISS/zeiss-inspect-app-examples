@@ -22,7 +22,7 @@ misc/ServiceExample
 misc/SettingsAPI
 #misc/TextDetection
 misc/Workspace
-#misc/WorkflowAssistants
+misc/WorkflowAssistants
 projects/ExampleProjects
 script_icons/ScriptIcon
 script_resources/ResourceAccess
