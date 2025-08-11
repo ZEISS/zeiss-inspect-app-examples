@@ -1,7 +1,7 @@
 # List of Apps available in the ZEISS Quality Software Store 
 data_interfaces/CheckResultsDataArray
 data_interfaces/ReferencePointsAndMeshData
-#data_interfaces/VolumeSectionImageData
+data_interfaces/VolumeSectionImageData
 dialog_widgets/DropdownWidget
 dialog_widgets/WidgetVisibility
 dialog_widgets/UnitDialogEventHandler
