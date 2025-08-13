@@ -14,7 +14,7 @@ The following Python wheels must be installed in the App and are not included du
 
 In addition, the tesseract executable must be installed and the path to that executable must be adapted in the script.
 
-A detailed documentation can be found in the ZEISS Quality Tech Guide: [How to Create an Advanced Add-on](https://techguide.zeiss.com/en/zeiss-inspect-2023/article/how_to_create_an_advanced_add_on.html).
+A detailed documentation can be found in the ZEISS Quality Tech Guide: [How to Create an Advanced App](https://techguide.zeiss.com/en/zeiss-inspect-2025/article/how_to_create_an_advanced_add_on.html).
 
 ## Example
 
