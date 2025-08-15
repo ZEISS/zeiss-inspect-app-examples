@@ -1,5 +1,10 @@
 # Release Notes MeasurementSystemAnalysis
 
+## Released at 2025-08-15 (v1.0.8)
+
+* Fixed Python module import
+* Updated logo in msa_template.xlsx
+ 
 ## Released at 2025-04-30 (v1.0.7)
 
 * Updated scripts' meta information
