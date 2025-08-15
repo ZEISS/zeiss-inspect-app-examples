@@ -8,9 +8,13 @@
 import gom
 import os
 import os.path
+import re
+import xml.etree
 import xml.etree.ElementTree as ET
+import xml.dom.minidom
+import stringprep
 
-import Tools.MeasurementSystemAnalysis.msa_config as cfg
+import msa_config as cfg
 
 # ----------------------------------------------------------------------------------
 # Pre checking
@@ -19,8 +23,6 @@ import Tools.MeasurementSystemAnalysis.msa_config as cfg
 #
 # Check various project properties to guarantee a smooth run
 #
-
-
 def check_project_setup():
     #
     # Temporal directory has to exists for table template writing/import

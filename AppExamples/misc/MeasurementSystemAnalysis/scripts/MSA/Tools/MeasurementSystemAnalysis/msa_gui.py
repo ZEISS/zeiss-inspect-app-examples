@@ -9,8 +9,12 @@ import gom
 import os
 import os.path
 import re
+import xml.etree
+import xml.etree.ElementTree as ET
+import xml.dom.minidom
+import stringprep
 
-import Tools.MeasurementSystemAnalysis.msa_config as cfg
+import msa_config as cfg
 
 # ----------------------------------------------------------------------------------
 # Local functions
@@ -607,33 +611,33 @@ class CheckboxConfiguration (Configuration):
         Configuration.__init__(self, type)
 
         header_code = '''
-		<dialog>
-		<title>Configure stages</title>
-		<style></style>
-		<control id="OkCancel"/>
-		<position></position>
-		<embedding></embedding> 
-		<sizemode></sizemode> 
-		<content columns="{columns}" rows="{rows}"> 
-		'''
+        <dialog>
+        <title>Configure stages</title>
+        <style></style>
+        <control id="OkCancel"/>
+        <position></position>
+        <embedding></embedding> 
+        <sizemode></sizemode> 
+        <content columns="{columns}" rows="{rows}"> 
+        '''
 
         label_code = '''
-			<widget rowspan="1" type="label" row="{row}" columnspan="{span}" column="{column}"> 
-				<name>label_{row}_{column}</name> 
-				<tooltip></tooltip> 
-				<text>{text}</text> 
-				<word_wrap>false</word_wrap> 
-			</widget> 
-		'''
+            <widget rowspan="1" type="label" row="{row}" columnspan="{span}" column="{column}"> 
+                <name>label_{row}_{column}</name> 
+                <tooltip></tooltip> 
+                <text>{text}</text> 
+                <word_wrap>false</word_wrap> 
+            </widget> 
+        '''
 
         checkbox_code = '''
-			<widget rowspan="1" type="input::checkbox" row="{row}" columnspan="1" column="{column}"> 
-				<name>checkbox_{row}_{column}</name> 
-				<tooltip></tooltip> 
-				<value>{checked}</value> 
-				<title></title> 
-			</widget> 
-		'''
+            <widget rowspan="1" type="input::checkbox" row="{row}" columnspan="1" column="{column}"> 
+                <name>checkbox_{row}_{column}</name> 
+                <tooltip></tooltip> 
+                <value>{checked}</value> 
+                <title></title> 
+            </widget> 
+        '''
 
         self.content = header_code.format(rows=2 + len(self.stages.keys()), columns=1 +
                                           len(self.appraisers) + len(self.parts) + len(self.trials))
