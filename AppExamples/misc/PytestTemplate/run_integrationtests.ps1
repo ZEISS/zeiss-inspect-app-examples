@@ -26,3 +26,26 @@ foreach ($version in $zixVersions) {
     Write-Host "Testing with ZEISS INSPECT version $version"
     Start-Process -FilePath $inspectExe -ArgumentList "-eval", "$testRunner", "-minimized", "-nosplash" -Wait
 }
+
+# Create and activate a virtual Python environment
+$pythonExe = "C:\Program Files\Zeiss\INSPECT\$($zixVersions[0])\python\python.exe"
+& $pythonExe -m venv venv
+.\venv\Scripts\Activate.ps1
+
+# Install coverage in the virtual environment
+pip install coverage
+
+# Copy Pytest coverage data
+copy .coverage .coverage.pytest
+
+# Combine the coverage data from pytest and from all services
+coverage combine --data-file=./.coverage --keep scripts/services/ .coverage.pytest
+
+# Create HTML report of combined coverage results
+coverage html --data-file=./.coverage --omit=*/Local/Temp/* -d scripts/tests/reports/cov/html_combined
+
+# Create HTML report of combined coverage results
+coverage xml --data-file=./.coverage --omit=*/Local/Temp/* -o scripts/tests/reports/cov/integrationtest-combined-coverage.xml
+
+# Deactivate virtual environment
+deactivate 
