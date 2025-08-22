@@ -6,7 +6,7 @@
 # See App Development Documentation: Using services
 #
 # The decorator @cover_reflect.cover is added to the basic service function definition
-# to implement code coverage. The coverage data file is written to <__file__>.coverage.
+# to implement code coverage. The coverage data file is written to .coverage.<pythonfile>.
 #
 # See App documentation or https://coverage.readthedocs.io/en/latest/cmd.html for
 # information on merging multiple coverage data files or creating coverage reports.
