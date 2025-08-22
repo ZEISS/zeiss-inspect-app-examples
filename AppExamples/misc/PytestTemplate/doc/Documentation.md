@@ -28,7 +28,7 @@ Python package requirements:
 > A service "Pytest Reflector" is provided as an example by this App. It is used in the test case `test_service.py`.
 
 > [!CAUTION]
-> Test coverage does not include scripted elements and services, because those features are running in separate Python interpreter processes!
+> Pytest's test coverage does not include scripted elements and services, because those features are running in separate Python interpreter processes! However, test coverage for services can be obtained by applying the concept described in [Code Coverage for Services](#code-coverage-for-services). 
 
 ## App Contents
 
@@ -107,9 +107,52 @@ Default file defined in `tests/run_unittests_config.json`: `pytest_unittest_cove
 See [pytest documentation](https://pytest-html.readthedocs.io/en/latest/) and 
 [pytest-xdist documentation](https://pytest-xdist.readthedocs.io/en/stable/) for more.
 
+## Code Coverage for Services
+
+To measure code coverage in services, a function decorator provided by `app_utils.service_coverage` is added to the service function to create/update the coverage report after each service function call. 
+
+Example:
+
+```
+# Create instance of ServiceCoverage with specific coverage data file path
+cover_reflect = ServiceCoverage(__file__)               # pragma: no cover
+
+@apifunction          # Basic service function decorator
+@cover_reflect.cover  # Coverage decorator
+def reflect(value):
+   ...
+```
+
+The ServiceCoverage decorator wraps the actual service function to start coverage before and to stop coverage and to write the data file after running the service function:
+
+```
+cov.start()
+<service function>
+cov.stop()
+cov.save()
+```
+
+> [NOTE!]
+> Coverage is only measured if the App's `metainfo.json` contains `"services-coverage": true` or if the ServiceCoverage attribute `cov_enabled` is set to `True`.
+
+A separate coverage data file `.coverage.<pythonfile>` is generated for each service function.
+
+Coverage data files of (multiple) services and the App itself can be merged using
+
+```
+$ coverage combine --data-file=./.coverage --keep scripts/services/ .coverage.pytest
+```
+
+Coverage reports can be created as follows:
+
+```
+$ coverage <report|html|xml|json|lcov> --data-file=./.coverage --omit=*/Local/Temp/*
+```
+
+For details see https://coverage.readthedocs.io/en/latest/cmd.html
+
 ## See also
 
 * [Testing Apps](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/testing_apps/testing_apps.html)
 * [Scripted elements](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/scripted_elements/scripted_elements_toc.html)
 * [Using services](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/using_services/using_services.html)
-
