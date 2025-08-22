@@ -30,6 +30,7 @@
             "script": "services/reflector.py"
         }
     ],
+    "services-coverage": true,
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2025",
     "tags": [
