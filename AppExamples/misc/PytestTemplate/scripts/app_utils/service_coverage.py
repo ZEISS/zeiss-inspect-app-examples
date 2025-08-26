@@ -23,7 +23,8 @@ with gom.Resource(":metainfo.json").open() as fh:
     cov_enabled = metainfo.get('services-coverage', False)
     gom.log.debug(f"{data_file}: cov_enabled={cov_enabled}")
 
-
+cov = Coverage(data_file=data_file)
+    
 def coverage(func):
     """Decorator for wrapping service functions in cov.start() / cov.stop();cov.save()
     Example:
@@ -44,7 +45,6 @@ def coverage(func):
     
     @wraps(func)
     def wrapper(*args, **kwargs):
-        cov = Coverage(data_file=data_file)
         cov.start()
         try:
             result = func(*args, **kwargs)
