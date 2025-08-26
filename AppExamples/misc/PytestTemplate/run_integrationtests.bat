@@ -32,4 +32,29 @@ for %%V in (%ZIX_VERSIONS%) do (
     call "%%ZEISS_INSPECT_EXE%%" -eval %%TESTRUNNER%% -minimized -nosplash
 )
 
+:: Create and activate a virtual Python environment
+for /f "tokens=1" %%i in ("%ZIX_VERSIONS%") do set VERSION=%%i
+set "PYTHON_EXE=C:\Program Files\Zeiss\INSPECT\%VERSION%\python\python.exe"
+
+call "%PYTHON_EXE%" -m venv venv
+call .\venv\scripts\activate.bat
+
+:: Install coverage in the virtual environment
+call pip install coverage
+
+:: Copy Pytest coverage data
+copy .coverage .coverage.pytest
+
+:: Combine the coverage data from pytest and from all services
+coverage combine --data-file=.\.coverage --keep scripts\services\ .coverage.pytest
+
+:: Create HTML report of combined coverage results
+coverage html --data-file=.\.coverage --omit=*/Local/Temp/* -d scripts\tests\reports\cov\html_combined
+
+:: Create HTML report of combined coverage results
+coverage xml --data-file=.\.coverage --omit=*/Local/Temp/* -o scripts\tests\reports\cov\integrationtest-combined-coverage.xml
+
+:: Deactivate virtual environment
+call .\venv\scripts\deactivate.bat 
+
 endlocal
