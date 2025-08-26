@@ -25,7 +25,7 @@
     ],
     "services": [
         {
-            "endpoint": "gom.api.myservice",
+            "endpoint": "gom.api.pytest_template.reflect",
             "name": "Pytest Reflector",
             "script": "services/reflector.py"
         }

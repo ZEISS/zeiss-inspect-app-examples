@@ -1,12 +1,12 @@
 #
-# reflector_pass.py
+# reflector.py
 #
 # ZEISS INSPECT App service example
 #
 # See App Development Documentation: Using services
 #
-# The decorator @cover_reflect.cover is added to the basic service function definition
-# to implement code coverage. The coverage data file is written to .coverage.<pythonfile>.
+# The decorator @coverage is added to the basic service function definition
+# to implement code coverage. The coverage data file is written to .coverage.<service_module>.
 #
 # See App documentation or https://coverage.readthedocs.io/en/latest/cmd.html for
 # information on merging multiple coverage data files or creating coverage reports.
@@ -17,12 +17,10 @@
 
 import gom                                              # pragma: no cover
 from gom import apifunction                             # pragma: no cover
-from app_utils.service_coverage import ServiceCoverage  # pragma: no cover
-
-cover_reflect = ServiceCoverage(__file__)               # pragma: no cover
+from app_utils.service_coverage import coverage         # pragma: no cover
 
 @apifunction
-@cover_reflect.cover
+@coverage
 def reflect(value):
     gom.log.debug('Function "reflect" called')
     return value
