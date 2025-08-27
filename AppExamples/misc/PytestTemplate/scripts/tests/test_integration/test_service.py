@@ -14,16 +14,17 @@ import gom
 import time
 import gom.api.services
 from app_utils.service_manager import ServiceManager
-	
-def test_service():
-	""" Test a service
-	
-	The ServiceManager context manager starts and stops the service,
-	which is especially useful if the App is not installed, but used
-	from a connected folder. 
+    
+def test_reflect():
+    """ Test a service
+    
+    The ServiceManager context manager starts and stops the service,
+    which is especially useful if the App is not installed, but used
+    from a connected folder. 
   """
-	
-	with ServiceManager("Pytest Reflector"):
-		from gom.api.myservice import reflect
-	
-		assert reflect({"answer": 42}) == {"answer": 42}
+    
+    with ServiceManager("Pytest Reflector"):
+        with ServiceManager("Pytest Multiplicator"):
+            from gom.api.pytest_template.reflect import reflect
+    
+            assert reflect({"answer": 42}) == {"answer": 42}
