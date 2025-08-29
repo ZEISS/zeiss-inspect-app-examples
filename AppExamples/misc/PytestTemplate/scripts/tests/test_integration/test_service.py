@@ -21,10 +21,9 @@ def test_reflect():
     The ServiceManager context manager starts and stops the service,
     which is especially useful if the App is not installed, but used
     from a connected folder. 
-  """
+    """
     
     with ServiceManager("Pytest Reflector"):
-        with ServiceManager("Pytest Multiplicator"):
-            from gom.api.pytest_template.reflect import reflect
-    
-            assert reflect({"answer": 42}) == {"answer": 42}
+        from gom.api.pytest_template.reflect import reflect
+
+        assert reflect({"answer": 42}) == {"answer": 42}

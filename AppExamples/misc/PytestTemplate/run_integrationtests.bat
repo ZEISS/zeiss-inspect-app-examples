@@ -17,7 +17,25 @@
 :: * See doc/ for more information.
 :: ###########################################################################
 
+@echo off
 setlocal
+
+:: Remove old service coverage data files
+set directories=scripts\services scripts\scripted_elements
+
+:: Iterate over each directory
+for %%d in (%directories%) do (
+    :: Change to the directory
+    pushd %%d
+
+    :: Remove files starting with .coverage.
+    for %%f in (.coverage.*) do (
+        del /Q "%%f" 2>nul
+    )
+
+    :: Return to the previous directory
+    popd
+)
 
 set ZIX_VERSIONS=2025 2026
 

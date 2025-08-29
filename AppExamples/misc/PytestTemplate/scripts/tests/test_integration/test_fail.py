@@ -1,12 +1,7 @@
-# -*- coding: utf-8 -*-
-#
-# test_pass.py
-#
-# Dummy test which always fails
-#
-# Carl Zeiss GOM Metrology GmbH, 2024
-# 
-# ---
+""" Dummy test which always fails
+
+Carl Zeiss GOM Metrology GmbH, 2025
+"""
 
 import gom
 
