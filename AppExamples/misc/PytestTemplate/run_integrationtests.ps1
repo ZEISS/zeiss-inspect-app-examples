@@ -29,8 +29,8 @@ foreach ($version in $zixVersions) {
 
 # Create and activate a virtual Python environment
 $pythonExe = "C:\Program Files\Zeiss\INSPECT\$($zixVersions[0])\python\python.exe"
-& $pythonExe -m venv venv
-.\venv\Scripts\Activate.ps1
+& $pythonExe -m venv .venv
+.\.venv\Scripts\Activate.ps1
 
 # Install coverage in the virtual environment
 pip install coverage
@@ -39,7 +39,7 @@ pip install coverage
 copy .coverage .coverage.pytest
 
 # Combine the coverage data from pytest and from all services
-coverage combine --data-file=./.coverage --keep scripts/services/ .coverage.pytest
+coverage combine --data-file=./.coverage --keep scripts/services/ scripts/scripted_elements/ .coverage.pytest
 
 # Create HTML report of combined coverage results
 coverage html --data-file=./.coverage --omit=*/Local/Temp/* -d scripts/tests/reports/cov/html_combined
