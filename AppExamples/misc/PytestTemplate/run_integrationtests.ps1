@@ -14,6 +14,15 @@
 # * See doc/ for more information.
 ###############################################################################
 
+# Remove old service coverage data files
+$directories = @('scripts/services/', 'scripts/scripted_elements/')
+foreach ($directory in $directories) {
+  $files = Get-ChildItem -Path $directory -Filter '.coverage.*' -ErrorAction SilentlyContinue
+  foreach ($file in $files) {
+      Remove-Item -Path $file.FullName -Force -ErrorAction SilentlyContinue
+  }
+}
+      
 $zixVersions = @(2025, 2026)
 
 # Use the second variant (with the App's UUID) if the script's pathname is ambiguous
