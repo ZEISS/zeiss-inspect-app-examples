@@ -1,13 +1,10 @@
-# -*- coding: utf-8 -*-
-#
-# test_blackbox.py
-#
-# This test runs the Unit Under Test (UUT) as script and treats it as opaque. After running it, the ZEISS INSPECT project
-# is checked for the expected changes of state (in this example: project keywords).
-#
-# Carl Zeiss GOM Metrology GmbH, 2025
-# 
-# ---
+""" Blackbox integration test example
+
+This test runs the Unit Under Test (UUT) as script and treats it as opaque. After running it, the ZEISS INSPECT project
+is checked for the expected changes of state (in this example: project keywords).
+
+Carl Zeiss GOM Metrology GmbH, 2025
+"""
 
 import gom
 import os
