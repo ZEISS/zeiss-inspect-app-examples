@@ -1,50 +1,145 @@
-ZEISS Add-Ons / Apps End User License Agreement (EULA)
+ZEISS Metrology Software
+
+End User License Agreement (EULA)
+
 ======================================================
 
 English version. See below for German version.
 Englische Version. Siehe unten für die Deutsche Version.
 
+
 1. Introduction
 
 1.1 General information
 
-This End User License Agreement for Add-Ons / Apps ("EULA Add-Ons / Apps") is a legal agreement between "you" (either an individual or a legal entity, hereinafter referred to as "licensee" or "customer") and ZEISS ("ZEISS" or "licensor") (each individually a "party" and collectively the "parties") for your use of ZEISS software products. The agreement sets forth all rights and obligations for both licensee and ZEISS and governs your use of all Software Products installed or provided by ZEISS. Any amendment to this agreement must be in writing and in accordance with the terms and conditions contained herein. By paying the applicable license fee(s) and by downloading, installing or using the software, you agree that this agreement shall be enforceable against you in the same manner as a written, negotiated contract signed by you. If you do not agree to the terms of this agreement, you are not authorized and may not download, install or use any ZEISS software products. 
+This End User License Agreement ("EULA") is a legal agreement between "you" (either an individual or a legal entity, hereinafter referred to as "licensee" or "customer") and ZEISS ("ZEISS" or "licensor") (each individually a "party" and collectively the "parties") for your temporary limited use of ZEISS software products and apps. 
+Any software license based on this EULA is only a temporary license. The licensee is allowed to process data within the licensed software; this also includes using sample content provided, as long as it's needed or helpful for using the software.
 
-In order to use the ZEISS software products and services, the licensee must have the following:
+The agreement sets forth all rights and obligations for both licensee and ZEISS and governs your use of all software products installed or provided by ZEISS. Unless the licensor provides compelling reasons for a different procedure and explicitly declares a new EULA to be valid, the EULA version that was the latest version when the customer placed the order shall always apply to the licensee.
+Any amendment to this agreement must be in writing and in accordance with the terms and conditions contained herein. 
+By paying the applicable license fee(s) and / or by downloading, installing, or (continued) using the software, you agree that this agreement shall be enforceable against you in the same manner as a written, negotiated contract signed by you. If you do not agree to the terms of this agreement, you are not authorized and may not download, install, or use any ZEISS software products. 
 
+To use the ZEISS software products and services, the licensee must have the following:
 (a) a so-called valid subscription agreement or 
-
 (b) a valid license from ZEISS.
 
 Furthermore, individual software products 
-
 (a) which are based on a subscription agreement and / or
+(b) with a server-based license solution
 
-(b) with a server-based licensing solution
+require and use a secure connection of the application computer to the ZEISS infrastructure and / or the "Cloud Services".
 
-require and use a secure connection of the application computer to the ZEISS infrastructure and/or the "Cloud Services". 
+1.2 The licensor is ZEISS; the licensee is the end customer. The licensor grants the licensee a non-exclusive, non-transferable right to use the "software product", which includes the specific software program and the associated licensed software modules, subsequent extensions, updates, patches, and associated documentation for internal company operation, as well as the associated manuals and software documentation.
 
-1.2 The licensor is ZEISS, the licensee is the end customer. The licensor grants the licensee a non-exclusive, non-transferable right to use the "software product", which includes the specific software program and the subsequent extensions, updates, patches and associated documentation for internal company operation, as well as the associated manuals and software documentation. 
+1.3 Essential definitions, descriptions, and explanations for different release types of licensor's software products.
 
-1.3 The software product may contain codes, objects and other intellectual property developed and licensed by licensors or third parties and integrated into the software product ("embedded third party software"). Any embedded third party software or open source code and open source licenses used shall not limit or impair the rights of use granted to licensee and may be accessed at any time within the respective software used. In individual cases, the respective license conditions can be made available by the licensor upon request at any time. 
+Major version / major release (deliverable medium) means a new version of the software application with new or changed functionalities. A new major version can typically be released once or even several times per year.
 
-1.4 Any terms and conditions of purchase of the licensee that conflict with or deviate from this agreement shall not become part of the agreement, even if the licensor does not expressly object to them. Amendments to the EULA must be expressly agreed in writing by both parties.
+Innovation release refers to an intermediate version of the software application with new or changed functionalities. A new interim version is released either once or several times between two major releases:
 
+Innovation releases are only available to customers with a valid ZEISS Software Maintenance Agreement or a valid subscription contract;
+No service pack is provided for an innovation release;
+Only the current innovation release is valid;
+There is no backward compatibility with previous major or innovation releases.
 
-2. Term and termination / license fees
+Service pack (deliverable medium) refers to a summary of patches. The advantage of this is that several bugs can be fixed by performing a single installation. As a rule, a service pack contains all patches (unless they have become obsolete) since the release of the last major release or since the last published service pack. In the case of cumulative service packs, only the latest one needs to be installed by the customer because it contains the previous patches: Service packs contain bug fixes. However, they do not contain any new functionalities;
+Service packs go through a release process and are created at regular intervals;
+In terms of warranty, a series of service packs are made available for each major release of software;
+Service packs are available to all customers who may use the applicable major version / major release, regardless of the customers’ ZEISS Software Maintenance Agreement status; 
 
-2.1 The license agreement begins with license activation and ends with the period of use of the Pro Version or with the end of the payment period. 
+Patch (deliverable medium) means an update to a major version / major release or a service pack to correct one or a few bugs.
+Patches are cumulative in structure. This means that a new patch contains all the changes from the previous patches. 
 
-2.2 The Licensor shall be entitled to terminate this license agreement and the corresponding rights of use with immediate effect if the licensee violates any provision of this license agreement or tacitly tolerates a violation of this license agreement by third parties or fails to fulfill its obligations under this license agreement or if the licensee files for insolvency or a change of control occurs at the licensee.
+Patches are only created if there is an urgent bug fix for one or more customers. Patches are distributed by software support to the respective affected customers or made available as a download on the ZEISS portal.
 
-2.3 Notwithstanding the foregoing, and unless otherwise agreed in this license agreement, this license agreement shall terminate automatically upon licensee's breach of any of its provisions. 
+A bug fix refers to an error correction for a specific software error. Bug fixes are not delivered separately, but always in the form of patches, service packs or new major releases.
 
-2.4 Under no circumstances shall license fees be fully or partially refundable upon termination or mutually agreed termination of this agreement, unless ZEISS is responsible for the early termination of this agreement. 
+An update / upgrade is defined as a change to a new major version / major release. In this context, an update is regularly provided with a valid ZEISS Software Maintenance Agreement or a valid subscription contract. An upgrade is defined by the new acquisition of the current major version / major release in connection with the new conclusion of a ZEISS Software Maintenance Agreement of at least one year.
 
+Continuous release refers to the continuous and agile provision of error corrections and functional changes or enhancements. There is no distinction between the different versioning types of major release, innovation release, service pack and patch.
+
+Setup / installer is provided via download and contains the full functionality of the main version, which can be unlocked step by step if necessary.
+
+Freeware is software that is provided free of charge for use in perpetuity. Freeware with registration is a free software, which contains extended functionalities of the freeware by a registration of the licensee and is left temporally limited.
+
+The licensor reserves the right to review the scope of the freeware at regular intervals and, if necessary, to expand, restrict or change it.
+
+Floating licenses: These are licenses that, can be used globally and are not subject to any location restrictions.
+
+Trial version is a time-limited, free transfer of the main version of the software.
+
+ZEISS Software Maintenance Agreement is an additional agreement between the licensor and the licensee which, among other things, covers the maintenance / restoration of the operational readiness of the software, its updating, consulting as well as maintenance of the software including documentation.
+
+1.4 Essential definitions, descriptions, and explanations for different models of payment for ZEISS software products
+(a) 7-year model: The licensee acquires a seven-year ZEISS software right of use (for details see clause 2.1.) of the respective major release of the software product in accordance with this license agreement by paying a one-time fee. In addition, the licensee may conclude a ZEISS Software Maintenance Agreement which grants additional privileges. The licensor shall charge an ongoing fee for the ZEISS Software Maintenance Agreement. The seven-year right of use can be extended either by exercising the right to a software update as part of an ongoing ZEISS software maintenance agreement or by purchasing an upgrade to a new major release.
+(b) Subscription model: Licensee acquires the right to use the respective major release of the software product in accordance with this license agreement for a fixed period of time, the so-called subscription term. A technical license term that differs from the subscription term does not license term does not count towards the subscription term and may not be used by the licensee to extend the subscription free of charge without permission. The subscription may require a minimum contract term. However, the licensor will always inform the licensee of any such minimum contract term before the contract begins.  In the subscription model, certain services (hotline support and the right to use the latest version) may be included which are not offered in separate ZEISS Software Maintenance Agreements. In the subscription model, there is an explicit recommendation by the licensor to use the latest major version / major release (update). If the licensee does not comply with this recommendation, the licensor assumes no liability for the continued functioning of the initially purchased software version with future versions that differ from the initially purchased software version by more than two major releases. The licensor charges a subscription fee per subscription term.
+
+1.5 Essential definitions, descriptions, and explanations for license models for the licensor's software products.
+
+Concurrent use / floating licenses may be used by more than one user or instance. The number of users with the right to use the licensed software product at the same time is governed by the number of concurrent use / floating licenses, if the software product
+(a) is installed on a server and is started by a user from another computer that is part of the same internal network as the file server, or 
+(b) is installed on a user's computer but is available for use only if that user's computer can access it from a file server over an internal network; or 
+(c) is installed on a computer for a limited period of time through a documented / controlled "license check-out process" (borrowing of the license), which ensures that the number of licenses in the network is automatically reduced / adjusted. This includes automatic return of the granted license at the end of the period specified in the system or manual license return at an earlier time.
+
+Concurrent use licenses are available as global concurrent use licenses. 
+(d) Provided that the licenses are available on a server, the software can be used on premise.
+
+1.6 Essential definitions, descriptions and explanations for single use licenses and user-bound licenses for the licensor's software products.
+
+Single use license / user-bound license means licenses that limits the right to use the software product.
+(a) Single use licenses are licenses that are either dependent on the use of a software dongle for each license or that are permanently assigned to a terminal device. Use via virtual machines, in Docker containers, via remote desktops or a Citrix server is only permitted if and to the extent that the licensee ensures that the type of use corresponds to use on a specific, individualized end device.
+(b) User-bound licenses are licenses that only permit use by a specific person or allow personalized access. Access is granted at the discretion of the licensor by means of a user ID (name, user ID, e-mail).
+
+1.7 If the software product is identified by Licensor as an "update", "upgrade", "patch" or "subscription", licensee must have the software product license identified by Licensor as appropriate for the update, upgrade or patch to use the software product. A software product identified by licensor as an update, upgrade or patch replaces and / or enhances the original product that served as the basis for the update and upgrade. Licensee may use the respective upgrade or patch only in accordance with the terms of this license agreement. If the software product is an upgrade of a component of a software package licensed as a single product, licensee may use and transfer the software product only as a component of that single product package. Licensee is not permitted to split it for use on multiple computers. 
+
+A valid subscription agreement entitles the licensee to use the latest software product by default.
+
+1.8 The software product may contain codes, objects and other intellectual property developed by licensors or third parties and licensed by them and integrated into the software product ("embedded third party software"). Any embedded third-party software or open-source code and open-source licenses used shall not limit or impair the rights of use granted to licensee and may be accessed at any time within the respective software used. In individual cases, the respective license conditions can be provided by the licensor upon request at any time. 
+
+1.9 The customer grants ZEISS a worldwide, perpetual, irrevocable, transferable, sub-licensable and royalty-free license to use any suggestions, recommendations, feature requests or other feedback related to the ZEISS Software provided by you or on your behalf and to incorporate or otherwise use such feedback in connection with the ZEISS Software or other products or services.
+
+1.10 The licensee is hereby informed that the software contains components, in whole or in part, that are classified as artificial intelligence (AI) within the meaning of Regulation (EU) 2024/1689 of the European Parliament and of the Council on artificial intelligence (“EU AI Regulation”).
+
+The Licensor warrants that the AI components concerned comply with the applicable regulations.
+
+1.11 Any terms and conditions of purchase of the licensee that conflict with or deviate from this agreement shall not become part of the agreement, even if the licensor does not expressly object to them. Amendments to the EULA must be expressly agreed in writing by both parties.
+
+2. Term, termination and amendments to the EULA
+
+2.1 In the 7-year model, this license agreement and the right of use shall become legally effective upon payment of the license fees to the licensor (effective date).
+
+The license agreement shall commence, except for license agreements limited in time, on the date specified in the licensor's order confirmation (effective date) or on the entry date specified by the licensee in the agreement (effective date). If two effective dates exist at the time of the agreement, the effective date specified by licensee in an agreement in text form shall prevail. This license agreement and with it the right of use shall automatically terminate seven (7) years after the effective date.
+
+If additional concurrent users are added after payment of the initial license fee, the term for their use of the software product will terminate at the previously existing term in effect at the current time. If licensee purchases an upgrade, the term of this license agreement will continue on the basis set in the new upgrade license and authorization document.
+
+2.2 In the subscription model, this license agreement shall commence on the first day of the subscription term specified in licensor's order confirmation (effective date) or on the entry date specified by licensee in an agreement (in text form) (effective date). If two effective dates exist at the time of the agreement, the effective date specified by licensee in an agreement (in text form) shall prevail. To the extent automatic renewals are permitted in licensee's country, region, province or state, this subscription will automatically renew for an additional subscription term ("extended subscription term"), if the subscription agreement is not timely terminated. Licensor will use commercially reasonable efforts to notify licensee of the extension. For each renewal, the prices in effect on the first day of the new subscription term will apply. Licensee will be notified of any price increases, if any, in the course of notifying licensee of the renewal. 
+
+The subscription model will be fee-based either
+(a) on the effective date, if customer has not purchased any additional services for setup that are explicitly related to the subscription product in question and that are an indispensable technical prerequisite for software use by the licensee, or
+(b) after ZEISS has set up the service for the customer, which were explicitly acquired in connection with the subscription product in question and which are an indispensable technical prerequisite for software use by the licensee (e.g. installation).
+
+Subsequent purchases under an existing subscription agreement will be billed on a pro-rated daily basis for the remainder of the current subscription period. 
+
+If a new subscription period begins as a result of an automatic renewal of the subscription agreement, the fee for the agreed services, including additional purchases, will be charged for the originally agreed duration of the new subscription period. 
+
+2.3 In the subscription model, this license agreement (after expiry of any minimum contract term) may be terminated by licensee vis-à-vis licensor as follows:
+(a) thirty (30) days prior to the end of the subscription period, if a subscription period of one year was selected at the beginning,
+(b) fourteen (14) days prior to the end of the current month, if a subscription period of one month was selected at the beginning, or
+(c) fourteen (14) days prior to the effective date of an announced price increase,
+
+online via the respective ZEISS portal for registered users, by registered mail or e-mail. Termination shall take effect upon expiry of the subscription period selected at the beginning, with which the right of use also ends, or in the event of termination in accordance with Clause 2.3.c on the date of the price increase.
+
+2.4 The Licensor shall be, purely as a precautionary measure, entitled to terminate this license agreement and the corresponding rights of use with immediate effect if the licensee violates any provision of this license agreement or tacitly tolerates a violation of this license agreement by third parties or fails to fulfill its obligations under this license agreement or if the licensee files for insolvency or a change of control occurs at the licensee.
+
+2.5 As a preventive measure, this End User License Agreement provides for automatic termination of use in the following cases: Notwithstanding the foregoing provisions of section 2 and unless otherwise agreed in this license agreement, this license agreement shall terminate automatically upon licensee's breach of any of its provisions. In addition, unless otherwise agreed (e.g. in the case of concurrent use / floating licenses), this license agreement shall terminate automatically if licensee transfers possession of the software product or a copy of the software to a third party (Sections 4.3 to 4.6) or sells the computer or measuring device on which the software product is installed to a third party. The right to use the previous version(s) ends with the installation of the update or upgrade. The licensee is no longer entitled to use the previous version(s) on another computer system or to make one or more previous versions available for use by third parties.
+
+2.6 Under no circumstances are license fees fully or partially refundable upon termination or mutually agreed termination of this agreement unless ZEISS is responsible for the early termination of this agreement. The licensee must, comply with the conditions for return and deletion set forth in section 10. The licensee undertakes every reasonable effort to destroy all copies of the software product - as a whole, in parts or in combination with other software - upon termination of this license agreement. 
 
 3. Reproduction rights 
 
 3.1 The licensee may reproduce the delivered software to the extent that the reproduction is necessary to use the software. Necessary reproductions of the software include, but are not limited to, the installation of the software product on the mass storage of the device in accordance with this license agreement and the loading of the software into the main memory of the computer. 
+
+Changes to the hardware may require additional effort for subsequent licensing, repair of the license or re-licensing by the licensee and / or licensor. This applies in particular to changes or extensions of computer hardware components or the replacement of a computer system as a whole with / without network access (MAC-address). If the software product is transferred by the licensor to other computer hardware, the licensee may no longer use the transferred software on the "old" system. 
 
 3.2 In addition, licensee shall be entitled to make copies for data backup purposes. This backup copy of the licensed software product must be marked as such. 
 
@@ -52,150 +147,370 @@ require and use a secure connection of the application computer to the ZEISS inf
 
 3.4 The licensee is not entitled to make further copies or to instruct third parties to make further copies, in particular the licensee is not entitled to print out the program code with a printer or to make photocopies of the manual. 
 
-
 4. Resale and transfer
 
-4.1 The licensee is not entitled to rent, lease, lend or make the software product available to third parties within the scope of hosting or download options, unless the Licensor has expressly indicated or permitted this in writing. 
+4.1 If the software is marked as "NFR" or "not for resale" or as "evaluation copy" or "time limited trial", licensee may not use or exploit the software product or the accompanying manuals and software documentation for any commercial purpose and may not resell, transfer or otherwise make the software product available to others without the express permission of licensor. Free trial and free licenses are exempt from the prohibition on commercial use. Commercial use also includes the use of the software product for the creation of generally accessible computer software.
 
-4.2 However, it is permitted to grant a right of use to third parties if they have to use the software product to the licensee’s specifications (like own employees). Independent third parties are excluded from use in any case.
+Licensee may not rent, lease, lend or make available the software product to any third party under any hosting or download options unless expressly stated or permitted in writing by licensor. 
 
-4.3 Transfer within legal entities or global groups of licensee: Provided that the transferring licensee and the receiving party are part of one legal entity or part of affiliated companies, the transfer is permitted provided that the receiving party agrees to these license terms. "Affiliate" means any legal entity that is directly or indirectly controlled by a Legal Entity or its parent company. "Control" for purposes of this license agreement means direct or indirect ownership of more than fifty percent (50%) of the stock of such entity or more than fifty percent (50%) direct or indirect participation in the decision-making body of such entity. 
+4.2 However, it is permitted to grant a right of use to third parties if they have to use the software product to the licensee’s specifications (like own employees). Independent third parties are excluded from use in any case. Any remote access (and the associated indirect use) is not permitted unless the remote access is provided by the licensor for maintenance purposes.
 
+4.3 It is permissible to order software in the name and on behalf of a third party for this third party if it is evident that the third party will be the licensee of ZEISS and the third party agrees to the EULA. In individual cases (especially in the case of hardware-bound software), however, this can be made dependent on the conclusion of an additional software maintenance agreement.
 
-5. Back translation and program changes 
+4.4 The licensee may use the concurrent use / floating licenses acquired and listed in the contractual document globally within its company and the companies affiliated with it pursuant to sections 15 et seq. AktG (German Stock Corporation Act). The use by third parties, in particular external service providers (except service providers in the field of maintenance, calibration, repair, relocation, and conversion of systems), suppliers is permitted, insofar as they act on behalf of the licensee. The third parties authorized to use the software are obliged to comply with the terms of the license.
 
-5.1 As a matter of principle, the licensee may not make any changes to the software product unless this is necessary to correct errors. The prerequisite is that this is done solely for the purpose of correcting errors that impair the functioning of the software. 
-In the latter case and if important program functions and working methods could be disclosed during the repair process, licensee may commission a commercially active third party to carry out the repair if this third party is not a potential competitor of licensor. 
-Insofar as the licensee makes changes to the software product in order to rectify errors, the licensor shall not assume any liability for the resulting consequences, in particular not through this authorization.
+4.5 If the software product is licensed to a leasing company (lessor), the lessor shall be free to make the software product available to an agreed lessee under the terms and conditions of this license agreement. If the leasehold Item is further leased, the lessor shall be permitted to transfer the rights to use the software product together with the leasehold Item by providing appropriate information (which shall include CMM / system / serial number, granted software licenses, name / address of the old and new Lessee) in writing prior to the planned transfer, as well as to require the lessee to accept the terms of the transferred license in writing. 
 
-5.2 The reverse translation of the licensed program code into other code forms (decompilation) and other types of reverse engineering of various different phases of software creation are permitted only to the extent that they serve to correct errors that impair the functioning of the software (in accordance with section 5.1). However, licensee may perform such decompilation only to the extent necessary for correction and, if applicable, in compliance with the terms and conditions contractually agreed with the owner of the copyright in this program.
+4.6 In the 7-year model, the software product may be transferred to another party as part of the sale of a device that includes the software product, subject to the following conditions: 
+(a) no copies of the software product remain with the transferring user; 
+(b) as a condition to the effectiveness of such transfer, the receiving party must expressly acknowledge the terms of this license agreement to licensor by email with a scanned copy of a signed informational letter, such as a pdf copy, addressed to the email address provided by licensor; and 
+(c) the transferred software must be up to date (latest revised software version) at the time of its transfer. Licenses are transferable only within the European Union or outside the European Union only within the countries in which they were originally acquired; and 
+(d) all software modules of the software product can only be transferred as a package and not as individual licenses.
+
+4.7 In the subscription model, the software product cannot be transferred to another party as part of the sale of a device that includes the software product license. The new owner of the device must enter into a new subscription or purchase the license in the 7-year model.
+
+4.8 Transfer within legal entities or global groups of licensees.
+
+If the transferring licensee and the receiving party are part of one legal entity or part of affiliated companies, the transfer is permitted provided that the receiving party agrees to these license terms (acknowledgement to the email address provided by the licensor). "Affiliate" means any legal entity that is directly or indirectly controlled by a legal entity or its parent company. "Control" for purposes of this license agreement means direct or indirect ownership of more than fifty percent (50%) of the stock of such entity or more than fifty percent (50%) direct or indirect participation in the decision-making body of such entity. 
+
+4.9 Transfer of software license options in the 7-year model.
+
+If the software product is transferred to third parties with the participation of the licensor, a license fee will be charged in accordance with the applicable price list of the licensor. The number of transfers is limited to a maximum of four (4) during the term of this license agreement.
+
+5. Multiple use
+
+5.1 Multiple use of the software is possible depending on the type of licensing, see concurrent use licenses. Only in case of emergency may the licensee use the software on alternative devices of the same type. 
+
+Multiple use of the software product must be approved by the licensor or requires the purchase of concurrent use / floating licenses. In the case of concurrent use / floating licenses, the total number of concurrently authorized users of the software product shall not exceed the number of all concurrent use licenses granted to licensee for the software product. Unless otherwise agreed in this license agreement, all other terms and conditions of this license agreement apply to licensee's use of the software product under a concurrent use license and / or user-bound license.
+
+5.2 If the licensee wishes to continue using the software product that has been replaced by an update or upgrade in parallel with the current software product, the licensee requires the prior consent of the licensor for this, unless this results from the purchased licenses; a pdf copy of the consent is to be sent to the specified e-mail address. If the licensee uses replaced software products without the consent of the licensor, they are in breach of the end user license agreement by continuing to use them. The licensee must take all necessary steps to prevent such use through internal processes. In the event of a breach, the customer must pay the current license fee per license as a contractual penalty and discontinue use.
+
+6. Back translation and program changes 
+
+6.1 The reverse translation of the licensed program code into other code forms (decompilation) and other types of reverse engineering of various phases of software creation are permitted only to the extent that they serve to correct errors that impair the functioning of the software. However, licensee may perform such decompilation only to the extent necessary for correction and, if applicable, in compliance with the terms and conditions contractually agreed with the owner of the copyright in this program.
+
 Further, decompilation is permitted in cases to obtain information necessary for interoperability with an independently created computer program and only if such information cannot be obtained otherwise.
 
-5.3 A further prerequisite for the permission to reverse engineer is the performance of reverse engineering or program observation exclusively by means of procedures which the licensee is authorized to perform in accordance with this license agreement. In particular, the program code may in no case be printed out. 
+6.2 A further prerequisite for the permission for reverse engineering is the performance of reverse engineering or program observation exclusively by methods which licensee is authorized to perform under this license agreement.  
 
-5.4 All property rights and copyrights relating to the software product, the printed accompanying materials and all copies of the software product shall remain with the licensor or its suppliers. This software product is protected under German copyright law, U.S. copyright law and the provisions of international treaties. The licensee is not entitled to reproduce the printed materials accompanying the software.
+6.3 As a matter of principle, the licensee may not make any changes to the software product unless this is necessary to correct errors. The prerequisite is that this is done solely for the purpose of correcting errors that impair the functioning of the software. 
 
+In the latter case and if important program functions and working methods could be disclosed during the repair process, licensee may commission a commercially active third party to carry out the repair if this third party is not a potential competitor of licensor. 
 
-5.5 The licensee shall not be entitled to remove, modify or add to any copyright notices or trademark notices placed by licensor. This includes, without limitation, all references in physical and/or electronic media or documents, in "setup wizards" or in "about..." dialog boxes, and/or in other references displayed on or activated via the Internet, in program code or other embodiments originally included in the software or otherwise created by licensor.
+Insofar as the licensee makes changes to the software product to rectify errors, the Licensor shall not assume any liability for the resulting consequences, in particular not through this authorization.
 
-6. Warranty and right of termination
+6.4 All property rights and copyrights relating to the software product, the printed accompanying materials and all copies of the software product shall remain with the licensor or its suppliers. This software product is protected under German copyright law, U.S. copyright law and the provisions of international treaties. The licensee is not entitled to reproduce the printed materials accompanying the software.
 
-6.1 The licensor warrants with respect to the software product licensed to the licensee the performance set forth in the description, provided that the software product is installed in the intended system in compliance with the licensor's guidelines. 
+6.5 Licensee shall not be entitled to remove, modify, or add to any copyright notices or trademark notices placed by the licensor. This includes, without limitation, all references in physical and / or electronic media or documents, in "setup wizards" or in "about..." dialog boxes, and / or in other references displayed on or activated via the Internet, in program code or other embodiments originally included in the software or otherwise created by licensor.
 
-6.2 The licensor shall correct errors in the software product, and in all manuals and other documents, within a reasonable period of time after receiving from the licensee the corresponding information on the error necessary to correct the error. Errors shall be remedied by rectification, which shall not be invoiced, or by replacement of the delivery, at the option of the licensor. 
+7. Warranty and termination rights
 
-6.3 The licensee's right of termination due to the non-executability of the software product may only be exercised after rectifications or replacements have been made twice without success. 
+7.1 The licensor warrants with respect to the software product licensed to the licensee the performance set forth in the operating instructions, provided that the software product is installed in the intended system in compliance with the licensor's guidelines. 
 
-6.4 The licensor neither warrants nor guarantees the functionality of the programs created by third parties or the licensee / customer, nor the error-free execution of the programs with the software or on the licensor's systems. 
+7.2 Errors (bugs) in the software product or its software modules shall be deemed to be errors (bugs) that are reproducible at any time. 
 
+7.3 The licensor shall correct errors in the software product, and in all manuals and other documents, within a reasonable period of time after receiving from the licensee the corresponding information on the error necessary for the correction of the error. Errors shall be remedied by rectification, which shall not be invoiced, or by replacement of the delivery, at licensor's option. 
 
-7. Liability 
+7.4 The licensee's right of termination due to the non-executability of the software product may only be exercised after rectifications or replacements have been made twice without success. 
 
-7.1 If the licensee is unable to use the software product in the manner specified in the agreement and the licensee is responsible for this due to the failure to implement or the incorrect implementation of suggestions and advice before or after signing the agreement or due to the breach of other contractual obligations, the provisions set forth in this agreement shall apply mutatis mutandis to the exclusion of any further claims by the licensee.
+7.5 The licensor neither warrants nor guarantees the functionality of the measurement plans or programs created by third parties or the licensee / customer, nor the error-free execution of the measurement plans or programs with the software or on the Licensor's systems. The Licensor excludes any form of warranty or guarantee regarding third-party measurement plans and programs, especially after the implementation of software upgrades or new program versions / software updates. 
+
+Licensor particularly emphasizes the possibility that the presence of one or more of the factors described below may cause a loss or change in performance with respect to measurement plans: 
+(a) The operating system of the computer was changed between software versions; 
+(b) Significant changes to the calculation algorithms; 
+(c) Correction of software errors and malfunctions; 
+(d) Changes in dependencies between software options; 
+(e) Incorrect programming of measurement plans; 
+(f) Influence of software programs or modules not issued by the licensor. 
+
+8. Liability 
+
+8.1 If licensee is unable to use the software product in the manner specified in the agreement and licensee is responsible for this due to the failure to implement or the incorrect implementation of suggestions and advice before or after signing the agreement or due to the breach of other contractual obligations, the provisions set forth in sections 7 and 8 shall apply mutatis mutandis to the exclusion of any further claims by licensee.
 
 For damages that do not occur to the software product, respectively not to the hardware and the connected device, the liability obligation of the licensor applies exclusively in the following cases, regardless of the respective legal ground: 
-
 - willful misconduct, 
+- gross negligence, 
+- culpable damage to life, limb and health, in the event of errors, which the licensor has fraudulently concealed or which it has excluded under warranty, 
+- software errors within the scope of liability for personal injury and property damage due to personally implemented objects, as set out in the product liability regulations applicable to them. 
 
-- gross negligence of its executive bodies or officers, 
+8.2 In the event of culpable breach of material contractual obligations, the licensor shall also be liable for gross negligence. In the latter case, liability shall be limited to damages that are foreseeable and typical for this type of contract. 
 
-- culpable damage to life, limb and health, in the event of errors, which the lLicensor has fraudulently concealed or which it has excluded under warranty,
+8.3 In addition, the licensor, its employees and its vicarious agents shall be liable for data loss or changes due to program errors, limited to the extent that this would have been unavoidable if the licensee had complied with its obligation to make back-up copies regularly and at least once a day. 
 
-- software errors within the scope of liability for personal injury and property damage due to personally implemented objects, as set out in the product liability regulations applicable to them
+8.4 In the event of claims based on copyright infringement, the licensor shall grant the licensee the right to continue using the software product or to make modifications to the software product. If this is not commercially reasonable, the licensor shall take back the subject matter of the agreement and refund the license fee paid, less an amount corresponding to the duration of the previous use. This shall apply if licensee notifies licensor of this type of claim in writing without delay and allows licensor all legal remedies and out-of-court settlements. 
 
-7.2 In the event of culpable breach of material contractual obligations, the licensor shall also be liable for gross negligence on the part of non-executive employees and for slight negligence. In the latter case, liability shall be limited to damages that are foreseeable and typical for this type of contract. 
-
-7.3 In addition, the licensor, its employees and its vicarious agents shall be liable for data loss or changes due to program errors, limited to the extent that this would have been unavoidable if the licensee had complied with its obligation to make back-up copies regularly and at least once a day. 
-
-7.4 In the event of claims based on copyright infringement, the licensor shall grant the licensee the right to continue using the software product or to make modifications to the software product so that copyright protection is ensured. If this is not commercially reasonable, the licensor shall take back the subject matter of the agreement and refund the license fee paid, less an amount corresponding to the duration of the previous use. This shall apply provided that the licensee notifies the licensor of this type of claim in writing without delay and allows licensor all legal remedies and out-of-court settlements. 
-
-7.5 The licensee or its IT provider shall be liable for server interruptions, interruption of license allocation and other support cases that are not clearly attributable to an incorrectly created license.
+8.5 The licensor shall not be liable for server interruptions, interruption of license allocation, and other support cases that are not clearly attributable to an incorrectly created license with regard to concurrent use/floating licenses and/or user-bound licenses.
 
 The licensee or its IT provider is responsible for maintaining the necessary number of licenses to provide its services. The licensor is not liable for interruptions in use and subsequent work / production stoppages.
 
+8.6 Further liability claims of the licensee are expressly excluded. 
 
-7.6 Further liability claims of the licensee are expressly excluded. 
-7.7 The licensee is responsible for all problems arising from the use of the software product that are not directly caused by the licensor. Therefore, licensee is responsible for all data generated and produced during the use of the software product. Accordingly, licensee is obligated and responsible for compliance with the terms and conditions set forth in this license agreement. 
+8.7 The licensee is responsible for all problems arising from the use of the software product that are not directly caused by the licensor. Therefore, the licensee is responsible for all data generated and produced during the use of the software product. Accordingly, the licensee is obligated and responsible for compliance with the terms and conditions set forth in this license agreement. 
+
+9. Obligation of the licensee to maintain the software, transfer of risk
+
+9.1 In the 7-year model there is an explicit recommendation by the licensor, in addition to acquiring a concurrent use-/ floating-license in accordance with these end user terms, licensee shall assign the acquired licenses to an existing ZEISS Software Maintenance Agreement or, if required, enter into an additional ZEISS Software Maintenance Agreement in order to use the software. If the licensee does not comply with this recommendation, the licensor assumes no liability for the continued functioning of the initially purchased software version with future versions that differ from the initially purchased software version by more than two major releases. 
+
+9.2 Software maintenance shall be provided in accordance with the separate software maintenance agreement. The latest version of the ZEISS Software Maintenance Agreement can be viewed and accessed on the respective website.
+
+9.3 The administration of the floating server is the responsibility of the licensee; this obligation can also be made possible by a self-service tool for the licensee. The licensee is responsible for the secure operation and maintenance of the server. The licensor or the licensee shall be responsible for importing / installing the licenses on the (virtual) floating server. The server hardware is provided by the licensee.
+
+A possible installation of the server infrastructure as well as advice on the operation and maintenance of the server operation by the licensor must be contractually regulated individually within the scope of a project transaction.
+
+9.4 The licensee shall be responsible for distributing the licenses to use the software. However, the users must be employees of the licensee. Use by external stakeholders of the licensee, e.g. customers or suppliers, is not permitted (see also section 4. Resale and transfer and Section 5. Multiple use).
+
+9.5 The licensee shall prevent third parties from accessing the software and documentation by taking appropriate measures. In particular, licensee shall instruct its employees to prevent third parties from accessing the software. 
+
+9.6 If an employee of the licensee infringes the copyright or grants access to the software to unauthorized third parties, the licensee shall be obliged to participate in the clarification of the infringement and shall notify the Licensor of the relevant hearing of such infringement. 
+
+9.7 The licensee bears the risk of accidental loss as well as destruction, especially with regard to theft of the software product or copy protection plug. The license agreement shall terminate automatically in case of destruction or loss. The licensee is obliged to report the loss of a license dongle to the licensor immediately.
+
+9.8 Loss of a license copy protection plug: Licensee shall be liable for the delivered software copy protection plug. Loss of the software copy protection plug is equivalent to loss of the software product. The costs for the replacement of the software copy protection plug and the associated software licenses will be charged to the licensee. In the event of theft of the copy protection plug, an official police report is required for the re-issuance of a license against payment of a fixed amount for the retransfer, currently amounting to 1,500 euros plus VAT at the statutory rate. 
+
+Notwithstanding the foregoing, licensee shall be entitled to demand from Licensor the conclusion of a new license agreement and the subsequent delivery of a software product. In this case, corresponding license fees in the amount for an upgrade shall apply and accrue for the replacement of the stolen software product.
+
+9.9 The licensee acknowledges that the use of the software depends on the system requirements specified in the release notes. The licensor assumes no responsibility for malfunctions or limitations of the software resulting from non-compliance with these system requirements. In particular, but not exclusively, this applies to:
+
+• The use of outdated operating systems that may not be compatible with modern software.
+• The use of hardware with insufficient processing power that may impair the proper execution of the software.
+
+The licensee is advised that the proper functionality of the software can only be guaranteed if the recommended system requirements are met. The licensor recommends checking the current system requirements before installation and performing any necessary upgrades.
+
+9.10 Insofar as a terminal software or device used by the licensee no longer qualifies for corresponding support services (so-called "End of Support"), the following shall apply: 
+
+The Licensor assumes no liability for the continued functioning of this software or of software in combination with hardware that has reached the End of Support. The acquisition of a software upgrade or a software update within the scope of a ZEISS Software Maintenance Agreement or a valid subscription contract is at the licensee's own responsibility. 
+
+The licensor is not obliged to check whether the Licensee obtains, installs and/or uses the software via a software upgrade or as part of a ZEISS Software Maintenance Agreement despite the End of Support of a software or one or more hardware components. 
+
+The respective End of Support can be found in the official list: Product Discontinuation (https://www.zeiss.com/metrology/en/services/product-discontinuation.html#accordionItem-225387622)
+
+10. Obligation to return and delete the supplied data. 
+
+10.1 Upon termination of this license agreement, licensee shall return all original data carriers, the dongle and all documentation, materials and other documents in its possession. The software product and all documentation must be sent to the licensor free of charge. In case of transportation by third parties, the method of delivery must ensure safe delivery (registered mail, secure shipment or similar) and the shipment must be insured up to an amount equal to the amount of the license fee. The licensee must confirm in text form that the software has been successfully uninstalled. 
+
+10.2 The proper return of the software product includes the complete and final deletion of all existing copies and in particular copies of the software on the computer. 
+
+10.3 If licensee fails to comply with the requirements set forth in sections 10.1, 10.2 of this license agreement, licensee shall pay to licensor liquidated damages in the amount of the agreed license fee. Further claims for damages by the licensor shall remain unaffected and shall be offset against the liquidated damages, if any. 
+
+10.4 The licensor may decide not to return the software product and instead request that the software product be deleted, and the documentation destroyed. If the licensor decides to take this course of action, it shall expressly notify the licensee of this decision in text form. 
+
+10.5 The licensee is expressly advised that it may not use the software product after termination of the license agreement and that failure to comply with this requirement constitutes an infringement of copyright. Clause 9.3 shall also apply after termination of the contractual relationship. 
+
+11. Data acquisition
+
+11.1 With the installation of the software product, diagnostic as well as technical and usage-relevant information (system and hardware identifiers as well as information about the system software used, software license and modules as well as all devices and communications controlled with the software) is recorded locally on the computer of the licensee or the recording of the aforementioned information is prepared. The licensor shall provide a detailed overview of the recorded data. 
+
+The Windows user ID may also be collected for this purpose. The processing of the Windows user ID is based on Art. 6 para 1 subpara 1 b) DSGVO. Since the Windows user ID can indicate the real name of a user and is therefore personal, it is also possible to create a local user that does not contain the name of the data subject. However, depending on the application and configuration case, this data can also be stored locally in the network or on servers located in the network to enable further products or services of the licensor. The licensor is entitled to use this systemic data for diagnostic purposes or for licensor services and to collect the data, provided that it is collected and stored in a form for the purposes described above. In the event of problems at the customer's site, it may also be necessary to transfer the collected data - which may also contain personal data - to ZEISS so that the problem can be analyzed and resolved, or a workaround can be provided. ZEISS stores the file with the collected data on internal systems to which only employees at ZEISS who need access have access. After the data has been analyzed or an error correction (bug fix) has been generated, the sent support data is automatically deleted if there are no other reasons for saving it. Depending on the software product, data collection can be prevented by uninstalling the analysis software.
+
+11.2 Floating licenses: Upon request, the licensee is obligated to make available up to twice a year extracts for license use. These must show 
+- how many users the licenses
+- how often 
+- In which country 
+used in the period of the year preceding the date of the license server extract.
+
+In this context, the Licensor reserves the right to request the sending of corresponding log files. If the licensee fails to comply with this request even after repeated requests with a reasonable deadline, the licensor shall be entitled to review the use within the scope of the following paragraph at licensee's expense.
+
+Notwithstanding the foregoing, the Licensor shall be entitled to review compliance with the license agreement at its own expense and to commission a review for up to one year after termination of the license agreement. For this purpose, the licensor shall commission an independent accountant or auditor from an internationally recognized auditing firm, who shall be subject to confidentiality obligations. The review shall be announced at least 30 days in advance and shall take place during normal business hours in a manner that does not unreasonably interfere with licensee's normal business operations. Licensee shall promptly provide the accountant or auditor with all information that the accountant or auditor may reasonably request to assist in the review. If a breach of the license agreement is found in the process, the licensee must reimburse the licensor for all costs of the audit; claims for damages in excess of this may be asserted.
+
+12. Safeguards, audit right
+
+12.1 The licensee shall take appropriate measures to secure the Software and, if applicable, the access data for online access against access by unauthorized third parties. In particular, all copies of the software as well as the access data shall be kept in a protected place.
+
+12.2 At the request of the licensor, the licensee shall enable the licensor to verify the proper use of the software, in particular whether the licensee is using the program qualitatively and quantitatively within the scope of the licenses purchased by the user. To this end, the licensee shall provide the licensor with information, allow the licensor to inspect relevant documents and records, and enable an audit of the hardware and software environment used by the Licensor or by an auditing company named by the licensor and acceptable to the licensee. The licensor may carry out the audit on the premises of the licensee during the licensee's regular business hours with 14 days' notice or have it carried out by third parties bound to secrecy. The licensor shall ensure that the licensee's business operations are disturbed as little as possible by its on-site activities. If the inspection reveals that the purchased number of licenses has been exceeded by more than 5% (five percent) or that the licensee has otherwise not been used in accordance with the contract, the licensee shall bear the costs of the inspection, otherwise the licensor shall bear the costs.
+
+13. Industrial property rights and copyrights
+
+13.1 If a third-party assert claims for infringement of an industrial property right or a copyright against the customer because the customer uses a software version, firmware supplement or associated documentation supplied by ZEISS, ZEISS shall be obligated to pay any cost and damage compensation amounts awarded to the owner of the property right by a court or awarded with the prior consent of ZEISS. This is subject to the condition that the customer informs ZEISS immediately in writing of such claims and that ZEISS reserves the right to all defensive measures and out-of-court settlements. The customer is obligated to support ZEISS in the defense to the best of its ability. Under these conditions, ZEISS shall generally procure for the customer the right to continue using the software version, firmware supplement or documentation. If this should not be possible under economically reasonable conditions, ZEISS shall be obligated, at its own discretion and at its own expense, either to modify or replace the relevant item in such a way that the property right is not infringed, or to take back the item and refund the remuneration paid for it less an amount taking into account the benefits derived.
+
+13.2 ZEISS shall have no obligations if property right infringements are caused by the fact that software versions, firmware supplements or documentation supplied by ZEISS are not used in the intended manner or are not used on a specific system including peripheral devices.
+
+14. Additional conditions for innovation releases
+
+14.1 Restrictions for innovation releases: Between regular major releases (official new version of the software product) of the software, customers with a ZEISS Software Maintenance Agreement or a valid subscription contract are provided with new functionalities in innovation releases even before a major release to be able to benefit earlier from extended functionalities.
+
+14.2 The right of use for innovation releases pursuant to section 2.1 End User License Agreement - EULA is limited until the next major release is made available.
+
+14.3 The functions in the Innovation Releases shall be tested and documented in the same way as in major releases. Bug fixes for Innovation Releases shall only be provided with a new major version / major release or service pack version associated with the major version / major release; no separate bug fixes in the sense of service packss shall be provided for Innovation Releases; Innovation Release Software may not be sold, exchanged, or otherwise transferred or made available to third parties.
+
+14.4 Functions that are made available in innovation releases do not necessarily have to be equally included in the standard scope of the major releases. Measurement plans or programs programmed, modified, or opened and saved in innovation releases are not backward compatible - neither with predecessor major releases nor with predecessor innovation releases.
+
+14.5 Deviation from section 8 of the End User License Agreement - EULA applies to liability:
+Innovation releases can regularly still contain defects. The granting of a license for innovation software was made for the purpose of an early use of new software functions and the transmission of feedback regarding the quality and usability or also identification of defects. Innovation releases are provided "AS IS" and "AS AVAILABLE". They may contain errors or inaccuracies that may cause licensee's equipment and peripherals connected to it (including, in particular, servers and computers) to fail, be impaired, or lose data and / or information. 
+
+15. Export control
+
+Licensee assumes responsibility for compliance with all applicable rules and regulations, including but not limited to the export control and sanctions regulations of the Federal Republic of Germany, the European Union and the United States of America. In particular, licensee agrees not to provide the software or any related technology or documentation (including but not limited to electronic licenses) or any part thereof, directly or indirectly, to any sanctioned country or to any sanctioned person or entity in violation of the foregoing. Licensee warrants to licensor that it will not use the software or any related technology or documentation or any portion thereof in violation of any applicable law or regulation. Licensee further agrees to indemnify and hold harmless licensor from and against any and all claims resulting from licensee's failure to comply with any of the foregoing applicable provisions.
+
+16. Evaluation of user behavior in anonymous form
+
+The licensee agrees to an evaluation of the user behavior in anonymized form by the licensor for purposes of improvement and further development of its products. 
+
+17. Miscellaneous
+
+17.1 All verbal agreements, amendments, extensions or concretizations of these license conditions as well as the special characteristics of the assurances or agreements or arrangements made must be in writing to be legally effective. If these are drafted by representatives or vicarious agents of the Licensor, they shall only become legally binding upon approval by the Licensor. 
+
+17.2 If any provision of this Agreement is unlawful, invalid or unenforceable, the validity, legality and enforceability of the remaining provisions shall not in any way be affected or impaired thereby. The parties shall replace the illegal, invalid or unenforceable provision with a legal, valid or enforceable provision that comes as close as possible to the original commercial intention of the parties.
+
+17.3 Should parts of this contract become invalid, this shall not affect the validity of the remaining parts of this contract. The invalid part of this contract shall be replaced by its parties with legally permissible provisions that come as close as possible to the intention of the invalid provisions.
+
+17.4 The laws of the Federal Republic of Germany shall apply to this contract, excluding the law on the international sale of goods and the rules of conflict of laws. 
+
+18. Acknowledgement of receipt and knowledge
+
+Licensee has acknowledged licensor's use of these license terms. Licensee has acknowledged these terms and conditions to the extent appropriate. 
 
 
-8. Security measures
 
-The licensee shall take suitable measures to secure the software and, if applicable, the access data for online access against access by unauthorized third parties. In particular, all copies of the software as well as the access data shall be kept in a protected place.
+Carl Zeiss AG 
+Carl-Zeiss-Straße 20 
+73447 Oberkochen, 
+Germany
 
+Status: October 2025
 
-9. Industrial property rights and copyrights
-
-9.1 If a third party asserts claims for infringement of an industrial property right or a copyright against the customer because the customer uses a software version, firmware supplement or associated documentation supplied by ZEISS, ZEISS shall be obligated to pay any cost and damage compensation amounts awarded to the owner of the property right by a court or awarded with the prior consent of ZEISS. This is subject to the condition that the customer informs ZEISS immediately in writing of such claims and that ZEISS reserves the right to all defensive measures and out-of-court settlements. The customer is obligated to support ZEISS in the defense to the best of its ability. Under these conditions, ZEISS shall generally procure for the customer the right to continue using the software version, firmware supplement or documentation. If this should not be possible under economically reasonable conditions, ZEISS shall be obligated, at its own discretion and at its own expense, either to modify or replace the relevant item in such a way that the property right is not infringed, or to take back the item and refund the remuneration paid for it less an amount taking into account the benefits derived.
-
-9.2 ZEISS shall have no obligations if property right infringements are caused by the fact that software versions , firmware supplements or documentation supplied by ZEISS are not used in the intended manner or are not used on the specific systems. 
-
-
-10. Export Control
-
-Licensee assumes responsibility for compliance with all applicable rules and regulations, including but not limited to the export control and sanctions regulations of the Federal Republic of Germany, the European Union and the United States of America. In particular, licensee agrees not to provide the software or any related technology or documentation or any part thereof, directly or indirectly, to any sanctioned country or to any sanctioned person or entity in violation of the foregoing.
-
-Licensee represents and guarantees that it will not use the software or any related technology or documentation or any portion thereof in violation of any applicable law or regulation. The licensee further agrees to indemnify and hold harmless licensor from and against any and all claims resulting from licensee's failure to comply with any of the foregoing applicable provisions.
-
-
-11. Miscellaneous
-
-11.1 All verbal agreements, amendments, extensions or concretizations of these license conditions as well as the special characteristics of the assurances or agreements or arrangements made must be in writing to be legally effective. If these are drafted by representatives or vicarious agents of the Licensor, they shall only become legally binding upon approval by the Licensor. 
-
-11.2 Should parts of this contract become invalid, this shall not affect the validity of the remaining parts of this contract. The ineffective part of this contract shall be replaced by its parties with legally permissible provisions that come as close as possible to the intention of the ineffective provisions.
-
-11.3 The laws of the Federal Republic of Germany shall apply to this contract, excluding the law on the international sale of goods and the rules of conflict of laws. 
-
-Version from October 2023
 
 -----------------------------------------------------------------------------
 
-ZEISS Add-Ons / Apps End User License Agreement (EULA)
+
+ZEISS Metrology Software
+
+End User License Agreement (EULA)
+
 ======================================================
 
 German version. See above for English version.
 Deutsche Version. Siehe oben für die Englische Version.
 
+
 1. Einführung
 
 1.1 Allgemeine Informationen
 
-Diese Endbenutzer-Lizenzvereinbarung für Add-Ons / Apps (End User License Agreement, „EULA Add-Ons / Apps“) ist eine rechtsgültige Vereinbarung zwischen „Ihnen“ (entweder eine natürliche oder juristische Person, im Folgenden als „Lizenznehmer“ oder „Kunde“ bezeichnet) und ZEISS („ZEISS“ oder „Lizenzgeber“) (jeweils einzeln eine „Partei“ und zusammen die „Parteien“) für Ihre Nutzung von ZEISS Softwareprodukten. Die Vereinbarung legt alle Rechte und Pflichten sowohl für den Lizenznehmer als auch für ZEISS fest und regelt Ihre Nutzung aller Softwareprodukte, die von ZEISS installiert oder zur Verfügung gestellt werden. Jede Änderung dieser Vereinbarung muss schriftlich erfolgen und mit den hierin enthaltenen Bestimmungen und Bedingungen übereinstimmen. Durch die Zahlung der geltenden Lizenzgebühr(en) und durch das Herunterladen, die Installation oder die Nutzung der Software erklären Sie sich damit einverstanden, dass diese Vereinbarung Ihnen gegenüber gleichermaßen durchsetzbar ist wie ein schriftlicher, ausgehandelter und von Ihnen unterzeichneter Vertrag. Wenn Sie den Bedingungen dieser Vereinbarung nicht zustimmen, sind Sie nicht berechtigt und dürfen keine ZEISS Softwareprodukte herunterladen, installieren oder verwenden. 
+Diese Endbenutzer-Lizenzvereinbarung (End User License Agreement, „EULA“) ist eine rechtsgültige Vereinbarung zwischen „Ihnen“ (entweder eine natürliche oder juristische Person, im Folgenden als „Lizenznehmer“ oder „Kunde“ bezeichnet) und ZEISS („ZEISS“ oder „Lizenzgeber“) (jeweils einzeln eine „Partei“ und zusammen die „Parteien“) für Ihre zeitliche befristete Nutzung von ZEISS Softwareprodukten und Apps.  Jedwede Softwareüberlassung, die auf diesen EULA basiert, umfasst lediglich eine zeitlich befristete Nutzungsüberlassung. Der Lizenznehmer ist berechtigt, Daten innerhalb der lizenzierten Software zu verarbeiten; dies umfasst auch die Nutzung bereitgestellter Beispielinhalte, soweit diese zur Nutzung der Software erforderlich oder hilfreich sind.
+Die Vereinbarung legt alle Rechte und Pflichten sowohl für den Lizenznehmer als auch für ZEISS fest und regelt Ihre Nutzung aller Softwareprodukte, die von ZEISS installiert oder zur Verfügung gestellt werden. Es gilt für den Lizenznehmer immer - soweit der Lizenzgeber keine zwingenden Gründe für ein abweichendes Vorgehen anführt und explizit eine neue EULA als gültig erklärt - diejenige EULA-Version, die bei Bestellung durch den Kunden die aktuellste Version war.
+Jede Änderung dieser Vereinbarung muss schriftlich erfolgen und mit den hierin enthaltenen Bestimmungen und Bedingungen übereinstimmen. 
+Durch die Zahlung der geltenden Lizenzgebühr(en) und / oder durch das Herunterladen, die Installation oder die (fortgesetzte) Nutzung der Software erklären Sie sich damit einverstanden, dass diese Vereinbarung Ihnen gegenüber gleichermaßen durchsetzbar ist wie ein schriftlicher, ausgehandelter und von Ihnen unterzeichneter Vertrag. Wenn Sie den Bedingungen dieser Vereinbarung nicht zustimmen, sind Sie nicht berechtigt und dürfen keine ZEISS Softwareprodukte herunterladen, installieren oder verwenden. 
 
 Für die Nutzung der ZEISS Softwareprodukte und Leistungen muss der Lizenznehmer über Folgendes verfügen:
-
 (a) einen sog. gültigen Subscriptionvertrag oder 
-
 (b) eine gültige Lizenz von ZEISS.
 
 Ferner erfordern und verwenden einzelne Softwareprodukte
-
 (a) die auf einem Subscriptionvertrag basieren und / oder
-
 (b) mit einer serverbasierten Lizenzlösung
 
 eine sichere Verbindung des Applikationsrechners mit der ZEISS Infrastruktur und / oder den „Cloud Services“. 
 
-1.2 Lizenzgeber ist ZEISS Lizenznehmer ist der Endkunde. Der Lizenzgeber gewährt dem Lizenznehmer ein nicht ausschließliches, nicht übertragbares Nutzungsrecht für das „Softwareprodukt“, welches das spezielle Softwareprogramm und die damit nachfolgenden Erweiterungen, Updates, Patches und zugehörige Dokumentation für den unternehmensinternen Betrieb, wie auch die dazugehörigen Handbücher und Softwaredokumentation, einschließt. 
+1.2 Lizenzgeber ist ZEISS Lizenznehmer ist der Endkunde. Der Lizenzgeber gewährt dem Lizenznehmer ein nicht ausschließliches, nicht übertragbares Nutzungsrecht für das „Softwareprodukt“, welches das spezielle Softwareprogramm und die damit verbundenen lizenzierten Softwaremodule, nachfolgenden Erweiterungen, Updates, Patches und zugehörige Dokumentation für den unternehmensinternen Betrieb, wie auch die dazugehörigen Handbücher und Softwaredokumentation, einschließt. 
 
-1.3 Das Softwareprodukt kann Codes, Objekte und anderes geistiges Eigentum enthalten, das von Lizenzgebern oder Dritter entwickelt und von diesen lizenziert und in das Softwareprodukt integriert wurde („Embedded Third Party Software“). Etwaig verwendete Embedded Third Party Software oder Open Source-Code und Open Source-Lizenzen beschränken oder beeinträchtigen die gewährten Nutzungsrechte des Lizenznehmers nicht und können jederzeit innerhalb der jeweils genutzten Software abgerufen werden. Im Einzelfall können die jeweiligen Lizenzbedingungen vom Lizenzgeber auf Anforderung jederzeit zur Verfügung gestellt werden. 
+1.3 Wesentliche Begriffsbestimmungen, Beschreibungen und Erklärungen für unterschiedliche Freigabetypen von Softwareprodukten des Lizenzgebers.
 
-1.4 Entgegenstehende oder von dieser Vereinbarung abweichende Kaufbedingungen des Lizenznehmers werden nicht Vereinbarungsbestandteil, auch wenn der Lizenzgeber diesen nicht ausdrücklich widerspricht. Änderungen der EULA müssen schriftlich und ausdrücklich durch beide Parteien vereinbart werden.
+Hauptversion / Major-Release (auslieferbares Medium) bezeichnet eine neue Version der Software-Applikation mit neuen oder geänderten Funktionalitäten. Eine neue Hauptversion kann typischerweise einmal oder auch mehrmals pro Jahr veröffentlicht werden.
+
+Innovations-Release bezeichnet eine Zwischenversion der Software-Applikation mit neuen oder geänderten Funktionalitäten. Eine neue Zwischenversion wird einmal oder auch mehrmals zwischen zwei Major-Releases veröffentlicht:
+
+Innovations-Releases sind nur für Kunden mit einer gültigen ZEISS Softwarepflegevereinbarung oder eines gültigen Subscriptionvertrags erhältlich;
+Für ein Innovations-Release wird kein Service-Pack zur Verfügung gestellt;
+Es ist immer nur der aktuelle Innovations-Release gültig;
+Es gibt keine Rückwärtskompatibilität mit vorherigen Haupt- oder Innovations-Releases.
+
+Service Pack (auslieferbares Medium) bezeichnet eine Zusammenfassung von Patches. Vorteil ist, dass damit durch die Ausführung einer einzigen Installation mehrere Fehler behoben werden. In der Regel enthält ein Service Pack alle Patches (soweit diese nicht obsolet wurden) seit der Veröffentlichung des letzten Major-Releases oder seitdem letzten, veröffentlichten Service Pack. Bei kumulativen Service Packs muss durch den Kunden nur der neueste installiert werden, da dieser die vorherigen Patches enthält:
+Service Packs beinhalten Fehlerbehebungen. Sie enthalten jedoch keine neuen Funktionalitäten;
+Service Packs durchlaufen ein Freigabeverfahren und werden in regelmäßigen zeitlichen Abständen erstellt;
+Im Sinne der Gewährleistung werden für jeden Major-Release einer Software eine Reihe von Service Packs zur Verfügung gestellt;
+Service Packs stehen allen Kunden zur Verfügung, welche die betreffende Hauptversion / Major Release verwenden dürfen, unabhängig von einem Status als ZEISS Softwarepflegevereinbarung-Vertragskunde; 
+
+Patch (auslieferbares Medium) bezeichnet eine Aktualisierung einer Hauptversion / Major Release oder eines Service Packs, um einen oder einige wenige Fehler zu korrigieren.
+Patches sind kumuliert aufgebaut. Das bedeutet, dass ein neuer Patch alle Änderungen der vorhergehenden Patches enthält. 
+
+Patches werden nur dann erstellt, wenn es eine dringende Fehlerbeseitigung für einen oder mehrere Kunden gibt. Patches werden vom Software-Support an die jeweils betroffenen Kunden verteilt bzw. im ZEISS Portal als Download zur Verfügung gestellt.
+
+Ein Bug Fix bezeichnet eine Fehlerbehebung für einen speziellen Softwarefehler. Bug Fixes werden nicht separat, sondern immer in Form von Patches, Service Packs oder neuen Major-Releases ausgeliefert.
+
+Ein Update/Upgrade wird definiert als Wechsel auf eine neue Hauptversion / Major Release. Ein Update wird in diesem Zusammenhang regelmäßig mit einer gültigen ZEISS Softwarepflegevereinbarung oder eines gültigen Subscriptionvertrags bereitgestellt. Ein Upgrade ist definiert durch den Neuerwerb der aktuellen Hauptversion / Major Release in Verbindung mit dem Neuabschluss einer mindestens einjährigen ZEISS Softwarepflegevereinbarung.
+
+Continuous Release bezeichnet das fortlaufende und agile Zur-Verfügung-Stellen von Fehlerkorrekturen sowie funktionalen Änderungen bzw. Erweiterungen. Es gibt dabei keine Unterscheidung zwischen den verschiedenen Versionierungsarten Major-Release, Innovations-Release, Service Pack und Patch.
+
+Setup / Installer wird per Download zur Verfügung gestellt und enthält den gesamten Funktionsumfang der Hauptversion, welcher ggf. stufenweise freigeschaltet werden kann.
+
+Freeware ist eine kostenlose Software die dauerhaft zur Nutzung überlassen wird. Freeware mit Registrierung ist eine kostenlose Software, die durch eine Registrierung des Lizenznehmers erweiterte Funktionalitäten der Freeware beinhaltet und zeitlich befristet überlassen wird. Der Lizenzgeber behält sich vor, den Umfang der Freeware in regelmäßigen Abständen zu überprüfen und ggf. zu erweitern, einzuschränken oder zu ändern.
+
+Floating-Lizenzen: Hierbei handelt es sich um Lizenzen, die global genutzt werden können und keiner Standortgebundenheit unterliegen.
+
+Trialversion ist eine zeitlich befristete, kostenlose Überlassung der Hauptversion der Software.
+
+ZEISS Softwarepflegevereinbarung ist ein zusätzlicher Vertrag zwischen Lizenzgeber und Lizenznehmer, die unter anderem den Erhalt / die Wiederherstellung der Betriebsbereitschaft der Software, deren Aktualisierung, Beratung sowie Pflege der Software inklusive Dokumentation zum Inhalt hat.
+
+1.4 Wesentliche Begriffsbestimmungen, Beschreibungen und Erklärungen für unterschiedliche Modelle der Zahlung für ZEISS Softwareprodukte
+(a) 7-Jahre Modell: Der Lizenznehmer erwirbt ein siebenjähriges ZEISS Software Nutzungsrecht (Details siehe Ziffer 2.1.) des jeweiligen Major-Releases des Softwareprodukts gemäß dieser Lizenzvereinbarung durch Zahlung einer einmaligen Gebühr. Ergänzend kann der Lizenznehmer eine ZEISS Softwarepflegevereinbarung abschließen, die zusätzliche Privilegien gewährt. Der Lizenzgeber erhebt eine laufende Gebühr für die ZEISS Softwarepflegevereinbarung. Das siebenjährige Nutzungsrecht kann sich entweder beim Ausüben des Rechtes auf ein Software-Update im Zuge einer laufenden ZEISS Softwarepflegevereinbarungen verlängern oder durch den Erwerb eines Upgrades auf ein neues Major Release.
+(b) Subscription Modell: Der Lizenznehmer erwirbt das Recht, den jeweiligen Major-Release des Softwareprodukts gemäß dieser Lizenzvereinbarung während eines festgelegten Zeitraums, der sogenannten Subscription-Laufzeit, zu nutzen. Eine von der Subscription-Laufzeit abweichende technische Lizenzlaufzeit zählt nicht in die Subscription-Laufzeit und darf vom Lizenznehmer nicht zur unzulässigen kostenfreien Verlängerung der Subscription genutzt werden. Die Subscription kann eine Mindestvertragslaufzeit voraussetzen. Eine solche Mindestvertragslaufzeit wird der Lizenzgeber aber immer vor Vertragsbeginn dem Lizenznehmer mitteilen. Im Subscription Modell können bestimmte Leistungen (Hotline-Support und das Recht zur Nutzung der neuesten Version) enthalten sein, welche nicht in separaten ZEISS Softwarepflegevereinbarungen angeboten werden. Im Subscription Modell besteht eine ausdrückliche Empfehlung des Lizenzgebers an den Lizenznehmer, jeweils die neueste Hauptversion / Major-Release zu nutzen (Update). Sofern der Lizenznehmer dieser Empfehlung nicht nachkommt, übernimmt der Lizenzgeber keine Haftung für das fortgesetzte Funktionieren der initial erworbenen Softwareversion mit zukünftigen Versionen, die sich durch mehr als zwei Major Releases von der initial erworbenen Softwareversion unterscheiden. Der Lizenzgeber erhebt pro Subscription-Laufzeit eine Subscriptiongebühr.
+
+1.5 Wesentliche Begriffsbestimmungen, Beschreibungen und Erklärungen für Concurrent Use- / Floating-Lizenzen für die Softwareprodukte des Lizenzgebers.
+
+Concurrent Use- / Floating-Lizenzen können von mehr als einem Benutzer oder einer Instanz genutzt werden. Die Anzahl der Benutzer mit dem Recht, das lizenzierte Softwareprodukt gleichzeitig zu nutzen, wird durch die Anzahl Concurrent Use- / Floating-Lizenzen geregelt, wenn das Softwareprodukt 
+(a) auf einem Server installiert ist und von einem Benutzer von einem anderen Computer aus, der Teil des gleichen internen Netzwerks wie der Fileserver ist, gestartet wird, oder 
+(b) auf einem Computer eines Benutzers installiert ist, jedoch nur zur Nutzung zur Verfügung steht, wenn der Computer dieses Benutzers von einem Fileserver über ein internes Netzwerk Zugriff darauf erhält, oder 
+(c) auf einem Computer durch einen dokumentierten / kontrollierten „Lizenz-Check-out-Vorgang“ (Entleihen der Lizenz) befristet installiert ist, wodurch sichergestellt ist, dass die Anzahl der Lizenzen im Netzwerk automatisch reduziert / angepasst wird. Dies schließt die automatische Rückgabe der gewährten Lizenz nach Ablauf des Zeitraums, der im System festgelegt ist, oder eine manuelle Lizenzrückgabe zu einem früheren Zeitpunkt ein.
+
+Concurrent Use-Lizenzen sind als globale Concurrent Use-Lizenzen verfügbar.
+(d) Sofern die Lizenzen auf einem Server vorliegen, kann die Software on-premise genutzt werden.
+
+1.6 Wesentliche Begriffsbestimmungen, Beschreibungen und Erklärungen für Single Use-Lizenzen und User-bound-Lizenzen für die Softwareprodukte des Lizenzgebers.
+Single Use-Lizenz / User-bound-Lizenz bezeichnen eine Lizenz, die das Recht auf die Nutzung des Softwareprodukts begrenzen.
+(a) Single Use-Lizenzen sind solche Lizenzen, die jeweils pro Lizenz entweder auf die Nutzung eines Software-Dongle angewiesen sind oder die fest einem Endgerät zugeordnet sind. Eine Nutzung über virtuelle Maschinen, in Docker-Containern, mittels Remote Desktops oder eines Citrix-Servers ist nur zulässig, wenn und soweit der Lizenznehmer sicherstellt, dass die Art der Nutzung der Nutzung auf einem spezifischen, individualisierten Endgerät entspricht.
+(b) User-bound-Lizenzen sind Lizenzen, die nur die Nutzung durch eine bestimmte Person zulassen bzw. einen personalisierten Zugang erlauben. Der Zugang erfolgt nach Ermessen des Lizenzgebers mittels Benutzerkennung (Name, Nutzerkennung, E-Mail).
+
+1.7 Wenn das Softwareprodukt vom Lizenzgeber als „Update“, „Upgrade“, „Patch“ oder „Subscription“ gekennzeichnet ist, muss der Lizenznehmer über die für das Update, Upgrade oder Patch vom Lizenzgeber als geeignet gekennzeichnete Softwareproduktlizenz verfügen, um das Softwareprodukt nutzen zu können. Ein Softwareprodukt, das vom Lizenzgeber als Update, Upgrade oder Patch gekennzeichnet ist, ersetzt und / oder erweitert das ursprüngliche Produkt, das als Grundlage für das Update und Upgrade diente. Der Lizenznehmer darf das jeweilige Upgrade oder Patch nur gemäß den Bedingungen dieser Lizenzvereinbarung nutzen. Handelt es sich beim Softwareprodukt um das Upgrade der Komponente eines Softwarepakets, das als Einzelprodukt lizenziert wurde, darf der Lizenznehmer das Softwareprodukt nur als Komponente dieses einzelnen Produktpakets nutzen und übertragen. Dem Lizenznehmer ist nicht gestattet, es für den Einsatz auf mehreren Computern aufzuteilen. 
+
+Durch einen gültigen Subscriptionvertrag ist der Lizenznehmer berechtigt, das neueste Softwareprodukt standardmäßig zu nutzen.
+
+1.8 Das Softwareprodukt kann Codes, Objekte und anderes geistiges Eigentum enthalten, das von Lizenzgebern oder Dritter entwickelt und von diesen lizenziert und in das Softwareprodukt integriert wurde („Embedded Third Party Software“). Etwaig verwendete Embedded Third Party Software oder Open Source-Code und Open Source-Lizenzen beschränken oder beeinträchtigen die gewährten Nutzungsrechte des Lizenznehmers nicht und können jederzeit innerhalb der jeweils genutzten Software abgerufen werden. Im Einzelfall können die jeweiligen Lizenzbedingungen vom Lizenzgeber auf Anforderung jederzeit zur Verfügung gestellt werden. 
 
 
-2. Laufzeit und Kündigung / Lizenzgebühren
+1.9 Der Kunde gewährt ZEISS, eine weltweite, unbefristete, unwiderrufliche, übertragbare, unterlizenzierbare und gebührenfreie Lizenz zur Nutzung von Vorschlägen, Empfehlungen, Funktionsanfragen oder sonstigem Feedback im Zusammenhang mit der ZEISS Software, das von Ihnen oder in Ihrem Namen bereitgestellt wird, und zur Einbindung oder anderweitigen Nutzung eines solchen Feedbacks in Verbindung mit der ZEISS Software oder anderen Produkten oder Diensten.
 
-2.1 Die Lizenzvereinbarung beginnt mit Lizenzaktivierung und endet mit der Nutzungsdauer der Pro Version oder mit dem Ende der Bezahldauer. 
+1.10  Der Lizenznehmer wird hiermit darüber informiert, dass die Software ganz oder teilweise Komponenten enthält, die als Künstliche Intelligenz (KI) im Sinne der Verordnung (EU) 2024/1689 des Europäischen Parlaments und des Rates über künstliche Intelligenz („EU KI-VO“) eingestuft sind. 
 
-2.2 Der Lizenzgeber ist berechtigt, diese Lizenzvereinbarung und die entsprechenden Nutzungsrechte mit sofortiger Wirkung zu kündigen, falls der Lizenznehmer eine Bestimmung dieser Lizenzvereinbarung verletzt oder eine Verletzung dieser Lizenzvereinbarung durch Dritte stillschweigend duldet oder seine Verpflichtungen aus dieser Lizenzvereinbarung nicht erfüllt oder falls der Lizenznehmer Insolvenz anmeldet oder bei dem Lizenznehmer ein Kontrollwechsel stattfindet.
+Der Lizenzgeber gewährleistet, dass die betroffenen KI-Komponenten den geltenden Vorschriften entsprechen.
 
-2.3 Ungeachtet der vorstehenden Bestimmungen und sofern in dieser Lizenzvereinbarung nicht anderweitig vereinbart, endet diese Lizenzvereinbarung automatisch bei Verletzung einer seiner Bestimmungen durch den Lizenznehmer. 
+1.11 Entgegenstehende oder von dieser Vereinbarung abweichende Kaufbedingungen des Lizenznehmers werden nicht Vereinbarungsbestandteil, auch wenn der Lizenzgeber diesen nicht ausdrücklich widerspricht. Änderungen der EULA müssen schriftlich und ausdrücklich durch beide Parteien vereinbart werden.
 
-2.4 Unter keinen Umständen sind bei Kündigung oder einvernehmlicher Beendigung dieses Vertrages Lizenzgebühren vollständig oder teilweise erstattungsfähig, es sei denn ZEISS hat die vorzeitige Beendigung dieses Vertrages zu vertreten. 
+2. Laufzeit, Kündigung und Änderungen der EULA
 
+2.1 Im 7-Jahre Modell werden diese Lizenzvereinbarung und das Nutzungsrecht mit der Zahlung der Lizenzgebühren an den Lizenzgeber rechtskräftig wirksam (Wirksamkeitsdatum).
+
+Die Lizenzvereinbarung beginnt, mit Ausnahme zeitlich befristeter Lizenzvereinbarungen, an dem in der Auftragsbestätigung des Lizenzgebers angegebenen Tag (Wirksamkeitsdatum) oder mit dem Eintrittsdatum, das der Lizenznehmer in der Vereinbarung angegeben hat (Wirksamkeitsdatum). Sind zum Zeitpunkt der Vertragsvereinbarung zwei Wirksamkeitsdaten vorhanden, überwiegt das vom Lizenznehmer in einer Vereinbarung in Textform angegebene Wirksamkeitsdatum. Diese Lizenzvereinbarung und mit ihr das Nutzungsrecht enden sieben (7) Jahre nach dem Wirksamkeitsdatum automatisch.
+
+Werden nach der Zahlung der anfänglichen Lizenzgebühr weitere gleichzeitig Nutzungsberechtigte (Concurrent Users) hinzugefügt, endet die Laufzeit für deren Nutzung des Softwareprodukts mit der zuvor bestehenden, zum aktuellen Zeitpunkt geltenden Laufzeit. Falls der Lizenznehmer ein Upgrade erwirbt, läuft die Laufzeit dieser Lizenzvereinbarung auf der Grundlage weiter, die im neuen Lizenz- und Autorisierungsdokument für das Upgrade festgelegt ist.
+
+2.2 Im Subscription-Modell beginnt diese Lizenzvereinbarung an dem in der Auftragsbestätigung des Lizenzgebers angegebenen ersten Tag der Subscriptionlaufzeit (Wirksamkeitsdatum) oder mit dem Eintrittsdatum, das der Lizenznehmer in einer Vereinbarung (in Textform) angegeben hat (Wirksamkeitsdatum). Sind zum Zeitpunkt der Vertragsvereinbarung zwei Wirksamkeitsdaten vorhanden, überwiegt das vom Lizenznehmer in einer Vereinbarung (in Textform) angegebene Wirksamkeitsdatum. Sofern automatische Verlängerungen in dem Land, der Region, der Provinz oder dem Staat des Lizenznehmers zulässig sind, verlängert sich diese Subscription automatisch um eine weitere Subscriptionlaufzeit („verlängerte Subscriptionlaufzeit“), wenn der Subscriptionvertrag nicht rechtzeitig gekündigt wird. Der Lizenzgeber wird wirtschaftlich angemessene Anstrengungen unternehmen, um den Lizenznehmer über die Verlängerung zu benachrichtigen. Für jede Verlängerung gelten die am ersten Tag der neuen Subscriptionlaufzeit gültigen Preise. Der Lizenznehmer wird im Zuge der Benachrichtigung über die Vertragsverlängerung gegebenenfalls über mögliche Preiserhöhungen unterrichtet. 
+
+Das Subscription-Modell wird gebührenpflichtig entweder
+(a) am Wirksamkeitsdatum, wenn der Kunde keine weiteren Services zur Einrichtung, die explizit im Zusammenhang mit dem betreffenden Subscriptionprodukt stehen und die eine unabdingbare technische Voraussetzung für die Softwarenutzung durch den Lizenznehmer sind, erworben hat oder
+(b) nachdem ZEISS die Einrichtung des Services für den Kunden vorgenommen hat, die explizit im Zusammenhang mit dem betreffenden Subscriptionprodukt erworben wurden und die eine unabdingbare technische Voraussetzung für die Softwarenutzung durch den Lizenznehmer sind (z. B. Installation).
+
+Nachträgliche Käufe im Rahmen eines bestehenden Subscriptionvertrages werden für die Restlaufzeit des aktuellen Subscriptionzeitraums tageweise anteilig in Rechnung gestellt. 
+
+Wenn ein neuer Subscriptionzeitraum durch eine automatische Verlängerung des Subscriptionvertrages beginnt, wird die Gebühr für die vereinbarten Leistungen einschließlich Nachkäufen für die ursprünglich vereinbarte Dauer des neuen Subscriptionzeitraums in Rechnung gestellt. 
+
+2.3 Im Subscription-Modell kann diese Lizenzvereinbarung (nach Ablauf einer etwaigen Mindestvertragslaufzeit) durch den Lizenznehmer folgendermaßen gegenüber dem Lizenzgeber gekündigt werden:
+(a) dreißig (30) Tage vor dem Ende des Subscriptionzeitraums, wenn zu Beginn ein Subscriptionzeitraum von einem Jahr gewählt wurde,
+(b) vierzehn (14) Tage vor dem Ende des laufenden Monats, wenn zu Beginn ein Subscriptionzeitraum von einem Monat gewählt wurde, oder
+(c) vierzehn (14) Tage vor dem Inkrafttreten einer angekündigten Preiserhöhung 
+
+online über das jeweilige ZEISS Portal für registrierte Benutzer, per Einschreiben oder E-Mail. Die Kündigung wird nach Ablauf des zu Beginn gewählten Subscriptionzeitraums, mit dem auch das Nutzungsrecht endet, oder im Falle einer Kündigung nach Ziffer 2.3.c am Tag der Preiserhöhung, wirksam.
+
+2.4 Der Lizenzgeber behält sich rein vorsorglich das Recht vor, diese Lizenzvereinbarung und die entsprechenden Nutzungsrechte mit sofortiger Wirkung zu kündigen, falls der Lizenznehmer eine Bestimmung dieser Lizenzvereinbarung verletzt oder eine Verletzung dieser Lizenzvereinbarung durch Dritte stillschweigend duldet oder seine Verpflichtungen aus dieser Lizenzvereinbarung nicht erfüllt oder falls der Lizenznehmer Insolvenz anmeldet oder bei dem Lizenznehmer ein Kontrollwechsel stattfindet.
+
+2.5 Als präventive Maßnahme sehen diese Endbenutzer-Lizenzvereinbarung eine automatische Nutzungsbeendigung in den folgenden Fällen vor: Ungeachtet der vorstehenden Bestimmungen von Ziffer 2 und sofern in dieser Lizenzvereinbarung nicht anderweitig vereinbart, endet diese Lizenzvereinbarung automatisch bei Verletzung einer seiner Bestimmungen durch den Lizenznehmer. Darüber hinaus endet diese Lizenzvereinbarung automatisch, sofern nicht anderweitig vereinbart (z. B. bei Concurrent Use / Floating-Lizenzen), falls der Lizenznehmer den Besitz des Softwareprodukts oder eine Kopie der Software Dritten überträgt (Ziffer 4.3 bis 4.6) oder den Computer oder das Messgerät, auf dem das Softwareprodukt installiert ist, an einen Dritten verkauft. Das Nutzungsrecht für die Vorgängerversion(en) endet mit der Installation des Updates oder Upgrades. Der Lizenznehmer ist nicht mehr zur Nutzung der Vorgängerversion(en) auf einem anderen Computersystem oder zur Bereitstellung einer oder mehrerer Vorgängerversionen zur Nutzung durch Dritte berechtigt.
+
+2.6 Unter keinen Umständen sind bei Kündigung oder einvernehmlicher Beendigung dieses Vertrages Lizenzgebühren vollständig oder teilweise erstattungsfähig, es sei denn ZEISS hat die vorzeitige Beendigung dieses Vertrages zu vertreten. Der Lizenznehmer muss, die unter Ziffer 10 genannten Bedingungen für die Rückgabe und Löschung einhalten. Der Lizenznehmer verpflichtet sich, alle vernünftigen Anstrengungen zu unternehmen, um alle Kopien des Softwareprodukts – als Ganzes, in Teilen oder in Verbindung mit anderer Software – bei Beendigung dieses Lizenzvertrags zu vernichten. 
 
 3. Vervielfältigungsrechte 
 
 3.1 Der Lizenznehmer darf die gelieferte Software in dem Umfang vervielfältigen, in dem die Vervielfältigung zur Nutzung der Software erforderlich ist. Erforderliche Vervielfältigungen der Software sind unter anderem die Installation des Softwareprodukts auf dem Massenspeicher des Geräts gemäß diesem Lizenzvertrag und das Laden der Software in den Hauptspeicher des Computers. 
+
+Änderungen an der Hardware können zusätzlichen Aufwand für eine anschließende Lizenzierung, Reparatur der Lizenz oder eine erneute Lizenzierung durch den Lizenznehmer und / oder Lizenzgeber erforderlich machen. Dies gilt insbesondere für Änderungen oder Erweiterungen von Computerhardware-Komponenten oder den Austausch eines Computersystems als Ganzes mit / ohne Netzwerkzugriff (MAC-Adresse). Falls das Softwareprodukt vom Lizenzgeber auf andere Computerhardware übertragen wird, darf der Lizenznehmer die übertragene Software nicht länger auf dem „alten“ System nutzen. 
 
 3.2 Außerdem ist der Lizenznehmer zur Anfertigung von Kopien zur Datensicherung berechtigt. Diese Sicherungskopie des lizenzierten Softwareprodukts muss als solche gekennzeichnet sein. 
 
@@ -203,94 +518,222 @@ eine sichere Verbindung des Applikationsrechners mit der ZEISS Infrastruktur und
 
 3.4 Der Lizenznehmer ist nicht berechtigt, weitere Kopien zu erstellen oder Dritte anzuweisen, weitere Kopien zu erstellen, insbesondere ist er nicht berechtigt, den Programmcode mit einem Drucker auszudrucken oder Fotokopien des Handbuchs zu erstellen. 
 
-
 4. Weiterverkauf und Übertragung
 
-4.1 Der Lizenznehmer ist nicht berechtigt, das Softwareprodukt Dritten im Rahmen von Hosting- oder Downloadoptionen zu vermieten, verleasen, verleihen oder zur Verfügung zu stellen, es sei denn, der Lizenzgeber hat dies ausdrücklich schriftlich angegeben oder erlaubt. 
+4.1 Ist die Software als „NFR“ oder „Not for Resale“ („Nicht zum Weiterverkauf bestimmt“) oder als "Evaluation Copy" („Testversion“) oder „Time Limited Trial“ („zeitlich begrenzte Testversion“) gekennzeichnet, ist der Lizenznehmer nicht berechtigt, das Softwareprodukt oder die dazugehörenden Handbücher und Softwaredokumentation für gewerbliche Zwecke zu nutzen oder einzusetzen, und er darf das Softwareprodukt anderen nicht weiterverkaufen, übertragen oder anderweitig zur Verfügung stellen, es sei denn, er hat hierfür die ausdrückliche Genehmigung des Lizenzgebers. Ausgenommen vom Verbot der gewerblichen Nutzung sind kostenfreie Trial- und Free-Lizenzen.   Gewerblicher Einsatz umfasst auch die Nutzung des Softwareprodukts zur Erstellung von allgemein zugänglicher Computersoftware.
 
-4.2 Es ist jedoch gestattet, Dritten ein Nutzungsrecht einzuräumen, wenn diese das Softwareprodukt nach Maßgabe des Lizenznehmers (wie eigene Mitarbeiter) nutzen müssen. Von der Nutzung auf jeden Fall ausgeschlossen sind unabhängige Dritte.
+Der Lizenznehmer ist nicht berechtigt, das Softwareprodukt Dritten im Rahmen von Hosting- oder Downloadoptionen zu vermieten, verleasen, verleihen oder zur Verfügung zu stellen, es sei denn, der Lizenzgeber hat dies ausdrücklich schriftlich angegeben oder erlaubt. 
 
-4.3 Übertragung innerhalb von Rechtspersonen oder globalen Konzernen des Lizenznehmers: Sofern der übertragende Lizenznehmer und die empfangende Partei Teil einer Rechtsperson oder Teil verbundener Unternehmen sind, ist die Übertragung gestattet, sofern die empfangende Partei diesen Lizenzbedingungen zustimmt. „Verbundene Unternehmen“ bedeutet jede Rechtsperson, die direkt oder indirekt von einer Rechtsperson oder deren Muttergesellschaft kontrolliert wird. „Kontrolle“ im Sinne dieses Lizenzvertrags bedeutet direkter oder indirekter Besitz von mehr als fünfzig Prozent (50 %) der Anteile an diesem Unternehmen oder mehr als fünfzig Prozent (50 %) direkter oder indirekter Beteiligung am Entscheidungsorgan dieses Unternehmens. 
+4.2 Es ist jedoch gestattet, Dritten ein Nutzungsrecht einzuräumen, wenn diese das Softwareprodukt nach Maßgabe des Lizenznehmers (wie eigene Mitarbeiter) nutzen müssen. Von der Nutzung auf jeden Fall ausgeschlossen sind unabhängige Dritte. Jedweder Remote Zugriff (und die damit verbundene, mittelbare Nutzung) ist unzulässig, es sei denn der Remote Zugriff erfolgt vom Lizenzgeber zur Wartung.
 
+4.3 Es ist zulässig namens und im Auftrag eines Dritten für diesen Dritten Software zu bestellen, soweit ersichtlich ist, dass der Dritte der Lizenznehmer von ZEISS wird und dieser den EULA zustimmt. Im Einzelfall (insb. bei Hardware-gebundener Software) kann dies aber vom Abschluss einer zusätzlichen Softwarepflegevereinbarung anhängig gemacht werden.
 
-5. Rückübersetzung und Programmänderungen 
+4.4 Der Lizenznehmer darf die im Vertragsdokument erworbenen und aufgeführten Concurrent Use- / Floating-Lizenzen global innerhalb seines Unternehmens und der mit ihm nach §§ 15 ff. AktG verbundenen Unternehmen einsetzen. Die Nutzung durch Dritte, insbesondere externe Dienstleister (ausgenommen Dienstleister im Bereich Wartung, Kalibrierung, Reparatur, Umzug und Umrüstung von Systemen), Lieferanten ist gestattet, insofern diese im Namen des Lizenznehmers agieren. Die nutzungsberechtigten Dritten sind zur Einhaltung der Lizenzbedingungen verpflichtet.
 
-5.1 Der Lizenznehmer darf grundsätzlich keine Änderungen am Softwareprodukt vornehmen, außer wenn dies zur Behebung von Fehlern erforderlich ist. Voraussetzung ist, dass dies ausschließlich zum Zweck der Korrektur von Fehlern geschieht, die das Funktionieren der Software beeinträchtigen. 
-Im letzteren Fall und wenn beim Reparaturvorgang wichtige Programmfunktionen und Arbeitsmethoden offengelegt werden könnten, kann der Lizenznehmer einen gewerblich tätigen Dritten mit der Reparatur beauftragen, wenn dieser Dritte nicht ein potenzieller Wettbewerber des Lizenzgebers ist. 
-Soweit der Lizenznehmer zur Behebung von Fehlern Änderungen am Softwareprodukt vornimmt, übernimmt der Lizenzgeber, insb. auch nicht durch diese Freigabe, für die daraus resultierende Folgen keine Haftung.
+4.5 Bei Lizenzierung des Softwareprodukts für eine Leasinggesellschaft (Leasinggeber), steht es der Leasinggesellschaft frei, das Softwareprodukt einem vereinbarten Leasingnehmer zu den Bedingungen dieses Lizenzvertrags zur Verfügung zu stellen. Wird der Leasinggegenstand weiter verleast, ist es dem Leasinggeber gestattet, die Nutzungsrechte am Softwareprodukt zusammen mit dem Leasinggegenstand unter Angabe entsprechender Informationen (welche CMM / System / Seriennummer, gewährte Softwarelizenzen, Name / Anschrift des alten und neuen Leasingnehmers umfassen) in schriftlicher Form vor der geplanten Übertragung zu übertragen, sowie vom Leasingnehmer die Anerkennung der Bedingungen der übertragenen Lizenz in schriftlicher Form zu fordern. 
 
-5.2 Die Rückübersetzung des lizenzierten Programmcodes in andere Codeformen (Dekompilierung) und andere Arten des Reverse Engineering verschiedener unterschiedlicher Phasen der Software-Erstellung sind nur insoweit zulässig, wie sie dazu dienen, Fehler zu korrigieren, die das Funktionieren der Software beeinträchtigen (entsprechend Ziffer 5.1). Der Lizenznehmer darf eine solche Dekompilierung jedoch nur in dem für die Berichtigung erforderlichen Ausmaß und gegebenenfalls unter Einhaltung der mit dem Inhaber des Urheberrechts an diesem Programm vertraglich festgelegten Bedingungen vornehmen.
+4.6 Im 7-Jahre Modell kann das Softwareprodukt unter Einhaltung der folgenden Bedingungen als Teil des Verkaufs eines Gerätes, der das Softwareprodukt beinhaltet, an eine andere Partei übertragen werden: 
+(a) beim übertragenden Benutzer verbleiben keine Kopien des Softwareprodukts; 
+(b) als Voraussetzung für die Wirksamkeit einer solchen Übertragung muss die empfangende Partei die Bedingungen dieses Lizenzvertrags ausdrücklich per E-Mail mit einer gescannten Kopie eines unterzeichneten Informationsschreibens, wie zum Beispiel einer pdf-Kopie, adressiert an die vom Lizenzgeber angegebene E-Mail-Adresse gegenüber dem Lizenzgeber anerkennen; und 
+(c) die übertragene Software muss zum Zeitpunkt ihrer Übertragung auf dem neusten Stand sein (neueste überarbeitete Softwareversion). Lizenzen sind nur innerhalb der Europäischen Union bzw. außerhalb der Europäischen Union nur innerhalb der Länder, in denen sie ursprünglich erworben wurden, übertragbar; und 
+(d) alle Softwaremodule des Softwareprodukts können nur als ein Paket und nicht als einzelne Lizenzen übertragen werden.
+
+4.7 Im Subscription-Modell kann das Softwareprodukt nicht als Teil des Verkaufs eines Gerätes, der die Softwareproduktlizenz beinhaltet, an eine andere Partei übertragen werden. Der neue Eigentümer des Gerätes muss eine neue Subscription abschließen oder die Lizenz im 7-Jahre Modell erwerben.
+
+4.8 Übertragung innerhalb von Rechtspersonen oder globalen Konzernen des Lizenznehmers.
+
+Sofern der übertragende Lizenznehmer und die empfangende Partei Teil einer Rechtsperson oder Teil verbundener Unternehmen sind, ist die Übertragung gestattet, sofern die empfangende Partei diesen Lizenzbedingungen zustimmt (Anerkenntnis an die vom Lizenzgeber angegebene E-Mail-Adresse). „Verbundene Unternehmen“ bedeutet jede Rechtsperson, die direkt oder indirekt von einer Rechtsperson oder deren Muttergesellschaft kontrolliert wird. „Kontrolle“ im Sinne dieses Lizenzvertrags bedeutet direkter oder indirekter Besitz von mehr als fünfzig Prozent (50 %) der Anteile an diesem Unternehmen oder mehr als fünfzig Prozent (50 %) direkter oder indirekter Beteiligung am Entscheidungsorgan dieses Unternehmens. 
+
+4.9 Übertragung der Softwarelizenzoptionen im 7-Jahre Modell.
+
+Wenn das Softwareprodukt unter Beteiligung des Lizenzgebers an Dritte übertragen wird, fällt eine Lizenzgebühr gemäß der gültigen Preisliste des Lizenzgebers an. Die Zahl der Übertragungen ist auf höchstens vier (4) während der Laufzeit dieses Lizenzvertrags begrenzt.
+
+5. Mehrfachnutzung
+
+5.1 Die Mehrfachnutzung der Software ist abhängig von der Art der Lizenzierung möglich, vgl. Concurrent Use-Lizenzen. Nur im Notfall darf der Lizenznehmer die Software auf alternativen Geräten der gleichen Art verwenden. 
+
+Die Mehrfachnutzung des Softwareprodukts muss vom Lizenzgeber genehmigt werden bzw. erfordert den Erwerb der jeweiligen Lizenz. Sofern in diesem Lizenzvertrag nicht anders vereinbart, gelten sämtliche anderen Bedingungen dieses Lizenzvertrags für die Nutzung des Softwareprodukts durch den Lizenznehmer im Rahmen einer Concurrent Use-Lizenz und / oder User-bound Lizenz. 
+
+5.2 Wenn der Lizenznehmer das Softwareprodukt, das durch ein Update oder Upgrade ersetzt wurde, parallel zum aktuellen Softwareprodukt weiter nutzen möchte, benötigt er hierfür die vorherige Zustimmung des Lizenzgebers, sofern sich dies nicht aus den erworbenen Lizenzen ergibt; eine pdf-Kopie der Zustimmung ist an die angegebene E-Mail-Adresse zu senden. Nutzt der Lizenznehmer ohne Zustimmung des Lizenzgebers ersetzte Softwareprodukte, verstößt er mit der Weiternutzung gegen die Endbenutzer-Lizenzvereinbarung. Der Lizenznehmer muss einen solchen Nutzungsfall durch interne Prozesse auf jeden Fall ausschließen. Für den Fall der Zuwiderhandlung muss der Kunde pro Lizenz die aktuelle Lizenzgebühr als Vertragsstrafe entrichten und die Nutzung einstellen.
+
+6. Rückübersetzung und Programmänderungen 
+
+6.1 Die Rückübersetzung des lizenzierten Programmcodes in andere Codeformen (Dekompilierung) und andere Arten des Reverse Engineering verschiedener unterschiedlicher Phasen der Software-Erstellung sind nur insoweit zulässig, wie sie dazu dienen, Fehler zu korrigieren, die das Funktionieren der Software beeinträchtigen. Der Lizenznehmer darf eine solche Dekompilierung jedoch nur in dem für die Berichtigung erforderlichen Ausmaß und gegebenenfalls unter Einhaltung der mit dem Inhaber des Urheberrechts an diesem Programm vertraglich festgelegten Bedingungen vornehmen.
+
 Weiter ist eine Dekompilierung in Fällen zulässig, um Informationen zu gewinnen, die zur Interoperabilität mit einem unabhängig geschaffenen Computerprogramm erforderlich sind, und nur falls diese Informationen nicht anderweitig beschafft werden können.
 
-5.3 Weitere Voraussetzung für die Genehmigung zur Rückübersetzung ist die Durchführung des Reverse Engineering oder der Programmbeobachtung ausschließlich durch Verfahren, zu deren Ausführung der Lizenznehmer gemäß diesem Lizenzvertrag berechtigt ist. Insbesondere darf der Programmcode in keinem Fall ausgedruckt werden. 5.4 Alle Eigentums- und Urheberrechte in Bezug auf das Softwareprodukt, die gedruckten Begleitmaterialien und sämtliche Kopien des Softwareprodukts verbleiben beim Lizenzgeber oder seinen Lieferanten. Das vorliegende Softwareprodukt ist nach deutschem Urheberrecht, US-amerikanischem Urheberrecht und den Bestimmungen internationaler Verträge geschützt. Der Lizenznehmer ist nicht berechtigt, die der Software beiliegenden gedruckten Materialien zu vervielfältigen.
+6.2 Weitere Voraussetzung für die Genehmigung zur Rückübersetzung ist die Durchführung des Reverse Engineering oder der Programmbeobachtung ausschließlich durch Verfahren, zu deren Ausführung der Lizenznehmer gemäß diesem Lizenzvertrag berechtigt ist. 
 
-5.5 Der Lizenznehmer ist nicht berechtigt, Hinweise zum Urheberrecht oder Markennennungen, die der Lizenzgeber angebracht hat, zu entfernen, zu ändern oder zu ergänzen. Dies beinhaltet ohne Einschränkungen alle Verweise in physischen und / oder elektronischen Medien oder Dokumenten, in „Setup-Assistenten" oder in den Dialogfeldern „Über...“ und / oder in anderen Verweisen, die im Internet dargestellt oder über das Internet aktiviert werden, im Programmcode oder anderen Ausführungsformen, die ursprünglich in der Software enthalten waren oder anderweitig vom Lizenzgeber erstellt wurden.
+6.3 Der Lizenznehmer darf grundsätzlich keine Änderungen am urheberrechtlich geschützten Softwareprodukt vornehmen, außer wenn dies zur Behebung von Fehlern erforderlich ist. Voraussetzung ist, dass dies ausschließlich zum Zweck der Korrektur von Fehlern geschieht, die das Funktionieren der Software beeinträchtigen. 
 
+Im letzteren Fall und wenn beim Reparaturvorgang wichtige Programmfunktionen und Arbeitsmethoden offengelegt werden könnten, kann der Lizenznehmer einen gewerblich tätigen Dritten mit der Reparatur beauftragen, wenn dieser Dritte nicht ein potenzieller Wettbewerber des Lizenzgebers ist. 
 
-6. Gewährleistung und Kündigungsrecht
+Soweit der Lizenznehmer zur Behebung von Fehlern Änderungen am Softwareprodukt vornimmt, übernimmt der Lizenzgeber, insb. auch nicht durch diese Freigabe, für die daraus resultierende Folgen keine Haftung.
 
-6.1 Der Lizenzgeber gewährleistet in Bezug auf das für den Lizenznehmer lizenzierte Softwareprodukt die in der Beschreibung festgelegte Leistung, insofern das Softwareprodukt in dem vorgesehenen System unter Einhaltung der Richtlinien des Lizenzgebers installiert wird. 
+6.4 Alle Eigentums- und Urheberrechte in Bezug auf das Softwareprodukt, die gedruckten Begleitmaterialien und sämtliche Kopien des Softwareprodukts verbleiben beim Lizenzgeber oder seinen Lieferanten. Das vorliegende Softwareprodukt ist nach deutschem Urheberrecht, US-amerikanischem Urheberrecht und den Bestimmungen internationaler Verträge geschützt. Der Lizenznehmer ist nicht berechtigt, die der Software beiliegenden gedruckten Materialien zu vervielfältigen.
 
-6.2 Der Lizenzgeber beseitigt Fehler an dem Softwareprodukt, und in allen Handbüchern sowie anderen Dokumenten, innerhalb einer angemessenen Frist nach Erhalt der zur Fehlerbeseitigung notwendigen entsprechender Angaben vom zum Fehler Lizenznehmer. Fehler werden durch Nachbesserungen, die nicht in Rechnung gestellt werden, oder durch Ersatz der Lieferung, nach Wahl des Lizenzgebers, behoben. 
+6.5 Der Lizenznehmer ist nicht berechtigt, Hinweise zum Urheberrecht oder Markennennungen, die der Lizenzgeber angebracht hat, zu entfernen, zu ändern oder zu ergänzen. Dies beinhaltet ohne Einschränkungen alle Verweise in physischen und / oder elektronischen Medien oder Dokumenten, in „Setup-Assistenten" oder in den Dialogfeldern „Über...“ und / oder in anderen Verweisen, die im Internet dargestellt oder über das Internet aktiviert werden, im Programmcode oder anderen Ausführungsformen, die ursprünglich in der Software enthalten waren oder anderweitig vom Lizenzgeber erstellt wurden.
 
-6.3 Das Kündigungsrecht des Lizenznehmers aufgrund der Nichtausführbarkeit des Softwareprodukts kann erst ausgeübt werden, wenn Nachbesserungen bzw. Ersatz zweimal erfolglos erfolgt sind. 
+7. Gewährleistung und Kündigungsrecht
 
-6.4 Der Lizenzgeber gibt weder eine Garantie noch eine Gewährleistung für die Funktionalität der von Drittanbietern oder dem Lizenznehmer / Kunden erstellten Programme, ebenso wenig wie auf das fehlerfreie Ausführen der Programme mit der Software oder auf den Systemen des Lizenzgebers. 
+7.1 Der Lizenzgeber gewährleistet in Bezug auf das für den Lizenznehmer lizenzierte Softwareprodukt die in der Betriebsanleitung festgelegte Leistung, insofern das Softwareprodukt in dem vorgesehenen System unter Einhaltung der Richtlinien des Lizenzgebers installiert wird. 
 
+7.2 Als Fehler (Bug) an dem Softwareprodukt oder seinen Softwaremodulen gelten ausschließlich solche Fehler (Bugs), die jederzeit reproduzierbar sind. 
 
-7. Haftung 
+7.3 Der Lizenzgeber beseitigt Fehler an dem Softwareprodukt, und in allen Handbüchern sowie anderen Dokumenten, innerhalb einer angemessenen Frist nach Erhalt der zur Fehlerbeseitigung notwendigen entsprechender Angaben zum Fehler vom Lizenznehmer. Fehler werden durch Nachbesserungen, die nicht in Rechnung gestellt werden, oder durch Ersatz der Lieferung, nach Wahl des Lizenzgebers, behoben. 
 
-7.1 Falls der Lizenznehmer das Softwareprodukt nicht auf die vertraglich festgelegte Weise nutzen kann und der Lizenznehmer dies aufgrund der unterlassenen oder falschen Umsetzung von Vorschlägen und Ratschlägen vor oder nach der Unterzeichnung des Vertrages oder aufgrund der Verletzung sonstiger vertraglicher Pflichten zu vertreten hat, so gelten unter Ausschluss weiterer Ansprüche des Lizenznehmers entsprechend die in diesem Vertrag dargelegten Regelungen.
+7.4 Das Kündigungsrecht des Lizenznehmers aufgrund der Nichtausführbarkeit des Softwareprodukts kann erst ausgeübt werden, wenn Nachbesserungen bzw. Ersatz zweimal erfolglos erfolgt sind. 
+
+7.5 Der Lizenzgeber gibt weder eine Garantie noch eine Gewährleistung für die Funktionalität der von Drittanbietern oder dem Lizenznehmer / Kunden erstellten Messpläne oder -programme, ebenso wenig wie auf das fehlerfreie Ausführen der Messpläne oder -programme mit der Software oder auf den Systemen des Lizenzgebers. Der Lizenzgeber schließt jede Form der Gewährleistung oder Garantie in Bezug auf Messpläne und -programme Dritter aus, vor allem nach der Implementierung von Softwareupgrades oder neuen Programmversionen / Softwareupdates. 
+
+Der Lizenzgeber hebt besonders die Möglichkeit hervor, dass das Vorliegen eines oder mehrerer der nachfolgend beschriebenen Faktoren einen Leistungsverlust oder eine Veränderung der Leistung in Bezug auf Messpläne verursachen kann: 
+(a) Das Betriebssystem des Computers wurde zwischen Softwareversionen gewechselt;
+(b) wesentliche Änderungen an den Berechnungsalgorithmen; 
+(c) Behebung von Softwarefehlern und -fehlfunktionen; 
+(d) Änderungen der Abhängigkeiten zwischen Softwareoptionen; 
+(e) falsche Programmierung von Messplänen; 
+(f) Einfluss von Softwareprogrammen oder -modulen, die nicht vom Lizenzgeber herausgegebenen wurden. 
+
+8. Haftung 
+
+8.1 Falls der Lizenznehmer das Softwareprodukt nicht auf die vertraglich festgelegte Weise nutzen kann und der Lizenznehmer dies aufgrund der unterlassenen oder falschen Umsetzung von Vorschlägen und Ratschlägen vor oder nach der Unterzeichnung des Vertrages oder aufgrund der Verletzung sonstiger vertraglicher Pflichten zu vertreten hat, so gelten unter Ausschluss weiterer Ansprüche des Lizenznehmers entsprechend die in Ziffer 7 und 8 dargelegten Regelungen.
 
 Für Schäden, die nicht am Softwareprodukt, beziehungsweise nicht an der Hardware und dem angeschlossenen Gerät entstehen, gilt die Haftungsverpflichtung des Lizenzgebers ausschließlich in den folgenden Fällen, unabhängig vom jeweiligen Rechtsgrund: 
-
-- vorsätzliches Fehlverhalten,
-
-- grobe Fahrlässigkeit seiner ausführenden Organe oder leitenden Angestellten, 
-
+- vorsätzliches Fehlverhalten, 
+- grobe Fahrlässigkeit, 
 - schuldhaft herbeigeführter Schaden des Lebens, des Körpers und der Gesundheit, bei Fehlern, die der Lizenzgeber arglistig verschwiegen, oder die er unter Gewährleistung ausgeschlossen hat, 
+- Softwarefehler im Rahmen der Haftung bei Personen- und Sachschäden aufgrund persönlich implementierter Objekte, wie in den dafür zutreffenden Produkthaftungsregelungen dargelegt 
 
-- Softwarefehler im Rahmen der Haftung bei Personen- und Sachschäden aufgrund persönlich implementierter Objekte, wie in den dafür zutreffenden Produkthaftungsregelungen dargelegt
+8.2 Bei schuldhafter Verletzung wesentlicher Vertragspflichten haftet der Lizenzgeber auch bei grober Fahrlässigkeit. Im letzteren Fall ist die Haftung auf Schäden begrenzt, die vorhersehbar und typisch für diese Art von Vertrag sind. 
 
-7.2 Bei schuldhafter Verletzung wesentlicher Vertragspflichten haftet der Lizenzgeber auch bei grober Fahrlässigkeit seitens nichtleitender Angestellter und bei leichter Fahrlässigkeit. Im letzteren Fall ist die Haftung auf Schäden begrenzt, die vorhersehbar und typisch für diese Art von Vertrag sind. 
+8.3 Außerdem haften der Lizenzgeber, seine Mitarbeiter und seine Erfüllungsgehilfen für Datenverlust oder -änderungen aufgrund von Programmfehlern, beschränkt auf den Umfang, in dem dies unvermeidbar gewesen wäre, wenn der Lizenznehmer seiner Verpflichtung, regelmäßig und mindestens einmal täglich Sicherungskopien zu erstellen, nachgekommen wäre. 
 
-7.3 Außerdem haften der Lizenzgeber, seine Mitarbeiter und seine Erfüllungsgehilfen für Datenverlust oder -änderungen aufgrund von Programmfehlern, beschränkt auf den Umfang, in dem dies unvermeidbar gewesen wäre, wenn der Lizenznehmer seiner Verpflichtung, regelmäßig und mindestens einmal täglich Sicherungskopien zu erstellen, nachgekommen wäre. 
+8.4 Bei Ansprüchen aufgrund von Urheberrechtsverletzungen gewährt der Lizenzgeber dem Lizenznehmer das Recht zur weiteren Nutzung des Softwareprodukts oder zur Vornahme von Änderungen am Softwareprodukt. Wenn dies nicht wirtschaftlich sinnvoll ist, so nimmt der Lizenzgeber den Vertragsgegenstand zurück und erstattet die gezahlte Lizenzgebühr, abzüglich eines der Dauer der vorherigen Nutzung entsprechenden Betrags. Dies gilt unter der Voraussetzung, dass der Lizenznehmer dem Lizenzgeber diese Art der Ansprüche unverzüglich schriftlich mitteilt und dem Lizenzgeber alle Rechtsmittel und außergerichtlichen Regelungen gestattet. 
 
-7.4 Bei Ansprüchen aufgrund von Urheberrechtsverletzungen gewährt der Lizenzgeber dem Lizenznehmer das Recht zur weiteren Nutzung des Softwareprodukts oder zur Vornahme von Änderungen am Softwareprodukt, so dass der Schutz der Urheberrechte gewährleistet ist. Wenn dies nicht wirtschaftlich sinnvoll ist, so nimmt der Lizenzgeber den Vertragsgegenstand zurück und erstattet die gezahlte Lizenzgebühr, abzüglich eines der Dauer der vorherigen Nutzung entsprechenden Betrags. Dies gilt unter der Voraussetzung, dass der Lizenznehmer dem Lizenzgeber diese Art der Ansprüche unverzüglich schriftlich mitteilt und dem Lizenzgeber alle Rechtsmittel und außergerichtlichen Regelungen gestattet. 
+8.5 Für Serverunterbrechungen, Unterbrechung der Lizenzzuteilung und sonstige Support-Fälle, die nicht eindeutig auf eine fehlerhaft erstellte Lizenz zurückzuführen sind, übernimmt der Lizenzgeber in Bezug auf Concurrent Use- / Floating-Lizenzen und / oder User-bound Lizenzen keine Haftung.
 
-7.5 Für Serverunterbrechungen, Unterbrechung der Lizenzzuteilung und sonstige Support-Fälle, die nicht eindeutig auf eine fehlerhaft erstellte Lizenz zurückzuführen sind, haftet der Lizenznehmer bzw. dessen IT-Provider.. 
 Der Lizenznehmer oder dessen IT-Provider ist verantwortlich für die Vorhaltung der notwendigen Anzahl an Lizenzen zur Erbringung seiner Leistungen. Der Lizenzgeber haftet nicht für Nutzungsunterbrechungen und nachfolgende Arbeits- / Produktionsausfälle.
 
-7.6 Weitergehende Haftungsansprüche des Lizenznehmers sind ausdrücklich ausgeschlossen. 
+8.6 Weitergehende Haftungsansprüche des Lizenznehmers sind ausdrücklich ausgeschlossen. 
 
-7.7 Der Lizenznehmer ist für alle aus der Nutzung des Softwareprodukts entstehenden Probleme verantwortlich, die nicht direkt durch den Lizenzgeber verursacht werden. Daher ist der Lizenznehmer für alle Daten verantwortlich, die bei der Nutzung des Softwareprodukts erzeugt und hergestellt werden. Der Lizenznehmer ist demnach zur beziehungsweise für die Einhaltung der in dieser Lizenzvereinbarung genannten Bedingungen verpflichtet und verantwortlich. 
+8.7 Der Lizenznehmer ist für alle aus der Nutzung des Softwareprodukts entstehenden Probleme verantwortlich, die nicht direkt durch den Lizenzgeber verursacht werden. Daher ist der Lizenznehmer für alle Daten verantwortlich, die bei der Nutzung des Softwareprodukts erzeugt und hergestellt werden. Der Lizenznehmer ist demnach zur beziehungsweise für die Einhaltung der in dieser Lizenzvereinbarung genannten Bedingungen verpflichtet und verantwortlich. 
+
+9. Pflicht des Lizenznehmers zur Softwarepflege, Gefahrtragung
+
+9.1 Im 7-Jahre Modell besteht eine ausdrückliche Empfehlung des Lizenzgebers an den Lizenznehmer, zusätzlich zum Erwerb einer Concurrent Use-/ Floating-Lizenz entsprechend den vorliegenden Endnutzerbestimmungen die erworbenen Lizenzen einer bestehenden ZEISS Softwarepflegevereinbarung zuzuordnen oder bei Bedarf eine zusätzliche ZEISS Softwarepflegevereinbarung abzuschließen, um die Software zu nutzen. Sofern der Lizenznehmer dieser Empfehlung nicht nachkommt, übernimmt der Lizenzgeber keine Haftung für das fortgesetzte Funktionieren der initial erworbenen Softwareversion mit zukünftigen Versionen, die sich durch mehr als zwei Major Releases von der initial erworbenen Softwareversion unterscheiden. 
+
+9.2 Softwarepflege erfolgt nach Maßgabe der gesonderten Softwarepflegevereinbarung. Die neueste Version der ZEISS Softwarepflegevereinbarung kann auf der jeweiligen Webseite eingesehen und abgerufen werden.
+
+9.3 Die Verwaltung des Floating-Servers obliegt dem Lizenznehmer, diese Obliegenheit kann aber auch durch ein Self-Service Tool für den Kunden ermöglicht werden. Für den sicheren Betrieb und die Aufrechterhaltung des Servers ist der Lizenznehmer verantwortlich. Der Lizenzgeber bzw. der Lizenznehmer übernimmt die Einspielung / Installation der Lizenzen auf dem (virtuellen) Floating-Server. Die Server-Hardware stellt der Lizenznehmer zur Verfügung.
+
+Eine mögliche Einrichtung der Serverinfrastruktur sowie Beratung zu Betrieb und Aufrechterhaltung des Server-Betriebes durch den Lizenzgeber müssen im Rahmen eines Projektgeschäftes vertraglich individuell geregelt werden.
+
+9.4 Die Verteilung der Lizenzen zur Nutzung der Software obliegt dem Lizenznehmer. Die Nutzer müssen jedoch Mitarbeiter des Lizenznehmers sein. Eine Nutzung durch externe Stakeholder des Lizenznehmers, z. B. Kunden oder Lieferanten, ist nicht gestattet (siehe auch Ziffer 4. Weiterverkauf und Übertragung und Ziffer 5. Mehrfachnutzung).
+
+9.5 Der Lizenznehmer ist verpflichtet, den Zugriff Dritter auf die Software und Dokumentation durch Ergreifung geeigneter Maßnahmen zu verhindern. Insbesondere hat der Lizenznehmer seine Mitarbeiter anzuweisen, Dritten den Zugriff auf die Software zu verwehren. 
+
+9.6 Sollte ein Mitarbeiter des Lizenznehmers gegen das Urheberrecht verstoßen oder nicht berechtigten Dritten den Zugriff auf die Software gewähren, so ist der Lizenznehmer verpflichtet, sich an der Aufklärung des Verstoßes zu beteiligen, und er muss den Lizenzgeber über die betreffende Aufklärung dieses Verstoßes in Kenntnis setzen. 
+
+9.7 Der Lizenznehmer trägt das Risiko des zufälligen Verlusts sowie Zerstörung, besonders in Bezug auf Diebstahl des Softwareprodukts oder Kopierschutzsteckers. Die Lizenzvereinbarung endet automatisch im Falle von Zerstörung oder Verlust. Der Lizenznehmer ist verpflichtet, den Verlust eines Lizenzdongles dem Lizenzgeber unverzüglich anzuzeigen.
+
+9.8 Verlust eines Lizenz-Kopierschutzsteckers / Software-Dongle: Der Lizenznehmer haftet für den gelieferten Software- Kopierschutzstecker. Ein Verlust des Software-Kopierschutzsteckers ist gleichzusetzen mit einem Verlust des Softwareprodukts. Die Kosten für den Ersatz des Software-Kopierschutzsteckers und der damit verbundenen Softwarelizenzen werden dem Lizenznehmer in Rechnung gestellt. Bei Diebstahl des Kopierschutzsteckers ist ein offizieller Polizeibericht zur Neuerteilung einer Lizenz gegen Zahlung eines festgelegten Betrags für die Rückübertragung in Höhe von gegenwärtig 1.500 Euro zzgl. gesetzlicher MwSt. erforderlich. 
+
+Ungeachtet des Vorstehenden ist der Lizenznehmer berechtigt, vom Lizenzgeber den Abschluss eines neuen Lizenzvertrags und die darauffolgende Lieferung eines Softwareprodukts zu verlangen. In diesem Fall gelten und fallen für den Ersatz des gestohlenen Softwareprodukts entsprechende Lizenzgebühren in Höhe des Betrags für ein Upgrade an. 
+
+9.9 Der Lizenznehmer erkennt an, dass die Nutzung der Software von den in den Release Notes angegebenen Systemvoraussetzungen abhängt. Der Lizenzgeber übernimmt keine Verantwortung für Funktionsstörungen oder Einschränkungen der Software, die aus der Nichteinhaltung dieser Systemvoraussetzungen resultieren. Insbesondere, aber nicht ausschließlich, gilt dies für:
+
+• Die Verwendung veralteter Betriebssysteme, die möglicherweise nicht mit der modernen Software kompatibel sind.
+• Die Nutzung von Hardware mit unzureichender Rechenleistung, die die ordnungsgemäße Ausführung der Software beeinträchtigen kann.
+
+Der Lizenznehmer wird darauf hingewiesen, dass die ordnungsgemäße Funktionalität der Software nur gewährleistet werden kann, wenn die empfohlenen Systemvoraussetzungen erfüllt sind. Der Lizenzgeber empfiehlt, vor der Installation die aktuellen Systemvoraussetzungen zu überprüfen und gegebenenfalls erforderliche Upgrades durchzuführen.
+
+9.10 Insoweit eine durch den Lizenznehmer genutzte Software oder ein genutztes Endgerät nicht mehr für entsprechende Supportleistungen qualifiziert ist (sogenannter “End of Support”), gilt folgendes:
+
+Der Lizenzgeber übernimmt keine Haftung für das fortgesetzte Funktionieren dieser Software oder einer Software in Kombination mit einer Hardware, die den End of Support erreicht hat. Der Erwerb eines Software-Upgrades bzw. eines Software-Updates im Rahmen einer ZEISS Softwarepflegevereinbarung oder eines gültigen Subscriptionvertrags erfolgt auf eigene Verantwortung des Lizenznehmers.
+
+Der Lizenzgeber ist nicht verpflichtet zu prüfen, ob der Lizenznehmer trotz des End of Supports einer Software bzw. eines oder mehrerer Hardware-Komponenten, die Software via eines Software-Upgrades oder im Rahmen einer Softwarepflegevereinbarung bezieht, installiert und / oder nutzt.
+
+Der jeweilige End of Support ist der offiziellen Liste zu entnehmen: Product Discontinuation (https://www.zeiss.com/metrology/en/services/product-discontinuation.html#accordionItem-225387622)
+
+10. Verpflichtung zur Rückgabe und Löschung der gelieferten Daten 
+
+10.1 Nach Beendigung dieses Lizenzvertrags ist der Lizenznehmer zur Rückgabe sämtlicher Originaldatenträger, des Dongles sowie der gesamten Dokumentation, Materialien und sonstiger Dokumente in seinem Besitz verpflichtet. Das Softwareprodukt und die gesamte Dokumentation müssen dem Lizenzgeber unentgeltlich zugesandt werden. Bei Beförderung durch Dritte muss die Lieferart die sichere Zustellung gewährleisten (Einschreiben, sichere Sendung o. ä.) und die Sendung ist bis zu einem Betrag, der dem Betrag der Lizenzgebühr entspricht, zu versichern. Der Lizenznehmer muss in Textform bestätigen, dass die Software erfolgreich deinstalliert wurde. 
+
+10.2 Die ordnungsgemäße Rückgabe des Softwareprodukts schließt die vollständige und endgültige Löschung aller vorhandenen Kopien und insbesondere Kopien der Software auf dem Computer ein. 
+
+10.3 Sollte der Lizenznehmer die in den Ziffern 10.1, 10.2 dieses Lizenzvertrags festgelegten Anforderungen nicht einhalten, so zahlt der Lizenznehmer an den Lizenzgeber einen pauschalierten Schadensersatz in Höhe des Betrags der vereinbarten Lizenzgebühr. Weitergehende Schadensersatzansprüche des Lizenzgebers bleiben davon unberührt und werden gegebenenfalls auf den pauschalierten Schadensersatz angerechnet. 
+
+10.4 Der Lizenzgeber kann entscheiden, dass das Softwareprodukt nicht zurückzugeben wird und stattdessen verlangen, dass das Softwareprodukt gelöscht und die Dokumentation vernichtet wird. Falls der Lizenzgeber sich für diese Handlungsoption entscheidet, teilt er diese Entscheidung dem Lizenznehmer ausdrücklich in Textform mit. 
+
+10.5 Der Lizenznehmer wird ausdrücklich darauf hingewiesen, dass er das Softwareprodukt nach der Beendigung des Lizenzvertrages nicht mehr nutzen darf und dass die Nichteinhaltung dieser Anforderung eine Verletzung des Urheberrechts darstellt. Ziffer 9.3 gilt auch nach Beendigung des Vertragsverhältnisses. 
+
+11. Datenerfassung
+
+11.1 Mit Installation des Softwareprodukts werden in Diagnose- sowie technische und nutzungsrelevante Informationen (System- und Hardwarekennungen sowie Informationen über die verwendete Systemsoftware, Softwarelizenz und Module sowie alle mit der Software gesteuerten Geräte und Kommunikationen) lokal auf dem Rechner des Lizenznehmers erfasst bzw. die Erfassung der vorgenannten Information wird vorbereitet. Der Lizenzgeber stellt eine detaillierte Übersicht der erfassten Daten zur Verfügung. Zu diesem Zweck wird unter Umständen auch die Windows-Benutzerkennung erhoben. Die Verarbeitung der Windows-Benutzerkennung erfolgt auf Basis von Art. 6 Abs. 1 UAbs. 1 Buchst. b) DSGVO. Da die Windows-Benutzerkennung auf den echten Namen eines Nutzers hindeuten kann und damit personenbezogen ist, ist es auch möglich einen lokalen Nutzer anzulegen, der nicht den Namen der betroffenen Person enthält. Je nach Anwendungs- und Konfigurationsfall können diese Daten aber auch lokal im Netzwerk oder auf im Netz befindlichen Servern gespeichert werden, um weitere Produkte bzw. Dienstleistungen des Lizenzgebers zu ermöglichen. Der Lizenzgeber ist berechtigt, diese systemischen Daten zu Diagnosezwecken bzw. für Lizenzgeber-Dienste zu nutzen und die Daten zu erfassen, sofern diese für die zuvor beschriebenen Zwecke in einer Form gesammelt und gespeichert werden. Im Falle von Problemen am Standort des Kunden kann es auch nötig sein, die gesammelten Daten – die auch personenbezogene Daten enthalten können – an ZEISS zu übertragen, so dass das Problem analysiert und gelöst werden kann, oder ein Workaround bereitgestellt werden kann. ZEISS speichert die Datei mit den gesammelten Daten auf internen Systemen auf die nur Mitarbeiter bei ZEISS Zugriff haben, die Zugriff benötigen. Nachdem die Daten analysiert oder eine Fehlerkorrektur (Bugfix) erzeugt wurde, werden die übersendeten Supportdaten automatisch gelöscht, wenn es keine anderen Gründe mehr dafür gibt, diese zu speichern. In Abhängigkeit vom Softwareprodukt kann eine Erfassung der Daten durch die Deinstallation der Analysesoftware verhindert werden. 
+
+11.2 Floating-Lizenzen: Der Lizenznehmer ist verpflichtet, nach Aufforderung bis zu zweimal jährlich Auszüge zur Lizenznutzung zur Verfügung zu stellen. Daraus muss ersichtlich sein 
+- wie viele Nutzer die Lizenzen
+- wie oft
+- in welchem Land
+im Zeitraum des dem Tag des Lizenzserver-Auszugs vorhergehenden Jahres genutzt haben.
+
+In diesem Zusammenhang behält sich der Lizenzgeber vor, die Zusendung von entsprechenden Log-Files zu verlangen. Sollte der Lizenznehmer dieser Aufforderung auch nach mehrmaliger Aufforderung mit angemessener Fristsetzung nicht nachkommen, so ist der Lizenzgeber auf Kosten des Lizenznehmers zur Überprüfung der Nutzung im Rahmen des nachfolgenden Absatzes berechtigt.
+
+Unabhängig von der vorstehenden Regelung ist der Lizenzgeber berechtigt, die Einhaltung des Lizenzvertrages auf eigene Kosten zu überprüfen, sowie für bis zu ein Jahr nach Beendigung des Lizenzvertrages eine Überprüfung in Auftrag zu geben. Der Lizenzgeber wird hierfür einen unabhängigen Buch- oder Wirtschaftsprüfer einer international anerkannten Wirtschaftsprüfungsgesellschaft beauftragen, welcher Vertraulichkeitsverpflichtungen unterliegt. Die Überprüfung wird mindestens 30 Tage vorher angekündigt und findet während der normalen Geschäftszeiten in einer Art und Weise statt, die die normale Geschäftstätigkeit des Lizenznehmers nicht unangemessen beeinträchtigt. Der Lizenznehmer muss dem Buch- oder Wirtschaftsprüfer unverzüglich sämtliche Informationen zur Verfügung stellen, die dieser zur Unterstützung der Überprüfung in angemessener Weise verlangen kann. Sollte dabei eine Verletzung des Lizenzvertrages festgestellt werden, so muss der Lizenznehmer dem Lizenzgeber sämtliche Kosten der Prüfung ersetzen, darüberhinausgehende Schadensersatzansprüche können geltend gemacht werden.
+
+12. Sicherungsmaßnahmen, Auditrecht
+
+12.1 Der Lizenznehmer wird die Software sowie gegebenenfalls die Zugangsdaten für den Onlinezugriff durch geeignete Maßnahmen vor dem Zugriff durch unbefugte Dritte sichern. Insbesondere sind sämtliche Kopien der Software sowie die Zugangsdaten an einem geschützten Ort zu verwahren.
 
 
-8. Sicherungsmaßnahmen
+12.2 Der Lizenznehmer wird es dem Lizenzgeber auf dessen Verlangen ermöglichen, den ordnungsgemäßen Einsatz der Software zu überprüfen, insbesondere daraufhin, ob der Lizenznehmer das Programm qualitativ und quantitativ im Rahmen der von ihm erworbenen Lizenzen nutzt. Hierzu wird der Lizenznehmer dem Lizenzgeber Auskunft erteilen, Einsicht in relevante Dokumente und Unterlagen gewähren sowie eine Überprüfung der eingesetzten Hardware- und Softwareumgebung durch den Lizenzgeber oder eine vom Lizenzgeber benannte und für den Lizenznehmer akzeptable Wirtschaftsprüfungsgesellschaft ermöglichen. Der Lizenzgeber darf die Prüfung in den Räumen des Lizenznehmers zu dessen regelmäßigen Geschäftszeiten mit einer Ankündigungsfrist von 14 Tagen durchführen oder durch zur Verschwiegenheit verpflichtete Dritte durchführen lassen. Der Lizenzgeber wird darauf achten, dass der Geschäftsbetrieb des Lizenznehmers durch seine Tätigkeit vor Ort so wenig wie möglich gestört wird. Ergibt die Überprüfung eine Überschreitung der erworbenen Lizenzanzahl um mehr als 5 % (fünf Prozent) oder eine anderweitige nicht vertragsgemäße Nutzung, so trägt der Lizenznehmer die Kosten der Überprüfung, ansonsten trägt die Kosten der Lizenzgeber.
 
-Der Lizenznehmer wird die Software sowie gegebenenfalls die Zugangsdaten für den Onlinezugriff durch geeignete Maßnahmen vor dem Zugriff durch unbefugte Dritte sichern. Insbesondere sind sämtliche Kopien der Software sowie die Zugangsdaten an einem geschützten Ort zu verwahren.
+13. Gewerbliche Schutzrechte und Urheberrechte
+
+13.1 Macht ein Dritter Ansprüche aus Verletzung eines gewerblichen Schutzrechtes oder eines Urheberrechts gegen den Kunden geltend, weil dieser eine von ZEISS gelieferte Softwareversion, Firmwareergänzung oder dazugehörige Dokumentation benutzt, ist ZEISS verpflichtet, etwaige dem Schutzrechtsinhaber gerichtlich zugesprochene oder mit vorheriger Zustimmung von ZEISS zugestandene Kosten- und Schadenersatzbeträge zu bezahlen. Vorausgesetzt ist dabei, dass der Kunde ZEISS unverzüglich schriftlich über derartige Ansprüche unterrichtet und ZEISS alle Abwehrmaßnahmen und außergerichtlichen Regelungen vorbehalten bleiben. Der Kunde ist verpflichtet, ZEISS bei der Abwehr nach besten Kräften zu unterstützen. Unter diesen Voraussetzungen wird ZEISS dem Kunden grundsätzlich das Recht zum weiteren Gebrauch der Softwareversion, Firmwareergänzung oder Dokumentation verschaffen. Falls dies zu wirtschaftlich angemessenen Bedingungen nicht möglich sein sollte, ist ZEISS verpflichtet, nach eigener Wahl und auf eigene Kosten den entsprechenden Gegenstand entweder derart abzuändern oder zu ersetzen, dass das Schutzrecht nicht verletzt wird, oder den Gegenstand zurückzunehmen und das dafür bezahlte Entgelt abzüglich eines die gezogenen Nutzungen berücksichtigenden Betrages zu erstatten.
+
+13.2 ZEISS hat keine Verpflichtungen, falls Schutzrechtsverletzungen dadurch hervorgerufen werden, dass von ZEISS gelieferte Softwareversionen, Firmwareergänzungen oder Dokumentation nicht in der vorgesehenen Weise verwendet oder nicht auf einem bestimmten System einschließlich Peripheriegeräten eingesetzt wird.
+
+14. Zusätzliche Bedingungen für Innovation-Releases 
+
+14.1 Einschränkungen bei Innovations-Releases: Zwischen regelmäßigen Major-Releases (offizielle neue Version des Softwareproduktes) der Software werden Kunden mit einer ZEISS Softwarepflegevereinbarung oder eines gültigen Subscriptionvertrags in Innovations-Releasen neue Funktionalitäten bereits vor einem Major-Release zur Verfügung gestellt, um bereits früher von erweiterten Funktionsumfängen profitieren zu können. 
+
+14.2 Das Nutzungsrecht für Innovation-Releases gemäß Ziffer 2.1 Endbenutzer-Lizenzvertrag – EULA ist zeitlich beschränkt bis zur Verfügungsstellung des nächsten Major-Releases.
+
+14.3 Die Funktionen in den Innovations-Releases werden gleichermaßen getestet und dokumentiert wie auch bei Major-Releases. Fehlerbehebung für Innovationversionen werden nur mit einer neuen Hauptversion / Major Release oder mit der Hauptversion / Major Release verbundenen Servicepack-Version zur Verfügung gestellt, für Innovations-Releases wird keine separate Fehlerbehebung im Sinne von Servicepacks angeboten; Innovations-Release-Software darf nicht verkauft, getauscht oder in sonstiger Weise übertragen werden respektive Dritten zur Verfügung gestellt werden.
+
+14.4 Funktionen, die in Innovations-Releases zur Verfügung gestellt werden, müssen nicht zwangsläufig gleichermaßen im Standardumfang der Major-Releases enthalten sein. Messpläne oder -programme, die in Innovations-Releases programmiert, geändert bzw. geöffnet und abgespeichert wurden sind nicht rückwärtskompatibel – weder auf Vorgänger Haupt- noch auf Vorgänger Innovations-Releases.
+
+14.5 Abweichung von Ziffer 8 der Endbenutzer-Lizenzvereinbarung – EULA gilt für die Haftung:
+Innovations-Releases können regelmäßig noch Mängel beinhalten. Die Gewährung einer Lizenz für Innovation-Software erfolgte zum Zwecke einer frühzeitigen Nutzung von neuen Softwarefunktionen und der Übermittlung von Feedback hinsichtlich der Qualität und Nutzbarkeit bzw. auch Identifikation von Mängeln. Die Innovations-Releases werden „WIE GESEHEN“ und „SOWEIT VERFÜGBAR“ bereitgestellt. Sie können Fehler oder Ungenauigkeiten enthalten, die bei Geräten des Lizenznehmers und daran angeschlossenen Peripheriegeräten (einschließlich insbesondere Server und Computer) zu Ausfällen, Beeinträchtigungen oder Daten- und / oder Informationsverlust führen können.
+
+15. Exportkontrolle
+
+Der Lizenznehmer übernimmt die Verantwortung für die Einhaltung aller anwendbaren Bestimmungen und Vorschriften, einschließlich, aber nicht beschränkt auf die Exportkontroll- und Sanktionsbestimmungen der Bundesrepublik Deutschland, der Europäischen Union sowie der Vereinigten Staaten von Amerika. Insbesondere bestätigt der Lizenznehmer, die Software sowie jedwede damit verbundene Technologie oder Dokumentation (einschließlich, aber nicht beschränkt auf elektronische Lizenzen) oder Teile davon weder direkt noch indirekt unter Nichtbefolgung der vorgenannten Bestimmungen in sanktionierte Länder oder an sanktionierte natürliche oder juristische Personen bereitzustellen. Der Lizenznehmer sichert dem Lizenzgeber zu, dass er die Software sowie jedwede damit verbundene Technologie oder Dokumentation oder Teile davon nicht unter Verletzung vorgenannter anwendbarer Gesetze oder Vorschriften verwenden wird. Weiterhin verpflichtet sich der Lizenznehmer den Lizenzgeber von allen Ansprüchen freizustellen und schadlos zu halten, welche aus der Nichteinhaltung vorgenannter anwendbarer Bestimmungen resultiert.
+
+16. Auswertung des Nutzerverhaltens in anonymisierter Form
+
+Der Lizenznehmer stimmt einer Auswertung des Nutzerverhaltens in anonymisierter Form durch den Lizenzgeber zu Zwecken der Verbesserung und Weiterentwicklung seiner Produkte zu. 
+
+17. Sonstige
+
+17.1 Sämtliche mündliche Vereinbarungen, Änderungen, Erweiterungen oder Konkretisierungen dieser Lizenzbedingungen sowie die besonderen Eigenschaften der getroffenen Zusicherungen oder Vereinbarungen oder Absprachen bedürfen zu ihrer Rechtswirksamkeit der Schriftform. Falls diese von Vertretern oder Erfüllungsgehilfen des Lizenzgebers abgefasst sind, so werden sie erst mit der Genehmigung des Lizenzgebers rechtlich bindend. 
+
+17.2 Sollten einzelne Bestimmungen dieser Vereinbarung rechtswidrig, ungültig oder nicht durchsetzbar sein, so wird dadurch die Gültigkeit, Rechtmäßigkeit und Durchsetzbarkeit der übrigen Bestimmungen in keiner Weise berührt oder beeinträchtigt. Die Parteien werden die rechtswidrige, ungültige oder nicht durchsetzbare Bestimmung durch eine rechtmäßige, gültige oder durchsetzbare Bestimmung ersetzen, die der ursprünglichen wirtschaftlichen Absicht der Parteien so nahe wie möglich kommt.
+
+17.3 Sollten Teile dieses Vertrags unwirksam werden, so berührt dies nicht die Wirksamkeit der übrigen Teile dieses Vertrags. Der unwirksame Teil dieses Vertrags soll durch seine Parteien durch gesetzlich zulässige Bestimmungen ersetzt werden, die der Absicht der unwirksamen Bestimmungen am nächsten kommt.
+
+17.4 Auf diesen Vertrag sind die Gesetze der Bundesrepublik Deutschland anwendbar, unter Ausschluss des Gesetzes über den internationalen Warenkauf und der Regeln des Kollisionsrechts. 
+
+18. Empfangs- und Kenntnisnahmebestätigung
+
+Der Lizenznehmer hat die Nutzung dieser Lizenzbedingungen durch den Lizenzgeber zur Kenntnis genommen. Der Lizenznehmer hat diese Bedingungen im angemessenen Umfang anerkannt. 
 
 
-9. Gewerbliche Schutzrechte und Urheberrechte
+Carl Zeiss AG 
+Carl-Zeiss-Straße 20 
+73447 Oberkochen, 
+Deutschland
 
-9.1 Macht ein Dritter Ansprüche aus Verletzung eines gewerblichen Schutzrechtes oder eines Urheberrechts gegen den Kunden geltend, weil dieser eine von ZEISS gelieferte Softwareversion, Firmwareergänzung oder dazugehörige Dokumentation benutzt, ist ZEISS verpflichtet, etwaige dem Schutzrechtsinhaber gerichtlich zugesprochene oder mit vorheriger Zustimmung von ZEISS zugestandene Kosten- und Schadenersatzbeträge zu bezahlen. Vorausgesetzt ist dabei, dass der Kunde ZEISS unverzüglich schriftlich über derartige Ansprüche unterrichtet und ZEISS alle Abwehrmaßnahmen und außergerichtlichen Regelungen vorbehalten bleiben. Der Kunde ist verpflichtet, ZEISS bei der Abwehr nach besten Kräften zu unterstützen. Unter diesen Voraussetzungen wird ZEISS dem Kunden grundsätzlich das Recht zum weiteren Gebrauch der Softwareversion, Firmwareergänzung oder Dokumentation verschaffen. Falls dies zu wirtschaftlich angemessenen Bedingungen nicht möglich sein sollte, ist ZEISS verpflichtet, nach eigener Wahl und auf eigene Kosten den entsprechenden Gegenstand entweder derart abzuändern oder zu ersetzen, dass das Schutzrecht nicht verletzt wird, oder den Gegenstand zurückzunehmen und das dafür bezahlte Entgelt abzüglich eines die gezogenen Nutzungen berücksichtigenden Betrages zu erstatten.
+Stand: Oktober 2025
 
-9.2 ZEISS hat keine Verpflichtungen, falls Schutzrechtsverletzungen dadurch hervorgerufen werden, dass von ZEISS gelieferte Softwareversionen, Firmwareergänzungen oder Dokumentation nicht in der vorgesehenen Weise verwendet oder nicht auf den bestimmten Systemen eingesetzt wird. 
-
-
-10. Exportkontrolle
-
-Der Lizenznehmer übernimmt die Verantwortung für die Einhaltung aller anwendbaren Bestimmungen und Vorschriften, einschließlich, aber nicht beschränkt auf die Exportkontroll- und Sanktionsbestimmungen der Bundesrepublik Deutschland, der Europäischen Union sowie der Vereinigten Staaten von Amerika. Insbesondere bestätigt der Lizenznehmer, die Software sowie jedwede damit verbundene Technologie oder Dokumentation oder Teile davon weder direkt noch indirekt unter Nichtbefolgung der vorgenannten Bestimmungen in sanktionierte Länder oder an sanktionierte natürliche oder juristische Personen bereitzustellen. 
-
-Der Lizenznehmer sichert dem Lizenzgeber zu, dass er die Software sowie jedwede damit verbundene Technologie oder Dokumentation oder Teile davon nicht unter Verletzung vorgenannter anwendbarer Gesetze oder Vorschriften verwenden wird. Weiterhin verpflichtet sich der Lizenznehmer den Lizenzgeber von allen Ansprüchen freizustellen und schadlos zu halten, welche aus der Nichteinhaltung vorgenannter anwendbarer Bestimmungen resultiert.
-
-
-11. Sonstiges
-
-11.1 Sämtliche mündliche Vereinbarungen, Änderungen, Erweiterungen oder Konkretisierungen dieser Lizenzbedingungen sowie die besonderen Eigenschaften der getroffenen Zusicherungen oder Vereinbarungen oder Absprachen bedürfen zu ihrer Rechtswirksamkeit der Schriftform. Falls diese von Vertretern oder Erfüllungsgehilfen des Lizenzgebers abgefasst sind, so werden sie erst mit der Genehmigung des Lizenzgebers rechtlich bindend. 
-
-11.2 Sollten Teile dieses Vertrags unwirksam werden, so berührt dies nicht die Wirksamkeit der übrigen Teile dieses Vertrags. Der unwirksame Teil dieses Vertrags soll durch seine Parteien durch gesetzlich zulässige Bestimmungen ersetzt werden, die der Absicht der unwirksamen Bestimmungen am nächsten kommt. 
-
-11.3 Auf diesen Vertrag sind die Gesetze der Bundesrepublik Deutschland anwendbar, unter Ausschluss des Gesetzes über den internationalen Warenkauf und der Regeln des Kollisionsrechts.
-
-Stand Oktober 2023
