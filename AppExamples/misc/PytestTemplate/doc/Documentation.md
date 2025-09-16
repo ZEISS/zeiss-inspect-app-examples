@@ -149,7 +149,7 @@ Coverage reports can be created as follows:
 $ coverage <report|html|xml|json|lcov> --data-file=./.coverage --omit=*/Local/Temp/*
 ```
 
-For details see https://coverage.readthedocs.io/en/latest/cmd.html
+For details see https://coverage.readthedocs.io/en/latest/commands/index.html
 
 ## See also
 
