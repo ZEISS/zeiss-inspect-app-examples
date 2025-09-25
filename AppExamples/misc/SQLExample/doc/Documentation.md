@@ -183,7 +183,7 @@ def create_server_connection(host_name, user_name, user_password, database):
 
 #### Querying the database
 
-In this example, whe only use the project name as key for selecting database entries. The project names must be unique, so we use [pymysql.Cursor.fetchone()](https://pymysql.readthedocs.io/en/latest/modules/cursors.html#pymysql.cursors.Cursor.fetchone) to get a single row from the `projects` table as result.
+In this example, we only use the project name as key for selecting database entries. The project names must be unique, so we use [pymysql.Cursor.fetchone()](https://pymysql.readthedocs.io/en/latest/modules/cursors.html#pymysql.cursors.Cursor.fetchone) to get a single row from the `projects` table as result.
 
 ```python
 query = """SELECT company_name, department_name, part_name FROM projects
@@ -214,7 +214,7 @@ As specified in `connection.cursor()` above, the result is a dictionary, e.g. `{
 
 #### Inserting / Updating
 
-Both inserting a new and updating an existing table row are based on [pymysql.Cursor.execute()](https://pymysql.readthedocs.io/en/latest/modules/cursors.html#pymysql.cursors.Cursor.execute) and [pymysql.Connection.commit()](hhttps://pymysql.readthedocs.io/en/latest/modules/connections.html#pymysql.connections.Connection.commit) &mdash;
+Both inserting a new and updating an existing table row are based on [pymysql.Cursor.execute()](https://pymysql.readthedocs.io/en/latest/modules/cursors.html#pymysql.cursors.Cursor.execute) and [pymysql.Connection.commit()](https://pymysql.readthedocs.io/en/latest/modules/connections.html#pymysql.connections.Connection.commit) &mdash;
 
 Inserting:
 
