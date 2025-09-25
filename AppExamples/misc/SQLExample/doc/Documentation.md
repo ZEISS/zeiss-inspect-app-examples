@@ -8,7 +8,7 @@ This example demonstrates how to access an SQL database from an App. For demonst
 
 The database access is implemented using [PyMySQL](https://pypi.org/project/PyMySQL/). You can set up a test database server using [MySQL Community Server](https://dev.mysql.com/downloads/mysql/).
 
-Besides, <a href="https://zeiss.github.io/zeiss-inspect-addon-api/2025/python_api/python_api.html#gom-api-settings">gom.api.settings</a> is used to save and restore entries made in a dialog.
+Besides, <a href="https://zeiss.github.io/zeiss-inspect-app-api/2025/python_api/python_api.html#gom-api-settings">gom.api.settings</a> is used to save and restore entries made in a dialog.
 
 ## Highlights
 
