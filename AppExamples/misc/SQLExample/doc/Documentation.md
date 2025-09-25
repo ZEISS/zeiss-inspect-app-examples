@@ -4,11 +4,11 @@
 
 ## Short description
 
-This example demonstrates how to access an SQL database from an App. For demonstration purposes, project keywords are written to or read from a database, respectively.
+This example demonstrates how to access an SQL database from an App. For demonstration purposes, project keywords are written to or read from a database.
 
-The database access is implemented using [mysql-connector-python](https://pypi.org/project/mysql-connector-python/). A test database server is set up using [MySQL Community Server](https://dev.mysql.com/downloads/mysql/).
+The database access is implemented using [PyMySQL](https://pypi.org/project/PyMySQL/). You can set up a test database server using [MySQL Community Server](https://dev.mysql.com/downloads/mysql/).
 
-Besides, <a href="https://zeiss.github.io/zeiss-inspect-app-api/main/python_api/python_api.html#gom-api-settings">gom.api.settings</a> is used to save and restore entries made in a dialog.
+Besides, <a href="https://zeiss.github.io/zeiss-inspect-addon-api/2025/python_api/python_api.html#gom-api-settings">gom.api.settings</a> is used to save and restore entries made in a dialog.
 
 ## Highlights
 
@@ -20,8 +20,8 @@ A project must be loaded to access project keywords. This is checked with the fo
 
 ```python
 if not hasattr(gom.app, 'project'):
-  gom.script.sys.execute_user_defined_dialog (file='no_project.gdlg')
-  quit(0)
+    gom.script.sys.execute_user_defined_dialog (file='no_project.gdlg')
+    quit(0)
 ```
 
 This App handles the project variables `user_project`, `user_company`, `user_department` and `user_part`.
@@ -31,27 +31,27 @@ If available, the project keywords are written to the text widgets in the column
 
 ```python
 if 'user_project' in gom.app.project.project_keywords:
-  DIALOG.project_zi.value = getattr(gom.app.project, 'user_project')
+    DIALOG.project_zi.value = getattr(gom.app.project, 'user_project')
 ```
 
-The text widget entries in the column 'INSPECT' can be edited or loaded from the database (the database entry is selected by 'Project').
+The text widget entries in the column 'INSPECT' can be edited manually or loaded from the database (the database entry is selected by the key 'Project').
 
 Finally the project keywords are updated from the text widgets, if the dialog is closed with the 'Ok' button:
 
 ```python
 try:
-  RESULT = gom.script.sys.show_user_defined_dialog (dialog=DIALOG)
+    RESULT = gom.script.sys.show_user_defined_dialog (dialog=DIALOG)
 except gom.BreakError as e:
-  # Dialog window was closed or 'Cancel' button was pressed
-  pass
+    # Dialog window was closed or 'Cancel' button was pressed
+    pass
 else:
-  # 'Ok' button was pressed
-  gom.script.sys.set_project_keywords (keywords = {
-    'project': RESULT.project_zi,
-    'company': RESULT.company_zi,
-    'department':  RESULT.department_zi,
-    'part': RESULT.part_zi
-  })
+    # 'Ok' button was pressed
+    gom.script.sys.set_project_keywords (keywords = {
+        'project': RESULT.project_zi,
+        'company': RESULT.company_zi,
+        'department':  RESULT.department_zi,
+        'part': RESULT.part_zi
+    })
 ```
 
 ### 2. Installing a test database server
@@ -64,128 +64,126 @@ After the database server has been installed and started, you can try to connect
 
 #### Creating a database
 
-A new database is created using the function `create_database()`, which calls [MySQLConnection.connect()](https://dev.mysql.com/doc/connector-python/en/connector-python-api-mysqlconnection-connect.html).
+A new database is created using the function `create_database()`, which calls [pymysql.Connection.connect()](https://pymysql.readthedocs.io/en/latest/modules/connections.html#pymysql.connections.Connection).
 
 1. A connection is established without specifying a database
 
-```python
-def create_database(host_name, user_name, user_password, database):
-  try:
-    connection = mysql.connector.connect(
-      host=host_name,
-      user=user_name,
-      passwd=user_password
-  )
-  except Error as err:
-    print(f"Error: '{err}'")
-    return err
-```
+    ```python
+    def create_database(host_name, user_name, user_password, database):
+        try:
+            connection = pymysql.connect(
+                host=host_name,
+                user=user_name,
+                password=user_password,
+                cursorclass=pymysql.cursors.DictCursor
+            )
+        except MySQLError as err:
+            print(f"Error: '{err}'")
+            return err
+    ```
 
 2. The database is created
 
-The SQL command `CREATE DATABASE {database} DEFAULT CHARACTER SET 'utf8'` is passed as a parameter to the [MySQLCursor.execute()](https://dev.mysql.com/doc/connector-python/en/connector-python-api-mysqlcursor-execute.html) method.
+    The SQL command `CREATE DATABASE {database} DEFAULT CHARACTER SET 'utf8'` is passed as a parameter to the [pymysql.Cursor.execute()](https://pymysql.readthedocs.io/en/latest/modules/cursors.html#pymysql.cursors.Cursor.execute) method.
 
-```python
-cursor = connection.cursor()
-try:
-  cursor.execute("CREATE DATABASE {} DEFAULT CHARACTER SET 'utf8'".format(database))
-except mysql.connector.Error as err:
-  print(f"Failed creating database: {err}")
-  #return err
-else:
-  print(f"Created database {database}")
-```
+    ```python
+    cursor = connection.cursor()
+    try:
+        cursor.execute(f"CREATE DATABASE {database} DEFAULT CHARACTER SET 'utf8'")
+    except MySQLError as err:
+        print(f"Failed creating database: {err}")
+    else:
+        print(f"Created database {database}")
+    ```
 
 3. The database is selected
 
-Again, the method [MySQLCursor.execute()](https://dev.mysql.com/doc/connector-python/en/connector-python-api-mysqlcursor-execute.html) is called &mdash; this time with the SQL command `USE {database}`.
+    Again, the method [pymysql.Cursor.execute()](https://pymysql.readthedocs.io/en/latest/modules/cursors.html#pymysql.cursors.Cursor.execute) is called &mdash; this time with the SQL command `USE {database}`.
 
-```python
-try:
-  cursor.execute("USE {}".format(database))
-except mysql.connector.Error as err:
-  print(f"Database {database} does not exists.")
-  print(err)
-else:
-  print(f"Using database {database}")
-```
+    ```python
+    try:
+        cursor.execute(f"USE {database}")
+    except MySQLError as err:
+        print(f"Database {database} does not exists.")
+        print(err)
+    else:
+        print(f"Using database {database}")
+    ```
 
 4. A database table is created
 
-Table: `projects`
+    Table: `projects`
 
-| project_no                      | project_name (unique)       | company_name         | department_name | part_name            |
-| ------------------------------- | --------------------------- | -------------------- | --------------- | -------------------- |
-| int(11) NOT NULL AUTO_INCREMENT | varchar(80) NOT NULL UNIQUE | varchar(80) NOT NULL | varchar(80)     | varchar(80) NOT NULL |  
+    | project_no                      | project_name (unique)       | company_name         | department_name | part_name            |
+    | ------------------------------- | --------------------------- | -------------------- | --------------- | -------------------- |
+    | int(11) NOT NULL AUTO_INCREMENT | varchar(80) NOT NULL UNIQUE | varchar(80) NOT NULL | varchar(80)     | varchar(80) NOT NULL |  
 
-```python
-# Database - projects table
-TABLES = {}
-TABLES['projects'] = (
-	"CREATE TABLE `projects` ("
-	"  `project_no` int(11) NOT NULL AUTO_INCREMENT,"
-	"  `project_name` varchar(80) NOT NULL UNIQUE,"
-	"  `company_name` varchar(80) NOT NULL,"
-	"  `department_name` varchar(80),"
-	"  `part_name` varchar(80) NOT NULL,"
-	"  PRIMARY KEY (`project_no`)"
-	") ENGINE=InnoDB")
-```
+    ```python
+    # Database - projects table
+    TABLES = {}
+    TABLES['projects'] = (
+      "CREATE TABLE `projects` ("
+      "  `project_no` int(11) NOT NULL AUTO_INCREMENT,"
+      "  `project_name` varchar(80) NOT NULL UNIQUE,"
+      "  `company_name` varchar(80) NOT NULL,"
+      "  `department_name` varchar(80),"
+      "  `part_name` varchar(80) NOT NULL,"
+      "  PRIMARY KEY (`project_no`)"
+      ") ENGINE=InnoDB")
+    ```
 
-The table data structure is passed as the SQL command to the method [MySQLCursor.execute()](https://dev.mysql.com/doc/connector-python/en/connector-python-api-mysqlcursor-execute.html).
+    The table data structure is passed as the SQL command to the method [pymysql.Cursor.execute()](https://pymysql.readthedocs.io/en/latest/modules/cursors.html#pymysql.cursors.Cursor.execute).
 
-```python
-for table_name in TABLES:
-  table_description = TABLES[table_name]
-  try:
-    print("Creating table {}: ".format(table_name), end='')
-    cursor.execute(table_description)
-  except mysql.connector.Error as err:
-    if err.errno == errorcode.ER_TABLE_EXISTS_ERROR:
-      print("already exists.")
-    else:
-      print(err.msg)
-      return err
-  else:
-    print("OK")
-```
+    ```python
+    for table_name in TABLES:
+        table_description = TABLES[table_name]
+        try:
+            print("Creating table {}: ".format(table_name), end='')
+            cursor.execute(table_description)
+        except MySQLError as err:
+            print(err)
+            return err
+        else:
+            print("OK")
+    ```
 
 5. Final steps
 
-The methods [MySQLCursor.close()](https://dev.mysql.com/doc/connector-python/en/connector-python-api-mysqlcursor-close.html) and [MySQLConnection.close()](https://dev.mysql.com/doc/connector-python/en/connector-python-api-mysqlconnection-close.html) are called.
+    The methods [pymysql.Cursor.close()](https://pymysql.readthedocs.io/en/latest/modules/cursors.html#pymysql.cursors.Cursor.close) and [pymysql.Connection.close()](https://pymysql.readthedocs.io/en/latest/modules/connections.html#pymysql.connections.Connection.close) are called.
 
-```python
-cursor.close()
-connection.close()
-return None
-```
+    ```python
+    cursor.close()
+    connection.close()
+    return None
+    ```
 
-#### Connecting the database
+#### Connecting to the database
 
-The function `create_server_connection()` creates a connection to the server and selects the database by calling [MySQLConnection.connect()](https://dev.mysql.com/doc/connector-python/en/connector-python-api-mysqlconnection-connect.html).
+The function `create_server_connection()` creates a connection to the server and selects the database by calling [pymysql.Connection.connect()](https://pymysql.readthedocs.io/en/latest/modules/connections.html#pymysql.connections.Connection).
 
 ```python
 def create_server_connection(host_name, user_name, user_password, database):
-  connection = None
-  error = None
-  try:
-    connection = mysql.connector.connect(
-      host=host_name,
-      user=user_name,
-      passwd=user_password,
-      database=database
-    )
-    print("MySQL Database connection successful")
-  except Error as err:
-    print(f"Error: '{err}'")
-    error = err
+    connection = None
+    error = None
+    try:
+        connection = mysql.connector.connect(
+            host=host_name,
+            user=user_name,
+            passwd=user_password,
+            database=database,
+            cursorclass=pymysql.cursors.DictCursor
+        )
+        print("MySQL Database connection successful")
+    except MySQLError as err:
+        print(f"Error: '{err}'")
+        error = err
 
-  return connection, error
+    return connection, error
 ```
 
 #### Querying the database
 
-In this example, we only use the project name for selecting database entries. The project names must be unique, so we use [MySQLCursor.fetchone()](https://dev.mysql.com/doc/connector-python/en/connector-python-api-mysqlcursor-fetchone.html) to get a single row from the `projects` table as result.
+In this example, whe only use the project name as key for selecting database entries. The project names must be unique, so we use [pymysql.Cursor.fetchone()](https://pymysql.readthedocs.io/en/latest/modules/cursors.html#pymysql.cursors.Cursor.fetchone) to get a single row from the `projects` table as result.
 
 ```python
 query = """SELECT company_name, department_name, part_name FROM projects
@@ -198,25 +196,25 @@ With:
 
 ```python
 def execute_query(connection, query, values):
-  cursor = connection.cursor(buffered=True, dictionary=True)
-  err = None
-  try:
-    cursor.execute(query, values)
-    result = cursor.fetchone()
-    print("Query successful")
-  except Error as err:
-    print(f"Error: '{err}'")
-    return None, err
-  
-  cursor.close()
-  return result, err
+    cursor = connection.cursor(buffered=True, dictionary=True)
+    err = None
+    try:
+        cursor.execute(query, values)
+        result = cursor.fetchone()
+        print("Query successful")
+    except Error as err:
+        print(f"Error: '{err}'")
+        return None, err
+    
+    cursor.close()
+    return result, err
 ```
 
 As specified in `connection.cursor()` above, the result is a dictionary, e.g. `{'company_name': 'Carl Zeiss GOM Metrology GmbH', 'department_name': 'A2', 'part_name': 'ZEISS Training Object'}`.
 
 #### Inserting / Updating
 
-Both inserting a new and updating an existing table row are based on [MySQLCursor.execute()](https://dev.mysql.com/doc/connector-python/en/connector-python-api-mysqlcursor-execute.html) and [MySQLConnection.commit()](https://dev.mysql.com/doc/connector-python/en/connector-python-api-mysqlconnection-commit.html) &mdash;
+Both inserting a new and updating an existing table row are based on [pymysql.Cursor.execute()](https://pymysql.readthedocs.io/en/latest/modules/cursors.html#pymysql.cursors.Cursor.execute) and [pymysql.Connection.commit()](hhttps://pymysql.readthedocs.io/en/latest/modules/connections.html#pymysql.connections.Connection.commit) &mdash;
 
 Inserting:
 
@@ -243,23 +241,23 @@ Both transactions use the function `execute_commit()`:
 
 ```python
 def execute_commit(connection, query, values):
-  cursor = connection.cursor(buffered=True)
-  err = None
-  try:
-    cursor.execute(query, values)
-    connection.commit()
-    print("Query successful")
-  except Error as err:
-    print(f"Error: '{err}'")
-    return None, err
-    
-  cursor.close()
-  return cursor, err
+    cursor = connection.cursor(buffered=True)
+    err = None
+    try:
+        cursor.execute(query, values)
+        connection.commit()
+        print("Query successful")
+    except Error as err:
+        print(f"Error: '{err}'")
+        return None, err
+      
+    cursor.close()
+    return cursor, err
 ```
 
 #### Deleting
 
-Deleting a table row implemented using `execute_query()`. 
+Deleting a table row is implemented using `execute_query()`. 
 
 ```python
 query = """DELETE FROM projects WHERE project_name=%s"""
@@ -269,4 +267,6 @@ result, err = execute_query(CONNECTION, query, values)
 
 ## Related
 
+* [PyMySQL](https://github.com/PyMySQL/PyMySQL)
 * How-to: [User-defined Dialogs](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/python_api_introduction/user_defined_dialogs.html)
+* [gom.api.settings](https://zeiss.github.io/zeiss-inspect-app-api/2025/python_api/python_api.html#gom-api-settings)

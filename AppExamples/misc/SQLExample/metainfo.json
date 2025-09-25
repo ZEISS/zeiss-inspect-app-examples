@@ -9,15 +9,36 @@
         "product-codes": [
         ]
     },
+    "settings": [
+        {
+            "description": "SQL Connector",
+            "name": "dialog"
+        },
+        {
+            "description": "SQL Server (Host)",
+            "name": "dialog.in_host",
+            "value": ""
+        },
+        {
+            "description": "User",
+            "name": "dialog.in_user",
+            "value": ""
+        },
+        {
+            "description": "Database Name",
+            "name": "dialog.in_database",
+            "value": ""
+        }
+    ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2023",
     "tags": [
-        "sql-database", "project-keywords"
+		"sql-database", "project-keywords"
     ],
     "title": "SQLExample",
     "uuid": "58c970e7-c01d-4e72-88a2-7e8db7cd1dec",
-    "version": "1.0.1",
-    "technical-category": "App Examples",
-    "business-category": "minor",
-    "compatible-software": ["ZEISS INSPECT Optical 3D", "ZEISS INSPECT X-Ray", "ZEISS INSPECT CMM", "ZEISS INSPECT VMM", "ZEISS CORRELATE"]
+    "version": "1.0.2",
+	"technical-category": "App Examples",
+	"business-category": "minor",
+	"compatible-software": ["ZEISS INSPECT Optical 3D", "ZEISS INSPECT X-Ray", "ZEISS INSPECT CMM", "ZEISS INSPECT VMM", "ZEISS CORRELATE"]
 }
