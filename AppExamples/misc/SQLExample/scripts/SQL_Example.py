@@ -122,7 +122,7 @@ def create_database(host_name, user_name, user_password, database):
 
 		
 def execute_commit(connection, query, values):
-	"""Execute/commit transacion
+	"""Execute/commit transaction
 	
 	Parameters:
 		connection (Connection): PyMySQL Connection object
@@ -146,7 +146,7 @@ def execute_commit(connection, query, values):
 	return cursor, err
 
 def execute_query(connection, query, values):
-	"""Execute query transacion with a single row as result
+	"""Execute query transaction with a single row as result
 	
 	Parameters:
 		connection (Connection): PyMySQL connection object
@@ -203,7 +203,7 @@ def main():
 			DIALOG.in_user.value = gom.api.settings.get('dialog.in_user')
 			DIALOG.in_database.value = gom.api.settings.get('dialog.in_database')
 			
-			# Update inputs fields from project valiables
+			# Update inputs fields from project variables
 			if 'user_project' in gom.app.project.project_keywords:
 				DIALOG.project_zi.value = getattr(gom.app.project, 'user_project')
 			if 'user_company' in gom.app.project.project_keywords:
