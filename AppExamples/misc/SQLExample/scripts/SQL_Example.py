@@ -210,7 +210,7 @@ def main():
 				DIALOG.company_zi.value = getattr(gom.app.project, 'user_company')
 			if 'user_department' in gom.app.project.project_keywords:
 				DIALOG.department_zi.value = getattr(gom.app.project, 'user_department')		
-			if 'user_company' in gom.app.project.project_keywords:
+			if 'user_part' in gom.app.project.project_keywords:
 				DIALOG.part_zi.value = getattr(gom.app.project, 'user_part')
 			
 		elif widget == DIALOG.in_host:
