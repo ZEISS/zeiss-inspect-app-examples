@@ -3,36 +3,11 @@
         [
             {
                 "columns": 4,
-                "name": "label",
-                "rows": 1,
-                "text": {
-                    "id": "",
-                    "text": "SQL Database Connection",
-                    "translatable": true
-                },
-                "tooltip": {
-                    "id": "",
-                    "text": "",
-                    "translatable": true
-                },
-                "type": "label",
-                "word_wrap": false
-            },
-            {
-            },
-            {
-            },
-            {
-            }
-        ],
-        [
-            {
-                "columns": 4,
                 "name": "separator",
                 "rows": 1,
                 "title": {
                     "id": "",
-                    "text": "",
+                    "text": "<b>SQL Database Connection</b>",
                     "translatable": true
                 },
                 "tooltip": {
@@ -51,7 +26,7 @@
         ],
         [
             {
-                "columns": 2,
+                "columns": 1,
                 "name": "label_1",
                 "rows": 1,
                 "text": {
@@ -68,9 +43,7 @@
                 "word_wrap": false
             },
             {
-            },
-            {
-                "columns": 2,
+                "columns": 3,
                 "name": "in_host",
                 "password": false,
                 "read_only": false,
@@ -84,11 +57,13 @@
                 "value": ""
             },
             {
+            },
+            {
             }
         ],
         [
             {
-                "columns": 2,
+                "columns": 1,
                 "name": "label_2",
                 "rows": 1,
                 "text": {
@@ -105,9 +80,7 @@
                 "word_wrap": false
             },
             {
-            },
-            {
-                "columns": 2,
+                "columns": 3,
                 "name": "in_user",
                 "password": false,
                 "read_only": false,
@@ -121,11 +94,13 @@
                 "value": ""
             },
             {
+            },
+            {
             }
         ],
         [
             {
-                "columns": 2,
+                "columns": 1,
                 "name": "label_3",
                 "rows": 1,
                 "text": {
@@ -142,11 +117,9 @@
                 "word_wrap": false
             },
             {
-            },
-            {
-                "columns": 2,
+                "columns": 3,
                 "name": "in_password",
-                "password": false,
+                "password": true,
                 "read_only": false,
                 "rows": 1,
                 "tooltip": {
@@ -158,11 +131,13 @@
                 "value": ""
             },
             {
+            },
+            {
             }
         ],
         [
             {
-                "columns": 2,
+                "columns": 1,
                 "name": "label_4",
                 "rows": 1,
                 "text": {
@@ -179,11 +154,9 @@
                 "word_wrap": false
             },
             {
-            },
-            {
-                "columns": 2,
+                "columns": 3,
                 "name": "in_database",
-                "password": true,
+                "password": false,
                 "read_only": false,
                 "rows": 1,
                 "tooltip": {
@@ -195,12 +168,14 @@
                 "value": ""
             },
             {
+            },
+            {
             }
         ],
         [
             {
                 "button_type": "push",
-                "columns": 2,
+                "columns": 1,
                 "icon": "AAAAAA==",
                 "icon_file_name": "",
                 "icon_size": {
@@ -230,10 +205,94 @@
                 "type": "button::pushbutton"
             },
             {
+                "columns": 3,
+                "maximum_size": -1,
+                "minimum_size": 0,
+                "name": "spacer_6",
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "spacer::horizontal"
             },
             {
-                "columns": 2,
-                "name": "out_status",
+            },
+            {
+            }
+        ],
+        [
+            {
+                "button_type": "push",
+                "columns": 1,
+                "icon": "AAAAAA==",
+                "icon_file_name": "",
+                "icon_size": {
+                    "value": "icon"
+                },
+                "icon_system_size": {
+                    "value": "default"
+                },
+                "icon_system_type": {
+                    "value": "ok"
+                },
+                "icon_type": {
+                    "value": "none"
+                },
+                "name": "bt_create",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Create Database",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "button::pushbutton"
+            },
+            {
+                "columns": 3,
+                "maximum_size": -1,
+                "minimum_size": 0,
+                "name": "spacer_7",
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "spacer::horizontal"
+            },
+            {
+            },
+            {
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "label_12",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Connection Status",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "columns": 3,
+                "name": "out_conn_status",
                 "password": false,
                 "read_only": true,
                 "rows": 1,
@@ -246,25 +305,23 @@
                 "value": ""
             },
             {
+            },
+            {
             }
         ],
         [
             {
                 "columns": 4,
-                "name": "label_5",
+                "maximum_size": 20,
+                "minimum_size": 20,
+                "name": "spacer_8",
                 "rows": 1,
-                "text": {
-                    "id": "",
-                    "text": "Project Keywords",
-                    "translatable": true
-                },
                 "tooltip": {
                     "id": "",
                     "text": "",
                     "translatable": true
                 },
-                "type": "label",
-                "word_wrap": false
+                "type": "spacer::vertical"
             },
             {
             },
@@ -280,7 +337,7 @@
                 "rows": 1,
                 "title": {
                     "id": "",
-                    "text": "",
+                    "text": "<b>Transactions  &ndash;  Project Keywords</b>",
                     "translatable": true
                 },
                 "tooltip": {
@@ -291,6 +348,243 @@
                 "type": "separator"
             },
             {
+            },
+            {
+            },
+            {
+            }
+        ],
+        [
+            {
+                "button_type": "push",
+                "columns": 1,
+                "icon": "AAAAAA==",
+                "icon_file_name": "",
+                "icon_size": {
+                    "value": "icon"
+                },
+                "icon_system_size": {
+                    "value": "default"
+                },
+                "icon_system_type": {
+                    "value": "ok"
+                },
+                "icon_type": {
+                    "value": "none"
+                },
+                "name": "bt_query",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Query Database",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "button::pushbutton"
+            },
+            {
+                "columns": 3,
+                "maximum_size": -1,
+                "minimum_size": 0,
+                "name": "spacer_2",
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "spacer::horizontal"
+            },
+            {
+            },
+            {
+            }
+        ],
+        [
+            {
+                "button_type": "push",
+                "columns": 1,
+                "icon": "AAAAAA==",
+                "icon_file_name": "",
+                "icon_size": {
+                    "value": "icon"
+                },
+                "icon_system_size": {
+                    "value": "default"
+                },
+                "icon_system_type": {
+                    "value": "ok"
+                },
+                "icon_type": {
+                    "value": "none"
+                },
+                "name": "bt_save",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Save ⇒",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "Save to Database",
+                    "translatable": true
+                },
+                "type": "button::pushbutton"
+            },
+            {
+                "columns": 3,
+                "maximum_size": -1,
+                "minimum_size": 0,
+                "name": "spacer_3",
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "spacer::horizontal"
+            },
+            {
+            },
+            {
+            }
+        ],
+        [
+            {
+                "button_type": "push",
+                "columns": 1,
+                "icon": "AAAAAA==",
+                "icon_file_name": "",
+                "icon_size": {
+                    "value": "icon"
+                },
+                "icon_system_size": {
+                    "value": "default"
+                },
+                "icon_system_type": {
+                    "value": "ok"
+                },
+                "icon_type": {
+                    "value": "none"
+                },
+                "name": "bt_load",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "⇐ Load",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "Load from Database",
+                    "translatable": true
+                },
+                "type": "button::pushbutton"
+            },
+            {
+                "columns": 3,
+                "maximum_size": -1,
+                "minimum_size": 0,
+                "name": "spacer_4",
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "spacer::horizontal"
+            },
+            {
+            },
+            {
+            }
+        ],
+        [
+            {
+                "button_type": "push",
+                "columns": 1,
+                "icon": "AAAAAA==",
+                "icon_file_name": "",
+                "icon_size": {
+                    "value": "icon"
+                },
+                "icon_system_size": {
+                    "value": "default"
+                },
+                "icon_system_type": {
+                    "value": "warning"
+                },
+                "icon_type": {
+                    "value": "system"
+                },
+                "name": "bt_delete",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Delete Project",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "button::pushbutton"
+            },
+            {
+                "columns": 3,
+                "maximum_size": -1,
+                "minimum_size": 0,
+                "name": "spacer_5",
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "spacer::horizontal"
+            },
+            {
+            },
+            {
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "label_13",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Transaction Status",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "columns": 3,
+                "name": "out_trans_status",
+                "password": false,
+                "read_only": true,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::string",
+                "value": ""
             },
             {
             },
@@ -361,134 +655,12 @@
         ],
         [
             {
-                "columns": 2,
-                "maximum_size": -1,
-                "minimum_size": 0,
-                "name": "spacer_4",
-                "rows": 1,
-                "tooltip": {
-                    "id": "",
-                    "text": "",
-                    "translatable": true
-                },
-                "type": "spacer::horizontal"
-            },
-            {
-            },
-            {
-                "button_type": "push",
-                "columns": 1,
-                "icon": "AAAAAA==",
-                "icon_file_name": "",
-                "icon_size": {
-                    "value": "icon"
-                },
-                "icon_system_size": {
-                    "value": "default"
-                },
-                "icon_system_type": {
-                    "value": "ok"
-                },
-                "icon_type": {
-                    "value": "none"
-                },
-                "name": "bt_save",
-                "rows": 1,
-                "text": {
-                    "id": "",
-                    "text": ">",
-                    "translatable": true
-                },
-                "tooltip": {
-                    "id": "",
-                    "text": "Save to Database",
-                    "translatable": true
-                },
-                "type": "button::pushbutton"
-            },
-            {
-                "columns": 1,
-                "maximum_size": -1,
-                "minimum_size": 0,
-                "name": "spacer_6",
-                "rows": 1,
-                "tooltip": {
-                    "id": "",
-                    "text": "",
-                    "translatable": true
-                },
-                "type": "spacer::horizontal"
-            }
-        ],
-        [
-            {
-                "columns": 2,
-                "maximum_size": -1,
-                "minimum_size": 0,
-                "name": "spacer_5",
-                "rows": 1,
-                "tooltip": {
-                    "id": "",
-                    "text": "",
-                    "translatable": true
-                },
-                "type": "spacer::horizontal"
-            },
-            {
-            },
-            {
-                "button_type": "push",
-                "columns": 1,
-                "icon": "AAAAAA==",
-                "icon_file_name": "",
-                "icon_size": {
-                    "value": "icon"
-                },
-                "icon_system_size": {
-                    "value": "default"
-                },
-                "icon_system_type": {
-                    "value": "ok"
-                },
-                "icon_type": {
-                    "value": "none"
-                },
-                "name": "bt_load",
-                "rows": 1,
-                "text": {
-                    "id": "",
-                    "text": "<",
-                    "translatable": true
-                },
-                "tooltip": {
-                    "id": "",
-                    "text": "Load from Database",
-                    "translatable": true
-                },
-                "type": "button::pushbutton"
-            },
-            {
-                "columns": 1,
-                "maximum_size": -1,
-                "minimum_size": 0,
-                "name": "spacer_7",
-                "rows": 1,
-                "tooltip": {
-                    "id": "",
-                    "text": "",
-                    "translatable": true
-                },
-                "type": "spacer::horizontal"
-            }
-        ],
-        [
-            {
                 "columns": 1,
                 "name": "label_6",
                 "rows": 1,
                 "text": {
                     "id": "",
-                    "text": "Key1",
+                    "text": "Project (Key Value)",
                     "translatable": true
                 },
                 "tooltip": {
@@ -500,10 +672,10 @@
                 "word_wrap": false
             },
             {
-                "columns": 1,
-                "name": "out_k1_local",
+                "columns": 2,
+                "name": "project_zi",
                 "password": false,
-                "read_only": true,
+                "read_only": false,
                 "rows": 1,
                 "tooltip": {
                     "id": "",
@@ -514,21 +686,10 @@
                 "value": ""
             },
             {
-                "columns": 1,
-                "maximum_size": -1,
-                "minimum_size": 0,
-                "name": "spacer_2",
-                "rows": 1,
-                "tooltip": {
-                    "id": "",
-                    "text": "",
-                    "translatable": true
-                },
-                "type": "spacer::horizontal"
             },
             {
                 "columns": 1,
-                "name": "out_k1_db",
+                "name": "project_db",
                 "password": false,
                 "read_only": true,
                 "rows": 1,
@@ -548,7 +709,7 @@
                 "rows": 1,
                 "text": {
                     "id": "",
-                    "text": "Key2",
+                    "text": "Company",
                     "translatable": true
                 },
                 "tooltip": {
@@ -560,8 +721,8 @@
                 "word_wrap": false
             },
             {
-                "columns": 1,
-                "name": "out_k2_local",
+                "columns": 2,
+                "name": "company_zi",
                 "password": false,
                 "read_only": false,
                 "rows": 1,
@@ -574,23 +735,110 @@
                 "value": ""
             },
             {
+            },
+            {
                 "columns": 1,
-                "maximum_size": -1,
-                "minimum_size": 0,
-                "name": "spacer_3",
+                "name": "company_db",
+                "password": false,
+                "read_only": true,
                 "rows": 1,
                 "tooltip": {
                     "id": "",
                     "text": "",
                     "translatable": true
                 },
-                "type": "spacer::horizontal"
+                "type": "input::string",
+                "value": ""
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "label_10",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Department",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "columns": 2,
+                "name": "department_zi",
+                "password": false,
+                "read_only": false,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::string",
+                "value": ""
+            },
+            {
             },
             {
                 "columns": 1,
-                "name": "out_k2_db",
+                "name": "department_db",
+                "password": false,
+                "read_only": true,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::string",
+                "value": ""
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "label_11",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Part",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "columns": 2,
+                "name": "part_zi",
                 "password": false,
                 "read_only": false,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::string",
+                "value": ""
+            },
+            {
+            },
+            {
+                "columns": 1,
+                "name": "part_db",
+                "password": false,
+                "read_only": true,
                 "rows": 1,
                 "tooltip": {
                     "id": "",
@@ -606,12 +854,12 @@
         "id": "OkCancel"
     },
     "embedding": "always_toplevel",
-    "position": "",
+    "position": "automatic",
     "size": {
-        "height": 485,
-        "width": 347
+        "height": 924,
+        "width": 488
     },
-    "sizemode": "automatic",
+    "sizemode": "fixed",
     "style": "",
     "title": {
         "id": "",
