@@ -46,4 +46,4 @@ def calculation(context, params):
 ## Related
 
 * [Scripted actuals - Surface](https://zeiss.github.io/zeiss-inspect-app-api/2026/python_api/scripted_elements_api.html#surface)
-* [How-to: User-defined dialogs](https://zeiss.github.io/zeiss-inspect-app-api/2026/howtos/python_api_introduction/user_defined_dialogs.html)
+* [How-to: User-defined dialogs](https://zeiss.github.io/zeiss-inspect-app-api/2026/howtos/user_defined_dialogs/user_defined_dialogs.html)
