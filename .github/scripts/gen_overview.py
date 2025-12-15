@@ -42,7 +42,16 @@ sphinx_doc = False
 def pascal_to_kebab(pascal_str):
     """Convert string from PascalCase to kebab-case"""
     # Use regex to find the positions to insert underscores
-    kebab_str = re.sub(r'(?<!^)(?=[A-Z])', '-', pascal_str).lower()
+    
+    # This regex pattern matches a lowercase letter followed by an uppercase letter
+    pattern = r'(?<=[a-z])(?=[A-Z])'
+    # Replace the matches with a dash inserted before the uppercase letter
+    temp = re.sub(pattern, '-', pascal_str)
+
+    # This regex pattern matches an upper case letter followed by an uppercase-lowercase sequence
+    pattern = r'(?<=[A-Z])(?=[A-Z][a-z])'
+    # Replace the matches with a dash inserted before the uppercase-lowercase sequence
+    kebab_str = re.sub(pattern, '-', temp).lower()
     return kebab_str
 
 def find_tags():
@@ -222,7 +231,7 @@ f'''<h3>{title} — <a class="reference external" href="{view}">view</a> {link}
                     _tag_index[_tag].append(title)
                     _badge = _tag.replace('-', '--')
                     if sphinx_doc:
-                        md += f"<a href=\"#id{tags.index(_tag) + 1}\">![Static Badge](https://img.shields.io/badge/{_badge}-blue)</a> "
+                        md += f"<a href=\"#{_tag}\">![Static Badge](https://img.shields.io/badge/{_badge}-blue)</a> "
                     else:
                         md += f"[![Static Badge](https://img.shields.io/badge/{_badge}-blue)](#{_tag})<br> "
 
@@ -355,7 +364,7 @@ Users may utilize these examples at their own risk, and ZEISS assumes no liabili
 
     for tag in sorted(tagIndex):
         badge = tag.replace('-', '--')
-        app_overview += f'\n### <a name="{tag}"></a>![Static Badge](https://img.shields.io/badge/{badge}-blue)\n\n'
+        app_overview += f'\n<a name="{tag}"></a>![Static Badge](https://img.shields.io/badge/{badge}-blue)\n\n'
 
         for app in sorted(tagIndex[tag]):
             if sphinx_doc:

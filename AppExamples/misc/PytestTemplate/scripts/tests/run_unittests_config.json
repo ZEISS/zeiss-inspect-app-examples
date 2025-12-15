@@ -1,0 +1,4 @@
+{
+    "pytest_cfg": "pytest_unittest_coverage.ini",
+    "reports_dir": "reports"
+}

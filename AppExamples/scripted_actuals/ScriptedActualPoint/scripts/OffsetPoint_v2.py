@@ -8,7 +8,7 @@
 # https://zeiss.github.io/zeiss-inspect-app-api/2025/python_examples/examples_overview.html
 # ---
 
-import time
+import gom
 import numpy as np
 
 
@@ -257,8 +257,6 @@ def dialog(context, params):
     return params
 
 # -------------------------------------------------------------------------
-
-
 def calculation(context, params):
     valid_results = False
     # Calculating all available stages

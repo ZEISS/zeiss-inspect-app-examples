@@ -1,0 +1,21 @@
+{
+  "alignment_section": true,
+  "assistant_home_page": "example_workspace_homepage",
+  "color": [
+    255,
+    128,
+    100
+  ],
+  "default_view_layout_right": "TabViewLayout 1 2 properties workflow_assistant",
+  "default_view_layout_right_parts": "TabViewLayout 1 2 properties workflow_assistant",
+  "default_visible_tabs": [
+    "diagram",
+    "section_view",
+    "table",
+    "pip"
+  ],
+  "icon": "icon.png",
+  "recalc_section": true,
+  "uuid": "b111f6ed-dcac-431e-be02-8529e834af0b",
+  "workflow_commands": []
+}

@@ -1,0 +1,97 @@
+{
+  "id": "d11d40a2-ede6-4085-b6d1-cf6be0335d0e",
+  "name": "Translation example",
+  "using": [
+    {
+      "name": "inspect",
+      "id": "bd0ec39e-4155-4d7d-9771-9ed0d5f86e59"
+    }
+  ],
+  "objects": [
+    {
+      "type": "NextPageEntry",
+      "name": "Translation example",
+      "description": {
+        "translate": true,
+        "text": "Hook for translation example",
+        "id": "assistantmsg99998"
+      },
+      "page": "homepage",
+      "id": "hook_for_inspect",
+      "position": {
+        "insert": "inspect/inspection_home",
+        "before": ""
+      }
+    },
+    {
+      "type": "MenuPage",
+      "id": "homepage",
+      "name": {
+        "translate": true,
+        "text": "The Translation Homepage",
+        "id": "assistantmsg99999"
+      },
+      "entries": [
+        {
+          "type": "NextPageEntry",
+          "page": "label_wizard"
+        }
+      ]
+    },
+    {
+      "type": "WizardPage",
+      "id": "label_wizard",
+      "name": {
+        "translate": true,
+        "text": "deviation Labels",
+        "id": "assistantmsg80828#draft#msg80828"
+      },
+      "description": {
+        "translate": true,
+        "text": "visualize local deviations numerically",
+        "id": "assistantmsg80829"
+      },
+      "icon": "cmd_inspect_picker",
+      "steps": [
+        {
+          "type": "EmbeddedCommandStep",
+          "name": {
+            "translate": true,
+            "text": "create Deviation Label",
+            "id": "assistantmsg81383#draft#msg81383"
+          },
+          "commands": [
+            {
+              "command": "inspection.inspect_by_deviation_label",
+              "info": {
+                "translate": true,
+                "text": "to visualize local deviations numerically, create deviation labels on the color representation in the 3D view. To finish or cancel the creation, press ESC/RMB.",
+                "id": "assistantmsg81384#draft#msg81384"
+              },
+              "info_help_id": "cmd_inspection_inspect_by_deviation_label"
+            },
+            {
+              "command": "comparison.create_min_max_deviation_label",
+              "info": {
+                "translate": true,
+                "text": "compute statistics for deviation analysis on an inspection element with color deviation representation. Select an area on the color deviation representation with any of the point selection functions.",
+                "id": "assistantmsg81385#draft#msg81385"
+              },
+              "info_help_id": "cmd_comparison_create_min_max_deviation_label",
+              "interactive": false
+            },
+            {
+              "command": "inspection.inspect_by_equidistant_deviation_label",
+              "info": {
+                "translate": true,
+                "text": "create evenly distributed deviation labels on color deviation representations and inspection sections. The deviation representation must be selected in the explorer and visible in the 3D view.",
+                "id": "assistantmsg81386#draft#msg81386"
+              },
+              "info_help_id": "cmd_inspection_inspect_by_equidistant_deviation_label"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

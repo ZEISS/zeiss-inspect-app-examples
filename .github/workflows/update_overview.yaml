@@ -35,7 +35,7 @@ jobs:
         with:
           python-version: '3.10'
       - name: Check out the repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Git config
         run: |
           git config --global user.email "action@github.com"
@@ -65,7 +65,7 @@ jobs:
 
       - name: Create Pull Request
         if: env.changes == 'true'
-        uses: devops-infra/action-pull-request@v0.6.0
+        uses: devops-infra/action-pull-request@v0.6.1
         with:
           github_token: ${{ secrets.TARGET_REPO_PAT }}
           #source_branch: apidoc-update-main

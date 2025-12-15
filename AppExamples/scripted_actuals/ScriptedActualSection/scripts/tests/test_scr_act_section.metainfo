@@ -20,6 +20,6 @@
     "script_check_type": "none",
     "script_element_type": "none",
     "show_in_iinspect": false,
-    "show_in_menu": true,
+    "show_in_menu": false,
     "uuid": "62da0d5e-a3f1-4a9d-a18a-3623f0ff3e16"
 }

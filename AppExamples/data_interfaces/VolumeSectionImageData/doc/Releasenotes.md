@@ -2,7 +2,9 @@
 
 ## Released at 2025-03-30 (v1.0.1)
 
-* Changed menu integration 
+* Changed menu integration
+* Updated requirements
+  * pillow v11.2.1 
 
 ## Released at 2024-12-13 (v1.0.0)
 

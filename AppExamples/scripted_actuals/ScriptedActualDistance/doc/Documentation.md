@@ -1,4 +1,4 @@
-# ScriptedActualPoint
+# ScriptedActualDistance
 
 ![Scripted distance element example](distance.png)
 

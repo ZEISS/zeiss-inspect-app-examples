@@ -70,7 +70,7 @@ In line 21, the OK button is disabled before preview calculation is started.
 
 Furthermore, the scripted element framework provides two special event triggers: `error` and `calculated`, which are sent on failing/success of the `calculation` function to the dialog referenced in the `context.calc` call.
 
-In this case, we set a potential error message of a failed calcualtion to the dialogs error indicator (line 7), or enable the OK button and reset the error indicator in case of a successful calculation (lines 11-12).
+In this case, we set a potential error message of a failed calculation to the dialogs error indicator (line 7), or enable the OK button and reset the error indicator in case of a successful calculation (lines 11-12).
 
 
 #### Stageful `calculation` and error handling

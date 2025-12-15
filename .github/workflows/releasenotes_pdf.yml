@@ -12,16 +12,16 @@ jobs:
     
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.10'
 
       - name: Install markdown_pdf
         run: |
-          pip install markdown_pdf
+          pip install markdown_pdf==1.9
       
       - name: Find and Convert Release Notes
         id: convert_notes
