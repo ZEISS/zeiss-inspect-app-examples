@@ -109,5 +109,5 @@ def calculation(context, params):
 
 ## Related
 
-* [Scripted actuals - Section](https://zeiss.github.io/zeiss-inspect-app-api/2025/python_api/scripted_elements_api.html#section)
-* [How-to: User-defined dialogs](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/user_defined_dialogs/user_defined_dialogs.html)
+* [Scripted actuals - Section](https://zeiss.github.io/zeiss-inspect-app-api/2026/python_api/scripted_elements_api.html#section)
+* [How-to: User-defined dialogs](https://zeiss.github.io/zeiss-inspect-app-api/2026/howtos/user_defined_dialogs/user_defined_dialogs.html)
