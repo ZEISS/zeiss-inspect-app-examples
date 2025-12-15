@@ -3,6 +3,7 @@
 ## Released at 2025-09-30 (v1.0.3)
 
 * Updated numpy to v2.0.2
+* Updated links
 
 ## Release at 2025-04-03 (v1.0.2)
 
