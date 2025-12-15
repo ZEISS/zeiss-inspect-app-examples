@@ -7,8 +7,8 @@
         "product-codes": []
     },
     "references": [
-        ["HowTo", "https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/scripted_elements/scripted_actuals.html"], 
-        ["API", "https://zeiss.github.io/zeiss-inspect-app-api/2025/python_api/scripted_elements_api.html#point-cloud"]
+        ["HowTo", "https://zeiss.github.io/zeiss-inspect-app-api/2026/howtos/scripted_elements/scripted_actuals.html"], 
+        ["API", "https://zeiss.github.io/zeiss-inspect-app-api/2026/python_api/scripted_elements_api.html#point-cloud"]
     ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2023",
