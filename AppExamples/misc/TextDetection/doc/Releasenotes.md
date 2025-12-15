@@ -1,5 +1,11 @@
 # Release Notes TextDetection
 
+## Released at 2025-12-19 (v1.0.6)
+
+* Updated requirements
+  * numpy == 2.0.2
+  * opencv-python == 4.12.0.88
+
 ## Released at 2025-03-30 (v1.0.5)
 
 * Changed menu integration
