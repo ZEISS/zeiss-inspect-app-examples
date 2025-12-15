@@ -1,5 +1,12 @@
 # Release Notes DisplayImage
 
+## Released at 2025-12-19 (v1.0.6)
+
+* Updated requirements
+  * numpy v2.0.2
+  * opencv-python v4.12.0.88
+* Updated links
+
 ## Released at 2025-03-30 (v1.0.5)
 
 * Changed menu integration
