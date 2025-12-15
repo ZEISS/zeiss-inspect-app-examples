@@ -1,8 +1,9 @@
 # Release Notes ScriptedActualSurfaceCurve
 
-## Released at 2025-09-30 (v1.0.2)
+## Released at 2025-12-19 (v1.0.2)
 
 * Updated numpy to v2.0.2
+* Updated links
 
 ## Release at 2025-03-30 (v1.0.1)
 
