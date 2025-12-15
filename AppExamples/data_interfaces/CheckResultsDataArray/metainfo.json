@@ -9,7 +9,7 @@
         "product-codes": []
     },
     "references": [
-        ["HowTo", "https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/python_api_introduction/python_api_introduction.html#access-element-properties"]
+        ["HowTo", "https://zeiss.github.io/zeiss-inspect-app-api/2026/howtos/python_api_introduction/python_api_introduction.html#access-element-properties"]
     ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2023",
