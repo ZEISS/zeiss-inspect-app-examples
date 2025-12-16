@@ -1,2 +1,2 @@
 Cartopy == 0.23
-numpy == 1.26.4
+numpy == 2.0.2

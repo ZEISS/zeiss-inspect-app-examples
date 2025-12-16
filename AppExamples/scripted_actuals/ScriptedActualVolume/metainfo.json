@@ -7,8 +7,8 @@
         "product-codes": []
     },
     "references": [
-        ["HowTo", "https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/scripted_elements/scripted_actuals.html"], 
-        ["API", "https://zeiss.github.io/zeiss-inspect-app-api/2025/python_api/scripted_elements_api.html#volume"]
+        ["HowTo", "https://zeiss.github.io/zeiss-inspect-app-api/2026/howtos/scripted_elements/scripted_actuals.html"], 
+        ["API", "https://zeiss.github.io/zeiss-inspect-app-api/2026/python_api/scripted_elements_api.html#volume"]
     ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2023",
@@ -17,7 +17,7 @@
     ],
     "title": "ScriptedActualVolume",
     "uuid": "a5a38b5b-5f22-442e-98a4-65782b24fe39",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "technical-category": "App Examples",
     "business-category": "minor",
     "compatible-software": ["ZEISS INSPECT Optical 3D", "ZEISS INSPECT X-Ray", "ZEISS INSPECT CMM", "ZEISS INSPECT VMM", "ZEISS CORRELATE"]

@@ -7,8 +7,8 @@
         "product-codes": []
     },
     "references": [
-        ["HowTo", "https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/scripted_elements/scripted_actuals.html"], 
-        ["API", "https://zeiss.github.io/zeiss-inspect-app-api/2025/python_api/scripted_elements_api.html#point-cloud"]
+        ["HowTo", "https://zeiss.github.io/zeiss-inspect-app-api/2026/howtos/scripted_elements/scripted_actuals.html"], 
+        ["API", "https://zeiss.github.io/zeiss-inspect-app-api/2026/python_api/scripted_elements_api.html#point-cloud"]
     ],
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2023",
@@ -17,7 +17,7 @@
     ],
     "title": "ScriptedActualPointCloud",
     "uuid": "a6d289ff-3ff2-4369-9698-d768861eb2ed",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "technical-category": "App Examples",
     "business-category": "minor",
     "compatible-software": ["ZEISS INSPECT Optical 3D", "ZEISS INSPECT X-Ray", "ZEISS INSPECT CMM", "ZEISS INSPECT VMM", "ZEISS CORRELATE"]
