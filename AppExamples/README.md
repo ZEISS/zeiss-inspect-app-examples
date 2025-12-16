@@ -400,6 +400,6 @@ Users may utilize these examples at their own risk, and ZEISS assumes no liabili
 
 ## Related
 
-* [ZEISS IQS GitHub &mdash; App Development Documentation](https://zeiss.github.io/zeiss-inspect-app-api/2025/index.html)
+* [ZEISS IQS GitHub &mdash; App Development Documentation](https://zeiss.github.io/zeiss-inspect-app-api/2026/index.html)
 * [ZEISS Quality Software Store](https://software-store.zeiss.com)
 
