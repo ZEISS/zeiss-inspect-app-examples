@@ -1,7 +1,7 @@
 #
 # gen_overview.py
 #
-# Carl Zeiss GOM Metrology GmbH, 2024
+# Carl Zeiss GOM Metrology GmbH, 2026
 #
 # ---
 '''Generate ZEISS INSPECT App Examples Overview markdown file'''
@@ -13,7 +13,7 @@ import argparse
 
 APP_EXAMPLES_REPO = "https://github.com/ZEISS/zeiss-inspect-app-examples/blob/main/"
 
-APP_DEV_DOC = "https://zeiss.github.io/zeiss-inspect-app-api/2025/index.html"
+APP_DEV_DOC = "https://zeiss.github.io/zeiss-inspect-app-api/2026/index.html"
 
 BASEDIR = 'AppExamples'
 
@@ -256,7 +256,7 @@ if __name__ == '__main__':
                         default='ZEISS INSPECT App Examples Overview',
                         help='Page title')
     parser.add_argument('--meta-description', type=str,
-                        default='Examples for using the ZEISS INSPECT 2025 App Python API',
+                        default='Examples for using the ZEISS INSPECT 2026 App Python API',
                         help='Description in HTML metadata')
     # autopep8: on
 
@@ -378,6 +378,5 @@ Users may utilize these examples at their own risk, and ZEISS assumes no liabili
     app_overview += "\n## Related\n\n"
     app_overview += f"* [ZEISS IQS GitHub &mdash; App Development Documentation]({APP_DEV_DOC})\n"
     app_overview += "* [ZEISS Quality Software Store](https://software-store.zeiss.com)\n"
-
 
     print(app_overview)
