@@ -97,7 +97,8 @@ def calculation(context, params):
         file = BytesIO(test_image)
 
     try:
-        image = Image.open(file)
+        # Restrict allowed image formats as proposed in https://github.com/ZEISS/zeiss-inspect-app-examples/security/dependabot/3
+        image = Image.open(file, formats=['JPG', 'PNG', 'GIF', 'TIFF'])
     except AttributeError:
         return False
 
