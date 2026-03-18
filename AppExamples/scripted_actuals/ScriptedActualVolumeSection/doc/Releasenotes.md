@@ -1,5 +1,8 @@
 # Release Notes ScriptedActualVolumeSection
 
+## Release at 2026-03-18 (v1.0.3)
+* Fixed potential security issue in pillow v11.3.0 (GHSA-cfh3-3jmp-rvhc) by restricting supported image formats
+
 ## Release at 2025-12-19 (v1.0.2)
 
 * Updated numpy to v2.0.2
