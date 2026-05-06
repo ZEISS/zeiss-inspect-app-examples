@@ -1,0 +1,32 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "business-category": "minor",
+    "compatible-software": [
+        "ZEISS INSPECT Optical 3D",
+        "ZEISS INSPECT X-Ray",
+        "ZEISS INSPECT CMM",
+        "ZEISS INSPECT VMM",
+        "ZEISS CORRELATE"
+    ],
+    "description": "Example demonstrating how to use the pywin32 package in a ZEISS INSPECT App",
+    "labels": [
+        "App label 1"
+    ],
+    "licensing": {
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
+    },
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2023",
+    "tags": [
+        "pywin32",
+        "windows",
+        "python"
+    ],
+    "technical-category": "App Examples",
+    "title": "Pywin32Example",
+    "uuid": "d3f7a1c2-8e4b-4f9a-b6d0-2c5e9f3a7b81",
+    "version": "1.0.0"
+}
