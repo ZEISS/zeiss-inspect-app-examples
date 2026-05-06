@@ -31,7 +31,7 @@ jobs:
           echo "Reviewers: ${REVIEWERS}"
           echo "reviewers=${REVIEWERS}" >> $GITHUB_OUTPUT
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.10'
       - name: Check out the repository
@@ -65,7 +65,7 @@ jobs:
 
       - name: Create Pull Request
         if: env.changes == 'true'
-        uses: devops-infra/action-pull-request@v0.6.1
+        uses: devops-infra/action-pull-request@v1.0.2
         with:
           github_token: ${{ secrets.TARGET_REPO_PAT }}
           #source_branch: apidoc-update-main
