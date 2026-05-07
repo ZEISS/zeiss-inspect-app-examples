@@ -37,6 +37,7 @@ Users may utilize these examples at their own risk, and ZEISS assumes no liabili
 | <a id="PointPixelTransformations">PointPixelTransformations</a><br>[view](misc/PointPixelTransformations/doc/Documentation.md)  / [download](https://software-store.zeiss.com/products/apps/point-pixel-transformations) | This example demonstrates how to find the 2D pixel coordinates of a 3D point coordinate and vice versa. | [2)](#example-projects)  | [API](https://zeiss.github.io/zeiss-inspect-app-api/2025/python_api/python_api.html#gom-api-imaging)<br> | ZEISS INSPECT 2023 | [![Static Badge](https://img.shields.io/badge/measurement-blue)](#measurement)<br>[![Static Badge](https://img.shields.io/badge/reference--points-blue)](#reference-points)<br> |
 | <a id="ProgressBar">ProgressBar</a><br>[view](misc/ProgressBar/doc/Documentation.md)  / [download](https://software-store.zeiss.com/products/apps/progress-bar) | This example shows how to display a progress bar at the bottom of the ZEISS INSPECT main window | |  | ZEISS INSPECT 2025 |  |
 | <a id="PytestTemplate">PytestTemplate</a><br>[view](misc/PytestTemplate/doc/Documentation.md)  | App template for running integration tests and unit tests with coverage using pytest | | [HowTo](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/testing_apps/testing_apps.html)<br> | ZEISS INSPECT 2025 | [![Static Badge](https://img.shields.io/badge/testing-blue)](#testing)<br> |
+| <a id="Pywin32Example">Pywin32Example</a><br>[view](misc/Pywin32Example/doc/Documentation.md)  | Example demonstrating how to use the pywin32 package in a ZEISS INSPECT App | |  | ZEISS INSPECT 2023 | [![Static Badge](https://img.shields.io/badge/pywin32-blue)](#pywin32)<br>[![Static Badge](https://img.shields.io/badge/windows-blue)](#windows)<br>[![Static Badge](https://img.shields.io/badge/python-blue)](#python)<br> |
 | <a id="SQLExample">SQLExample</a><br>[view](misc/SQLExample/doc/Documentation.md)  | Example for SQL Database Access | |  | ZEISS INSPECT 2023 | [![Static Badge](https://img.shields.io/badge/sql--database-blue)](#sql-database)<br>[![Static Badge](https://img.shields.io/badge/project--keywords-blue)](#project-keywords)<br> |
 | <a id="ServiceExample">ServiceExample</a><br>[view](misc/ServiceExample/doc/Documentation.md)  / [download](https://software-store.zeiss.com/products/apps/service-example) | Service API Example | | [HowTo](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/using_services/using_services.html)<br>[API](https://zeiss.github.io/zeiss-inspect-app-api/2025/python_api/python_api.html#gom-api-services)<br> | ZEISS INSPECT 2025 | [![Static Badge](https://img.shields.io/badge/service-blue)](#service)<br> |
 | <a id="SettingsAPI">SettingsAPI</a><br>[view](misc/SettingsAPI/doc/Documentation.md)  / [download](https://software-store.zeiss.com/products/apps/settings-api) | Example App demonstrating usage of the settings API | | [API](https://zeiss.github.io/zeiss-inspect-app-api/2025/python_api/python_api.html#gom-api-settings)<br> | ZEISS INSPECT 2023 | [![Static Badge](https://img.shields.io/badge/settings-blue)](#settings)<br> |
@@ -250,6 +251,16 @@ Users may utilize these examples at their own risk, and ZEISS assumes no liabili
 * [SQLExample](#SQLExample)
 
 
+<a name="python"></a>![Static Badge](https://img.shields.io/badge/python-blue)
+
+* [Pywin32Example](#Pywin32Example)
+
+
+<a name="pywin32"></a>![Static Badge](https://img.shields.io/badge/pywin32-blue)
+
+* [Pywin32Example](#Pywin32Example)
+
+
 <a name="reference-points"></a>![Static Badge](https://img.shields.io/badge/reference--points-blue)
 
 * [PointPixelTransformations](#PointPixelTransformations)
@@ -377,6 +388,11 @@ Users may utilize these examples at their own risk, and ZEISS assumes no liabili
 <a name="widget-properties"></a>![Static Badge](https://img.shields.io/badge/widget--properties-blue)
 
 * [WidgetVisibility](#WidgetVisibility)
+
+
+<a name="windows"></a>![Static Badge](https://img.shields.io/badge/windows-blue)
+
+* [Pywin32Example](#Pywin32Example)
 
 
 <a name="workflow-assistant"></a>![Static Badge](https://img.shields.io/badge/workflow--assistant-blue)
