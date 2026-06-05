@@ -1,0 +1,25 @@
+{
+    "display_name": "test_custom_curve_inspection",
+    "folded_blocks": [
+    ],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": false,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+            ],
+            "type": "command"
+        },
+        "script": "userscript.tests__test_custom_curve_inspection__a1b2c3d4_5e6f_7a8b_9c0d_1e2f3a4b0016",
+        "submenu": [
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "none",
+    "show_in_iinspect": false,
+    "show_in_menu": true,
+    "uuid": "b2c3d4e5-6f7a-8b9c-0d1e-2f3a4b5c0024"
+}
