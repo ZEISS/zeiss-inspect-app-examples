@@ -1,0 +1,53 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "business-category": "minor",
+    "compatible-software": [
+        "ZEISS INSPECT Optical 3D",
+        "ZEISS INSPECT X-Ray",
+        "ZEISS INSPECT CMM",
+        "ZEISS INSPECT VMM",
+        "ZEISS CORRELATE"
+    ],
+    "description": "This example shows how to create a custom nominal/actual section element.",
+	"environment": "ZeissInspectExampleProjects",
+    "labels": [
+        "App label 1"
+    ],
+    "licensing": {
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
+    },
+    "references": [
+        [
+            "HowTo",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/custom_elements/custom_nominals_actuals.html"
+        ],
+        [
+            "API - actuals.Section",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-actuals-section"
+        ],
+        [
+            "API - nominals.Section",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-nominals-section"
+        ]
+    ],
+    "services": [
+        {
+            "endpoint": "gom.api.examples.custom_section",
+            "name": "Custom section",
+            "script": "Custom_Section.py"
+        }
+    ],
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2027",
+    "tags": [
+        "section",
+        "custom-element"
+    ],
+    "technical-category": "App Examples",
+    "title": "CustomSection",
+    "uuid": "c2d4e6f8-0a3b-5c7e-9f1a-3d5e7f9b0008",
+    "version": "1.0.0"
+}
