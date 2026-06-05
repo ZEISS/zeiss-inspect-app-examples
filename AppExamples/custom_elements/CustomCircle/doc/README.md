@@ -1,6 +1,6 @@
 # CustomCircle
 
-This App is part of the [ZEISS INSPECT Python API App Examples](https://zeiss.github.io/zeiss-inspect-app-api/2026/python_examples/examples_overview.html).
+This App is part of the [ZEISS INSPECT Python API App Examples](https://zeiss.github.io/zeiss-inspect-app-api/main/python_examples/examples_overview.html).
 
 See [App documentation](Documentation.md) for details.
 
