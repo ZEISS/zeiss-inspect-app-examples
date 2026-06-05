@@ -1,0 +1,274 @@
+{
+    "content": [
+        [
+            {
+                "columns": 1,
+                "name": "name_label",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Name",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "basename": {
+                    "id": "",
+                    "text": "Scr Plane",
+                    "translatable": true
+                },
+                "columns": 3,
+                "mode": "manually",
+                "name": "name",
+                "numbering": true,
+                "read_only": false,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::elementname"
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "xyz_header_label",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "columns": 1,
+                "name": "x_header",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "x",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "columns": 1,
+                "name": "y_header",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "y",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "columns": 1,
+                "name": "z_header",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "z",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "normal_label",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Normal",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": true,
+                "maximum": 1,
+                "minimum": -1,
+                "name": "normal_x",
+                "precision": 4,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "",
+                "value": 0
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": true,
+                "maximum": 1,
+                "minimum": -1,
+                "name": "normal_y",
+                "precision": 4,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "",
+                "value": 0
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": true,
+                "maximum": 1,
+                "minimum": -1,
+                "name": "normal_z",
+                "precision": 4,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "",
+                "value": 1
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "point_label",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Point",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": true,
+                "maximum": 1000,
+                "minimum": -1000,
+                "name": "point_x",
+                "precision": 2,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": 0
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": true,
+                "maximum": 1000,
+                "minimum": -1000,
+                "name": "point_y",
+                "precision": 2,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": 0
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": true,
+                "maximum": 1000,
+                "minimum": -1000,
+                "name": "point_z",
+                "precision": 2,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": 0
+            }
+        ]
+    ],
+    "control": {
+        "id": "OkCancel"
+    },
+    "embedding": "always_toplevel",
+    "position": "automatic",
+    "size": {
+        "height": 260,
+        "width": 460
+    },
+    "sizemode": "automatic",
+    "style": "",
+    "title": {
+        "id": "",
+        "text": "Example - Plane",
+        "translatable": true
+    }
+}
