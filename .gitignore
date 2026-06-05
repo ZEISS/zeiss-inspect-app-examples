@@ -6,3 +6,9 @@
 *.addon
 *.zinspect
 .blackduck
+__pycache__/
+.coverage
+.coverage.*
+*.lock
+**/tests/reports/
+**/tests/log/
