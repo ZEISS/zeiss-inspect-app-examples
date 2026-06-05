@@ -1,0 +1,52 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "business-category": "minor",
+    "compatible-software": [
+        "ZEISS INSPECT Optical 3D",
+        "ZEISS INSPECT X-Ray",
+        "ZEISS INSPECT CMM",
+        "ZEISS INSPECT VMM",
+        "ZEISS CORRELATE"
+    ],
+    "description": "This example shows how to create a custom nominal/actual surface element.",
+    "labels": [
+        "App label 1"
+    ],
+    "licensing": {
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
+    },
+    "references": [
+        [
+            "HowTo",
+            "https://zeiss.github.io/zeiss-inspect-app-api/main/howtos/custom_elements/custom_nominals_actuals.html"
+        ],
+        [
+            "API - actuals.Surface",
+            "https://zeiss.github.io/zeiss-inspect-app-api/main/python_api/python_api.html#gom-api-extensions-actuals-surface"
+        ],
+        [
+            "API - nominals.Surface",
+            "https://zeiss.github.io/zeiss-inspect-app-api/main/python_api/python_api.html#gom-api-extensions-nominals-surface"
+        ]
+    ],
+    "services": [
+        {
+            "endpoint": "gom.api.examples.custom_surface",
+            "name": "Custom surface",
+            "script": "Custom_Surface.py"
+        }
+    ],
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2027",
+    "tags": [
+        "surface",
+        "custom-element"
+    ],
+    "technical-category": "App Examples",
+    "title": "CustomSurface",
+    "uuid": "e4f6a8b0-2c5d-7e9f-1a3b-5d7f9b1c000a",
+    "version": "1.0.0"
+}
