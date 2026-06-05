@@ -1,0 +1,144 @@
+{
+    "content": [
+        [
+            {
+                "columns": 1,
+                "name": "name_label",
+                "rows": 1,
+                "text": {"id": "", "text": "Name", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "basename": {"id": "", "text": "Custom Surface Curve", "translatable": true},
+                "columns": 1,
+                "mode": "manually",
+                "name": "name",
+                "numbering": true,
+                "read_only": false,
+                "rows": 1,
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "input::elementname"
+            }
+        ],
+        [
+            {
+                "columns": 2,
+                "name": "formula_label",
+                "rows": 1,
+                "text": {"id": "", "text": "P(φ) = (r·cos(θ)·cos(φ), r·cos(θ)·sin(φ), r·sin(θ))", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "label",
+                "word_wrap": true
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "r_label",
+                "rows": 1,
+                "text": {"id": "", "text": "r (Radius)", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 10000,
+                "minimum": 0,
+                "name": "r",
+                "precision": 4,
+                "rows": 1,
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": 20
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "theta_label",
+                "rows": 1,
+                "text": {"id": "", "text": "θ (Elevation angle)", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 1.5708,
+                "minimum": -1.5708,
+                "name": "theta",
+                "precision": 4,
+                "rows": 1,
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "input::number",
+                "unit": "ANGLE",
+                "value": 0.5236
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "phi_min_label",
+                "rows": 1,
+                "text": {"id": "", "text": "φ min", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 6.2832,
+                "minimum": 0,
+                "name": "phi_min",
+                "precision": 4,
+                "rows": 1,
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "input::number",
+                "unit": "ANGLE",
+                "value": 1.5708
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "phi_max_label",
+                "rows": 1,
+                "text": {"id": "", "text": "φ max", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 6.2832,
+                "minimum": 0,
+                "name": "phi_max",
+                "precision": 4,
+                "rows": 1,
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "input::number",
+                "unit": "ANGLE",
+                "value": 4.7124
+            }
+        ]
+    ],
+    "control": {"id": "OkCancel"},
+    "embedding": "always_toplevel",
+    "position": "automatic",
+    "size": {"height": 250, "width": 380},
+    "sizemode": "automatic",
+    "style": "",
+    "title": {"id": "", "text": "Example - Custom Surface Curve Element", "translatable": true}
+}

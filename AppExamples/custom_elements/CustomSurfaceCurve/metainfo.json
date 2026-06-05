@@ -1,0 +1,52 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "business-category": "minor",
+    "compatible-software": [
+        "ZEISS INSPECT Optical 3D",
+        "ZEISS INSPECT X-Ray",
+        "ZEISS INSPECT CMM",
+        "ZEISS INSPECT VMM",
+        "ZEISS CORRELATE"
+    ],
+    "description": "This example shows how to create a custom nominal/actual surface curve element.",
+    "labels": [
+        "App label 1"
+    ],
+    "licensing": {
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
+    },
+    "references": [
+        [
+            "HowTo",
+            "https://zeiss.github.io/zeiss-inspect-app-api/main/howtos/custom_elements/custom_nominals_actuals.html"
+        ],
+        [
+            "API - actuals.SurfaceCurve",
+            "https://zeiss.github.io/zeiss-inspect-app-api/main/python_api/python_api.html#gom-api-extensions-actuals-surfacecurve"
+        ],
+        [
+            "API - nominals.SurfaceCurve",
+            "https://zeiss.github.io/zeiss-inspect-app-api/main/python_api/python_api.html#gom-api-extensions-nominals-surfacecurve"
+        ]
+    ],
+    "services": [
+        {
+            "endpoint": "gom.api.examples.custom_surface_curve",
+            "name": "Custom surface curve",
+            "script": "Custom_SurfaceCurve.py"
+        }
+    ],
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2027",
+    "tags": [
+        "surface-curve",
+        "custom-element"
+    ],
+    "technical-category": "App Examples",
+    "title": "CustomSurfaceCurve",
+    "uuid": "f5a7b9c1-3d6e-8f0a-2b4c-6e8a0c1d000b",
+    "version": "1.0.0"
+}
