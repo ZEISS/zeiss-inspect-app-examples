@@ -1,0 +1,52 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "business-category": "minor",
+    "compatible-software": [
+        "ZEISS INSPECT Optical 3D",
+        "ZEISS INSPECT X-Ray",
+        "ZEISS INSPECT CMM",
+        "ZEISS INSPECT VMM",
+        "ZEISS CORRELATE"
+    ],
+    "description": "This example shows how to create a custom nominal/actual circle element.",
+    "labels": [
+        "App label 1"
+    ],
+    "licensing": {
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
+    },
+    "references": [
+        [
+            "HowTo",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/custom_elements/custom_nominals_actuals.html"
+        ],
+        [
+            "API - actuals.Circle",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-actuals-circle"
+        ],
+        [
+            "API - nominals.Circle",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-nominals-circle"
+        ]
+    ],
+    "services": [
+        {
+            "endpoint": "gom.api.examples.custom_circle",
+            "name": "Custom circle",
+            "script": "Custom_Circle.py"
+        }
+    ],
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2027",
+    "tags": [
+        "circle",
+        "custom-element"
+    ],
+    "technical-category": "App Examples",
+    "title": "CustomCircle",
+    "uuid": "72f1a3e5-8b4c-4d2e-9f0a-1b3c5d7e9001",
+    "version": "1.0.0"
+}
