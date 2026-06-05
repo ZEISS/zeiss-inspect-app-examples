@@ -1,0 +1,52 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "business-category": "minor",
+    "compatible-software": [
+        "ZEISS INSPECT Optical 3D",
+        "ZEISS INSPECT X-Ray",
+        "ZEISS INSPECT CMM",
+        "ZEISS INSPECT VMM",
+        "ZEISS CORRELATE"
+    ],
+    "description": "This example shows how to create a custom nominal/actual value element.",
+    "labels": [
+        "App label 1"
+    ],
+    "licensing": {
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
+    },
+    "references": [
+        [
+            "HowTo",
+            "https://zeiss.github.io/zeiss-inspect-app-api/main/howtos/custom_elements/custom_nominals_actuals.html"
+        ],
+        [
+            "API - actuals.ValueElement",
+            "https://zeiss.github.io/zeiss-inspect-app-api/main/python_api/python_api.html#gom-api-extensions-actuals-valueelement"
+        ],
+        [
+            "API - nominals.ValueElement",
+            "https://zeiss.github.io/zeiss-inspect-app-api/main/python_api/python_api.html#gom-api-extensions-nominals-valueelement"
+        ]
+    ],
+    "services": [
+        {
+            "endpoint": "gom.api.examples.custom_value_element",
+            "name": "Custom value element",
+            "script": "Custom_ValueElement.py"
+        }
+    ],
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2027",
+    "tags": [
+        "value-element",
+        "custom-element"
+    ],
+    "technical-category": "App Examples",
+    "title": "CustomValueElement",
+    "uuid": "27e6f8d0-3a9b-4c7d-8e5f-6a8b0c1d0006",
+    "version": "1.0.0"
+}
