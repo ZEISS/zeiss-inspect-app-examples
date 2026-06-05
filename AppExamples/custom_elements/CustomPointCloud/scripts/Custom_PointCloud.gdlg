@@ -1,0 +1,394 @@
+{
+    "content": [
+        [
+            {
+                "columns": 1,
+                "name": "name_label",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Name",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "basename": {
+                    "id": "",
+                    "text": "Custom Point Cloud",
+                    "translatable": true
+                },
+                "columns": 5,
+                "mode": "manually",
+                "name": "name",
+                "numbering": true,
+                "read_only": false,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::elementname"
+            },
+            {
+            },
+            {
+            },
+            {
+            },
+            {
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "formula_label",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Toroid formula",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "columns": 5,
+                "default_font_family": "",
+                "default_font_size": 0,
+                "name": "formula_text",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "P(u,v) = ((R+r*cos(v*\u03c0))*cos(u*\u03c0), (R+r*cos(v*\u03c0))*sin(u*\u03c0), r*sin(v*\u03c0))",
+                    "translatable": false
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "display::text",
+                "wordwrap": false
+            },
+            {
+            },
+            {
+            },
+            {
+            },
+            {
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "R_label",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "R",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 1000,
+                "minimum": 0,
+                "name": "R",
+                "precision": 1,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": 35
+            },
+            {
+                "columns": 1,
+                "name": "r_label",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "r",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 1000,
+                "minimum": 0,
+                "name": "r",
+                "precision": 1,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": 16
+            },
+            {
+            },
+            {
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "u_min_label",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "u_min",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 6.283185307179586,
+                "minimum": 0,
+                "name": "u_min",
+                "precision": 3,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "ANGLE",
+                "value": 0
+            },
+            {
+                "columns": 1,
+                "name": "u_max_label",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "u_max",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 6.283185307179586,
+                "minimum": 0,
+                "name": "u_max",
+                "precision": 3,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "ANGLE",
+                "value": 6.283185307179586
+            },
+            {
+                "columns": 1,
+                "name": "u_steps_label",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "no. of u-steps",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "columns": 1,
+                "maximum": 2000,
+                "minimum": 0,
+                "name": "u_steps",
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::integer",
+                "value": 600
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "v_min_label",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "v_min",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 6.283185307179586,
+                "minimum": 0,
+                "name": "v_min",
+                "precision": 3,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "ANGLE",
+                "value": 0
+            },
+            {
+                "columns": 1,
+                "name": "v_max_label",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "v_max",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 6.283185307179586,
+                "minimum": 0,
+                "name": "v_max",
+                "precision": 3,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "ANGLE",
+                "value": 6.283185307179586
+            },
+            {
+                "columns": 1,
+                "name": "v_steps_label",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "no. of v-steps",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "columns": 1,
+                "maximum": 2000,
+                "minimum": 0,
+                "name": "v_steps",
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::integer",
+                "value": 300
+            }
+        ]
+    ],
+    "control": {
+        "id": "OkCancel"
+    },
+    "embedding": "always_toplevel",
+    "position": "automatic",
+    "size": {
+        "height": 276,
+        "width": 520
+    },
+    "sizemode": "automatic",
+    "style": "",
+    "title": {
+        "id": "",
+        "text": "Example - Custom Point Cloud Element",
+        "translatable": true
+    }
+}

@@ -1,0 +1,80 @@
+ZEISS Metrology Software
+
+End User License Agreement (EULA)
+
+======================================================
+
+English version. See below for German version.
+Englische Version. Siehe unten für die Deutsche Version.
+
+
+1. Introduction
+
+1.1 General information
+
+This End User License Agreement ("EULA") is a legal agreement between "you" (either an individual or a legal entity, hereinafter referred to as "licensee" or "customer") and ZEISS ("ZEISS" or "licensor") (each individually a "party" and collectively the "parties") for your temporary limited use of ZEISS software products and apps. 
+Any software license based on this EULA is only a temporary license. The licensee is allowed to process data within the licensed software; this also includes using sample content provided, as long as it's needed or helpful for using the software.
+
+The agreement sets forth all rights and obligations for both licensee and ZEISS and governs your use of all software products installed or provided by ZEISS. Unless the licensor provides compelling reasons for a different procedure and explicitly declares a new EULA to be valid, the EULA version that was the latest version when the customer placed the order shall always apply to the licensee.
+Any amendment to this agreement must be in writing and in accordance with the terms and conditions contained herein. 
+By paying the applicable license fee(s) and / or by downloading, installing, or (continued) using the software, you agree that this agreement shall be enforceable against you in the same manner as a written, negotiated contract signed by you. If you do not agree to the terms of this agreement, you are not authorized and may not download, install, or use any ZEISS software products. 
+
+To use the ZEISS software products and services, the licensee must have the following:
+(a) a so-called valid subscription agreement or 
+(b) a valid license from ZEISS.
+
+Furthermore, individual software products 
+(a) which are based on a subscription agreement and / or
+(b) with a server-based license solution
+
+require and use a secure connection of the application computer to the ZEISS infrastructure and / or the "Cloud Services".
+
+1.2 The licensor is ZEISS; the licensee is the end customer. The licensor grants the licensee a non-exclusive, non-transferable right to use the "software product", which includes the specific software program and the associated licensed software modules, subsequent extensions, updates, patches, and associated documentation for internal company operation, as well as the associated manuals and software documentation.
+
+1.3 Essential definitions, descriptions, and explanations for different release types of licensor's software products.
+
+Major version / major release (deliverable medium) means a new version of the software application with new or changed functionalities. A new major version can typically be released once or even several times per year.
+
+Innovation release refers to an intermediate version of the software application with new or changed functionalities. A new interim version is released either once or several times between two major releases:
+
+Innovation releases are only available to customers with a valid ZEISS Software Maintenance Agreement or a valid subscription contract;
+No service pack is provided for an innovation release;
+Only the current innovation release is valid;
+There is no backward compatibility with previous major or innovation releases.
+
+Service pack (deliverable medium) refers to a summary of patches. The advantage of this is that several bugs can be fixed by performing a single installation. As a rule, a service pack contains all patches (unless they have become obsolete) since the release of the last major release or since the last published service pack. In the case of cumulative service packs, only the latest one needs to be installed by the customer because it contains the previous patches: Service packs contain bug fixes. However, they do not contain any new functionalities;
+Service packs go through a release process and are created at regular intervals;
+In terms of warranty, a series of service packs are made available for each major release of software;
+Service packs are available to all customers who may use the applicable major version / major release, regardless of the customers’ ZEISS Software Maintenance Agreement status; 
+
+Patch (deliverable medium) means an update to a major version / major release or a service pack to correct one or a few bugs.
+Patches are cumulative in structure. This means that a new patch contains all the changes from the previous patches. 
+
+Patches are only created if there is an urgent bug fix for one or more customers. Patches are distributed by software support to the respective affected customers or made available as a download on the ZEISS portal.
+
+A bug fix refers to an error correction for a specific software error. Bug fixes are not delivered separately, but always in the form of patches, service packs or new major releases.
+
+An update / upgrade is defined as a change to a new major version / major release. In this context, an update is regularly provided with a valid ZEISS Software Maintenance Agreement or a valid subscription contract. An upgrade is defined by the new acquisition of the current major version / major release in connection with the new conclusion of a ZEISS Software Maintenance Agreement of at least one year.
+
+Continuous release refers to the continuous and agile provision of error corrections and functional changes or enhancements. There is no distinction between the different versioning types of major release, innovation release, service pack and patch.
+
+Setup / installer is provided via download and contains the full functionality of the main version, which can be unlocked step by step if necessary.
+
+Freeware is software that is provided free of charge for use in perpetuity. Freeware with registration is a free software, which contains extended functionalities of the freeware by a registration of the licensee and is left temporally limited.
+
+The licensor reserves the right to review the scope of the freeware at regular intervals and, if necessary, to expand, restrict or change it.
+
+Floating licenses: These are licenses that, can be used globally and are not subject to any location restrictions.
+
+Trial version is a time-limited, free transfer of the main version of the software.
+
+ZEISS Software Maintenance Agreement is an additional agreement between the licensor and the licensee which, among other things, covers the maintenance / restoration of the operational readiness of the software, its updating, consulting as well as maintenance of the software including documentation.
+
+1.4 Essential definitions, descriptions, and explanations for different models of payment for ZEISS software products
+(a) 7-year model: The licensee acquires a seven-year ZEISS software right of use (for details see clause 2.1.) of the respective major release of the software product in accordance with this license agreement by paying a one-time fee. In addition, the licensee may conclude a ZEISS Software Maintenance Agreement which grants additional privileges. The licensor shall charge an ongoing fee for the ZEISS Software Maintenance Agreement. The seven-year right of use can be extended either by exercising the right to a software update as part of an ongoing ZEISS software maintenance agreement or by purchasing an upgrade to a new major release.
+(b) Subscription model: Licensee acquires the right to use the respective major release of the software product in accordance with this license agreement for a fixed period of time, the so-called subscription term. A technical license term that differs from the subscription term does not license term does not count towards the subscription term and may not be used by the licensee to extend the subscription free of charge without permission. The subscription may require a minimum contract term. However, the licensor will always inform the licensee of any such minimum contract term before the contract begins.  In the subscription model, certain services (hotline support and the right to use the latest version) may be included which are not offered in separate ZEISS Software Maintenance Agreements. In the subscription model, there is an explicit recommendation by the licensor to use the latest major version / major release (update). If the licensee does not comply with this recommendation, the licensor assumes no liability for the continued functioning of the initially purchased software version with future versions that differ from the initially purchased software version by more than two major releases. The licensor charges a subscription fee per subscription term.
+
+1.5 Essential definitions, descriptions, and explanations for license models for the licensor's software products.
+
+Concurrent use / floating licenses may be used by more than one user or instance. The number of users with the right to use the licensed software product at the same time is governed by the number of concurrent use / floating licenses, if the software product
+(a) is installed on a server and is started by a user from another computer that is part of the same internal network as the file server, or 
