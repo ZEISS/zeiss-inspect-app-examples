@@ -1,0 +1,52 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "business-category": "minor",
+    "compatible-software": [
+        "ZEISS INSPECT Optical 3D",
+        "ZEISS INSPECT X-Ray",
+        "ZEISS INSPECT CMM",
+        "ZEISS INSPECT VMM",
+        "ZEISS CORRELATE"
+    ],
+    "description": "This example shows how to create a custom nominal/actual cone element.",
+    "labels": [
+        "App label 1"
+    ],
+    "licensing": {
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
+    },
+    "references": [
+        [
+            "HowTo",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/custom_elements/custom_nominals_actuals.html"
+        ],
+        [
+            "API - actuals.Cone",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-actuals-cone"
+        ],
+        [
+            "API - nominals.Cone",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-nominals-cone"
+        ]
+    ],
+    "services": [
+        {
+            "endpoint": "gom.api.examples.custom_cone",
+            "name": "Custom cone",
+            "script": "Custom_Cone.py"
+        }
+    ],
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2027",
+    "tags": [
+        "cone",
+        "custom-element"
+    ],
+    "technical-category": "App Examples",
+    "title": "CustomCone",
+    "uuid": "94b3c5a7-0d6e-4f4a-9b2c-3d5e7f9a0003",
+    "version": "1.0.0"
+}
