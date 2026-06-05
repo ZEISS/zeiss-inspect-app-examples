@@ -1,0 +1,45 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "business-category": "minor",
+    "compatible-software": [
+        "ZEISS INSPECT X-Ray"
+    ],
+    "description": "This example shows how to create a custom actual volume element from artificial voxel data (NumPy array).",
+    "labels": [
+        "App label 1"
+    ],
+    "licensing": {
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
+    },
+    "references": [
+        [
+            "HowTo",
+            "https://zeiss.github.io/zeiss-inspect-app-api/main/howtos/custom_elements/custom_nominals_actuals.html"
+        ],
+        [
+            "API - actuals.Volume",
+            "https://zeiss.github.io/zeiss-inspect-app-api/main/python_api/python_api.html#gom-api-extensions-actuals-volume"
+        ]
+    ],
+    "services": [
+        {
+            "endpoint": "gom.api.examples.custom_volume",
+            "name": "Custom volume",
+            "script": "Custom_Volume.py"
+        }
+    ],
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2027",
+    "tags": [
+        "xray",
+        "volume",
+        "custom-element"
+    ],
+    "technical-category": "App Examples",
+    "title": "CustomVolume",
+    "uuid": "e0f1a3b5-6c8d-0e2f-7a9b-1c3e5f7a000f",
+    "version": "1.0.0"
+}

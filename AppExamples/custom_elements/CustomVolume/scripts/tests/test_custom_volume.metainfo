@@ -1,0 +1,25 @@
+{
+    "display_name": "test_custom_volume",
+    "folded_blocks": [
+    ],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": false,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+            ],
+            "type": "command"
+        },
+        "script": "userscript.tests__test_custom_volume__e0f1a3b5_6c8d_0e2f_7a9b_1c3e5f7a000f",
+        "submenu": [
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "none",
+    "show_in_iinspect": false,
+    "show_in_menu": true,
+    "uuid": "f1a2b3c4-5d6e-7f8a-9b0c-1d2e3f4a0017"
+}
