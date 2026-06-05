@@ -1,0 +1,25 @@
+{
+    "display_name": "test_custom_probe_measured_curve",
+    "folded_blocks": [
+    ],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": false,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+            ],
+            "type": "command"
+        },
+        "script": "userscript.tests__test_custom_probe_measured_curve__c8d0e2f4_5a7b_9c1d_4e6f_8a0b2c4d000e",
+        "submenu": [
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "none",
+    "show_in_iinspect": false,
+    "show_in_menu": true,
+    "uuid": "d9e1f3a5-6b8c-0d2e-5f7a-9b1c3e5f0016"
+}
