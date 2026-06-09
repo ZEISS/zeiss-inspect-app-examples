@@ -2,7 +2,11 @@
     "author": "Carl Zeiss GOM Metrology GmbH",
     "business-category": "minor",
     "compatible-software": [
-        "ZEISS INSPECT X-Ray"
+        "ZEISS INSPECT Optical 3D",
+        "ZEISS INSPECT X-Ray",
+        "ZEISS INSPECT CMM",
+        "ZEISS INSPECT VMM",
+        "ZEISS CORRELATE"
     ],
     "description": "This example shows how to create a custom actual volume defects element from a tetrahedron defined by four vertices.",
     "labels": [
