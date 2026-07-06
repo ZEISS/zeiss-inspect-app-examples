@@ -1,0 +1,22 @@
+{
+    "display_name": "Point Cloud Overlay Custom Diagram",
+    "folded_blocks": [],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": false,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [],
+            "type": "command"
+        },
+        "script": "userscript.point_cloud_overlay_custom_diagram",
+        "submenu": []
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "none",
+    "show_in_iinspect": false,
+    "show_in_menu": false,
+    "uuid": "1a240651-14fa-407e-94e6-881faf30e8c5"
+}
