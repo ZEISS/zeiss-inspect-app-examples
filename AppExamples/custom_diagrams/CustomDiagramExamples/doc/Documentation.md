@@ -51,6 +51,7 @@ The App includes a custom actual circle element so no external custom element ex
 
 - Uses point-based overlay mode: interaction points are derived from `mpltools.get_display_coords(...)`, normalized to relative coordinates, and passed to `add_element_to_overlay(...)`.
 - Uses fixed marker size and color.
+- Keeps `custom_interaction=True` on the first overlay point only; remaining points are added without custom interaction to explicitly demonstrate mixed interaction behavior.
 
 ### Shared Behavior
 
