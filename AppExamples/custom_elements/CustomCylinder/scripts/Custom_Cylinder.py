@@ -36,7 +36,7 @@ class ActualCylinder(gom.api.extensions.actuals.Cylinder):
         """Show the creation dialog and return the user-provided parameters."""
         return self.show_dialog(context, args, '/Custom_Cylinder.gdlg')
 
-    def compute_stage(self, _context, values):
+    def compute(self, _context, values):
         """Compute the actual cylinder element."""
         center = (
             float(values['center_x']),
@@ -83,7 +83,7 @@ class NominalCylinder(gom.api.extensions.nominals.Cylinder):
         """Show the creation dialog and return the user-provided parameters."""
         return self.show_dialog(context, args, '/Custom_Cylinder.gdlg')
 
-    def compute_stage(self, _context, values):
+    def compute(self, _context, values):
         """
         Compute the nominal cylinder element.
         """
