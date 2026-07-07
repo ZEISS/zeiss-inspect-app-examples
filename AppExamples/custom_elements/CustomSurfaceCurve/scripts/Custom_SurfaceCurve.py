@@ -69,7 +69,7 @@ class ActualSurfaceCurve(gom.api.extensions.actuals.SurfaceCurve):
         """Show the creation dialog and return the user-provided parameters."""
         return self.show_dialog(context, args, '/Custom_SurfaceCurve.gdlg')
 
-    def compute_stage(self, _context, values):
+    def compute(self, _context, values):
         """Compute the actual surface curve element."""
         # -------------------------------------------------------------------------
         points, normals, phi_range = _compute_surface_curve(values)
@@ -100,7 +100,7 @@ class NominalSurfaceCurve(gom.api.extensions.nominals.SurfaceCurve):
         """Show the creation dialog and return the user-provided parameters."""
         return self.show_dialog(context, args, '/Custom_SurfaceCurve.gdlg')
 
-    def compute_stage(self, _context, values):
+    def compute(self, _context, values):
         """Compute the nominal surface curve element."""
         # -------------------------------------------------------------------------
         points, normals, phi_range = _compute_surface_curve(values)

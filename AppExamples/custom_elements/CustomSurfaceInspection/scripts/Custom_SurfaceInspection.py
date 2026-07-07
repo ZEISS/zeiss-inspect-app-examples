@@ -106,7 +106,7 @@ class CustomSurfaceInspection(gom.api.extensions.inspections.Surface):
         params['tolerance'] = result['tolerance']
         return params
 
-    def compute_stage(self, context, values):
+    def compute(self, context, values):
         """Compute the custom surface inspection element for one stage."""
         return _compute_surface_check(values, context.stage)
 

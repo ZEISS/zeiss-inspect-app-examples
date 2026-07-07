@@ -96,7 +96,7 @@ class ActualVolumeRegion(gom.api.extensions.actuals.VolumeRegion):
         self.initialize_dialog(context, dlg, args)
         return self.apply_dialog(dlg, gom.api.dialog.show(context, dlg))
 
-    def compute_stage(self, _context, values):
+    def compute(self, _context, values):
         """Compute the actual volume region element."""
         return _create_volume_region(values)
 

@@ -102,7 +102,7 @@ class CustomScalarInspection(gom.api.extensions.inspections.Scalar):
         params['tolerance'] = result['tolerance']
         return params
 
-    def compute_stage(self, _context, values):
+    def compute(self, _context, values):
         """Compute the custom scalar inspection element for one stage."""
         return _compute_scalar_check(values)
 

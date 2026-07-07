@@ -62,7 +62,7 @@ class ActualCurve(gom.api.extensions.actuals.Curve):
         """Show the creation dialog and return the user-provided parameters."""
         return self.show_dialog(context, args, '/Custom_Curve.gdlg')
 
-    def compute_stage(self, _context, values):
+    def compute(self, _context, values):
         """Compute the actual curve element."""
         # -------------------------------------------------------------------------
         points = _compute_curve_points(values)
@@ -92,7 +92,7 @@ class NominalCurve(gom.api.extensions.nominals.Curve):
         """Show the creation dialog and return the user-provided parameters."""
         return self.show_dialog(context, args, '/Custom_Curve.gdlg')
 
-    def compute_stage(self, _context, values):
+    def compute(self, _context, values):
         """Compute the nominal curve element."""
         # -------------------------------------------------------------------------
         points = _compute_curve_points(values)

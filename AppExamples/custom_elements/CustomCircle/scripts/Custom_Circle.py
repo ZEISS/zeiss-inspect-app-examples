@@ -33,7 +33,7 @@ class ActualCircle(gom.api.extensions.actuals.Circle):
         """Show the creation dialog and return the user-provided parameters."""
         return self.show_dialog(context, args, '/Custom_Circle.gdlg')
 
-    def compute_stage(self, _context, values):
+    def compute(self, _context, values):
         """Compute the actual circle element."""
         center = (
             float(values['center_x']),
@@ -79,7 +79,7 @@ class NominalCircle(gom.api.extensions.nominals.Circle):
         """Show the creation dialog and return the user-provided parameters."""
         return self.show_dialog(context, args, '/Custom_Circle.gdlg')
 
-    def compute_stage(self, _context, values):
+    def compute(self, _context, values):
         """Compute the nominal circle element."""
         center = (
             float(values['center_x']),

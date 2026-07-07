@@ -72,7 +72,7 @@ class ActualProbeMeasuredCurve(gom.api.extensions.actuals.ProbeMeasuredCurve):
         """Show the creation dialog and return the user-provided parameters."""
         return self.show_dialog(context, args, '/Custom_ProbeMeasuredCurve.gdlg')
 
-    def compute_stage(self, _context, values):
+    def compute(self, _context, values):
         """Compute the actual probe measured curve element."""
         # -------------------------------------------------------------------------
         points, radii, pitch = _compute_probe_measured_curve(values)

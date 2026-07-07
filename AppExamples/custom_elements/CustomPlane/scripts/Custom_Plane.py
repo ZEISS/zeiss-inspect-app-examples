@@ -34,7 +34,7 @@ class ActualPlane(gom.api.extensions.actuals.Plane):
         """Show the creation dialog and return the user-provided parameters."""
         return self.show_dialog(context, args, '/Custom_Plane.gdlg')
 
-    def compute_stage(self, _context, values):
+    def compute(self, _context, values):
         """Compute the actual plane element."""
         nx, ny, nz = float(values['normal_x']), float(values['normal_y']), float(values['normal_z'])
         normal = (nx, ny, nz)
@@ -69,7 +69,7 @@ class NominalPlane(gom.api.extensions.nominals.Plane):
         """Show the creation dialog and return the user-provided parameters."""
         return self.show_dialog(context, args, '/Custom_Plane.gdlg')
 
-    def compute_stage(self, _context, values):
+    def compute(self, _context, values):
         """Compute the nominal plane element."""
         nx, ny, nz = float(values['normal_x']), float(values['normal_y']), float(values['normal_z'])
         normal = (nx, ny, nz)

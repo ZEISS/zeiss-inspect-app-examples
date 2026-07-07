@@ -36,7 +36,7 @@ class ActualValueElement(gom.api.extensions.actuals.ValueElement):
         """Show the creation dialog and return the user-provided parameters."""
         return self.show_dialog(context, args, '/Custom_ValueElement.gdlg')
 
-    def compute_stage(self, _context, values):
+    def compute(self, _context, values):
         """Compute the actual value element."""
         value = float(values['value'])
         return {
@@ -66,7 +66,7 @@ class NominalValueElement(gom.api.extensions.nominals.ValueElement):
         """Show the creation dialog and return the user-provided parameters."""
         return self.show_dialog(context, args, '/Custom_ValueElement.gdlg')
 
-    def compute_stage(self, _context, values):
+    def compute(self, _context, values):
         """Compute the nominal value element."""
         value = float(values['value'])
         return {

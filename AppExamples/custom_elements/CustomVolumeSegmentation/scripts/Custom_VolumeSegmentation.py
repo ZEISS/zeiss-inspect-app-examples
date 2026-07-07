@@ -107,7 +107,7 @@ class ActualVolumeSegmentation(gom.api.extensions.actuals.VolumeSegmentation):
         self.initialize_dialog(context, dlg, args)
         return self.apply_dialog(dlg, gom.api.dialog.show(context, dlg))
 
-    def compute_stage(self, _context, values):
+    def compute(self, _context, values):
         """Compute the actual volume segmentation element."""
         return _create_volume_segmentation(values)
 

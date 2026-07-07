@@ -103,7 +103,7 @@ class ActualPoint(gom.api.extensions.actuals.Point):
         """Show the creation dialog and return the user-provided parameters."""
         return self.show_dialog(context, args, '/Custom_Point.gdlg')
 
-    def compute_stage(self, _context, values):
+    def compute(self, _context, values):
         """Return the base element's center coordinate as the point value."""
         base_point = _get_base_point(values['base'])
         return {"value": (float(base_point.x), float(base_point.y), float(base_point.z))}
@@ -130,7 +130,7 @@ class ActualOffsetPoint(gom.api.extensions.actuals.Point):
         """Show the creation dialog and return the user-provided parameters."""
         return self.show_dialog(context, args, '/Custom_Point.gdlg')
 
-    def compute_stage(self, context, values):
+    def compute(self, context, values):
         """Compute the actual offset point."""
         self.add_log_message(
             context, 'info',
@@ -182,7 +182,7 @@ class NominalOffsetPoint(gom.api.extensions.nominals.Point):
         res = self.apply_dialog(self.dlg, gom.api.dialog.show(context, self.dlg))
         return res
 
-    def compute_stage(self, context, values):
+    def compute(self, context, values):
         """
         Compute the nominal point with offset.
 

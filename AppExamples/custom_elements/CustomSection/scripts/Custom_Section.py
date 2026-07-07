@@ -96,7 +96,7 @@ class ActualSection(gom.api.extensions.actuals.Section):
         """Show the creation dialog and return the user-provided parameters."""
         return self.show_dialog(context, args, '/Custom_Section.gdlg')
 
-    def compute_stage(self, _context, values):
+    def compute(self, _context, values):
         """Compute the actual section element."""
         # -------------------------------------------------------------------------
         points, normals, num_points, section_length = _compute_section(values)
@@ -127,7 +127,7 @@ class NominalSection(gom.api.extensions.nominals.Section):
         """Show the creation dialog and return the user-provided parameters."""
         return self.show_dialog(context, args, '/Custom_Section.gdlg')
 
-    def compute_stage(self, _context, values):
+    def compute(self, _context, values):
         """Compute the nominal section element."""
         # -------------------------------------------------------------------------
         points, normals, num_points, section_length = _compute_section(values)

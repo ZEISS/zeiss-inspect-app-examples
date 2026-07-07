@@ -118,7 +118,7 @@ class ActualVolumeSection(gom.api.extensions.actuals.VolumeSection):
         """Show the creation dialog and return the user-provided parameters."""
         return self.show_dialog(context, args, '/Custom_VolumeSection.gdlg')
 
-    def compute_stage(self, _context, values):
+    def compute(self, _context, values):
         """Compute the actual volume section element."""
         return _create_volume_section(values)
 

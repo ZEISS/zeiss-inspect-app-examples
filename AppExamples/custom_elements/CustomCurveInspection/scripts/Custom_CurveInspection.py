@@ -106,7 +106,7 @@ class CustomCurveInspection(gom.api.extensions.inspections.Curve):
         params['tolerance'] = result['tolerance']
         return params
 
-    def compute_stage(self, context, values):
+    def compute(self, context, values):
         """Compute the custom curve inspection element for one stage."""
         return _compute_curve_check(values, context.stage)
 

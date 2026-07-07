@@ -83,7 +83,7 @@ class ActualVolumeDefects2d(gom.api.extensions.actuals.VolumeDefects2d):
         """Show the creation dialog and return the user-provided parameters."""
         return self.show_dialog(context, args, '/Custom_VolumeDefects2d.gdlg')
 
-    def compute_stage(self, _context, values):
+    def compute(self, _context, values):
         """Compute the actual 2D volume defects element."""
         # -------------------------------------------------------------------------
         curves = _compute_defect_contours(values)

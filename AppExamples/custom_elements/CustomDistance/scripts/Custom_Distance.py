@@ -38,7 +38,7 @@ class ActualDistance(gom.api.extensions.actuals.Distance):
         """Show the creation dialog and return the user-provided parameters."""
         return self.show_dialog(context, args, '/Custom_Distance.gdlg')
 
-    def compute_stage(self, _context, values):
+    def compute(self, _context, values):
         """Compute the actual distance element."""
         point1 = (float(values['p1_x']), float(values['p1_y']), float(values['p1_z']))
         point2 = (float(values['p2_x']), float(values['p2_y']), float(values['p2_z']))
@@ -74,7 +74,7 @@ class NominalDistance(gom.api.extensions.nominals.Distance):
         """Show the creation dialog and return the user-provided parameters."""
         return self.show_dialog(context, args, '/Custom_Distance.gdlg')
 
-    def compute_stage(self, _context, values):
+    def compute(self, _context, values):
         """Compute the nominal distance element."""
         point1 = (float(values['p1_x']), float(values['p1_y']), float(values['p1_z']))
         point2 = (float(values['p2_x']), float(values['p2_y']), float(values['p2_z']))

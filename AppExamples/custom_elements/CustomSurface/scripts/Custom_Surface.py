@@ -65,7 +65,7 @@ class ActualSurface(gom.api.extensions.actuals.Surface):
         """Show the creation dialog and return the user-provided parameters."""
         return self.show_dialog(context, args, '/Custom_Surface.gdlg')
 
-    def compute_stage(self, _context, values):
+    def compute(self, _context, values):
         """Compute the actual surface element."""
         # -------------------------------------------------------------------------
         vertices, triangles, num_vertices = _compute_surface(values)
@@ -96,7 +96,7 @@ class NominalSurface(gom.api.extensions.nominals.Surface):
         """Show the creation dialog and return the user-provided parameters."""
         return self.show_dialog(context, args, '/Custom_Surface.gdlg')
 
-    def compute_stage(self, _context, values):
+    def compute(self, _context, values):
         """Compute the nominal surface element."""
         # -------------------------------------------------------------------------
         vertices, triangles, num_vertices = _compute_surface(values)

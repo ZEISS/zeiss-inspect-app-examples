@@ -33,7 +33,7 @@ class ActualCone(gom.api.extensions.actuals.Cone):
         """Show the creation dialog and return the user-provided parameters."""
         return self.show_dialog(context, args, '/Custom_Cone.gdlg')
 
-    def compute_stage(self, _context, values):
+    def compute(self, _context, values):
         """Compute the actual cone element."""
         point1 = (float(values['p1_x']), float(values['p1_y']), float(values['p1_z']))
         radius1 = float(values['radius1'])
@@ -66,7 +66,7 @@ class NominalCone(gom.api.extensions.nominals.Cone):
         """Show the creation dialog and return the user-provided parameters."""
         return self.show_dialog(context, args, '/Custom_Cone.gdlg')
 
-    def compute_stage(self, _context, values):
+    def compute(self, _context, values):
         """Compute the nominal cone element."""
         point1 = (float(values['p1_x']), float(values['p1_y']), float(values['p1_z']))
         radius1 = float(values['radius1'])
