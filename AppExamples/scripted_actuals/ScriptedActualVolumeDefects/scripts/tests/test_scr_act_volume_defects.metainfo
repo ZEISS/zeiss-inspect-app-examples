@@ -1,0 +1,25 @@
+{
+    "display_name": "test_scr_act_volume_defects",
+    "folded_blocks": [
+    ],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": false,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+            ],
+            "type": "command"
+        },
+        "script": "userscript.tests__test_scr_act_volume_defects__4b9bc4ad_b369_4f2f_8b18_e90f2405c5a0",
+        "submenu": [
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "none",
+    "show_in_iinspect": false,
+    "show_in_menu": false,
+    "uuid": "9ac042fa-f35d-447e-b0ce-3a2dfeab479f"
+}

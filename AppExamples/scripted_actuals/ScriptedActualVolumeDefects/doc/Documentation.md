@@ -4,6 +4,9 @@
 
 This is an example for a scripted 'volume defects' element. Each defect is defined by a mesh. In this example, a single defect is created by setting the coordinates of four vertices from a dialog. The mesh triangles are hard-coded in the `calculation()` function. The resulting element has the shape of a tetrahedron.
 
+> [!WARNING]
+> The Scripted elements API is deprecated! Use [Custom elements](https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-customelement) for new Apps.
+
 > [!NOTE]
 > The mesh triangles are defined by indices into the array of vertices. The vertices defining a triangle must be specified in counter-clockwise
 order (as viewed from outside).
@@ -47,4 +50,4 @@ def calculation(context, params):
 ## Related
 
 * [Scripted actuals - Volume defects](https://zeiss.github.io/zeiss-inspect-app-api/2026/python_api/scripted_elements_api.html#volume-defects)
-* [How-to: User-defined dialogs](https://zeiss.github.io/zeiss-inspect-app-api/2026/howtos/user_defined_dialogs/user_defined_dialogs.html)
+* [How-to: User-defined dialogs](https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/user_defined_dialogs/user_defined_dialogs.html)

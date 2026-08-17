@@ -2,10 +2,10 @@
 #
 # test_scr_act_volume_defects.py
 #
-# Carl Zeiss GOM Metrology GmbH, 2025
+# Carl Zeiss GOM Metrology GmbH, 2026
 #
 # This App is part of the ZEISS INSPECT Python API Examples:
-# https://zeiss.github.io/zeiss-inspect-app-api/2025/python_examples/examples_overview.html
+# https://zeiss.github.io/zeiss-inspect-app-api/2027/python_examples/examples_overview.html
 # ---
 
 import gom
@@ -21,20 +21,20 @@ def test_scr_act_volume_defects():
     gom.script.sys.create_project()
 
     v0_x = 10.0
-    v0_y = -10.0
-    v0_z = -10.0
+    v0_y = 10.0
+    v0_z = 10.0
 
-    v1_x = 10.0
-    v1_y = 10.0
-    v1_z = -10.0
+    v1_x = -10.0
+    v1_y = -10.0
+    v1_z = 10.0
 
-    v2_x = 10.0
+    v2_x = -10.0
     v2_y = 10.0
-    v2_z = 10.0
+    v2_z = -10.0
 
     v3_x = 10.0
     v3_y = -10.0
-    v3_z = 10.0
+    v3_z = -10.0
 
     # Creating a scripted element
     # Note:
