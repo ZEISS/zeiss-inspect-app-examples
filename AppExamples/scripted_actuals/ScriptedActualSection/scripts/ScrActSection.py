@@ -4,10 +4,10 @@
 #
 # Example for creating a scripted section element by extracting part on an existing section
 #
-# Carl Zeiss GOM Metrology GmbH, 2025
+# Carl Zeiss GOM Metrology GmbH, 2026
 #
 # This App is part of the ZEISS INSPECT Python API Examples:
-# https://zeiss.github.io/zeiss-inspect-app-api/2025/python_examples/examples_overview.html
+# https://zeiss.github.io/zeiss-inspect-app-api/2027/python_examples/examples_overview.html
 # ---
 
 import gom
@@ -69,7 +69,7 @@ def filter_by_length(sub_sections, mode):
 
 def dialog(context, params):
     '''Scripted section dialog function'''
-    DIALOG = gom.script.sys.create_user_defined_dialog(file='scr_act_section.gdlg')
+    DIALOG = gom.script.sys.create_user_defined_dialog(file='ScrActSection.gdlg')
 
     if "i_elem" in params:
         DIALOG.i_elem.value = params["i_elem"]
