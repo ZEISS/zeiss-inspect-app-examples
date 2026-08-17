@@ -50,4 +50,4 @@ def calculation(context, params):
 ## Related
 
 * [Scripted actuals - Surface curve](https://zeiss.github.io/zeiss-inspect-app-api/2026/python_api/scripted_elements_api.html#surface-curve)
-* [How-to: User-defined dialogs](https://zeiss.github.io/zeiss-inspect-app-api/2026/howtos/user_defined_dialogs/user_defined_dialogs.html)
+* [How-to: User-defined dialogs](https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/user_defined_dialogs/user_defined_dialogs.html)
