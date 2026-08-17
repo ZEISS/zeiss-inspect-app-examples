@@ -8,10 +8,10 @@
 # 2) Read part points and create a Point Cloud element from it
 # 3) Read part points and create a Surface element from it
 #
-# Carl Zeiss GOM Metrology GmbH, 2024
+# Carl Zeiss GOM Metrology GmbH, 2026
 #
 # This App is part of the ZEISS INSPECT Python API Examples:
-# https://zeiss.github.io/zeiss-inspect-app-api/2025/python_examples/examples_overview.html
+# https://zeiss.github.io/zeiss-inspect-app-api/2027/python_examples/examples_overview.html
 # ---
 
 import gom
