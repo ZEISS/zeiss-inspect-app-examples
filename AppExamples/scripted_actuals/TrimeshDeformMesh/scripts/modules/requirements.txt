@@ -1,2 +1,2 @@
-numpy == 2.0.2
-trimesh == 4.5.2
+numpy == 2.5.2
+trimesh == 5.0.0
