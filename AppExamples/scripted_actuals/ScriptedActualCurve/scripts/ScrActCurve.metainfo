@@ -13,7 +13,7 @@
             ],
             "type": "command"
         },
-        "script": "ude.ScrActCurve",
+        "script": "ude.ScrActCurve__c1c0e973_0ca3_4aec_9909_0bef808b2dbc",
         "submenu": [
             "App Examples",
             "scripted_actuals"
