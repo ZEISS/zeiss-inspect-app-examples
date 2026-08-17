@@ -4,6 +4,9 @@
 
 This is an example for a scripted 'volume section' element. The dialog allows to select an image file, which is converted to a grayscale image (`calculation()`, line 30) and then to an `np.array()` (line 32). Further, a transformation is applied to the image.
 
+> [!WARNING]
+> The Scripted elements API is deprecated! Use [Custom elements](https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-customelement) for new Apps.
+
 > [!NOTE]
 > Please see [ScriptedActualPoint](https://github.com/ZEISS/zeiss-inspect-app-examples/blob/main/AppExamples/scripted_actuals/ScriptedActualPoint/doc/Documentation.md) for a complete scripted elements example with detailed description.
 
