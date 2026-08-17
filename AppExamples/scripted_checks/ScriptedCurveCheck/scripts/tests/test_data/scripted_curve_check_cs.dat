@@ -1,11 +1,11 @@
 Testdata Version: 2
-Testdata from ZEISS INSPECT 2027-0 Language: en Created: 2026-08-17 16:46:27.294442
+Testdata from ZEISS INSPECT 2027-0 Language: en Created: 2026-08-17 17:10:35.050611
 0
 1
 TestValues Version: 1
 1
 Datatype: 0
-Plane X +0.00 mm.ScrCrv
+Plane X +0.00 mm CS.ScrCrv
 curve_dimension_deviation
 4
 computation_status

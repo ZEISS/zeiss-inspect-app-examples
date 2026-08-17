@@ -45,7 +45,7 @@ def test_scripted_curve_check_cs():
     test_element = gom.script.sys.create_element_by_script(
         check_type='scalar_curve',
         element_type='none',
-        name='Plane X +0.00 mm.ScrCrv',
+        name='Plane X +0.00 mm CS.ScrCrv',
         parameters={'abbreviation': 'ScrCrv',
                     'checked_element': gom.app.project.actual_elements['Plane X +0.00 mm'],
                     'coordinate_system': gom.app.project.inspection['Cylinder 1|Plane 1|Origin'],
