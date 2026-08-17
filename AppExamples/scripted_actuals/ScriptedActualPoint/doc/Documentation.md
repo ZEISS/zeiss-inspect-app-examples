@@ -6,6 +6,9 @@
 
 ### Short description
 
+> [!WARNING]
+> The Scripted elements API is deprecated! Use [Custom elements](https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-customelement) for new Apps. 
+
 > [!NOTE]
 > This is a basic example meant to introduce you to the concept of scripted actual elements. Therefore, head over to the [How-to: Scripted actuals](https://zeiss.github.io/zeiss-inspect-app-api/2026/howtos/scripted_elements/scripted_actuals.html) for the documentation of this example.
 
@@ -23,7 +26,7 @@ This example is an extension of the `offset_point_simple` example. It shows how 
 
 From many of the built-in commands of ZEISS INSPECT, you know the calculation of a preview element during the creation dialog. This means, you can already see the calculation result in the 3D view, while tweaking some parameters in the dialog.
 
-To achieve this behaviour in a scripted element, you need to set up an event handler for the dialog (see also: [How-to: User-defined dialogs](https://zeiss.github.io/zeiss-inspect-app-api/2026/howtos/user_defined_dialogs/user_defined_dialogs.html)). 
+To achieve this behaviour in a scripted element, you need to set up an event handler for the dialog (see also: [How-to: User-defined dialogs](https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/user_defined_dialogs/user_defined_dialogs.html)). 
 
 ```python
 def dialog_event_handler (widget):
@@ -125,4 +128,4 @@ Output:
 ## Related
 
 * [Scripted actuals - Point](https://zeiss.github.io/zeiss-inspect-app-api/2026/python_api/scripted_elements_api.html#point)
-* [How-to: User-defined dialogs](https://zeiss.github.io/zeiss-inspect-app-api/2026/howtos/user_defined_dialogs/user_defined_dialogs.html)
+* [How-to: User-defined dialogs](https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/user_defined_dialogs/user_defined_dialogs.html)

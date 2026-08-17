@@ -2,10 +2,10 @@
 #
 # test_scripted_actuals_offset_point.py
 #
-# Carl Zeiss GOM Metrology GmbH, 2025
+# Carl Zeiss GOM Metrology GmbH, 2026
 #
 # This test is part of the "Python API Examples" Add-on. For documentation, see:
-# https://zeiss.github.io/zeiss-inspect-app-api/2025/python_examples/examples_overview.html
+# https://zeiss.github.io/zeiss-inspect-app-api/2027/python_examples/examples_overview.html
 # ---
 
 import gom
