@@ -6,3 +6,4 @@
 *.addon
 *.zinspect
 .blackduck
+__pycache__/
