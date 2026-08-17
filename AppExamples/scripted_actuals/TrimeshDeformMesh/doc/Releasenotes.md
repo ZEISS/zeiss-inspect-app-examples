@@ -1,5 +1,7 @@
 # Release Notes TrimeshDeformMesh
 
+## Released at 2026-08-17 (v1.0.3)
+
 * Requires ZEISS INSPECT 2027 or later
 * Updated to Python 3.14
 * Updated to numpy v2.5.2
