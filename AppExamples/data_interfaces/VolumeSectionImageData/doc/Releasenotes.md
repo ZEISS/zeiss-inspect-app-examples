@@ -4,7 +4,7 @@
 
 * Requires ZEISS INSPECT 2027 or later
 * Updated to Python 3.14
-* Updated to numpy v2.5.0
+* Updated to numpy v2.5.2
 * Updated to pillow v12.3.0
 * Updated links
 

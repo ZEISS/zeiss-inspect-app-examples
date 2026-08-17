@@ -4,7 +4,7 @@
 
 * Requires ZEISS INSPECT 2027 or later
 * Updated to Python 3.14
-* Updated to numpy v2.5.0
+* Updated to numpy v2.5.2
 * Updated links
 
 ## Released at 2025-12-19 (v1.0.2)
