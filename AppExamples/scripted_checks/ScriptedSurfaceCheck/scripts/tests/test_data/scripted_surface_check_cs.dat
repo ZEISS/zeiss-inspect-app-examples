@@ -1,0 +1,18 @@
+Testdata Version: 2
+Testdata from ZEISS INSPECT 2027-0 Language: en Created: 2026-08-17 17:04:46.105448
+0
+1
+TestValues Version: 1
+1
+Datatype: 0
+Plane X +0.00 mm.ScrSrf
+inspection_surface_dimension
+4
+computation_status
+0 gom.ComputationStatus ('computed')
+result_dimension.deviation
+0 None
+result_dimension.measured_value
+0 None
+scalar_value
+0 None
