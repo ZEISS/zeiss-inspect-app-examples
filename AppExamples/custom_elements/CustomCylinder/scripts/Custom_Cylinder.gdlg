@@ -36,6 +36,10 @@
                     "translatable": true
                 },
                 "type": "input::elementname"
+            },
+            {
+            },
+            {
             }
         ],
         [
@@ -203,10 +207,10 @@
                 "background_style": "",
                 "columns": 1,
                 "default_precision": true,
-                "maximum": 1,
-                "minimum": -1,
+                "maximum": 1000,
+                "minimum": -1000,
                 "name": "dir_x",
-                "precision": 4,
+                "precision": 2,
                 "rows": 1,
                 "tooltip": {
                     "id": "",
@@ -214,17 +218,17 @@
                     "translatable": true
                 },
                 "type": "input::number",
-                "unit": "",
+                "unit": "LENGTH",
                 "value": 0
             },
             {
                 "background_style": "",
                 "columns": 1,
                 "default_precision": true,
-                "maximum": 1,
-                "minimum": -1,
+                "maximum": 1000,
+                "minimum": -1000,
                 "name": "dir_y",
-                "precision": 4,
+                "precision": 2,
                 "rows": 1,
                 "tooltip": {
                     "id": "",
@@ -232,17 +236,17 @@
                     "translatable": true
                 },
                 "type": "input::number",
-                "unit": "",
+                "unit": "LENGTH",
                 "value": 0
             },
             {
                 "background_style": "",
                 "columns": 1,
                 "default_precision": true,
-                "maximum": 1,
-                "minimum": -1,
+                "maximum": 1000,
+                "minimum": -1000,
                 "name": "dir_z",
-                "precision": 4,
+                "precision": 2,
                 "rows": 1,
                 "tooltip": {
                     "id": "",
@@ -250,7 +254,7 @@
                     "translatable": true
                 },
                 "type": "input::number",
-                "unit": "",
+                "unit": "LENGTH",
                 "value": 1
             }
         ],
@@ -289,6 +293,10 @@
                 "type": "input::number",
                 "unit": "LENGTH",
                 "value": 10
+            },
+            {
+            },
+            {
             }
         ]
     ],
@@ -298,8 +306,8 @@
     "embedding": "always_toplevel",
     "position": "automatic",
     "size": {
-        "height": 308,
-        "width": 460
+        "height": 297,
+        "width": 410
     },
     "sizemode": "automatic",
     "style": "",
