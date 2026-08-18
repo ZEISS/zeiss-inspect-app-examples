@@ -4,12 +4,12 @@
 #
 # Example for creating a scripted point cloud element
 #
-# See https://zeissiqs.github.io/zeiss-inspect-addon-api/2023/python_api/scripted_elements_api.html#point-cloud
+# See https://zeiss.github.io/zeiss-inspect-app-api/2026/python_api/scripted_elements_api.html#point-cloud
 #
-# Carl Zeiss GOM Metrology GmbH, 2023
+# Carl Zeiss GOM Metrology GmbH, 2026
 #
-# This script is part of the "Python API Examples" Add-on. For documentation, see:
-# https://zeissiqs.github.io/zeiss-inspect-addon-api/2023/python_examples/
+# This App is part of the ZEISS INSPECT Python API Examples:
+# https://zeiss.github.io/zeiss-inspect-app-api/2026/python_examples/examples_overview.html
 # ---
 
 import gom
