@@ -1,5 +1,8 @@
 # Release Notes ScriptedActualVolumeSection
 
+## Release at 2026-08-18 (v1.0.4)
+* Fixed loading of JPEG image files with pillow
+
 ## Release at 2026-03-18 (v1.0.3)
 * Fixed potential security issue in pillow v11.3.0 (GHSA-cfh3-3jmp-rvhc) by restricting supported image formats
 
