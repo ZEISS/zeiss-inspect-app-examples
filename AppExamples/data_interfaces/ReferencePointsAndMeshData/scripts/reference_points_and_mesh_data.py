@@ -8,10 +8,10 @@
 # 2) Read part points and create a Point Cloud element from it
 # 3) Read part points and create a Surface element from it
 #
-# Carl Zeiss GOM Metrology GmbH, 2024
+# Carl Zeiss GOM Metrology GmbH, 2026
 #
 # This App is part of the ZEISS INSPECT Python API Examples:
-# https://zeiss.github.io/zeiss-inspect-app-api/2025/python_examples/examples_overview.html
+# https://zeiss.github.io/zeiss-inspect-app-api/2026/python_examples/examples_overview.html
 # ---
 
 import gom
@@ -49,11 +49,11 @@ if __name__ == '__main__':
                 elements=[gom.app.project.actual_elements[element_names[element]]],
                 with_measuring_principle=True)
 
-    #################################################################################################
+    ################################################################################################
     #
     # 1) Read reference points and create a Point Cloud element from it
     #
-    #################################################################################################
+    ################################################################################################
 
     # Reference points
     # Shape: e.g. (1, 44, 3)
@@ -81,11 +81,11 @@ if __name__ == '__main__':
     # To display it, see https://github.com/ZEISS/zeiss-inspect-app-examples/tree/main/AppExamples/misc/DisplayImage
     # image_left = gom.app.project.measurement_series['Scan 1'].measurements['M1'].images['left camera'].data.rgb
 
-    #################################################################################################
+    ################################################################################################
     #
     # 2) Read part points and create a Point Cloud element from it
     #
-    #################################################################################################
+    ################################################################################################
 
     # Part points
     # Shape: e.g. (1, 876397, 3)
@@ -109,11 +109,11 @@ if __name__ == '__main__':
         )
         print(" done.")
 
-    #################################################################################################
+    ################################################################################################
     #
     # 3) Read part points and create a Surface element from it
     #
-    #################################################################################################
+    ################################################################################################
 
     # Part triangles
     # Shape: e.g. (1, 1591204, 3)
