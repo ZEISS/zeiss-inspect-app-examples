@@ -1,6 +1,6 @@
 # Release Notes ScriptedActualVolumeSection
 
-## Released at 2026-08-17 (v1.0.4)
+## Released at 2026-08-17 (v1.0.5)
 
 * Requires ZEISS INSPECT 2027 or later
 * Updated to Python 3.14
@@ -8,7 +8,12 @@
 * Updated to pillow v12.3.0
 * Updated links
 
+## Release at 2026-08-18 (v1.0.4)
+
+* Fixed loading of JPEG image files with pillow
+
 ## Release at 2026-03-18 (v1.0.3)
+
 * Fixed potential security issue in pillow v11.3.0 (GHSA-cfh3-3jmp-rvhc) by restricting supported image formats
 
 ## Release at 2025-12-19 (v1.0.2)
