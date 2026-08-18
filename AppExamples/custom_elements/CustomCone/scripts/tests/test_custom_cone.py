@@ -42,6 +42,14 @@ def test_actual_cone():
     # TEST
     #
     elem = gom.app.project.actual_elements[name]
+    assert elem.coordinate1.x == P1_X
+    assert elem.coordinate1.y == P1_Y
+    assert elem.coordinate1.z == P1_Z
+    assert elem.diameter1 == RADIUS1 * 2
+    assert elem.coordinate2.x == P2_X
+    assert elem.coordinate2.y == P2_Y
+    assert elem.coordinate2.z == P2_Z
+    assert elem.diameter2 == RADIUS2 * 2
     # Check custom element data tokens (stored via 'data' key in compute result)
     assert elem.radius1 == RADIUS1
     assert elem.radius2 == RADIUS2
@@ -71,6 +79,14 @@ def test_nominal_cone():
     # TEST
     #
     elem = gom.app.project.nominal_elements[name]
+    assert elem.coordinate1.x == P1_X
+    assert elem.coordinate1.y == P1_Y
+    assert elem.coordinate1.z == P1_Z
+    assert elem.diameter1 == RADIUS1 * 2
+    assert elem.coordinate2.x == P2_X
+    assert elem.coordinate2.y == P2_Y
+    assert elem.coordinate2.z == P2_Z
+    assert elem.diameter2 == RADIUS2 * 2
     # Check custom element data tokens (stored via 'data' key in compute result)
     assert elem.radius1 == RADIUS1
     assert elem.radius2 == RADIUS2
