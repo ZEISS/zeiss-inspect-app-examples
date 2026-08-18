@@ -42,10 +42,13 @@ def test_actual_cylinder():
     # TEST
     #
     elem = gom.app.project.actual_elements[name]
-    assert elem.center_coordinate.x == CENTER_X
-    assert elem.center_coordinate.y == CENTER_Y
-    assert elem.center_coordinate.z == CENTER_Z
-    assert elem.radius == RADIUS
+    assert elem.coordinate1.x == CENTER_X
+    assert elem.coordinate1.y == CENTER_Y
+    assert elem.coordinate1.z == CENTER_Z
+    assert elem.direction.x == DIR_X
+    assert elem.direction.y == DIR_Y
+    assert elem.direction.z == DIR_Z
+    assert elem.diameter == RADIUS * 2
     # Check custom element data tokens (stored via 'data' key in compute result)
     assert elem.center_x == CENTER_X
     assert elem.center_y == CENTER_Y
@@ -77,10 +80,13 @@ def test_nominal_cylinder():
     # TEST
     #
     elem = gom.app.project.nominal_elements[name]
-    assert elem.center_coordinate.x == CENTER_X
-    assert elem.center_coordinate.y == CENTER_Y
-    assert elem.center_coordinate.z == CENTER_Z
-    assert elem.radius == RADIUS
+    assert elem.coordinate1.x == CENTER_X
+    assert elem.coordinate1.y == CENTER_Y
+    assert elem.coordinate1.z == CENTER_Z
+    assert elem.direction.x == DIR_X
+    assert elem.direction.y == DIR_Y
+    assert elem.direction.z == DIR_Z
+    assert elem.diameter == RADIUS * 2
     # Check custom element data tokens (stored via 'data' key in compute result)
     assert elem.center_x == CENTER_X
     assert elem.center_y == CENTER_Y
