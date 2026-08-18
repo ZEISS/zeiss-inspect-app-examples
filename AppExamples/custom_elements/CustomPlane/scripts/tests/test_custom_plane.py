@@ -43,6 +43,11 @@ def test_actual_plane():
     # TEST
     #
     elem = gom.app.project.actual_elements[name]
+    assert elem.normal.x == NORMAL_X
+    assert elem.normal.y == NORMAL_Y
+    assert elem.normal.z == NORMAL_Z
+    assert math.isclose(elem.distance_to_origin, -1.0 * EXPECTED_DISTANCE)
+    
     # Check custom element data tokens (stored via 'data' key in compute result)
     assert elem.normal_x == NORMAL_X
     assert elem.normal_y == NORMAL_Y
@@ -73,7 +78,10 @@ def test_nominal_plane():
     # TEST
     #
     elem = gom.app.project.nominal_elements[name]
-    assert math.isclose(elem.distance_from_origin, EXPECTED_DISTANCE)
+    assert elem.normal.x == NORMAL_X
+    assert elem.normal.y == NORMAL_Y
+    assert elem.normal.z == NORMAL_Z
+    assert math.isclose(elem.distance_to_origin, -1.0 * EXPECTED_DISTANCE)
     # Check custom element data tokens (stored via 'data' key in compute result)
     assert elem.normal_x == NORMAL_X
     assert elem.normal_y == NORMAL_Y
