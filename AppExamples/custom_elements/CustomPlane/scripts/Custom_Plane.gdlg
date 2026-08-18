@@ -36,6 +36,10 @@
                     "translatable": true
                 },
                 "type": "input::elementname"
+            },
+            {
+            },
+            {
             }
         ],
         [
@@ -130,10 +134,10 @@
                 "background_style": "",
                 "columns": 1,
                 "default_precision": true,
-                "maximum": 1,
-                "minimum": -1,
+                "maximum": 1000,
+                "minimum": -1000,
                 "name": "normal_x",
-                "precision": 4,
+                "precision": 2,
                 "rows": 1,
                 "tooltip": {
                     "id": "",
@@ -141,17 +145,17 @@
                     "translatable": true
                 },
                 "type": "input::number",
-                "unit": "",
+                "unit": "LENGTH",
                 "value": 0
             },
             {
                 "background_style": "",
                 "columns": 1,
                 "default_precision": true,
-                "maximum": 1,
-                "minimum": -1,
+                "maximum": 1000,
+                "minimum": -1000,
                 "name": "normal_y",
-                "precision": 4,
+                "precision": 2,
                 "rows": 1,
                 "tooltip": {
                     "id": "",
@@ -159,17 +163,17 @@
                     "translatable": true
                 },
                 "type": "input::number",
-                "unit": "",
+                "unit": "LENGTH",
                 "value": 0
             },
             {
                 "background_style": "",
                 "columns": 1,
                 "default_precision": true,
-                "maximum": 1,
-                "minimum": -1,
+                "maximum": 1000,
+                "minimum": -1000,
                 "name": "normal_z",
-                "precision": 4,
+                "precision": 2,
                 "rows": 1,
                 "tooltip": {
                     "id": "",
@@ -177,7 +181,7 @@
                     "translatable": true
                 },
                 "type": "input::number",
-                "unit": "",
+                "unit": "LENGTH",
                 "value": 1
             }
         ],
@@ -261,8 +265,8 @@
     "embedding": "always_toplevel",
     "position": "automatic",
     "size": {
-        "height": 260,
-        "width": 460
+        "height": 265,
+        "width": 402
     },
     "sizemode": "automatic",
     "style": "",
