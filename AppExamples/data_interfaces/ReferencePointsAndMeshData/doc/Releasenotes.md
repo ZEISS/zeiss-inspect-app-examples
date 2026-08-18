@@ -1,5 +1,9 @@
 # Release Notes ReferencePointsAndMeshData
 
+## Released at 2026-08-18 (v1.0.3)
+
+* Added missing utility scripts `create_point_cloud.py` and `create_surface.py`.
+
 ## Released at 2025-12-19 (v1.0.2)
 
 * Updated numpy to v2.0.2
