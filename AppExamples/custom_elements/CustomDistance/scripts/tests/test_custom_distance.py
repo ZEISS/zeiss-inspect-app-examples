@@ -44,6 +44,12 @@ def test_actual_distance():
     # TEST
     #
     elem = gom.app.project.actual_elements[name]
+    assert elem.coordinate1.x == P1_X
+    assert elem.coordinate1.y == P1_Y
+    assert elem.coordinate1.z == P1_Z
+    assert elem.coordinate2.x == P2_X
+    assert elem.coordinate2.y == P2_Y
+    assert elem.coordinate2.z == P2_Z
     # Check custom element data tokens (stored via 'data' key in compute result)
     assert math.isclose(elem.distance, EXPECTED_DISTANCE)
 
@@ -72,5 +78,11 @@ def test_nominal_distance():
     # TEST
     #
     elem = gom.app.project.nominal_elements[name]
+    assert elem.coordinate1.x == P1_X
+    assert elem.coordinate1.y == P1_Y
+    assert elem.coordinate1.z == P1_Z
+    assert elem.coordinate2.x == P2_X
+    assert elem.coordinate2.y == P2_Y
+    assert elem.coordinate2.z == P2_Z
     # Check custom element data tokens (stored via 'data' key in compute result)
     assert math.isclose(elem.distance, EXPECTED_DISTANCE)
