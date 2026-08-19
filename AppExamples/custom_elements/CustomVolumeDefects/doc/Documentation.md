@@ -8,14 +8,14 @@
 > [!NOTE]
 > This example requires **ZEISS INSPECT X-Ray**.
 
-This App demonstrates how to create a custom actual `VolumeDefects` element using the `@apicontribution` decorator. It mirrors the functionality of the [ScriptedActualVolumeDefects](../../scripted_actuals/ScriptedActualVolumeDefects/doc/Documentation.md) example: a tetrahedral 3D volume defect mesh built from four user-supplied vertices.
+This App demonstrates how to create a custom actual `VolumeDefects` element using the `@apicontribution` decorator. It mirrors the functionality of the [ScriptedActualVolumeDefects](../../../scripted_actuals/ScriptedActualVolumeDefects/doc/Documentation.md) example: a tetrahedral 3D volume defect mesh built from four user-supplied vertices.
 
 | Class | Type | Features |
 |---|---|---|
 | `ActualVolumeDefects` | `actuals.VolumeDefects` | Tetrahedral mesh; user-defined vertices; fixed triangulation |
 
 > [!NOTE]
-> `VolumeDefects` represents 3D volumetric defects as a mesh (vertices + triangle indices). For 2D slice-based defect contours see the [CustomVolumeDefects2d](../../custom_elements/CustomVolumeDefects2d/doc/Documentation.md) example.
+> `VolumeDefects` represents 3D volumetric defects as a mesh (vertices + triangle indices). For 2D slice-based defect contours see the [CustomVolumeDefects2d](../../CustomVolumeDefects2d/doc/Documentation.md) example.
 
 ## Highlights
 
