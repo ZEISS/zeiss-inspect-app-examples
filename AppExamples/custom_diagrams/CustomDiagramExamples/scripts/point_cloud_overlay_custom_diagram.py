@@ -15,7 +15,7 @@ from numpy.linalg import LinAlgError
 class DiagramWithPointCloudOverlay(gom.api.extensions.diagrams.SVGDiagram):
     """Interactive SVG diagram using point-based overlay interaction mapping."""
 
-    INTERACTION_SCRIPT = 'testscript'
+    INTERACTION_SCRIPT = 'diagram_click_callback'
     INTERACTION_ARGS = {'name': 'testname', 'testval': 17.00351334}
     MARKER_SIZE = 120
     MARKER_COLOR = '#2f6fed'

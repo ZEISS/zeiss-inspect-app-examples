@@ -16,7 +16,7 @@ The App includes a custom actual circle element so no external custom element ex
 - `basic_custom_diagram.py`: static SVG diagram service.
 - `element_overlay_custom_diagram.py`: interactive overlay using full-element mapping and matplotlib `gid` tags. Here, `gid` is the SVG group identifier written into the exported plot so the `SVGDiagram` renderer can associate a drawn marker with the corresponding ZEISS INSPECT element UUID.
 - `point_cloud_overlay_custom_diagram.py`: interactive overlay using point-cloud display coordinates.
-- `testscript.py`: callback script triggered by interactive diagram clicks.
+- `diagram_click_callback.py`: callback script triggered by interactive diagram clicks.
 
 ## Prerequisites
 

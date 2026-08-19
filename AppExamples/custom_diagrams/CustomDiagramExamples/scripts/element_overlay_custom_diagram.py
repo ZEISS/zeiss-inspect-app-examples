@@ -15,7 +15,7 @@ from numpy.linalg import LinAlgError
 class DiagramWithElementOverlay(gom.api.extensions.diagrams.SVGDiagram):
     """Interactive SVG diagram with full-element overlay hitboxes and click callbacks."""
 
-    INTERACTION_SCRIPT = 'testscript'
+    INTERACTION_SCRIPT = 'diagram_click_callback'
     INTERACTION_ARGS = {'name': 'testname', 'testval': 17.00351334}
     RENDER_CONFIG = {'auto_generated_overlay_use': True}
     DEFAULT_MARKER_COLOR = '#4c956c'
