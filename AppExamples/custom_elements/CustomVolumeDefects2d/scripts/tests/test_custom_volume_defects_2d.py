@@ -49,18 +49,39 @@ def test_actual_volume_defects_2d():
     assert elem.total_points == TOTAL_POINTS
 
     # All defects lie in the same Z plane at Z_POS.
-    # Circle centres are spaced XY_SPACING apart along X, centred on the origin.
-    # x_start = -0.5 * (N_DEFECTS - 1) * XY_SPACING
+    # Circle centres are spaced XY_SPACING apart along X, centered on the origin.
     x_start = -0.5 * (N_DEFECTS - 1) * XY_SPACING
 
-    coords = list(elem.data.coordinate)
+    # The coordinate token is a flat list with one representative Vec3d per
+    # defect; it does not expose the individual contour vertices. The custom
+    # total_points token above verifies the full contour vertex count.
+    coords = list(elem.coordinate)
 
-    # First point of the first contour: (x_start + DEFECT_RADIUS, 0, Z_POS)
-    first_point = coords[0]
-    assert math.isclose(first_point[0], x_start + DEFECT_RADIUS, rel_tol=1e-6)
-    assert math.isclose(first_point[1], 0.0, abs_tol=1e-6)
-    assert math.isclose(first_point[2], Z_POS, abs_tol=1e-6)
+    assert len(coords) == N_DEFECTS
 
-    # All points must share the same Z (coplanar requirement)
-    for pt in coords:
-        assert math.isclose(pt[2], Z_POS, abs_tol=1e-6), f"Non-coplanar point: z={pt[2]}"
+    centers = [
+        x_start + i * XY_SPACING
+        for i in range(N_DEFECTS)
+    ]
+
+    unmatched_centers = centers.copy()
+    for point in coords:
+        assert math.isclose(point.z, Z_POS, abs_tol=1e-6)
+
+        matching_center = next(
+            (
+                center_x
+                for center_x in unmatched_centers
+                if math.isclose(
+                    math.hypot(point.x - center_x, point.y),
+                    DEFECT_RADIUS,
+                    rel_tol=1e-6,
+                    abs_tol=1e-6
+                )
+            ),
+            None
+        )
+        assert matching_center is not None, f"Point is not on a defect circle: {point}"
+        unmatched_centers.remove(matching_center)
+
+    assert not unmatched_centers
