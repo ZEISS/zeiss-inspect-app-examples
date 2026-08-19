@@ -44,7 +44,8 @@ def _compute_defect_contours(values):
 
     # Centre the row of defects symmetrically around the origin
     x_start = -0.5 * (n_defects - 1) * xy_spacing
-
+    #np.array (gom.app.project.actual_elements['Actual VolumeDefects2d'].data.coordinate)
+    #gom.app.project.actual_elements['Actual VolumeDefects2d'].defects_points
     curves = []
     # -------------------------------------------------------------------------
     for i in range(n_defects):
@@ -91,6 +92,7 @@ class ActualVolumeDefects2d(gom.api.extensions.actuals.VolumeDefects2d):
         n_points = int(values['n_points'])
         return {
             'curves': curves,
+            'outer_contours': [],
             'data': {
                 'num_defects': n_defects,
                 'total_points': n_defects * n_points
