@@ -8,6 +8,9 @@
 > [!NOTE]
 > This example requires **ZEISS INSPECT X-Ray**.
 
+> [!WARNING]
+> Meaningful `VolumeDefects2d` result validation requires the **Advanced X-Ray Inspection** license. Without this license, `elem.defects_points` contains the status message `Missing license (Advanced X-Ray Inspection required)` instead of contour data.
+
 This App demonstrates how to create a custom actual `VolumeDefects2d` element using the `@apicontribution` decorator. It generates circular defect contours on a single CT slice (all curves coplanar) to illustrate the `curves`-based compute format.
 
 > [!NOTE]
@@ -50,6 +53,20 @@ return {
     }
 }
 ```
+
+### `defects_points` data structure
+
+With the required license, `elem.defects_points` provides the computed contour vertices grouped by defect:
+
+```python
+[
+    numpy.ndarray([(x, y, z), ...]),  # defect 1
+    numpy.ndarray([(x, y, z), ...]),  # defect 2
+    ...
+]
+```
+
+Each array contains `n_points` vertices for one defect contour, so the total number of vertices is `n_defects * n_points`. The points are NumPy arrays rather than `gom.Vec3d` objects. Without the required license, the token is a string status message and must not be interpreted as point data.
 
 ### Extended format (optional, not used in this example)
 
