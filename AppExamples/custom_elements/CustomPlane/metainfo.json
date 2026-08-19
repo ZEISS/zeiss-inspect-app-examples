@@ -18,6 +18,7 @@
         "product-codes": [
         ]
     },
+    "python-version": "3.14.x",
     "references": [
         [
             "HowTo",
