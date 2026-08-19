@@ -8,7 +8,7 @@
 > [!NOTE]
 > This example requires **ZEISS INSPECT X-Ray** and a project containing volume data with a linked volume element (e.g. `volume_test_project`).
 
-This App demonstrates how to create a custom actual `VolumeSegmentation` element using the `@apicontribution` decorator. It mirrors the functionality of the [ScriptedActualVolumeSegmentation](../../../scripted_actuals/ScriptedActualVolumeSegmentation/doc/Documentation.md) example: the voxel data of a linked volume is classified into three material segments (background, material 1, material 2) using two user-supplied grayscale thresholds.
+This App demonstrates how to create a custom actual `VolumeSegmentation` element using the `@apicontribution` decorator. The voxel data of a linked volume is classified into three material segments (background, material 1, material 2) using two user-supplied grayscale thresholds.
 
 | Class | Type | Features |
 |---|---|---|
@@ -71,4 +71,3 @@ def dialog(self, context, args):
 
 - [How-to: Custom elements](https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/custom_elements/custom_nominals_actuals.html)
 - [API — gom.api.extensions.actuals.VolumeSegmentation](https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-actuals-volumesegmentation)
-
