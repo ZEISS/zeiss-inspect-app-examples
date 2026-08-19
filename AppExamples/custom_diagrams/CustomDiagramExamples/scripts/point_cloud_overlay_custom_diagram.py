@@ -144,7 +144,6 @@ class DiagramWithPointCloudOverlay(gom.api.extensions.diagrams.SVGDiagram):
 
         x_axis, y_axis = self._radius_series(element_data)
         points = list(zip(x_axis, y_axis))
-        display_coords = mpltools.get_display_coords(ax, points, safe_view)
 
         # Point-cloud overlay maps interaction by display coordinates, so gid mapping is not needed here.
         for x_value, y_value in points:
@@ -161,6 +160,8 @@ class DiagramWithPointCloudOverlay(gom.api.extensions.diagrams.SVGDiagram):
         ax.set_ylabel('Radius')
 
         svg_string = self._export_svg(fig, safe_view)
+        # Calculate overlay coordinates after rendering so the axes limits and layout match the SVG.
+        display_coords = mpltools.get_display_coords(ax, points, safe_view)
 
         self.add_all_overlay_data(element_data, display_coords, safe_view, overlay)
         plt.close(fig)
