@@ -16,7 +16,7 @@ This App demonstrates how to create custom curve element contributions — one a
 
 ### Parameters
 
-A curve is defined by a parametric formula evaluated at 1000 evenly spaced steps. Both classes accept the same dialog parameters (matching the [ScriptedActualCurve](../../scripted_actuals/ScriptedActualCurve/doc/Documentation.md) example):
+A curve is defined by a parametric formula evaluated at 1000 evenly spaced steps. Both classes accept the same dialog parameters (matching the [ScriptedActualCurve](../../../scripted_actuals/ScriptedActualCurve/doc/Documentation.md) example):
 
 | Parameter | Type | Description |
 |---|---|---|

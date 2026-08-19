@@ -2,7 +2,7 @@
 
 ## Overview
 
-This example demonstrates how to build a **Custom Curve Inspection** element using the modern `gom.api.extensions.inspections.Curve` API, as the counterpart to the legacy [`ScriptedCurveCheck`](../../scripted_checks/ScriptedCurveCheck) example.
+This example demonstrates how to build a **Custom Curve Inspection** element using the modern `gom.api.extensions.inspections.Curve` API, as the counterpart to the legacy [`ScriptedCurveCheck`](../../../scripted_checks/ScriptedCurveCheck) example.
 
 A curve inspection assigns a per-vertex deviation value to each point along a curve element. The deviations are displayed as a color-coded plot along the curve in the 3D view. This custom check computes the **y-coordinate** of each vertex as the deviation from the XZ-plane (nominal = 0).
 
