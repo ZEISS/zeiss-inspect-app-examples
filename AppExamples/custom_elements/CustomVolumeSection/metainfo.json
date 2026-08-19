@@ -18,14 +18,15 @@
         "product-codes": [
         ]
     },
+    "python-version": "3.14.x",
     "references": [
         [
             "HowTo",
-            "https://zeiss.github.io/zeiss-inspect-app-api/main/howtos/custom_elements/custom_nominals_actuals.html"
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/custom_elements/custom_nominals_actuals.html"
         ],
         [
             "API - actuals.VolumeSection",
-            "https://zeiss.github.io/zeiss-inspect-app-api/main/python_api/python_api.html#gom-api-extensions-actuals-volumesection"
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-actuals-volumesection"
         ]
     ],
     "services": [

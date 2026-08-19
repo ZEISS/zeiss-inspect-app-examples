@@ -10,20 +10,22 @@
     "description": "Example for a custom sequence element that creates a datum plane through 3 reference points.",
     "icon": "icon.png",
     "labels": [
-        ""
     ],
     "licensing": {
-        "licenses": [],
-        "product-codes": []
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
     },
+    "python-version": "3.14.x",
     "references": [
         [
             "HowTo",
-            "https://zeiss.github.io/zeiss-inspect-app-api/main/howtos/custom_elements/custom_nominals_actuals.html"
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/custom_elements/custom_nominals_actuals.html"
         ],
         [
             "API - sequence.CustomSequence",
-            "https://zeiss.github.io/zeiss-inspect-app-api/main/python_api/python_api.html#gom-api-extensions-sequence-customsequence"
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-sequence-customsequence"
         ]
     ],
     "services": [
