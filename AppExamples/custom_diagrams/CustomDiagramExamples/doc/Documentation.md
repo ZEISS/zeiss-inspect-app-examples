@@ -62,6 +62,6 @@ The App includes a custom actual circle element so no external custom element ex
 
 ## References
 
-- [HowTo: Custom Diagrams](https://zeiss.github.io/zeiss-inspect-app-api/main/howtos/custom_diagrams/custom_diagrams.html)
+- [HowTo: Using Custom Diagrams](https://zeiss.github.io/zeiss-inspect-app-api/main/howtos/using_custom_diagrams/using_custom_diagrams.html)
 - [HowTo: Custom Elements](https://zeiss.github.io/zeiss-inspect-app-api/main/howtos/custom_elements/custom_nominals_actuals.html)
 - [API: gom.api.extensions.diagrams](https://zeiss.github.io/zeiss-inspect-app-api/main/python_api/python_api.html#gom-api-extensions-diagrams)
