@@ -3,7 +3,7 @@
 ## Short description
 
 > [!NOTE]
-> This example is a companion to the [How-to: Custom elements](https://zeiss.github.io/zeiss-inspect-app-api/main/howtos/custom_elements/custom_nominals_actuals.html). Head there for the concept documentation.
+> This example is a companion to the [How-to: Custom elements](https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/custom_elements/custom_nominals_actuals.html). Head there for the concept documentation.
 
 This App demonstrates how to create custom surface element contributions — one actual and one nominal — using the `@apicontribution` decorator.
 
@@ -47,3 +47,9 @@ return {
 ### Custom data tokens
 
 The `compute_stage()` method stores the vertex count as a custom element data token accessible via `elem.num_vertices` (always 8).
+
+## Related links
+
+- [How-to: Custom elements](https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/custom_elements/custom_nominals_actuals.html)
+- [API — Extensions API - gom.api.extensions.actuals.CustomSurface](https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-actuals-surface)
+- [API — Extensions API - gom.api.extensions.nominals.CustomSurface](https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-nominals-surface)

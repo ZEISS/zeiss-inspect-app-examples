@@ -3,7 +3,7 @@
 ## Short description
 
 > [!NOTE]
-> This example is a companion to the [How-to: Custom elements](https://zeiss.github.io/zeiss-inspect-app-api/main/howtos/custom_elements/custom_nominals_actuals.html). Head there for the concept documentation.
+> This example is a companion to the [How-to: Custom elements](https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/custom_elements/custom_nominals_actuals.html). Head there for the concept documentation.
 
 This App demonstrates how to create custom distance element contributions — one actual and one nominal — using the `@apicontribution` decorator.
 
@@ -44,6 +44,6 @@ return {
 
 ## Related links
 
-- [How-to: Custom elements](https://zeiss.github.io/zeiss-inspect-app-api/main/howtos/custom_elements/custom_nominals_actuals.html)
-- [API — gom.api.extensions.actuals.Distance](https://zeiss.github.io/zeiss-inspect-app-api/main/python_api/python_api.html#gom-api-extensions-actuals-distance)
-- [API — gom.api.extensions.nominals.Distance](https://zeiss.github.io/zeiss-inspect-app-api/main/python_api/python_api.html#gom-api-extensions-nominals-distance)
+- [How-to: Custom elements](https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/custom_elements/custom_nominals_actuals.html)
+- [API — gom.api.extensions.actuals.Distance](https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-actuals-distance)
+- [API — gom.api.extensions.nominals.Distance](https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-nominals-distance)

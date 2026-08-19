@@ -120,5 +120,5 @@ return self.apply_dialog(dlg, gom.api.dialog.show(context, dlg))
 
 ## Related references
 
-- API: [gom.api.extensions.inspections.Curve](https://zeiss.github.io/zeiss-inspect-app-api/main/python_api/python_api.html#gom-api-extensions-inspections-curve)
-- How-to: [Custom inspections](https://zeiss.github.io/zeiss-inspect-app-api/main/howtos/custom_elements/custom_inspections.html)
+- API: [gom.api.extensions.inspections.Curve](https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-inspections-curve)
+- How-to: [Custom inspections](https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/custom_elements/custom_inspections.html)

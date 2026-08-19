@@ -3,7 +3,7 @@
 ## Short description
 
 > [!NOTE]
-> This example is a companion to the [How-to: Custom elements](https://zeiss.github.io/zeiss-inspect-app-api/main/howtos/custom_elements/custom_nominals_actuals.html). Head there for the concept documentation.
+> This example is a companion to the [How-to: Custom elements](https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/custom_elements/custom_nominals_actuals.html). Head there for the concept documentation.
 
 > [!NOTE]
 > This example requires **ZEISS INSPECT X-Ray**.
@@ -76,5 +76,5 @@ When normals are provided, the first contour of a defect must point outward and 
 
 ## Related links
 
-- [How-to: Custom elements](https://zeiss.github.io/zeiss-inspect-app-api/main/howtos/custom_elements/custom_nominals_actuals.html)
-- [API — gom.api.extensions.actuals.VolumeDefects2d](https://zeiss.github.io/zeiss-inspect-app-api/main/python_api/python_api.html#gom-api-extensions-actuals-volumedefects2d)
+- [How-to: Custom elements](https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/custom_elements/custom_nominals_actuals.html)
+- [API — gom.api.extensions.actuals.VolumeDefects2d](https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-actuals-volumedefects2d)

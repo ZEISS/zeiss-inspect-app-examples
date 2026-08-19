@@ -3,7 +3,7 @@
 ## Short description
 
 > [!NOTE]
-> This example is a companion to the [How-to: Custom elements](https://zeiss.github.io/zeiss-inspect-app-api/main/howtos/custom_elements/custom_nominals_actuals.html). Head there for the concept documentation.
+> This example is a companion to the [How-to: Custom elements](https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/custom_elements/custom_nominals_actuals.html). Head there for the concept documentation.
 
 This App demonstrates how to create custom surface curve element contributions — one actual and one nominal — using the `@apicontribution` decorator.
 
@@ -59,3 +59,8 @@ The `compute_stage()` method stores the following as custom element data tokens:
 | `elem.num_points` | Number of curve points (always 1000) |
 | `elem.phi_range` | Azimuth range covered: `phi_max - phi_min` |
 
+## Related links
+
+- [How-to: Custom elements](https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/custom_elements/custom_nominals_actuals.html)
+- [API — Extensions API - gom.api.extensions.actuals.CustomSurfaceCurve](https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-actuals-surfacecurve)
+- [API — Extensions API - gom.api.extensions.nominals.CustomSurfaceCurve](https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-nominals-surfacecurve)

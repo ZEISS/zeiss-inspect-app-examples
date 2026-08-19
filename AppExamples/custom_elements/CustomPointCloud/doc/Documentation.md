@@ -3,7 +3,7 @@
 ## Short description
 
 > [!NOTE]
-> This example is a companion to the [How-to: Custom elements](https://zeiss.github.io/zeiss-inspect-app-api/main/howtos/custom_elements/custom_nominals_actuals.html). Head there for the concept documentation.
+> This example is a companion to the [How-to: Custom elements](https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/custom_elements/custom_nominals_actuals.html). Head there for the concept documentation.
 
 This App demonstrates how to create custom point cloud element contributions, one actual and one nominal, using the `@apicontribution` decorator.
 
@@ -63,6 +63,6 @@ These values are available on created elements as `elem.num_points` and `elem.u_
 
 ## Related references
 
-- API: [gom.api.extensions.actuals.PointCloud](https://zeiss.github.io/zeiss-inspect-app-api/main/python_api/python_api.html#gom-api-extensions-actuals-pointcloud)
-- API: [gom.api.extensions.nominals.PointCloud](https://zeiss.github.io/zeiss-inspect-app-api/main/python_api/python_api.html#gom-api-extensions-nominals-pointcloud)
-- How-to: [Custom nominals and actuals](https://zeiss.github.io/zeiss-inspect-app-api/main/howtos/custom_elements/custom_nominals_actuals.html)
+- API: [gom.api.extensions.actuals.PointCloud](https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-actuals-pointcloud)
+- API: [gom.api.extensions.nominals.PointCloud](https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-nominals-pointcloud)
+- How-to: [Custom nominals and actuals](https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/custom_elements/custom_nominals_actuals.html)

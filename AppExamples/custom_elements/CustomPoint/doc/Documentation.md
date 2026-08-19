@@ -76,7 +76,7 @@ write diagnostic messages. These appear in the element's computation log within 
 
 ## Related
 
-* [Extensions API - gom.api.extensions.actuals.Point](https://zeiss.github.io/zeiss-inspect-app-api/main/python_api/python_api.html#gom-api-extensions-actuals-point)
-* [Extensions API - gom.api.extensions.nominals.Point](https://zeiss.github.io/zeiss-inspect-app-api/main/python_api/python_api.html#gom-api-extensions-nominals-point)
-* [How-to: Custom elements](https://zeiss.github.io/zeiss-inspect-app-api/main/howtos/custom_elements/custom_nominals_actuals.html)
-* [How-to: User-defined dialogs](https://zeiss.github.io/zeiss-inspect-app-api/main/howtos/user_defined_dialogs/user_defined_dialogs.html)
+* [Extensions API - gom.api.extensions.actuals.Point](https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-actuals-point)
+* [Extensions API - gom.api.extensions.nominals.Point](https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-nominals-point)
+* [How-to: Custom elements](https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/custom_elements/custom_nominals_actuals.html)
+* [How-to: User-defined dialogs](https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/user_defined_dialogs/user_defined_dialogs.html)

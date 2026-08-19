@@ -3,7 +3,7 @@
 ## Short description
 
 > [!NOTE]
-> This example is a companion to the [How-to: Custom elements](https://zeiss.github.io/zeiss-inspect-app-api/main/howtos/custom_elements/custom_nominals_actuals.html). Head there for the concept documentation.
+> This example is a companion to the [How-to: Custom elements](https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/custom_elements/custom_nominals_actuals.html). Head there for the concept documentation.
 
 > [!NOTE]
 > This example requires **ZEISS INSPECT X-Ray**.
@@ -55,3 +55,8 @@ return {
 ### Difference from ScriptedActualVolume
 
 The scripted version uses `dialog()` / `calculation()` functions with a live preview and a "Random rotation" checkbox (dialog event handler). The custom element version uses `show_dialog()` + `compute_stage()` without a preview event loop, keeping the code simpler and self-contained.
+
+## Related links
+
+- [How-to: Custom elements](https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/custom_elements/custom_nominals_actuals.html)
+- [API — gom.api.extensions.actuals.Volume](https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-actuals-volume)
