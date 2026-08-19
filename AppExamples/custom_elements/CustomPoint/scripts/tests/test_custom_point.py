@@ -52,16 +52,17 @@ def test_actual_offset_point():
     # TEST
     #
     gom.log.info(f"{gom.app.project.actual_elements[name]}")
+    elem = gom.app.project.actual_elements[name]
     point_actual = (
-        gom.app.project.actual_elements[name].center_coordinate.x,
-        gom.app.project.actual_elements[name].center_coordinate.y,
-        gom.app.project.actual_elements[name].center_coordinate.z
+        elem.center_coordinate.x,
+        elem.center_coordinate.y,
+        elem.center_coordinate.z
     )
     assert (CENTER_X + OFFSET_X, CENTER_Y + OFFSET_Y, CENTER_Z + OFFSET_Z) == point_actual
     # Check custom element data tokens (stored via 'data' key in compute result)
-    assert gom.app.project.actual_elements[name].offset_x == float(OFFSET_X)
-    assert gom.app.project.actual_elements[name].offset_y == float(OFFSET_Y)
-    assert gom.app.project.actual_elements[name].offset_z == float(OFFSET_Z)
+    assert elem.offset_x == float(OFFSET_X)
+    assert elem.offset_y == float(OFFSET_Y)
+    assert elem.offset_z == float(OFFSET_Z)
 
 
 def test_nominal_offset_point():
@@ -99,13 +100,14 @@ def test_nominal_offset_point():
     # TEST
     #
     gom.log.info(f"{gom.app.project.nominal_elements[name]}")
+    elem = gom.app.project.nominal_elements[name]
     point_nominal = (
-        gom.app.project.nominal_elements[name].center_coordinate.x,
-        gom.app.project.nominal_elements[name].center_coordinate.y,
-        gom.app.project.nominal_elements[name].center_coordinate.z
+        elem.center_coordinate.x,
+        elem.center_coordinate.y,
+        elem.center_coordinate.z
     )
     assert (CENTER_X + OFFSET_X, CENTER_Y + OFFSET_Y, CENTER_Z + OFFSET_Z) == point_nominal
     # Check custom element data tokens (stored via 'data' key in compute result)
-    assert gom.app.project.nominal_elements[name].offset_x == float(OFFSET_X)
-    assert gom.app.project.nominal_elements[name].offset_y == float(OFFSET_Y)
-    assert gom.app.project.nominal_elements[name].offset_z == float(OFFSET_Z)
+    assert elem.offset_x == float(OFFSET_X)
+    assert elem.offset_y == float(OFFSET_Y)
+    assert elem.offset_z == float(OFFSET_Z)
