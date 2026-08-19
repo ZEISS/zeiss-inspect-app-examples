@@ -44,3 +44,8 @@ Each list entry in `vertices` / `triangles` is one connected defect mesh. Multip
 ### Difference from ScriptedActualVolumeDefects
 
 The scripted version uses `dialog()` / `calculation()` functions with a live preview loop and a `context.data` user-defined token (`ude_mykey`). The custom element version uses `show_dialog()` + `compute()` without a preview event loop, keeping the code simpler and self-contained.
+
+## Related links
+
+- [How-to: Custom elements](https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/custom_elements/custom_nominals_actuals.html)
+- [API — gom.api.extensions.actuals.VolumeDefects](https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-actuals-volumedefects)
