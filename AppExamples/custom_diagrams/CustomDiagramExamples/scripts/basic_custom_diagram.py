@@ -1,4 +1,10 @@
-"""Basic static custom diagram example."""
+"""Basic static custom diagram example.
+
+Carl Zeiss GOM Metrology GmbH, 2026
+
+This App is part of the ZEISS INSPECT Python API Examples:
+https://github.com/ZEISS/zeiss-inspect-app-examples
+"""
 
 from io import StringIO
 

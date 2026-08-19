@@ -1,4 +1,10 @@
-"""Custom element used as data source for the custom diagram examples."""
+"""Custom element used as data source for the custom diagram examples.
+
+Carl Zeiss GOM Metrology GmbH, 2026
+
+This App is part of the ZEISS INSPECT Python API Examples:
+https://github.com/ZEISS/zeiss-inspect-app-examples
+"""
 
 import gom
 import gom.api.extensions.actuals
