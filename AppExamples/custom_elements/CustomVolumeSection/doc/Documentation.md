@@ -37,7 +37,7 @@ return {
 
 ### Security: restricted image formats
 
-`Image.open()` is called with an explicit `formats` allowlist to prevent decompression-bomb and other image-based attacks (see [dependabot advisory #3](https://github.com/ZEISS/zeiss-inspect-app-examples/security/dependabot/3)):
+`Image.open()` is called with an explicit `formats` allowlist to prevent decompression-bomb and other image-based attacks:
 
 ```python
 ALLOWED_FORMATS = ['JPEG', 'PNG', 'GIF', 'TIFF']
