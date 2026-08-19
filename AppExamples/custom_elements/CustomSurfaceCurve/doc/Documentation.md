@@ -16,7 +16,7 @@ This App demonstrates how to create custom surface curve element contributions â
 
 ### Parameters
 
-A surface curve is defined by a sphere section at a fixed elevation angle. Both classes accept the same dialog parameters (matching the [ScriptedActualSurfaceCurve](../../scripted_actuals/ScriptedActualSurfaceCurve/doc/Documentation.md) example):
+A surface curve is defined by a sphere section at a fixed elevation angle. Both classes accept the same dialog parameters (matching the [ScriptedActualSurfaceCurve](../../../scripted_actuals/ScriptedActualSurfaceCurve/doc/Documentation.md) example):
 
 | Parameter | Type | Description |
 |---|---|---|

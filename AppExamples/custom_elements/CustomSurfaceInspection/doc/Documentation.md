@@ -2,7 +2,7 @@
 
 ## Overview
 
-This example demonstrates how to build a **Custom Surface Inspection** element using the modern `gom.api.extensions.inspections.Surface` API, as the counterpart to the legacy [`ScriptedSurfaceCheck`](../../scripted_checks/ScriptedSurfaceCheck) example.
+This example demonstrates how to build a **Custom Surface Inspection** element using the modern `gom.api.extensions.inspections.Surface` API, as the counterpart to the legacy [`ScriptedSurfaceCheck`](../../../scripted_checks/ScriptedSurfaceCheck) example.
 
 A surface inspection assigns a per-vertex deviation value to each point on a mesh element. The deviations are displayed as a color-coded map on the surface in the 3D view. This custom check computes the **y-coordinate** of each mesh vertex as the deviation from the XZ-plane (nominal = 0).
 

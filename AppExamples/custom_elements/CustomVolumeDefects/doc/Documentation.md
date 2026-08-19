@@ -15,7 +15,7 @@ This App demonstrates how to create a custom actual `VolumeDefects` element usin
 | `ActualVolumeDefects` | `actuals.VolumeDefects` | Tetrahedral mesh; user-defined vertices; fixed triangulation |
 
 > [!NOTE]
-> `VolumeDefects` represents 3D volumetric defects as a mesh (vertices + triangle indices). For 2D slice-based defect contours see the [CustomVolumeDefects2d](../../custom_elements/CustomVolumeDefects2d/doc/Documentation.md) example.
+> `VolumeDefects` represents 3D volumetric defects as a mesh (vertices + triangle indices). For 2D slice-based defect contours see the [CustomVolumeDefects2d](../../../custom_elements/CustomVolumeDefects2d/doc/Documentation.md) example.
 
 ## Highlights
 

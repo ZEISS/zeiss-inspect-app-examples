@@ -16,7 +16,7 @@ This App demonstrates how to create custom surface element contributions — one
 
 ### Parameters
 
-A surface element is defined by 8 corner vertices. Both classes accept the same dialog parameters (matching the [ScriptedActualSurface](../../scripted_actuals/ScriptedActualSurface/doc/Documentation.md) example):
+A surface element is defined by 8 corner vertices. Both classes accept the same dialog parameters (matching the [ScriptedActualSurface](../../../scripted_actuals/ScriptedActualSurface/doc/Documentation.md) example):
 
 | Parameter | Type | Description |
 |---|---|---|

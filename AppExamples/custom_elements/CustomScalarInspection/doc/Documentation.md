@@ -2,7 +2,7 @@
 
 ## Overview
 
-This example demonstrates how to build a **Custom Scalar Inspection** element using the modern `gom.api.extensions.inspections.Scalar` API, as the counterpart to the legacy [`ScriptedScalarCheck`](../../scripted_checks/ScriptedScalarCheck) example.
+This example demonstrates how to build a **Custom Scalar Inspection** element using the modern `gom.api.extensions.inspections.Scalar` API, as the counterpart to the legacy [`ScriptedScalarCheck`](../../../scripted_checks/ScriptedScalarCheck) example.
 
 A scalar inspection assigns a single scalar value and a deviation to an element. This custom check reads the **diameter** of a cylindrical actual element and evaluates it against a user-supplied nominal value and optional tolerance limits.
 

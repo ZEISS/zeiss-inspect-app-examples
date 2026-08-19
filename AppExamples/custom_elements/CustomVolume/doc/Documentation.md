@@ -8,7 +8,7 @@
 > [!NOTE]
 > This example requires **ZEISS INSPECT X-Ray**.
 
-This App demonstrates how to create a custom actual volume element from artificial voxel data using the `@apicontribution` decorator. It mirrors the functionality of the [ScriptedActualVolume](../../scripted_actuals/ScriptedActualVolume/doc/Documentation.md) example.
+This App demonstrates how to create a custom actual volume element from artificial voxel data using the `@apicontribution` decorator. It mirrors the functionality of the [ScriptedActualVolume](../../../scripted_actuals/ScriptedActualVolume/doc/Documentation.md) example.
 
 | Class | Type | Features |
 |---|---|---|

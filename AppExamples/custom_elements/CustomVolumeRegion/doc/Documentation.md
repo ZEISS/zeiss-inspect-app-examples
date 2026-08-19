@@ -8,7 +8,7 @@
 > [!NOTE]
 > This example requires **ZEISS INSPECT X-Ray** and a project containing volume data with a linked volume element (e.g. `volume_test_project`).
 
-This App demonstrates how to create a custom actual `VolumeRegion` element using the `@apicontribution` decorator. It mirrors the functionality of the [ScriptedActualVolumeRegion](../../scripted_actuals/ScriptedActualVolumeRegion/doc/Documentation.md) example: a rectangular region of interest (ROI) extracted from a linked volume, positioned by an offset and sized by dimensions — both in mm in the voxel coordinate system.
+This App demonstrates how to create a custom actual `VolumeRegion` element using the `@apicontribution` decorator. It mirrors the functionality of the [ScriptedActualVolumeRegion](../../../scripted_actuals/ScriptedActualVolumeRegion/doc/Documentation.md) example: a rectangular region of interest (ROI) extracted from a linked volume, positioned by an offset and sized by dimensions — both in mm in the voxel coordinate system.
 
 | Class | Type | Features |
 |---|---|---|

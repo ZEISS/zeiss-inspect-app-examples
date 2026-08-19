@@ -8,7 +8,7 @@
 > [!NOTE]
 > This example requires **ZEISS INSPECT X-Ray**.
 
-This App demonstrates how to create a custom actual `VolumeSection` element using the `@apicontribution` decorator. It mirrors the functionality of the [ScriptedActualVolumeSection](../../scripted_actuals/ScriptedActualVolumeSection/doc/Documentation.md) example: a grayscale image is loaded from disk, converted to a float32 pixel array, and placed in 3D space via a full 4×4 rotation + translation matrix.
+This App demonstrates how to create a custom actual `VolumeSection` element using the `@apicontribution` decorator. It mirrors the functionality of the [ScriptedActualVolumeSection](../../../scripted_actuals/ScriptedActualVolumeSection/doc/Documentation.md) example: a grayscale image is loaded from disk, converted to a float32 pixel array, and placed in 3D space via a full 4×4 rotation + translation matrix.
 
 | Class | Type | Features |
 |---|---|---|
