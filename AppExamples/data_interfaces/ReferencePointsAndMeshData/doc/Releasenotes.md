@@ -1,6 +1,6 @@
 # Release Notes ReferencePointsAndMeshData
 
-## Released at 2026-08-19 (v1.0.4)
+## Released at 2026-08-21 (v1.1.0)
 
 * Requires ZEISS INSPECT 2027 or later
 * Updated to Python 3.14

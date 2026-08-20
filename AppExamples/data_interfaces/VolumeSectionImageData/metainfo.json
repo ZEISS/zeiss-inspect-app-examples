@@ -19,7 +19,7 @@
     ],
     "title": "VolumeSectionImageData",
     "uuid": "a254652f-75b8-4d77-8be4-04b7c5578194",
-    "version": "1.0.3",
+    "version": "1.1.0",
     "technical-category": "App Examples",
     "business-category": "minor",
     "compatible-software": ["ZEISS INSPECT Optical 3D", "ZEISS INSPECT X-Ray", "ZEISS INSPECT CMM", "ZEISS INSPECT VMM", "ZEISS CORRELATE"]
