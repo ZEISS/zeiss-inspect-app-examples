@@ -8,7 +8,7 @@ This is an example for a scripted 'volume region' element. The dialog allows to 
 > The voxel (measurement) coordinate system may differ from the CAD coordinate system. 
 
 > [!NOTE]
-> Please see [ScriptedActualPoint](https://github.com/ZEISS/zeiss-inspect-app-examples/blob/2026/AppExamples/scripted_actuals/ScriptedActualPoint/doc/Documentation.md) for a complete scripted elements example with detailed description.
+> Please see [ScriptedActualPoint](https://github.com/ZEISS/zeiss-inspect-app-examples/blob/main/AppExamples/scripted_actuals/ScriptedActualPoint/doc/Documentation.md) for a complete scripted elements example with detailed description.
 
 ## Source code excerpt
 
