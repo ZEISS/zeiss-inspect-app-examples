@@ -1,0 +1,25 @@
+{
+    "display_name": "Create point cloud",
+    "folded_blocks": [
+    ],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": false,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+            ],
+            "type": "command"
+        },
+        "script": "ude.create_point_cloud",
+        "submenu": [
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "point_cloud",
+    "show_in_iinspect": false,
+    "show_in_menu": false,
+    "uuid": "ff73513a-e857-43da-b4d2-382f80f25c28"
+}
