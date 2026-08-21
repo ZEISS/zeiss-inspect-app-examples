@@ -19,7 +19,7 @@
 
 setlocal
 
-set ZIX_VERSION=2025
+set ZIX_VERSION=2027
 set "PYTHON_EXE=C:\Program Files\Zeiss\INSPECT\%ZIX_VERSION%\python\python.exe"
 
 :: Comment out the following line to reduce startup time

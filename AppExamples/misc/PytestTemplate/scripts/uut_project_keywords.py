@@ -4,7 +4,7 @@
 #
 # Unit Under Test (UUT) Example
 #
-# Carl Zeiss GOM Metrology GmbH, 2025
+# Carl Zeiss GOM Metrology GmbH, 2026
 #
 # ---
 

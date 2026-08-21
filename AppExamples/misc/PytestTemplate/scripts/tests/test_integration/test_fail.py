@@ -1,6 +1,6 @@
 """ Dummy test which always fails
 
-Carl Zeiss GOM Metrology GmbH, 2025
+Carl Zeiss GOM Metrology GmbH, 2026
 """
 
 import gom

@@ -3,7 +3,7 @@
 #
 # Run ZEISS INSPECT integration tests from Windows PowerShell
 #
-# * Requires ZEISS INSPECT >= 2025.
+# * Requires ZEISS INSPECT >= 2027.
 # * Set zixVersions to the ZEISS INSPECT versions you want to use for testing.
 # * The App must be set up in the ZEISS INSPECT App explorer; either
 #   installed and in editing mode or in a connected folder.
@@ -23,7 +23,7 @@ foreach ($directory in $directories) {
   }
 }
       
-$zixVersions = @(2025, 2026)
+$zixVersions = @(2027)
 
 # Use the second variant (with the App's UUID) if the script's pathname is ambiguous
 $testRunner = "gom.script.userscript.tests__run_integrationtests()"

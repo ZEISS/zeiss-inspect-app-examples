@@ -3,7 +3,7 @@
 Runs all test cases in the App's scripts/tests/ folder and its subfolders.
 see https://docs.pytest.org/
 
-Carl Zeiss GOM Metrology GmbH, 2025
+Carl Zeiss GOM Metrology GmbH, 2026
 """
 
 import gom
@@ -127,9 +127,5 @@ if __name__ == "__main__":
         sys.stdout = PseudoTTY(sys.stdout)
         main(test_config)
 
-    # Catch exception in case the script was started from the App Editor
-    try:
-        # Works with ZEISS INSPECT SW2025 and newer
-        gom.script.sys.exit_program (0)
-    except gom.RequestError:
-        pass
+    # Works with ZEISS INSPECT SW2025 and newer
+    gom.script.sys.exit_program (0)

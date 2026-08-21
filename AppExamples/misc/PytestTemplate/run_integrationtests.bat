@@ -6,7 +6,7 @@
 ::
 :: NOTE: There also is a PowerShell script as the preferred alternative!
 ::
-:: * Requires ZEISS INSPECT >= 2025.
+:: * Requires ZEISS INSPECT >= 2027.
 :: * Set ZIX_VERSIONS to the ZEISS INSPECT versions you want to use for testing
 :: * The App must be set up in the ZEISS INSPECT App explorer; either
 ::   installed and in editing mode or in a connected folder.
@@ -37,7 +37,7 @@ for %%d in (%directories%) do (
     popd
 )
 
-set ZIX_VERSIONS=2025 2026
+set ZIX_VERSIONS=2027 2028
 
 :: Use the second variant (with the App's UUID) if the script's pathname is ambiguous
 set TESTRUNNER="gom.script.userscript.tests__run_integrationtests()"
