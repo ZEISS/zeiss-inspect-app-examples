@@ -42,7 +42,7 @@ def coverage(func):
     """
     if not cov_enabled:
         return func(*args, **kwargs)
-    
+
     @wraps(func)
     def wrapper(*args, **kwargs):
         cov.start()
