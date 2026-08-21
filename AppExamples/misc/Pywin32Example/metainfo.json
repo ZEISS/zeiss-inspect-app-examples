@@ -18,8 +18,9 @@
         "product-codes": [
         ]
     },
+    "python-version": "3.14.x",
     "software-revision": "0000",
-    "software-version": "ZEISS INSPECT 2023",
+    "software-version": "ZEISS INSPECT 2027",
     "tags": [
         "pywin32",
         "windows",
@@ -28,5 +29,5 @@
     "technical-category": "App Examples",
     "title": "Pywin32Example",
     "uuid": "4c5d6227-e1eb-4912-a3c9-534702d62fc1",
-    "version": "1.0.0"
+    "version": "1.1.0"
 }

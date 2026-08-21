@@ -4,4 +4,4 @@ This App is part of the [ZEISS INSPECT Python API App Examples](https://github.c
 
 See [App documentation](Documentation.md) for details.
 
-The ZEISS INSPECT App development documentation can be found on [ZEISS IQS GitHub](https://zeiss.github.io/zeiss-inspect-app-api/2026/index.html).
+The ZEISS INSPECT App development documentation can be found on [ZEISS IQS GitHub](https://zeiss.github.io/zeiss-inspect-app-api/2027/index.html).
