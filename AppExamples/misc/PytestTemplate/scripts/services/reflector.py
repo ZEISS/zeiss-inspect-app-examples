@@ -11,7 +11,7 @@
 # See App documentation or https://coverage.readthedocs.io/en/latest/cmd.html for
 # information on merging multiple coverage data files or creating coverage reports.
 #
-# Carl Zeiss GOM Metrology GmbH, 2025
+# Carl Zeiss GOM Metrology GmbH, 2026
 # 
 # ---
 
@@ -22,6 +22,7 @@ from app_utils.service_coverage import coverage         # pragma: no cover
 @apifunction
 @coverage
 def reflect(value):
+    """ Reflect the input value """
     gom.log.debug('Function "reflect" called')
     return value
 
