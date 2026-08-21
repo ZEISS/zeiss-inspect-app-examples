@@ -11,19 +11,21 @@ Carl Zeiss GOM Metrology GmbH, 2026
 """
 
 import gom
-import time
 import gom.api.services
-from app_utils.service_manager import ServiceManager
+
+SERVICE_ENDPOINT = 'gom.api.pytest_template.reflect'
 
 def test_reflect():
-    """ Test a service
-    
-    The ServiceManager context manager starts and stops the service,
-    which is especially useful if the App is not installed, but used
-    from a connected folder. 
-    """
+    """ Test a service """
+    service = gom.api.services.get_service(SERVICE_ENDPOINT)
+    if service.get_status() != 'RUNNING' and not service.start_and_wait():
+        assert False, f"Failed to start service {SERVICE_ENDPOINT}"
+    from gom.api.pytest_template.reflect import reflect  # pylint: disable=import-outside-toplevel, import-error  # pyright: ignore[reportMissingImports]
+    assert reflect({"answer": 42}) == {"answer": 42}
 
-    with ServiceManager("Pytest Reflector"):
-        from gom.api.pytest_template.reflect import reflect
-
-        assert reflect({"answer": 42}) == {"answer": 42}
+def test_reflect2():
+    """Test the reflect service (lazy import)"""
+    service = gom.api.services.get_service(SERVICE_ENDPOINT)
+    if service.get_status() != 'RUNNING' and not service.start_and_wait():
+        assert False, f"Failed to start service {SERVICE_ENDPOINT}"
+    assert gom.api.pytest_template.reflect.reflect({"answer": 42}) == {"answer": 42}
