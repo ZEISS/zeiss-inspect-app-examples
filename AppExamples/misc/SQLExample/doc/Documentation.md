@@ -8,7 +8,7 @@ This example demonstrates how to access an SQL database from an App. For demonst
 
 The database access is implemented using [PyMySQL](https://pypi.org/project/PyMySQL/). You can set up a test database server using [MySQL Community Server](https://dev.mysql.com/downloads/mysql/).
 
-Besides, <a href="https://zeiss.github.io/zeiss-inspect-app-api/2025/python_api/python_api.html#gom-api-settings">gom.api.settings</a> is used to save and restore entries made in a dialog.
+Besides, <a href="https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-settings">gom.api.settings</a> is used to save and restore entries made in a dialog.
 
 ## Highlights
 
@@ -268,5 +268,5 @@ result, err = execute_query(CONNECTION, query, values)
 ## Related
 
 * [PyMySQL](https://github.com/PyMySQL/PyMySQL)
-* How-to: [User-defined Dialogs](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/python_api_introduction/user_defined_dialogs.html)
-* [gom.api.settings](https://zeiss.github.io/zeiss-inspect-app-api/2025/python_api/python_api.html#gom-api-settings)
+* How-to: [User-defined Dialogs](https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/user_defined_dialogs/user_defined_dialogs.html)
+* [gom.api.settings](https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-settings)
