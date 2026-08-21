@@ -1,5 +1,13 @@
 # Release Notes DisplayImage
 
+## Released at 2026-08-21 (v1.1.0)
+
+* Requires ZEISS INSPECT 2027 or later
+* Updated to Python 3.14
+* Updated requirements
+  * numpy v2.5.2
+  * opencv-python v5.0.0.93
+
 ## Released at 2025-12-19 (v1.0.6)
 
 * Updated requirements

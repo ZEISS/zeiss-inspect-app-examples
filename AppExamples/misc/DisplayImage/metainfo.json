@@ -10,14 +10,15 @@
         "product-codes": [
         ]
     },
+	"python-version": "3.14.x",
     "software-revision": "0000",
-    "software-version": "ZEISS INSPECT 2023",
+    "software-version": "ZEISS INSPECT 2027",
     "tags": [
         "image-widget", "measurement"
     ],
     "title": "DisplayImage",
     "uuid": "74edeeeb-126b-4033-814f-66272bc7ba1f",
-    "version": "1.0.6",
+    "version": "1.1.0",
     "technical-category": "App Examples",
     "business-category": "minor",
     "compatible-software": ["ZEISS INSPECT Optical 3D", "ZEISS INSPECT X-Ray", "ZEISS INSPECT CMM", "ZEISS INSPECT VMM", "ZEISS CORRELATE"]
