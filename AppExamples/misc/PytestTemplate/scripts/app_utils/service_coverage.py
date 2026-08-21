@@ -3,7 +3,7 @@
 #
 # Utility for code coverage of ZEISS INSPECT services
 #
-# Carl Zeiss GOM Metrology GmbH, 2025
+# Carl Zeiss GOM Metrology GmbH, 2026
 # ---
 
 import gom
