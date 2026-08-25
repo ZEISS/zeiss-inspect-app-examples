@@ -18,7 +18,6 @@ if (-not (Test-Path -LiteralPath $pythonExe -PathType Leaf)) {
 	throw "Python executable was not found at $pythonExe. Update the path defined by `$pythonExe`."
 }
 
-$env:ZEISS_INSPECT_APP_ROOT = $PSScriptRoot
 $inspectDir = "C:\Program Files\Zeiss\INSPECT\$zixVersion"
 
 #
