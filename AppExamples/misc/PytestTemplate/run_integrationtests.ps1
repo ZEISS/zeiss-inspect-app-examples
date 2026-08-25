@@ -15,7 +15,7 @@
 ###############################################################################
 
 # Remove old service coverage data files
-$directories = @('scripts/services/', 'scripts/scripted_elements/')
+$directories = @('scripts/services/', 'scripts/scripted_elements/', 'scripts/custom_elements/')
 foreach ($directory in $directories) {
   $files = Get-ChildItem -Path $directory -Filter '.coverage.*' -ErrorAction SilentlyContinue
   foreach ($file in $files) {

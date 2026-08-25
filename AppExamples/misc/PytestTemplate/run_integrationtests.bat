@@ -21,7 +21,7 @@
 setlocal
 
 :: Remove old service coverage data files
-set directories=scripts\services scripts\scripted_elements
+set directories=scripts\services scripts\scripted_elements scripts\custom_elements
 
 :: Iterate over each directory
 for %%d in (%directories%) do (
