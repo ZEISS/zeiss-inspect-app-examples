@@ -1,4 +1,4 @@
-""" Integration test example for scripted elements
+""" Integration test example for legacy scripted elements
 
 NOTE:
 The test runner's pytest code coverage cannot include any scripted elements,
