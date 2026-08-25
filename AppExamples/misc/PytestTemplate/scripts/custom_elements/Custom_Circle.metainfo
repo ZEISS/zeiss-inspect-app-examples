@@ -1,0 +1,25 @@
+{
+    "display_name": "Custom Actual/Nominal Circle",
+    "folded_blocks": [
+    ],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": true,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+            ],
+            "type": "command"
+        },
+        "script": "userscript.custom_elements__Custom_Circle__d085fe43_f802_4e28_8620_1751fc300a66",
+        "submenu": [
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "none",
+    "show_in_iinspect": false,
+    "show_in_menu": false,
+    "uuid": "7318e60b-ccdc-46a1-ad00-e4a4b50edb9a"
+}
