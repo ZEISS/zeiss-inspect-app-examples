@@ -28,9 +28,13 @@
             "endpoint": "gom.api.pytest_template.reflect",
             "name": "Pytest Reflector",
             "script": "services/reflector.py"
+        },
+        {
+            "endpoint": "gom.api.pytest_template.custom_circle",
+            "name": "Custom Circle",
+            "script": "custom_elements/Custom_Circle.py"
         }
     ],
-    "services-coverage": true,
     "python-version": "3.14.x",
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2027",
