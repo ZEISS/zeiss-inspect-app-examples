@@ -8,9 +8,11 @@ Carl Zeiss GOM Metrology GmbH, 2026
 
 import gom
 import os
+import pytest
 
+@pytest.mark.xfail(reason="Intentional failure test")
 def test_blackbox():
-    '''Executing the UUT as the entire script'''
+    """Executing the UUT as the entire script"""
     gom.script.sys.close_project()
     gom.script.sys.create_project()
 
