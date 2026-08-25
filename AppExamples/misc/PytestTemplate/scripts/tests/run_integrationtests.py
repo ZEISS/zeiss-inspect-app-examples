@@ -76,7 +76,7 @@ def main(config):
             print(f"An error occurred: {e}")
 
     pytest_args = [
-        f"{tests_path}", 
+        f"{tests_path}",
         "--color", "no", 
         "-vv", 
         "--durations", "0", 
