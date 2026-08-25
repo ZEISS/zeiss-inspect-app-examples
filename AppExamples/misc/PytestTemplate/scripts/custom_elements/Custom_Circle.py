@@ -13,10 +13,10 @@ import gom.api.extensions.actuals                            # pragma: no cover
 import gom.api.extensions.nominals                           # pragma: no cover
 
 from gom import apicontribution                              # pragma: no cover
-#from app_utils.service_coverage import contribution_coverage # pragma: no cover
+from app_utils.service_coverage import contribution_coverage # pragma: no cover
 
 @apicontribution
-#@contribution_coverage
+@contribution_coverage
 class ActualCircle(gom.api.extensions.actuals.Circle):
     """
     Custom actual circle element.
@@ -60,7 +60,7 @@ class ActualCircle(gom.api.extensions.actuals.Circle):
 
 
 @apicontribution
-#@contribution_coverage
+@contribution_coverage
 class NominalCircle(gom.api.extensions.nominals.Circle):
     """
     Custom nominal circle element.

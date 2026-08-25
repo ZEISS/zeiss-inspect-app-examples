@@ -7,14 +7,18 @@
 # ---
 
 import gom
+import gom.api.addons
 import os
 import sys
 import json
 from coverage import Coverage
 from functools import wraps
 
-dirname, filename = os.path.split(sys.argv[0])
-filename, _ = os.path.splitext(filename)
+addon = gom.api.addons.get_current_addon()
+is_finalized = addon.get_file().endswith('.addon')
+assert not is_finalized, "ERROR: App must be in editing mode or in connected folder!"
+dirname = addon.get_file()
+filename = sys.argv[0].split(".")[-1]
 data_file = os.path.join(dirname, ".coverage." + filename)
 
 with gom.Resource(":metainfo.json").open() as fh:
