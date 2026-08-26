@@ -17,8 +17,14 @@ from functools import wraps
 addon = gom.api.addons.get_current_addon()
 is_finalized = addon.get_file().endswith('.addon')
 assert not is_finalized, "ERROR: App must be in editing mode or in connected folder!"
-dirname = addon.get_file()
-filename = sys.argv[0].split(".")[-1]
+dirname = os.path.join(addon.get_file(), "cov_temp")
+
+# argv[0] examples:
+# Connected folder: ':misc.9236fb21-dd4e-4537-aec7-b7be4c45d049.scripts.some_dir.my_script'
+# Editing mode:     ':user.1a4d538c-3cd7-4244-9b0f-ebbde74faceb.scripts.some_dir.my_script'
+
+# Keep the part after ".scripts."
+filename = sys.argv[0].split(".scripts.", 1)[-1]
 data_file = os.path.join(dirname, ".coverage." + filename)
 
 with gom.Resource(":metainfo.json").open() as fh:
