@@ -78,7 +78,16 @@ if (-not $wheel) {
 	throw "No wheel matching zeiss_inspect_api-*.whl was found in $inspectDir\wheels."
 }
 python -m pip install --quiet $wheel.FullName
-python -m pip install --quiet pytest
+python -m pip install --quiet pytest pytest-cov
+
+#
+# Remove any existing pytest and service coverage data before running the tests
+#
+Remove-Item -LiteralPath ".coverage" -ErrorAction SilentlyContinue
+Remove-Item -LiteralPath ".coverage.pytest" -ErrorAction SilentlyContinue
+Remove-Item -LiteralPath "scripts\tests\.coverage" -ErrorAction SilentlyContinue
+$serviceCoverageFiles = Get-ChildItem -Path "cov_temp" -Filter ".coverage.*" -File -Force -ErrorAction SilentlyContinue
+$serviceCoverageFiles | Remove-Item -Force -ErrorAction SilentlyContinue
 
 #
 # Run the tests in scripts/tests, eventually using the ZEISS INSPECT API connection
@@ -86,13 +95,20 @@ python -m pip install --quiet pytest
 $currentPath = Get-Location
 try {
 	Set-Location -Path "scripts/tests"
-	pytest
+	pytest -c pytest_integrationtest_coverage.ini
 }
 finally {
 	Set-Location -Path $currentPath
+}
+
+# Preserve pytest's coverage data for combining with service coverage data.
+if (Test-Path -LiteralPath "scripts\tests\.coverage" -PathType Leaf) {
+	Copy-Item -LiteralPath "scripts\tests\.coverage" -Destination "cov_temp\.coverage.pytest" -ErrorAction SilentlyContinue
 }
 
 #
 # Deactivate virtual environment
 #
 deactivate
+
+. ".\report_coverage.ps1"
