@@ -35,6 +35,7 @@
             "script": "custom_elements/Custom_Circle.py"
         }
     ],
+	"services-coverage": true,
     "python-version": "3.14.x",
     "software-revision": "0000",
     "software-version": "ZEISS INSPECT 2027",
