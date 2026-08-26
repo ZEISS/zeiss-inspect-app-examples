@@ -1,0 +1,6 @@
+license_choices:
+  package_license_choices:
+  - package_id: PyPI::numpy:2.0.2
+    license_choices:
+      - given: "MIT OR NCSA"
+        choice: "MIT"
