@@ -36,6 +36,7 @@
         }
     ],
     "software-version": "ZEISS INSPECT 2027",
+    "software-revision": "0000",
     "tags": [
         "custom-sequence",
         "custom-element",
