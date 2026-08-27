@@ -2,6 +2,9 @@
 
 ![Scripted scalar check](scripted_scalar_check.jpg)
 
+> [!WARNING]
+> The Scripted checks API is deprecated! Use [Custom inspections](https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-inspections) for new Apps.
+
 ## Short description
 
 This example shows how to create a scalar check by script. A scalar check is the most basic check, as it assigns a scalar value to an element. Nearly all elements you can find in the software can be checked like this.

@@ -3,7 +3,7 @@
 ![Scripted surface check](scripted_surface_check.jpg)
 
 > [!WARNING]
-> The Scripted elements API is deprecated! Use [Custom elements](https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-customelement) for new Apps.
+> The Scripted checks API is deprecated! Use [Custom elements](https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-inspections) for new Apps.
 
 ## Short description
 
