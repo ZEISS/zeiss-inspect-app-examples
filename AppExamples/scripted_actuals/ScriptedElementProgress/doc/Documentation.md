@@ -8,6 +8,9 @@
 
 This examples demonstrates how to show progress information to the user while calculating a scripted element.
 
+> [!WARNING]
+> The Scripted elements API is deprecated! Use [Custom elements](https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-customelement) for new Apps.
+
 ## Highlights
 
 The scripted element itself is not of interest here, as it is rather meaningless: a point that will always be created at *(1,0,0)*.

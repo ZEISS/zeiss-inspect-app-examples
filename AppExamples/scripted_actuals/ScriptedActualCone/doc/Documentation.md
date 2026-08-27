@@ -9,6 +9,9 @@ This is an example for a scripted 'cone' element.
 
 If you specify `radius1` > `radius2` in the creation parameters, [`point1`; `radius1`] and [`point2`; `radius2`] are swapped automatically.
 
+> [!WARNING]
+> The Scripted elements API is deprecated! Use [Custom elements](https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-customelement) for new Apps.
+
 > [!NOTE]
 > Please see [ScriptedActualPoint](https://github.com/ZEISS/zeiss-inspect-app-examples/blob/main/AppExamples/scripted_actuals/ScriptedActualPoint/doc/Documentation.md) for a complete scripted elements example with detailed description.
 
