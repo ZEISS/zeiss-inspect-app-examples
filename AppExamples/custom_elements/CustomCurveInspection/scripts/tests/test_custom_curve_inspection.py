@@ -62,7 +62,7 @@ def test_custom_curve_inspection():
          'result_dimension.measured_value', 'result_dimension.deviation'])
     element_test.callTest()
     # -------------------------------------------------------------------------
-    
+
     # Check custom element data
     assert elem.computation_status == 'computed', \
         f"Expected computation_status 'computed', got '{elem.computation_status}'"
