@@ -2,6 +2,9 @@
 
 ![OSM map diagram](osm_map_diagram.png)
 
+> [!WARNING]
+> The Scripted diagrams API is deprecated! Use the [Custom diagram API](https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-diagrams-customdiagram) for new Apps.
+
 ## Short description
 
 The script `LocationScalarElement.py` generates a scripted value element, which passes location information to the diagram service `OSMMapDiagram`. The service implemented in `service.py` creates a map from [OpenStreetMap](https://www.openstreetmap.org/) (OSM) data using the Python packages [Cartopy](https://scitools.org.uk/cartopy/docs/latest/index.html), [Matplotlib](https://matplotlib.org/) and [NumPy](https://numpy.org/). The map's center is defined by the location data. The location markers and labels (optional) are added to the map. Some map configurations can be set via Preferences ► App-Settings.

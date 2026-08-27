@@ -2,6 +2,9 @@
 
 ![Circle radius histogram](scripted_diagram-histogram.png)
 
+> [!WARNING]
+> The Scripted diagrams API is deprecated! Use the [Custom diagram API](https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-diagrams-customdiagram) for new Apps.
+
 ## Short description
 
 This example includes a script for generating scripted actual circles, which can provide data &mdash; their radius &mdash; to any of two scripted diagram services. The diagram service `RadiusPlot` plots the radius of each circle element, the diagram service `RadiusHistogram` creates a radius histogram.
