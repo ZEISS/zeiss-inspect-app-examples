@@ -1,0 +1,54 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "business-category": "minor",
+    "compatible-software": [
+        "ZEISS INSPECT Optical 3D",
+        "ZEISS INSPECT X-Ray",
+        "ZEISS INSPECT CMM",
+        "ZEISS INSPECT VMM",
+        "ZEISS CORRELATE"
+    ],
+    "description": "This example shows how to create a Custom Surface Inspection element using the gom.api.extensions.inspections.Surface API. A surface inspection assigns per-vertex deviation values to a mesh element, displayed as a color-coded deviation map on the surface.",
+    "environment": "ZeissInspectExampleProjects",
+    "example-projects": [
+        "zeiss_part_test_project"
+    ],
+    "labels": [
+        "App label 1"
+    ],
+    "licensing": {
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
+    },
+    "python-version": "3.14.x",
+    "references": [
+        [
+            "HowTo",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/custom_elements/custom_inspections.html"
+        ],
+        [
+            "API - inspections.Surface",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-inspections-surface"
+        ]
+    ],
+    "services": [
+        {
+            "endpoint": "gom.api.examples.custom_surface_inspection",
+            "name": "Custom surface inspection",
+            "script": "Custom_SurfaceInspection.py"
+        }
+    ],
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2027",
+    "tags": [
+        "surface-check",
+        "custom-element",
+        "inspection"
+    ],
+    "technical-category": "App Examples",
+    "title": "CustomSurfaceInspection",
+    "uuid": "c3d4e5f6-7a8b-9c0d-1e2f-3a4b5c6d0017",
+    "version": "1.0.0"
+}

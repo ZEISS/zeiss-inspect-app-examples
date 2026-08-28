@@ -1,0 +1,22 @@
+{
+    "display_name": "Basic Custom Diagram",
+    "folded_blocks": [],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": false,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [],
+            "type": "command"
+        },
+        "script": "userscript.basic_custom_diagram",
+        "submenu": []
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "none",
+    "show_in_iinspect": false,
+    "show_in_menu": false,
+    "uuid": "8c94fa7c-359f-40f7-ba03-b0fe52f437e2"
+}

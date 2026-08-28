@@ -1,0 +1,144 @@
+{
+    "content": [
+        [
+            {
+                "columns": 1,
+                "name": "name_label",
+                "rows": 1,
+                "text": {"id": "", "text": "Name", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "basename": {"id": "", "text": "Custom Probe Measured Curve", "translatable": true},
+                "columns": 1,
+                "mode": "manually",
+                "name": "name",
+                "numbering": true,
+                "read_only": false,
+                "rows": 1,
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "input::elementname"
+            }
+        ],
+        [
+            {
+                "columns": 2,
+                "name": "formula_label",
+                "rows": 1,
+                "text": {"id": "", "text": "P(t) = (R·cos(2π·n·t), R·sin(2π·n·t), H·t),  t ∈ [0, 1]", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "label",
+                "word_wrap": true
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "cylinder_radius_label",
+                "rows": 1,
+                "text": {"id": "", "text": "R (Cylinder radius)", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 10000,
+                "minimum": 0.001,
+                "name": "cylinder_radius",
+                "precision": 4,
+                "rows": 1,
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": 20
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "height_label",
+                "rows": 1,
+                "text": {"id": "", "text": "H (Helix height)", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 100000,
+                "minimum": 0.001,
+                "name": "height",
+                "precision": 4,
+                "rows": 1,
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": 50
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "n_turns_label",
+                "rows": 1,
+                "text": {"id": "", "text": "n (Number of turns)", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 1000,
+                "minimum": 0.25,
+                "name": "n_turns",
+                "precision": 2,
+                "rows": 1,
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "input::number",
+                "unit": "NO_UNIT",
+                "value": 3
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "probe_radius_label",
+                "rows": 1,
+                "text": {"id": "", "text": "r (Probe tip radius)", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 100,
+                "minimum": 0.001,
+                "name": "probe_radius",
+                "precision": 4,
+                "rows": 1,
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": 1.5
+            }
+        ]
+    ],
+    "control": {"id": "OkCancel"},
+    "embedding": "always_toplevel",
+    "position": "automatic",
+    "size": {"height": 280, "width": 380},
+    "sizemode": "automatic",
+    "style": "",
+    "title": {"id": "", "text": "Example - Custom Probe Measured Curve Element", "translatable": true}
+}

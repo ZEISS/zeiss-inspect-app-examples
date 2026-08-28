@@ -1,0 +1,53 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "business-category": "minor",
+    "compatible-software": [
+        "ZEISS INSPECT Optical 3D",
+        "ZEISS INSPECT X-Ray",
+        "ZEISS INSPECT CMM",
+        "ZEISS INSPECT VMM",
+        "ZEISS CORRELATE"
+    ],
+    "description": "This example shows how to create a custom nominal/actual point cloud element.",
+    "labels": [
+        "App label 1"
+    ],
+    "licensing": {
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
+    },
+    "python-version": "3.14.x",
+    "references": [
+        [
+            "HowTo",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/custom_elements/custom_nominals_actuals.html"
+        ],
+        [
+            "API - actuals.PointCloud",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-actuals-pointcloud"
+        ],
+        [
+            "API - nominals.PointCloud",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-nominals-pointcloud"
+        ]
+    ],
+    "services": [
+        {
+            "endpoint": "gom.api.examples.custom_point_cloud",
+            "name": "Custom point cloud",
+            "script": "Custom_PointCloud.py"
+        }
+    ],
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2027",
+    "tags": [
+        "point-cloud",
+        "custom-element"
+    ],
+    "technical-category": "App Examples",
+    "title": "CustomPointCloud",
+    "uuid": "d3e5f7a9-1b4c-6d8e-0f2a-4c6e8a0b0009",
+    "version": "1.0.0"
+}

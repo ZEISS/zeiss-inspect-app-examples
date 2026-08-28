@@ -1,0 +1,25 @@
+{
+    "display_name": "test_custom_volume_defects_2d",
+    "folded_blocks": [
+    ],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": false,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+            ],
+            "type": "command"
+        },
+        "script": "userscript.tests__test_custom_volume_defects_2d__f2b3c4d5_6e7f_0a1b_2c3d_4e5f6a7b0010",
+        "submenu": [
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "none",
+    "show_in_iinspect": false,
+    "show_in_menu": false,
+    "uuid": "a1b2c3d4-5e6f-0a1b-2c3d-4e5f6a7b0018"
+}

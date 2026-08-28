@@ -1,0 +1,53 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "business-category": "minor",
+    "compatible-software": [
+        "ZEISS INSPECT Optical 3D",
+        "ZEISS INSPECT X-Ray",
+        "ZEISS INSPECT CMM",
+        "ZEISS INSPECT VMM",
+        "ZEISS CORRELATE"
+    ],
+    "description": "This example shows how to create a custom nominal/actual distance element.",
+    "labels": [
+        "App label 1"
+    ],
+    "licensing": {
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
+    },
+    "python-version": "3.14.x",
+    "references": [
+        [
+            "HowTo",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/custom_elements/custom_nominals_actuals.html"
+        ],
+        [
+            "API - actuals.Distance",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-actuals-distance"
+        ],
+        [
+            "API - nominals.Distance",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-nominals-distance"
+        ]
+    ],
+    "services": [
+        {
+            "endpoint": "gom.api.examples.custom_distance",
+            "name": "Custom distance",
+            "script": "Custom_Distance.py"
+        }
+    ],
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2027",
+    "tags": [
+        "distance",
+        "custom-element"
+    ],
+    "technical-category": "App Examples",
+    "title": "CustomDistance",
+    "uuid": "16d5e7c9-2f8a-4b6c-9d4e-5f7a9b0c0005",
+    "version": "1.0.0"
+}

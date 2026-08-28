@@ -1,0 +1,25 @@
+{
+    "display_name": "Custom Actual/Nominal Curve",
+    "folded_blocks": [
+    ],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": true,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+            ],
+            "type": "command"
+        },
+        "script": "userscript.Custom_Curve",
+        "submenu": [
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "none",
+    "show_in_iinspect": false,
+    "show_in_menu": false,
+    "uuid": "c2d4e6a8-3b5d-7f9a-1c3e-5f7a9c1e0018"
+}

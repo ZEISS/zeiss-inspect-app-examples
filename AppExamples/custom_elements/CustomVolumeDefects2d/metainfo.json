@@ -1,0 +1,50 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "business-category": "minor",
+    "compatible-software": [
+        "ZEISS INSPECT Optical 3D",
+        "ZEISS INSPECT X-Ray",
+        "ZEISS INSPECT CMM",
+        "ZEISS INSPECT VMM",
+        "ZEISS CORRELATE"
+    ],
+    "description": "This example shows how to create a custom actual 2D volume defects element from parametric circular defect contours.",
+    "labels": [
+        "App label 1"
+    ],
+    "licensing": {
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
+    },
+    "python-version": "3.14.x",
+    "references": [
+        [
+            "HowTo",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/custom_elements/custom_nominals_actuals.html"
+        ],
+        [
+            "API - actuals.VolumeDefects2d",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-actuals-volumedefects2d"
+        ]
+    ],
+    "services": [
+        {
+            "endpoint": "gom.api.examples.custom_volume_defects_2d",
+            "name": "Custom volume defects 2d",
+            "script": "Custom_VolumeDefects2d.py"
+        }
+    ],
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2027",
+    "tags": [
+        "xray",
+        "volume-defects-2d",
+        "custom-element"
+    ],
+    "technical-category": "App Examples",
+    "title": "CustomVolumeDefects2d",
+    "uuid": "f2b3c4d5-6e7f-0a1b-2c3d-4e5f6a7b0010",
+    "version": "1.0.0"
+}

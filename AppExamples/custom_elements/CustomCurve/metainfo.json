@@ -1,0 +1,53 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "business-category": "minor",
+    "compatible-software": [
+        "ZEISS INSPECT Optical 3D",
+        "ZEISS INSPECT X-Ray",
+        "ZEISS INSPECT CMM",
+        "ZEISS INSPECT VMM",
+        "ZEISS CORRELATE"
+    ],
+    "description": "This example shows how to create a custom nominal/actual curve element.",
+    "labels": [
+        "App label 1"
+    ],
+    "licensing": {
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
+    },
+    "python-version": "3.14.x",
+    "references": [
+        [
+            "HowTo",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/custom_elements/custom_nominals_actuals.html"
+        ],
+        [
+            "API - actuals.Curve",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-actuals-curve"
+        ],
+        [
+            "API - nominals.Curve",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-nominals-curve"
+        ]
+    ],
+    "services": [
+        {
+            "endpoint": "gom.api.examples.custom_curve",
+            "name": "Custom curve",
+            "script": "Custom_Curve.py"
+        }
+    ],
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2027",
+    "tags": [
+        "curve",
+        "custom-element"
+    ],
+    "technical-category": "App Examples",
+    "title": "CustomCurve",
+    "uuid": "b1c3d5e7-f9a2-4b6d-8e0f-2c4e6a8c0007",
+    "version": "1.0.0"
+}

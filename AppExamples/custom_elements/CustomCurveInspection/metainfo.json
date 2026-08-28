@@ -1,0 +1,53 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "business-category": "minor",
+    "compatible-software": [
+        "ZEISS INSPECT Optical 3D",
+        "ZEISS INSPECT CMM",
+        "ZEISS INSPECT VMM",
+        "ZEISS CORRELATE"
+    ],
+    "description": "This example shows how to create a Custom Curve Inspection element using the gom.api.extensions.inspections.Curve API. A curve inspection assigns per-vertex deviation values to a curve element, displayed as a color-coded deviation plot along the curve.",
+    "environment": "ZeissInspectExampleProjects",
+    "example-projects": [
+        "zeiss_part_test_project"
+    ],
+    "labels": [
+        "App label 1"
+    ],
+    "licensing": {
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
+    },
+    "python-version": "3.14.x",
+    "references": [
+        [
+            "HowTo",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/custom_elements/custom_inspections.html"
+        ],
+        [
+            "API - inspections.Curve",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-inspections-curve"
+        ]
+    ],
+    "services": [
+        {
+            "endpoint": "gom.api.examples.custom_curve_inspection",
+            "name": "Custom curve inspection",
+            "script": "Custom_CurveInspection.py"
+        }
+    ],
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2027",
+    "tags": [
+        "curve-check",
+        "custom-element",
+        "inspection"
+    ],
+    "technical-category": "App Examples",
+    "title": "CustomCurveInspection",
+    "uuid": "a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b0016",
+    "version": "1.0.0"
+}

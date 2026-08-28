@@ -1,0 +1,51 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "compatible-software": [
+        "ZEISS INSPECT Optical 3D",
+        "ZEISS INSPECT X-Ray",
+        "ZEISS INSPECT CMM",
+        "ZEISS INSPECT VMM",
+        "ZEISS CORRELATE"
+    ],
+    "description": "Example for a custom sequence element that creates a datum plane through 3 reference points.",
+    "icon": "icon.png",
+    "labels": [
+    ],
+    "licensing": {
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
+    },
+    "python-version": "3.14.x",
+    "references": [
+        [
+            "HowTo",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/custom_elements/custom_nominals_actuals.html"
+        ],
+        [
+            "API - sequence.CustomSequence",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-sequence-customsequence"
+        ]
+    ],
+    "services": [
+        {
+            "endpoint": "gom.api.examples.custom_sequence",
+            "name": "Custom sequence",
+            "script": "Custom_Sequence.py"
+        }
+    ],
+    "software-version": "ZEISS INSPECT 2027",
+    "software-revision": "0000",
+    "tags": [
+        "custom-sequence",
+        "custom-element",
+        "datum-plane",
+        "reference-points"
+    ],
+    "business-category": "minor",
+    "technical-category": "App Examples",
+    "title": "CustomSequence",
+    "uuid": "b3a7f1d5-92e4-4b8c-a6f0-3c1d5e7b9024",
+    "version": "1.0.0"
+}

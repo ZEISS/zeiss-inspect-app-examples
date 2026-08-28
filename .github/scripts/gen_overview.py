@@ -13,7 +13,7 @@ import argparse
 
 APP_EXAMPLES_REPO = "https://github.com/ZEISS/zeiss-inspect-app-examples/blob/main/"
 
-APP_DEV_DOC = "https://zeiss.github.io/zeiss-inspect-app-api/2026/index.html"
+APP_DEV_DOC = "https://zeiss.github.io/zeiss-inspect-app-api/main/index.html"
 
 BASEDIR = 'AppExamples'
 
@@ -26,6 +26,8 @@ CATEGORY_DESCRIPTIONS = {
     'scripted_actuals': 'Building custom actual elements (deprecated)',
     'scripted_checks': 'Building custom checks (deprecated)',
     'scripted_diagrams': 'Creating custom diagrams (deprecated)',
+    'custom_elements': 'How to create custom elements',
+    'custom_diagrams': 'How to create custom diagrams',
     'projects': 'ZEISS INSPECT projects'
 }
 

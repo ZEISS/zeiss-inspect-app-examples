@@ -1,0 +1,45 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "business-category": "minor",
+    "compatible-software": [
+        "ZEISS INSPECT CMM"
+    ],
+    "description": "This example shows how to create a custom actual probe measured curve element.",
+    "labels": [
+        "App label 1"
+    ],
+    "licensing": {
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
+    },
+    "python-version": "3.14.x",
+    "references": [
+        [
+            "HowTo",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/custom_elements/custom_nominals_actuals.html"
+        ],
+        [
+            "API - actuals.ProbeMeasuredCurve",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-actuals-probemeasuredcurve"
+        ]
+    ],
+    "services": [
+        {
+            "endpoint": "gom.api.examples.custom_probe_measured_curve",
+            "name": "Custom probe measured curve",
+            "script": "Custom_ProbeMeasuredCurve.py"
+        }
+    ],
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2027",
+    "tags": [
+        "probe-measured-curve",
+        "custom-element"
+    ],
+    "technical-category": "App Examples",
+    "title": "CustomProbeMeasuredCurve",
+    "uuid": "c8d0e2f4-5a7b-9c1d-4e6f-8a0b2c4d000e",
+    "version": "1.0.0"
+}

@@ -1,0 +1,22 @@
+{
+    "display_name": "Element Overlay Custom Diagram",
+    "folded_blocks": [],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": false,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [],
+            "type": "command"
+        },
+        "script": "userscript.element_overlay_custom_diagram",
+        "submenu": []
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "none",
+    "show_in_iinspect": false,
+    "show_in_menu": false,
+    "uuid": "98e5137e-5290-480f-884c-8ea43e1cdb95"
+}

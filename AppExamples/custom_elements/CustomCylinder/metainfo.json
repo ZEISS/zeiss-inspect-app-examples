@@ -1,0 +1,53 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "business-category": "minor",
+    "compatible-software": [
+        "ZEISS INSPECT Optical 3D",
+        "ZEISS INSPECT X-Ray",
+        "ZEISS INSPECT CMM",
+        "ZEISS INSPECT VMM",
+        "ZEISS CORRELATE"
+    ],
+    "description": "This example shows how to create a custom nominal/actual cylinder element.",
+    "labels": [
+        "App label 1"
+    ],
+    "licensing": {
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
+    },
+    "python-version": "3.14.x",
+    "references": [
+        [
+            "HowTo",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/custom_elements/custom_nominals_actuals.html"
+        ],
+        [
+            "API - actuals.Cylinder",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-actuals-cylinder"
+        ],
+        [
+            "API - nominals.Cylinder",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-nominals-cylinder"
+        ]
+    ],
+    "services": [
+        {
+            "endpoint": "gom.api.examples.custom_cylinder",
+            "name": "Custom cylinder",
+            "script": "Custom_Cylinder.py"
+        }
+    ],
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2027",
+    "tags": [
+        "cylinder",
+        "custom-element"
+    ],
+    "technical-category": "App Examples",
+    "title": "CustomCylinder",
+    "uuid": "83a2b4f6-9c5d-4e3f-8a1b-2c4d6e8f0002",
+    "version": "1.0.0"
+}

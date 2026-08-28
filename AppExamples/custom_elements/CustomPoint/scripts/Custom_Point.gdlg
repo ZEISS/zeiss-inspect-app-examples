@@ -1,0 +1,201 @@
+{
+    "content": [
+        [
+            {
+                "columns": 1,
+                "name": "name_label",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Name",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "basename": {
+                    "id": "",
+                    "text": "Scr Point",
+                    "translatable": true
+                },
+                "columns": 1,
+                "mode": "manually",
+                "name": "name",
+                "numbering": true,
+                "read_only": false,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::elementname"
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "x_label",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "X Offset",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": true,
+                "maximum": 1000,
+                "minimum": -1000,
+                "name": "offset_x",
+                "precision": 2,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": 0
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "y_label",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Y Offset",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": true,
+                "maximum": 1000,
+                "minimum": -1000,
+                "name": "offset_y",
+                "precision": 2,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": 0
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "z_label",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Z Offset",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": true,
+                "maximum": 1000,
+                "minimum": -1000,
+                "name": "offset_z",
+                "precision": 2,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": 0
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "base_label",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Base point",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "columns": 1,
+                "fast_filter": false,
+                "name": "base",
+                "rows": 1,
+                "supplier": "points",
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::point3d"
+            }
+        ]
+    ],
+    "control": {
+        "id": "OkCancel"
+    },
+    "embedding": "always_toplevel",
+    "position": "automatic",
+    "size": {
+        "height": 308,
+        "width": 221
+    },
+    "sizemode": "automatic",
+    "style": "",
+    "title": {
+        "id": "",
+        "text": "Example - Offset Point",
+        "translatable": true
+    }
+}
