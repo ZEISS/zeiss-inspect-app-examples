@@ -1,0 +1,83 @@
+{
+    "content": [
+        [
+            {
+                "columns": 1,
+                "name": "selected_element_label",
+                "rows": 1,
+                "text": {"id": "", "text": "Mesh to deform:", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "label",
+                "word_wrap": false
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "fast_filter": false,
+                "name": "selected_element",
+                "rows": 1,
+                "supplier": "custom",
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "input::point3d"
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "elementname_label",
+                "rows": 1,
+                "text": {"id": "", "text": "Deformed element name:", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "label",
+                "word_wrap": false
+            }
+        ],
+        [
+            {
+                "basename": {"id": "", "text": "Deformed Mesh", "translatable": true},
+                "columns": 1,
+                "mode": "manually",
+                "name": "name",
+                "numbering": true,
+                "read_only": false,
+                "rows": 1,
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "input::elementname"
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "deformation_label",
+                "rows": 1,
+                "text": {"id": "", "text": "Deformation value:", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "label",
+                "word_wrap": false
+            }
+        ],
+        [
+            {
+                "background_style": "",
+                "columns": 1,
+                "maximum": 1000,
+                "minimum": 0,
+                "name": "deformation_value",
+                "precision": 2,
+                "rows": 1,
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "input::number",
+                "unit": "",
+                "value": 0.2
+            }
+        ]
+    ],
+    "control": {"id": "OkCancel"},
+    "embedding": "",
+    "position": "",
+    "size": {"height": 262, "width": 198},
+    "sizemode": "",
+    "style": "",
+    "title": {"id": "", "text": "Custom Surface Deform Mesh", "translatable": true}
+}
