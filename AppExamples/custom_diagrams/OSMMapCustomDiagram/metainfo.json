@@ -1,0 +1,102 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "business-category": "minor",
+    "compatible-software": [
+        "ZEISS INSPECT Optical 3D",
+        "ZEISS INSPECT X-Ray",
+        "ZEISS INSPECT CMM",
+        "ZEISS INSPECT VMM",
+        "ZEISS CORRELATE"
+    ],
+    "description": "Display geolocation data in an OpenStreetMap custom diagram.",
+    "labels": [],
+    "licensing": {
+        "licenses": [],
+        "product-codes": []
+    },
+    "references": [
+        [
+            "HowTo - Custom Diagrams",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/using_custom_diagrams/using_custom_diagrams.html"
+        ],
+        [
+            "API - diagrams",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-diagrams-customdiagram"
+        ]
+    ],
+    "python-version": "3.13.x",
+    "services": [
+        {
+            "endpoint": "gom.api.examples.osm_map_custom_location_element",
+            "name": "OSMMapLocation",
+            "script": "LocationScalarElement.py"
+        },
+        {
+            "endpoint": "gom.api.examples.osm_map_custom_diagram",
+            "name": "OSMMapCustomDiagram",
+            "script": "osm_map_custom_diagram.py"
+        }
+    ],
+    "settings": [
+        {
+            "description": "Title",
+            "name": "title",
+            "value": "Acquisition Location",
+            "visible": true
+        },
+        {
+            "description": "Map range [m]",
+            "name": "range",
+            "value": 5000,
+            "visible": true
+        },
+        {
+            "description": "Map aspect ratio (w:h)",
+            "name": "aspect",
+            "value": 1,
+            "visible": true
+        },
+        {
+            "description": "Marker style (see Matplotlib)",
+            "name": "marker_style",
+            "value": "x",
+            "visible": true
+        },
+        {
+            "description": "Marker size [pt]",
+            "name": "marker_size",
+            "value": 100,
+            "visible": true
+        },
+        {
+            "description": "Marker color (see Matplotlib)",
+            "name": "marker_color",
+            "value": "blue",
+            "visible": true
+        },
+        {
+            "description": "Label x-offset",
+            "name": "label_xoffset",
+            "value": 50,
+            "visible": true
+        },
+        {
+            "description": "Label y-offset",
+            "name": "label_yoffset",
+            "value": 30,
+            "visible": true
+        }
+    ],
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2027",
+    "tags": [
+        "custom-diagrams",
+        "custom-elements",
+        "cartopy",
+        "openstreetmap"
+    ],
+    "technical-category": "App Examples",
+    "title": "OSMMapCustomDiagram",
+    "uuid": "8cf474bf-44e7-4d6d-9c24-2c8187020c3f",
+    "version": "1.0.0"
+}

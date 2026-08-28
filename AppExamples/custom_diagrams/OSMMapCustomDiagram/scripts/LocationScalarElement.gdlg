@@ -1,0 +1,35 @@
+{
+    "content": [
+        [
+            {"columns": 1, "name": "name_label", "rows": 1, "text": {"id": "", "text": "Name", "translatable": true}, "tooltip": {"id": "", "text": "", "translatable": true}, "type": "label", "word_wrap": false},
+            {"basename": {"id": "", "text": "GeoLocation", "translatable": true}, "columns": 2, "mode": "manually", "name": "name", "numbering": true, "read_only": false, "rows": 1, "tooltip": {"id": "", "text": "", "translatable": true}, "type": "input::elementname"}
+        ],
+        [
+            {"columns": 3, "name": "separator_1", "rows": 1, "title": {"id": "", "text": "Geolocation parameters", "translatable": true}, "tooltip": {"id": "", "text": "", "translatable": true}, "type": "separator"}
+        ],
+        [
+            {"columns": 1, "name": "label_6", "rows": 1, "text": {"id": "", "text": "Label (optional)", "translatable": true}, "tooltip": {"id": "", "text": "", "translatable": true}, "type": "label", "word_wrap": false},
+            {"columns": 2, "name": "label", "password": false, "read_only": false, "rows": 1, "tooltip": {"id": "", "text": "", "translatable": true}, "type": "input::string", "value": ""}
+        ],
+        [
+            {"columns": 1, "name": "label_3", "rows": 1, "text": {"id": "", "text": "Latitude [deg]", "translatable": true}, "tooltip": {"id": "", "text": "", "translatable": true}, "type": "label", "word_wrap": false},
+            {"background_style": "", "columns": 2, "default_precision": false, "maximum": 90, "minimum": -90, "name": "lat", "precision": 7, "rows": 1, "tooltip": {"id": "", "text": "", "translatable": true}, "type": "input::number", "unit": "", "value": 0}
+        ],
+        [
+            {"columns": 1, "name": "label_4", "rows": 1, "text": {"id": "", "text": "Longitude [deg]", "translatable": true}, "tooltip": {"id": "", "text": "", "translatable": true}, "type": "label", "word_wrap": false},
+            {"background_style": "", "columns": 2, "default_precision": false, "maximum": 180, "minimum": -180, "name": "lon", "precision": 7, "rows": 1, "tooltip": {"id": "", "text": "", "translatable": true}, "type": "input::number", "unit": "", "value": 0}
+        ],
+        [
+            {"columns": 1, "name": "label_5", "rows": 1, "text": {"id": "", "text": "Altitude", "translatable": true}, "tooltip": {"id": "", "text": "", "translatable": true}, "type": "label", "word_wrap": false},
+            {"columns": 1, "name": "en_alt", "rows": 1, "title": {"id": "", "text": "Enable", "translatable": true}, "tooltip": {"id": "", "text": "", "translatable": true}, "type": "input::checkbox", "value": false},
+            {"background_style": "", "columns": 1, "default_precision": true, "maximum": 10000, "minimum": -10000, "name": "alt", "precision": 2, "rows": 1, "tooltip": {"id": "", "text": "", "translatable": true}, "type": "input::number", "unit": "", "value": 0}
+        ]
+    ],
+    "control": {"id": "OkCancel"},
+    "embedding": "always_toplevel",
+    "position": "automatic",
+    "size": {"height": 360, "width": 334},
+    "sizemode": "automatic",
+    "style": "",
+    "title": {"id": "", "text": "Geolocation parameters", "translatable": true}
+}
