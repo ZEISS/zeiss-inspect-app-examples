@@ -1,4 +1,10 @@
-"""Callback for changing the OSM map zoom range."""
+"""Callback for changing the OSM map zoom range.
+
+Carl Zeiss GOM Metrology GmbH, 2026
+
+This App is part of the ZEISS INSPECT Python API Examples:
+https://github.com/ZEISS/zeiss-inspect-app-examples
+"""
 
 import gom
 import gom.api.settings
