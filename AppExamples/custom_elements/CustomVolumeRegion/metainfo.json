@@ -1,0 +1,51 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "business-category": "minor",
+    "compatible-software": [
+        "ZEISS INSPECT Optical 3D",
+        "ZEISS INSPECT X-Ray",
+        "ZEISS INSPECT CMM",
+        "ZEISS INSPECT VMM",
+        "ZEISS CORRELATE"
+    ],
+    "description": "This example shows how to create a custom actual volume region element from a user-defined region of interest within a linked volume.",
+	"environment": "ZeissInspectExampleProjects",
+    "labels": [
+        "App label 1"
+    ],
+    "licensing": {
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
+    },
+    "python-version": "3.14.x",
+    "references": [
+        [
+            "HowTo",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/custom_elements/custom_nominals_actuals.html"
+        ],
+        [
+            "API - actuals.VolumeRegion",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-actuals-volumeregion"
+        ]
+    ],
+    "services": [
+        {
+            "endpoint": "gom.api.examples.custom_volume_region",
+            "name": "Custom volume region",
+            "script": "Custom_VolumeRegion.py"
+        }
+    ],
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2027",
+    "tags": [
+        "xray",
+        "volume-region",
+        "custom-element"
+    ],
+    "technical-category": "App Examples",
+    "title": "CustomVolumeRegion",
+    "uuid": "c4d5e6f7-8a9b-1c2d-3e4f-5a6b7c8d0012",
+    "version": "1.0.0"
+}

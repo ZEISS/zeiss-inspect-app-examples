@@ -1,0 +1,25 @@
+{
+    "display_name": "test_custom_point_cloud",
+    "folded_blocks": [
+    ],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": false,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+            ],
+            "type": "command"
+        },
+        "script": "userscript.tests__test_custom_point_cloud__d3e5f7a9_1b4c_6d8e_0f2a_4c6e8a0b0009",
+        "submenu": [
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "none",
+    "show_in_iinspect": false,
+    "show_in_menu": false,
+    "uuid": "e4f6a8b0-2c5d-7e9f-1a3b-5d7f9b1c0023"
+}

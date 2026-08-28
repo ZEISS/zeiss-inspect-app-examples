@@ -1,0 +1,151 @@
+{
+    "content": [
+        [
+            {
+                "columns": 1,
+                "name": "label",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Element to check",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "columns": 1,
+                "fast_filter": false,
+                "name": "checked_element",
+                "rows": 1,
+                "supplier": "custom",
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::point3d"
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "label_1",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Check name",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "basename": {
+                    "id": "",
+                    "text": "CusSca",
+                    "translatable": true
+                },
+                "columns": 1,
+                "mode": "check_like",
+                "name": "name",
+                "numbering": false,
+                "read_only": false,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::elementname"
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "label_2",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Nominal value",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 1e+38,
+                "minimum": -1e+38,
+                "name": "nominal",
+                "precision": 4,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": 0.0
+            }
+        ],
+        [
+            {
+                "columns": 2,
+                "expanded": false,
+                "link_limits": true,
+                "lower": 0,
+                "lower_warn": 0,
+                "mode": "no_tolerance",
+                "name": "tolerance",
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "tolerances",
+                "unit": "LENGTH",
+                "upper": 0,
+                "upper_warn": 0,
+                "use_warn_limit": false
+            },
+            {
+            }
+        ]
+    ],
+    "control": {
+        "id": "OkCancel"
+    },
+    "embedding": "",
+    "position": "",
+    "size": {
+        "height": 180,
+        "width": 300
+    },
+    "sizemode": "automatic",
+    "style": "",
+    "title": {
+        "id": "",
+        "text": "Example - Custom Scalar Inspection",
+        "translatable": true
+    }
+}

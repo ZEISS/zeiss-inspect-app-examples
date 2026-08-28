@@ -1,0 +1,22 @@
+{
+    "display_name": "Custom Diagram Interaction Callback",
+    "folded_blocks": [],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": false,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [],
+            "type": "command"
+        },
+        "script": "userscript.diagram_click_callback",
+        "submenu": []
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "none",
+    "show_in_iinspect": false,
+    "show_in_menu": false,
+    "uuid": "3f7816d4-bd26-4189-9c11-8c553fc6f5e5"
+}

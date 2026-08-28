@@ -1,0 +1,134 @@
+{
+    "content": [
+        [
+            {
+                "columns": 1,
+                "name": "name_label",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Name",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "basename": {
+                    "id": "",
+                    "text": "Custom Section",
+                    "translatable": true
+                },
+                "columns": 1,
+                "mode": "manually",
+                "name": "name",
+                "numbering": true,
+                "read_only": false,
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::elementname"
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "i_elem_label",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Section",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "columns": 1,
+                "fast_filter": false,
+                "name": "i_elem",
+                "rows": 1,
+                "supplier": "custom",
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::point3d"
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "i_mode_label",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "Filter by",
+                    "translatable": true
+                },
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "columns": 1,
+                "default": "Max. Length",
+                "items": [
+                    {
+                        "id": "",
+                        "text": "Min. Length",
+                        "translatable": true
+                    },
+                    {
+                        "id": "",
+                        "text": "Max. Length",
+                        "translatable": true
+                    }
+                ],
+                "name": "i_mode",
+                "rows": 1,
+                "tooltip": {
+                    "id": "",
+                    "text": "",
+                    "translatable": true
+                },
+                "type": "input::list"
+            }
+        ]
+    ],
+    "control": {
+        "id": "OkCancel"
+    },
+    "embedding": "always_toplevel",
+    "position": "automatic",
+    "size": {
+        "height": 188,
+        "width": 340
+    },
+    "sizemode": "automatic",
+    "style": "",
+    "title": {
+        "id": "",
+        "text": "Example - Custom Section Element",
+        "translatable": true
+    }
+}
+

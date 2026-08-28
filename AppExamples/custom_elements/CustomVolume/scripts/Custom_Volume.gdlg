@@ -1,0 +1,274 @@
+{
+    "content": [
+        [
+            {
+                "columns": 1,
+                "name": "name_label",
+                "rows": 1,
+                "text": {"id": "", "text": "Name", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "basename": {"id": "", "text": "Custom Volume", "translatable": true},
+                "columns": 3,
+                "mode": "manually",
+                "name": "name",
+                "numbering": true,
+                "read_only": false,
+                "rows": 1,
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "input::elementname"
+            },
+            {},
+            {}
+        ],
+        [
+            {
+                "columns": 4,
+                "name": "separator_gv",
+                "rows": 1,
+                "title": {"id": "", "text": "Voxel gray values", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "separator"
+            },
+            {},
+            {},
+            {}
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "gv_background_label",
+                "rows": 1,
+                "text": {"id": "", "text": "Background", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "columns": 3,
+                "maximum": 65535,
+                "minimum": 0,
+                "name": "gv_background",
+                "rows": 1,
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "input::integer",
+                "value": 4096
+            },
+            {},
+            {}
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "gv_mat1_label",
+                "rows": 1,
+                "text": {"id": "", "text": "Material 1", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "columns": 3,
+                "maximum": 65535,
+                "minimum": 0,
+                "name": "gv_mat1",
+                "rows": 1,
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "input::integer",
+                "value": 50000
+            },
+            {},
+            {}
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "gv_mat2_label",
+                "rows": 1,
+                "text": {"id": "", "text": "Material 2", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "columns": 3,
+                "maximum": 65535,
+                "minimum": 0,
+                "name": "gv_mat2",
+                "rows": 1,
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "input::integer",
+                "value": 32000
+            },
+            {},
+            {}
+        ],
+        [
+            {
+                "columns": 4,
+                "name": "separator_transform",
+                "rows": 1,
+                "title": {"id": "", "text": "Transformation", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "separator"
+            },
+            {},
+            {},
+            {}
+        ],
+        [
+            {
+                "columns": 1,
+                "maximum_size": -1,
+                "minimum_size": 0,
+                "name": "spacer_hdr",
+                "rows": 1,
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "spacer::horizontal"
+            },
+            {
+                "columns": 1,
+                "name": "label_x",
+                "rows": 1,
+                "text": {"id": "", "text": "x", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "columns": 1,
+                "name": "label_y",
+                "rows": 1,
+                "text": {"id": "", "text": "y", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "columns": 1,
+                "name": "label_z",
+                "rows": 1,
+                "text": {"id": "", "text": "z", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "label",
+                "word_wrap": false
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "translation_label",
+                "rows": 1,
+                "text": {"id": "", "text": "Translation", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 1000,
+                "minimum": -1000,
+                "name": "dx",
+                "precision": 2,
+                "rows": 1,
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": 0
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 1000,
+                "minimum": -1000,
+                "name": "dy",
+                "precision": 2,
+                "rows": 1,
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": 0
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 1000,
+                "minimum": -1000,
+                "name": "dz",
+                "precision": 2,
+                "rows": 1,
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": 0
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "rotation_label",
+                "rows": 1,
+                "text": {"id": "", "text": "Rotation", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 6.283185307179586,
+                "minimum": -6.283185307179586,
+                "name": "rx",
+                "precision": 3,
+                "rows": 1,
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "input::number",
+                "unit": "ANGLE",
+                "value": 0
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 6.283185307179586,
+                "minimum": -6.283185307179586,
+                "name": "ry",
+                "precision": 3,
+                "rows": 1,
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "input::number",
+                "unit": "ANGLE",
+                "value": 0
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 6.283185307179586,
+                "minimum": -6.283185307179586,
+                "name": "rz",
+                "precision": 3,
+                "rows": 1,
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "input::number",
+                "unit": "ANGLE",
+                "value": 0
+            }
+        ]
+    ],
+    "control": {"id": "OkCancel"},
+    "embedding": "always_toplevel",
+    "position": "automatic",
+    "size": {"height": 360, "width": 420},
+    "sizemode": "automatic",
+    "style": "",
+    "title": {"id": "", "text": "Example - Custom Volume Element", "translatable": true}
+}

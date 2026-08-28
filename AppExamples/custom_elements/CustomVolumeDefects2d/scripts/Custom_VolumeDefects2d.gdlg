@@ -1,0 +1,170 @@
+{
+    "content": [
+        [
+            {
+                "columns": 1,
+                "name": "name_label",
+                "rows": 1,
+                "text": {"id": "", "text": "Name", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "basename": {"id": "", "text": "Custom VolumeDefects2d", "translatable": true},
+                "columns": 1,
+                "mode": "manually",
+                "name": "name",
+                "numbering": true,
+                "read_only": false,
+                "rows": 1,
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "input::elementname"
+            }
+        ],
+        [
+            {
+                "columns": 2,
+                "name": "desc_label",
+                "rows": 1,
+                "text": {"id": "", "text": "Coplanar circular defect contours in the XY-plane (all at the same Z position)", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "label",
+                "word_wrap": true
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "n_defects_label",
+                "rows": 1,
+                "text": {"id": "", "text": "Number of defects", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 100,
+                "minimum": 1,
+                "name": "n_defects",
+                "precision": 0,
+                "rows": 1,
+                "tooltip": {"id": "", "text": "Number of circular defect contours to create", "translatable": true},
+                "type": "input::number",
+                "unit": "NO_UNIT",
+                "value": 3
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "defect_radius_label",
+                "rows": 1,
+                "text": {"id": "", "text": "Defect radius", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 10000,
+                "minimum": 0.001,
+                "name": "defect_radius",
+                "precision": 4,
+                "rows": 1,
+                "tooltip": {"id": "", "text": "Radius of each circular defect contour", "translatable": true},
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": 5
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "z_pos_label",
+                "rows": 1,
+                "text": {"id": "", "text": "Slice Z position", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 100000,
+                "minimum": -100000,
+                "name": "z_pos",
+                "precision": 4,
+                "rows": 1,
+                "tooltip": {"id": "", "text": "Z coordinate of the CT scan slice (all defects must be coplanar)", "translatable": true},
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": 0
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "xy_spacing_label",
+                "rows": 1,
+                "text": {"id": "", "text": "Defect spacing (XY)", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 100000,
+                "minimum": 0.001,
+                "name": "xy_spacing",
+                "precision": 4,
+                "rows": 1,
+                "tooltip": {"id": "", "text": "Distance between adjacent defect circle centres in the XY-plane", "translatable": true},
+                "type": "input::number",
+                "unit": "LENGTH",
+                "value": 15
+            }
+        ],
+        [
+            {
+                "columns": 1,
+                "name": "n_points_label",
+                "rows": 1,
+                "text": {"id": "", "text": "Points per contour", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "label",
+                "word_wrap": false
+            },
+            {
+                "background_style": "",
+                "columns": 1,
+                "default_precision": false,
+                "maximum": 10000,
+                "minimum": 3,
+                "name": "n_points",
+                "precision": 0,
+                "rows": 1,
+                "tooltip": {"id": "", "text": "Number of points discretising each circular contour", "translatable": true},
+                "type": "input::number",
+                "unit": "NO_UNIT",
+                "value": 36
+            }
+        ]
+    ],
+    "control": {"id": "OkCancel"},
+    "embedding": "always_toplevel",
+    "position": "automatic",
+    "size": {"height": 300, "width": 380},
+    "sizemode": "automatic",
+    "style": "",
+    "title": {"id": "", "text": "Example - Custom VolumeDefects2d Element", "translatable": true}
+}
+

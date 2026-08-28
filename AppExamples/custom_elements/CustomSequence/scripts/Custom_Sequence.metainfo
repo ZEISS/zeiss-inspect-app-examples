@@ -1,0 +1,25 @@
+{
+    "display_name": "Custom Sequence",
+    "folded_blocks": [
+    ],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": true,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+            ],
+            "type": "command"
+        },
+        "script": "userscript.Custom_Sequence__b3a7f1d5_92e4_4b8c_a6f0_3c1d5e7b9024",
+        "submenu": [
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "none",
+    "show_in_iinspect": false,
+    "show_in_menu": false,
+    "uuid": "d5e7f9a1-b3c4-4d6e-8f0a-2b4c6d8e0f12"
+}

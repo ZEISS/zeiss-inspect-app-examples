@@ -1,0 +1,70 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "business-category": "minor",
+    "compatible-software": [
+        "ZEISS INSPECT Optical 3D",
+        "ZEISS INSPECT X-Ray",
+        "ZEISS INSPECT CMM",
+        "ZEISS INSPECT VMM",
+        "ZEISS CORRELATE"
+    ],
+    "description": "Self-contained custom diagram examples: basic rendering, element overlay, and point-cloud overlay.",
+    "labels": [
+        "App label 1"
+    ],
+    "licensing": {
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
+    },
+    "references": [
+        [
+            "HowTo - Custom Diagrams",
+            "https://zeiss.github.io/zeiss-inspect-app-api/main/howtos/custom_diagrams/custom_diagrams.html"
+        ],
+        [
+            "HowTo - Custom Elements",
+            "https://zeiss.github.io/zeiss-inspect-app-api/main/howtos/custom_elements/custom_nominals_actuals.html"
+        ],
+        [
+            "API - diagrams",
+            "https://zeiss.github.io/zeiss-inspect-app-api/main/python_api/python_api.html#gom-api-extensions-diagrams"
+        ]
+    ],
+    "python-version": "3.14.x",
+    "services": [
+        {
+            "endpoint": "gom.api.examples.custom_diagrams",
+            "name": "CustomCircleElement",
+            "script": "Custom_Circle.py"
+        },
+        {
+            "endpoint": "gom.api.examples.custom_diagrams_basic",
+            "name": "BasicCustomDiagram",
+            "script": "basic_custom_diagram.py"
+        },
+        {
+            "endpoint": "gom.api.examples.custom_diagrams.element_overlay",
+            "name": "ElementOverlayCustomDiagram",
+            "script": "element_overlay_custom_diagram.py"
+        },
+        {
+            "endpoint": "gom.api.examples.custom_diagrams.point_cloud_overlay",
+            "name": "PointCloudOverlayCustomDiagram",
+            "script": "point_cloud_overlay_custom_diagram.py"
+        }
+    ],
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2027",
+    "tags": [
+        "custom-diagrams",
+        "custom-elements",
+        "overlay",
+        "matplotlib"
+    ],
+    "technical-category": "App Examples",
+    "title": "CustomDiagramExamples",
+    "uuid": "0c652749-c1c6-4946-b8bc-e7b86b308cee",
+    "version": "1.0.0"
+}

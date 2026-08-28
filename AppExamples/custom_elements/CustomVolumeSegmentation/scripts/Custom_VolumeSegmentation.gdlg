@@ -1,0 +1,147 @@
+{
+    "content": [
+        [
+            {
+                "columns": 1,
+                "maximum_size": -1,
+                "minimum_size": 0,
+                "name": "spacer_1",
+                "rows": 1,
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "spacer::horizontal"
+            },
+            {
+                "columns": 1,
+                "data": "AAAAAA==",
+                "file_name": "",
+                "height": 0,
+                "keep_aspect": true,
+                "keep_original_size": true,
+                "name": "image",
+                "rows": 1,
+                "system_image": "system_message_information",
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "image",
+                "use_system_image": true,
+                "width": 0
+            },
+            {
+                "columns": 3,
+                "default_font_family": "",
+                "default_font_size": 0,
+                "name": "info_text",
+                "rows": 1,
+                "text": {
+                    "id": "",
+                    "text": "<html><ol><li>Open a project with volume data</li><li>Create a linked volume</li><li>Select the linked volume below</li><li>Adjust the two grayscale thresholds to separate background, material 1 and material 2</li></ol></html>",
+                    "translatable": true
+                },
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "display::text",
+                "wordwrap": false
+            },
+            {},
+            {}
+        ],
+        [
+            {
+                "columns": 2,
+                "name": "selected_element_label",
+                "rows": 1,
+                "text": {"id": "", "text": "Linked Volume", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "label",
+                "word_wrap": false
+            },
+            {},
+            {
+                "columns": 3,
+                "fast_filter": false,
+                "name": "selected_element",
+                "rows": 1,
+                "supplier": "custom",
+                "tooltip": {"id": "", "text": "Select a linked volume element", "translatable": true},
+                "type": "input::point3d"
+            },
+            {},
+            {}
+        ],
+        [
+            {
+                "columns": 5,
+                "name": "separator",
+                "rows": 1,
+                "title": {"id": "", "text": "Segmentation Thresholds", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "separator"
+            },
+            {},
+            {},
+            {},
+            {}
+        ],
+        [
+            {
+                "columns": 2,
+                "name": "gv_mat1_label",
+                "rows": 1,
+                "text": {"id": "", "text": "Grayscale threshold 1", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "label",
+                "word_wrap": false
+            },
+            {},
+            {
+                "background_style": "",
+                "columns": 3,
+                "default_precision": false,
+                "maximum": 65535,
+                "minimum": 0,
+                "name": "gv_mat1",
+                "precision": 0,
+                "rows": 1,
+                "tooltip": {"id": "", "text": "Upper grayscale boundary for background (label 0); voxels above this value are classified as material 1", "translatable": true},
+                "type": "input::number",
+                "unit": "NO_UNIT",
+                "value": 20000
+            },
+            {},
+            {}
+        ],
+        [
+            {
+                "columns": 2,
+                "name": "gv_mat2_label",
+                "rows": 1,
+                "text": {"id": "", "text": "Grayscale threshold 2", "translatable": true},
+                "tooltip": {"id": "", "text": "", "translatable": true},
+                "type": "label",
+                "word_wrap": false
+            },
+            {},
+            {
+                "background_style": "",
+                "columns": 3,
+                "default_precision": false,
+                "maximum": 65535,
+                "minimum": 0,
+                "name": "gv_mat2",
+                "precision": 0,
+                "rows": 1,
+                "tooltip": {"id": "", "text": "Upper grayscale boundary for material 1; voxels above this value are classified as material 2 (label 2)", "translatable": true},
+                "type": "input::number",
+                "unit": "NO_UNIT",
+                "value": 28000
+            },
+            {},
+            {}
+        ]
+    ],
+    "control": {"id": "OkCancel"},
+    "embedding": "always_toplevel",
+    "position": "center",
+    "size": {"height": 280, "width": 525},
+    "sizemode": "automatic",
+    "style": "",
+    "title": {"id": "", "text": "Example - Custom Volume Segmentation Element", "translatable": true}
+}

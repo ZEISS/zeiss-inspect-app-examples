@@ -13,7 +13,7 @@ import argparse
 
 APP_EXAMPLES_REPO = "https://github.com/ZEISS/zeiss-inspect-app-examples/blob/main/"
 
-APP_DEV_DOC = "https://zeiss.github.io/zeiss-inspect-app-api/2026/index.html"
+APP_DEV_DOC = "https://zeiss.github.io/zeiss-inspect-app-api/main/index.html"
 
 BASEDIR = 'AppExamples'
 
@@ -23,9 +23,11 @@ CATEGORY_DESCRIPTIONS = {
     'misc': 'Miscellaneous',
     'script_icons': 'How to set icons for scripts or buttons',
     'script_resources': 'How to access binary data of your App (resources)',
-    'scripted_actuals': 'Building custom actual elements with Python code',
-    'scripted_checks': 'Building custom checks with Python code',
-    'scripted_diagrams': 'Creating custom diagrams',
+    'scripted_actuals': 'Building custom actual elements (deprecated)',
+    'scripted_checks': 'Building custom checks (deprecated)',
+    'scripted_diagrams': 'Creating custom diagrams (deprecated)',
+    'custom_elements': 'How to create custom elements',
+    'custom_diagrams': 'How to create custom diagrams',
     'projects': 'ZEISS INSPECT projects'
 }
 

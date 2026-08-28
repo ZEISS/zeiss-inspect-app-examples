@@ -1,0 +1,50 @@
+{
+    "author": "Carl Zeiss GOM Metrology GmbH",
+    "business-category": "minor",
+    "compatible-software": [
+        "ZEISS INSPECT Optical 3D",
+        "ZEISS INSPECT X-Ray",
+        "ZEISS INSPECT CMM",
+        "ZEISS INSPECT VMM",
+        "ZEISS CORRELATE"
+    ],
+    "description": "This example shows how to create a custom actual volume section element from a grayscale image and a placement transformation.",
+    "labels": [
+        "App label 1"
+    ],
+    "licensing": {
+        "licenses": [
+        ],
+        "product-codes": [
+        ]
+    },
+    "python-version": "3.14.x",
+    "references": [
+        [
+            "HowTo",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/custom_elements/custom_nominals_actuals.html"
+        ],
+        [
+            "API - actuals.VolumeSection",
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-actuals-volumesection"
+        ]
+    ],
+    "services": [
+        {
+            "endpoint": "gom.api.examples.custom_volume_section",
+            "name": "Custom volume section",
+            "script": "Custom_VolumeSection.py"
+        }
+    ],
+    "software-revision": "0000",
+    "software-version": "ZEISS INSPECT 2027",
+    "tags": [
+        "xray",
+        "volume-section",
+        "custom-element"
+    ],
+    "technical-category": "App Examples",
+    "title": "CustomVolumeSection",
+    "uuid": "d5e6f7a8-9b0c-2d3e-4f5a-6b7c8d9e0013",
+    "version": "1.0.0"
+}

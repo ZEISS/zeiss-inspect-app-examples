@@ -1,0 +1,25 @@
+{
+    "display_name": "Custom Actual/Nominal Point",
+    "folded_blocks": [
+    ],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": true,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+            ],
+            "type": "command"
+        },
+        "script": "userscript.Custom_Point__611eeb2a_4421_4666_ad4f_5ea1650a6764",
+        "submenu": [
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "none",
+    "show_in_iinspect": false,
+    "show_in_menu": false,
+    "uuid": "a26c7b12-911f-409d-a3ae-013693f9b647"
+}
