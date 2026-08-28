@@ -18,6 +18,29 @@ Review [Using custom diagrams](https://zeiss.github.io/zeiss-inspect-app-api/202
 > [!WARNING]
 > This App requires Python 3.13.x because the current version of Cartopy does not provide a binary wheel for Python 3.14.x. See [Adding and using specific Python versions](https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/python_versions/python_versions.html) for setup instructions.
 
+## Start the services
+
+Open **Apps > Manage Services** and start both App services:
+
+- **OSMMapLocation** provides the GeoLocation custom actual element.
+- **OSMMapCustomDiagram** renders the OpenStreetMap diagram.
+
+## Create a GeoLocation custom element
+
+![GeoLocation creation parameters](geolocation_creation_parameters.png)
+
+Create an **OSM Map Location** custom actual element and configure its geolocation parameters:
+
+| Parameter | Description |
+| --- | --- |
+| Name | Project element name. New elements are numbered automatically as `GeoLocation 1`, `GeoLocation 2`, and so on. |
+| Label (optional) | Text displayed next to the location marker on the map. |
+| Latitude [deg] | Latitude in decimal degrees from -90 to 90. |
+| Longitude [deg] | Longitude in decimal degrees from -180 to 180. |
+| Altitude | Optional altitude value. Select **Enable** to include it in the map annotation. |
+
+Select **OK** to create the element. The element contributes its location data to the map shown in **Inspection Details**. Create additional GeoLocation elements to display multiple locations on the same map.
+
 ## Diagram data routing
 
 The custom element returns data using the modern API contract:
@@ -37,7 +60,7 @@ The custom element returns data using the modern API contract:
 
 The scalar value and `map_range` track the current map range. This makes a zoom-triggered element recalculation produce changed project data, which causes Inspection Details to request a fresh diagram render.
 
-`finish()` calls `add_diagram_data()` with the diagram contribution ID instead of the legacy `ude_diagram_*` fields.
+`finish()` calls `add_diagram_data()` with the diagram contribution ID.
 
 ## Diagram settings
 
@@ -66,7 +89,7 @@ The map provides `+` and `-` controls in its upper-right corner. They are SVG di
 
 Clicking `+` halves the `range` setting; clicking `-` doubles it. The range is clamped to 100 m through 1,000,000 m. Each click updates the App setting and forces element recalculation because App settings are not tracked by the project dependency graph. The changed location result causes the diagram to render again with the corresponding geographic extent and Cartopy tile zoom. Previously downloaded tiles can be reused from Cartopy's local cache.
 
-The controls use the `SVGDiagram` event callback mechanism and do not provide map panning. The regular userscript callback calls `gom.read_parameters(globals())` before reading the `finish_event()` payload, as required by ZEISS INSPECT 2025 and later.
+The controls use the `SVGDiagram` event callback mechanism and do not provide map panning. The diagram forwards each zoom request to `osm_map_zoom_callback.py`, which is registered as `userscript.osm_map_zoom_callback`. This regular userscript applies the new range and triggers element and project recalculation. It calls `gom.read_parameters(globals())` before reading the `finish_event()` payload, as required by ZEISS INSPECT 2025 and later.
 
 When installing or updating this example from an external folder, refresh the App in the App Editor after adding the callback files.
 
