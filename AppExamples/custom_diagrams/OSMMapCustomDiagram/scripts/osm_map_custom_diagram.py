@@ -57,11 +57,14 @@ class OSMMapCustomDiagram(gom.api.extensions.diagrams.SVGDiagram):
 
     def plot(self, view, element_data):
         safe_view = self._normalized_view(view)
+        request = cimgt.OSM(
+            cache=True,
+            user_agent='ZEISS-INSPECT-OSMMapCustomDiagram/1.0 (+https://github.com/ZEISS/zeiss-inspect-app-examples)'
+        )
         figure = mpltools.setup_plot(plt, safe_view)
-        axis = figure.add_subplot(111, projection=cimgt.OSM().crs)
+        axis = figure.add_subplot(111, projection=request.crs)
         figure.subplots_adjust(left=0.02, right=0.98, top=0.88, bottom=0.14)
         axis.set_position((0.03, 0.16, 0.94, 0.68))
-        request = cimgt.OSM(cache=True)
 
         locations = [entry['data'] for entry in element_data]
         latitudes = [location['latitude'] for location in locations]
