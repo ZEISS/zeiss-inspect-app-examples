@@ -2,6 +2,7 @@
 
 import gom
 import gom.api.extensions.actuals
+import gom.api.settings
 
 from gom import apicontribution
 
@@ -25,6 +26,7 @@ class OSMMapLocation(gom.api.extensions.actuals.ValueElement):
 
     def compute(self, _context, values):
         """Validate geolocation values and return the diagram payload."""
+        map_range = float(gom.api.settings.get('range'))
         latitude = float(values['lat'])
         longitude = float(values['lon'])
         altitude_enabled = bool(values.get('en_alt'))
@@ -38,7 +40,7 @@ class OSMMapLocation(gom.api.extensions.actuals.ValueElement):
         name = values.get('name', 'GeoLocation')
         label = values.get('label', '')
         return {
-            'value': 42.0,
+            'value': map_range,
             'name': name,
             'latitude': latitude,
             'longitude': longitude,
@@ -51,7 +53,8 @@ class OSMMapLocation(gom.api.extensions.actuals.ValueElement):
                 'longitude': longitude,
                 'altitude': altitude,
                 'altitude_enabled': altitude_enabled,
-                'label': label
+                'label': label,
+                'map_range': map_range
             }
         }
 

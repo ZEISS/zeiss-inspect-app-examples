@@ -1,0 +1,22 @@
+{
+    "display_name": "OSM Map Zoom Callback",
+    "folded_blocks": [],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": false,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [],
+            "type": "command"
+        },
+        "script": "userscript.osm_map_zoom_callback",
+        "submenu": []
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "none",
+    "show_in_iinspect": false,
+    "show_in_menu": false,
+    "uuid": "a7d9de35-5f08-4c41-8f1b-33c6900c4f6c"
+}
