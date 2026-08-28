@@ -1,7 +1,7 @@
 """
 Custom nominal/actual Surface Element Example
 
-Carl Zeiss GOM Metrology GmbH, 2027
+Carl Zeiss GOM Metrology GmbH, 2026
 
 This App is part of the ZEISS INSPECT Python API Examples:
 https://github.com/ZEISS/zeiss-inspect-app-examples
