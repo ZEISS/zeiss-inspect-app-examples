@@ -22,6 +22,10 @@ class OSMMapLocation(gom.api.extensions.actuals.ValueElement):
 
     def dialog(self, context, args):
         """Open the geolocation input dialog and restore previous values."""
+        if not args.get('values'):
+            # Let the element-name widget generate GeoLocation 1, GeoLocation 2, etc.
+            args = dict(args)
+            args.pop('name', None)
         return self.show_dialog(context, args, '/LocationScalarElement.gdlg')
 
     def compute(self, _context, values):
