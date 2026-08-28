@@ -125,7 +125,16 @@ class OSMMapCustomDiagram(gom.api.extensions.diagrams.SVGDiagram):
             )
 
         axis.set_title(gom.api.settings.get('title'), pad=8)
-        figure.text(0.02, 0.025, '© OpenStreetMap contributors', ha='left', fontsize=8)
+        axis.text(
+            0.99,
+            0.01,
+            '© OpenStreetMap contributors',
+            transform=axis.transAxes,
+            ha='right',
+            va='bottom',
+            fontsize=8,
+            bbox=dict(facecolor='white', alpha=0.8, edgecolor='none', pad=2)
+        )
         svg_string = self._export_svg(figure, safe_view)
         plt.close(figure)
         return svg_string
