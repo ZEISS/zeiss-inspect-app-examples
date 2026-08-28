@@ -9,7 +9,7 @@
 Location information is entered manually in the custom element dialog.
 
 > [!CAUTION]
-> OpenStreetMap tiles are downloaded at runtime, so the ZEISS INSPECT process needs network access.
+> OpenStreetMap tiles are downloaded at runtime and cached locally by Cartopy, so the ZEISS INSPECT process needs network access when a tile is not already cached.
 
 ## Prerequisite
 

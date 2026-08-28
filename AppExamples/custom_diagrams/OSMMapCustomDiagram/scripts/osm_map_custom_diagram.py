@@ -61,7 +61,7 @@ class OSMMapCustomDiagram(gom.api.extensions.diagrams.SVGDiagram):
         axis = figure.add_subplot(111, projection=cimgt.OSM().crs)
         figure.subplots_adjust(left=0.02, right=0.98, top=0.88, bottom=0.14)
         axis.set_position((0.03, 0.16, 0.94, 0.68))
-        request = cimgt.OSM()
+        request = cimgt.OSM(cache=True)
 
         locations = [entry['data'] for entry in element_data]
         latitudes = [location['latitude'] for location in locations]
