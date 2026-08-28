@@ -4,4 +4,4 @@ This App is part of the [ZEISS INSPECT Python API App Examples](https://github.c
 
 See [App documentation](Documentation.md) for details.
 
-This 2027 example uses the Custom Diagram API with an `SVGDiagram` contribution and a custom `ValueElement` contribution.
+This ZEISS INSPECT 2027 App example uses the Custom Diagram API with an `SVGDiagram` contribution and a custom `ValueElement` contribution.
