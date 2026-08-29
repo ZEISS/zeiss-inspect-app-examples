@@ -17,9 +17,9 @@
 import gom
 import xml.etree.ElementTree as ET
 from defusedxml import minidom
-import Tools.MeasurementSystemAnalysis.msa_lib as msa
-import Tools.MeasurementSystemAnalysis.msa_gui as gui
-import Tools.MeasurementSystemAnalysis.msa_config as cfg
+import msa_lib as msa
+import msa_gui as gui
+import msa_config as cfg
 
 
 # ----------------------------------------------------------------------------------
@@ -49,8 +49,6 @@ def create_anova_3_stage_ranges(config):
 #
 # Create ANOVA 3 expression variable name
 #
-
-
 def create_anova_3_var_name(appraiser, part, trial):
     return 'X_{0}_{1}'.format(part + 1 if part != None else 'x',
                               trial + 1 if trial != None else 'x')
@@ -58,8 +56,6 @@ def create_anova_3_var_name(appraiser, part, trial):
 #
 # Create expression to compute sum (E)
 #
-
-
 def create_anova_3_sum_e_expression(config, type):
 
     text = ''
@@ -92,8 +88,6 @@ def create_anova_3_sum_e_expression(config, type):
 # This function generates the complete expression for a table cell necessary to
 # compute the final R&R value
 #
-
-
 def create_anova_3_rr_expression(type, config):
     text = """
 bypart = {{}}
@@ -105,49 +99,49 @@ tri_element = gom.app.project.actual_elements['{trial}']
 sigma_element = gom.app.project.inspection['{sigma}']
 
 for stage in gom.app.project.stage_markers['All stages'].used_stages:
-	
-	part  = with_context (stage=stage, par_element.value)
-	trial = with_context (stage=stage, tri_element.value)
-	
-	if part not in bypart:
-		t = []
-	else:
-		t = bypart[part]
-	t.append (stage)
-	bypart[part] = t
-	
-	if trial not in bytrial:
-		t = []
-	else:
-		t = bytrial[trial]
-	t.append (stage)
-	bytrial[trial] = t
-		
-	if part not in byPandT:
-		byPandT.insert (part,{{}})
-	submap = byPandT[part]
-	if trial not in submap:
-		t = []
-	else:
-		t = submap[trial]
-	t.append (stage)  
-	submap[trial] = t    
-	byPandT[part] = submap
-	
+
+    part  = with_context (stage=stage, par_element.value)
+    trial = with_context (stage=stage, tri_element.value)
+
+    if part not in bypart:
+        t = []
+    else:
+        t = bypart[part]
+    t.append (stage)
+    bypart[part] = t
+
+    if trial not in bytrial:
+        t = []
+    else:
+        t = bytrial[trial]
+    t.append (stage)
+    bytrial[trial] = t
+
+    if part not in byPandT:
+        byPandT.insert (part,{{}})
+    submap = byPandT[part]
+    if trial not in submap:
+        t = []
+    else:
+        t = submap[trial]
+    t.append (stage)  
+    submap[trial] = t    
+    byPandT[part] = submap
+
 t = len (bypart)
 w = len (bytrial)  
 sigma_factor = sigma_element.value 
 
 E = 0
 for _part in bypart:
-	part_avg = avg ({result}, index = bypart[_part])
-	for _trial in bytrial:
-			pt_avg = avg ({result}, index = byPandT[_part][_trial])
-			term = pt_avg - part_avg
-			E = E + (term * term)
-	
+    part_avg = avg ({result}, index = bypart[_part])
+    for _trial in bytrial:
+            pt_avg = avg ({result}, index = byPandT[_part][_trial])
+            term = pt_avg - part_avg
+            E = E + (term * term)
+
 f = t * (w - 1)
-		
+
 s2e = E / f
 EV = sigma_factor * sqr (s2e)
 RR = EV 

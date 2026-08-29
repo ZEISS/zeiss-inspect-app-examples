@@ -18,9 +18,9 @@
 import gom
 import xml.etree.ElementTree as ET
 from defusedxml import minidom
-import Tools.MeasurementSystemAnalysis.msa_config as cfg
-import Tools.MeasurementSystemAnalysis.msa_lib as msa
-import Tools.MeasurementSystemAnalysis.msa_gui as gui
+import msa_config as cfg
+import msa_lib as msa
+import msa_gui as gui
 
 
 # ----------------------------------------------------------------------------------
@@ -70,41 +70,41 @@ sigma_element = gom.app.project.inspection['{sigma}']
 all_stages = gom.app.project.stage_markers['All stages']
 
 for stage in all_stages.used_stages:
-	appraiser = with_context (stage=stage, app_element.value)
-	if appraiser not in byappraiser:
-		t = []
-	else:
-		t = byappraiser[appraiser]
-	t.append (stage)
-	byappraiser[appraiser] = t
-		
-	part = with_context (stage=stage, par_element.value)
-	if part not in bypart:
-		t = []
-	else:
-		t = bypart[part]
-	t.append (stage)
-	bypart[part] = t
-	
-	trial = with_context (stage=stage, tri_element.value)
-	if trial not in bytrial:
-		t = []
-	else:
-		t = bytrial[trial]
-	t.append (stage)
-	bytrial[trial] = t
-	
-	if appraiser not in byAandP:
-		byAandP.insert (appraiser,{{}})
-	submap = byAandP[appraiser]
-	if part not in submap:
-		t = []
-	else:
-		t = submap[part]
-	t.append (stage)  
-	submap[part] = t    
-	byAandP[appraiser] = submap
-	
+    appraiser = with_context (stage=stage, app_element.value)
+    if appraiser not in byappraiser:
+        t = []
+    else:
+        t = byappraiser[appraiser]
+    t.append (stage)
+    byappraiser[appraiser] = t
+        
+    part = with_context (stage=stage, par_element.value)
+    if part not in bypart:
+        t = []
+    else:
+        t = bypart[part]
+    t.append (stage)
+    bypart[part] = t
+    
+    trial = with_context (stage=stage, tri_element.value)
+    if trial not in bytrial:
+        t = []
+    else:
+        t = bytrial[trial]
+    t.append (stage)
+    bytrial[trial] = t
+    
+    if appraiser not in byAandP:
+        byAandP.insert (appraiser,{{}})
+    submap = byAandP[appraiser]
+    if part not in submap:
+        t = []
+    else:
+        t = submap[part]
+    t.append (stage)  
+    submap[part] = t    
+    byAandP[appraiser] = submap
+    
 p = len(byappraiser)
 t = len(bypart)
 w = len(bytrial)  
@@ -114,29 +114,29 @@ total_avg = avg({result}, index=all_stages)
 
 P = 0
 for _appraiser in byappraiser:
-	term = avg ({result}, index = byappraiser[_appraiser]) - total_avg
-	P = P + (term * term) 
+    term = avg ({result}, index = byappraiser[_appraiser]) - total_avg
+    P = P + (term * term) 
 P = t * w * P
 
 T = 0
 for _part in bypart:
-	term = avg ({result}, index = bypart[_part]) - total_avg
-	T = T + (term * term)
+    term = avg ({result}, index = bypart[_part]) - total_avg
+    T = T + (term * term)
 T = p * w * T
 
 PT = 0
 for _appraiser in byappraiser:
-	for _part in bypart:
-		term = avg ({result}, index = byAandP[_appraiser][_part]) - avg ({result}, index = byappraiser[_appraiser]) - avg({result}, index = bypart[_part]) + total_avg
-		PT = PT + (term * term)
+    for _part in bypart:
+        term = avg ({result}, index = byAandP[_appraiser][_part]) - avg ({result}, index = byappraiser[_appraiser]) - avg({result}, index = bypart[_part]) + total_avg
+        PT = PT + (term * term)
 PT = w * PT
 
 E = 0
 for _stage in gom.app.project.stage_markers['All stages'].used_stages:
-	appraiser = with_context (stage=_stage, app_element.value)
-	part = with_context (stage=_stage, par_element.value)
-	term = with_context (stage=_stage, {result}) - avg ({result}, index = byAandP[appraiser][part])
-	E = E + (term *  term)
+    appraiser = with_context (stage=_stage, app_element.value)
+    part = with_context (stage=_stage, par_element.value)
+    term = with_context (stage=_stage, {result}) - avg ({result}, index = byAandP[appraiser][part])
+    E = E + (term *  term)
 
 f1 = p * t * (w - 1)
 f2 = (p - 1) * (t - 1)
@@ -174,8 +174,6 @@ RR  = not interaction ? sqr (EV * EV + AV * AV) : sqr (EV * EV + AV * AV + IA * 
 #
 # Generate table template matching the current element setup
 #
-
-
 def create_anova_2_table_template(template_name, config):
 
     #

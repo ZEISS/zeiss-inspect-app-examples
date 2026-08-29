@@ -18,9 +18,9 @@ import gom
 import xml.etree.ElementTree as ET
 from defusedxml import minidom
 
-import Tools.MeasurementSystemAnalysis.msa_lib as msa
-import Tools.MeasurementSystemAnalysis.msa_config as cfg
-import Tools.MeasurementSystemAnalysis.msa_gui as gui
+import msa_lib as msa
+import msa_config as cfg
+import msa_gui as gui
 
 
 # ----------------------------------------------------------------------------------
