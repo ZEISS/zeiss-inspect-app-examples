@@ -258,7 +258,7 @@ if __name__ == '__main__':
                         default='ZEISS INSPECT App Examples Overview',
                         help='Page title')
     parser.add_argument('--meta-description', type=str,
-                        default='Examples for using the ZEISS INSPECT 2026 App Python API',
+                        default='Examples for using the ZEISS INSPECT 2027 App Python API',
                         help='Description in HTML metadata')
     # autopep8: on
 
