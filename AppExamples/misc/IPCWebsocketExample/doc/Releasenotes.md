@@ -1,5 +1,12 @@
 # Release Notes IPCWebsocketExample
 
+## Released at 2026-08-21 (v1.1.0)
+
+* Requires ZEISS INSPECT 2027 or later
+* Updated to Python 3.14
+* Dependency update: websockets 17.0.1
+* Updated links
+
 ## Released at 2025-03-30 (v1.0.1)
 
 * Changed menu integration

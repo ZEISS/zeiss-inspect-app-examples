@@ -13,7 +13,7 @@
             ],
             "type": "command"
         },
-        "script": "userscript.pywin32_example",
+        "script": "userscript.pywin32_example__4c5d6227_e1eb_4912_a3c9_534702d62fc1",
         "submenu": [
             "App Examples",
             "misc",

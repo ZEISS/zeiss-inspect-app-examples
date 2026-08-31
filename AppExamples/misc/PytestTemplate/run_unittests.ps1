@@ -12,7 +12,7 @@
 # * See doc/ for more information.
 ###############################################################################
 
-$zixVersion = 2025
+$zixVersion = 2027
 $pythonExe = "C:\Program Files\Zeiss\INSPECT\$zixVersion\python\python.exe"
 
 # Comment out the following line to reduce startup time

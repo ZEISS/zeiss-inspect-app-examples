@@ -5,10 +5,10 @@
 # Convert measurement to PNG image, display image and perform text detection
 # This is the second stage of the TextDetection implementation
 #
-# Carl Zeiss GOM Metrology GmbH, 2025
+# Carl Zeiss GOM Metrology GmbH, 2026
 #
 # This App is part of the ZEISS INSPECT Python API Examples:
-# https://zeiss.github.io/zeiss-inspect-app-api/2025/python_examples/examples_overview.html
+# https://zeiss.github.io/zeiss-inspect-app-api/2027/python_examples/examples_overview.html
 # ---
 
 import gom
@@ -34,10 +34,10 @@ def get_preview_image ():
     '''
     measurement = gom.app.project.measurement_series['Scan 1'].measurements['M1']
 
-    image = np.array (measurement.images['left camera'].data.rgb )[0]
-    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+    preview_image = np.array (measurement.images['left camera'].data.rgb )[0]
+    preview_image = cv2.cvtColor(preview_image, cv2.COLOR_BGR2RGB)
 
-    return cv2.resize (image, (640, 480))
+    return cv2.resize (preview_image, (640, 480))
 
 def image_to_png (image):
     '''
@@ -73,11 +73,11 @@ def detect_text (threshold):
 
 DIALOG=gom.script.sys.create_user_defined_dialog (file='text_extraction.gdlg')
 
-def dialog_handler (object):
+def dialog_handler (widget):
     '''
     Dialog handler
     '''
-    if object == DIALOG.detect:
+    if widget == DIALOG.detect:
         DIALOG.threshold.enabled = False
         DIALOG.detect.enabled = False
 

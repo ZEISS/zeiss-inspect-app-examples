@@ -4,6 +4,9 @@
 
 This is an example for a scripted 'surface curve' element. A parametric function is used to create a 3-dimensional surface curve - a section of a circle's parallel - with a fixed number of definition points. These point vectors are used as normals, too. `np.arange()` is used to iterate from `phi_min` to `phi_max` with a non-integer step size.
 
+> [!WARNING]
+> The Scripted elements API is deprecated! Use [Custom elements](https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-customelement) for new Apps.
+
 > [!NOTE]
 > Please see [ScriptedActualPoint](https://github.com/ZEISS/zeiss-inspect-app-examples/blob/main/AppExamples/scripted_actuals/ScriptedActualPoint/doc/Documentation.md) for a complete scripted elements example with detailed description.
 
@@ -47,4 +50,4 @@ def calculation(context, params):
 ## Related
 
 * [Scripted actuals - Surface curve](https://zeiss.github.io/zeiss-inspect-app-api/2026/python_api/scripted_elements_api.html#surface-curve)
-* [How-to: User-defined dialogs](https://zeiss.github.io/zeiss-inspect-app-api/2026/howtos/user_defined_dialogs/user_defined_dialogs.html)
+* [How-to: User-defined dialogs](https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/user_defined_dialogs/user_defined_dialogs.html)

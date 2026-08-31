@@ -3,14 +3,16 @@
 This test runs the Unit Under Test (UUT) as script and treats it as opaque. After running it, the ZEISS INSPECT project
 is checked for the expected changes of state (in this example: project keywords).
 
-Carl Zeiss GOM Metrology GmbH, 2025
+Carl Zeiss GOM Metrology GmbH, 2026
 """
 
 import gom
 import os
+import pytest
 
+@pytest.mark.xfail(reason="Intentional failure test")
 def test_blackbox():
-    '''Executing the UUT as the entire script'''
+    """Executing the UUT as the entire script"""
     gom.script.sys.close_project()
     gom.script.sys.create_project()
 

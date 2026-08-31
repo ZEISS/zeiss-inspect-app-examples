@@ -2,10 +2,10 @@
 #
 # volume_section_image_data.py
 #
-# Carl Zeiss GOM Metrology GmbH, 2024
+# Carl Zeiss GOM Metrology GmbH, 2026
 #
 # This App is part of the ZEISS INSPECT Python API Examples:
-# https://zeiss.github.io/zeiss-inspect-app-api/2025/python_examples/examples_overview.html
+# https://zeiss.github.io/zeiss-inspect-app-api/2027/python_examples/examples_overview.html
 # ---
 
 import gom

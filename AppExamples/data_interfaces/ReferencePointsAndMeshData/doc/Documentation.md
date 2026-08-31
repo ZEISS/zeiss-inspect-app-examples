@@ -161,9 +161,9 @@ create_surface = gom.script.sys.create_element_by_script (
 
 ### 3. Script for creating a surface element
 
-The scripts `create_point_cloud.py` and `create_surface.py` are provided in the example Add-on.
+The scripts `create_point_cloud.py` and `create_surface.py` are provided in the example App.
 
-Since no user interaction is required, the `dialog()` function shown in [Introduction to scripted elements](https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/scripted_elements/scripted_elements_introduction.html) as part of the code pattern can be omitted. Consequently, the checkbox Interactive Script in the Script Properties dialog is disabled.
+Since no user interaction is required, the `dialog()` function shown in [Introduction to scripted elements](https://zeiss.github.io/zeiss-inspect-app-api/2026/howtos/scripted_elements/scripted_elements_introduction.html) as part of the code pattern can be omitted. Consequently, the checkbox Interactive Script in the Script Properties dialog is disabled.
 
 ![Create Surface - Script Properties](create_surface_script_properties.png)
 
@@ -190,7 +190,7 @@ return valid_results
 
 ## Related
 
-* How-to: [Access element properties and data](https://zeiss.github.io/zeiss-inspect-app-api/2026/howtos/python_api_introduction/python_api_introduction.html#access-element-properties)
+* How-to: [Access element properties and data](https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/python_api_introduction/python_api_introduction.html#access-element-properties)
 * How-to: [Introduction to scripted elements](https://zeiss.github.io/zeiss-inspect-app-api/2026/howtos/scripted_elements/scripted_elements_introduction.html)
 * How-to: [Scripted actuals](https://zeiss.github.io/zeiss-inspect-app-api/2026/howtos/scripted_elements/scripted_actuals.html)
 * Python API Specification: [Scripted elements API](https://zeiss.github.io/zeiss-inspect-app-api/2026/python_api/scripted_elements_api.html)

@@ -4,9 +4,9 @@
 # ZEISS INSPECT Inter Process Communication (IPC) via Websocket
 #
 # Websocket Server App
-# 
+#
 # The server is listening on host <HOST> port <PORT> for requests.
-# 
+#
 # The following requests are implemented:
 # 1. Any JSON string
 #    The JSON string is parsed into 'command' and passed to 'handle_command()'
@@ -17,10 +17,10 @@
 # For each request, a response is sent as plain text.
 #
 #
-# Carl Zeiss GOM Metrology GmbH, 2025
+# Carl Zeiss GOM Metrology GmbH, 2026
 #
 # This App is part of the ZEISS INSPECT Python API Examples:
-# https://zeiss.github.io/zeiss-inspect-app-api/2025/python_examples/examples_overview.html
+# https://zeiss.github.io/zeiss-inspect-app-api/2027/python_examples/examples_overview.html
 # ---
 
 import json

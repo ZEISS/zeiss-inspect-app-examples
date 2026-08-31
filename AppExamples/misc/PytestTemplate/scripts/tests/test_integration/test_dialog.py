@@ -2,7 +2,7 @@
 
 See App Development Documentation: Testing Apps -- Testing Apps with dialogs
 
-Carl Zeiss GOM Metrology GmbH, 2025
+Carl Zeiss GOM Metrology GmbH, 2026
 """
 
 

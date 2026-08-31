@@ -8,6 +8,9 @@ This example demonstrates how to generate a custom surface element using a scrip
 
 Finally, the result is transferred back to the ZEISS INSPECT Software, where an actual surface element is created. 
 
+> [!WARNING]
+> The Scripted elements API is deprecated! Use [Custom elements](https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-customelement) for new Apps.
+
 ## Highlights
 
 The dialog was created using the script dialog editor and contains an "Element selection" widget to let the user choose which mesh to deform.

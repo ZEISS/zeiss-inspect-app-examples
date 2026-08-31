@@ -13,7 +13,7 @@
             ],
             "type": "command"
         },
-        "script": "userscript.SQL_Example",
+        "script": "userscript.SQL_Example__58c970e7_c01d_4e72_88a2_7e8db7cd1dec",
         "submenu": [
             "App Examples",
             "misc"

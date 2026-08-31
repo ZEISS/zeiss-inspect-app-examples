@@ -1,22 +1,24 @@
 {
     "author": "Carl Zeiss GOM Metrology GmbH",
     "description": "This example demonstrates how to create a scalar surface check by a script. Also, the usage of custom coordinate systems and element preview in scripted checks is shown.",
+    "environment": "ZeissInspectExampleProjects",
     "example-projects": ["zeiss_part_test_project"],
     "labels": [],
     "licensing": {
         "licenses": [],
         "product-codes": []
     },
+    "python-version": "3.14.x",
     "references": [
         ["HowTo", "https://zeiss.github.io/zeiss-inspect-app-api/2026/howtos/scripted_elements/scripted_checks.html"], 
         ["API", "https://zeiss.github.io/zeiss-inspect-app-api/2026/python_api/scripted_elements_api.html#scalar-surface"]
     ],
     "software-revision": "0000",
-    "software-version": "ZEISS INSPECT 2023",
+    "software-version": "ZEISS INSPECT 2027",
     "tags": ["scripted-check", "surface"],
     "title": "ScriptedSurfaceCheck",
     "uuid": "81ff67e8-7701-4179-869f-e187d62b945a",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "technical-category": "App Examples",
     "business-category": "minor",
     "compatible-software": ["ZEISS INSPECT Optical 3D", "ZEISS INSPECT X-Ray", "ZEISS INSPECT CMM", "ZEISS INSPECT VMM", "ZEISS CORRELATE"]

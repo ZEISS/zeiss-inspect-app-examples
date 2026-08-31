@@ -15,56 +15,74 @@ Python package requirements:
 
 ## Notes
 
-> [!NOTE]
-> For integration tests, the App under test must be set up in the ZEISS INSPECT App Explorer; either installed and in editing mode or in a connected folder.
+For integration tests, the App under test must be set up in the ZEISS INSPECT App Explorer. It must either be installed and in editing mode or be available in a connected folder.
 
-> [!NOTE]
-> The integration tests can be run via scripts/tests/run_integrationtests.py from the ZEISS INSPECT App Explorer or from a command line &ndash; Windows command prompt (`run_integrationtests.bat`) or PowerShell (`run_integrationtests.ps1`).
+There are two ways to run the integration tests from a command line:
 
-> [!NOTE]
-> The unit tests are run from a command line &ndash; Windows command prompt (`run_unittests.bat`) or PowerShell (`run_unittests.ps1`).
+- `run_integrationtests.ps1` (PowerShell) and `run_integrationtests.bat` (Windows command prompt) start ZEISS INSPECT, run the in-application test runner for the configured software versions, and combine the coverage data from pytest and services. The PowerShell script is the preferred option.
+- `run_pytest.ps1` runs pytest directly against an already running ZEISS INSPECT instance. It creates the virtual environment, installs the ZEISS INSPECT API and pytest, and runs the tests for that instance. This workflow is closer to common Python frameworks because it invokes pytest directly and does not require a ZEISS INSPECT-side testrunner. Use it for a quick direct run when ZEISS INSPECT is already open; it does not start ZEISS INSPECT or run the multi-version coverage combination performed by the other integration-test scripts.
 
-> [!NOTE]
-> A service "Pytest Reflector" is provided as an example by this App. It is used in the test case `test_service.py`.
+The integration tests can also be started from the ZEISS INSPECT App Explorer by running `scripts/tests/run_integrationtests.py`.
+
+Unit tests run from a command line using the Windows command prompt script (`run_unittests.bat`) or the PowerShell script (`run_unittests.ps1`).
+
+The service "Pytest Reflector" is provided as an example and is used by `test_service.py`.
 
 > [!CAUTION]
 > Pytest's test coverage does not include scripted elements and services, because those features are running in separate Python interpreter processes! However, test coverage for services can be obtained by applying the concept described in [Code Coverage for Services](#code-coverage-for-services). 
 
 ## App Contents
 
-- `run_integrationtests.bat` - Script for running integration tests from Windows command prompt
-- `run_integrationtests.ps1` - Script for running integration tests from Windows PowerShell
-- `run_unittests.bat` - Script for running unit tests from Windows command prompt
-- `run_unittests.ps1` - Script for running unit tests from Windows PowerShell
-- `scripts/` - Scripts folder
-   - `scripted_elements` - Scripted elements folder
-      - `Scripted_Circle.py` - Scripted actual circle example
-      - `Scripted_Circle.gdlg` - Dialog definition for scripted actual circle example
-   - `services/` - Service scripts folder
-      - `reflector.py` - Example service script
-   - `uut_project_keywords.py` - Example (dummy) App as Unit Under Test (UUT)
-   - `tests/` - Testcase folder
-      - `test_integration` - Test group folder for integration tests (just as an example)
-         - `test_blackbox.py` - Example testcase which treats the UUT as black box. It executes the UUT as script and checks the ZEISS INSPECT project for the expected changes of state afterwards (in this example: set project keywords).
-         - `test_fail.py` - Dummy testcase which always fails
-         - `test_dialog.py` - Example testcase for user-defined dialogs
-         - `test_pass.py` - Dummy testcase which always passes
-         - `test_scripted_element.py` - Example testcase for scripted elements
-         - `test_service.py` - Example testcase for services
-         - `test_whitebox.py` - Example testcase which calls the UUT function `get_project_keywords()` and checks its return value
-      - `test_units` - Test group folder for unit tests (just as an example)
-         - `test_units.py` - Unit testcase
-      - `run_integrationtests.py` - Script for running all integration tests
-      - `run_integrationtests_config.json` - Configuration file for `run_integrationtests.py`
-      - `pytest_integrationtest_coverage.ini` - Default integration test configuration file for pytest
-      - `run_unittests.py` - Script for running all unit tests
-      - `run_unittests_config.json` - Configuration file for `run_unittests.py`
-      - `pytest_unittests_coverage.ini` - Default unit test configuration file for pytest
-      - `log/` - Default logfile folder
-      - `reports/` - Default test report folder
-        - `html/` - Test report in HTML format
-        - `junit/` - Test report in JUnit XML format
-        - `cov/` - Test coverage reports in HTML and XML format
+- `metainfo.json` - App metadata and configuration
+- `run_integrationtests.bat` - Runs integration tests from Windows Command Prompt
+- `run_integrationtests.ps1` - Runs integration tests from PowerShell
+- `run_pytest.ps1` - Runs integration tests directly against a running ZEISS INSPECT instance
+- `run_unittests.bat` - Runs unit tests from Windows Command Prompt
+- `run_unittests.ps1` - Runs unit tests from PowerShell
+- `run_script.ps1` - Runs a Python script from an external interpreter in ZEISS INSPECT
+- `report_coverage.ps1` - Generates the combined coverage report
+- `doc/` - App documentation
+   - `Documentation.md` - This documentation
+   - `README.md` - App overview
+   - `Releasenotes.md` - App release notes
+   - `Releasenotes.pdf` - App release notes in PDF format
+- `license/` - App license information
+   - `license.txt` - License text
+- `scripts/` - App scripts and tests
+   - `dialog.gdlg` - Dialog definition used by the tests
+   - `my_script.py` - Minimal script to test the ZEISS INSPECT Python API connection
+   - `uut_project_keywords.py` - Example Unit Under Test (UUT)
+   - `app_utils/` - App utilities
+      - `service_coverage.py` - Service coverage support
+   - `custom_elements/` - Custom element scripts used by the tests
+      - `Custom_Circle.gdlg` - Custom circle dialog definition
+      - `Custom_Circle.py` - Custom circle implementation
+   - `modules/` - Python package requirements and wheelhouse
+      - `requirements.txt` - Python package requirements
+   - `scripted_elements/` - Scripted element scripts used by the tests
+      - `Scripted_Circle.gdlg` - Scripted circle dialog definition
+      - `Scripted_Circle.py` - Scripted circle implementation
+   - `services/` - Service scripts used by the tests
+      - `multiply.py` - Multiply service implementation
+      - `reflector.py` - Reflector service implementation
+   - `tests/` - Test cases, test runners, and configurations
+      - `pytest_integrationtest_coverage.ini` - Integration-test pytest configuration
+      - `pytest_unittest_coverage.ini` - Unit-test pytest configuration
+      - `run_integrationtests_config.json` - Integration-test runner configuration
+      - `run_integrationtests.py` - Integration-test runner
+      - `run_unittests_config.json` - Unit-test runner configuration
+      - `run_unittests.py` - Unit-test runner
+      - `test_integration/` - Integration test cases
+         - `test_blackbox.py` - Black-box test (intentionally failing)
+         - `test_custom_circle.py` - Custom circle element test
+         - `test_dialog.py` - Dialog test
+         - `test_fail.py` - Intentionally failing example test
+         - `test_pass.py` - Passing example test
+         - `test_scripted_element.py` - Legacy scripted element test
+         - `test_service.py` - Service test
+         - `test_whitebox.py` - White-box test
+      - `test_units/` - Unit test cases
+         - `test_units.py` - Unit test example
 
 ## Configuration
 
@@ -109,47 +127,28 @@ See [pytest documentation](https://pytest-html.readthedocs.io/en/latest/) and
 
 ## Code Coverage for Services
 
-To measure code coverage in services, a function decorator provided by `app_utils.service_coverage` is added to the service function to create/update the coverage report after each service function call. 
+Services run in separate Python interpreter processes, so their execution is not included in the coverage data collected by pytest. The `app_utils.service_coverage` module provides a `@coverage` decorator that records coverage for a service function and saves the data after each call.
 
-Example:
+Enable service coverage by adding `"services-coverage": true` to the App's `metainfo.json`. Without this setting, the decorator leaves the service function unchanged and no service coverage data is written.
+
+Add the decorator below the `@apifunction` decorator:
 
 ```
-# Create instance of ServiceCoverage with specific coverage data file path
-cover_reflect = ServiceCoverage(__file__)               # pragma: no cover
-
-@apifunction          # Basic service function decorator
-@cover_reflect.cover  # Coverage decorator
+@apifunction
+@coverage
 def reflect(value):
-   ...
+   return value
 ```
 
-The ServiceCoverage decorator wraps the actual service function to start coverage before and to stop coverage and to write the data file after running the service function:
+For each decorated service, coverage data is written to the App's `cov_temp` directory as `.coverage.<service_module>`. The data is saved in a `finally` block, so it is written when the service function returns or raises an exception.
 
-```
-cov.start()
-<service function>
-cov.stop()
-cov.save()
-```
+The integration-test scripts copy pytest coverage data to `cov_temp` and combine it with the service data. To combine existing data and generate the final reports manually, run `report_coverage.ps1` from the App root:
 
-> [NOTE!]
-> Coverage is only measured if the App's `metainfo.json` contains `"services-coverage": true` or if the ServiceCoverage attribute `cov_enabled` is set to `True`.
-
-A separate coverage data file `.coverage.<pythonfile>` is generated for each service function.
-
-Coverage data files of (multiple) services and the App itself can be merged using
-
-```
-$ coverage combine --data-file=./.coverage --keep scripts/services/ .coverage.pytest
+```powershell
+.\report_coverage.ps1
 ```
 
-Coverage reports can be created as follows:
-
-```
-$ coverage <report|html|xml|json|lcov> --data-file=./.coverage --omit=*/Local/Temp/*
-```
-
-For details see https://coverage.readthedocs.io/en/latest/commands/index.html
+The combined HTML report is generated under `scripts/tests/reports/cov/html_combined`, and the combined XML report is written to `scripts/tests/reports/cov/integrationtest-combined-coverage.xml`.
 
 ## See also
 

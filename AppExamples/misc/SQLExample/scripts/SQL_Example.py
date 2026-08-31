@@ -9,16 +9,12 @@
 # | project_no (auto_increment) | project_name (unique) | company_name | department_name | part_name | 
 #  --------------------------------------------------------------------------------------------------
 #
-# Carl Zeiss GOM Metrology GmbH, 2025
+# Carl Zeiss GOM Metrology GmbH, 2026
 # 
 # ---
 
 import gom
-try:
-	import gom.api.settings
-except ModuleNotFoundError:
-	# ZEISS INSPECT <= 2025
-	pass
+import gom.api.settings
 
 import pymysql.cursors
 from pymysql import MySQLError

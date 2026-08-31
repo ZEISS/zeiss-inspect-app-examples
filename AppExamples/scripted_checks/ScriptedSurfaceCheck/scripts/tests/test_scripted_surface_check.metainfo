@@ -1,0 +1,25 @@
+{
+    "display_name": "test_scripted_surface_check",
+    "folded_blocks": [
+    ],
+    "icon": "",
+    "iinspect_condition": "",
+    "interactive": false,
+    "main_menu_path": {
+        "anchor": {
+            "item": "",
+            "submenu": [
+            ],
+            "type": "command"
+        },
+        "script": "userscript.tests__test_scripted_surface_check__81ff67e8_7701_4179_869f_e187d62b945a",
+        "submenu": [
+        ]
+    },
+    "multicreation_script": false,
+    "script_check_type": "none",
+    "script_element_type": "none",
+    "show_in_iinspect": false,
+    "show_in_menu": false,
+    "uuid": "158e8a5d-8a2b-4e4f-ac5b-fffc9501b7a6"
+}

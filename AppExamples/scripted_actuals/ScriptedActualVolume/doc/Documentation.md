@@ -6,6 +6,10 @@ This is an example for a scripted 'volume' element. The volume data is created a
 
 The dialog allows to set the gray values and to apply a transformation to the volume element.
 
+
+> [!WARNING]
+> The Scripted elements API is deprecated! Use [Custom elements](https://zeiss.github.io/zeiss-inspect-app-api/2027/python_api/python_api.html#gom-api-extensions-customelement) for new Apps.
+
 > [!CAUTION]
 > The voxel (measurement) coordinate system may differ from the CAD coordinate system. 
 
@@ -103,4 +107,4 @@ def calculation(context, params):
 ## Related
 
 * [Scripted actuals - Section](https://zeiss.github.io/zeiss-inspect-app-api/2026/python_api/scripted_elements_api.html#volume)
-* [How-to: User-defined dialogs](https://zeiss.github.io/zeiss-inspect-app-api/2026/howtos/user_defined_dialogs/user_defined_dialogs.html)
+* [How-to: User-defined dialogs](https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/user_defined_dialogs/user_defined_dialogs.html)

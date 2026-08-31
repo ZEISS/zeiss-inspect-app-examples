@@ -2,31 +2,19 @@
 #
 # pywin32_example.py
 #
+# Demonstrates how to use pywin32 in a ZEISS INSPECT App.
+#
 # Carl Zeiss GOM Metrology GmbH, 2026
 #
 # This App is part of the ZEISS INSPECT Python API Examples:
-# https://zeiss.github.io/zeiss-inspect-app-api/2026/python_examples/examples_overview.html
+# https://zeiss.github.io/zeiss-inspect-app-api/2027/python_examples/examples_overview.html
 # ---
-#
-# Demonstrates how to use pywin32 in a ZEISS INSPECT App.
-#
-# Requirements:
-#   - ZEISS INSPECT 2023+ (Python 3.9+)
-#   - pywin32-311-cp39-cp39-win_amd64.whl (or matching version) in scripts/modules/
-#
-# Background: pywin32 cannot be imported directly after wheel installation
-# because ZEISS INSPECT does not process .pth files in its wheel cache.
-# The helper module setup_pywin32 replicates the necessary initialization.
+
+# Note: Prior to ZEISS INSPECT 2027, pywin32 could not be imported directly after
+# wheel installation, because ZEISS INSPECT did not process .pth files in its wheel cache.
+# A helper module setup_pywin32 replicates the necessary initialization.
 
 import gom
-
-# -------------------------------------------------------------------------
-# IMPORTANT: Call setup_pywin32() before any pywin32-dependent import
-# -------------------------------------------------------------------------
-from setup_pywin32 import setup_pywin32
-setup_pywin32()
-
-# Now pywin32 modules can be imported normally
 import win32api
 import win32con
 import pywintypes

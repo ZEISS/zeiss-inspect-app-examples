@@ -6,18 +6,19 @@
         "licenses": [],
         "product-codes": []
     },
+    "python-version": "3.14.x",
     "references": [
-        ["HowTo", "https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/scripted_elements/scripted_actuals.html"], 
-        ["API", "https://zeiss.github.io/zeiss-inspect-app-api/2025/python_api/scripted_elements_api.html#curve"]
+        ["HowTo", "https://zeiss.github.io/zeiss-inspect-app-api/2026/howtos/scripted_elements/scripted_actuals.html"], 
+        ["API", "https://zeiss.github.io/zeiss-inspect-app-api/2026/python_api/scripted_elements_api.html#curve"]
     ],
     "software-revision": "0000",
-    "software-version": "ZEISS INSPECT 2023",
+    "software-version": "ZEISS INSPECT 2027",
     "tags": [
         "curve", "scripted-actual"
     ],
     "title": "ScriptedActualCurve",
     "uuid": "c1c0e973-0ca3-4aec-9909-0bef808b2dbc",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "technical-category": "App Examples",
     "business-category": "minor",
     "compatible-software": ["ZEISS INSPECT Optical 3D", "ZEISS INSPECT X-Ray", "ZEISS INSPECT CMM", "ZEISS INSPECT VMM", "ZEISS CORRELATE"]

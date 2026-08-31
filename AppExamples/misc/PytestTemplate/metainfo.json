@@ -20,7 +20,7 @@
     "references": [
         [
             "HowTo",
-            "https://zeiss.github.io/zeiss-inspect-app-api/2025/howtos/testing_apps/testing_apps.html"
+            "https://zeiss.github.io/zeiss-inspect-app-api/2027/howtos/testing_apps/testing_apps.html"
         ]
     ],
     "services": [
@@ -28,16 +28,21 @@
             "endpoint": "gom.api.pytest_template.reflect",
             "name": "Pytest Reflector",
             "script": "services/reflector.py"
+        },
+        {
+            "endpoint": "gom.api.pytest_template.custom_circle",
+            "name": "Custom Circle",
+            "script": "custom_elements/Custom_Circle.py"
         }
     ],
-    "services-coverage": true,
+    "python-version": "3.14.x",
     "software-revision": "0000",
-    "software-version": "ZEISS INSPECT 2025",
+    "software-version": "ZEISS INSPECT 2027",
     "tags": [
         "testing"
     ],
     "technical-category": "App Examples",
     "title": "PytestTemplate",
     "uuid": "d085fe43-f802-4e28-8620-1751fc300a66",
-    "version": "1.0.0"
+    "version": "1.1.0"
 }

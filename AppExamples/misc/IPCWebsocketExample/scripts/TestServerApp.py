@@ -5,9 +5,9 @@
 # ZEISS INSPECT Inter Process Communication (IPC) via Internet Sockets Example
 #
 # Socket Server App
-# 
+#
 # The server is listening on host <HOST> port <PORT> for requests.
-# 
+#
 # The following requests are implemented:
 # 1. {"image": {"file": <image_file path>, "name": <measurement_series>, "focal_length": <focal_length_in_mm>}}
 #    If the requested measurement series does not exist yet, it is created with the command 
@@ -24,10 +24,10 @@
 # For each request, a response is sent as plain text.
 
 #
-# Carl Zeiss GOM Metrology GmbH, 2024
+# Carl Zeiss GOM Metrology GmbH, 2026
 #
 # This test is part of the "Python API Examples" Add-on.
-# https://zeiss.github.io/zeiss-inspect-app-api/2025/python_examples/examples_overview.html
+# https://zeiss.github.io/zeiss-inspect-app-api/2027/python_examples/examples_overview.html
 # ---
 
 import gom
@@ -65,7 +65,7 @@ def decodeMessage(message):
             gom.app.project.measurement_series[name]
         except gom.RequestError:
             gom.script.sys.create_measurement_series_for_other_images (
-                camera_focal_length=focal_length, 
+                camera_focal_length=focal_length,
                 name=name
             )
 
@@ -73,7 +73,7 @@ def decodeMessage(message):
             # GOM Command
             print(f"Loading image from {file} as '{name}' with focal_length {focal_length}")
             gom.script.sys.import_other_images (
-                image_files=[gom.File (file)], 
+                image_files=[gom.File (file)],
                 measurement_series=gom.app.project.measurement_series[name]
             )
         except:

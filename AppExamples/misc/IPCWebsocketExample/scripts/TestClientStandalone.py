@@ -11,10 +11,10 @@
 # Pressing a request button triggers a connection to the server <HOST> on port <PORT>,
 # transmission of the request and reception of the response.
 #
-# Carl Zeiss GOM Metrology GmbH, 2024
+# Carl Zeiss GOM Metrology GmbH, 2026
 #
 # This test is part of the "Python API Examples" Add-on.
-# https://zeiss.github.io/zeiss-inspect-app-api/2025/python_examples/examples_overview.html
+# https://zeiss.github.io/zeiss-inspect-app-api/2027/python_examples/examples_overview.html
 # ---
 
 import socket

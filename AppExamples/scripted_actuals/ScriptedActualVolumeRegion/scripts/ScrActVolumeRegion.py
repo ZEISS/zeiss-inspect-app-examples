@@ -9,10 +9,10 @@
 #
 # NOTE: This example requires ZEISS INSPECT X-Ray
 #
-# Carl Zeiss GOM Metrology GmbH, 2025
+# Carl Zeiss GOM Metrology GmbH, 2026
 #
 # This App is part of the ZEISS INSPECT Python API Examples:
-# https://zeiss.github.io/zeiss-inspect-app-api/2025/python_examples/examples_overview.html
+# https://zeiss.github.io/zeiss-inspect-app-api/2027/python_examples/examples_overview.html
 # ---
 
 import gom
@@ -20,7 +20,7 @@ import numpy as np
 
 
 def dialog(context, params):
-    DIALOG = gom.script.sys.create_user_defined_dialog(file='scr_act_volume_region.gdlg')
+    DIALOG = gom.script.sys.create_user_defined_dialog(file='ScrActVolumeRegion.gdlg')
 
     if 'x0' in params:
         DIALOG.x0.value = params['x0']
