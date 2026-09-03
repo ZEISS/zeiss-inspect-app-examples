@@ -9,6 +9,9 @@ import sys
 from markdown_pdf import MarkdownPdf, Section
 
 pdf = MarkdownPdf(toc_level=4)
-pdf.add_section(Section(open(sys.argv[1], encoding='utf-8').read(), toc=False), user_css="body {font-family: sans-serif;}")
+pdf.add_section(
+	Section(open(sys.argv[1], encoding='utf-8').read(), toc=False),
+	user_css="body, code, pre {font-family: sans-serif;} ul ul {list-style-type: disc;}",
+)
 pdf.meta["title"] = "Releasenotes"
 pdf.save(sys.argv[2])
