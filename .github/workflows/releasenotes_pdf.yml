@@ -6,6 +6,9 @@ on:
       - main
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   create_pdf:
     runs-on: ubuntu-latest
@@ -13,29 +16,35 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
         
       - name: Setup Python
         uses: actions/setup-python@v6
         with:
-          python-version: '3.10'
+          python-version: '3.14'
 
       - name: Install markdown_pdf
         run: |
-          pip install markdown_pdf==1.13.1
+          pip install markdown_pdf==1.13.3
       
       - name: Find and Convert Release Notes
         id: convert_notes
         run: |
           pwd
-          find . -type f -name 'Releasenotes.md' -exec sh -c '
-            basepath=$(dirname "{}") # Get the folder path
-            echo $basepath
-            if [ ! -f "$basepath/Releasenotes.pdf" ]; then
-              python .github/scripts/md2pdf.py "{}" "$basepath/Releasenotes.pdf" 
-              git config --global user.name "GitHub Action"
-              git config --global user.email "action@github.com"
-              git add "$basepath/Releasenotes.pdf"
-              git commit -m "Add Releasenotes.pdf"
-              git push origin ${GITHUB_REF#refs/*/}
+          find . -type f -name 'Releasenotes.md' -print0 | while IFS= read -r -d '' source; do
+            basepath=$(dirname "$source")
+            destination="$basepath/Releasenotes.pdf"
+            if [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ] || [ ! -f "$destination" ] || ! git diff --quiet "$GITHUB_EVENT_BEFORE" "$GITHUB_SHA" -- "$source"; then
+              echo "Converting $source"
+              python .github/scripts/md2pdf.py "$source" "$destination"
+              git add "$destination"
             fi
-          ' \;
+          done
+
+          if ! git diff --cached --quiet; then
+            git config user.name "GitHub Action"
+            git config user.email "action@github.com"
+            git commit -m "Update Releasenotes.pdf files"
+            git push origin "$GITHUB_REF_NAME"
+          fi
