@@ -1,0 +1,8 @@
+license_choices:
+  package_license_choices:
+  - package_id: PyPI::numpy:2.5.3
+    license_choices:
+      - given: "NCSA OR MIT"
+        choice: "MIT"
+      - given: "Apache-2.0 OR LGPL-3.0-only"
+        choice: "Apache-2.0"
