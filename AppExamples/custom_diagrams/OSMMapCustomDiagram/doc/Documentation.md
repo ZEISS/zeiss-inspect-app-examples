@@ -58,7 +58,7 @@ The custom element returns data using the modern API contract:
 }
 ```
 
-The scalar value and `map_range` track the current map range. This makes a zoom-triggered element recalculation produce changed project data, which causes Inspection Details to request a fresh diagram render.
+The scalar value and `map_range` track the current map range. Because App settings are not project dependencies, the zoom callback recalculates the location elements and refreshes Inspection Details after changing the setting, without reselecting elements.
 
 `finish()` calls `add_diagram_data()` with the diagram contribution ID.
 
@@ -87,9 +87,9 @@ The map is shown in the Inspection Details tab in the 3D view. Adding or editing
 
 The map provides `+` and `-` controls in its upper-right corner. They are SVG diagram overlay points, so the controls remain fixed to the map frame rather than moving with the geographic coordinates.
 
-Clicking `+` halves the `range` setting; clicking `-` doubles it. The range is clamped to 100 m through 1,000,000 m. Each click updates the App setting and forces element recalculation because App settings are not tracked by the project dependency graph. The changed location result causes the diagram to render again with the corresponding geographic extent and Cartopy tile zoom. Previously downloaded tiles can be reused from Cartopy's local cache.
+Clicking `+` halves the `range` setting; clicking `-` doubles it. The range is clamped to 100 m through 1,000,000 m. Each control uses a stable, distinct UUID-formatted overlay interaction ID, so the event carries its direction without relying on data retained by the diagram service. These IDs identify the controls, not project elements. The callback updates the App setting and recalculates the setting-dependent location elements and project, causing the diagram to render with the corresponding geographic extent and Cartopy tile zoom. Previously downloaded tiles can be reused from Cartopy's local cache.
 
-The controls use the `SVGDiagram` event callback mechanism and do not provide map panning. The diagram forwards each zoom request to `osm_map_zoom_callback.py`, which is registered as `userscript.osm_map_zoom_callback`. This regular userscript applies the new range and triggers element and project recalculation. It calls `gom.read_parameters(globals())` before reading the `finish_event()` payload, as required by ZEISS INSPECT 2025 and later.
+The controls use the `SVGDiagram` event callback mechanism and do not provide map panning. The diagram forwards each zoom request to `osm_map_zoom_callback.py`, which is registered as `userscript.osm_map_zoom_callback`. This regular userscript reads the `finish_event()` payload into a call-local dictionary with `gom.read_parameters()`, applies the new range, recalculates setting-dependent elements, and refreshes Inspection Details.
 
 When installing or updating this example from an external folder, refresh the App in the App Editor after adding the callback files.
 

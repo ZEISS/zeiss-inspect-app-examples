@@ -28,6 +28,9 @@ class OSMMapCustomDiagram(gom.api.extensions.diagrams.SVGDiagram):
     ZOOM_CONTROL_RIGHT = 0.98
     ZOOM_CONTROL_CENTER = 0.96
     ZOOM_CONTROL_SPLIT = 0.89
+    # App-defined interaction IDs for the zoom hitboxes, not ZEISS INSPECT element UUIDs.
+    ZOOM_IN_INTERACTION_ID = 'f01d6932-998e-5fe1-a644-e100c3d9168e'
+    ZOOM_OUT_INTERACTION_ID = 'c133d858-69c5-5f27-93c8-1dcb6338eba4'
     MIN_VIEW_WIDTH = 64
     MIN_VIEW_HEIGHT = 64
     MIN_VIEW_DPI = 72.0
@@ -38,17 +41,6 @@ class OSMMapCustomDiagram(gom.api.extensions.diagrams.SVGDiagram):
             id='com.zeiss.example.osm_map_custom_diagram',
             description='OSM Map Custom Diagram'
         )
-        self.refresh_element_uuids = []
-        self.zoom_control_split_y = None
-
-    @staticmethod
-    def _element_uuid(element_entry):
-        element_uuid = element_entry.get('uuid')
-        element = element_entry.get('element')
-        element_getter = getattr(element, 'get', None)
-        if not element_uuid and callable(element_getter):
-            element_uuid = element_getter('uuid')
-        return element_uuid
 
     @staticmethod
     def _normalized_view(view):
@@ -86,7 +78,7 @@ class OSMMapCustomDiagram(gom.api.extensions.diagrams.SVGDiagram):
             1.0 - float(display_point[1]) / view['height']
         )
 
-    def _draw_zoom_controls(self, axis, view, overlay, interaction_uuid):
+    def _draw_zoom_controls(self, axis, view, overlay):
         """Draw fixed zoom controls and register their interaction hitboxes."""
         axis.add_patch(
             FancyBboxPatch(
@@ -112,14 +104,10 @@ class OSMMapCustomDiagram(gom.api.extensions.diagrams.SVGDiagram):
             zorder=21,
             clip_on=False
         )
-        split_point = self._overlay_point(
-            axis,
-            self.ZOOM_CONTROL_CENTER,
-            self.ZOOM_CONTROL_SPLIT,
-            view
-        )
-        self.zoom_control_split_y = split_point[1] * view['height']
-        for symbol, y_coord in (('+', 0.93), ('-', 0.85)):
+        for symbol, interaction_id, y_coord in (
+            ('+', self.ZOOM_IN_INTERACTION_ID, 0.93),
+            ('-', self.ZOOM_OUT_INTERACTION_ID, 0.85)
+        ):
             axis.text(
                 self.ZOOM_CONTROL_CENTER,
                 y_coord,
@@ -134,22 +122,22 @@ class OSMMapCustomDiagram(gom.api.extensions.diagrams.SVGDiagram):
             )
             self.add_element_to_overlay(
                 overlay,
-                interaction_uuid,
+                interaction_id,
                 self._overlay_point(axis, self.ZOOM_CONTROL_CENTER, y_coord, view),
                 element_name='Map zoom',
                 tooltip='Map zoom',
                 custom_interaction=True
             )
 
-    def event(self, _element_name, element_uuid, event_data):
+    def event(self, _element_name, element_uuid, _event_data):
         """Handle a zoom-control click and request a range update."""
-        if element_uuid not in self.refresh_element_uuids or self.zoom_control_split_y is None:
+        directions = {
+            self.ZOOM_IN_INTERACTION_ID: 'in',
+            self.ZOOM_OUT_INTERACTION_ID: 'out'
+        }
+        direction = directions.get(element_uuid)
+        if direction is None:
             return None
-        mouse_position = event_data.get('mouse_position', {})
-        mouse_y = mouse_position.get('y')
-        if mouse_y is None:
-            return None
-        direction = 'in' if float(mouse_y) < self.zoom_control_split_y else 'out'
         current_range = float(gom.api.settings.get('range'))
         updated_range = current_range / 2 if direction == 'in' else current_range * 2
         updated_range = min(1000000.0, max(100.0, updated_range))
@@ -157,8 +145,7 @@ class OSMMapCustomDiagram(gom.api.extensions.diagrams.SVGDiagram):
             'osm_map_zoom_callback',
             {
                 'direction': direction,
-                'range': updated_range,
-                'element_uuids': self.refresh_element_uuids
+                'range': updated_range
             }
         )
 
@@ -175,11 +162,6 @@ class OSMMapCustomDiagram(gom.api.extensions.diagrams.SVGDiagram):
         axis.set_position((0.03, 0.16, 0.94, 0.68))
 
         locations = [entry['data'] for entry in element_data]
-        self.refresh_element_uuids = [
-            element_uuid
-            for entry in element_data
-            if (element_uuid := self._element_uuid(entry))
-        ]
         latitudes = [location['latitude'] for location in locations]
         longitudes = [location['longitude'] for location in locations]
         lat_center = (min(latitudes) + max(latitudes)) / 2
@@ -253,7 +235,8 @@ class OSMMapCustomDiagram(gom.api.extensions.diagrams.SVGDiagram):
             fontsize=8,
             bbox=dict(facecolor='white', alpha=0.8, edgecolor='none', pad=2)
         )
-        self._draw_zoom_controls(axis, safe_view, overlay, self.refresh_element_uuids[0])
+        axis.apply_aspect()
+        self._draw_zoom_controls(axis, safe_view, overlay)
         svg_string = self._export_svg(figure, safe_view)
         plt.close(figure)
         return self.finish_plot(svg_string, overlay)

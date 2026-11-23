@@ -3,8 +3,12 @@
 ## Installation Requirements
 
 * ZEISS INSPECT 2027
-* Python 3.13.x setup in ZEISS INSPECT
 * Network access for OpenStreetMap tile downloads
+
+## Released at 2026-11-23 (v1.0.1)
+
+* Updated zoom interactions to pass direction and range through callback parameters instead of retaining state between service calls.
+* Refresh the map by recalculating visible elements and the project after changing the range.
 
 ## Released at 2026-08-28 (v1.0.0)
 
