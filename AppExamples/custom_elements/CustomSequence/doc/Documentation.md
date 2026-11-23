@@ -9,7 +9,7 @@ This App demonstrates how to create a custom `sequence.CustomSequence` element u
 
 | Class | Type | Features |
 |---|---|---|
-| `DatumPlaneSequence` | `sequence.CustomSequence` | Datum plane from 3 points; child elements editable separately; live collinearity validation |
+| `DatumPlaneSequence` | `sequence.CustomSequence` | Datum plane from 3 points; child elements editable separately |
 
 ## Highlights
 
@@ -34,12 +34,7 @@ When `edit_child_elements_separately` is enabled, users can edit each point dire
 
 ### Validation behavior
 
-The dialog performs live validation to ensure the three points define a valid plane. If points are collinear or identical, the dialog status is set and confirmation is blocked until valid coordinates are entered.
-
-```python
-if length < 1e-10:
-    return 'The 3 reference points are collinear or identical and do not define a plane.'
-```
+The dialog validates the three points in a handler attached to the dialog for the duration of that call. Collinear or identical points show a message in the dialog and disable **OK**. Direct script creation bypasses this dialog validation; the native plane-creation command then raises an error because the points do not define a plane. Editing the points recomputes the plane through its existing point references.
 
 ### Create result
 
