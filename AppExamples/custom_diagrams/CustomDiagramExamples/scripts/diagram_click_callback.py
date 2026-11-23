@@ -7,7 +7,6 @@ https://github.com/ZEISS/zeiss-inspect-app-examples
 """
 
 import gom
-import gom.api.inspection_details
 
 
 def _safe_select_element(element_uuid):
@@ -18,11 +17,6 @@ def _safe_select_element(element_uuid):
         gom.script.sys.select_elements_by_uuid(elements=[element_uuid])
     except Exception as error:
         gom.log.info(f'CustomDiagramExamples: could not select element by uuid: {error}')
-
-
-def _request_diagram_refresh():
-    """Refresh inspection details so diagram callbacks become visible immediately."""
-    gom.api.inspection_details.refresh()
 
 
 try:
@@ -36,6 +30,5 @@ try:
         f'CustomDiagramExamples callback executed: {callback_name=}, {callback_value=}, {callback_uuid=}'
     )
     _safe_select_element(callback_uuid)
-    _request_diagram_refresh()
 except Exception as error:
     gom.log.info(f'CustomDiagramExamples callback failed: {error}')

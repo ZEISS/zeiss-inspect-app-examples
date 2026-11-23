@@ -23,7 +23,10 @@ class DiagramWithElementOverlay(gom.api.extensions.diagrams.SVGDiagram):
 
     INTERACTION_SCRIPT = 'diagram_click_callback'
     INTERACTION_ARGS = {'name': 'testname', 'testval': 17.00351334}
-    RENDER_CONFIG = {'auto_generated_overlay_use': True}
+    RENDER_CONFIG = {
+        'auto_generated_overlay_use': True,
+        'overlay_use_mouse_position': True
+    }
     DEFAULT_MARKER_COLOR = '#4c956c'
     MARKER_SIZE = 120
     MIN_VIEW_WIDTH = 64

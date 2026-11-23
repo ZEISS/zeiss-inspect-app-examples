@@ -7,7 +7,7 @@
 
 ## Released at 2026-11-23 (v1.0.1)
 
-* Updated click callbacks to read event parameters through `gom.read_parameters` and refresh inspection details.
+* Updated click callbacks to read event parameters through `gom.read_parameters` and select the clicked element by UUID.
 * Kept element overlay marker colors stable across re-renders without retaining click state in the diagram service.
 
 ## Released at 2026-08-28 (v1.0.0)
