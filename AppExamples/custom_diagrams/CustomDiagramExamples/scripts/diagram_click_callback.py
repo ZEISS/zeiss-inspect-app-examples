@@ -7,6 +7,7 @@ https://github.com/ZEISS/zeiss-inspect-app-examples
 """
 
 import gom
+import gom.api.inspection_details
 
 
 def _safe_select_element(element_uuid):
@@ -20,19 +21,16 @@ def _safe_select_element(element_uuid):
 
 
 def _request_diagram_refresh():
-    """Best-effort refresh so diagram callbacks become visible immediately."""
-    try:
-        gom.script.sys.recalculate_visible_elements_in_all_stages(enable=True)
-        gom.script.sys.recalculate_project(with_reports=False)
-    except Exception as error:
-        gom.log.info(f'CustomDiagramExamples: could not refresh diagram view: {error}')
+    """Refresh inspection details so diagram callbacks become visible immediately."""
+    gom.api.inspection_details.refresh()
 
 
 try:
-    # Parameters are passed by finish_event and exposed as globals by ZEISS INSPECT.
-    callback_name = globals().get('name', '<not provided>')
-    callback_value = globals().get('testval', '<not provided>')
-    callback_uuid = globals().get('element_uuid', None)
+    parameters: dict[str, object] = {}
+    gom.read_parameters(parameters)
+    callback_name = parameters.get('name', '<not provided>')
+    callback_value = parameters.get('testval', '<not provided>')
+    callback_uuid = parameters.get('element_uuid')
 
     gom.log.info(
         f'CustomDiagramExamples callback executed: {callback_name=}, {callback_value=}, {callback_uuid=}'
