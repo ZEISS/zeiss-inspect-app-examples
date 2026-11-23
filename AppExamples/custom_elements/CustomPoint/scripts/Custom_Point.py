@@ -159,28 +159,26 @@ class NominalOffsetPoint(gom.api.extensions.nominals.Point):
     - Logs inputs and result via add_log_message()
     - (+) Widget filter on the base selector: only elements with 'center_coordinate'
       or 'coordinate1' are selectable
-    - (+) Dialog event handler: shows a status hint until a valid base element is selected
+    - (+) Stateless dialog event handler: recomputes the preview for a valid base selection
     - (+) Triggers preview recomputation when a valid base element is selected
     """
 
     def __init__(self):
         """Register the custom nominal point contribution."""
         super().__init__(id='examples.custom_nominal_point', description='Custom Nominal Point')
-        self.dlg = None
 
     def dialog(self, context, args):
         """
-        Create dialog object and save it as attribute.
+        Create and configure the dialog for this service call.
         Set a filter on the base widget so only elements with a
         'center_coordinate' or 'coordinate1' are selectable — the dialog manages the
         OK-button state automatically based on the filter result.
         Show dialog and return parameters.
         """
-        self.dlg = gom.api.dialog.create(context, '/Custom_Point.gdlg')
-        self.dlg.base.filter = _has_point_coordinate
-        self.initialize_dialog(context, self.dlg, args)
-        res = self.apply_dialog(self.dlg, gom.api.dialog.show(context, self.dlg))
-        return res
+        dlg = gom.api.dialog.create(context, '/Custom_Point.gdlg')
+        dlg.base.filter = _has_point_coordinate
+        self.initialize_dialog(context, dlg, args)
+        return self.apply_dialog(dlg, gom.api.dialog.show(context, dlg))
 
     def compute(self, context, values):
         """
@@ -201,19 +199,14 @@ class NominalOffsetPoint(gom.api.extensions.nominals.Point):
 
     def event(self, _context, event_type, parameters):
         """
-        Show a status hint until a valid base is selected.
-        Returns True to trigger a preview recomputation when one is.
-        """
-        if event_type == 'dialog::initialized':
-            self.dlg.control.status = (
-                "Select a base element with 'center_coordinate' or 'coordinate1'!"
-            )
+        Trigger a preview recomputation when a valid base is selected.
 
+        The base widget filter manages the OK-button state; computation errors
+        report invalid values without retaining a dialog handle between calls.
+        """
         if event_type == 'dialog::changed':
             base = parameters['values'].get('base')
-            if base is not None and _has_point_coordinate(base):
-                self.dlg.control.status = ''
-                return True
+            return base is not None and _has_point_coordinate(base)
 
         return False
 

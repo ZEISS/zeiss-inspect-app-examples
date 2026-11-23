@@ -14,7 +14,7 @@ arranged in order of increasing complexity:
 |---|---|---|
 | `ActualPoint` | `actuals.Point` | Bare minimum: returns base center coordinate |
 | `ActualOffsetPoint` | `actuals.Point` | Offset, validation, custom data tokens, logging |
-| `NominalOffsetPoint` | `nominals.Point` | Offset, validation, custom data tokens, logging, widget filter, event handler |
+| `NominalOffsetPoint` | `nominals.Point` | Offset, validation, custom data tokens, logging, widget filter, stateless event handler |
 
 `ActualOffsetPoint` and `NominalOffsetPoint` share a common `generate_point_element()` helper function.
 
@@ -57,15 +57,12 @@ No offset, no validation, no logging.
 - **(+) Widget filter**: the dialog is created explicitly with `gom.api.dialog.create()` so that
   a filter can be applied to the `base` selector before display:
   ```python
-  self.dlg.base.filter = lambda e: hasattr(e, 'center_coordinate')
+  dlg.base.filter = _has_point_coordinate
   ```
   Only elements that expose a `center_coordinate` are selectable. The OK button is managed
   automatically based on the filter result.
-- **(+) Dialog event handler**: the `event` method is called on dialog lifecycle events:
-  - On `dialog::initialized`: sets a status hint prompting the user to select a valid base element.
-  - On `dialog::changed`: clears the hint when a valid base is selected.
-- **(+) Preview recomputation**: returning `True` from `event` on `dialog::changed` requests a
-  preview recomputation.
+- **(+) Stateless dialog event handler**: returning `True` from `event` when a valid base is
+  selected requests a preview recomputation. The base filter controls whether the selection is valid, and computation errors report invalid offsets or base values.
   > [!NOTE]
   > The exact conditions under which the preview is shown in the 3D view depend on the ZEISS INSPECT version and element type.
 
