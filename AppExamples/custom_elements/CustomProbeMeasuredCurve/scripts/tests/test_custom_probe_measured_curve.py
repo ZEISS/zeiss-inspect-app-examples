@@ -49,6 +49,17 @@ def test_actual_probe_measured_curve():
     actual_result_array = np.array(elem.data.coordinate)
     array_test = ArrayDataTest('test_custom_probe_measured_curve_actual_results.dat')
     array_test.testArrayValues(actual_result_array)
+    actual_result_array = actual_result_array.reshape(-1, 3)
+    normals = np.array(elem.data.normal).reshape(-1, 3)
+    angles = 2.0 * math.pi * N_TURNS * np.arange(NUM_POINTS) / (NUM_POINTS - 1)
+    expected_normals = np.column_stack(
+        (-np.cos(angles), -np.sin(angles), np.zeros(NUM_POINTS))
+    )
+    assert normals.shape == expected_normals.shape
+    assert np.allclose(normals, expected_normals)
+    assert np.allclose(normals[:, 2], 0.0)
+    assert np.allclose(np.linalg.norm(normals, axis=1), 1.0)
+    assert np.all(np.sum(normals[:, :2] * actual_result_array[:, :2], axis=1) < 0.0)
     # Check custom element data tokens
     assert elem.num_points == NUM_POINTS
     assert math.isclose(elem.helix_pitch, HELIX_PITCH)
