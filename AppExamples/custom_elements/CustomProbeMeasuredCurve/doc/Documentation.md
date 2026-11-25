@@ -9,7 +9,7 @@ This App demonstrates how to create a custom probe measured curve element contri
 
 | Class | Type | Features |
 |---|---|---|
-| `ActualProbeMeasuredCurve` | `actuals.ProbeMeasuredCurve` | Helical probe path on a cylinder; per-point probe radii; custom data tokens (num_points, helix_pitch) |
+| `ActualProbeMeasuredCurve` | `actuals.ProbeMeasuredCurve` | Helical probe path on a cylinder; inward radial normals; per-point probe radii; custom data tokens (num_points, helix_pitch) |
 
 > [!NOTE]
 > `ProbeMeasuredCurve` only exists as an actual element type — there is no nominal probe measured curve in the API.
@@ -29,29 +29,32 @@ The element simulates a CMM tactile probe tracing a helical groove on a cylinder
 
 ### Compute result
 
-The `compute_stage()` method evaluates the helix at 500 evenly spaced parameter values `t ∈ [0, 1]`:
+The `compute()` method evaluates the helix at 500 evenly spaced parameter values `t ∈ [0, 1]`:
 
 ```
 P(t) = ( R·cos(2π·n·t),  R·sin(2π·n·t),  H·t )
+N(t) = (−cos(2π·n·t), −sin(2π·n·t), 0)
 ```
 
-Each point carries the uniform probe tip radius. The helix pitch (axial advance per turn) is stored as a custom data token.
+`N(t)` is a unit normal perpendicular to the helix axis and directed toward it. Each point also carries the uniform probe tip radius. The helix pitch (axial advance per turn) is stored as a custom data token.
 
 ```python
 for i in range(NUM_POINTS):
     t = i / (NUM_POINTS - 1)
     angle = 2.0 * math.pi * n_turns * t
-    points.append((R * cos(angle), R * sin(angle), H * t))
+    cos_angle, sin_angle = cos(angle), sin(angle)
+    points.append((R * cos_angle, R * sin_angle, H * t))
+    normals.append((-cos_angle, -sin_angle, 0.0))
     radii.append(probe_radius)
 return {
-    "curves": [{"points": points, "radii": radii}],
+    "curves": [{"points": points, "normals": normals, "radii": radii}],
     "data": {"num_points": NUM_POINTS, "helix_pitch": H / n}
 }
 ```
 
 ### Custom data tokens
 
-The `compute_stage()` method stores the following as custom element data tokens:
+The `compute()` method stores the following as custom element data tokens:
 
 | Token | Description |
 |---|---|

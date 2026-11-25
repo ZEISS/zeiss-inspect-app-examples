@@ -35,18 +35,22 @@ def _compute_probe_measured_curve(values):
     probe_radius = float(values['probe_radius'])
 
     points = []
+    normals = []
     radii = []
     for i in range(NUM_POINTS):
         t = i / (NUM_POINTS - 1)
         angle = 2.0 * math.pi * n_turns * t
-        x = cylinder_radius * math.cos(angle)
-        y = cylinder_radius * math.sin(angle)
+        cos_angle = math.cos(angle)
+        sin_angle = math.sin(angle)
+        x = cylinder_radius * cos_angle
+        y = cylinder_radius * sin_angle
         z = height * t
         points.append((x, y, z))
+        normals.append((-cos_angle, -sin_angle, 0.0))
         radii.append(probe_radius)
 
     pitch = height / n_turns if n_turns != 0.0 else 0.0
-    return points, radii, pitch
+    return points, normals, radii, pitch
 
 
 @apicontribution
@@ -75,9 +79,9 @@ class ActualProbeMeasuredCurve(gom.api.extensions.actuals.ProbeMeasuredCurve):
     def compute(self, _context, values):
         """Compute the actual probe measured curve element."""
         # -------------------------------------------------------------------------
-        points, radii, pitch = _compute_probe_measured_curve(values)
+        points, normals, radii, pitch = _compute_probe_measured_curve(values)
         return {
-            "curves": [{"points": points, "radii": radii}],
+            "curves": [{"points": points, "normals": normals, "radii": radii}],
             "data": {"num_points": len(points), "helix_pitch": pitch}
         }
         # -------------------------------------------------------------------------
