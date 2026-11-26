@@ -48,45 +48,43 @@ class DatumPlaneSequence(gom.api.extensions.sequence.CustomSequence):
             description='Datum Plane from 3 Reference Points',
             properties={'edit_child_elements_separately': True}
         )
-        self.dlg = None
 
     @staticmethod
-    def _check_collinear(args):
-        """Return an error message if the 3 points are collinear/identical, else empty string."""
-        p1 = gom.Vec3d(float(args.get('p1_x', 0)), float(args.get('p1_y', 0)), float(args.get('p1_z', 0)))
-        p2 = gom.Vec3d(float(args.get('p2_x', 0)), float(args.get('p2_y', 0)), float(args.get('p2_z', 0)))
-        p3 = gom.Vec3d(float(args.get('p3_x', 0)), float(args.get('p3_y', 0)), float(args.get('p3_z', 0)))
-        v1 = p2 - p1
-        v2 = p3 - p1
-        cross = gom.Vec3d(
-            v1.y * v2.z - v1.z * v2.y,
-            v1.z * v2.x - v1.x * v2.z,
-            v1.x * v2.y - v1.y * v2.x
+    def _validation_error(values):
+        points = [
+            tuple(float(values[f'p{point}_{axis}']) for axis in 'xyz')
+            for point in (1, 2, 3)
+        ]
+        vector1 = tuple(points[1][i] - points[0][i] for i in range(3))
+        vector2 = tuple(points[2][i] - points[0][i] for i in range(3))
+        cross = (
+            vector1[1] * vector2[2] - vector1[2] * vector2[1],
+            vector1[2] * vector2[0] - vector1[0] * vector2[2],
+            vector1[0] * vector2[1] - vector1[1] * vector2[0],
         )
-        length = (cross.x ** 2 + cross.y ** 2 + cross.z ** 2) ** 0.5
+        length = sum(component ** 2 for component in cross) ** 0.5
         if length < 1e-10:
             return 'The 3 reference points are collinear or identical and do not define a plane.'
         return ''
 
     def dialog(self, context, args):
-        """Show the creation/edit dialog with live collinearity validation."""
-        self.dlg = gom.api.dialog.create(context, '/Custom_Sequence.gdlg')
-        self.initialize_dialog(context, self.dlg, args)
-        # Show initial status if the current args are already invalid
-        self.dlg.control.status = self._check_collinear(args)
-        return self.apply_dialog(self.dlg, gom.api.dialog.show(context, self.dlg))
+        """Show the dialog with call-local validation feedback."""
+        dlg = gom.api.dialog.create(context, '/Custom_Sequence.gdlg')
+        self.initialize_dialog(context, dlg, args)
 
-    def event(self, _context, event_type, parameters):
-        """
-        Validate collinearity live as the user edits the coordinate inputs.
+        def update_validation(_widget=None):
+            values = {
+                name: getattr(dlg, name).value
+                for point in (1, 2, 3)
+                for name in (f'p{point}_x', f'p{point}_y', f'p{point}_z')
+            }
+            error = self._validation_error(values)
+            dlg.control.status = error
+            dlg.control.ok.enabled = not error
 
-        Sets control.status to a warning message when the 3 points do not
-        define a plane — this also disables the OK button automatically.
-        Clears the message (and re-enables OK) when the points are valid.
-        """
-        if event_type in ('dialog::initialized', 'dialog::changed'):
-            self.dlg.control.status = self._check_collinear(parameters.get('values', {}))
-        return False
+        dlg.handler = update_validation
+        update_validation()
+        return self.apply_dialog(dlg, gom.api.dialog.show(context, dlg))
 
     def create(self, _context, name, args):
         """
@@ -160,10 +158,7 @@ class DatumPlaneSequence(gom.api.extensions.sequence.CustomSequence):
             element=POINT_3,
             point={'point': gom.Vec3d(float(args['p3_x']), float(args['p3_y']), float(args['p3_z']))}
         )
-        # The plane is defined by references to the 3 child points and updates
-        # automatically when those points change. Re-applying plane creation
-        # parameters here is not required and can fail for some edit paths
-        # (e.g. "Edit creation parameters" on the leading plane element).
+        # The leading plane references these points and recomputes automatically.
 
     def on_edited(self, _context, args, parameters):
         """

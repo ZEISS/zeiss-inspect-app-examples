@@ -44,8 +44,9 @@ The App includes a custom actual circle element so no external custom element ex
 ### Element Overlay Diagram
 
 - Enables auto-generated overlay mode: plotted markers are tagged via `get_overlay_tag(...)`, and `finish_plot(..., render_config={'auto_generated_overlay_use': True})` lets the renderer derive full-element hitboxes from tagged SVG groups.
+- Uses the current mouse position for the tooltip instead of the placeholder `(0, 0)` overlay coordinate.
 - Uses matplotlib `gid` tags: the `gid` attribute becomes the SVG group `id` in exported markup and bridges plotted graphics to ZEISS INSPECT element UUIDs.
-- Keeps marker size stable across re-renders and recolors the last clicked element in the diagram service itself.
+- Keeps marker size and color stable across re-renders without retaining click state in the diagram service.
 
 ### Point-Cloud Overlay Diagram
 

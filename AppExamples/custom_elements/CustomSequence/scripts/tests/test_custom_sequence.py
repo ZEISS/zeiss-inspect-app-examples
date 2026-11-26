@@ -28,6 +28,14 @@ P3 = (0.0, 100.0, 0.0)
 TOLERANCE = 1e-6
 
 
+def _start_service():
+    service = gom.api.services.get_service(SERVICE_ENDPOINT)
+    if service.get_status() != 'RUNNING':
+        assert service.start_and_wait(timeout=SERVICE_TIMEOUT), (
+            f"Failed to start service {SERVICE_ENDPOINT}"
+        )
+
+
 def test_datum_plane_from_3_points():
     """
     Test the CustomSequence datum plane element.
@@ -39,10 +47,7 @@ def test_datum_plane_from_3_points():
     gom.script.sys.close_project()
     gom.script.sys.create_project()
 
-    service = gom.api.services.get_service(SERVICE_ENDPOINT)
-    if not service.get_status() == 'RUNNING':
-        if not service.start_and_wait(timeout=SERVICE_TIMEOUT):
-            assert False, f"Failed to start service {SERVICE_ENDPOINT}"
+    _start_service()
 
     # -------------------------------------------------------------------------
     # Create the datum plane sequence with 3 known XY-plane reference points
@@ -91,3 +96,28 @@ def test_datum_plane_from_3_points():
     assert abs(abs(normal.z) - 1.0) < TOLERANCE, (
         f"Plane normal Z component should be ±1, got {normal.z}"
     )
+
+
+def test_collinear_points_are_rejected_by_plane_creation():
+    """Reject invalid geometry with the native plane-creation error."""
+    gom.script.sys.close_project()
+    gom.script.sys.create_project()
+
+    _start_service()
+
+    name = 'Invalid Datum Plane'
+    try:
+        gom.script.customelements.create_sequence(
+            contribution='examples.custom_sequence',
+            name=name,
+            values={
+                'p1_x': 0.0, 'p1_y': 0.0, 'p1_z': 0.0,
+                'p2_x': 1.0, 'p2_y': 1.0, 'p2_z': 1.0,
+                'p3_x': 2.0, 'p3_y': 2.0, 'p3_z': 2.0,
+            }
+        )
+    except gom.RequestError as error:
+        message = str(error).casefold()
+        assert 'points do not define a plane' in message, message
+    else:
+        assert False, 'Collinear points must be rejected by native plane creation'

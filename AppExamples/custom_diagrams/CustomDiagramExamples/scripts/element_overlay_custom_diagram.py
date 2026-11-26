@@ -23,9 +23,11 @@ class DiagramWithElementOverlay(gom.api.extensions.diagrams.SVGDiagram):
 
     INTERACTION_SCRIPT = 'diagram_click_callback'
     INTERACTION_ARGS = {'name': 'testname', 'testval': 17.00351334}
-    RENDER_CONFIG = {'auto_generated_overlay_use': True}
+    RENDER_CONFIG = {
+        'auto_generated_overlay_use': True,
+        'overlay_use_mouse_position': True
+    }
     DEFAULT_MARKER_COLOR = '#4c956c'
-    SELECTED_MARKER_COLOR = '#f45d48'
     MARKER_SIZE = 120
     MIN_VIEW_WIDTH = 64
     MIN_VIEW_HEIGHT = 64
@@ -37,7 +39,6 @@ class DiagramWithElementOverlay(gom.api.extensions.diagrams.SVGDiagram):
             id='com.zeiss.example.custom_diagrams.element_overlay',
             description='Interactive Custom Diagram with Element Overlay'
         )
-        self.last_clicked_uuid = None
 
     @staticmethod
     def _radius_series(element_data):
@@ -63,12 +64,6 @@ class DiagramWithElementOverlay(gom.api.extensions.diagrams.SVGDiagram):
                 element_uuid = element_getter('uuid')
 
         return element_uuid, element_name
-
-    def _marker_color(self, element_uuid):
-        """Use a distinct color for the last clicked element."""
-        if element_uuid and element_uuid == self.last_clicked_uuid:
-            return self.SELECTED_MARKER_COLOR
-        return self.DEFAULT_MARKER_COLOR
 
     @staticmethod
     def _normalized_view(view):
@@ -110,7 +105,6 @@ class DiagramWithElementOverlay(gom.api.extensions.diagrams.SVGDiagram):
 
     def event(self, element_name, element_uuid, event_data):
         """Handle custom click interaction for overlay-mapped elements."""
-        self.last_clicked_uuid = element_uuid
         callback_args = dict(self.INTERACTION_ARGS)
         callback_args.update({
             'element_name': element_name,
@@ -137,7 +131,7 @@ class DiagramWithElementOverlay(gom.api.extensions.diagrams.SVGDiagram):
             element_uuid, _element_name = self._element_metadata(element_entry)
             scatter_kwargs = {
                 's': self.MARKER_SIZE,
-                'c': self._marker_color(element_uuid),
+                'c': self.DEFAULT_MARKER_COLOR,
                 'alpha': 0.85
             }
             if element_uuid:
